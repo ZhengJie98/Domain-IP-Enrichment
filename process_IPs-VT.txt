@@ -1,0 +1,92 @@
+
+import base64
+import hashlib
+import json
+import requests
+import time
+import csv
+import datetime
+import os
+
+import pandas as pd
+
+
+API_KEY = '0d9fdb6e32d74b9d12e3d894309531838c3aabe8d66b049fd3a7976fbedf2c68'  #@param  {type: "string"}
+
+#'to_process_alertIP' + '.csv'
+#'to_process_botIP' + '.csv'
+
+def process_iplist(filename_to_process, columnIndex):
+    
+    with open(filename_to_process + ".csv", newline='') as inputfile:
+
+        if not os.path.exists("downloaded_vtresponse"):
+                os.makedirs("downloaded_vtresponse")
+
+        with open(filename_to_process + "_tracker.csv", 'w', newline='') as outputfile:
+            ip_list = csv.reader(inputfile, delimiter=',')
+            output_writer = csv.writer(outputfile, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+
+            counter = 0
+
+            for row in ip_list:
+
+                if counter == 0:
+                    output_writer.writerow(row + ["Time Run"])
+                    outputfile.flush()
+                    counter += 1
+                    continue
+
+                print("Processing: #" + str(counter) + " - " + row[columnIndex])
+
+                r = requests.get("https://www.virustotal.com/api/v3/ip_addresses/"+row[0], headers={"x-apikey":API_KEY})
+
+                # TODO: Make generalised and incorporate timestamp in foldername
+                with open("downloaded_vtresponse/" + row[columnIndex] + ".json", "w") as outfile:
+                    outfile.write(r.text)
+
+                output_writer.writerow(row + [datetime.datetime.now()])
+
+                outputfile.flush()
+
+                counter += 1
+                time.sleep(16)
+
+
+def process_json_folder(folder_to_process):
+    # Usual Folder: downloaded_vtresponse
+    combined_df = pd.DataFrame()
+    
+    
+    for filename in os.listdir(folder_to_process):
+        f = os.path.join(folder_to_process, filename)
+
+        # check if it is a file
+        if os.path.isfile(f):
+
+            # Opening JSON file
+            f = open(f)
+
+            # returns JSON object as
+            # a dictionary
+            data = json.load(f)
+
+            df_result = pd.json_normalize(data)
+            combined_df = pd.concat([combined_df, df_result], ignore_index=True, sort=False)
+    
+    
+    print(combined_df)
+    combined_df.to_csv(folder_to_process + '_parsed-combined.csv')
+    
+
+
+# Process the list of IPs (CSVs ok but IP must be x column in the list)
+#process_iplist("Combined_TestKits_BotIPs", 0)
+
+# Process the downloaded VT JSONs
+process_json_folder("downloaded_vtresponse_10Jan_combinedFull5k")
+
+print("completed")
+exit(0)
+
+
