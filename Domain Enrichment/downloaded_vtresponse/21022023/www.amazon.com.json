@@ -1,25 +1,129 @@
 {
     "data": {
         "attributes": {
-            "regional_internet_registry": "ARIN",
-            "network": "34.120.0.0/13",
+            "last_dns_records": [
+                {
+                    "type": "NS",
+                    "value": "ns-2021.awsdns-60.co.uk",
+                    "ttl": 21600
+                },
+                {
+                    "type": "CNAME",
+                    "value": "tp.47cf2c8c9-frontier.amazon.com",
+                    "ttl": 909
+                },
+                {
+                    "type": "A",
+                    "value": "13.224.247.127",
+                    "ttl": 60
+                },
+                {
+                    "type": "AAAA",
+                    "value": "2600:9000:21b3:400:7:49a5:5fd2:8621",
+                    "ttl": 60
+                },
+                {
+                    "type": "AAAA",
+                    "value": "2600:9000:21b3:2c00:7:49a5:5fd2:8621",
+                    "ttl": 60
+                },
+                {
+                    "type": "AAAA",
+                    "value": "2600:9000:21b3:fa00:7:49a5:5fd2:8621",
+                    "ttl": 60
+                },
+                {
+                    "type": "AAAA",
+                    "value": "2600:9000:21b3:e000:7:49a5:5fd2:8621",
+                    "ttl": 60
+                },
+                {
+                    "type": "CNAME",
+                    "value": "d3ag4hukkh62yn.cloudfront.net",
+                    "ttl": 60
+                },
+                {
+                    "type": "AAAA",
+                    "value": "2600:9000:21b3:9e00:7:49a5:5fd2:8621",
+                    "ttl": 60
+                },
+                {
+                    "type": "CNAME",
+                    "value": "tp.47cf2c8c9-frontier.amazon.com",
+                    "ttl": 251
+                },
+                {
+                    "type": "CNAME",
+                    "value": "tp.47cf2c8c9-frontier.amazon.com",
+                    "ttl": 116
+                },
+                {
+                    "type": "AAAA",
+                    "value": "2600:9000:21b3:3200:7:49a5:5fd2:8621",
+                    "ttl": 60
+                },
+                {
+                    "type": "NS",
+                    "value": "ns-1144.awsdns-15.org",
+                    "ttl": 21600
+                },
+                {
+                    "type": "CNAME",
+                    "value": "e15316.dsca.akamaiedge.net",
+                    "ttl": 11567
+                },
+                {
+                    "type": "CNAME",
+                    "value": "www.amazon.com.edgekey.net",
+                    "ttl": 57
+                },
+                {
+                    "type": "AAAA",
+                    "value": "2600:9000:21b3:8600:7:49a5:5fd2:8621",
+                    "ttl": 60
+                },
+                {
+                    "type": "NS",
+                    "value": "ns-824.awsdns-39.net",
+                    "ttl": 21600
+                },
+                {
+                    "type": "AAAA",
+                    "value": "2600:9000:21b3:4200:7:49a5:5fd2:8621",
+                    "ttl": 60
+                },
+                {
+                    "type": "NS",
+                    "value": "ns-130.awsdns-16.com",
+                    "ttl": 21600
+                }
+            ],
+            "jarm": "29d29d00029d29d21c41d41d00041d38d8d683f08c154e73a9de64943d64e4",
+            "whois": "Admin City: Reno\nAdmin Country: US\nAdmin Email: d52ad5e18ac11e26s@amazon.com\nAdmin Organization: Amazon Technologies, Inc.\nAdmin Postal Code: 89507\nAdmin State/Province: NV\nCreation Date: 1994-11-01T05:00:00+0000\nCreation Date: 1994-11-01T05:00:00Z\nDNSSEC: unsigned\nDomain Name: AMAZON.COM\nDomain Name: amazon.com\nDomain Status: clientDeleteProhibited (https://www.icann.org/epp#clientDeleteProhibited)\nDomain Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited\nDomain Status: clientTransferProhibited (https://www.icann.org/epp#clientTransferProhibited)\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nDomain Status: clientUpdateProhibited (https://www.icann.org/epp#clientUpdateProhibited)\nDomain Status: clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited\nDomain Status: serverDeleteProhibited (https://www.icann.org/epp#serverDeleteProhibited)\nDomain Status: serverDeleteProhibited https://icann.org/epp#serverDeleteProhibited\nDomain Status: serverTransferProhibited (https://www.icann.org/epp#serverTransferProhibited)\nDomain Status: serverTransferProhibited https://icann.org/epp#serverTransferProhibited\nDomain Status: serverUpdateProhibited (https://www.icann.org/epp#serverUpdateProhibited)\nDomain Status: serverUpdateProhibited https://icann.org/epp#serverUpdateProhibited\nName Server: NS1.P31.DYNECT.NET\nName Server: NS2.P31.DYNECT.NET\nName Server: NS3.P31.DYNECT.NET\nName Server: NS4.P31.DYNECT.NET\nName Server: PDNS1.ULTRADNS.NET\nName Server: PDNS6.ULTRADNS.CO.UK\nName Server: ns1.p31.dynect.net\nName Server: ns2.p31.dynect.net\nName Server: ns3.p31.dynect.net\nName Server: ns4.p31.dynect.net\nName Server: pdns1.ultradns.net\nName Server: pdns6.ultradns.co.uk\nRegistrant City: acac3e3520916b3a\nRegistrant Country: US\nRegistrant Email: d52ad5e18ac11e26s@amazon.com\nRegistrant Fax Ext: 3432650ec337c945\nRegistrant Fax: f301252fe92b81f4\nRegistrant Name: 3dc840787fc736df\nRegistrant Organization: 69d34eb28e786bf0\nRegistrant Phone Ext: 3432650ec337c945\nRegistrant Phone: 5e7fadacab4ab939\nRegistrant Postal Code: 000d213cfa16a941\nRegistrant State/Province: d5021408f156b0c7\nRegistrant Street: 508ca10b5bc2eb15\nRegistrar Abuse Contact Email: abusecomplaints@markmonitor.com\nRegistrar Abuse Contact Phone: +1.2086851750\nRegistrar IANA ID: 292\nRegistrar Registration Expiration Date: 2024-10-30T07:00:00+0000\nRegistrar URL: http://www.markmonitor.com\nRegistrar WHOIS Server: whois.markmonitor.com\nRegistrar: MarkMonitor Inc.\nRegistrar: MarkMonitor, Inc.\nRegistry Domain ID: 281209_DOMAIN_COM-VRSN\nRegistry Expiry Date: 2024-10-31T04:00:00Z\nTech City: Reno\nTech Country: US\nTech Email: d52ad5e18ac11e26s@amazon.com\nTech Organization: Amazon Technologies, Inc.\nTech Postal Code: 89507\nTech State/Province: NV\nUpdated Date: 2019-05-07T20:09:37Z\nUpdated Date: 2019-08-26T19:19:56+0000",
+            "last_https_certificate_date": 1676966609,
             "tags": [],
-            "country": "US",
-            "last_analysis_date": 1676767972,
-            "as_owner": "GOOGLE-CLOUD-PLATFORM",
+            "popularity_ranks": {
+                "Cisco Umbrella": {
+                    "timestamp": 1676912280,
+                    "rank": 273
+                }
+            },
+            "last_analysis_date": 1676966306,
+            "last_dns_records_date": 1676966609,
             "last_analysis_stats": {
-                "harmless": 87,
+                "harmless": 75,
                 "malicious": 0,
-                "suspicious": 0,
-                "undetected": 0,
+                "suspicious": 1,
+                "undetected": 12,
                 "timeout": 0
             },
-            "asn": 396982,
-            "whois_date": 1676767998,
+            "creation_date": 783666000,
+            "reputation": -38,
+            "registrar": "MarkMonitor Inc.",
             "last_analysis_results": {
                 "Bkav": {
-                    "category": "harmless",
-                    "result": "clean",
+                    "category": "undetected",
+                    "result": "unrated",
                     "method": "blacklist",
                     "engine_name": "Bkav"
                 },
@@ -36,8 +140,8 @@
                     "engine_name": "Snort IP sample list"
                 },
                 "0xSI_f33d": {
-                    "category": "harmless",
-                    "result": "clean",
+                    "category": "undetected",
+                    "result": "unrated",
                     "method": "blacklist",
                     "engine_name": "0xSI_f33d"
                 },
@@ -48,8 +152,8 @@
                     "engine_name": "ViriBack"
                 },
                 "PhishLabs": {
-                    "category": "harmless",
-                    "result": "clean",
+                    "category": "undetected",
+                    "result": "unrated",
                     "method": "blacklist",
                     "engine_name": "PhishLabs"
                 },
@@ -66,14 +170,14 @@
                     "engine_name": "CINS Army"
                 },
                 "Quttera": {
-                    "category": "harmless",
-                    "result": "clean",
+                    "category": "suspicious",
+                    "result": "suspicious",
                     "method": "blacklist",
                     "engine_name": "Quttera"
                 },
                 "PrecisionSec": {
-                    "category": "harmless",
-                    "result": "clean",
+                    "category": "undetected",
+                    "result": "unrated",
                     "method": "blacklist",
                     "engine_name": "PrecisionSec"
                 },
@@ -119,11 +223,11 @@
                     "method": "blacklist",
                     "engine_name": "Phishtank"
                 },
-                "Cyan": {
+                "CyberCrime": {
                     "category": "harmless",
                     "result": "clean",
                     "method": "blacklist",
-                    "engine_name": "Cyan"
+                    "engine_name": "CyberCrime"
                 },
                 "Spam404": {
                     "category": "harmless",
@@ -180,8 +284,8 @@
                     "engine_name": "Seclookup"
                 },
                 "Xcitium Verdict Cloud": {
-                    "category": "harmless",
-                    "result": "clean",
+                    "category": "undetected",
+                    "result": "unrated",
                     "method": "blacklist",
                     "engine_name": "Xcitium Verdict Cloud"
                 },
@@ -198,8 +302,8 @@
                     "engine_name": "Google Safebrowsing"
                 },
                 "SafeToOpen": {
-                    "category": "harmless",
-                    "result": "clean",
+                    "category": "undetected",
+                    "result": "unrated",
                     "method": "blacklist",
                     "engine_name": "SafeToOpen"
                 },
@@ -209,11 +313,11 @@
                     "method": "blacklist",
                     "engine_name": "ADMINUSLabs"
                 },
-                "CyberCrime": {
+                "ESTsecurity": {
                     "category": "harmless",
                     "result": "clean",
                     "method": "blacklist",
-                    "engine_name": "CyberCrime"
+                    "engine_name": "ESTsecurity"
                 },
                 "Juniper Networks": {
                     "category": "harmless",
@@ -228,8 +332,8 @@
                     "engine_name": "Heimdal Security"
                 },
                 "AutoShun": {
-                    "category": "harmless",
-                    "result": "clean",
+                    "category": "undetected",
+                    "result": "unrated",
                     "method": "blacklist",
                     "engine_name": "AutoShun"
                 },
@@ -348,8 +452,8 @@
                     "engine_name": "Yandex Safebrowsing"
                 },
                 "Lumu": {
-                    "category": "harmless",
-                    "result": "clean",
+                    "category": "undetected",
+                    "result": "unrated",
                     "method": "blacklist",
                     "engine_name": "Lumu"
                 },
@@ -408,8 +512,8 @@
                     "engine_name": "Blueliv"
                 },
                 "Netcraft": {
-                    "category": "harmless",
-                    "result": "clean",
+                    "category": "undetected",
+                    "result": "unrated",
                     "method": "blacklist",
                     "engine_name": "Netcraft"
                 },
@@ -461,9 +565,15 @@
                     "method": "blacklist",
                     "engine_name": "G-Data"
                 },
+                "Cyan": {
+                    "category": "undetected",
+                    "result": "unrated",
+                    "method": "blacklist",
+                    "engine_name": "Cyan"
+                },
                 "VIPRE": {
-                    "category": "harmless",
-                    "result": "clean",
+                    "category": "undetected",
+                    "result": "unrated",
                     "method": "blacklist",
                     "engine_name": "VIPRE"
                 },
@@ -473,15 +583,9 @@
                     "method": "blacklist",
                     "engine_name": "SCUMWARE.org"
                 },
-                "ESTsecurity": {
-                    "category": "harmless",
-                    "result": "clean",
-                    "method": "blacklist",
-                    "engine_name": "ESTsecurity"
-                },
                 "PhishFort": {
-                    "category": "harmless",
-                    "result": "clean",
+                    "category": "undetected",
+                    "result": "unrated",
                     "method": "blacklist",
                     "engine_name": "PhishFort"
                 },
@@ -540,19 +644,105 @@
                     "engine_name": "Bfore.Ai PreCrime"
                 }
             },
-            "reputation": 0,
-            "last_modification_date": 1676767998,
-            "total_votes": {
-                "harmless": 0,
-                "malicious": 0
+            "last_update_date": 1566847196,
+            "last_modification_date": 1676972211,
+            "last_https_certificate": {
+                "size": 2007,
+                "public_key": {
+                    "rsa": {
+                        "key_size": 2048,
+                        "modulus": "00bba75058b434f811c8851121170bc492b0ef5f8906dfabee5c93c223c3ee568d3ed927d6dcbe3588d0178ece2b5735ea2a1de6d25f5ac1f8f7c902bc457896f2d310ee73a7af560bf85d28cca5a0a853695cfae6c725aa068ec6685b60ce15fbb5ad91b3cf71820976f5306b8ad5806ab83914f88634abfe2e2f95c77b9c345f61b9f2e5e5eb81c29d1ef7628546b6df7688d9e7bfb7562629dea87d7cf60dc21b5956f0c31410f9602419d40ae9e5b4e29e21d717d641a691c79f5b26fea658306e0eea6afe0aa0e0279c7949f1a38b08da2b2b93d7fc6dcac280e2b44b9219eb9aba2d9f3f86cb93116f7759ca30c0362611aaedb71ddeaca3d7db79187c21",
+                        "exponent": "010001"
+                    },
+                    "algorithm": "RSA"
+                },
+                "thumbprint_sha256": "c75c68984dcb212275f9f892e8d9dc9388397229aad538eab19f7961dd24f80b",
+                "tags": [],
+                "cert_signature": {
+                    "signature": "c3b11595ed492119e64529c89ddb8aeff02701278c0147889673b3d4eae4eecbda9820920f12944f73fbc3d6698bac45365c8e12444d03f3390fb2943a79792bce624b4e3fe538166d9fa324948779c5768dd1a837014fb05e75c8eab7d41ecc6c8708b5a5f945cdb0f63195c6fafb87319450d952f58f78278a6f862daa9435ef51e65a752fcaa3e2b47fe494aaf2e7ea1509e368786c75f7cec9d6a4880acb963cc7b80a99e332e48717d79b1fd2be05f92404750d64b747946167441ea1058e413dd4763de106e4794e4d20da388e6703eee0095926ed879a694d87a265eb28c8086970b93626281b923a114ebc2aae86820a94f5092fb56d6fdf01adf6bf",
+                    "signature_algorithm": "sha256RSA"
+                },
+                "validity": {
+                    "not_after": "2023-10-18 23:59:59",
+                    "not_before": "2022-10-19 00:00:00"
+                },
+                "version": "V3",
+                "extensions": {
+                    "certificate_policies": [
+                        "2.23.140.1.2.1"
+                    ],
+                    "extended_key_usage": [
+                        "serverAuth",
+                        "clientAuth"
+                    ],
+                    "authority_key_identifier": {
+                        "keyid": "246e2b2dd06a925151256901aa9a47a689e74020"
+                    },
+                    "subject_alternative_name": [
+                        "yp.amazon.com",
+                        "yellowpages.amazon.com",
+                        "www.m.amazon.com",
+                        "www.cdn.amazon.com",
+                        "www.amzn.com",
+                        "www.amazon.com",
+                        "us.amazon.com",
+                        "uedata.amazon.com",
+                        "test-www.amazon.com",
+                        "p-yo-www-amazon-com-kalias.amazon.com",
+                        "p-y3-www-amazon-com-kalias.amazon.com",
+                        "p-nt-www-amazon-com-kalias.amazon.com",
+                        "mp3recs.amazon.com",
+                        "konrad-test.amazon.com",
+                        "iphone.amazon.com",
+                        "home.amazon.com",
+                        "corporate.amazon.com",
+                        "buybox.amazon.com",
+                        "amzn.com",
+                        "amazon.com"
+                    ],
+                    "tags": [],
+                    "subject_key_identifier": "09284136bc7d4e66c91d6cd4d2a175dd28e97635",
+                    "crl_distribution_points": [
+                        "http://crl3.digicert.com/DigiCertGlobalCAG2.crl",
+                        "http://crl4.digicert.com/DigiCertGlobalCAG2.crl"
+                    ],
+                    "key_usage": [
+                        "ff"
+                    ],
+                    "1.3.6.1.4.1.11129.2.4.2": "0482016b0169007500adf7befa7cff10c88b9d3d9c1e3e186ab467295dcfb10c",
+                    "CA": true,
+                    "ca_information_access": {
+                        "CA Issuers": "http://cacerts.digicert.com/DigiCertGlobalCAG2.crt",
+                        "OCSP": "http://ocsp.digicert.com"
+                    }
+                },
+                "signature_algorithm": "sha256RSA",
+                "serial_number": "04c3068af64e8b6ea6075271a7ab9170",
+                "thumbprint": "e4131e9e4c94c77edf5934fad882f92e37ce69d9",
+                "issuer": {
+                    "C": "US",
+                    "CN": "DigiCert Global CA G2",
+                    "O": "DigiCert Inc"
+                },
+                "subject": {
+                    "CN": "www.amazon.com"
+                }
             },
-            "continent": "NA",
-            "whois": "No match found for googleusercontent.com.\n"
+            "categories": {
+                "Forcepoint ThreatSeeker": "shopping",
+                "Sophos": "online shopping",
+                "Xcitium Verdict Cloud": "media sharing",
+                "BitDefender": "onlineshop"
+            },
+            "total_votes": {
+                "harmless": 3,
+                "malicious": 1
+            }
         },
-        "type": "ip_address",
-        "id": "34.123.194.52",
+        "type": "domain",
+        "id": "www.amazon.com",
         "links": {
-            "self": "https://www.virustotal.com/api/v3/ip_addresses/34.123.194.52"
+            "self": "https://www.virustotal.com/api/v3/domains/www.amazon.com"
         }
     }
 }

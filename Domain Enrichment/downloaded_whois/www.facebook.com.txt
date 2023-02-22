@@ -21,7 +21,7 @@
    Name Server: D.NS.FACEBOOK.COM
    DNSSEC: unsigned
    URL of the ICANN Whois Inaccuracy Complaint Form: https://www.icann.org/wicf/
->>> Last update of whois database: 2023-02-20T06:33:26Z <<<
+>>> Last update of whois database: 2023-02-21T10:02:23Z <<<
 
 For more information on Whois status codes, please visit https://icann.org/epp
 
@@ -120,7 +120,7 @@ Name Server: A.NS.FACEBOOK.COM
 Name Server: D.NS.FACEBOOK.COM
 DNSSEC: unsigned
 URL of the ICANN WHOIS Data Problem Reporting System: http://wdprs.internic.net/
->>> Last update of WHOIS database: 2023-02-20T06:33:14Z <<<
+>>> Last update of WHOIS database: 2023-02-21T10:02:29Z <<<
 
 Search results obtained from the RegistrarSafe, LLC WHOIS database are
 provided by RegistrarSafe, LLC for information purposes only, to assist

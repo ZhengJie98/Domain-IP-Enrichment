@@ -23,7 +23,7 @@
    Name Server: PDNS6.ULTRADNS.CO.UK
    DNSSEC: unsigned
    URL of the ICANN Whois Inaccuracy Complaint Form: https://www.icann.org/wicf/
->>> Last update of whois database: 2023-02-20T06:33:58Z <<<
+>>> Last update of whois database: 2023-02-21T10:02:38Z <<<
 
 For more information on Whois status codes, please visit https://icann.org/epp
 
@@ -118,13 +118,13 @@ Tech Fax Ext:
 Tech Email: hostmaster@amazon.com
 Name Server: ns3.p31.dynect.net
 Name Server: ns2.p31.dynect.net
-Name Server: pdns1.ultradns.net
+Name Server: ns1.p31.dynect.net
 Name Server: ns4.p31.dynect.net
 Name Server: pdns6.ultradns.co.uk
-Name Server: ns1.p31.dynect.net
+Name Server: pdns1.ultradns.net
 DNSSEC: unsigned
 URL of the ICANN WHOIS Data Problem Reporting System: http://wdprs.internic.net/
->>> Last update of WHOIS database: 2023-02-20T06:31:08+0000 <<<
+>>> Last update of WHOIS database: 2023-02-21T09:58:35+0000 <<<
 
 For more information on WHOIS status codes, please visit:
   https://www.icann.org/resources/pages/epp-status-codes
