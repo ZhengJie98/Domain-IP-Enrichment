@@ -4,6 +4,7 @@
             "network": "80.253.88.0/21",
             "tags": [],
             "country": "CH",
+            "last_analysis_date": 1677050350,
             "as_owner": "Init7 (Switzerland) Ltd.",
             "last_analysis_stats": {
                 "harmless": 87,
@@ -538,7 +539,7 @@
                 }
             },
             "reputation": 0,
-            "last_modification_date": 1677050350,
+            "last_modification_date": 1677050376,
             "regional_internet_registry": "RIPE NCC",
             "continent": "EU",
             "total_votes": {
