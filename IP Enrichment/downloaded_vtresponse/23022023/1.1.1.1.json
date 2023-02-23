@@ -542,7 +542,7 @@
                 }
             },
             "reputation": 89,
-            "last_modification_date": 1677139054,
+            "last_modification_date": 1677142607,
             "total_votes": {
                 "harmless": 73,
                 "malicious": 12
@@ -618,9 +618,9 @@
                 "subject": {
                     "C": "US",
                     "ST": "California",
-                    "L": "San Francisco",
+                    "CN": "cloudflare-dns.com",
                     "O": "Cloudflare, Inc.",
-                    "CN": "cloudflare-dns.com"
+                    "L": "San Francisco"
                 }
             },
             "asn": 13335,
