@@ -3,11 +3,11 @@
         "attributes": {
             "jarm": "27d3ed3ed0003ed1dc42d43d00041d6183ff1bfae51ebd88d70384363d525c",
             "network": "1.1.1.0/24",
-            "last_https_certificate_date": 1677081447,
+            "last_https_certificate_date": 1677130041,
             "tags": [
                 "suspicious-udp"
             ],
-            "last_analysis_date": 1677081146,
+            "last_analysis_date": 1677129738,
             "as_owner": "CLOUDFLARENET",
             "last_analysis_stats": {
                 "harmless": 74,
@@ -542,7 +542,7 @@
                 }
             },
             "reputation": 89,
-            "last_modification_date": 1677125309,
+            "last_modification_date": 1677135896,
             "total_votes": {
                 "harmless": 73,
                 "malicious": 12
