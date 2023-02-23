@@ -1,4 +1,2 @@
-,whois_date,last_analysis_date,reputation,as_owner,country,asn,image,processed_date,last_analysis_stats.harmless,last_analysis_stats.malicious,last_analysis_stats.suspicious,last_analysis_stats.undetected,last_analysis_stats.timeout,total_votes.harmless,total_votes.malicious
-0,1676767998,1676767972,0,GOOGLE-CLOUD-PLATFORM,US,396982,,23022023,87,0,0,0,0,0,0
-1,1606940287,1676767972,0,Volia,UA,25229,,23022023,87,0,0,0,0,0,0
-2,1606940287,1677050350,0,Init7 (Switzerland) Ltd.,CH,13030,,23022023,87,0,0,0,0,0,0
+,ip_address,whois_date,last_analysis_date,reputation,as_owner,country,asn,image,processed_date,last_analysis_stats.harmless,last_analysis_stats.malicious,last_analysis_stats.suspicious,last_analysis_stats.undetected,last_analysis_stats.timeout,total_votes.harmless,total_votes.malicious
+0,1.1.1.1,2023-02-14 03:46:44+08:00,2023-02-22 23:52:26+08:00,89,CLOUDFLARENET,,13335,,23022023,74,0,0,14,0,73,12
