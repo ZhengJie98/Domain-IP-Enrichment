@@ -10,10 +10,10 @@
             "last_analysis_date": 1677129738,
             "as_owner": "CLOUDFLARENET",
             "last_analysis_stats": {
-                "harmless": 74,
-                "malicious": 0,
+                "harmless": 75,
+                "malicious": 1,
                 "suspicious": 0,
-                "undetected": 14,
+                "undetected": 12,
                 "timeout": 0
             },
             "whois_date": 1676317604,
@@ -181,8 +181,8 @@
                     "engine_name": "Seclookup"
                 },
                 "Xcitium Verdict Cloud": {
-                    "category": "undetected",
-                    "result": "unrated",
+                    "category": "malicious",
+                    "result": "malware",
                     "method": "blacklist",
                     "engine_name": "Xcitium Verdict Cloud"
                 },
@@ -235,8 +235,8 @@
                     "engine_name": "AutoShun"
                 },
                 "Trustwave": {
-                    "category": "undetected",
-                    "result": "unrated",
+                    "category": "harmless",
+                    "result": "clean",
                     "method": "blacklist",
                     "engine_name": "Trustwave"
                 },
@@ -542,7 +542,7 @@
                 }
             },
             "reputation": 89,
-            "last_modification_date": 1677135896,
+            "last_modification_date": 1677139054,
             "total_votes": {
                 "harmless": 73,
                 "malicious": 12
@@ -618,9 +618,9 @@
                 "subject": {
                     "C": "US",
                     "ST": "California",
-                    "CN": "cloudflare-dns.com",
+                    "L": "San Francisco",
                     "O": "Cloudflare, Inc.",
-                    "L": "San Francisco"
+                    "CN": "cloudflare-dns.com"
                 }
             },
             "asn": 13335,
