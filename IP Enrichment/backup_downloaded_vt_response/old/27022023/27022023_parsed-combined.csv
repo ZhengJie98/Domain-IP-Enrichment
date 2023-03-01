@@ -1,0 +1,2 @@
+,ip_address,whois_date,last_analysis_date,reputation,as_owner,country,asn,image,processed_date,_id,last_analysis_stats.harmless,last_analysis_stats.malicious,last_analysis_stats.suspicious,last_analysis_stats.undetected,last_analysis_stats.timeout,total_votes.harmless,total_votes.malicious
+0,1.1.1.1,2023-02-14 03:46:44,2023-02-27 08:43:34,89,CLOUDFLARENET,,13335,,2023-02-27 23:48:52.428485+08:00,63fcd0e4311ece06607373a7,74,2,0,12,0,73,12
