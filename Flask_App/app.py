@@ -7,6 +7,7 @@ import datetime
 import atexit
 from apscheduler.schedulers.background import BackgroundScheduler
 from apscheduler.triggers.interval import IntervalTrigger
+# import os
 
 
 # UPLOAD_FOLDER = '/uploaded_files'
@@ -41,40 +42,23 @@ def test():
 ## SAVES FILE AS FILENAME_DTSTRING TO PREVENT OVERWRITING
 def saveFile(file):
     now = datetime.datetime.now()
-    dt_string = now.strftime("%m%d%Y_%H%M%S")
+    dt_string = now.strftime("%Y%d%m_%H%M%S")
     filename_splitted = secure_filename(file.filename).split('.csv') 
     filename = filename_splitted[0] + '_' + str(dt_string) + ".csv"
+    # filename = secure_filename(file.filename)
     row_count = sum(1 for row in file) - 1
     # print("row_count:", row_count)
 
-    file = file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+    file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+    # file.save(secure_filename(file.filename))
     
     global TASK_QUEUE
     TASK_QUEUE.append([filename,row_count])
     print("TASK_QUEUE:", TASK_QUEUE)
     return jsonify(TASK_QUEUE) 
 
-# def addQueue(file,filename):
-#     print(file)
-#     row_count = sum(1 for row in file) - 1
-#     print("row_count:", row_count)
-#     TASK_QUEUE.append([filename,row_count])
-#     print("TASK QUEUE AFTER APPEND:", TASK_QUEUE)
 
-#     return TASK_QUEUE
-
-# def print_date_time():
-#     print(time.strftime("%A, %d. %B %Y %I:%M:%S %p"))
-#     time.sleep(5)
-
-
-# scheduler = BackgroundScheduler()
-# scheduler.add_job(func=print_date_time, trigger="interval", seconds=5)
-# scheduler.start()
-
-# # # Shut down the scheduler when exiting the app
-# atexit.register(lambda: scheduler.shutdown())
-
+# Scheduled Processing
 
 scheduler = BackgroundScheduler()
 scheduler.start()
@@ -83,9 +67,27 @@ scheduler.start()
 def func_to_be_executed():
     now = datetime.datetime.now()
     print("now:", now, TASK_QUEUE)
-#   pass
+
+# @scheduler.scheduled_job(IntervalTrigger(seconds=5))
+# def func_to_be_executed():
+#     now = datetime.datetime.now()
+#     global DAILY_LIMIT
+#     print("now:", now, TASK_QUEUE)
+#     print("DAILY LIMIT:", DAILY_LIMIT)
+    
+#     while (DAILY_LIMIT > 0) and (len(TASK_QUEUE) > 0):
+#         print("DAILY_LIMIT LEFT:", DAILY_LIMIT)
+#         for each in TASK_QUEUE:
+#             popped_task = TASK_QUEUE.pop(0)
+
+#             # print("Daily Limit:", DAILY_LIMIT)
+#             # print("FileName:", each[0])
+#             # print("row_counts:", each[1])   
+#             DAILY_LIMIT -= each[1]
+#             print("REMAINING DAILY_LIMITS:", DAILY_LIMIT)
 
 
-if __name__ == "__main__":
-   app.run(debug=True, use_reloader=False)
-# app.run(debug=True, use_reloader=False)
+
+# if __name__ == "__main__":
+#    app.run(debug=True)
+app.run(debug=True, use_reloader=False)

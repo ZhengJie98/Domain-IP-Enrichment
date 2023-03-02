@@ -27,8 +27,12 @@ json_template_ip = {
     "country": "",
     "asn": "",
     "image":"",
-    "processed_date":"",
-    "target_geo_country":""  ## input from original excel
+    "processed_date":"", ## leave empty until you process it from DB.
+    "failure_count":"",## if it hits a threshold then stop calling it.
+    "added_timestamp":"",
+    "is_priority": "", ## 1 for individual submissions or 0 for CSVs
+    "source":"", ## if its CSV then put csvName, if its individual then put individual
+    "target_geo_country":""  ## input from original excel, MAKE THIS DYNAMIC COULD HAVE MORE COLUUMNS
        
 }
 
