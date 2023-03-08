@@ -22,18 +22,47 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 
 @app.route("/uploadIP", methods=['POST'])
-def ip_vt_call():
+def upload_ip():
     if request.method == 'POST':
         file = request.files['file']
-        saveFileResponse = saveFile(file)
-        return saveFileResponse
-    
+        save_ipfile_response = save_ipfile(file)
+
+        return "ipfile saved"
+
+@app.route("/processIPtest", methods=['POST'])
+def process_IP_test():
+    return "hehe"
+
 @app.route("/test", methods=['POST'])
 def test():
+
+    
     print("=====TEST FUNCTION CALLED=====")
-    print("CURRENT TASK_QUEUE:", TASK_QUEUE)
+    # print("CURRENT TASK_QUEUE:", TASK_QUEUE)
     if request.method == 'POST':
-        run_process_iplist()
+        file = request.files['file']
+        save_ipfile(file)
+        # now = datetime.datetime.now()
+        
+        # df = pd.read_csv(file)
+
+        # for key in templatey.keys():
+        #     df[key] = ""
+        
+        # df["processed_date"] = ""
+        # df["failure_count"] = 0
+        # df["added_timestamp"] = now
+        # df["is_priority"] = 0
+        # df["source"] = "csv"
+
+        
+
+        # # print("df", df)
+        # records_ = df.to_dict(orient = 'records') 
+        # print(records_)
+        # result = db.ip.insert_many(records_ ) 
+
+        # saveFileResponse = saveFile(file)
     
 
     return "all's okay"
@@ -60,13 +89,13 @@ def saveFile(file):
 
 # Scheduled Processing
 
-scheduler = BackgroundScheduler()
-scheduler.start()
+# scheduler = BackgroundScheduler()
+# scheduler.start()
 
-@scheduler.scheduled_job(IntervalTrigger(seconds=2))
-def func_to_be_executed():
-    now = datetime.datetime.now()
-    print("now:", now, TASK_QUEUE)
+# @scheduler.scheduled_job(IntervalTrigger(seconds=2))
+# def func_to_be_executed():
+#     now = datetime.datetime.now()
+#     print("now:", now, TASK_QUEUE)
 
 # @scheduler.scheduled_job(IntervalTrigger(seconds=5))
 # def func_to_be_executed():
@@ -88,6 +117,6 @@ def func_to_be_executed():
 
 
 
-# if __name__ == "__main__":
-#    app.run(debug=True)
-app.run(debug=True, use_reloader=False)
+if __name__ == "__main__":
+   app.run(debug=True)
+# app.run(debug=True, use_reloader=False)

@@ -17,7 +17,7 @@
 # import csv
 # import datetime
 # import os
-# import pandas as pd
+import pandas as pd
 # from dateutil import tz
 # import pytz
 # from pymongo import MongoClient
@@ -26,22 +26,31 @@
 # # from app import *
 
  
-# json_template_ip = {
+json_template_ip = {
     
-#     "ip_address": "",
-#     "whois_date": "",
-#     "last_analysis_date": "",
-#     "reputation": "",
-#     "last_analysis_stats": "",
-#     "total_votes": "",
-#     "as_owner": "",
-#     "country": "",
-#     "asn": "",
-#     "image":"",
-#     "processed_date":"",
-#     "target_geo_country":""  ## input from original excel
+    "ip_address": "",
+    "whois_date": "",
+    "last_analysis_date": "",
+    "reputation": "",
+    "last_analysis_stats": "",
+    "total_votes": "",
+    "as_owner": "",
+    "country": "",
+    "asn": "",
+    "image":"",
+    "processed_date":"",
+    "target_geo_country":""  ## input from original excel
        
-# }
+}
+
+for key in json_template_ip.keys():
+    print(key)
+
+normalised = pd.json_normalize(json_template_ip)
+print(normalised)
+# df = pd.read_json(json_template_ip)
+# print(df)
+
 
 # UPLOAD_FOLDER = join(dirname(realpath(__file__)), 'upload_folder')
 # print(UPLOAD_FOLDER)

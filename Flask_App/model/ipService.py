@@ -13,28 +13,48 @@ from pymongo import MongoClient
 import atexit
 from apscheduler.schedulers.background import BackgroundScheduler
 from app import *
+from werkzeug.utils import secure_filename
+
 
  
-json_template_ip = {
+# json_template_ip = {
     
-    "ip_address": "",
-    "whois_date": "",
-    "last_analysis_date": "",
-    "reputation": "",
-    "last_analysis_stats": "",
-    "total_votes": "",
-    "as_owner": "",
-    "country": "",
-    "asn": "",
-    "image":"",
-    "processed_date":"", ## leave empty until you process it from DB.
-    "failure_count":"",## if it hits a threshold then stop calling it.
-    "added_timestamp":"",
-    "is_priority": "", ## 1 for individual submissions or 0 for CSVs
-    "source":"", ## if its CSV then put csvName, if its individual then put individual
-    "target_geo_country":""  ## input from original excel, MAKE THIS DYNAMIC COULD HAVE MORE COLUUMNS
+#     "ip_address": "",
+#     "whois_date": "",
+#     "last_analysis_date": "",
+#     "reputation": "",
+#     "last_analysis_stats": "",
+#     "total_votes": "",
+#     "as_owner": "",
+#     "country": "",
+#     "asn": "",
+#     "processed_date":"", ## leave empty until you process it from DB.
+#     "failure_count":"",## if it hits a threshold then stop calling it.
+#     "added_timestamp":"",
+#     "is_priority": "", ## 1 for individual submissions or 0 for CSVs
+#     "source":"", ## if its CSV then put csvName, if its individual then put individual
+#     "target_geo_country":""  ## input from original excel, MAKE THIS DYNAMIC COULD HAVE MORE COLUUMNS
        
-}
+# }
+
+ip_template = {
+    
+        # "ALL_COLUMNS_IN_EXCEL": "",
+        "whois_date": "",
+        "last_analysis_date": "",
+        "reputation": "",
+        "last_analysis_stats": "",
+        "total_votes": "",
+        "as_owner": "",
+        "country": "",
+        "asn": "",
+        "processed_date":"", ## leave empty until you process it from DB.
+        "failure_count":"",## if it hits a threshold then stop calling it.
+        "added_timestamp":"",
+        "is_priority": "", ## 1 for individual submissions or 0 for CSVs
+        "source":"", ## if its CSV then put csvName, if its individual then put individual
+        
+    }
 
 API_KEY = '0d9fdb6e32d74b9d12e3d894309531838c3aabe8d66b049fd3a7976fbedf2c68'  #@param  {type: "string"}
 # API_KEY = '207349263f9c5edd176cc079fa8000a5ab912df7d9e91154842c08031658675d'  #@param  {type: "string"}
@@ -48,8 +68,34 @@ db = client['filtered_sg_ip_list_day1']
 
 
 
-def run_process_iplist():
-    print("TASK_QUEUE:", TASK_QUEUE)
+## Saves to db and a harddisk file
+def save_ipfile(file):
+    print("===== save_iplist() =====:")
+    now = datetime.datetime.now()
+        
+    df = pd.read_csv(file)
+
+
+    ## FOR HARDDISK
+    dt_string = now.strftime("%Y%m%d_%H%M%S")
+    filename_splitted = secure_filename(file.filename).split('.csv') 
+    filename = filename_splitted[0] + '_' + str(dt_string) + ".csv"
+    df.to_csv(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+
+
+    ## FOR DATABASE
+    for key in ip_template.keys():
+        df[key] = ""
+    
+    df["processed_date"] = ""
+    df["failure_count"] = 0
+    df["added_timestamp"] = now
+    df["is_priority"] = 0
+    df["source"] = "csv"
+    records_ = df.to_dict(orient = 'records') 
+    result = db.ip.insert_many(records_ ) 
+
+    return result
 
 
 
