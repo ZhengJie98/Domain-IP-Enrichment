@@ -7,6 +7,7 @@ import datetime
 import atexit
 from apscheduler.schedulers.background import BackgroundScheduler
 from apscheduler.triggers.interval import IntervalTrigger
+import pymongo
 # import os
 
 
@@ -15,6 +16,13 @@ UPLOAD_FOLDER = join(dirname(realpath(__file__)), 'upload_folder')
 ALLOWED_EXTENSIONS = {'csv'}
 DAILY_LIMIT = 500
 TASK_QUEUE = [] ## Array of Arrays [filename,]
+X_DAYS_AGO = 7
+
+
+client = MongoClient('localhost',27017)
+db = client['filtered_sg_ip_list']
+col = db["ip"]
+    
 
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
@@ -28,10 +36,27 @@ def upload_ip():
         save_ipfile_response = save_ipfile(file)
 
         return "ipfile saved"
+    
 
-@app.route("/processIPtest", methods=['POST'])
+@app.route("/processIPtest", methods=['GET'])
 def process_IP_test():
-    return "hehe"
+
+    cursor = col.find({"processed_date" : ""}, {"is_priority" : 0}).sort("added_timestamp", pymongo.ASCENDING).limit(DAILY_LIMIT)
+    
+    # document_count = len(list(cursor))
+    # print(cursor)
+    for ip_doc in cursor:
+        # print("ip_doc:", ip_doc)
+        # print("type:", type(ip_doc))
+        # print("------")
+        ip = ip_doc['ip']
+        # print("ip:", ip)
+        updated_ip_doc = process_ip(ip_doc, X_DAYS_AGO)
+        col.replace_one(ip_doc, updated_ip_doc)
+        break
+    # print(process_ip("1.1.1.1",7))
+
+    return "success"
 
 @app.route("/test", methods=['POST'])
 def test():
@@ -41,28 +66,7 @@ def test():
     # print("CURRENT TASK_QUEUE:", TASK_QUEUE)
     if request.method == 'POST':
         file = request.files['file']
-        save_ipfile(file)
-        # now = datetime.datetime.now()
         
-        # df = pd.read_csv(file)
-
-        # for key in templatey.keys():
-        #     df[key] = ""
-        
-        # df["processed_date"] = ""
-        # df["failure_count"] = 0
-        # df["added_timestamp"] = now
-        # df["is_priority"] = 0
-        # df["source"] = "csv"
-
-        
-
-        # # print("df", df)
-        # records_ = df.to_dict(orient = 'records') 
-        # print(records_)
-        # result = db.ip.insert_many(records_ ) 
-
-        # saveFileResponse = saveFile(file)
     
 
     return "all's okay"

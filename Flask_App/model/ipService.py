@@ -62,8 +62,8 @@ API_KEY = '0d9fdb6e32d74b9d12e3d894309531838c3aabe8d66b049fd3a7976fbedf2c68'  #@
 
 
 client = MongoClient('localhost',27017)
-# db = client['d_ip_enrich']
-db = client['filtered_sg_ip_list_day1']
+db = client['filtered_sg_ip_list']
+col = db["ip"]
     
 
 
@@ -99,6 +99,49 @@ def save_ipfile(file):
 
 
 
+def process_ip(ip_doc, x_days_ago):
+    
+    print("===== process_ip service start =====")
+    print(type(ip_doc))
+    now = datetime.datetime.now()
+    dt_string = now.strftime("%d%m%Y")
+    d = datetime.timedelta(days = x_days_ago)
+    deducted_date = (now - d).strftime("%d%m%Y")
+
+    if not os.path.exists("downloaded_vtresponse"):
+        os.makedirs("downloaded_vtresponse")
+
+    if not os.path.exists("downloaded_vtresponse/" + dt_string):
+        os.makedirs("downloaded_vtresponse/" + dt_string)
+
+    ## MISSING ERROR HANDLING OF 2XX
+
+    ip = str(ip_doc["ip"])
+    # print("ip:", ip)
+    r = requests.get("https://www.virustotal.com/api/v3/ip_addresses/"+ ip, headers={"x-apikey":API_KEY})
+    r = r.json()
+    # print("r:", r)
+
+    ## write to json file
+    with open("downloaded_vtresponse/" + dt_string + "/" + ip + ".json", "w") as outfile:
+        json_obj = json.dumps(r)
+        outfile.write(json_obj)
+        # print("type r after json dumps:", type(r))
+
+    ## populate fields in JSON template
+    for k,v in ip_doc.items():
+        print("current (k,v)", (k,v))
+        
+        try:
+            ip_doc[k] = r['data']['attributes'][k]
+        
+        except Exception as e:
+            print(e, "for", (k,v))
+
+    time.sleep(16)
+
+
+    return ip_doc
 
 
 def process_iplist(filename_to_process, columnIndex, x_days_ago):
