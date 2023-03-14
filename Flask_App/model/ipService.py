@@ -70,7 +70,7 @@ def save_ipfile(file):
     for key in ip_template.keys():
         df[key] = ""
     
-    # df["failure_count"] = 0
+    df["failure_count"] = 0
     df["x_days_ago"] = X_DAYS_AGO
     df["added_timestamp"] = now
     df["is_priority"] = 0
@@ -98,7 +98,7 @@ def process_ip_parent():
             print(e)
 
         ## COMMENT OUT FOR ACTUAL
-        break
+        # break
     
     return "replacement successful"
         
@@ -132,13 +132,19 @@ def process_ip(ip_doc, x_days_ago):
     if not os.path.exists("downloaded_vtresponse/" + dt_string):
         os.makedirs("downloaded_vtresponse/" + dt_string)
 
-    ## MISSING ERROR HANDLING OF 2XX
-
-  
     # print("ip_address:", ip_address)
     r = requests.get("https://www.virustotal.com/api/v3/ip_addresses/"+ ip, headers={"x-apikey":API_KEY})
+
+    
+    ## MISSING ERROR HANDLING OF 2XX, TO SKIP THIS ONE
+    if (r.status_code < 200 and r.status_code > 299):
+        print("STATUS CODE NOT GOOD ")
+        return
+    
     r = r.json()
     # print("r:", r)
+
+    
 
     ## write to json file
     with open("downloaded_vtresponse/" + dt_string + "/" + ip + ".json", "w") as outfile:
