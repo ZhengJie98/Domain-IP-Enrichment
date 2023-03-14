@@ -164,6 +164,13 @@ def process_ip(ip_doc, x_days_ago):
     return ip_doc
 
 def testing():
+
+    x = "hehe"
+
+    
+# check if file has been processed x_days_ago, to be done before retrieving 500 for actual processing
+# TO BE CHECKED ONLY WHEN PROCESSIG THE IP ITSELF
+def to_skip():
     
     x_days_ago = X_DAYS_AGO
     # print("global variable X_DAYS_AGO:", X_DAYS_AGO)
@@ -186,19 +193,7 @@ def testing():
         length_second_cursor = len(list(second_cursor.clone()))
         # print("length:", len(list(second_cursor.clone())))
         if length_second_cursor == 1:
-            col.update_one({"ip_address": ip_address, "$set" : {"to_skip" : 0}})
-
-
-
-    # for ip_doc in cursor:
-    #     print(ip_doc)
-        # return ip_doc
-        # print('hehe')
-    
-# check if file has been processed x_days_ago, to be done before retrieving 500 for actual processing
-def to_skip():
-    
-
+            col.update_one({"ip_address": ip_address}, {"$set" : {"to_skip" : 0}})
 
         # if multiple in queue but havent processed..
         # if got only got one in queue but processed within x_days_ago

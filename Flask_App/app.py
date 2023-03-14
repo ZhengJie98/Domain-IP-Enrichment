@@ -51,7 +51,8 @@ def test():
     
     print("=====TEST FUNCTION CALLED=====")
     # print("CURRENT TASK_QUEUE:", TASK_QUEUE)
-    testing()
+    # testing()
+    to_skip()
     # retrieve_ips_to_process(500)
 
     return "testing successful"
