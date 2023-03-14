@@ -41,21 +41,8 @@ def upload_ip():
 @app.route("/processIPtest", methods=['GET'])
 def process_IP_test():
 
-    cursor = col.find({"processed_date" : ""}, {"is_priority" : 0}).sort("added_timestamp", pymongo.ASCENDING).limit(DAILY_LIMIT)
-    
-    # document_count = len(list(cursor))
-    # print(cursor)
-    for ip_doc in cursor:
-        # print("ip_doc:", ip_doc)
-        # print("type:", type(ip_doc))
-        # print("------")
-        ip = ip_doc['ip']
-        # print("ip:", ip)
-        updated_ip_doc = process_ip(ip_doc, X_DAYS_AGO)
-        col.replace_one(ip_doc, updated_ip_doc)
-        break
-    # print(process_ip("1.1.1.1",7))
-
+    process_ip_parent()
+   
     return "success"
 
 @app.route("/test", methods=['POST'])
@@ -72,23 +59,23 @@ def test():
     return "all's okay"
 
 
-## SAVES FILE AS FILENAME_DTSTRING TO PREVENT OVERWRITING
-def saveFile(file):
-    now = datetime.datetime.now()
-    dt_string = now.strftime("%Y%d%m_%H%M%S")
-    filename_splitted = secure_filename(file.filename).split('.csv') 
-    filename = filename_splitted[0] + '_' + str(dt_string) + ".csv"
-    # filename = secure_filename(file.filename)
-    row_count = sum(1 for row in file) - 1
-    # print("row_count:", row_count)
+# ## SAVES FILE AS FILENAME_DTSTRING TO PREVENT OVERWRITING
+# def saveFile(file):
+#     now = datetime.datetime.now()
+#     dt_string = now.strftime("%Y%d%m_%H%M%S")
+#     filename_splitted = secure_filename(file.filename).split('.csv') 
+#     filename = filename_splitted[0] + '_' + str(dt_string) + ".csv"
+#     # filename = secure_filename(file.filename)
+#     row_count = sum(1 for row in file) - 1
+#     # print("row_count:", row_count)
 
-    file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
-    # file.save(secure_filename(file.filename))
+#     file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+#     # file.save(secure_filename(file.filename))
     
-    global TASK_QUEUE
-    TASK_QUEUE.append([filename,row_count])
-    print("TASK_QUEUE:", TASK_QUEUE)
-    return jsonify(TASK_QUEUE) 
+#     global TASK_QUEUE
+#     TASK_QUEUE.append([filename,row_count])
+#     print("TASK_QUEUE:", TASK_QUEUE)
+#     return jsonify(TASK_QUEUE) 
 
 
 # Scheduled Processing

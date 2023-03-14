@@ -16,30 +16,11 @@ from app import *
 from werkzeug.utils import secure_filename
 
 
- 
-# json_template_ip = {
-    
-#     "ip_address": "",
-#     "whois_date": "",
-#     "last_analysis_date": "",
-#     "reputation": "",
-#     "last_analysis_stats": "",
-#     "total_votes": "",
-#     "as_owner": "",
-#     "country": "",
-#     "asn": "",
-#     "processed_date":"", ## leave empty until you process it from DB.
-#     "failure_count":"",## if it hits a threshold then stop calling it.
-#     "added_timestamp":"",
-#     "is_priority": "", ## 1 for individual submissions or 0 for CSVs
-#     "source":"", ## if its CSV then put csvName, if its individual then put individual
-#     "target_geo_country":""  ## input from original excel, MAKE THIS DYNAMIC COULD HAVE MORE COLUUMNS
-       
-# }
-
 ip_template = {
     
         # "ALL_COLUMNS_IN_EXCEL": "",
+        "x_days_ago": "",
+        "to_skip": "",
         "whois_date": "",
         "last_analysis_date": "",
         "reputation": "",
@@ -48,9 +29,9 @@ ip_template = {
         "as_owner": "",
         "country": "",
         "asn": "",
-        "processed_date":"", ## leave empty until you process it from DB.
-        "failure_count":"",## if it hits a threshold then stop calling it.
         "added_timestamp":"",
+        "processed_timestamp":"", ## leave empty until you process it from DB.
+        "failure_count": 0,## if it hits a threshold then stop calling it.
         "is_priority": "", ## 1 for individual submissions or 0 for CSVs
         "source":"", ## if its CSV then put csvName, if its individual then put individual
         
@@ -72,12 +53,13 @@ col = db["ip"]
 def save_ipfile(file):
     print("===== save_iplist() =====:")
     now = datetime.datetime.now()
-        
     df = pd.read_csv(file)
 
+    ## TAKING FIRST COL TO BE IP 
+    df.columns.values[0] = "ip_address"
 
     ## FOR HARDDISK
-    dt_string = now.strftime("%Y%m%d_%H%M%S")
+    dt_string = now.strftime("%Y%m%d_%H%M%S.%f")[:-3]   
     filename_splitted = secure_filename(file.filename).split('.csv') 
     filename = filename_splitted[0] + '_' + str(dt_string) + ".csv"
     df.to_csv(os.path.join(app.config['UPLOAD_FOLDER'], filename))
@@ -87,8 +69,7 @@ def save_ipfile(file):
     for key in ip_template.keys():
         df[key] = ""
     
-    df["processed_date"] = ""
-    df["failure_count"] = 0
+    # df["failure_count"] = 0
     df["added_timestamp"] = now
     df["is_priority"] = 0
     df["source"] = "csv"
@@ -97,12 +78,33 @@ def save_ipfile(file):
 
     return result
 
+def process_ip_parent():
+    
+    cursor = retrieve_ips_to_process(DAILY_LIMIT)
+    for ip_doc in cursor:
 
+        db_id = ip_doc['_id']
+        updated_ip_doc = process_ip(ip_doc, X_DAYS_AGO)
+   
+        try : 
+            col.replace_one({"_id" : db_id}, updated_ip_doc)
+            print("replacement successful")
+        
+        except Exception as e:
+            print(e)
+        break
+    
+    return "replacement successful"
+        
+
+def retrieve_ips_to_process(DAILY_LIMIT):
+    cursor = col.find({"processed_date" : ""}, {"is_priority" : 0}).sort("added_timestamp", pymongo.ASCENDING).limit(DAILY_LIMIT)
+    return cursor
 
 def process_ip(ip_doc, x_days_ago):
     
     print("===== process_ip service start =====")
-    print(type(ip_doc))
+    # print(type(ip_doc))
     now = datetime.datetime.now()
     dt_string = now.strftime("%d%m%Y")
     d = datetime.timedelta(days = x_days_ago)
@@ -116,8 +118,8 @@ def process_ip(ip_doc, x_days_ago):
 
     ## MISSING ERROR HANDLING OF 2XX
 
-    ip = str(ip_doc["ip"])
-    # print("ip:", ip)
+    ip = str(ip_doc["ip_address"])
+    # print("ip_address:", ip_address)
     r = requests.get("https://www.virustotal.com/api/v3/ip_addresses/"+ ip, headers={"x-apikey":API_KEY})
     r = r.json()
     # print("r:", r)
@@ -129,8 +131,9 @@ def process_ip(ip_doc, x_days_ago):
         # print("type r after json dumps:", type(r))
 
     ## populate fields in JSON template
+    ip_doc['processed_timestamp'] = now
     for k,v in ip_doc.items():
-        print("current (k,v)", (k,v))
+        # print("current (k,v)", (k,v))
         
         try:
             ip_doc[k] = r['data']['attributes'][k]
@@ -138,10 +141,49 @@ def process_ip(ip_doc, x_days_ago):
         except Exception as e:
             print(e, "for", (k,v))
 
+    # print("final ip_doc:", ip_doc)
     time.sleep(16)
-
+    print("16 seconds waiting done")
 
     return ip_doc
+
+
+# check if file exist in folder_to_process during x_days_ago, returns 0 or 1
+def to_skip(filename, folder_to_process, x_days_ago):
+    
+    now = datetime.datetime.now()
+    dt_string = now.strftime("%d%m%Y")
+    d = datetime.timedelta(days = x_days_ago)
+    deducted_date = (now - d).strftime("%d%m%Y")
+    to_skip = 0
+
+    folders = os.listdir("downloaded_vtresponse")
+    folders = os.listdir(folder_to_process)
+    
+
+    for folder in folders:
+
+        if to_skip == 1:
+            break
+
+        # target folders within X days range
+        if folder >= deducted_date:
+            files_array = os.listdir("downloaded_vtresponse/" + folder)
+#                         print(files_array)
+
+            for file in files_array:
+                filename_filetype = file.rsplit('.',1)
+    #             print(filename_filedate)
+
+                ## if filename == target THEN SKIP + WRITE A NOTE
+                if filename == filename_filetype[0]:
+                    print(f"file has been processed on {folder} which is <{x_days_ago} days ago, will skip API call")
+                    to_skip = 1
+                    break
+        
+    
+    return to_skip
+
 
 
 def process_iplist(filename_to_process, columnIndex, x_days_ago):
@@ -221,43 +263,6 @@ def process_iplist(filename_to_process, columnIndex, x_days_ago):
                 
     print("======= process_iplist() END ======= \n\n")
 #                 time.sleep(16)
-
-
-# check if file exist in folder_to_process during x_days_ago, returns 0 or 1
-def to_skip(filename, folder_to_process, x_days_ago):
-    
-    now = datetime.datetime.now()
-    dt_string = now.strftime("%d%m%Y")
-    d = datetime.timedelta(days = x_days_ago)
-    deducted_date = (now - d).strftime("%d%m%Y")
-    to_skip = 0
-
-    folders = os.listdir("downloaded_vtresponse")
-    folders = os.listdir(folder_to_process)
-    
-
-    for folder in folders:
-
-        if to_skip == 1:
-            break
-
-        # target folders within X days range
-        if folder >= deducted_date:
-            files_array = os.listdir("downloaded_vtresponse/" + folder)
-#                         print(files_array)
-
-            for file in files_array:
-                filename_filetype = file.rsplit('.',1)
-    #             print(filename_filedate)
-
-                ## if filename == target THEN SKIP + WRITE A NOTE
-                if filename == filename_filetype[0]:
-                    print(f"file has been processed on {folder} which is <{x_days_ago} days ago, will skip API call")
-                    to_skip = 1
-                    break
-        
-    
-    return to_skip
 
 
     #     print(os.listdir("downloaded_vtresponse/"+ folder))    
