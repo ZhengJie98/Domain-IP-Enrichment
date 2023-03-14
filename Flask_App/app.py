@@ -51,12 +51,11 @@ def test():
     
     print("=====TEST FUNCTION CALLED=====")
     # print("CURRENT TASK_QUEUE:", TASK_QUEUE)
-    if request.method == 'POST':
-        file = request.files['file']
-        
-    
+    testing()
+    # retrieve_ips_to_process(500)
 
-    return "all's okay"
+    return "testing successful"
+
 
 
 # ## SAVES FILE AS FILENAME_DTSTRING TO PREVENT OVERWRITING

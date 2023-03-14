@@ -14,6 +14,7 @@ import atexit
 from apscheduler.schedulers.background import BackgroundScheduler
 from app import *
 from werkzeug.utils import secure_filename
+import bson
 
 
 ip_template = {
@@ -70,6 +71,7 @@ def save_ipfile(file):
         df[key] = ""
     
     # df["failure_count"] = 0
+    df["x_days_ago"] = X_DAYS_AGO
     df["added_timestamp"] = now
     df["is_priority"] = 0
     df["source"] = "csv"
@@ -79,10 +81,12 @@ def save_ipfile(file):
     return result
 
 def process_ip_parent():
-    
-    cursor = retrieve_ips_to_process(DAILY_LIMIT)
-    for ip_doc in cursor:
 
+    cursor = retrieve_ips_to_process(DAILY_LIMIT)
+    
+    for ip_doc in cursor:
+        
+        print("ip_doc:", ip_doc)
         db_id = ip_doc['_id']
         updated_ip_doc = process_ip(ip_doc, X_DAYS_AGO)
    
@@ -92,19 +96,31 @@ def process_ip_parent():
         
         except Exception as e:
             print(e)
+
+        ## COMMENT OUT FOR ACTUAL
         break
     
     return "replacement successful"
         
 
 def retrieve_ips_to_process(DAILY_LIMIT):
-    cursor = col.find({"processed_date" : ""}, {"is_priority" : 0}).sort("added_timestamp", pymongo.ASCENDING).limit(DAILY_LIMIT)
+    print("===== retrieve_ips_to_process() START =====")
+    cursor = col.find({"processed_timestamp" : ""}, {"is_priority" : 0}).sort("added_timestamp", pymongo.ASCENDING).limit(DAILY_LIMIT)
+    # for item in cursor:
+        
+        # print("item:", item)
+        # print("hello")
+    print("===== retrieve_ips_to_process() END =====")
     return cursor
 
+## Calls VT API, writes response to hard disk + database
 def process_ip(ip_doc, x_days_ago):
     
     print("===== process_ip service start =====")
-    # print(type(ip_doc))
+
+    ip = str(ip_doc["ip_address"])
+    print("processing ip for:", ip )
+
     now = datetime.datetime.now()
     dt_string = now.strftime("%d%m%Y")
     d = datetime.timedelta(days = x_days_ago)
@@ -118,7 +134,7 @@ def process_ip(ip_doc, x_days_ago):
 
     ## MISSING ERROR HANDLING OF 2XX
 
-    ip = str(ip_doc["ip_address"])
+  
     # print("ip_address:", ip_address)
     r = requests.get("https://www.virustotal.com/api/v3/ip_addresses/"+ ip, headers={"x-apikey":API_KEY})
     r = r.json()
@@ -147,42 +163,112 @@ def process_ip(ip_doc, x_days_ago):
 
     return ip_doc
 
-
-# check if file exist in folder_to_process during x_days_ago, returns 0 or 1
-def to_skip(filename, folder_to_process, x_days_ago):
+def testing():
     
+    x_days_ago = X_DAYS_AGO
+    # print("global variable X_DAYS_AGO:", X_DAYS_AGO)
+
     now = datetime.datetime.now()
     dt_string = now.strftime("%d%m%Y")
     d = datetime.timedelta(days = x_days_ago)
     deducted_date = (now - d).strftime("%d%m%Y")
     to_skip = 0
 
-    folders = os.listdir("downloaded_vtresponse")
-    folders = os.listdir(folder_to_process)
+    cursor = col.find({"to_skip" : ""})
+
+    for ip_doc in cursor:
+        to_skip = 0
+        ip_address = ip_doc["ip_address"]
+        print("current ip_address:", ip_address)
+        x_days_ago = ip_doc['x_days_ago']
+
+        second_cursor = col.find({"ip_address" : ip_address})
+        length_second_cursor = len(list(second_cursor.clone()))
+        # print("length:", len(list(second_cursor.clone())))
+        if length_second_cursor == 1:
+            col.update_one({"ip_address": ip_address, "$set" : {"to_skip" : 0}})
+
+
+
+    # for ip_doc in cursor:
+    #     print(ip_doc)
+        # return ip_doc
+        # print('hehe')
+    
+# check if file has been processed x_days_ago, to be done before retrieving 500 for actual processing
+def to_skip():
     
 
-    for folder in folders:
 
-        if to_skip == 1:
-            break
+        # if multiple in queue but havent processed..
+        # if got only got one in queue but processed within x_days_ago
+        # if only got one in queue but not processed within x_days_ago
 
-        # target folders within X days range
-        if folder >= deducted_date:
-            files_array = os.listdir("downloaded_vtresponse/" + folder)
-#                         print(files_array)
 
-            for file in files_array:
-                filename_filetype = file.rsplit('.',1)
-    #             print(filename_filedate)
+    # folders = os.listdir("downloaded_vtresponse")
+    # folders = os.listdir(folder_to_process)
+    
 
-                ## if filename == target THEN SKIP + WRITE A NOTE
-                if filename == filename_filetype[0]:
-                    print(f"file has been processed on {folder} which is <{x_days_ago} days ago, will skip API call")
-                    to_skip = 1
-                    break
+#     for folder in folders:
+
+#         if to_skip == 1:
+#             break
+
+#         # target folders within X days range
+#         if folder >= deducted_date:
+#             files_array = os.listdir("downloaded_vtresponse/" + folder)
+# #                         print(files_array)
+
+#             for file in files_array:
+#                 filename_filetype = file.rsplit('.',1)
+#     #             print(filename_filedate)
+
+#                 ## if filename == target THEN SKIP + WRITE A NOTE
+#                 if filename == filename_filetype[0]:
+#                     print(f"file has been processed on {folder} which is <{x_days_ago} days ago, will skip API call")
+#                     to_skip = 1
+#                     break
         
     
     return to_skip
+
+
+
+# # check if file exist in folder_to_process during x_days_ago, returns 0 or 1
+# def to_skip(filename, folder_to_process, x_days_ago):
+    
+#     now = datetime.datetime.now()
+#     dt_string = now.strftime("%d%m%Y")
+#     d = datetime.timedelta(days = x_days_ago)
+#     deducted_date = (now - d).strftime("%d%m%Y")
+#     to_skip = 0
+
+#     folders = os.listdir("downloaded_vtresponse")
+#     folders = os.listdir(folder_to_process)
+    
+
+#     for folder in folders:
+
+#         if to_skip == 1:
+#             break
+
+#         # target folders within X days range
+#         if folder >= deducted_date:
+#             files_array = os.listdir("downloaded_vtresponse/" + folder)
+# #                         print(files_array)
+
+#             for file in files_array:
+#                 filename_filetype = file.rsplit('.',1)
+#     #             print(filename_filedate)
+
+#                 ## if filename == target THEN SKIP + WRITE A NOTE
+#                 if filename == filename_filetype[0]:
+#                     print(f"file has been processed on {folder} which is <{x_days_ago} days ago, will skip API call")
+#                     to_skip = 1
+#                     break
+        
+    
+#     return to_skip
 
 
 
