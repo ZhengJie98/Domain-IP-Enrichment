@@ -53,9 +53,8 @@ def test():
     # print("=====TEST FUNCTION CALLED=====")
     # cursor = retrieve_ips_to_process(1700)
 
-    # for each in cursor:
-    #     to_skip(each)
-    print("remaining config.REMAINING_LIMIT:", config.REMAINING_LIMIT)
+    play_cheat()
+    # print("remaining config.REMAINING_LIMIT:", config.REMAINING_LIMIT)
 
 
     return "testing successful"
