@@ -175,7 +175,7 @@ def testing():
 
     x = "hehe"
 
-    
+# 2 steps to this, to check with processed date when inserted, and to check right before processing in queue    
 # check if file has been processed x_days_ago, to be done before retrieving 500 for actual processing
 # TO BE CHECKED ONLY WHEN PROCESSIG THE IP ITSELF
 def to_skip():
@@ -203,6 +203,8 @@ def to_skip():
         if length_second_cursor == 1:
             col.update_one({"ip_address": ip_address}, {"$set" : {"to_skip" : 0}})
 
+        else: 
+            "hehe"
         # if multiple in queue but havent processed..
         # if got only got one in queue but processed within x_days_ago
         # if only got one in queue but not processed within x_days_ago
