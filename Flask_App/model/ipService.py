@@ -15,6 +15,7 @@ from apscheduler.schedulers.background import BackgroundScheduler
 from app import *
 from werkzeug.utils import secure_filename
 import bson
+import config
 
 
 ip_template = {
@@ -82,30 +83,42 @@ def save_ipfile(file):
 
 def process_ip_parent():
 
-    cursor = retrieve_ips_to_process(DAILY_LIMIT)
-    
-    for ip_doc in cursor:
+    while config.REMAINING_LIMIT > 0:
+        print("new while loop config.REMAINING_LIMIT:", config.REMAINING_LIMIT)
+        cursor = retrieve_ips_to_process(config.REMAINING_LIMIT)
         
-        print("ip_doc:", ip_doc)
-        db_id = ip_doc['_id']
-        updated_ip_doc = process_ip(ip_doc, X_DAYS_AGO)
-   
-        try : 
-            col.replace_one({"_id" : db_id}, updated_ip_doc)
-            print("replacement successful")
-        
-        except Exception as e:
-            print(e)
+        for ip_doc in cursor:
+            
+            ## ip check to be here
+            if to_skip(ip_doc) == 1:
+                continue
+            
 
-        ## COMMENT OUT FOR ACTUAL
-        # break
+
+            # print("ip_doc:", ip_doc)
+            db_id = ip_doc['_id']
+            updated_ip_doc = call_ip(ip_doc, X_DAYS_AGO)
     
-    return "replacement successful"
+            try : 
+                col.replace_one({"_id" : db_id}, updated_ip_doc)
+                print("replacement successful")
+            
+            except Exception as e:
+                print(e)
+                # e
+
+            ## COMMENT OUT FOR ACTUAL
+            break
+        
+        return "replacement successful"
         
 
-def retrieve_ips_to_process(DAILY_LIMIT):
+def retrieve_ips_to_process(how_many_ips):
     print("===== retrieve_ips_to_process() START =====")
-    cursor = col.find({"processed_timestamp" : ""}, {"is_priority" : 0}).sort("added_timestamp", pymongo.ASCENDING).limit(DAILY_LIMIT)
+    cursor = col.find(
+        {"$and" : [{"processed_timestamp" : ""}, {"to_skip" : ""}, {"is_priority" : 0}]}
+        ).sort("added_timestamp", pymongo.ASCENDING).limit(how_many_ips)
+    
     # for item in cursor:
         
         # print("item:", item)
@@ -114,11 +127,13 @@ def retrieve_ips_to_process(DAILY_LIMIT):
     return cursor
 
 ## Calls VT API, writes response to hard disk + database
-def process_ip(ip_doc, x_days_ago):
+def call_ip(ip_doc, x_days_ago):
     
-    print("===== process_ip service start =====")
+    print("===== call_ip service start =====")
 
     ip = str(ip_doc["ip_address"])
+    db_id = ip_doc['_id']
+
     print("processing ip for:", ip )
 
     now = datetime.datetime.now()
@@ -137,9 +152,22 @@ def process_ip(ip_doc, x_days_ago):
 
     # print("r.status_code", r.status_code)
     
-    ## MISSING ERROR HANDLING OF 2XX, TO SKIP THIS ONE
-    if (r.status_code < 200 or r.status_code > 299):
-        print("STATUS CODE NOT GOOD ")
+    ## ERROR HANDLING OF NOT 2XX
+    ## QUOTE EXCEEDED, NOT UPDATING FAILURE COUNT
+    if (r.status_code == 429):
+        print("QUOTA EXCEEDED")
+        config.REMAINING_LIMIT = 0
+        return
+        
+    ## TO UPDATE FAILURE COUNT += 1
+    elif (r.status_code < 200 or r.status_code > 299):
+        print("STATUS CODE NOT GOOD, ADDING FAILURE COUNT")
+        failure_count = ip_doc["failure_count"] + 1
+        col.update_one(
+                    {"_id" : db_id }, 
+                    { "$set" : {"failure_count" : failure_count}}  
+                    )
+
         return
     
     r = r.json()
@@ -163,79 +191,85 @@ def process_ip(ip_doc, x_days_ago):
             ip_doc[k] = r['data']['attributes'][k]
         
         except Exception as e:
-            print(e, "for", (k,v))
+            # print(e, "for", (k,v))
+            e
 
     # print("final ip_doc:", ip_doc)
     time.sleep(16)
     print("16 seconds waiting done")
+    config.REMAINING_LIMIT -= 1
+    print("remaining config.REMAINING_LIMIT:", config.REMAINING_LIMIT)
+
+    print("===== call_ip service end =====")
 
     return ip_doc
 
 def testing():
-
-    x = "hehe"
-
-# 2 steps to this, to check with processed date when inserted, and to check right before processing in queue    
-# check if file has been processed x_days_ago, to be done before retrieving 500 for actual processing
-# TO BE CHECKED ONLY WHEN PROCESSIG THE IP ITSELF
-def to_skip():
-    
     x_days_ago = X_DAYS_AGO
     # print("global variable X_DAYS_AGO:", X_DAYS_AGO)
+    # ip_address = str(ip_doc["ip_address"])
+    ip_address = "101.32.113.139"
 
     now = datetime.datetime.now()
     dt_string = now.strftime("%d%m%Y")
     d = datetime.timedelta(days = x_days_ago)
-    deducted_date = (now - d).strftime("%d%m%Y")
-    to_skip = 0
+    deducted_date = (now - d)
+    deducted_date_str = (now - d).strftime("%d%m%Y")
 
-    cursor = col.find({"to_skip" : ""})
+    # print(now)
+     
+    # cursor = col.find( {'ip_address': ip_address, 'processed_timestamp': {'$gt': deducted_date} })
+    cursor = col.find(
+        {"$and" : [{'ip_address': ip_address, 'processed_timestamp': {'$gt': deducted_date} }]}
+        )
+    len_cursor = len(list(cursor.clone()))
 
-    for ip_doc in cursor:
-        to_skip = 0
-        ip_address = ip_doc["ip_address"]
-        print("current ip_address:", ip_address)
-        x_days_ago = ip_doc['x_days_ago']
-
-        second_cursor = col.find({"ip_address" : ip_address})
-        length_second_cursor = len(list(second_cursor.clone()))
-        # print("length:", len(list(second_cursor.clone())))
-        if length_second_cursor == 1:
-            col.update_one({"ip_address": ip_address}, {"$set" : {"to_skip" : 0}})
-
-        else: 
-            "hehe"
-        # if multiple in queue but havent processed..
-        # if got only got one in queue but processed within x_days_ago
-        # if only got one in queue but not processed within x_days_ago
-
-
-    # folders = os.listdir("downloaded_vtresponse")
-    # folders = os.listdir(folder_to_process)
+    if len_cursor > 0:
+        print("len_cursor > 0 , item has been processed in past X days")
+        return 1
     
+    print("item has NOT been processed in past X days")
+    return 0
+    
+    x = "hehe"
 
-#     for folder in folders:
+def testing2():
+    config.DAILY_LIMIT -= 1
+    print("in testing2() settings.DAILY_LIMIT:", config.DAILY_LIMIT)
 
-#         if to_skip == 1:
-#             break
+# TO BE CHECKED ONLY WHEN PROCESSIG THE IP ITSELF
+def to_skip(ip_doc):
+    
+    
+    x_days_ago = ip_doc['x_days_ago']
+    # print("global variable X_DAYS_AGO:", X_DAYS_AGO)
+    ip_address = str(ip_doc["ip_address"])
+    db_id = ip_doc['_id']
 
-#         # target folders within X days range
-#         if folder >= deducted_date:
-#             files_array = os.listdir("downloaded_vtresponse/" + folder)
-# #                         print(files_array)
+    now = datetime.datetime.now()
+    d = datetime.timedelta(days = x_days_ago)
+    deducted_date = (now - d)
+    
+    # cursor = col.find({"ip_address" : ip_address}, "processed_timestamp")
+    cursor = col.find( {'ip_address': ip_address, 'processed_timestamp': {'$gt': deducted_date} })
+    
+    len_cursor = len(list(cursor.clone()))
 
-#             for file in files_array:
-#                 filename_filetype = file.rsplit('.',1)
-#     #             print(filename_filedate)
+    if len_cursor > 0:
+        print("len_cursor > 0 , " + ip_address + " has been processed in past X days")
 
-#                 ## if filename == target THEN SKIP + WRITE A NOTE
-#                 if filename == filename_filetype[0]:
-#                     print(f"file has been processed on {folder} which is <{x_days_ago} days ago, will skip API call")
-#                     to_skip = 1
-#                     break
+        # for each in cursor:
+            # print("processed document found:", each)
         
+        col.update_one(
+                    {"_id" : db_id }, 
+                    { "$set" : {"to_skip" : 1}}  
+                    )
+        return 1
     
-    return to_skip
+    print(ip_address + " has NOT been processed in past X days")
+    return 0
+    
 
 
 

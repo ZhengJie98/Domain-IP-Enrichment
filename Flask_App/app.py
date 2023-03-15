@@ -8,14 +8,15 @@ import atexit
 from apscheduler.schedulers.background import BackgroundScheduler
 from apscheduler.triggers.interval import IntervalTrigger
 import pymongo
+import config
 # import os
 
 
 # UPLOAD_FOLDER = '/uploaded_files'
 UPLOAD_FOLDER = join(dirname(realpath(__file__)), 'upload_folder')
 ALLOWED_EXTENSIONS = {'csv'}
-DAILY_LIMIT = 500
-TASK_QUEUE = [] ## Array of Arrays [filename,]
+# DAILY_LIMIT = 500
+# TASK_QUEUE = [] ## Array of Arrays [filename,]
 X_DAYS_AGO = 7
 
 
@@ -49,11 +50,13 @@ def process_IP_test():
 def test():
 
     
-    print("=====TEST FUNCTION CALLED=====")
-    # print("CURRENT TASK_QUEUE:", TASK_QUEUE)
-    # testing()
-    to_skip()
-    # retrieve_ips_to_process(500)
+    # print("=====TEST FUNCTION CALLED=====")
+    # cursor = retrieve_ips_to_process(1700)
+
+    # for each in cursor:
+    #     to_skip(each)
+    print("remaining config.REMAINING_LIMIT:", config.REMAINING_LIMIT)
+
 
     return "testing successful"
 
