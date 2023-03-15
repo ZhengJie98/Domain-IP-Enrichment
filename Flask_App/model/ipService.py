@@ -135,14 +135,16 @@ def process_ip(ip_doc, x_days_ago):
     # print("ip_address:", ip_address)
     r = requests.get("https://www.virustotal.com/api/v3/ip_addresses/"+ ip, headers={"x-apikey":API_KEY})
 
+    # print("r.status_code", r.status_code)
     
     ## MISSING ERROR HANDLING OF 2XX, TO SKIP THIS ONE
-    if (r.status_code < 200 and r.status_code > 299):
+    if (r.status_code < 200 or r.status_code > 299):
         print("STATUS CODE NOT GOOD ")
         return
     
     r = r.json()
     # print("r:", r)
+    # print("r.status_code", r.status_code)
 
     
 
