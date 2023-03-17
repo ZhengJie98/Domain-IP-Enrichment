@@ -88,7 +88,7 @@ def test():
 # @scheduler.scheduled_job(IntervalTrigger(seconds=2))
 # def func_to_be_executed():
 #     now = datetime.datetime.now()
-#     print("now:", now, TASK_QUEUE)
+#     print("now:", now)
 
 # @scheduler.scheduled_job(IntervalTrigger(seconds=5))
 # def func_to_be_executed():

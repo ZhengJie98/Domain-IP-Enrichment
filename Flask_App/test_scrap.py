@@ -69,8 +69,8 @@ options = webdriver.ChromeOptions()
 options.headless = True
 driver = webdriver.Chrome(options=options)
 
-URL = 'https://pythonbasics.org'
-# URL = 'https://1.1.1.1'
+# URL = 'https://pythonbasics.org'
+URL = 'https://1.1.1.1'
 
 
 driver.get(URL)
@@ -83,6 +83,6 @@ pageurl=driver.current_url
 page = requests.get(pageurl)
 pagecontent=page.content
 
-print(pagecontent)
+# print(pagecontent)
 
 driver.quit()

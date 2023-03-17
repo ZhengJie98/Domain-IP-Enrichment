@@ -273,7 +273,11 @@ def to_skip(ip_doc):
 def play_cheat():
     x = 'hehe'
     # print("os.path", os.path)
-    files = os.listdir("C:/Users/puddi/OneDrive/Documents/GitHub/IMDA/IMDA-Domain-IP-Enrichment/Flask_App/downloaded_vtresponse/15032023")
+    # directory = "C:/Users/puddi/OneDrive/Documents/GitHub/IMDA/IMDA-Domain-IP-Enrichment/Flask_App/downloaded_vtresponse/15032023"
+    # directory = "C:/Users/puddi/OneDrive/Documents/GitHub/IMDA/IMDA-Domain-IP-Enrichment/Flask_App/downloaded_vtresponse/16032023" 
+    # directory = "C:/Users/Jun Rong/Documents/GitHub/IMDA-Domain-IP-Enrichment/Flask_App/downloaded_vtresponse/15032023"
+    directory = "C:/Users/Jun Rong/Documents/GitHub/IMDA-Domain-IP-Enrichment/Flask_App/downloaded_vtresponse/16032023"
+    files = os.listdir(directory)
     # print(folders)
     # os.path.join("C:/Users/puddi/OneDrive/Documents/GitHub/IMDA/IMDA-Domain-IP-Enrichment/Flask_App/downloaded_vtresponse/15032023")
     # print(os.path)
@@ -282,7 +286,7 @@ def play_cheat():
     for file in files:
         ip_address = file.split(".json")[0]
 
-        f = open("C:/Users/puddi/OneDrive/Documents/GitHub/IMDA/IMDA-Domain-IP-Enrichment/Flask_App/downloaded_vtresponse/15032023/"+file)
+        f = open(directory + "/" +file)
         r = json.load(f)
         # print(data.keys())
         # for (k,v) in data:
