@@ -16,6 +16,9 @@ from app import *
 from werkzeug.utils import secure_filename
 import bson
 import config
+import subprocess
+
+
 
 
 ip_template = {
@@ -36,6 +39,10 @@ ip_template = {
         "failure_count": 0,## if it hits a threshold then stop calling it.
         "is_priority": "", ## 1 for individual submissions or 0 for CSVs
         "source":"", ## if its CSV then put csvName, if its individual then put individual
+        "has_screenshot": "",
+        "has_html": "",
+        "has_javascript": "",
+        "files" : None ## Array of sub-docs, [{type:"", file_location:""}, {}...]
         
     }
 
@@ -68,10 +75,9 @@ def save_ipfile(file):
 
 
     ## FOR DATABASE
-    for key in ip_template.keys():
-        df[key] = ""
+    for k,v in ip_template.items():
+        df[k] = ip_template[k]
     
-    df["failure_count"] = 0
     df["x_days_ago"] = X_DAYS_AGO
     df["added_timestamp"] = now
     df["is_priority"] = 0
@@ -81,6 +87,7 @@ def save_ipfile(file):
 
     return result
 
+## Checks to_skip(), else call_ip and update db with result
 def process_ip_parent():
 
     while config.REMAINING_LIMIT > 0 and len(list(retrieve_ips_to_process(config.REMAINING_LIMIT))) > 0:
@@ -92,12 +99,10 @@ def process_ip_parent():
             ## ip check to be here
             if to_skip(ip_doc) == 1:
                 continue
-            
-
-
-            # print("ip_doc:", ip_doc)
+  
             db_id = ip_doc['_id']
             updated_ip_doc = call_ip(ip_doc, X_DAYS_AGO)
+            ## screenshot and extract html js functions here 
     
             try : 
                 col.replace_one({"_id" : db_id}, updated_ip_doc)
@@ -114,19 +119,15 @@ def process_ip_parent():
         
 
 def retrieve_ips_to_process(how_many_ips):
-    print("===== retrieve_ips_to_process() START =====")
+    # print("===== retrieve_ips_to_process() START =====")
     cursor = col.find(
         {"$and" : [{"processed_timestamp" : ""}, {"to_skip" : ""}, {"is_priority" : 0}]}
         ).sort("added_timestamp", pymongo.ASCENDING).limit(how_many_ips)
     
-    # for item in cursor:
-        
-        # print("item:", item)
-        # print("hello")
-    print("===== retrieve_ips_to_process() END =====")
+    # print("===== retrieve_ips_to_process() END =====")
     return cursor
 
-## Calls VT API, writes response to hard disk + database
+## Calls VT API, writes response to hard disk and update failure count. RETURNS UPDATED IP DOC
 def call_ip(ip_doc, x_days_ago):
     
     print("===== call_ip service start =====")
@@ -155,7 +156,7 @@ def call_ip(ip_doc, x_days_ago):
     ## ERROR HANDLING OF NOT 2XX
     ## QUOTE EXCEEDED, NOT UPDATING FAILURE COUNT
     if (r.status_code == 429):
-        print("QUOTA EXCEEDED")
+        print("QUOTA EXCEEDED, STOPPED ALL CALLS")
         config.REMAINING_LIMIT = 0
         return
         
@@ -194,9 +195,12 @@ def call_ip(ip_doc, x_days_ago):
             # print(e, "for", (k,v))
             e
 
+    ## Put Screenshot here
+    screenshot(ip_doc)
+
     # print("final ip_doc:", ip_doc)
     time.sleep(16)
-    print("16 seconds waiting done")
+    # print("16 seconds waiting done")
     config.REMAINING_LIMIT -= 1
     print("remaining config.REMAINING_LIMIT:", config.REMAINING_LIMIT)
 
@@ -205,37 +209,10 @@ def call_ip(ip_doc, x_days_ago):
     return ip_doc
 
 def testing():
-    x_days_ago = X_DAYS_AGO
-    # print("global variable X_DAYS_AGO:", X_DAYS_AGO)
-    # ip_address = str(ip_doc["ip_address"])
-    ip_address = "101.32.113.139"
-
-    now = datetime.datetime.now()
-    dt_string = now.strftime("%d%m%Y")
-    d = datetime.timedelta(days = x_days_ago)
-    deducted_date = (now - d)
-    deducted_date_str = (now - d).strftime("%d%m%Y")
-
-    # print(now)
-     
-    # cursor = col.find( {'ip_address': ip_address, 'processed_timestamp': {'$gt': deducted_date} })
-    cursor = col.find(
-        {"$and" : [{'ip_address': ip_address, 'processed_timestamp': {'$gt': deducted_date} }]}
-        )
-    len_cursor = len(list(cursor.clone()))
-
-    if len_cursor > 0:
-        print("len_cursor > 0 , item has been processed in past X days")
-        return 1
-    
-    print("item has NOT been processed in past X days")
+    x = "hehe"
     return 0
     
-    x = "hehe"
 
-def testing2():
-    config.DAILY_LIMIT -= 1
-    print("in testing2() settings.DAILY_LIMIT:", config.DAILY_LIMIT)
 
 # TO BE CHECKED ONLY WHEN PROCESSIG THE IP ITSELF
 def to_skip(ip_doc):
@@ -270,7 +247,7 @@ def to_skip(ip_doc):
     print(ip_address + " has NOT been processed in past X days")
     return 0
     
-def play_cheat():
+def custom_add():
     x = 'hehe'
     # print("os.path", os.path)
     # directory = "C:/Users/puddi/OneDrive/Documents/GitHub/IMDA/IMDA-Domain-IP-Enrichment/Flask_App/downloaded_vtresponse/15032023"
@@ -309,10 +286,39 @@ def play_cheat():
             print(ip_doc)
             col.replace_one({"_id" : db_id}, ip_doc)
 
-        
+def screenshot(ip_doc):
+    
+    now = datetime.datetime.now()
+    dt_string = now.strftime("%Y%m%d")
+    ip_address = str(ip_doc["ip_address"])
+    db_id = ip_doc['_id']  
 
+    filepath = "resources/shot-scraper/*ip*_*dt_string*.png"
+    filepath = filepath.replace('*ip*', ip_address)
+    filepath = filepath.replace('*dt_string*', dt_string)
 
+    query = "shot-scraper {ip} --wait 3000 -o {filepath}".format(ip=ip_address, filepath = filepath)
+    
+    try:
+        response = subprocess.run(query, shell=False)
+    except Exception as e:
+        # print(e)
+        e
+    
+    returncode = response.returncode
 
+    # ## store in db
+    if returncode == 0:
+        to_append = {"type":"screenshot", "file_location":filepath}
+        ip_doc['has_screenshot'] = 1
+        ip_doc['files'] = [to_append]
+
+    # ## else indicate its not good 
+    else:
+        ip_doc['has_screenshot'] = 0
+
+    print("screenshot() ip_doc:", ip_doc)
+    return ip_doc
 # # check if file exist in folder_to_process during x_days_ago, returns 0 or 1
 # def to_skip(filename, folder_to_process, x_days_ago):
     

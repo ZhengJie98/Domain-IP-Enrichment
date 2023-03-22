@@ -9,6 +9,8 @@ from apscheduler.schedulers.background import BackgroundScheduler
 from apscheduler.triggers.interval import IntervalTrigger
 import pymongo
 import config
+from flask.cli import FlaskGroup
+
 # import os
 
 
@@ -50,16 +52,28 @@ def process_IP_test():
 def test():
 
     
-    # print("=====TEST FUNCTION CALLED=====")
-    # cursor = retrieve_ips_to_process(1700)
-
-    play_cheat()
+    print("=====TEST FUNCTION CALLED=====")
+    cursor = retrieve_ips_to_process(3)
+        
+    for ip_doc in cursor:
+        screenshot(ip_doc)
     # print("remaining config.REMAINING_LIMIT:", config.REMAINING_LIMIT)
 
 
     return "testing successful"
 
+@app.route("/customAdd", methods=['POST'])
+def customAdd():
 
+    
+    print("=====TEST FUNCTION CALLED=====")
+    # cursor = retrieve_ips_to_process(1700)
+
+    custom_add()
+    # print("remaining config.REMAINING_LIMIT:", config.REMAINING_LIMIT)
+
+
+    return "testing successful"
 
 # ## SAVES FILE AS FILENAME_DTSTRING TO PREVENT OVERWRITING
 # def saveFile(file):
