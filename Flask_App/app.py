@@ -53,11 +53,12 @@ def test():
 
     
     print("=====TEST FUNCTION CALLED=====")
-    cursor = retrieve_ips_to_process(3)
+    cursor = retrieve_ips_to_process(1)
         
-    for ip_doc in cursor:
-        screenshot(ip_doc)
-    # print("remaining config.REMAINING_LIMIT:", config.REMAINING_LIMIT)
+
+            ## COMMENT OUT FOR ACTUAL
+            # break
+        
 
 
     return "testing successful"

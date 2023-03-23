@@ -17,6 +17,8 @@ from werkzeug.utils import secure_filename
 import bson
 import config
 import subprocess
+import requests
+from bs4 import BeautifulSoup
 
 
 
@@ -42,7 +44,7 @@ ip_template = {
         "has_screenshot": "",
         "has_html": "",
         "has_javascript": "",
-        "files" : None ## Array of sub-docs, [{type:"", file_location:""}, {}...]
+        "files_log" : None ## Array of sub-docs, [{type:"", file_location:""}, {}...]
         
     }
 
@@ -91,7 +93,7 @@ def save_ipfile(file):
 def process_ip_parent():
 
     while config.REMAINING_LIMIT > 0 and len(list(retrieve_ips_to_process(config.REMAINING_LIMIT))) > 0:
-        print("new while loop config.REMAINING_LIMIT:", config.REMAINING_LIMIT)
+        # print("new while loop config.REMAINING_LIMIT:", config.REMAINING_LIMIT)
         cursor = retrieve_ips_to_process(config.REMAINING_LIMIT)
         
         for ip_doc in cursor:
@@ -102,7 +104,9 @@ def process_ip_parent():
   
             db_id = ip_doc['_id']
             updated_ip_doc = call_ip(ip_doc, X_DAYS_AGO)
-            ## screenshot and extract html js functions here 
+            ## screenshot and extract html js functions here
+            updated_ip_doc = screenshot(updated_ip_doc)
+            updated_ip_doc = grab_html_js(updated_ip_doc) 
     
             try : 
                 col.replace_one({"_id" : db_id}, updated_ip_doc)
@@ -120,9 +124,14 @@ def process_ip_parent():
 
 def retrieve_ips_to_process(how_many_ips):
     # print("===== retrieve_ips_to_process() START =====")
+
     cursor = col.find(
         {"$and" : [{"processed_timestamp" : ""}, {"to_skip" : ""}, {"is_priority" : 0}]}
         ).sort("added_timestamp", pymongo.ASCENDING).limit(how_many_ips)
+    
+    # cursor = col.find(
+    #     {"$and" : [{"ip_address" : "1.1.1.1"},{"processed_timestamp" : ""}, {"to_skip" : ""}, {"is_priority" : 0}]}
+    #     ).sort("added_timestamp", pymongo.ASCENDING).limit(how_many_ips)
     
     # print("===== retrieve_ips_to_process() END =====")
     return cursor
@@ -130,7 +139,7 @@ def retrieve_ips_to_process(how_many_ips):
 ## Calls VT API, writes response to hard disk and update failure count. RETURNS UPDATED IP DOC
 def call_ip(ip_doc, x_days_ago):
     
-    print("===== call_ip service start =====")
+    # print("===== call_ip service start =====")
 
     ip = str(ip_doc["ip_address"])
     db_id = ip_doc['_id']
@@ -142,11 +151,11 @@ def call_ip(ip_doc, x_days_ago):
     d = datetime.timedelta(days = x_days_ago)
     deducted_date = (now - d).strftime("%d%m%Y")
 
-    if not os.path.exists("downloaded_vtresponse"):
-        os.makedirs("downloaded_vtresponse")
+    if not os.path.exists("resources/downloaded_vtresponse"):
+        os.makedirs("resources/downloaded_vtresponse")
 
-    if not os.path.exists("downloaded_vtresponse/" + dt_string):
-        os.makedirs("downloaded_vtresponse/" + dt_string)
+    if not os.path.exists("resources/downloaded_vtresponse/" + dt_string):
+        os.makedirs("resources/downloaded_vtresponse/" + dt_string)
 
     # print("ip_address:", ip_address)
     r = requests.get("https://www.virustotal.com/api/v3/ip_addresses/"+ ip, headers={"x-apikey":API_KEY})
@@ -178,7 +187,7 @@ def call_ip(ip_doc, x_days_ago):
     
 
     ## write to json file
-    with open("downloaded_vtresponse/" + dt_string + "/" + ip + ".json", "w") as outfile:
+    with open("resources/downloaded_vtresponse/" + dt_string + "/" + ip + ".json", "w") as outfile:
         json_obj = json.dumps(r)
         outfile.write(json_obj)
         # print("type r after json dumps:", type(r))
@@ -195,8 +204,8 @@ def call_ip(ip_doc, x_days_ago):
             # print(e, "for", (k,v))
             e
 
-    ## Put Screenshot here
-    screenshot(ip_doc)
+    # ## Put Screenshot here
+    # screenshot(ip_doc)
 
     # print("final ip_doc:", ip_doc)
     time.sleep(16)
@@ -204,7 +213,7 @@ def call_ip(ip_doc, x_days_ago):
     config.REMAINING_LIMIT -= 1
     print("remaining config.REMAINING_LIMIT:", config.REMAINING_LIMIT)
 
-    print("===== call_ip service end =====")
+    # print("===== call_ip service end =====")
 
     return ip_doc
 
@@ -265,9 +274,7 @@ def custom_add():
 
         f = open(directory + "/" +file)
         r = json.load(f)
-        # print(data.keys())
-        # for (k,v) in data:
-        #     print((k,v))
+
         cursor = col.find({'ip_address': ip_address})
 
         
@@ -289,7 +296,7 @@ def custom_add():
 def screenshot(ip_doc):
     
     now = datetime.datetime.now()
-    dt_string = now.strftime("%Y%m%d")
+    dt_string = now.strftime("%Y%m%d_%H%M%S.%f")[:-3]   
     ip_address = str(ip_doc["ip_address"])
     db_id = ip_doc['_id']  
 
@@ -300,243 +307,115 @@ def screenshot(ip_doc):
     query = "shot-scraper {ip} --wait 3000 -o {filepath}".format(ip=ip_address, filepath = filepath)
     
     try:
-        response = subprocess.run(query, shell=False)
+        response = subprocess.run(query, shell=False, capture_output=True, text=True)
     except Exception as e:
-        # print(e)
+        print("screenshot() exception triggered:", e)
         e
     
     returncode = response.returncode
 
     # ## store in db
     if returncode == 0:
-        to_append = {"type":"screenshot", "file_location":filepath}
         ip_doc['has_screenshot'] = 1
-        ip_doc['files'] = [to_append]
+        to_append = {"type":"screenshot", "stderr": response.stderr, "stdout": response.stdout, "ss_file_location":filepath}
+
+        ## proceed to extract js 
+
+
+        ip_doc['files_log'] = [to_append]
 
     # ## else indicate its not good 
     else:
         ip_doc['has_screenshot'] = 0
+        to_append = {"type":"screenshot", "stderr": response.stderr, "stdout": response.stdout, "ss_file_location": None}
+        # ip_doc['files'] = [{"screenshot":to_append}]
+        ip_doc['files_log'] = [{"screenshot":to_append}]
 
-    print("screenshot() ip_doc:", ip_doc)
+
+    # print("screenshot() ip_doc:", ip_doc)
     return ip_doc
-# # check if file exist in folder_to_process during x_days_ago, returns 0 or 1
-# def to_skip(filename, folder_to_process, x_days_ago):
-    
-#     now = datetime.datetime.now()
-#     dt_string = now.strftime("%d%m%Y")
-#     d = datetime.timedelta(days = x_days_ago)
-#     deducted_date = (now - d).strftime("%d%m%Y")
-#     to_skip = 0
 
-#     folders = os.listdir("downloaded_vtresponse")
-#     folders = os.listdir(folder_to_process)
-    
+def grab_html_js(ip_doc):
 
-#     for folder in folders:
-
-#         if to_skip == 1:
-#             break
-
-#         # target folders within X days range
-#         if folder >= deducted_date:
-#             files_array = os.listdir("downloaded_vtresponse/" + folder)
-# #                         print(files_array)
-
-#             for file in files_array:
-#                 filename_filetype = file.rsplit('.',1)
-#     #             print(filename_filedate)
-
-#                 ## if filename == target THEN SKIP + WRITE A NOTE
-#                 if filename == filename_filetype[0]:
-#                     print(f"file has been processed on {folder} which is <{x_days_ago} days ago, will skip API call")
-#                     to_skip = 1
-#                     break
-        
-    
-#     return to_skip
+    now = datetime.datetime.now()
+    dt_string = now.strftime("%Y%m%d_%H%M%S.%f")[:-3]   
+    ip_address = str(ip_doc["ip_address"])
+    db_id = ip_doc['_id']  
 
 
+    for protocol in ["http", "https"]:
 
-# def process_iplist(filename_to_process, columnIndex, x_days_ago):
-    
-#     print("======= process_iplist() START =======")
-    
-#     # TODO: Make generalised and incorporate timestamp in foldername
-#     now = datetime.datetime.now()
-#     dt_string = now.strftime("%d%m%Y")
-#     d = datetime.timedelta(days = x_days_ago)
-#     deducted_date = (now - d).strftime("%d%m%Y")
-    
-#     with open(filename_to_process + ".csv", newline='') as inputfile:
+        if protocol == "http":
+            filepath = "resources/html/*ip*_http_*dt_string*.html"
+            filepath = filepath.replace('*ip*', ip_address)
+            filepath = filepath.replace('*dt_string*', dt_string)
+            query = "curl -i http://{ip} --create-dirs -o {filepath}".format(ip=ip_address, filepath = filepath)
 
-#         if not os.path.exists("downloaded_vtresponse"):
-#                 os.makedirs("downloaded_vtresponse")
+        elif protocol == "https":
+            filepath = "resources/html/*ip*_https_*dt_string*.html"
+            filepath = filepath.replace('*ip*', ip_address)
+            filepath = filepath.replace('*dt_string*', dt_string)
+            query = "curl -i https://{ip} --create-dirs -o {filepath}".format(ip=ip_address, filepath = filepath)
 
-#         with open(filename_to_process + "_tracker_" + dt_string + ".csv", 'w', newline='') as outputfile:
+        try:
+            response = subprocess.run(query, shell=False, capture_output=True, text=True)
+        except Exception as e:
+            print("grab_html_js() exception triggered:", e)
+            e
+
+        returncode = response.returncode
+
+        if returncode == 0:
+            ip_doc['has_html'] = 1
+
+            ## Grab JS HERE
+            web_url = protocol + "://" + ip_address
+            html = requests.get(web_url).content
+            # parse HTML Content
+            soup = BeautifulSoup(html, "html.parser")
             
-#             ip_list = csv.reader(inputfile, delimiter=',')
-#             output_writer = csv.writer(outputfile, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
-
-#             counter = 0
-
-#             for row in ip_list:
-                
-#                 if counter == 0:
-#                     output_writer.writerow(row + ["Time Run"] + ["Processed?"])
-#                     outputfile.flush()
-#                     counter += 1
-#                     continue
-
-#                 print("Processing: #" + str(counter) + " - " + row[columnIndex] + " Country: " + row[1])
-                
-#                 # Check if IP was proceeded x_days_ago, if yes, will skip calling
-#                 file_skip = to_skip(row[0], "downloaded_vtresponse", x_days_ago)
-                
-#                  # make dir to store API Responses
-#                 if not os.path.exists("downloaded_vtresponse/" + dt_string):
-#                     os.makedirs("downloaded_vtresponse/" + dt_string)
-
-#                 #Get an IP address Report
-#                 if file_skip == 0:
-#                     r = requests.get("https://www.virustotal.com/api/v3/ip_addresses/"+row[0], headers={"x-apikey":API_KEY})
+            js_files_link = []
+            js_filename_alone = []
+            for script in soup.find_all("script"):
+                if script.attrs.get("src"):
                     
-#                     ## Check status 200 = ok, 204 = exceeded, 400 = bad request, 403 = forbidden
-#                     # if status != 200, will break all processing
-#                     if (r.status_code != 200):
-#                         print("Status Code: ",r.status_code, "please take a look" )
-#                         output_writer.writerow(row + [datetime.datetime.now()] + ["Not Processed due to status_code: " + str(r.status_code)]) 
-#                         outputfile.flush()
-#                         break
-
-#                     r = r.json()
-#                     # inputting target_geo_country from excel into JSON
-#                     r['data']['attributes']['target_geo_country'] = row[1]
+                    # if the tag has the attribute
+                    # 'src'
+                    url = script.attrs.get("src")
+                    js_files_link.append(web_url+url)
+                    js_filename_alone.append(url.split('.js')[0] + '_' + dt_string) 
+            # print(js_files)
+            js_file_counter = 0
+            array_js_filenames = []
+            for each_js in js_files_link:
+                each_js = requests.get(each_js).content
+                # print(type(js.decode()))
+                js_file_path = "resources/js" + js_filename_alone[js_file_counter] + ".js"
+                array_js_filenames.append("resources/js" + js_filename_alone[js_file_counter] + ".js")
+                if not os.path.exists('resources/js'):
+                    os.mkdir('resources/js')
+                with open(js_file_path, "w") as f:
                     
-#                     with open("downloaded_vtresponse/" + dt_string + "/" + row[columnIndex] + ".json", "w") as outfile:
+                    # text_file = open(js_file_path, "w+")
+                    f.write(each_js.decode())
+                    f.close()
 
-# #                         outfile.write(r.text)
-#                         json_obj = json.dumps(r)
-#                         outfile.write(json_obj)
-
-#                     output_writer.writerow(row + [datetime.datetime.now()] + ["Processed"]) 
-
-#                     outputfile.flush()
-#                     time.sleep(16)
-
-                
-#                 else:
-                    
-#                     output_writer.writerow(row + [datetime.datetime.now()] + ["Not Processed due to DUPLICATE in past "+ str(x_days_ago) + " days"] ) 
-#                     outputfile.flush()
-                    
-                
-#                 counter += 1
-                
-#     print("======= process_iplist() END ======= \n\n")
-# #                 time.sleep(16)
+                js_file_counter += 1
 
 
-#     #     print(os.listdir("downloaded_vtresponse/"+ folder))    
+            if len(js_files_link) > 0:
+                ip_doc['has_javascript'] = len(js_files_link)
 
-# def process_json_folder(folder_to_process,json_template):
+            to_append = {"type": protocol, "stderr": response.stderr, "stdout": response.stdout, "html_file_location":filepath, "js_file_location": array_js_filenames}
+            ip_doc['files_log'].append(to_append)
+
+        # ## else indicate its not good 
+        else:
+            ip_doc['has_html'] = 0
+            to_append = {"type": protocol, "stderr": response.stderr, "stdout": response.stdout, "html_file_location": None, "js_file_location" : None}
+            # ip_doc['files'] = [to_append]
+            ip_doc['files_log'].append(to_append)
     
-#     print("======= process_json_folder() START =======")
-    
-#     # Get Date + Time to input later
-#     now = datetime.datetime.now(pytz.timezone("Singapore"))
-#     dt_string = now.strftime("%d%m%Y")
-
-#     # Usual Folder: downloaded_vtresponse
-#     combined_df = pd.DataFrame()
-    
-    
-#     for filename in os.listdir(folder_to_process):
-#         f = os.path.join(folder_to_process, filename)
-    
-# #         print("f:", f)
-#         # check if it is a file
-#         if os.path.isfile(f) and f[-5:]==".json":
-
-#             print("\n **** Processing:",f, "****")
-#             # Opening JSON file
-#             f = open(f)
-# #             print(f)
-
-#             # returns JSON object as
-#             # a dictionary
-#             data = json.load(f)
-# #             print(data)
-
-#             # load JSON template
-#             json_template = {
-#                             "ip_address": "",
-#                             "whois_date": "",
-#                             "last_analysis_date": "",
-#                             "reputation": "",
-#                             "last_analysis_stats": "",
-#                             "total_votes": "",
-#                             "as_owner": "",
-#                             "country": "",
-#                             "asn": "",
-#                             "image":"",
-#                             "processed_date":"",
-#                             "target_geo_country":""  ## input from original excel
-#                             }
-        
-#             new_row = json_template
-# #             new_row = json_template()
-
-#             print("json_template: ", json_template)
-#             print("Fresh new_row from json_template: ", new_row)
-
-#             # populate fields in JSON template
-#             for key in new_row:    
-# #                 print("current key", key)
-
-#                 try:
-#                     current_value = data['data']['attributes'][key]
-                    
-#                     # replace epoch with legible date format for whois_date and last_analysis_date
-#                     if key[-4:] == "date":
-#                         to_zone = tz.gettz('Singapore')
-#                         date_time = datetime.datetime.fromtimestamp( current_value )  
-# #                         current_value = date_time.replace(tzinfo=to_zone)
-#                         date_time.replace(tzinfo=to_zone)
-#                         current_value = date_time
-                        
-            
-#                     new_row[key] = current_value
-
-#                 except Exception as e: 
-               
-#                     if key == "processed_date":
-#                         new_row[key] = now
-#                         print("new_row[key]:", now)
-                    
-#                     elif key == "ip_address":
-#                         new_row[key] = data['data']['id']
-                    
-#                     else:
-#                         print(key,"not found with exception:",e)
-
-#             print("new_row:", new_row)
-#             db.ip.insert_one(new_row)
-
-#             df_result = pd.json_normalize(new_row)
-            
-#             combined_df = pd.concat([combined_df, df_result], ignore_index=True, sort=False)
-    
-    
-# #     print(combined_df)
-#     now = datetime.datetime.now(pytz.timezone("Singapore"))
-#     dt_string = now.strftime("%d%m%Y")
-    
-#     combined_df.to_csv(folder_to_process + '/' + dt_string + '_parsed-combined.csv')
-    
-#     print("======= process_json_folder() END ======= \n\n")
-
-
-
-
-
-
+    # print("CALL HTML JS IP_DOC:", ip_doc)
+    return ip_doc
+    # both http and https
