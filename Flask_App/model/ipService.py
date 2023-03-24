@@ -329,7 +329,9 @@ def screenshot(ip_doc):
         ip_doc['has_screenshot'] = 0
         to_append = {"type":"screenshot", "stderr": response.stderr, "stdout": response.stdout, "ss_file_location": None}
         # ip_doc['files'] = [{"screenshot":to_append}]
-        ip_doc['files_log'] = [{"screenshot":to_append}]
+        # ip_doc['files_log'] = [{"screenshot":to_append}]
+        ip_doc['files_log'] = [to_append]
+
 
 
     # print("screenshot() ip_doc:", ip_doc)
@@ -390,10 +392,12 @@ def grab_html_js(ip_doc):
             for each_js in js_files_link:
                 each_js = requests.get(each_js).content
                 # print(type(js.decode()))
-                js_file_path = "resources/js" + js_filename_alone[js_file_counter] + ".js"
-                array_js_filenames.append("resources/js" + js_filename_alone[js_file_counter] + ".js")
+                js_file_path = "resources/js/" + protocol + js_filename_alone[js_file_counter] + ".js"
+                array_js_filenames.append("resources/js/" + protocol + js_filename_alone[js_file_counter] + ".js")
                 if not os.path.exists('resources/js'):
                     os.mkdir('resources/js')
+                if not os.path.exists('resources/js/' + protocol):
+                    os.mkdir('resources/js/' + protocol)
                 with open(js_file_path, "w") as f:
                     
                     # text_file = open(js_file_path, "w+")
@@ -403,15 +407,19 @@ def grab_html_js(ip_doc):
                 js_file_counter += 1
 
 
-            if len(js_files_link) > 0:
-                ip_doc['has_javascript'] = len(js_files_link)
-
+            if len(array_js_filenames) > 0:
+                ip_doc['has_javascript'] = len(array_js_filenames)
+            else:
+                array_js_filenames = None
             to_append = {"type": protocol, "stderr": response.stderr, "stdout": response.stdout, "html_file_location":filepath, "js_file_location": array_js_filenames}
             ip_doc['files_log'].append(to_append)
 
         # ## else indicate its not good 
         else:
-            ip_doc['has_html'] = 0
+            if type(ip_doc['has_html']) == str:
+                ip_doc['has_html'] = 0
+            if type(ip_doc['has_javascript']) == str:
+                ip_doc['has_javascript'] = 0
             to_append = {"type": protocol, "stderr": response.stderr, "stdout": response.stdout, "html_file_location": None, "js_file_location" : None}
             # ip_doc['files'] = [to_append]
             ip_doc['files_log'].append(to_append)
