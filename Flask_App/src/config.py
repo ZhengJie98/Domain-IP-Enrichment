@@ -1,3 +1,0 @@
-# config.py
-DAILY_LIMIT = 500
-REMAINING_LIMIT = 3
