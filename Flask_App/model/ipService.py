@@ -301,6 +301,52 @@ def custom_add():
             print(ip_doc)
             col.replace_one({"_id" : db_id}, ip_doc)
 
+# def screenshot(ip_doc):
+    
+#     print("===== screenshot function start =====")
+#     now = datetime.datetime.now()
+#     dt_string = now.strftime("%Y%m%d_%H%M%S.%f")[:-3]   
+#     ip_address = str(ip_doc["ip_address"])
+#     db_id = ip_doc['_id']  
+
+#     filepath = "resources/shot-scraper/*ip*_*dt_string*.png"
+#     filepath = filepath.replace('*ip*', ip_address)
+#     filepath = filepath.replace('*dt_string*', dt_string)
+
+#     query = "shot-scraper {ip} --wait 3000 -o {filepath}".format(ip=ip_address, filepath = filepath)
+    
+#     try:
+#         response = subprocess.run(query, shell=False, capture_output=True, text=True)
+#     except Exception as e:
+#         print("screenshot() exception triggered:", e)
+#         e
+    
+#     returncode = response.returncode
+
+#     # ## store in db
+#     if returncode == 0:
+#         ip_doc['has_screenshot'] = 1
+#         to_append = {"type":"screenshot", "stderr": response.stderr, "stdout": response.stdout, "ss_file_location":filepath}
+
+#         ## proceed to extract js 
+
+
+#         ip_doc['files_log'] = [to_append]
+
+#     # ## else indicate its not good 
+#     else:
+#         ip_doc['has_screenshot'] = 0
+#         to_append = {"type":"screenshot", "stderr": response.stderr, "stdout": response.stdout, "ss_file_location": None}
+#         # ip_doc['files'] = [{"screenshot":to_append}]
+#         # ip_doc['files_log'] = [{"screenshot":to_append}]
+#         ip_doc['files_log'] = [to_append]
+
+
+
+#     # print("screenshot() ip_doc:", ip_doc)
+#     print("===== screenshot function end =====")
+#     return ip_doc
+
 def screenshot(ip_doc):
     
     print("===== screenshot function start =====")
@@ -309,42 +355,51 @@ def screenshot(ip_doc):
     ip_address = str(ip_doc["ip_address"])
     db_id = ip_doc['_id']  
 
-    filepath = "resources/shot-scraper/*ip*_*dt_string*.png"
-    filepath = filepath.replace('*ip*', ip_address)
-    filepath = filepath.replace('*dt_string*', dt_string)
+    for protocol in ["http", "https"]:
 
-    query = "shot-scraper {ip} --wait 3000 -o {filepath}".format(ip=ip_address, filepath = filepath)
-    
-    try:
-        response = subprocess.run(query, shell=False, capture_output=True, text=True)
-    except Exception as e:
-        print("screenshot() exception triggered:", e)
-        e
-    
-    returncode = response.returncode
+        filepath = "resources/shot-scraper/*ip*_*protocol*_*dt_string*.png"
+        filepath = filepath.replace('*ip*', ip_address)
+        filepath = filepath.replace('*protocol*', protocol)
+        filepath = filepath.replace('*dt_string*', dt_string)
 
-    # ## store in db
-    if returncode == 0:
-        ip_doc['has_screenshot'] = 1
-        to_append = {"type":"screenshot", "stderr": response.stderr, "stdout": response.stdout, "ss_file_location":filepath}
+        query = "shot-scraper {protocol}://{ip} --wait 3000 -o {filepath}".format(protocol=protocol, ip=ip_address, filepath = filepath)
+        
+        try:
+            response = subprocess.run(query, shell=False, capture_output=True, text=True)
+        except Exception as e:
+            print("screenshot() exception triggered:", e)
+            e
+        
+        returncode = response.returncode
 
-        ## proceed to extract js 
+        # ## store in db
+        if returncode == 0:
+            ip_doc['has_screenshot'] = 1
+            to_append = {"type": protocol + "_screenshot", "stderr": response.stderr, "stdout": response.stdout, "ss_file_location":filepath}
 
-
-        ip_doc['files_log'] = [to_append]
-
-    # ## else indicate its not good 
-    else:
-        ip_doc['has_screenshot'] = 0
-        to_append = {"type":"screenshot", "stderr": response.stderr, "stdout": response.stdout, "ss_file_location": None}
-        # ip_doc['files'] = [{"screenshot":to_append}]
-        # ip_doc['files_log'] = [{"screenshot":to_append}]
-        ip_doc['files_log'] = [to_append]
+            ## proceed to extract js 
 
 
+            # ip_doc['files_log'] = [to_append]
 
-    # print("screenshot() ip_doc:", ip_doc)
-    print("===== screenshot function end =====")
+        # ## else indicate its not good 
+        else:
+            if ip_doc['has_screenshot'] != 1:
+                ip_doc['has_screenshot'] = 0
+            to_append = {"type": protocol + "_screenshot", "stderr": response.stderr, "stdout": response.stdout, "ss_file_location": None}
+            # ip_doc['files'] = [{"screenshot":to_append}]
+            # ip_doc['files_log'] = [{"screenshot":to_append}]
+            # ip_doc['files_log'] = [to_append]
+
+
+        if protocol == "http":
+            ip_doc['files_log'] = [to_append]
+        else:
+            ip_doc['files_log'].append(to_append)
+
+
+        # print("screenshot() ip_doc:", ip_doc)
+        print("===== screenshot function end =====")
     return ip_doc
 
 def grab_html_js(ip_doc):
