@@ -97,6 +97,9 @@ def process_ip_parent():
         cursor = retrieve_ips_to_process(config.REMAINING_LIMIT)
         
         for ip_doc in cursor:
+
+            ip = str(ip_doc["ip_address"])
+            print("current ip in process_ip_parent:", ip)
             
             ## ip check to be here
             if to_skip(ip_doc) == 1:
@@ -139,12 +142,12 @@ def retrieve_ips_to_process(how_many_ips):
 ## Calls VT API, writes response to hard disk and update failure count. RETURNS UPDATED IP DOC
 def call_ip(ip_doc, x_days_ago):
     
-    # print("===== call_ip service start =====")
+    print("===== call_ip function start =====")
 
     ip = str(ip_doc["ip_address"])
     db_id = ip_doc['_id']
 
-    print("processing ip for:", ip )
+    print("calling ip for:", ip )
 
     now = datetime.datetime.now()
     dt_string = now.strftime("%d%m%Y")
@@ -213,7 +216,7 @@ def call_ip(ip_doc, x_days_ago):
     config.REMAINING_LIMIT -= 1
     print("remaining config.REMAINING_LIMIT:", config.REMAINING_LIMIT)
 
-    # print("===== call_ip service end =====")
+    print("===== call_ip function end =====")
 
     return ip_doc
 
@@ -226,6 +229,7 @@ def testing():
 # TO BE CHECKED ONLY WHEN PROCESSIG THE IP ITSELF
 def to_skip(ip_doc):
     
+    print("===== to_skip function start =====")
     
     x_days_ago = ip_doc['x_days_ago']
     # print("global variable X_DAYS_AGO:", X_DAYS_AGO)
@@ -251,9 +255,13 @@ def to_skip(ip_doc):
                     {"_id" : db_id }, 
                     { "$set" : {"to_skip" : 1}}  
                     )
+        print(ip_address + " HAS BEEN processed in past X days")
+
+        print("===== to_skip function end =====")
         return 1
     
     print(ip_address + " has NOT been processed in past X days")
+    print("===== to_skip function end =====")
     return 0
     
 def custom_add():
@@ -295,6 +303,7 @@ def custom_add():
 
 def screenshot(ip_doc):
     
+    print("===== screenshot function start =====")
     now = datetime.datetime.now()
     dt_string = now.strftime("%Y%m%d_%H%M%S.%f")[:-3]   
     ip_address = str(ip_doc["ip_address"])
@@ -335,10 +344,12 @@ def screenshot(ip_doc):
 
 
     # print("screenshot() ip_doc:", ip_doc)
+    print("===== screenshot function end =====")
     return ip_doc
 
 def grab_html_js(ip_doc):
 
+    print("===== grab_html_js function start =====")
     now = datetime.datetime.now()
     dt_string = now.strftime("%Y%m%d_%H%M%S.%f")[:-3]   
     ip_address = str(ip_doc["ip_address"])
@@ -369,50 +380,77 @@ def grab_html_js(ip_doc):
 
         if returncode == 0:
             ip_doc['has_html'] = 1
+            to_append = {"type": protocol, "stderr": response.stderr, "stdout": response.stdout, "html_file_location":filepath}
+
 
             ## Grab JS HERE
             web_url = protocol + "://" + ip_address
-            html = requests.get(web_url).content
-            # parse HTML Content
-            soup = BeautifulSoup(html, "html.parser")
+            # headers = {
+            #             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0",
+            #             "Accept-Encoding": "*",
+            #             "Connection": "keep-alive"
+            #         }
+            # html = requests.get(web_url, headers=headers).content
+
+            # html = requests.get(web_url).content
+            try:
+                html = requests.get(web_url).content
             
-            js_files_link = []
-            js_filename_alone = []
-            for script in soup.find_all("script"):
-                if script.attrs.get("src"):
+
+                # parse HTML Content
+                soup = BeautifulSoup(html, "html.parser")
+                
+                js_files_link = []
+                js_filename_alone = []
+                for script in soup.find_all("script"):
+                    if script.attrs.get("src"):
+                        
+                        # if the tag has the attribute
+                        # 'src'
+                        url = script.attrs.get("src")
+                        js_files_link.append(web_url+url)
+                        js_filename_alone.append(url.split('.js')[0] + '_' + dt_string) 
+                # print(js_files)
+                js_file_counter = 0
+                array_js_filenames = []
+                for each_js in js_files_link:
+                    each_js = requests.get(each_js).content
+                    # print(type(js.decode()))
+                    js_file_path = "resources/js/" + protocol + js_filename_alone[js_file_counter] + ".js"
+                    array_js_filenames.append("resources/js/" + protocol + js_filename_alone[js_file_counter] + ".js")
+                    if not os.path.exists('resources/js'):
+                        os.mkdir('resources/js')
+                    if not os.path.exists('resources/js/' + protocol):
+                        os.mkdir('resources/js/' + protocol)
+                    with open(js_file_path, "w") as f:
+                        
+                        # text_file = open(js_file_path, "w+")
+                        f.write(each_js.decode())
+                        f.close()
+
+                    js_file_counter += 1
+
+
+                if len(array_js_filenames) > 0:
+                    # ip_doc['has_javascript'] = len(array_js_filenames)
                     
-                    # if the tag has the attribute
-                    # 'src'
-                    url = script.attrs.get("src")
-                    js_files_link.append(web_url+url)
-                    js_filename_alone.append(url.split('.js')[0] + '_' + dt_string) 
-            # print(js_files)
-            js_file_counter = 0
-            array_js_filenames = []
-            for each_js in js_files_link:
-                each_js = requests.get(each_js).content
-                # print(type(js.decode()))
-                js_file_path = "resources/js/" + protocol + js_filename_alone[js_file_counter] + ".js"
-                array_js_filenames.append("resources/js/" + protocol + js_filename_alone[js_file_counter] + ".js")
-                if not os.path.exists('resources/js'):
-                    os.mkdir('resources/js')
-                if not os.path.exists('resources/js/' + protocol):
-                    os.mkdir('resources/js/' + protocol)
-                with open(js_file_path, "w") as f:
-                    
-                    # text_file = open(js_file_path, "w+")
-                    f.write(each_js.decode())
-                    f.close()
+                    ip_doc['has_javascript'] = 1
+                else:
+                    array_js_filenames = None
+                # to_append = {"type": protocol, "stderr": response.stderr, "stdout": response.stdout, "html_file_location":filepath, "js_file_location": array_js_filenames}
+                to_append["js_file_location"] = array_js_filenames
 
-                js_file_counter += 1
-
-
-            if len(array_js_filenames) > 0:
-                ip_doc['has_javascript'] = len(array_js_filenames)
-            else:
-                array_js_filenames = None
-            to_append = {"type": protocol, "stderr": response.stderr, "stdout": response.stdout, "html_file_location":filepath, "js_file_location": array_js_filenames}
-            ip_doc['files_log'].append(to_append)
+                ip_doc['files_log'].append(to_append)
+            
+            except Exception as e:
+                print(e)
+                if type(ip_doc['has_html']) == str:
+                    ip_doc['has_html'] = 0
+                if type(ip_doc['has_javascript']) == str:
+                    ip_doc['has_javascript'] = 0
+                # to_append = {"type": protocol, "stderr": response.stderr, "stdout": response.stdout, "html_file_location": None, "js_file_location" : None}
+                to_append["js_file_location"] = None
+                ip_doc['files_log'].append(to_append)
 
         # ## else indicate its not good 
         else:
@@ -425,5 +463,7 @@ def grab_html_js(ip_doc):
             ip_doc['files_log'].append(to_append)
     
     # print("CALL HTML JS IP_DOC:", ip_doc)
+    print("===== grab_html_js function end =====")
+    
     return ip_doc
     # both http and https
