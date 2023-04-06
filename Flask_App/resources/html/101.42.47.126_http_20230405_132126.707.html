@@ -1,0 +1,166 @@
+HTTP/1.1 200 OK
+Server: nginx/1.22.1
+Date: Wed, 05 Apr 2023 05:21:28 GMT
+Content-Type: text/html
+Content-Length: 4696
+Last-Modified: Mon, 27 Feb 2023 08:27:00 GMT
+Connection: keep-alive
+ETag: "63fc6954-1258"
+Accept-Ranges: bytes
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人网站</title>
+    <style>
+	
+        * {
+            padding: 0;
+            margin: 0;
+        }
+       
+        body {
+            background-image: linear-gradient(to bottom right, rgb(114, 135, 254), rgb(130, 88, 186));
+			position: relative;
+        }
+		#id_1{
+			height: 750px;
+		}
+
+        .login-container {
+            width: 600px;
+            height: 315px;
+            margin: 0 auto;
+            margin-top: 10%;
+            border-radius: 15px;
+            box-shadow: 0 10px 50px 0px rbg(59, 45, 159);
+            background-color: rgb(95, 76, 194);
+        }
+        .left-container {
+            display: inline-block;
+            width: 330px;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+            padding: 60px;
+            background-image: linear-gradient(to bottom right, rgb(118, 76, 163), rgb(92, 103, 211));
+        }
+        .title {
+            color: #fff;
+            font-size: 18px;
+            font-weight: 200;
+        }
+        .title span {
+            border-bottom: 3px solid rgb(237, 221, 22);
+        }
+        .input-container {
+            padding: 20px 0;
+        }
+        input {
+            border: 0;
+            background: none;
+            outline: none;
+            color: #fff;
+            margin: 20px 0;
+            display: block;
+            width: 100%;
+            padding: 5px 0;
+            transition: .2s;
+            border-bottom: 1px solid rgb(199, 191, 219);
+        }
+        input:hover {
+            border-bottom-color: #fff;
+        }
+        ::-webkit-input-placeholder {
+            color: rgb(199, 191, 219);
+        }
+        .message-container {
+            font-size: 14px;
+            transition: .2s;
+            color: rgb(199, 191, 219);
+            cursor: pointer;
+        }
+        .message-container:hover {
+            color: #fff;
+        }
+        .right-container {
+            width: 145px;
+            display: inline-block;
+            height: calc(100% - 120px);
+            vertical-align: top;
+            padding: 60px 0;
+        }
+        .regist-container {
+            text-align: center;
+            color: #fff;
+            font-size: 18px;
+            font-weight: 200;
+        }
+        .regist-container span {
+            border-bottom: 3px solid rgb(237, 221, 22);
+        }
+        .action-container {
+            font-size: 10px;
+            color: #fff;
+            text-align: center;
+            position: relative;
+            top: 70px;
+        }
+        .action-container span {
+            border: 1px solid rgb(237, 221, 22);
+            padding: 10px;
+            display: inline;
+            line-height: 20px;
+            border-radius: 20px;
+            position: absolute;
+            bottom: 10px;
+            left: calc(72px - 20px);
+            transition: .2s;
+            cursor: pointer;
+        }
+        .action-container span:hover {
+            background-color: rgb(237, 221, 22);
+            color: rgb(95, 76, 194);
+        }
+		#beian{
+			width: 100%;
+			height: 50px;
+			background-color: white;
+			position: absolute;
+			bottom: 20px;
+		}
+    </style>
+</head>
+<body>
+<div id="id_1">
+    <div class="login-container">
+        <div class="left-container">
+            <div class="title"><span>登录</span></div>
+            <div class="input-container">
+                <input type="text" name="username" placeholder="用户名">
+                <input type="password" name="password" placeholder="密码">
+            </div>
+            <div class="message-container">
+                <span>忘记密码</span>
+            </div>
+        </div>
+        <div class="right-container">
+            <div class="regist-container">
+                <span class="regist">注册</span><br>
+				<p style="padding-top: 70px;">第三方登录</p>
+				<a href=""><img src="image/2.jpg" width="30px" height="35px"/></a>
+            </div>
+            <div class="action-container">
+                <span>提交</span>
+            </div>
+        </div>
+    </div> 
+<div id="beian">
+<a  target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=41102402000277" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
+<img src="image/备案图标.png" style="float:left; padding-left: 600px; padding-top: 20px;"/>
+<p  style="float:left; padding-top: 20px; height:20px;  line-height:10px;margin: 0px 0px 0px 5px;color:#939393;">公安备案号 14010702070853   晋ICP备2023000622号-1 </p></a></div>
+</div>
+</body>
+</html>
+

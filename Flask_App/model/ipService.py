@@ -5,6 +5,7 @@ import requests
 import time
 import csv
 import datetime
+from datetime import timedelta
 import os
 import pandas as pd
 from dateutil import tz
@@ -92,51 +93,78 @@ def save_ipfile(file):
 ## Checks to_skip(), else call_ip and update db with result
 def process_ip_parent():
 
-    while config.REMAINING_LIMIT > 0 and len(list(retrieve_ips_to_process(config.REMAINING_LIMIT))) > 0:
-        # print("new while loop config.REMAINING_LIMIT:", config.REMAINING_LIMIT)
-        cursor = retrieve_ips_to_process(config.REMAINING_LIMIT)
-        
-        for ip_doc in cursor:
+    with client.start_session() as session:
+    # sessionId = session
+    # refreshTimestamp = datetime.datetime.now()
 
-            ip = str(ip_doc["ip_address"])
-            print("current ip in process_ip_parent:", ip)
+
+
+        while config.REMAINING_LIMIT > 0 and len(list(retrieve_ips_to_process(config.REMAINING_LIMIT))) > 0:
+            # print("new while loop config.REMAINING_LIMIT:", config.REMAINING_LIMIT)
+            cursor = retrieve_ips_to_process(config.REMAINING_LIMIT)
+            ## replicate to prevent closing
+            cursor = [x for x in cursor]
+            # print(cursor)
+
             
-            ## ip check to be here
-            if to_skip(ip_doc) == 1:
-                continue
-  
-            db_id = ip_doc['_id']
-            updated_ip_doc = call_ip(ip_doc, X_DAYS_AGO)
-            ## screenshot and extract html js functions here
-            updated_ip_doc = screenshot(updated_ip_doc)
-            updated_ip_doc = grab_html_js(updated_ip_doc) 
+            for ip_doc in cursor:
+                # currentTimestamp = datetime.datetime.now()
+                # if ( (currentTimestamp-refreshTimestamp)/1000 > 300 ) {
+                #     print("refreshing session")
+                #     db.adminCommand({"refreshSessions" : [sessionId]})
+                #     refreshTimestamp = new Date()
+                # }
+
+                ## refreshing to keep connection alive
+                client.admin.command('refreshSessions', [session.session_id], session=session)
+
+                ip = str(ip_doc["ip_address"])
+                print("current ip in process_ip_parent:", ip)
+                
+                ## ip check to be here
+                if to_skip(ip_doc) == 1:
+                    continue
     
-            try : 
-                col.replace_one({"_id" : db_id}, updated_ip_doc)
-                print("replacement successful")
-            
-            except Exception as e:
-                print(e)
-                # e
-
-            ## COMMENT OUT FOR ACTUAL
-            # break
+                db_id = ip_doc['_id']
+                updated_ip_doc = call_ip(ip_doc, X_DAYS_AGO)
+                ## screenshot and extract html js functions here
+                updated_ip_doc = screenshot(updated_ip_doc)
+                updated_ip_doc = grab_html_js(updated_ip_doc) 
         
+                try : 
+                    col.replace_one({"_id" : db_id}, updated_ip_doc)
+                    print("replacement successful")
+                
+                except Exception as e:
+                    print(e)
+                    # e
+
+                ## COMMENT OUT FOR ACTUAL
+                # break
+
+            cursor.close()
         return "replacement successful"
         
 
 def retrieve_ips_to_process(how_many_ips):
     # print("===== retrieve_ips_to_process() START =====")
 
+    ## auto closes after 10 minutes
     cursor = col.find(
         {"$and" : [{"processed_timestamp" : ""}, {"to_skip" : ""}, {"is_priority" : 0}]}
-        ).sort("added_timestamp", pymongo.ASCENDING).limit(how_many_ips)
+    ).sort("added_timestamp", pymongo.ASCENDING).limit(how_many_ips)
+
+    # ## auto closes after 30 minutes
+    # cursor = col.find(
+    #     {"$and" : [{"processed_timestamp" : ""}, {"to_skip" : ""}, {"is_priority" : 0}]}, no_cursor_timeout = True
+    # ).sort("added_timestamp", pymongo.ASCENDING).limit(how_many_ips)
     
     # cursor = col.find(
     #     {"$and" : [{"ip_address" : "1.1.1.1"},{"processed_timestamp" : ""}, {"to_skip" : ""}, {"is_priority" : 0}]}
     #     ).sort("added_timestamp", pymongo.ASCENDING).limit(how_many_ips)
     
     # print("===== retrieve_ips_to_process() END =====")
+
     return cursor
 
 ## Calls VT API, writes response to hard disk and update failure count. RETURNS UPDATED IP DOC
@@ -171,7 +199,8 @@ def call_ip(ip_doc, x_days_ago):
         print("QUOTA EXCEEDED, STOPPED ALL CALLS")
         config.REMAINING_LIMIT = 0
         return
-        
+
+
     ## TO UPDATE FAILURE COUNT += 1
     elif (r.status_code < 200 or r.status_code > 299):
         print("STATUS CODE NOT GOOD, ADDING FAILURE COUNT")
@@ -258,10 +287,12 @@ def to_skip(ip_doc):
         print(ip_address + " HAS BEEN processed in past X days")
 
         print("===== to_skip function end =====")
+        cursor.close()
         return 1
     
     print(ip_address + " has NOT been processed in past X days")
     print("===== to_skip function end =====")
+    cursor.close()
     return 0
     
 def custom_add():

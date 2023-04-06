@@ -1,0 +1,703 @@
+HTTP/1.1 200 OK
+Date: Wed, 05 Apr 2023 18:42:51 GMT
+Server: Apache/2.4.41 (Ubuntu)
+X-Powered-By: Express
+Access-Control-Allow-Origin: http://localhost:8080
+Content-Type: text/html; charset=utf-8
+Content-Length: 34301
+ETag: W/"85fd-pSizPEyeCyDAQmt9yU7kS4Ou7fg"
+Vary: Accept-Encoding
+
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Meta Tags -->
+	<meta charset="UTF-8">
+  	<meta name="description" content="Free Web tutorials">
+  	<meta name="keywords" content="HTML, CSS, JavaScript">
+  	<meta name="author" content="John Doe">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>KryptoKasinoWallet</title>
+	<!-- Css -->
+	<link href="/theme/css/slick.css" rel="stylesheet" type="text/css">
+	<link href="/theme/css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="/theme/css/aos.css" rel="stylesheet" type="text/css">
+	<link href="/theme/css/magnific-popup.css" rel="stylesheet" type="text/css">
+	<link href="/theme/css/nice-select.css" rel="stylesheet" type="text/css">
+	<link href="/theme/css/custom.css" rel="stylesheet" type="text/css">
+	<!-- Scripts -->
+	<script src="https://unpkg.com/web3@latest/dist/web3.min.js"></script>
+	<script src="https://unpkg.com/@metamask/legacy-web3@latest/dist/metamask.web3.min.js"></script>
+	<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+	<script type="text/javascript" src="/theme/js/jquery-3.6.2.min.js"></script>
+	<script src='https://cdn.jsdelivr.net/npm/bignumber.js@9.1.0/bignumber.min.js'></script>
+	
+	
+</head>
+<body>
+	
+	<h1 id="textsss"></h1>
+	<!-- Site Header -->
+	<header class="site-header">
+		<div class="container">
+			<div class="header-wrapper d-flex align-items-center justify-content-between">
+				<div class="header-logo" data-aos="fade-right" data-aos-duration="1000">
+					<a href="/" class="d-flex align-items-center">
+						<img src="/theme/images/KryptoKasinoLogo.png" alt="KWWallet Logo">
+					</a>
+				</div>
+				
+				<div class="site-nav">
+					<ul class="d-flex align-items-center" data-aos="fade-left" data-aos-duration="1000">
+						<!-- <li><a href="/">Home</a></li> -->
+						<li><a href="/about-us">About Us</a></li>
+						<!-- <li><a href="/contact-us">Contact Us</a></li> -->
+						
+							<li class="has-submenu"><a href="javascript:void(0);" class="connect">Connect</a>
+								<ul class="sub-menu">
+									<li>
+										<a href="#" id="loginButton">
+											<span class="icon"><img src="/theme/images/Metamask-Icon.png" alt="Metamask Icon"></span>
+											<span class="text">Metamask</span>
+										</a>
+									</li>
+									<li>
+										<a href="#" id="coinbaseLogin">
+											<span class="icon"><img src="/theme/images/coinbase.png" alt="Coinbase Icon"></span>
+											<span class="text">Coinbase</span>
+										</a>
+									</li>
+									<li>
+										<a href="/auth/google">
+											<span class="icon"><img src="/theme/images/Google-Icon.png" alt="Google Icon"></span>
+											<span class="text">Google</span>
+										</a>
+									</li>
+									<li>
+										<a href="/auth/facebook">
+											<span class="icon"><img src="/theme/images/facebook-icon.png" alt="Facebook Icon White"></span>
+											<span class="text">Facebook</span>
+										</a>
+									</li>
+									<li>
+										<a href="#login-register-popup" class="open-popup-link">
+											<span class="icon"><img src="/theme/images/User-Icon.png" alt="User Icon"></span>
+											<span class="text">Login</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+						
+					</ul>
+				</div>
+				<div class="menu-icon">
+					<img src="/theme/images/Menu-Icon.png" alt="Menu Icon">
+				</div>
+			</div>
+		</div>
+	</header>
+	<div id="quick-deposit-header" class="white-popup mfp-hide credit-amount-success-popup">
+		<input type="hidden" value="" id="headerSessionWalletType">
+		<input type="hidden" value="" id="header-selected-pg">
+		<div class="popup-body">
+			<ul class="nav nav-pills" id="login-register-tabs" role="tablist">
+				<li class="nav-item" role="presentation" style="width: 100%;">
+					<center><h3>Deposit</h3></center>
+				</li>
+			</ul>
+			<div class="content-block">
+				<div class="form-box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+					<ul class="nav nav-pills" id="krypto-fiat-tabs" role="tablist">
+					  <li class="nav-item" role="presentation">
+						<button class="nav-link active" id="login-tab" data-bs-toggle="pill" data-bs-target="#krypto" type="button" role="tab" aria-controls="krypto" aria-selected="true">Krypto</button>
+					  </li>
+					  <li class="nav-item" role="presentation">
+						<button class="nav-link" id="register-tab" data-bs-toggle="pill" data-bs-target="#fiat" type="button" role="tab" aria-controls="fiat" aria-selected="false">Fiat</button>
+						</li>
+					</ul>
+					<div class="tab-content" id="login-register-tabsContent">
+					  <div class="tab-pane fade show active" id="krypto" role="tabpanel" aria-labelledby="krypto" tabindex="0">
+						<form id="header-transferDep" class="header-transfer">
+							<div class="input-block">
+								<div class="left-block">
+									<span>You Receive</span>
+									<input type="text" name="header-recieve" placeholder="0.00" id="header-crypto-amountDep">
+								</div>
+								<div class="right-block currency-select">
+									<div class="overflow-list">
+										<select name="header-currency" id="header-crypto-currency" class="nice-select">
+											<option value="ETH">ETH</option>
+										</select>
+									</div>
+								</div>
+							</div>
+								<span style="color:#a10000;" class="header-note">Note: Please connect your MetaMask wallet</span>
+							<div class="done-btn">
+								<button class="button submit disableBtn" id="header-crypto-depositButton">Deposit Amount</button>
+							</div>
+						</form>
+					  </div>
+					  <div class="tab-pane fade" id="fiat" role="tabpanel" aria-labelledby="fiat" tabindex="0">
+						<input type="radio" name="payment-selection-header" class="form-check-input" id="payment-selection-header" style="margin-right: 5px; margin-bottom: 10px;" value="card" checked><span>Card</span>
+						<input type="radio" name="payment-selection-header" class="form-check-input" id="payment-selection-header" style="margin-right: 5px; margin-bottom: 10px;" value="upi"><span>UPI</span>	
+						<div class="input-block">
+								<div class="left-block">
+									<span>You Receive</span>
+									<input type="text" name="header-recieve" placeholder="0.00" id="header-fiat-amountDep">
+								</div>
+								<div class="right-block currency-select">
+									<div class="overflow-list">
+										<select name="header-currency" id="header-fiat-currency" class="nice-select">
+											
+											
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="done-btn">
+								<button class="button submit" id="header-fiat-depositButton">Deposit Amount</button>
+							</div>
+					  </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Loader -->
+	<div class="loader" id="loader"><span class="loader-text"></span></div>
+	<!-- Credit Amount Success Popup -->
+	<div id="credit-amount-success-popup" class="white-popup mfp-hide credit-amount-success-popup">
+	<div class="popup-body">
+		<div class="emoji-block d-flex justify-content-center align-items-center">
+			<img src="/theme/images/Emoji-Icon.png" alt="Emoji Icon">
+		</div>
+		<div class="content-block">
+			<h2>All done, Congrats!</h2>
+			<p><strong id="amountCredit"></strong> is <br>deposited in your wallet</p>
+			<div class="done-btn">
+				<button class="button done_transaction" id="done_credit">Done</button>
+			  	<!-- <a href="/transfer" class="button" id="done_credit">Done</a> -->
+			</div>
+			<!-- <div class="view-details">
+				<a href="#transaction" id="close_credit">View Details</a>
+			</div> -->
+		</div>
+	</div>
+	</div>
+	<!-- Debit Amount Success Popup -->
+	<div id="debit-amount-success-popup" class="white-popup mfp-hide credit-amount-success-popup">
+	<div class="popup-body">
+		<div class="emoji-block d-flex justify-content-center align-items-center">
+			<img src="/theme/images/Emoji-Icon.png" alt="Emoji Icon">
+		</div>
+		<div class="content-block">
+			<h2>Your Amount Debited Successfully!</h2>
+			<p><strong id="amountDebit"></strong> will be <br>shortly withdraw from your wallet</p>
+			<div class="done-btn">
+				<button class="button done_transaction" id="done_debit">Done</button>
+			  <!-- <a href="/transfer" class="button" id="done_debit">Done</a> -->
+			</div>
+			<!-- <div class="view-details">
+				<a href="#transaction" id="close_debit">View Details</a>
+			</div> -->
+		</div>
+	</div>
+	</div>
+	
+	<!-- User Denied the request popup -->
+	<div id="user-denied-request-popup" class="white-popup mfp-hide credit-amount-success-popup">
+	<div class="popup-body">
+	  <div class="emoji-block d-flex justify-content-center align-items-center">
+		  <img src="/theme/images/Emoji-Icon-Reject.png" height="60px" width="60px" alt="Emoji Icon">
+	  </div>
+	  <div class="content-block">
+		  <h2>Request Rejected</h2>
+		  <p>You rejected the MetaMask transaction request.</p>
+		  <div class="done-btn">
+			<button class="button close-modal" id="metamask-request-reject">Done</button>
+		  </div>
+	  </div>
+	</div>
+	</div>
+	
+	<!-- Enter Range amount popup -->
+	<div id="range-amount-mismatch" class="white-popup mfp-hide credit-amount-success-popup">
+	<div class="popup-body">
+	  <div class="emoji-block d-flex justify-content-center align-items-center">
+		  <img src="/theme/images/Emoji-Icon-Reject.png" height="60px" width="60px" alt="Emoji Icon">
+	  </div>
+	  <div class="content-block">
+		  <h2>Range Mismatch</h2>
+		  <p>Enter amount between range of 0.00001 to 0.00004.</p>
+		  <div class="done-btn">
+			<button class="button close-modal" id="invalid-range">Done</button>
+			<!-- <a href="/transfer" class="button" id="done_modal">Done</a> -->
+		  </div>
+	  </div>
+	</div>
+	</div>
+	
+	<!-- amount not valid -->
+	<div id="amount-not-valid" class="white-popup mfp-hide credit-amount-success-popup">
+	<div class="popup-body">
+	  <div class="emoji-block d-flex justify-content-center align-items-center">
+		  <img src="/theme/images/Emoji-Icon-Reject.png" height="60px" width="60px" alt="Emoji Icon">
+	  </div>
+	  <div class="content-block">
+		  <h2>Invalid Amount!</h2>
+		  <p>Please enter a Valid amount.</p>
+		  <div class="done-btn">
+			<button class="button close-modal" id="done_modal">Done</button>
+			<!-- <a href="/transfer" class="button" id="done_modal">Done</a> -->
+		  </div>
+	  </div>
+	</div>
+	</div>
+
+	<!-- MetaMask already connected with another account -->
+	<div id="invalid-metamask" class="white-popup mfp-hide credit-amount-success-popup">
+		<div class="popup-body">
+		<div class="emoji-block d-flex justify-content-center align-items-center">
+			<img src="/theme/images/Emoji-Icon-Reject.png" height="60px" width="60px" alt="Emoji Icon">
+		</div>
+		<div class="content-block">
+			<h2>Cannot use this account!</h2>
+			<p>This MetaMask account is already registered by another user</p>
+			<div class="done-btn">
+				<button class="button close-modal" id="done_metamask">Done</button>
+				<!-- <a href="/transfer" class="button" id="done_modal">Done</a> -->
+			</div>
+		</div>
+		</div>
+	</div>
+	
+	<!-- transaction failed -->
+	<div id="transaction-failed" class="white-popup mfp-hide credit-amount-success-popup">
+	<div class="popup-body">
+	  <div class="emoji-block d-flex justify-content-center align-items-center">
+		  <img src="/theme/images/Emoji-Icon-Reject.png" height="60px" width="60px" alt="Emoji Icon">
+	  </div>
+	  <div class="content-block">
+		  <h2>Transaction Failed!</h2>
+		  <p id="error-description"></p>
+		  <div class="done-btn">
+			<button class="button close-modal" id="done_modal">Done</button>
+			<!-- <a href="/transfer" class="button" id="done_modal">Done</a> -->
+		  </div>
+	  </div>
+	</div>
+	</div>
+<!-- payment detail prefill -->
+<div id="payment-details-prefill-header" class="white-popup mfp-hide login-register-popup">
+    <div class="popup-body">
+      <ul class="nav nav-pills" id="login-register-tabs" role="tablist">
+          <li class="nav-item" role="presentation">
+              <center><h3>Payment Details</h3></center>
+          </li>
+      </ul>
+      <div class="tab-content" id="">
+        <div class="tab-pane fade show active" id="" role="tabpanel" aria-labelledby="login" tabindex="0">
+          <form id="prefillDetailsHeader">
+            <div class="input-block">
+                <input type="number" name="contact" class="phone" id="contact-header" placeholder="Contact*" required="required" autocomplete="off">
+            </div>
+              <span class="error_message" id="error"></span>
+              <div class="submit-block">
+                  <input type="submit" id="submit-prefill-header" name="submit-prefill" class="submit" value="Payout">
+              </div>	
+          </form>
+        </div>
+      </div>
+  </div>
+</div>
+	
+	<!-- transaction failed -->
+	<div id="transaction-failed-withdraw" class="white-popup mfp-hide credit-amount-success-popup">
+	<div class="popup-body">
+	  <div class="emoji-block d-flex justify-content-center align-items-center">
+		  <img src="/theme/images/Emoji-Icon-Reject.png" height="60px" width="60px" alt="Emoji Icon">
+	  </div>
+	  <div class="content-block">
+		  <h2>Transaction Failed!</h2>
+		  <p id="error-description" class="transaction-failed-error"></p>
+		  <div class="done-btn">
+			<button class="button close-modal" id="done_modal">Done</button>
+			<!-- <a href="/transfer" class="button" id="done_modal">Done</a> -->
+		  </div>
+	  </div>
+	</div>
+	</div>
+
+<!-- Hero Section -->
+<section class="hero-section">
+    <canvas class="scene scene--full" id="scene"></canvas>
+    <script type="x-shader/x-vertex" id="wrapVertexShader">
+      #define PI 3.1415926535897932384626433832795
+      attribute float size;
+      void main() {
+        vec4 mvPosition = modelViewMatrix * vec4( position, 1.0 );
+        gl_PointSize = 3.0;
+        gl_Position = projectionMatrix * mvPosition;
+      }
+    </script>
+    <script type="x-shader/x-fragment" id="wrapFragmentShader">
+      uniform sampler2D texture;
+      void main(){
+        vec4 textureColor = texture2D( texture, gl_PointCoord );
+        if ( textureColor.a < 0.3 ) discard;
+        // vec4 dotColor = vec4(0.06, 0.18, 0.36, 0.4);
+
+        //vec4 dotColor = vec4(0.06, 0.7, 0.4, 0.7);
+        vec4 dotColor = vec4(00, 194, 212, 0.4);
+        vec4 color = dotColor * textureColor;
+        gl_FragColor = color;
+      }
+    </script>
+    <div class="container">
+        <div class="hero-wrapper row mx-0 align-items-center">
+            <div class="col-12 col-lg-6 px-0">
+                <div class="hero-content">
+                    <h1 data-aos="fade-up" data-aos-duration="1000">Access your Crypto<br>Anytime, Anywhere.</h1>
+                    <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">Buy, Store, Trade Crypto. Join your trusted KryptoKasino Wallet.</p>
+                    <a href="/transfer" class="btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">Click Here</a>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 px-0">
+                <div class="hero-image text-center">
+                    <img src="/theme/images/Home-Banner-Image.png" alt="Banner Image" class="floating">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Who We Are Section -->
+<section class="who-we-are-section light-dark-bg position-relative">
+    <div id="particles-js" class="particles-js light-dark-bg"></div>
+    <div class="container">
+        <div class="section-title text-center">
+            <h5 data-aos="fade-up" data-aos-duration="1000">Who We Are</h5>
+            <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">About KryptoKasino Wallet</h2>
+            <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">We are passionate, relentless, and stoked. We believe that a team of world-class visionaries can ship products that empower our customers and drive the business to new heights.</p>
+        </div>
+        <div class="row align-items-center who-we-wrapper">
+            <div class="col-12 col-lg-6">
+                <div class="image-block" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
+                    <div class="circle-image">
+                        <img src="/theme/images/About-Icons.png" alt="About Icons" class="circle"/>
+                    </div>
+                    <div class="center-image">
+                        <img src="/theme/images/center-logo.png" alt="Center Logo About">
+                    </div>	
+                    <div class="bg-pattern">
+                        <img src="/theme/images/work-petern.png" alt="Work bg-pattern" class="zoom-in-zoom-out">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="content-block" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
+                    <h2>We’ve built a platform to<br> buy and sell Crypto.</h2>
+                    <p>Our team is stretched across the globe and we aim to accelerate the adoption of Crypto as we step into the future of Trading.</p>
+                    <!-- <ul>
+                        <li>
+                            <span class="icon"><img src="/theme/images/circle-with-black-dotts.svg" alt="Circle with Black Dots"></span>
+                            <span class="text">Lorem Ipsum is simply dummy text of the printing</span>
+                        </li>
+                        <li>
+                            <span class="icon"><img src="/theme/images/circle-with-black-dotts.svg" alt="Circle with Black Dots"></span>
+                            <span class="text">Lorem Ipsum is simply dummy text of the printing</span>
+                        </li>
+                        <li>
+                            <span class="icon"><img src="/theme/images/circle-with-black-dotts.svg" alt="Circle with Black Dots"></span>
+                            <span class="text">Lorem Ipsum is simply dummy text of the printing</span>
+                        </li>
+                    </ul> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Timeline Section -->
+<section class="timeline-section position-relative py-100">
+    <div id="particles-js-one" class="particles-js dark-bg"></div>
+    <div class="container">
+        <div class="section-title text-center">
+            <h5 data-aos="fade-up" data-aos-duration="1000">The Timeline</h5>
+            <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">Your Trusted Crypto Trading and iGaming Platform</h2>
+            <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">Available as a mobile app, MetaMask equips you with a key vault, secure login, token wallet, and token exchange—everything you need to manage your digital assets.</p>
+            <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">Play your favourite game & use the Crypto of your choice. The fastest & more secure way to trade crypto.</p>
+        </div>
+        <div class="timeline-wrapper">
+            <div class="timeline-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                <div class="timeline-block">
+                    <h6>Step 1 Goes Here</h6>
+                    <img src="/theme/images/TimeLine-1.png">
+                    <p>Download KryptoKasino Wallet.</p>
+                </div>
+            </div>
+            <div class="timeline-item" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="300">
+                <div class="timeline-block">
+                    <p>Dashboard View To Display Your <br> Trade.</p>
+                    <img src="/theme/images/TimeLine-3.png">
+                    <h6>Step 2 Goes Here</h6>
+                </div>
+            </div>
+            <div class="timeline-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                <div class="timeline-block">
+                    <h6 data-aos="fade-down">Step 3 Goes Here</h6>
+                    <img src="/theme/images/TimeLine-1.png">
+                    <p>Buy & Sell 200+ Crypto.</p>
+                </div>
+            </div>
+            <div class="timeline-item" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="300">
+                <div class="timeline-block">
+                    <p>Stay private & secure storing your privacy coins.</p>
+                    <img src="/theme/images/TimeLine-3.png">
+                    <h6>Step 4 Goes Here</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Features Section -->
+<section class="features-section py-100 position-relative light-dark-bg">
+    <div id="particles-js-two" class="particles-js light-dark-bg"></div>
+    <div class="container">
+        <div class="section-title text-center">
+            <h5 data-aos="fade-up" data-aos-duration="1000">KryptoKasino FEATURES</h5>
+            <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">Best Features</h2>
+        </div>
+        <div class="features-wrapper">
+            <div class="row">
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="feature-item" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="icon-block">
+                            <img src="/theme/images/Safe-Secure-Icon.svg" alt="Safe Secure Icon">
+                        </div>
+                        <h4>Secure Asset Management</h4>
+                        <p>Decentralised wallet, data security ensured through local storage of private key and  multi-layer algorithm encryption.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="feature-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                        <div class="icon-block">
+                            <img src="/theme/images/Early-Bonus-Icon.svg" alt="Early Bonus Icon">
+                        </div>
+                        <h4>Convenient User Experience</h4>
+                        <p>Simple & User Friendly, Create Multiple Wallet Accounts, Switch & Manage with ease.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="feature-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                        <div class="icon-block">
+                            <img src="/theme/images/Univarsal-Access-Icon.svg" alt="Univarsal Access Icon">
+                        </div>
+                        <h4>Private & Secure</h4>
+                        <p>Accessing the wallet is private. We don’t collect any personal data.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="feature-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                        <div class="icon-block">
+                            <img src="/theme/images/Secure-Storage-Icon.svg" alt="Secure Storage Icon">
+                        </div>
+                        <h4>Easy Buying Crypto</h4>
+                        <p>Get your first transaction done be it Bitcoin, Ethereum, Binance Coin and many other cryptocurrencies.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="feature-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                        <div class="icon-block">
+                            <img src="/theme/images/Low-Cost-Icon.svg" alt="Low Cost Icon">
+                        </div>
+                        <h4>Easy Trading</h4>
+                        <p>Trade crypto anytime with ease.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="feature-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                        <div class="icon-block">
+                            <img src="/theme/images/Several-Profit-Icon.svg" alt="Several Profit Icon">
+                        </div>
+                        <h4>Crypto At One Place</h4>
+                        <p>View and manage your balance across the wallet, the Exchange, and your hardware, all in your wallet dashboard.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Testimonials Section -->
+<section class="testimonials-section position-relative py-100">
+    <div id="particles-js-three" class="particles-js transparent-bg"></div>
+    <div class="container">
+        <div class="section-title text-center">
+            <h5 data-aos="fade-up" data-aos-duration="1000">testimonial</h5>
+            <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">What Our Client’s Has to Say</h2>
+        </div>
+        <div class="testimonils-wrapper" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
+            <div class="testimonial-item">
+                <div class="testimonial-block">
+                    <div class="author-image">
+                        <!-- <img src="/theme/images/author-image.jpg" alt="Author Images"> -->
+                    </div>
+                    <div class="author-info text-center">
+                        <h3>Gracie Walter</h3>
+                    </div>
+                    <div class="testimonial-message text-center">
+                        <p>We have been working with KryptoKasino wallet for over a year now and I am extremely impressed with its performance and security. The user interface is user-friendly and makes it easy for me to manage my digital assets. The wallet also provides multiple layers of security to ensure the safety of my funds. I highly recommend this wallet to anyone looking for a secure and reliable way to store their cryptocurrencies.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-item">
+                <div class="testimonial-block">
+                    <div class="author-image">
+                        <!-- <img src="/theme/images/author-image.jpg" alt="Author Images"> -->
+                    </div>
+                    <div class="author-info text-center">
+                        <h3>Gracie Walter</h3>
+                    </div>
+                    <div class="testimonial-message text-center">
+                        <p>Trading using KryptoKasino Wallet for several months now and I am extremely satisfied with its ease of use and security features. I appreciate the added security measures, such as two-factor authentication and biometric login, which give me peace of mind knowing my assets are safe. Huge Casino Fan and would recommend our friends to use this.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial-slick-controls" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
+            <button class="test-prev"><img src="/theme/images/Prev-Arrow.svg" alt="Prev Arrow Icon"></button>
+            <button class="test-next"><img src="/theme/images/Next-Arrow.svg" alt="Next Arrow Icon"></button>
+        </div>
+        <div class="location-icons">
+            <div class="location-icon location-icon-1" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1000">
+                <img src="/theme/images/Location-Icon.png" alt="Location Icon">
+            </div>
+            <div class="location-icon location-icon-2" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1000">
+                <img src="/theme/images/Location-Icon.png" alt="Location Icon">
+            </div>
+            <div class="location-icon location-icon-3" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1000">
+                <img src="/theme/images/Location-Icon.png" alt="Location Icon">
+            </div>
+            <div class="location-icon location-icon-4" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1000">
+                <img src="/theme/images/Location-Icon.png" alt="Location Icon">
+            </div>
+        </div>
+    </div>
+</section>
+<input type="hidden" id="fb-err" value="false">
+	<div id="facebook-limit-reach" class="white-popup mfp-hide credit-amount-success-popup">
+		<div class="popup-body">
+			<div class="emoji-block d-flex justify-content-center align-items-center">
+				<img src="/theme/images/Emoji-Icon-Reject.png" height="60px" width="60px" alt="Emoji Icon">
+			</div>
+			<div class="content-block">
+				<h2>Something went wrong!</h2>
+				<p>Please try again after sometime.</p>
+				<div class="done-btn">
+				  <button class="button" id="done_request">Done</button>
+				</div>
+			</div>
+		</div>
+	</div>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+<!-- jQuery -->
+<script type="text/javascript" src="/theme/js/jquery-3.6.2.min.js"></script>
+<script type="text/javascript" src="/theme/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="/theme/js/slick.min.js"></script>
+<script type="text/javascript" src="/theme/js/aos.js"></script>
+<script type="text/javascript" src="/theme/js/particles.min.js"></script>
+<script type="text/javascript" src="/theme/js/magnific-popup.min.js"></script>
+<script type="text/javascript" src="/theme/js/nice-select.js"></script>
+<script type="text/javascript" src="/theme/js/three.min.js"></script>
+<script type="text/javascript" src="/theme/js/TweenMax.min.js"></script>
+<script type="text/javascript" src="/theme/js/custom.js"></script>
+<script type="text/javascript" src="/js/doneEvent.js"></script>
+<script type="text/javascript" src="/js/connectWallet.js"></script>
+
+<script type="module" src="/js/signIn.js"></script>
+<!-- Footer -->
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-top">
+            <div class="row">
+                <div class="footer-col-1 col-12 col-lg-4 col-xl-6">
+                    <div class="footer-logo">
+                        <a href="/" class="logo">
+                            <img src="/theme/images/KryptoKasinoLogo.png" alt="KWWallet Logo">
+                        </a>
+                    </div>
+                    <ul class="footer-social d-flex align-items-center">
+                        <li><a href="#"><img src="/theme/images/Facebook-Icon.svg" alt="Facebook Icon"></a></li>
+                        <li><a href="#"><img src="/theme/images/Instagram-Icon.svg" alt="Instagram Icon"></a></li>
+                        <li><a href="#"><img src="/theme/images/Twitter-Icon.svg" alt="Twiter Icon"></a></li>
+                        <li><a href="#"><img src="/theme/images/Linkedin-icon.svg" alt="LinkedIn Icon"></a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-2 col-12 col-md-6 col-lg-4 col-xl-3">
+                    <ul class="quick-links">
+                        <!-- <li><a href="/">App</a></li> -->
+                        <!-- <li><a href="#">Whitepaper</a></li> -->
+                        <!-- <li><a href="#">Testimonials</a></li> -->
+                        
+                            <li><a href="#login-register-popup" class="open-popup-link">Join Us</a></li>
+                        
+                        <li><a href="/contact-us">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <!-- <div class="footer-col-3 col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="newsletter-block">
+                        <h6>Subscribe to Our Newsleter</h6>
+                        <form method="get">
+                            <div class="input-block">
+                                <input type="email" name="email-address" placeholder="Enter your email Address"> 
+                                <button type="submit"><img src="/theme/images/Submit-Icon.svg" alt="Submit Icon"></button>
+                            </div>
+                        </form>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="wrapper d-flex justify-content-between align-items-center">
+                <div class="copyright">
+                    <p>© <a href="/" class="link-home">KryptoKasino Wallet</a> all Rights Reserved.</p>
+                </div>
+                <div class="footer-links">
+                    <ul class="d-flex align-items-center">
+                        <!-- <li><a href="/services/terms-and-Service">Terms & Condition</a></li> -->
+                        <!-- <li><a href="/services/privacy-policy">Privacy Policy</a></li> -->
+                        <li><a href="/contact-us">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Login Register Popup -->
+<div id="login-register-popup" class="white-popup mfp-hide login-register-popup">
+      <div class="popup-body">
+        <ul class="nav nav-pills" id="login-register-tabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <center><h3>Login/Register</h3></center>
+            </li>
+        </ul>
+        <div class="tab-content" id="login-register-tabsContent">
+          <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login" tabindex="0">
+            <form method="post" id="loginForm">
+                <div class="input-block">
+                    <input type="text" name="username" class="name" id="username" placeholder="User name*" required="" autocomplete="off">
+                </div>
+                <div class="input-block">
+                    <input type="password" name="password" class="password" id="password" placeholder="Password*" required="" autocomplete="off">
+                </div>
+                <span class="error_message" id="error"></span>
+                <div class="submit-block">
+                    <input type="submit" name="login" class="submit" value="Login">
+                </div>	
+            </form>
+          </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -53,8 +53,9 @@ def test():
 
     
     print("=====TEST FUNCTION CALLED=====")
-    cursor = retrieve_ips_to_process(1)
-        
+    cursor = retrieve_ips_to_process(3)
+    for each in cursor:
+        print("each:", each)
 
             ## COMMENT OUT FOR ACTUAL
             # break

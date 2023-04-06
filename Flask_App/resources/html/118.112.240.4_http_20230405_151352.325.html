@@ -1,0 +1,79 @@
+HTTP/1.1 200 OK
+Server: nginx/1.16.1
+Date: Wed, 05 Apr 2023 07:13:43 GMT
+Content-Type: text/html
+Content-Length: 4075
+Last-Modified: Thu, 09 Mar 2023 08:46:42 GMT
+Connection: keep-alive
+Vary: Accept-Encoding
+ETag: "64099cf2-feb"
+Accept-Ranges: bytes
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!--    <link rel="icon" href="/favicon.ico" />-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_3348124_7vs567jch1w.css" />
+    <title></title>
+    <script>
+      const changeFavicon = (link) => {
+        let $favicon = document.querySelector('link[rel="icon"]')
+        if ($favicon !== null) {
+          $favicon.href = link
+        } else {
+          $favicon = document.createElement('link')
+          $favicon.rel = 'icon'
+          $favicon.href = link
+          document.head.appendChild($favicon)
+        }
+      }
+      let topLevelDomain = document.domain.split('.').slice(-2).join('.')
+      console.log(topLevelDomain)
+      // 设置图标地址
+      if (topLevelDomain === '3e3e.cn') {
+        changeFavicon('/favicon3e3e.ico')
+        document.title = '生意网三方应用';
+      } else if (topLevelDomain === 'go2.cn') {
+        changeFavicon('/favicongo2.ico')
+        document.title = '购途网三方应用';
+      } else if (topLevelDomain === 'e3hui.cn' || topLevelDomain === 'e3hui.com') {
+        changeFavicon('/favicone3hui.ico')
+        document.title = '衣衫汇三方应用';
+      }
+    </script>
+    <script type="module" crossorigin src="/js/index.876c197e.js"></script>
+    <link rel="modulepreload" href="/js/@vue.b5799e4f.js">
+    <link rel="modulepreload" href="/js/vue.5f4bb99c.js">
+    <link rel="modulepreload" href="/js/lodash-es.0051181c.js">
+    <link rel="modulepreload" href="/js/@vueuse.f6d48da8.js">
+    <link rel="modulepreload" href="/js/@element-plus.9cb33438.js">
+    <link rel="modulepreload" href="/js/@popperjs.f118a9d5.js">
+    <link rel="modulepreload" href="/js/@ctrl.9375a141.js">
+    <link rel="modulepreload" href="/js/axios.c6471024.js">
+    <link rel="modulepreload" href="/js/dayjs.155b75f5.js">
+    <link rel="modulepreload" href="/js/async-validator.3c544e25.js">
+    <link rel="modulepreload" href="/js/memoize-one.c87f6fc8.js">
+    <link rel="modulepreload" href="/js/escape-html.86960cf8.js">
+    <link rel="modulepreload" href="/js/normalize-wheel-es.118890a0.js">
+    <link rel="modulepreload" href="/js/@floating-ui.fb80874a.js">
+    <link rel="modulepreload" href="/js/element-plus.27b12994.js">
+    <link rel="modulepreload" href="/js/lodash.80e702b1.js">
+    <link rel="modulepreload" href="/js/crypto-js.1ab4af9e.js">
+    <link rel="modulepreload" href="/js/vue-router.5e998af0.js">
+    <link rel="modulepreload" href="/js/js-cookie.f2dcb3ee.js">
+    <link rel="stylesheet" href="/css/element-plus.4c82edab.css">
+    <link rel="stylesheet" href="/css/index.0f62e303.css">
+    <script type="module">var __vite_is_dynamic_import_support=false;</script>
+    <script type="module">try{import("_").catch(()=>1);}catch(e){}window.__vite_is_dynamic_import_support=true;</script>
+    <script type="module">!function(){if(window.__vite_is_dynamic_import_support)return;console.warn("vite: loading legacy build because dynamic import is unsupported, syntax error above should be ignored");var e=document.getElementById("vite-legacy-polyfill"),n=document.createElement("script");n.src=e.src,n.onload=function(){System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))},document.body.appendChild(n)}();</script>
+  </head>
+  <body>
+    <div id="app"></div>
+    
+    <script nomodule>!function(){var e=document,t=e.createElement("script");if(!("noModule"in t)&&"onbeforeload"in t){var n=!1;e.addEventListener("beforeload",(function(e){if(e.target===t)n=!0;else if(!e.target.hasAttribute("nomodule")||!n)return;e.preventDefault()}),!0),t.type="module",t.src=".",e.head.appendChild(t),t.remove()}}();</script>
+    <script nomodule id="vite-legacy-polyfill" src="/assets/polyfills-legacy.08e6f6f6.js"></script>
+    <script nomodule id="vite-legacy-entry" data-src="/js/index-legacy.388a38fc.js">System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))</script>
+  </body>
+</html>

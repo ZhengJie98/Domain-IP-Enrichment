@@ -1,0 +1,75 @@
+HTTP/1.1 200 OK
+Content-Type: text/html
+ETag: "3521053489"
+Last-Modified: Sat, 01 Apr 2023 13:40:41 GMT
+Content-Length: 3850
+Accept-Ranges: bytes
+Date: Wed, 05 Apr 2023 20:34:45 GMT
+Server: lighttpd/1.4.63
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RWTH Aachen University Internet-Wide Scanning Research</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="local.css">
+</head>
+
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="top">
+                <div align="center">
+                    <a href="http://www.comsys.rwth-aachen.de"><img src="comsys-logo-wbm-small.png" border=0 /></a>
+
+                    <a href="http://www.rwth-aachen.de"><img src="rwth_aachen_university.png" border=0 /></a>
+                </div>
+            </div>
+
+            <h3>Why am I receiving connection attempts from this machine?</h3>
+            <p>
+                These connections are part of an Internet-wide research study being conducted by computer scientists at RWTH Aachen University.
+                The research involves making benign connection attempts to every public IP address.
+                By measuring the entire public address space, we are able to analyze global patterns and trends in protocol deployment and security as well as device configuration and security.
+            </p>
+            <p>
+                As part of this study, every public IP address receives a handful of packets per week.
+                Depending on the protocol we're scanning we select a specific port.
+                On this port we perform regular TCP connection attempts followed by specification-compliant handshakes with responsive hosts.
+                If a handshake succeeds we query for openly available information via a few requests.
+                We never attempt to exploit security problems or change device configuration.
+                We only receive data that is easily available to anyone who connects to a particular address and port.
+            </p>
+            <p>
+                We may send authentication requests using publicly known default credentials.  
+                We do not use valid credentials for anything else besides confirming their validity. 
+                Currently, this only affects RabbitMQ.
+                Please refer to the <a href="https://www.rabbitmq.com/access-control.html">RabbitMQ manual</a> for instructions on how to change credentials.
+            </p>
+                
+                
+            <h3>Why are you collecting this data?</h3>
+            <p>
+                The data collected through these connections helps computer scientists study the deployment and configuration of network protocols and security technologies.
+                For example, we use it to analyze usage of industrial control protocols and support their secure deployment.
+                In some cases, we are able to detect vulnerable systems and report the problems to the system operators.
+            </p>
+
+            <h3>Can I request that my server be excluded?</h3>
+            <p>
+                To have your host or network excluded from future scans conducted by RWTH Aachen University, please contact
+                <a style="white-space: nowrap" href="mailto:researchscan@comsys.rwth-aachen.de?subject=%5BBlacklist%20Request%5D%20Please%20exclude%20me%20from%20scans&body=Hey%2C%0Aplease%20exclude%20my%20network%20from%20future%20scans.%0A%0ANetwork%20in%20CIDR%20notation%3A%20XXX.XXX.XXX.XXX/XX%0A%0AThank%20you">researchscan@comsys.rwth-aachen.de</a>
+                with your IP address or CIDR block.
+                Alternatively, you can configure your firewall to drop traffic from the subnet we use for scanning: 137.226.113.0/26.
+            </p>
+            
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
