@@ -1,0 +1,40 @@
+HTTP/1.1 200 OK
+Date: Thu, 06 Apr 2023 23:48:57 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Last-Modified: Tue, 14 Feb 2023 21:26:52 GMT
+ETag: "7a6-5f4af9f488c26"
+Accept-Ranges: bytes
+Content-Length: 1958
+Vary: Accept-Encoding
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Network Security Research Scans at University of California, San Diego</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h2>Why am I receiving connection attempts from this machine?</h2>
+<p>These connections are part of an Internet-wide research study being conducted by computer scientists at University of California, San Diego.  This research involves making benign connection attempts to every public IP address.  By measuring the entire public address space, we are able to study global trends in protocol security.  We will never attempt to exploit security problems or change device configuration.  We only receive data that is publicly visible to anyone who connects to a particular address and port.</p>
+
+<p>We are using the <a href="https://zmap.io/">ZMap</a> network scanner to facilitate some of these scans.  ZMap has been used for <a href="https://zmap.io/research">dozens of peer-reviewed academic papers</a>.  Projects our team has been involved in include:
+
+<ul>
+<li><a href="https://weakdh.org/">Imperfect Forward Secrecy: How Diffie-Hellman Fails in Practice</a>
+<li><a href="http://eprint.iacr.org/2013/734.pdf">Elliptic Curve Cryptography in Practice</a>
+<li><a href="https://factorable.net/">Mining Your Ps and Qs: Widespread Weak Keys in Network Devices</a>
+<li><a href="https://drownattack.com/">DROWN: Breaking TLS using SSLv2</a>
+</ul>
+
+<h2>Can I request that my server be excluded?</h2>
+<p>To have your host or network excluded from future scans conducted by our team, please contact <a href="mailto:research-scan@sysnet.ucsd.edu"> research-scan@sysnet.ucsd.edu</a> and include the IP addresses or CIDR blocks you would like us to blacklist.  Alternatively, you can configure your firewall to drop traffic from the IP address we use for scanning: 169.228.66.212.</p>
+
+</body>
+</html>

@@ -1,0 +1,416 @@
+HTTP/1.1 200 OK
+Server: nginx/1.20.1
+Date: Fri, 07 Apr 2023 18:16:06 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 12089
+Connection: keep-alive
+Set-Cookie: remember_token=; Expires=Thu, 01-Jan-1970 00:00:00 GMT; Max-Age=0; Path=/
+Set-Cookie: session=eyJjc3JmX3Rva2VuIjp7IiBiIjoiTWpGbE4yVm1Oamd3T1dJME1EQTFZV1kyWTJRd05XVTJPVEUwWkRVNU5qQTJZVE15TVRnME1nPT0ifX0.ZDBd5g.odR56JOLxOa9lsNK56LPbLHh3E4; HttpOnly; Path=/
+
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="/static/Browser.js"></script>
+<script>
+    function setCookie(name, value) {
+      var Days = 7;
+      var exp = new Date();
+      exp.setTime(exp.getTime() + Days * 24 * 60 * 60 * 1000);
+      document.cookie = name + "=" + escape(value) + ";expires=" + exp.toGMTString();
+    }
+    function getCookie(name) {
+      var arr, reg = new RegExp("(^| )" + name + "=([^;]*)(;|$)");
+      if (arr = document.cookie.match(reg))
+        return unescape(arr[2]);
+      else
+        return null;
+    }
+  //console.log(getCookie())
+      if (getCookie('l') == 'EN') {
+      }
+	  else if (getCookie('l') == 'CN'){
+        location.href="/cn";
+      }
+	  else if (getCookie('l') == 'JP'){
+        location.href="/jp";
+      }
+	  else if (getCookie('l') == 'KR'){
+        location.href="/kr";
+      }
+	  else if (getCookie('l') == 'TW'){
+        location.href="/tw";
+      }
+	  else{
+          var type = navigator.appName;
+          //console.log(type);
+          if (type == "Netscape") {
+            var lang = navigator.language
+          }
+          else {
+            var lang = navigator.userLanguage
+          }
+          var lang1 = lang.substr(0, 2);
+		  var lang2 = lang.substr(0, 5);
+          //console.log(lang);
+          if (lang1 == "en") {
+          
+          }
+          else if (lang2 == "zh-CN") {
+          window.location.href = "/cn"
+          }
+          else if (lang1 == "ja") {
+            window.location.href = "/jp"
+          }
+		   else if (lang1 == "ko") {
+            window.location.href = "/kr"
+          }
+          else if (lang2 == "zh-TW") {
+            window.location.href = "/tw"
+          }
+          else {
+
+          }
+        }
+</script>
+<meta charset="utf-8"/>
+<link rel="canonical" href="https://bthub.in">
+<link rel="alternate" href="https://bthub.in/" hreflang="en" />
+<link rel="alternate" href="https://bthub.in/cn" hreflang="zh-CN" />
+<link rel="alternate" href="https://bthub.in/tw" hreflang="zh-TW" />
+<link rel="alternate" href="https://bthub.in/jp" hreflang="ja" />
+<link rel="alternate" href="https://bthub.in/kr" hreflang="ko" />
+<link rel="alternate" href="https://bthub.in" hreflang="x-default" />
+<title>BTHub - Magnet Links and Torrents Search Engine</title>
+<meta name="keywords" content="magnet links search,magnetic links search,torrents search,bt search,magnet torrent search,torrent seed,movies,music,games,applications,apps,free,DHT,bthub"/>
+<meta name="description" content="BTHub - Focus On Magnet Links and Torrents Search Service."/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="msvalidate.01" content="42E47E1FC878914C781AC03DE369AEBA" />
+<meta name="yandex-verification" content="8f4acfb03fa18fdc" />
+<link type="text/css" rel="stylesheet" href="/static/default.css"/>
+<link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/static/favicon.ico" type="image/x-icon">
+<script src="/static/shang/js/jquery-1.8.3.min.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154886744-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-154886744-1');
+</script>
+</head>
+<body>
+<style>
+  .hhidden{
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    -webkit-clip-path: inset(0px 0px 99.9% 99.9%);
+    clip-path: inset(0px 0px 99.9% 99.9%);
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+    padding: 0;
+    border: 0;
+	}
+</style>
+<h1 class="hhidden">BTHub - Torrents search,Magnet links search</h1>
+<div id="wrapper">
+<div class="top-bar" style="border:none;height:50px;z-index:10;"></div>
+<div id="first-content" style="top:40px;">
+<div id="center-box-wrapper" style="padding:0 0 13%;">
+<div id="center-box">
+<style>
+		@media only screen and ( max-width: 1080px ) {
+
+  .blue{
+    top: -1px !important;
+    transform: scale(.87) !important;
+    background: transparent url(/static/pS-Ah7LkbHQQyGzN8-i_BrJnqM8.png) no-repeat !important;
+    background-position: -105px 1px !important;
+    background-size: 144px 40px !important;
+    }
+  #center-logo img{
+	margin-right:15px !important;
+	}
+       @media (hover: none) {
+    #button:hover{
+	background-color: #f2f2f2 !important;
+	background-image: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1) !important;
+	color: #5F6368 !important;
+	border: 1px solid #f2f2f2 !important;
+	box-shadow:none !important;
+    }
+</style>
+<div id="center-logo">
+<a href="/"><img src="/static/logo.png" style="max-width:310px;margin-right:10px;min-width: 230px;"alt="BTHub"/></a>
+<style>
+.nativeshare {
+    position: absolute;
+    top: 8px;
+    font-family: 'Microsoft YaHei',Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    color: #666;
+	display: none;
+}
+@media screen and (max-width: 665px){
+.nativeshare {
+    display: inline-block;
+    }
+}
+</style>
+<span onclick="call()" class="nativeshare"><svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="vertical-align: middle;padding: 3px;height: 20px;width: 20px;"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z"></path></svg>Share...</span>
+<script type="text/javascript" src="/static/NativeShare.js"></script>
+<script>
+        var nativeShare = new NativeShare()
+        var shareData = {
+            title: '',
+            desc: '',
+            link: '',
+            icon: '',
+
+         
+        }
+        nativeShare.setShareData(shareData)
+
+        function call(command) {
+            try {
+                nativeShare.call(command)
+            } catch (err) {
+                alert(err.message)
+            }
+        }
+
+        function setTitle(title) {
+            nativeShare.setShareData({
+                title: title,
+            })
+        }
+</script>
+</div>
+<div id="search-box">
+<form id="search-form" method="POST" action="/search">
+<input id="csrf_token" name="csrf_token" type="hidden" value="IjIxZTdlZjY4MDliNDAwNWFmNmNkMDVlNjkxNGQ1OTYwNmEzMjE4NDIi.ZDBd5Q.Fieg-f-9_idFB0JrmDPHuopI-Gc">
+<style>
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    font-size:13px;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   font-size:13px;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   font-size:13px;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  font-size:13px;
+}
+</style>
+<input autocomplete="off" id="search" name="search" placeholder="movie,tv show,music,game,application..." type="text" value="">
+<input class="blue" id="btnSearch" name="submit" title="Search" type="submit" value="Search">
+</form>
+</div>
+</div>
+<style>
+    #center_button {
+     position:relative;
+     text-align: center;
+     top:32px;
+	 display: block;
+
+    }
+	#button {
+	background-image: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    color: #5F6368;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 9px 16px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+	text-decoration:none
+    }
+	#button_lang {
+	position:relative;
+	text-align:center;
+	top:67px;
+	display:block;
+	font-size:small;
+	color:#222222
+	}
+	#button:hover {
+	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+	background-image: -webkit-linear-gradient(top,#f8f8f8,#f1f1f1);
+    background-color: #f8f8f8;
+    border: 1px solid #c6c6c6;
+    color: #222;
+	}
+.dropbtn {
+	display:block;
+	font-size:small;
+	color:#ff8601;
+    border: none;
+    cursor:pointer;
+	background-color: white;
+    outline: none;
+}
+.dropbtn:hover, .dropbtn:focus {
+    color: #222;
+	background-color:#ff8601;
+	 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown {
+    text-align:center;
+	position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 95px;
+	padding-top: 5px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 6px 8px;
+	margin: 8px 0;
+    text-decoration: none;
+    display: block;
+	cursor:pointer;
+}
+
+.dropdown-content a:hover {background-color: #ff8601}
+
+.show {
+    display: block;
+}
+	@media only screen and ( max-width: 655px ) {
+  #center_button1{
+    display:none !important;
+	 }
+  #button_lang1{
+    top:25px !important;
+	}
+</style>
+<div id="center_button">
+<script>
+function formSubmit()
+{
+HTMLFormElement.prototype.submit.call($('#search-form')[0]);
+}
+</script>
+<span><a href="javascript:;" onclick="formSubmit()" id="button"style="padding: 7px 6px;">BTHub Search</a><a href="/tag_movie.html" target="_blank" id="button" style="padding: 7px 6px;">Recommended</a></span>
+</div>
+<div id="button_lang">Language:
+<div class="dropdown">
+<button class="dropbtn" onclick="myFunction()">English</button>
+<div class="dropdown-content" id="myDropdown">
+    <a id="goEN">English</a>
+	<a id="goCN">简体中文</a>
+	<a id="goTW">繁體中文</a>
+	<a id="goJP">日本語</a>
+	<a id="goKR">한국어</a>
+</div>
+</div>
+</div>
+<script>
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+</div>
+</div>
+</div>
+
+  <div class="footer">
+<style>
+#right {
+    float:right;
+    margin-right:16px;
+} 
+@media only screen and ( max-width:665px ) {
+   .footer{
+	background:#fff !important;
+	border-top:none !important;
+  }
+  #right{
+    float:none !important;
+	margin-right:0 !important;
+  }
+</style>
+<span id="right"><a href="/terms" style="padding:0 13px;" target="_blank">Terms of Use<a href="/DMCA" style="padding:0 13px;" target="_blank">DMCA<a style="padding:0 13px;text-decoration:none;">© 2023 BTHub</a></span>
+</div>
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" data-cfasync="false" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5e23154af78821e0"></script>
+</body>
+</html>
+
+  
+<script>
+$(function(){
+    var mHeight = $(document).height();
+    $(window).resize(function () {
+        if($(document).height() < mHeight){
+            $(".footer,.top-bar,#button_lang,#center_button").css({"display":"none"});
+        }else{
+            $(".footer,.top-bar,#button_lang,#center_button").css({"display":"block"});
+        }
+    });
+    $("#goCN").click(function () {
+        setCookie("l", 'CN');
+        location.href = "/cn";
+    })
+    $("#goEN").click(function () {
+        setCookie("l", 'EN');
+        location.href = "/";
+    })
+    $("#goJP").click(function () {
+        setCookie("l", 'JP');
+        location.href = "/jp";
+    })	
+    $("#goKR").click(function () {
+        setCookie("l", 'KR');
+        location.href = "/kr";
+    })
+    $("#goTW").click(function () {
+        setCookie("l", 'TW');
+        location.href = "/tw";
+    })
+});
+
+    function setCookie(name, value) {
+        var Days = 7;
+        var exp = new Date();
+        exp.setTime(exp.getTime() + Days * 24 * 60 * 60 * 1000);
+        document.cookie = name + "=" + escape(value) + ";path=/;expires=" + exp.toGMTString();
+    }
+    function getCookie(name) {
+        var arr, reg = new RegExp("(^| )" + name + "=([^;]*)(;|$)");
+        if (arr = document.cookie.match(reg))
+            return unescape(arr[2]);
+        else
+            return null;
+    }
+</script>

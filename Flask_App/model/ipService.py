@@ -20,6 +20,9 @@ import config
 import subprocess
 import requests
 from bs4 import BeautifulSoup
+from pathlib import Path
+import time
+
 
 
 
@@ -114,6 +117,7 @@ def process_ip_parent():
                 #     db.adminCommand({"refreshSessions" : [sessionId]})
                 #     refreshTimestamp = new Date()
                 # }
+                tic = time.perf_counter()
 
                 ## refreshing to keep connection alive
                 client.admin.command('refreshSessions', [session.session_id], session=session)
@@ -141,15 +145,22 @@ def process_ip_parent():
 
                 ## COMMENT OUT FOR ACTUAL
                 # break
+                toc = time.perf_counter()
+                if (toc-tic) < 15:
+                    balance = 15-(toc-tic)
+                    print("sleeping to makeup 15 seconds: ", balance, "seconds" )
+                    time.sleep(15-(toc-tic))
+                    toc = time.perf_counter()
 
-            cursor.close()
-        return "replacement successful"
+                print(f"replacement SUCCESSFUL for {ip}, time taken {toc-tic} seconds")
+            # cursor.close()
+        return f"replacement SUCCESSFUL"
         
 
 def retrieve_ips_to_process(how_many_ips):
     # print("===== retrieve_ips_to_process() START =====")
 
-    ## auto closes after 10 minutes
+    # auto closes after 10 minutes
     cursor = col.find(
         {"$and" : [{"processed_timestamp" : ""}, {"to_skip" : ""}, {"is_priority" : 0}]}
     ).sort("added_timestamp", pymongo.ASCENDING).limit(how_many_ips)
@@ -160,7 +171,7 @@ def retrieve_ips_to_process(how_many_ips):
     # ).sort("added_timestamp", pymongo.ASCENDING).limit(how_many_ips)
     
     # cursor = col.find(
-    #     {"$and" : [{"ip_address" : "1.1.1.1"},{"processed_timestamp" : ""}, {"to_skip" : ""}, {"is_priority" : 0}]}
+    #     {"$and" : [{"ip_address" : "193.163.125.111"},{"processed_timestamp" : ""}, {"to_skip" : ""}, {"is_priority" : 0}]}
     #     ).sort("added_timestamp", pymongo.ASCENDING).limit(how_many_ips)
     
     # print("===== retrieve_ips_to_process() END =====")
@@ -240,7 +251,8 @@ def call_ip(ip_doc, x_days_ago):
     # screenshot(ip_doc)
 
     # print("final ip_doc:", ip_doc)
-    time.sleep(16)
+    # time.sleep(16)
+    # time.sleep(5)
     # print("16 seconds waiting done")
     config.REMAINING_LIMIT -= 1
     print("remaining config.REMAINING_LIMIT:", config.REMAINING_LIMIT)
@@ -430,7 +442,7 @@ def screenshot(ip_doc):
 
 
         # print("screenshot() ip_doc:", ip_doc)
-        print("===== screenshot function end =====")
+    print("===== screenshot function end =====")
     return ip_doc
 
 def grab_html_js(ip_doc):
@@ -504,15 +516,21 @@ def grab_html_js(ip_doc):
                     # print(type(js.decode()))
                     js_file_path = "resources/js/" + protocol + js_filename_alone[js_file_counter] + ".js"
                     array_js_filenames.append("resources/js/" + protocol + js_filename_alone[js_file_counter] + ".js")
-                    if not os.path.exists('resources/js'):
-                        os.mkdir('resources/js')
-                    if not os.path.exists('resources/js/' + protocol):
-                        os.mkdir('resources/js/' + protocol)
-                    with open(js_file_path, "w") as f:
+
+                    ## testing new folder creation
+                    # if not os.path.exists('resources/js'):
+                    #     os.mkdir('resources/js')
+                    # if not os.path.exists('resources/js/' + protocol):
+                    #     os.mkdir('resources/js/' + protocol)
+                    output_file = Path(js_file_path)
+                    output_file.parent.mkdir(exist_ok=True, parents=True)
+
+                    with open(js_file_path, "w", encoding="utf-8") as f:
+                    # with open(js_file_path, "w") as f:
                         
                         # text_file = open(js_file_path, "w+")
                         f.write(each_js.decode())
-                        f.close()
+                        # f.close()
 
                     js_file_counter += 1
 
@@ -529,14 +547,20 @@ def grab_html_js(ip_doc):
                 ip_doc['files_log'].append(to_append)
             
             except Exception as e:
-                print(e)
+                # print(e)
+                print("===== grab_html_js function exception occured")
+                print("exception e:", e)
                 if type(ip_doc['has_html']) == str:
                     ip_doc['has_html'] = 0
                 if type(ip_doc['has_javascript']) == str:
                     ip_doc['has_javascript'] = 0
                 # to_append = {"type": protocol, "stderr": response.stderr, "stdout": response.stdout, "html_file_location": None, "js_file_location" : None}
                 to_append["js_file_location"] = None
+                # to_append["exception"] = e
                 ip_doc['files_log'].append(to_append)
+                print(" ===== grab_html_js function exception end =====")
+                # return ip_doc
+
 
         # ## else indicate its not good 
         else:

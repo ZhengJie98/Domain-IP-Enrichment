@@ -1,0 +1,364 @@
+HTTP/1.1 200 OK
+Server: Mini web server 2.0 CDATA corp 2017.
+Accept-Ranges: bytes
+Connection: close
+Content-Type: text/html; charset=utf-8
+Cache-Control: no-cache,no-store
+Content-Length: 9291
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<META HTTP-EQUIV="pragma" CONTENT="no-cache">
+<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>SM162042-GHDUZ-T20</title>
+<LINK REL="icon" HREF='../img/icon_055.gif' TYPE="image/x-icon"/>
+
+<LINK REL="stylesheet" HREF='css/login.css' TYPE="text/css" />
+<LINK REL="stylesheet" HREF="css/stylech.css" TYPE="text/css" />
+<LINK REL="stylesheet" HREF='css/custom_055.css' TYPE="text/css" />
+<script>
+
+function getObj(id)
+{
+return(document.getElementById(id));
+}
+var SetTFlag = 0;
+var maxtime;
+var interval;
+var browserLanguage = navigator.language;;
+function setTime()
+{
+if(window.name>=60 || window.name<0 || window.name=="")
+{
+maxtime = Math.min(60, 0 + 60 - 584630);
+}
+else
+{
+maxtime = window.name;
+}
+if(maxtime>=0)
+{
+seconds = maxtime;
+getObj("time").innerHTML=seconds+" secs";
+if (maxtime == 0)
+{
+setDisable();
+SetTFlag =0;
+window.name="";
+if(interval)
+{
+clearInterval(interval);
+interval = 0;
+}
+}
+else
+{
+--maxtime;
+SetTFlag = 1;
+window.name = maxtime;
+}
+}
+}
+function setinner(type)
+{
+if (SetTFlag ==0)
+{
+getObj("myLayer").style.visibility = type ;
+}
+}
+function Transfer_meaning(id,value)
+{
+getObj(id).value=value;
+}
+function ChangeLang()
+{
+getObj("_lang").disabled = false;
+getObj("Frm_Username").disabled = true;
+getObj("Frm_Password").disabled = true;
+getObj("_lang").value = getObj("TestLang01").value;
+getObj("action").value = "setlang";
+getObj("Frm_Username").disabled = true;
+getObj("Frm_Password").disabled = true;
+getObj("LoginId").disabled = true;
+document.fLogin.submit();
+}
+function focusUsername()
+{
+if (getObj("Frm_Username").disabled == false)
+{
+getObj("Frm_Username").focus();
+}
+}
+function onLoad()
+{
+var browserlanguage = "English";
+focusUsername();
+for (var i = 0; i < getObj("TestLang01").options.length; i++) {
+if(getObj("TestLang01").options[i].value == "English")
+{
+getObj("TestLang01").options[i].selected = true;
+break;
+}
+}
+if("zh-CN" == navigator.language)
+browserlanguage = "Chinese";
+if("I" == "I" && "English" != "English")
+{
+getObj("_lang").disabled = false;
+getObj("Frm_Username").disabled = true;
+getObj("Frm_Password").disabled = true;
+if(true != getObj("TestLang01").disabled)
+{
+getObj("_lang").value = "English";
+getObj("action").value = "setlang";
+getObj("Frm_Username").disabled = true;
+getObj("Frm_Password").disabled = true;
+getObj("LoginId").disabled = true;
+document.fLogin.submit();
+}
+}
+else if("default" == "English" && "N/A" != browserlanguage)
+{
+getObj("_browserLang").disabled = false;
+getObj("Frm_Username").disabled = true;
+getObj("Frm_Password").disabled = true;
+if(true != getObj("TestLang01").disabled)
+{
+getObj("_browserLang").value = browserlanguage;
+getObj("action").value = "setlang";
+getObj("Frm_Username").disabled = true;
+getObj("Frm_Password").disabled = true;
+getObj("LoginId").disabled = true;
+document.fLogin.submit();
+}
+}
+}
+</script>
+</head>
+
+<body onload = "onLoad();">
+<div id="container">
+<div id="myLayer" onmousedown="setinner('hidden')">
+<table  bgcolor="#FFFFFF"><tr><td>
+<iframe id="myiframe" style="position: absolute; width: 179px; height: 88px; border: 1px none #000000; z-index: -1; filter:alpha(opacity=0); -moz-opacity:0">
+</iframe>
+<div id="layer_login_title">
+<div style="position:relative; left:35px; top:8px;" >
+<font  class="note" id="errnote">&nbsp;Error</font>
+</div>
+</div>
+<div id="layer_login_content">
+<span>
+&nbsp;&nbsp;<font id="errmsg" class="notecontent" ></font><span id="time" style="color:red;display:none;"></span>
+</span>
+</div>
+</table></tr></td>
+</div>
+<div id="head" style="display:none;">
+<div class="type"><font id="">SM162042-GHDUZ-T20</font></div>
+<div id="banner"></div>
+</div>
+<div id="loginArea">
+<form name="fLogin" id="fLogin" method="post"  onsubmit="return false;" action="">
+<input type="hidden" name="_lang" id="_lang" value="" disabled>
+<input type="hidden" name="_browserLang" id="_browserLang" value="" disabled>
+<input type="hidden" name="frashnum" id="frashnum" value="">
+<input type="hidden" name="action" id="action" value="login">
+<input type="hidden" name="Frm_Logintoken" id="Frm_Logintoken" value="">
+<!--内容开始-->
+<div class="login_frame">
+<div class="loginLogo">
+<table width="100%" height="100%"><tr>
+<img class="loginLogoImg" src="../img/login_img_055.gif" onerror="this.style.display='none'">
+</tr></table>
+</div>
+<div class="logintitle">
+<table width="100%" height="100%"><tr>
+<td class="loginTitleImgTd" width="75%">
+<img class="loginTitleImg" src='../img/banner_custom.gif' height="60px">
+<span class="loginTitleSpan" >Please login to continue...</span>
+</td>
+<td id="changlang">
+
+<a id="TestLang" style="cursor:pointer" href="#" >
+<select id="TestLang01" class="list_1" onchange="ChangeLang()">
+<option value="default">Auto</option>
+<option value="English">English</option>
+<option value="Chinese">中文</option>
+</select>
+</a>
+
+</td>
+</tr></table>
+</div>
+<div class="content login_content">
+<ul class="login_ul_1">
+<li class="login_li_2">
+<table width="100%"><tr>
+<td width="35%">
+<span>Username</span>
+</td>
+<td>
+<input type="text" class="logininput" name="Username" id="Frm_Username">
+</td>
+</tr></table>
+</li>
+</ul>
+<ul class="login_ul_1">
+<li class="login_li_2">
+<table width="100%"><tr>
+<td width="35%">
+<span>Password</span>
+</td>
+<td>
+<input type="password" class="loginpassword" name="Password"  id="Frm_Password">
+</td>
+</tr></table>
+</li>
+
+<li class="login_li_3">
+<table width="100%"><tr>
+<td width="55%">
+<input class="loginbtn" type="submit"  id="LoginId"  value="Login"  onclick="dosubmit()">
+</td>
+<td>
+<input class="loginbtn" type="reset"  id="LoginReset"  value="Reset" >
+</td>
+</tr></table>
+</li>
+</ul>
+</div>
+</div>
+</form>
+</div>
+
+<div style="font-family: Arial;font-size: 12px;text-align:center;width:100%;position:absolute;top:385px;">  </div>
+
+<div class="bottom_line" style="display:none;"></div>
+<div id="bottomx" style="display:none;"></div>
+</div>
+</body>
+</html>
+<script>
+
+window.name="";
+
+
+getObj("changlang").style.visibility = "hidden" ;
+
+function SetDisabled()
+{
+getObj("errmsg").innerHTML = "You have input the wrong username or password for three times. Please try again a minute later.";
+getObj("Frm_Username").disabled = true;
+getObj("Frm_Password").disabled = true;
+getObj("LoginId").disabled = true;
+
+getObj("TestLang01").disabled = true;
+
+getObj("myLayer").style.visibility = "visible" ;
+getObj("time").style.display = "" ;
+interval = setInterval("setTime()",1000);
+}
+function setDisable()
+{
+if (SetTFlag == 1)
+{
+getObj("Frm_Username").disabled = false;
+getObj("Frm_Password").disabled = false;
+getObj("LoginId").disabled = false;
+
+getObj("TestLang01").disabled = false;
+
+getObj("time").style.display = "none";
+getObj("myLayer").style.visibility = "hidden";
+}
+}
+function dosubmit()
+{
+if (getObj("Frm_Username").value == "")
+{
+getObj("errmsg").innerHTML = "Username cannot be empty.";
+getObj("myLayer").style.visibility = "visible" ;
+return;
+}
+else
+{
+getObj("LoginId").disabled = true;
+getObj("Frm_Logintoken").value = "0";
+
+{
+document.fLogin.submit();
+}
+}
+}
+var show_num = [];
+draw(show_num);
+function dj(){
+draw(show_num);
+}
+function sublim(){
+var val=document.getElementById("verif_code_text").value;
+var num = show_num.join("");
+if(val==''){
+alert('Verification code');
+}else if(val == num){
+return true;
+}else{
+
+document.getElementById("verif_code_text").value='';
+draw(show_num);
+}
+getObj("LoginId").disabled = false;
+return false;
+}
+function draw(show_num) {
+var canvas_width=document.getElementById('verif_code_canvas').clientWidth;
+var canvas_height=document.getElementById('verif_code_canvas').clientHeight;
+var canvas = document.getElementById("verif_code_canvas");
+var context = canvas.getContext("2d");
+canvas.width = canvas_width;
+canvas.height = canvas_height;
+var sCode = "A,B,C,E,F,G,H,J,K,L,M,N,P,Q,R,S,T,W,X,Y,Z,1,2,3,4,5,6,7,8,9,0,q,w,e,r,t,y,u,i,o,p,a,s,d,f,g,h,j,k,l,z,x,c,v,b,n,m";
+var aCode = sCode.split(",");
+var aLength = aCode.length;
+for (var i = 0; i <= 3; i++) {
+var j = Math.floor(Math.random() * aLength);
+var deg = Math.random() * 30 * Math.PI / 180;
+var txt = aCode[j];
+show_num[i] = txt;
+var x = 10 + i * 20;
+var y = 20 + Math.random() * 8;
+context.font = "bold 23px 微软雅黑";
+context.translate(x, y);
+context.rotate(deg);
+context.fillStyle = randomColor();
+context.fillText(txt, 0, 0);
+context.rotate(-deg);
+context.translate(-x, -y);
+}
+for (var i = 0; i <= 5; i++) { 
+context.strokeStyle = randomColor();
+context.beginPath();
+context.moveTo(Math.random() * canvas_width, Math.random() * canvas_height);
+context.lineTo(Math.random() * canvas_width, Math.random() * canvas_height);
+context.stroke();
+}
+for (var i = 0; i <= 30; i++) { 
+context.strokeStyle = randomColor();
+context.beginPath();
+var x = Math.random() * canvas_width;
+var y = Math.random() * canvas_height;
+context.moveTo(x, y);
+context.lineTo(x + 1, y + 1);
+context.stroke();
+}
+}
+function randomColor() {
+var r = Math.floor(Math.random() * 256);
+var g = Math.floor(Math.random() * 256);
+var b = Math.floor(Math.random() * 256);
+return "rgb(" + r + "," + g + "," + b + ")";
+}
+</script>

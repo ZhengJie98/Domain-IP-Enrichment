@@ -1,0 +1,136 @@
+HTTP/1.1 200 OK
+Date: Thu, 06 Apr 2023 22:42:57 GMT
+Server: Apache/2.4.41 (Ubuntu)
+Cache-Control: no-cache, private
+Set-Cookie: XSRF-TOKEN=eyJpdiI6IlBKWnIwcFp2ODVVRFJWQUlPN2RQclE9PSIsInZhbHVlIjoieGVOd0NHRCtreWJsZU9ZdXMwUkd0K2d0RnJCaVZUQzRSWUxQUjBEZ0tXU0dTZUsxMmJxTDBGemlWOXFNZWNlUSIsIm1hYyI6IjljYWNmMWEyMzcwMDY1ZmM1M2VkOGZhMzRkYjUyYjgxZjA2MTExYWI4OTQ5ODU4NGM5ZWM3OWE0Nzc0OTI5YzYifQ%3D%3D; expires=Fri, 07-Apr-2023 00:42:57 GMT; Max-Age=7200; path=/
+Set-Cookie: laravel_session=eyJpdiI6Ik5abjBJTStQZGJmZG1OdjFkNW5wZ3c9PSIsInZhbHVlIjoicGdmU2U4T1ZISFlBdFFnM2dXdkFZXC9qYldSVTR6ZmhEdkpnb2dHamNaNVo4VWJCVlhcLzFGOFo2cmx5NFJzRFY4IiwibWFjIjoiMzVkMTM2YzA0YjgxZmI4ODMyNTBiYzI5OGJkZmRjYzgzMmEzMGQ3NzhhYjNiZTVmNGY4YzM5NjVjYjU3Yzk0NyJ9; expires=Fri, 07-Apr-2023 00:42:57 GMT; Max-Age=7200; path=/; httponly
+Vary: Accept-Encoding
+Content-Length: 3311
+Content-Type: text/html; charset=UTF-8
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Training Center</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    body:before {
+        content: '';
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background-image: url(https://i.postimg.cc/8cf6v1rk/1.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        -webkit-background-size: cover;
+        background-size: cover;
+        -webkit-filter: blur(10px);
+        -moz-filter: blur(10px);
+        filter: blur(10px);
+    }
+
+    .contact-form {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 400px;
+        height: 350px;
+        padding: 80px 40px;
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    .avatar {
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        overflow: hidden;
+        top: calc(-80px/2);
+        left: 190px;
+    }
+
+    .contact-form h2 {
+        margin: 0;
+        padding: 0 0 20px;
+        color: #fff;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .contact-form p {
+        margin: 0;
+        padding: 0;
+        font-weight: bold;
+        color: #fff;
+    }
+
+    .contact-form input {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .contact-form input[type=email],
+    .contact-form input[type=password] {
+        border: none;
+        border-bottom: 1px solid #fff;
+        background: transparent;
+        outline: none;
+        height: 40px;
+        color: #fff;
+        font-size: 16px;
+    }
+
+    .contact-form input[type=submit] {
+        height: 30px;
+        color: #fff;
+        font-size: 15px;
+        background: red;
+        cursor: pointer;
+        border-radius: 25px;
+        border: none;
+        outline: none;
+        margin-top: 15%;
+    }
+
+    .contact-form a {
+        color: #fff;
+        font-size: 14px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    input[type=checkbox] {
+        width: 20%;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="contact-form">
+        <img alt="" class="avatar" src="http://167.71.167.162/images/a1.jpg">
+        <h2>Harmonex Training Center</h2>
+        <form method="POST" action="http://167.71.167.162/login">
+             <input type="hidden" name="_token" value="GltnxFYuZjT5NQFkCxgDL7wIsvNu9OZ4iWhZ5uAs">            <label for="email" class="col-md-4 col-form-label text-md-right">E-Mail Address</label>
+            <input id="email" type="email" class="form-control " name="email"
+                value="" required autocomplete="email" autofocus>
+
+                        <label for="password" class="col-md-4 col-form-label text-md-right">Password</label>
+            <input id="password" type="password" class="form-control "
+                name="password" required autocomplete="current-password">
+                <input type="submit" value="Sign in">
+        </form>
+    </div>
+</body>
+
+</html>

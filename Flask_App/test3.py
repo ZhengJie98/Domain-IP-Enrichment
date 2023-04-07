@@ -20,27 +20,14 @@ import subprocess
 import requests
 from bs4 import BeautifulSoup
 from datetime import timedelta
+import time
 
+tic = time.perf_counter()
 
-client = MongoClient('localhost',27017)
-db = client['filtered_sg_ip_list']
-col = db["ip"]
-sessionId = client
+toc = time.perf_counter()
 
-
-with client.start_session() as session:
-    # for doc in coll.find(no_cursor_timeout=True, session=session):
-        # Process document for longer than the default server
-        # session timeout of 30 minutes.
-        for _ in range(10):
-            time.sleep(5)
-            # Periodically refresh the session to keep it and the cursor alive.
-            client.admin.command(
-                'refreshSessions', [session.session_id], session=session)
-            print("refreshed")
-# session = client
-# client.admin.command('refreshSessions', [session.session_id], session=session)
-
-# with client.start_session() as session:
-#     print(session)
-#     session = session.advance_cluster_time(timedelta(minutes=30))    
+if (toc-tic) < 15:
+    balance = 15-(toc-tic)
+    print("sleeping to makeup 15 seconds: ", balance, "seconds" )
+    time.sleep(balance)
+# print("Finished " + ip + "in " f"{toc - tic:0.4f} seconds")
