@@ -176,19 +176,19 @@ def process_ip_parent():
 def retrieve_ips_to_process(how_many_ips):
     # print("===== retrieve_ips_to_process() START =====")
 
-    # auto closes after 10 minutes
-    cursor = col.find(
-        {"$and" : [{"processed_timestamp" : ""}, {"to_skip" : ""}, {"is_priority" : 0}]}
-    ).sort("added_timestamp", pymongo.ASCENDING).limit(how_many_ips)
+    # # auto closes after 10 minutes
+    # cursor = col.find(
+    #     {"$and" : [{"processed_timestamp" : ""}, {"to_skip" : ""}, {"is_priority" : 0}]}
+    # ).sort("added_timestamp", pymongo.ASCENDING).limit(how_many_ips)
 
     # ## auto closes after 30 minutes
     # cursor = col.find(
     #     {"$and" : [{"processed_timestamp" : ""}, {"to_skip" : ""}, {"is_priority" : 0}]}, no_cursor_timeout = True
     # ).sort("added_timestamp", pymongo.ASCENDING).limit(how_many_ips)
     
-    # cursor = col.find(
-    #     {"$and" : [{"ip_address" : "80.252.0.252"},{"processed_timestamp" : ""}, {"to_skip" : ""}, {"is_priority" : 0}]}
-    #     ).sort("added_timestamp", pymongo.ASCENDING).limit(how_many_ips)
+    cursor = col.find(
+        {"$and" : [{"ip_address" : "1.1.1.1"},{"processed_timestamp" : ""}, {"to_skip" : ""}, {"is_priority" : 0}]}
+        ).sort("added_timestamp", pymongo.ASCENDING).limit(how_many_ips)
     
     # print("===== retrieve_ips_to_process() END =====")
 
