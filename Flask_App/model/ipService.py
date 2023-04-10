@@ -131,6 +131,17 @@ def process_ip_parent():
     
                 db_id = ip_doc['_id']
                 updated_ip_doc = call_ip(ip_doc, X_DAYS_AGO)
+                call_ip_status_code = updated_ip_doc.get("response_code") 
+
+                ## breaking / continuing to quicken code
+                # print("call_ip_status_code:", call_ip_status_code)
+                if call_ip_status_code == 429:
+                    # print("breaking")
+                    return "QUOTA EXCEEDED, STOPPED ALL CALLS"
+                elif call_ip_status_code != None and (call_ip_status_code < 200 or call_ip_status_code > 299):
+                    print("call_ip_status_code:", call_ip_status_code, "continuing to next IP")
+                    continue
+
                 ## screenshot and extract html js functions here
                 updated_ip_doc = screenshot(updated_ip_doc)
                 updated_ip_doc = grab_html_js(updated_ip_doc) 
@@ -154,8 +165,12 @@ def process_ip_parent():
 
                 print(f"replacement SUCCESSFUL for {ip}, time taken {toc-tic} seconds")
             # cursor.close()
-        return f"replacement SUCCESSFUL"
+
+            # if call_ip_status_code == 429:
+
+            return "Replacement SUCCESSFUL"
         
+           
 
 def retrieve_ips_to_process(how_many_ips):
     # print("===== retrieve_ips_to_process() START =====")
@@ -209,7 +224,7 @@ def call_ip(ip_doc, x_days_ago):
     if (r.status_code == 429):
         print("QUOTA EXCEEDED, STOPPED ALL CALLS")
         config.REMAINING_LIMIT = 0
-        return
+        return {"response_code": r.status_code}
 
 
     ## TO UPDATE FAILURE COUNT += 1
@@ -221,7 +236,8 @@ def call_ip(ip_doc, x_days_ago):
                     { "$set" : {"failure_count" : failure_count}}  
                     )
 
-        return
+        return {"response_code": r.status_code}
+
     
     r = r.json()
     # print("r:", r)
@@ -511,7 +527,9 @@ def grab_html_js(ip_doc):
                 # print(js_files)
                 js_file_counter = 0
                 array_js_filenames = []
+                print("total js_files_links:", js_files_link)
                 for each_js in js_files_link:
+                    print("current each_js:", each_js)
                     each_js = requests.get(each_js).content
                     # print(type(js.decode()))
                     js_file_path = "resources/js/" + protocol + js_filename_alone[js_file_counter] + ".js"

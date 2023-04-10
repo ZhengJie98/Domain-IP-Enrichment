@@ -1,0 +1,117 @@
+HTTP/1.1 200 OK
+Date: Sun, 09 Apr 2023 02:21:39 GMT
+Server: Apache/2.4.20 (Unix)
+X-Powered-By: PHP/7.3.32
+Set-Cookie: _csrf-jwth=2ac3ef5502d88aa874e87af65dc56a0d9f0c5f5aeef932161834d252824dbd50a%3A2%3A%7Bi%3A0%3Bs%3A10%3A%22_csrf-jwth%22%3Bi%3A1%3Bs%3A32%3A%22l3SUca64r8HNmyMGEtdPmNLKdh-maPex%22%3B%7D; path=/; HttpOnly; SameSite=Lax
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+
+<!--引入头部文件-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>河北省智慧健康大数据平台</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="staticBase" content="/static/">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="csrf-param" content="_csrf-jwth">
+<meta name="csrf-token" content="AVE6qhyLujmFjaaTBGXxaYq1xDIovAZ-phH5--Ccn8xtYmn_f-qMDfe17t1pHLwuz8GgYkXySjXCedSWgcz6tA==">
+    <link rel="stylesheet" href="/datastatistics/css/public.css?v=2023032101"></link>
+<link rel="stylesheet" href="/datastatistics/css/data.css?v=2023032101"></link>
+<link rel="stylesheet" href="/css/login.css?v=2023032101"></link>
+</head>
+<body>
+
+<div class="header">
+        <div class="header_inner_big">
+        <div class="title">
+            <img src="/datastatistics/titlePic/13/main.png?t=1667789738?t=2023032101" />
+        </div>
+    </div>
+    <div class="header_left">
+        <img src="/datastatistics/images/logo02.png"/>
+    </div>
+    <div class="header_right">
+        <div class="header_right_inner clearfix">
+            <div class="date_time" id="date_time">&nbsp;</div>
+            <div class="date_year">
+                <span>星期日</span>
+                <span>2023-04-09</span>
+            </div>
+            <div class="returnBlock">
+                <a href="javascript:void(0);"><div class="back"></div></a>
+                <a href="javascript:window.location.href='/datastatisticsnew/community/index?id=1&level=0&t=13'"><div class="home"></div></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="main_data">
+<!--内容区-->
+<div class="loginBox">
+    <h2>使用预健未来App账号密码登录</h2>
+    <div class="item">
+        <input type="text" required id="phone">
+        <label for="">账号</label>
+    </div>
+    <div class="item">
+        <input type="password" required id="password">
+        <label for="">密码</label>
+    </div>
+    <div class="buttonStyle">
+        <div class="buttons"><button class="btn backendbBtn">管理员登录</button></div>
+        <div class="buttons"><button class="btn frontendBtn">登录</button></div>
+    </div>
+    
+</div>
+<input type="hidden" id="backUrl" name="backUrl" value="" />
+<script src="/datastatistics/js/jquery1.42.min.js?t=2023032101"></script>
+<script src="/js/login.js?t=2023032101"></script>
+<!--引入底部文件-->
+</div>
+<div class="footer">
+</div>
+<!--<div class="borTip" id="warning_box" style="z-index: 9999999999;display: block   ;background: #ffffff;float: none;position: absolute;left: 48%;top:60%;width: auto;height: auto;padding: 30px" >-->
+<!--    <p><img src="/new/shouhuan/images/jingao.png" alt="">警告</p>-->
+<!--    <p id="warning_data"></p>-->
+<!--    <p><span id="warning_username"></span>身体预警，请及时查看</p>-->
+<!--</div>-->
+
+
+<!-- 警告窗口 -->
+<div id="warning_box" class="popup mainBox tipbox" style="position: absolute;top:50%;left:50%;width:300px;height:200px;margin-top:-100px;margin-left:-150px; display: none;">
+    <div class="border_leftTop"></div>
+    <div class="border_rightTop"></div>
+    <div class="border_LeftBottom"></div>
+    <div class="border_rightBottom"></div>
+    <div class="tcPanel">
+        <div class="tcPanel_header clearfix">
+            <div class="title pull-left">警告</div>
+            <a class="close pull-right"></a>
+        </div>
+        <div class="tcPanel_body">
+            <p style="width:260px;"><img src="/datastatistics/images/icon_warning2.png" style="width:36px;height:32px;text-align: center;display: block;margin:0 auto;"></p>
+            <p class="tip-p" style="width:260px;text-align: center;padding-top:20px;overflow: hidden;font-size:14px;color:#fff;"><a href="javascript:void(0);"><span id="warning_username"></span>身体预警，请及时查看</a></p>
+        </div>
+    </div>
+</div><script src="/datastatistics/js/datatime.js"></script>
+<!--<script src="/datastatistics/js/warningDetailStatistics/warningNotice.js?t=111222"></script>-->
+<script src="/datastatistics/js/jquery.cookie.js"></script>
+<script src="/datastatistics/js/backUrl.js?t=2023032101"></script>
+</body>
+<script>
+function persent(value,total) {
+    if(total==0){
+        return 0;
+    }
+    return Math.round(value / total * 10000) / 100.00
+}
+
+</script>
+</script>
+</html>

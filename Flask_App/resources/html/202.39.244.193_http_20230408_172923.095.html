@@ -1,0 +1,593 @@
+HTTP/1.1 200 OK
+Date: Sat, 08 Apr 2023 17:29:31 GMT
+Last-Modified: Tue, 02 Jan 2018 13:50:32 GMT
+Content-Type: text/html
+Cache-Control: no-cache
+Connection: close
+
+﻿<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="CACHE-CONTROL" content="NO-CACHE">
+<meta http-equiv="Expires" content="-1">
+<link rel="stylesheet" type="text/css" href="css/index.css" />
+<script src="./common/Jq/jquery-1.6.2.min.js"></script>
+<script lang="JavaScript" src="common/Lang_en.js"></script>
+<script lang="JavaScript" src="common/ParseLang.js"></script>
+<style>
+    DIV {
+        cursor: default;
+    }
+</style>
+<title></title>
+<script language="JavaScript"> 
+<!--
+    function c_log(str){
+        try{
+            console.log(str);
+        }
+        catch(e){
+		
+        }
+    }
+    var psL = new ParseLang(jsnLang);
+    var is_ie = false;
+    var is_chrome = false;
+    var is_firefox = false;
+    var is_safari = false;
+    var is_ie11= false;
+    var brandID = 0;//M
+    var VLC_Version;
+	var g_jarobj; // applet object
+    //var check_chrome_status;
+    $(document).bind("contextmenu",function(event){return false;});
+    function chk_browser() {
+        //alert(psL._('AST_NOT_SUPPORT_BROWSER' , get_cke()));
+        //var b_obj = $.browser;
+        $.browser.chrome = /chrome/.test(navigator.userAgent.toLowerCase());
+
+        if ($.browser.msie == true && ($.browser.version == 8 || $.browser.version == 9 || $.browser.version == 10)) {
+            is_ie = true;
+        }
+        else if (navigator.appName == 'Netscape' && !!navigator.userAgent.match(/Trident.*rv:11\./) == true) {
+            is_ie11 = true;
+            $('#divJava').html('<applet id="JTest_Html" width="0" height="0" code="netbinary.cgiBinaryPost.class" archive = "webApplet.jar" codebase="common/Jar/">\nYou have to install JAVA Runtime to execute JAVA Applet.</applet>\n');
+            g_jarobj = document.getElementById("JTest_Html");
+        }
+        else if ($.browser.chrome == true) {
+            is_chrome = true;
+            $.browser.safari = false;
+            $.browser.webkit = false;
+            $('#divJava').html('<applet id="JTest_Html" width="0" height="0" code="netbinary.cgiBinaryPost.class" archive = "webApplet.jar" codebase="common/Jar/">\nYou have to install JAVA Runtime to execute JAVA Applet.</applet>\n');
+            g_jarobj = document.getElementById("JTest_Html");
+            //alert(g_jarobj.isRunning());
+        }
+        else if ($.browser.mozilla == true) {
+            is_firefox = true;
+            $('#divJava').html('<applet id="JTest_Html" width="0" height="0" code="netbinary.cgiBinaryPost.class" archive = "webApplet.jar" codebase="common/Jar/">\nYou have to install JAVA Runtime to execute JAVA Applet.</applet>\n');
+            g_jarobj = document.getElementById("JTest_Html");
+        }
+        else if ($.browser.safari == true) {
+            is_safari = true;
+            $.browser.chrome = false;
+            $.browser.webkit = false;
+            $('#divJava').html('<applet id="JTest_Html" width="0" height="0" code="netbinary.cgiBinaryPost.class" archive = "webApplet.jar" codebase="common/Jar/">\nYou have to install JAVA Runtime to execute JAVA Applet.</applet>\n');
+            g_jarobj = document.getElementById("JTest_Html");
+        }
+    }
+
+    function chk_browserLanguage() {
+        if (navigator.browserLanguage != 'undefined') {
+            g_browser_lang = navigator.browserLanguage;
+        }
+        else if (navigator.userLanguage != 'undefined') {
+            g_browser_lang = navigator.userLanguage;
+        }
+        else {
+            g_browser_lang = "en"
+        }
+        //alert(navigator.browserLanguage);
+        //alert(navigator.userLanguage);
+    }
+
+    function parseQueryString(query) {
+        // This function is anonymous, is executed immediately and 
+        // the return value is assigned to QueryString!
+        var query_string = {};
+        var vars = query.split("&");
+        for (var i = 0; i < vars.length; i++) {
+            var pair = vars[i].split("=");
+            // If first entry with this name
+            if (typeof query_string[pair[0]] === "undefined") {
+                query_string[pair[0]] = decodeURIComponent(pair[1]);
+                // If second entry with this name
+            } else if (typeof query_string[pair[0]] === "string") {
+                var arr = [query_string[pair[0]], decodeURIComponent(pair[1])];
+                query_string[pair[0]] = arr;
+                // If third or later entry with this name
+            } else {
+                query_string[pair[0]].push(decodeURIComponent(pair[1]));
+            }
+        }
+        return query_string;
+    }
+		
+    var g_host = top.location.host;
+    var g_ip = g_host.split(":")[0];
+    var g_port_num = g_host.split(":")[1];
+    var g_host_search = top.location.search;
+    if (typeof (g_port_num) == 'undefined') {
+        g_port_num = 80;
+    }
+    var g_ip_uuid;
+    var g_Username;
+    var g_Password;
+    var access_level = 0;
+    var g_LangIndex = 0;//add Mulit-lang choice by jason 20120821
+    var g_browser_lang = "en";
+    var g_web_dateFormat = 0; //add for web date format selection 0:YYYY_MM_DD 1:MM_DD_YYYY 2:DD_MM_YYYY
+    var g_web_timeFormat = 1; //add for web time format selection 0:12hr 1:24hr 
+    var g_ConfigOcx = "1,0,3,29"; //release config version
+    var g_ViewOcx = "1,0,6,59"; //release view version
+    var g_CfgOcxID = "clsid:F2ECB2AF-B9ED-4E40-BF69-8E44CBF933C0"; //release config version
+	var g_ViewOcxID = "clsid:A0BDB970-5BE7-4163-B759-B6CB6A206884"; //release config version
+	var g_CfgCabName = "EXDVRcfg.cab"; //release config name
+	var g_ViewCabName = "EXDVR.cab"; //release view name
+    //Release_Date:20180102
+	//g_ip = "192.168.1.69";//release
+    //g_ip = "192.168.1.64";//release
+    //g_ip = "192.168.1.157";//release
+    //g_ip = "192.168.1.154";//release
+	//g_ip = "192.168.1.76";//release
+    //g_port_num = 80;//release
+    var la = (navigator.browserLanguage || navigator.language).toLowerCase(); //
+    var lb = "zh-cn"
+    var nPageWidth = 1024;//1340
+    var nPageHeight = 860;
+    var g_ocx;
+    var g_TotalCH;
+    var g_total_disk_num;
+    var g_total_alarmin_num;
+    var g_total_alarmout_num;
+    var g_WebTitle;
+    var g_func_hide_code;//check hide/show information Serial No
+    var g_func_show_code;//check hide/show fisheye PTZ
+    var g_window_height = 720;
+    var g_window_width = 920;
+    var g_RtspPath = new Array();
+    var g_checkAudio;
+    var g_PortRTSP;
+    var g_setTime = 10000;
+    var g_IsMisk = false;
+    var g_FHD_Max_FPS;//Record FPS limit
+    var g_Call_Mon_Support;//check should web support call monitor
+    var g_Video_Standard;//Record video type
+    var g_Privilege_use_export;
+    var g_FanNum;//Fan Num
+    var g_P2P_flag = false;
+    //if (screen.availWidth >= nPageWidth && screen.availHeight >= nPageHeight) {
+    //    var nLeft = (screen.availWidth - nPageWidth) / 2;
+    //    //alert("availWidth=" + screen.availWidth + " left=" + nLeft);
+    //    var nTop = 0;//(screen.availHeight - 740) / 2;
+    //    self.moveTo(nLeft, nTop);   //IE
+    //    self.resizeTo(nPageWidth, nPageHeight);
+    //}
+    //else {
+    //    self.moveTo(0, 0);   //IE
+    //    self.resizeTo(screen.availWidth, screen.availHeight);
+    //}
+    //var g_xmlDoc = new ActiveXObject("Microsoft.XMLDOM");
+    //g_xmlDoc.async = "false";
+    //g_xmlDoc.load("device_info.xml");
+    function go_xml() {
+        if (is_ie || is_ie11) {
+            //console.log('is_ie');
+            var g_XmlDom;
+
+            g_XmlDom = loadXMLDoc("device_info.xml");
+
+            var g_BaseXml = g_XmlDom.firstChild;
+            g_total_disk_num = g_BaseXml.getElementsByTagName("HD_MAX")[0];
+            g_total_disk_num = parseInt(g_total_disk_num.text);
+            g_total_alarmin_num = g_BaseXml.getElementsByTagName("ALMIN_NUM")[0];
+            g_total_alarmin_num = parseInt(g_total_alarmin_num.text);
+            g_total_alarmout_num = g_BaseXml.getElementsByTagName("ALMOUT_NUM")[0];
+            g_total_alarmout_num = parseInt(g_total_alarmout_num.text);
+            g_WebTitle = g_BaseXml.getElementsByTagName("MODEL_NAME")[0];
+            g_func_hide_code = g_BaseXml.getElementsByTagName("FUNC_HIDE_CODE")[0];
+            g_func_hide_code = parseInt(g_func_hide_code.text);
+            g_FHD_Max_FPS = g_BaseXml.getElementsByTagName("FHD_MAX_FPS")[0];
+            g_FHD_Max_FPS = parseInt(g_FHD_Max_FPS.text);
+            g_Call_Mon_Support = g_BaseXml.getElementsByTagName("CALL_MON_SUPPORT")[0];
+            g_Call_Mon_Support = parseInt(g_Call_Mon_Support.text);
+            g_Video_Standard = g_BaseXml.getElementsByTagName("VIDEO_STANDARD")[0];
+            g_Video_Standard = g_Video_Standard.text;
+            g_checkAudio = g_BaseXml.getElementsByTagName("ENABLE_AUDIO")[0];
+            g_FanNum = g_BaseXml.getElementsByTagName("FAN_NUM")[0];
+            g_FanNum = parseInt(g_FanNum.text);
+            if (g_checkAudio == null) {
+                g_checkAudio = 1;
+            }
+            else {
+                g_checkAudio = parseInt(g_checkAudio.text);
+            }
+            g_PortRTSP = g_BaseXml.getElementsByTagName("RTSP_PORT")[0];
+            if (g_PortRTSP == null) {
+                g_PortRTSP = 554;
+            }
+            else {
+                g_PortRTSP = parseInt(g_PortRTSP.text);
+            }
+            g_func_show_code = g_BaseXml.getElementsByTagName("FUNC_SHOW_CODE")[0];
+            if (g_func_show_code == null) {
+                g_func_show_code = 0;
+            }
+            else {
+                g_func_show_code = parseInt(g_func_show_code.text);
+            }
+            g_Privilege_use_export = g_BaseXml.getElementsByTagName("PRIVILEGE_USE_EXPORT")[0];
+            g_Privilege_use_export = g_Privilege_use_export.text;
+            var tmpNode = g_BaseXml.getElementsByTagName("TOTAL_CHANNEL")[0];
+            //var tmpNode = null;
+
+            if (tmpNode == null) {
+                g_TotalCH = 16;//default total CH
+            }
+            else {
+                g_TotalCH = parseInt(tmpNode.text);
+            }
+            //alert('gt:'+g_TotalCH);//16
+            g_RtspPath = new Array(g_TotalCH);
+            var i, j;
+            for (i = 0 ; i < g_TotalCH ; i++) {
+                g_RtspPath[i] = new Array(2);
+                for (j = 0 ; j < 2 ; j++) {
+                    g_RtspPath[i][j] = "ch0" + i + "/" + j + "/live.3gp";//default RTSP path
+                }
+            }
+            tmpNode = g_BaseXml.getElementsByTagName("CH_INFO")[0];
+            var tmpChildNode;
+            var nCH, nStream;
+            for (i = 0 ; i < g_TotalCH ; i++) {
+                if (tmpNode == null) {
+                    tmpNode = tmpNode.nextSibling;
+                    continue;
+                }
+                tmpChildNode = tmpNode.getElementsByTagName("ID")[0];
+                if (tmpChildNode == null) {
+                    tmpNode = tmpNode.nextSibling;
+                    continue;
+                }
+                nCH = parseInt(tmpChildNode.text);
+                tmpChildNode = tmpNode.getElementsByTagName("STREAM_NUM")[0];
+                if (tmpChildNode == null) {
+                    nStream = 2;//default stream num
+                }
+                else {
+                    nStream = parseInt(tmpChildNode.text);
+                    if (nStream > 2) {
+                        nStream = 2;
+                    }
+                }
+                tmpChildNode = tmpNode.getElementsByTagName("URI")[0];
+                for (j = 0 ; j < nStream ; j++) {
+                    if (tmpChildNode == null) {
+                        tmpChildNode = tmpChildNode.nextSibling;
+                        continue;
+                    }
+                    g_RtspPath[nCH - 1][j] = tmpChildNode.text;
+                    //tmpChildNode = tmpChildNode.nextSibling;
+                    if (j == 0) {
+                        while (tmpChildNode.nextSibling.baseName != "URI") {
+                            tmpChildNode = tmpChildNode.nextSibling;
+                        }
+                    }
+                    tmpChildNode = tmpChildNode.nextSibling;
+                }
+                tmpNode = tmpNode.nextSibling;
+            }
+        }
+        else {
+            // test chrome
+            var g_XmlDom;
+
+            g_XmlDom = loadXMLDoc("device_info.xml");
+
+            var g_BaseXml = g_XmlDom.firstChild;
+            g_total_disk_num = g_BaseXml.getElementsByTagName("HD_MAX")[0];
+            g_total_disk_num = parseInt(g_total_disk_num.textContent);
+            g_total_alarmin_num = g_BaseXml.getElementsByTagName("ALMIN_NUM")[0];
+            g_total_alarmin_num = parseInt(g_total_alarmin_num.textContent);
+            g_total_alarmout_num = g_BaseXml.getElementsByTagName("ALMOUT_NUM")[0];
+            g_total_alarmout_num = parseInt(g_total_alarmout_num.textContent);
+            g_WebTitle = g_BaseXml.getElementsByTagName("MODEL_NAME")[0];
+            g_func_hide_code = g_BaseXml.getElementsByTagName("FUNC_HIDE_CODE")[0];
+            g_func_hide_code = parseInt(g_func_hide_code.textContent);
+            g_FHD_Max_FPS = g_BaseXml.getElementsByTagName("FHD_MAX_FPS")[0];
+            g_FHD_Max_FPS = parseInt(g_func_hide_code.textContent);
+            g_checkAudio = g_BaseXml.getElementsByTagName("ENABLE_AUDIO")[0];
+            g_checkAudio = parseInt(g_checkAudio.textContent);
+            g_PortRTSP = g_BaseXml.getElementsByTagName("RTSP_PORT")[0];
+            g_PortRTSP = parseInt(g_PortRTSP.textContent);
+            g_Privilege_use_export = g_BaseXml.getElementsByTagName("PRIVILEGE_USE_EXPORT")[0];
+            g_Privilege_use_export = g_Privilege_use_export.text;
+            var tmpNode = g_BaseXml.getElementsByTagName("TOTAL_CHANNEL")[0];
+            //var tmpNode = null;
+
+            if (tmpNode == null) {
+                g_TotalCH = 16;//default total CH
+            }
+            else {
+                g_TotalCH = parseInt(tmpNode.textContent);
+            }
+            //alert('gt:'+g_TotalCH);//16
+            g_RtspPath = new Array(g_TotalCH);
+            var i, j;
+            for (i = 0 ; i < g_TotalCH ; i++) {
+                g_RtspPath[i] = new Array(2);
+                for (j = 0 ; j < 2 ; j++) {
+                    g_RtspPath[i][j] = "ch0" + i + "/" + j + "/live.3gp";//default RTSP path
+                }
+            }
+            tmpNode = g_BaseXml.getElementsByTagName("CH_INFO")[0];
+            var tmpChildNode;
+            var nCH, nStream;
+            for (i = 0 ; i < g_TotalCH ; i++) {
+                if (tmpNode == null) {
+                    tmpNode = tmpNode.nextSibling;
+                    continue;
+                }
+                try {
+                    tmpChildNode = tmpNode.getElementsByTagName("ID")[0];
+                }
+                catch (err) {
+                    tmpNode = tmpNode.nextSibling;
+                    tmpChildNode = tmpNode.getElementsByTagName("ID")[0];
+                }
+
+                if (tmpChildNode == null) {
+                    tmpNode = tmpNode.nextSibling;
+                    continue;
+                }
+                nCH = parseInt(tmpChildNode.text);
+                tmpChildNode = tmpNode.getElementsByTagName("STREAM_NUM")[0];
+                if (tmpChildNode == null) {
+                    nStream = 2;//default stream num
+                }
+                else {
+                    nStream = parseInt(tmpChildNode.text);
+                    if (nStream > 2) {
+                        nStream = 2;
+                    }
+                }
+                tmpChildNode = tmpNode.getElementsByTagName("URI")[0];
+                for (j = 0 ; j < nStream ; j++) {
+                    if (tmpChildNode == null) {
+                        tmpChildNode = tmpChildNode.nextSibling;
+                        continue;
+                    }
+                    g_RtspPath[nCH - 1][j] = tmpChildNode.text;
+                    //tmpChildNode = tmpChildNode.nextSibling;
+                    if (j == 0) {
+                        while (tmpChildNode.nextSibling.baseName != "URI") {
+                            tmpChildNode = tmpChildNode.nextSibling;
+                        }
+                    }
+                    tmpChildNode = tmpChildNode.nextSibling;
+                }
+                tmpNode = tmpNode.nextSibling;
+            }
+        }
+        Get_Rtsp_Audio()
+    }
+
+    function Get_Rtsp_Audio() {
+        var g_XmlDom;
+        g_XmlDom = loadXMLDoc("device_info.xml");
+        var g_BaseXml = g_XmlDom.firstChild;
+        if (is_ie || is_ie11) {
+            try{
+                g_checkAudio = g_BaseXml.getElementsByTagName("ENABLE_AUDIO")[0];
+                g_checkAudio = parseInt(g_checkAudio.text);
+            }
+            catch (e) {
+                g_checkAudio = 1;
+            }
+            try{
+                g_PortRTSP = g_BaseXml.getElementsByTagName("RTSP_PORT")[0];
+                g_PortRTSP = parseInt(g_PortRTSP.text);
+            }
+            catch (e) {
+                g_PortRTSP = 554;
+            }
+        }
+        else {
+            try{
+                g_checkAudio = g_BaseXml.getElementsByTagName("ENABLE_AUDIO")[0];
+                g_checkAudio = parseInt(g_checkAudio.textContent);
+            }
+            catch (e) {
+                g_checkAudio = 1;
+            }
+            try{
+                g_PortRTSP = g_BaseXml.getElementsByTagName("RTSP_PORT")[0];
+                g_PortRTSP = parseInt(g_PortRTSP.textContent);
+            }
+            catch (e) {
+                g_PortRTSP = 554;
+            }
+        }
+        //console.log('audio:' + g_checkAudio + '  rtsp:' + g_PortRTSP)
+        if (g_IsMisk == false) {
+            setTimeout("Get_Rtsp_Audio()", g_setTime);
+        }
+    }
+
+    function loadXMLDoc(dname) {
+        try //Internet Explorer
+        {
+            xmlDoc = new ActiveXObject("Microsoft.XMLDOM");
+
+            xmlDoc.async = false;
+            xmlDoc.load(dname);
+            return (xmlDoc);
+        }
+        catch (e) {
+            try //Firefox, Mozilla, Opera, etc.
+            {
+                var xmlhttp = new XMLHttpRequest();
+                xmlhttp.open("GET", dname, false);
+                xmlhttp.setRequestHeader('Content-Type', 'text/xml');
+                xmlhttp.send("");
+                xmlDoc = xmlhttp.responseXML;
+                return (xmlDoc);
+
+                //xmlDoc = document.implementation.createDocument("", "", null);
+            }
+            catch (e) { alert(e.message) }
+        }
+        try {
+        }
+        catch (e) { alert(e.message) }
+        return (null);
+    }
+
+    var size_info;
+    var size_b_flag = false;
+
+    function Init() {
+
+        ////alert(g_ip);
+        //var nIFrameWidth = $(window).width() - 20;//1310
+        ////var nIFrameWidth = '100%';//1310
+        //var nIFrameHeight = $(window).height() - 20;
+        ////var nIFrameHeight = '100';
+        ////alert('h : ' + window.screen.availHeight);
+        ////alert('w : ' + window.screen.availWidth);
+        ////alert('h : ' + document.documentElement.clientHeight);
+        ////alert('w : ' + document.documentElement.clientWidth);
+        ////IFrameShell.resizeTo(nIFrameWidth, nIFrameHeight);
+        //c_log(nIFrameWidth + ' ' + nIFrameHeight)
+        //document.getElementById('IFrameShell').width = nIFrameWidth;
+        //document.getElementById('IFrameShell').height = nIFrameHeight;
+        chk_browser();
+        //ip_uuid (p2p server)
+        var query = window.location.search.substring(1);
+        var QueryString = parseQueryString(query);
+
+        var uuid = QueryString["uuid"];
+        if (typeof uuid != "undefined") {
+            g_ip_uuid = uuid;
+            g_P2P_flag = true;
+        }
+        else
+            g_ip_uuid = g_ip;
+        //ip_uuid (p2p server)
+
+        $(window).resize(function () {
+            //size_info = { 'w' : $(window).width(), 'h' : $(window).height()};
+            if (size_b_flag == false) {
+                setTimeout("w_resize()", 330);
+                size_b_flag = true;
+            }
+        });
+        w_resize();
+        go_xml();
+        if (is_ie == true  || is_ie11) {
+            document.title = g_WebTitle.text;
+        }
+        else {
+            document.title = g_WebTitle.textContent;
+        }
+        //IFrameShell.location.replace('login.html');
+        //InitObject();
+
+        if (g_host_search.match('uuid') == null && g_host_search != "")
+            window.IFrameShell.AutoLogin();
+    }
+
+    function w_resize() {
+        size_info = { 'w': $(window).width(), 'h': $(window).height() };
+        if (parseInt(size_info.h - 20) < 746) {
+            $("#IFrameShell").height(746);
+            g_window_height = 746;
+        }
+        else {
+            $("#IFrameShell").height(size_info.h - 20);
+            g_window_height = size_info.h - 20;
+        }
+
+        if (parseInt(size_info.w - 20) < 988) {
+            $("#IFrameShell").width(988);
+            g_window_width = 988;
+        }
+        else {
+            $("#IFrameShell").width(size_info.w - 20);
+            g_window_width = size_info.w - 20;
+        }
+        c_log(' gww : ' + g_window_width + ' gwh : ' + g_window_height)
+        size_b_flag = false;
+    }
+
+    function Get_HostQuery() {
+        //host query(Automatic login)
+        if (g_host_search != "") {
+            g_host_search = g_host_search.slice(1);
+            var host_query = g_host_search.split("=");
+            g_Username = host_query[0];
+            g_Password = host_query[1];
+        }
+        //host query(Automatic login)
+    }
+
+    function InitConfigObject() {                                                                                       //release
+        document.write('<OBJECT id="AsViwer" name="AsViwer" style="LEFT: 900px; TOP: 10px" codeBase="' + g_CfgCabName + '#Version=' + g_ConfigOcx + '" height=2 width=2 align=center classid="' + g_CfgOcxID + '">\n');
+        document.write('</OBJECT>\n');
+        document.getElementById("AsNoUseViwer").style.display = "none";
+
+        chk_browserLanguage();
+        if (g_host_search.match('uuid') == null && g_host_search != "")
+            Get_HostQuery();
+
+        IFrameShell.location.replace('login.html');
+    }
+    function InitNouseObject() {                                                                    //release
+        document.write('<OBJECT id="AsNoUseViwer" name="AsNoUseViwer" codeBase="' + g_ViewCabName + '#Version=' + g_ViewOcx + '" classid="' + g_ViewOcxID + '">\n');
+        document.write('</OBJECT>\n');
+    }
+
+    function get_cke() {
+
+        var cookie_str = document.cookie.split(";");
+        var result = 0;
+        for (i in cookie_str) {
+            var ck_name = cookie_str[i].split("=");
+            if ($.trim(ck_name[0]) == "AST_LANG_CHOICE") {
+                result = ck_name[1];
+            }
+        }
+        return result;
+
+    }
+    //<applet id="JTest_Html" code="netbinary.cgiBinaryPost.class" archive = "webApplet.jar,json.jar" codebase="common/Jar/">
+    //You have to install JAVA Runtime to execute JAVA Applet.
+    //</applet>
+</script>
+</head>
+<body onload="Init();" onbeforeunload="">
+    <div id="divShell">
+        <iframe id="IFrameShell" name="IFrameShell" src="" scrolling="no" frameborder="no" style="min-height: 720px; min-width: 980px;"></iframe>
+    </div>
+    <div id="OCX_NOUSE">
+        <script type="text/javascript">InitNouseObject();</script>
+    </div>
+    <div id="OCX_DIV">
+        <script type="text/javascript">InitConfigObject();</script>
+    </div>
+    <div id="divJava" style="width:0; height:0;" >
+    </div>
+</body>
+</html>

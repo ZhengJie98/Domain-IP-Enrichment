@@ -44,9 +44,9 @@ def upload_ip():
 @app.route("/processIPtest", methods=['GET'])
 def process_IP_test():
 
-    process_ip_parent()
+    result = process_ip_parent()
    
-    return "success"
+    return result
 
 @app.route("/test", methods=['POST'])
 def test():
