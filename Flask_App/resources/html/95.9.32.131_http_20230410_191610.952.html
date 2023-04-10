@@ -1,0 +1,144 @@
+HTTP/1.1 200 OK
+Date: Mon, 10 Apr 2023 12:15:59 GMT
+Last-Modified: Mon, 24 Jul 2017 04:45:02 GMT
+Etag: "59757b4e.7767"
+Content-Type: text/html
+Content-Length: 7767
+Connection: keep-alive
+Accept-Ranges: bytes
+X-Frame-Options: SAMEORIGIN
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            /**
+             * 防止浏览器缓存导致登录页的js文件加载失败
+             * 如果url中没有参数则为url上加上一个随机数重新加载，需要过滤cloud方式登录
+             * @return {[type]} [description]
+             */
+            (function(){
+                var href = window.location.href;
+                var ran = Math.round(Math.random() * 1000000000000);
+                if (-1 === href.indexOf('?')){
+                    window.location.href = href + '?_=' + ran;
+                } else if (-1 === href.indexOf('_=') && -1 === href.indexOf('/?')){
+                    window.location.href = href + '&_=' + ran;
+                }
+            })();
+        </script>
+        <meta http-equiv="X-UA-Compatible" content="edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta content="favicon.ico" itemprop="image" />
+        <link rel="stylesheet" href="/style/index_3050207.css" />
+        <link rel="stylesheet" href="style/color.css" />
+        <title data-text="Text.VideoManageSystem"></title>
+    </head>
+    <body id="login_body" class="login_min_height_width">
+        <div class="pluginTip" id="pluginTip">
+            <div class="pluginVersionTip" id="pluginVersionTip" data-title="Text.TipDbClickClose3"></div>
+        </div>
+        <div class="login_fullPage login_min_height_width">
+            <div class="login_placeHolder">
+                <div class="login_minHeight"></div>
+            </div>
+            <div class="login_form">
+                <div class="login_header">
+                    <div class="logo" style="background-image: url(/images/logo.png);"></div>
+                </div>
+                <form action="cgi-bin/main-cgi" method="post" name="loginForm" id="loginForm">
+                    <table class="login_table">
+                        <tr class="login_line">
+                            <td id="ErrorMsg" class="login_msg" colspan="2">
+                                <span id="idErrorMsg"></span>
+                                <span id="idErrorInfo"></span>
+                            </td>
+                        </tr>
+                        <tr class="login_line hidden">
+                            <td class="login_left">
+                                <div class="login_label_div">
+                                    <label class="login_label" for='lLan' data-text="Text.Lang"></label>
+                                </div>
+                            </td>
+                            <td class="login_right">
+                                <select class="in_select" name="lLan" id="language">
+                                    <!-- <option value="0" data-text="Text.SimplifyChinese"></option> -->
+                                    <!-- <option value="1">简体中文</option> -->
+                                    <!-- <option value="2">English</option> -->
+                                </select>
+                            </td>
+                        </tr>
+                        <tr class="login_line all_login_hidden">
+                            <td class="login_left">
+                                <div class="login_label_div">
+                                    <label class="login_label" for='szUserName' data-text="Text.UserName"></label>
+                                </div>
+                            </td>
+                            <td class="login_right">
+                                <input type="text" class="in_text" name="szUserName" id="szUserName" autocomplete="off" />
+                            </td>
+                        </tr>
+                        <tr class="login_line all_login_hidden">
+                            <td class="login_left">
+                                <div class="login_label_div">
+                                    <label class="login_label" for='szUserLoginCert' data-text="Text.Passwd"></label>
+                                </div>
+                            </td>
+                            <td class="login_right">
+                                <input type=password class="in_text nor-submit-pwd" id="szUserPasswdSrc" maxlength="20" value="" autocomplete="off" />
+                                <input type="hidden" name="szUserLoginCert" id="szUserLoginCert" />
+                                <input type="hidden" name="szUserLoginCertEx" id="szUserLoginCertEx" />
+                                <input type="hidden" name="szServIpAddr" id="szServIpAddr" />
+                            </td>
+                        </tr>
+                        <!-- <tr class="login_line">
+                            <td class="login_left">
+                            </td>
+                            <td class="login_right login_remPwd">
+                                <input type="checkbox" name="recordPassword" id="recordPassword" class="login_autoLogin" />
+                                <label for='autoLogin' class="login_autoLoginLabel">自动登录</label>
+                            </td>
+                        </tr> -->
+                        <tr class="login_line all_login_hidden">
+                            <td class="login_left"></td>
+                            <td class="login_right">
+                                <div id="wanlanid" class="wanlan">
+                                    <input id="lan" name="wanlanswitch" type="radio" checked="checked" value="1" />
+                                    <label data-text="Text.LAN" for="lan" class="config-label-right-swich-lable">
+                                    </label>
+                                    <input id="wan" name="wanlanswitch" type="radio" value="0" />
+                                    <label data-text="Text.WAN" for="wan" class="config-label-right-swich-lable">
+                                    </label>
+                                </div>
+                                <a name="login" type="submit" id="login" class="login-button noMarginLeft">
+                                    <span class="custom-btn-left"></span><span class="custom-btn-center ellipsis width70" data-text="Text.Login" data-title="Text.Login"></span><span class="custom-btn-right"></span>
+                                </a>
+                                <a name="reset" type="submit" id="reset" class="login-button">
+                                    <span class="custom-btn-left"></span><span class="custom-btn-center ellipsis width70" data-text="Text.Reset" data-title="Text.Reset"></span><span class="custom-btn-right"></span>
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+
+                </form>
+                <div class="login_tips">
+                    <p data-text="Text.SuggestResolution"></p>
+                </div>
+                <div id="insecurityPasswd" class="login_hidden">
+                </div>
+            </div>
+        </div>
+        <div style="width:0;height:0;" id="loginPlugs"></div>
+    </body>
+    <!--[if IE & (lt IE 9)]>
+    <script src="/script/plugins/json2_f4e6ebd.js"></script>
+    <![endif]-->
+    <script src="/script/plugins/MD5_f51cb49.js"></script>
+    <script src="/script/plugins/jquery-1.10.2.min_954ab71.js"></script>
+    <script src="/script/plugins/jquery.xml2json_0bb5881.js"></script>
+    <script src="/script/plugins/base64.min_ae031ff.js"></script>
+    <script src="/script/common_147eb01.js"></script>
+    <script src="/script/index_31a4a8f.js"></script>
+    <script src="/script/static_6c7d00e.js"></script>
+</html>
+
