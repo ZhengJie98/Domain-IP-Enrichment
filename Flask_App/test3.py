@@ -32,7 +32,8 @@ dt_string = now.strftime("%Y%m%d_%H%M%S.%f")[:-3]
 # ip_address = str(ip_doc["ip_address"])
 # db_id = ip_doc['_id']  
 # ip_address = "1.1.1.1"
-ip_address = "80.252.0.252"
+# ip_address = "80.252.0.252"
+ip_address = "82.217.40.121"
 
 
 for protocol in ["http", "https"]:
@@ -96,8 +97,11 @@ for protocol in ["http", "https"]:
                     if url[0:4] == "http":
                         js_files_link.append(url)
                         
-                    else:    
+                    elif url[0] in ['/','\\']:
                         js_files_link.append(web_url+url)
+                   
+                    elif url[0] not in ['/','\\']:
+                        js_files_link.append(web_url+ "/" + url)
                    
                     # js_filename_alone.append(url.split('.js')[0]+ '_' + dt_string) 
                     js_filename_alone.append(sanitize_filepath(url.split('.js')[0], platform="auto")+ '_' + dt_string) 
@@ -109,8 +113,8 @@ for protocol in ["http", "https"]:
             js_filename_alone = list(dict.fromkeys(js_filename_alone))
 
             array_js_filenames = []
-            # print("total js_files_links:", js_files_link)
-            # print("js_filename_alone", js_filename_alone)
+            print("total js_files_links:", js_files_link)
+            print("js_filename_alone", js_filename_alone)
             for each_js in js_files_link:
                 print("starting get for each_js:", each_js)
                 try:
@@ -118,13 +122,14 @@ for protocol in ["http", "https"]:
                     each_js = requests.get(each_js).content
                     # print(type(js.decode()))
                     print("each_js gotten")
-                    if url[0:4] == "http":
+                    if (url[0:4] == "http") or (url[0] not in ['/','\\']):
                         js_file_path = "resources/js/" + protocol + '/' + js_filename_alone[js_file_counter] + ".js"
                         array_js_filenames.append("resources/js/" + protocol +'/'+ js_filename_alone[js_file_counter] + ".js")
                     else:
                         js_file_path = "resources/js/" + protocol + js_filename_alone[js_file_counter] + ".js"
                         array_js_filenames.append("resources/js/" + protocol + js_filename_alone[js_file_counter] + ".js")
                     
+
                     # print("array_js_filenames:", array_js_filenames)
                     # print("js_filename_alone[js_file_counter]", js_filename_alone[js_file_counter])
                     ## testing new folder creation
@@ -139,10 +144,10 @@ for protocol in ["http", "https"]:
                     encoding = chardet.detect(each_js)['encoding']
                     # encoding = json.detect_encoding(each_js)
 
-                    # print("encoding:", encoding)
-                        # the_encoding = chardet.detect(rawdata)['encoding']
+                    # # print("encoding:", encoding)
+                    #     # the_encoding = chardet.detect(rawdata)['encoding']
 
-                    # print(type(each_js))
+                    # # print(type(each_js))
 
                     with open(js_file_path, "w", encoding=encoding, errors='ignore') as f:
                     # with open(js_file_path, "w") as f:
@@ -152,6 +157,7 @@ for protocol in ["http", "https"]:
                         # f.close()
                     
                     js_file_counter += 1
+                    print("file written")
                 except Exception as e:
                     print("exception in getting js_file:", e)
 

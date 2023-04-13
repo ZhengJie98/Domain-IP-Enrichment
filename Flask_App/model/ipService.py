@@ -49,17 +49,19 @@ ip_template = {
         "has_screenshot": "",
         "has_html": "",
         "has_javascript": "",
-        "files_log" : None ## Array of sub-docs, [{type:"", file_location:""}, {}...]
+        "files_log" : None, ## Array of sub-docs, [{type:"", file_location:""}, {}...]
+        "duration_log" : None
         
     }
 
-API_KEY = '0d9fdb6e32d74b9d12e3d894309531838c3aabe8d66b049fd3a7976fbedf2c68'  #@param  {type: "string"}
-# API_KEY = '207349263f9c5edd176cc079fa8000a5ab912df7d9e91154842c08031658675d'  #@param  {type: "string"}
+# API_KEY = '0d9fdb6e32d74b9d12e3d894309531838c3aabe8d66b049fd3a7976fbedf2c68'  #@param  {type: "string"}
+API_KEY = '207349263f9c5edd176cc079fa8000a5ab912df7d9e91154842c08031658675d'  #@param  {type: "string"}
 
 
 
 client = MongoClient('localhost',27017)
-db = client['filtered_sg_ip_list']
+# db = client['filtered_sg_ip_list']
+db = client['jons_list']
 col = db["ip"]
     
 
@@ -187,7 +189,7 @@ def retrieve_ips_to_process(how_many_ips):
     # ).sort("added_timestamp", pymongo.ASCENDING).limit(how_many_ips)
     
     # cursor = col.find(
-    #     {"$and" : [{"ip_address" : "1.1.1.1"},{"processed_timestamp" : ""}, {"to_skip" : ""}, {"is_priority" : 0}]}
+    #     {"$and" : [{"ip_address" : "82.217.40.121"},{"processed_timestamp" : ""}, {"to_skip" : ""}, {"is_priority" : 0}]}
     #     ).sort("added_timestamp", pymongo.ASCENDING).limit(how_many_ips)
     
     # print("===== retrieve_ips_to_process() END =====")
@@ -527,10 +529,14 @@ def grab_html_js(ip_doc):
                         # 'src'
                         url = script.attrs.get("src")
                         # js_files_link.append(web_url+url)
+                        print("web_url:", web_url)
+                        print("url:", url)
                         if url[0:4] == "http":
                             js_files_link.append(url)
-                        else:    
+                        elif url[0] in ['/','\\']:
                             js_files_link.append(web_url+url)
+                        elif url[0] not in ['/','\\']:
+                            js_files_link.append(web_url+ "/" + url)
                     
                         # js_filename_alone.append(url.split('.js')[0].replace(":","") + '_' + dt_string) 
                         js_filename_alone.append(sanitize_filepath(url.split('.js')[0], platform="auto")+ '_' + dt_string) 
@@ -551,7 +557,7 @@ def grab_html_js(ip_doc):
                         # js_file_path = "resources/js/" + protocol + js_filename_alone[js_file_counter] + ".js"
                         # array_js_filenames.append("resources/js/" + protocol + js_filename_alone[js_file_counter] + ".js")
 
-                        if url[0:4] == "http":
+                        if (url[0:4] == "http") or (url[0] not in ['/','\\']):
                             js_file_path = "resources/js/" + protocol + '/' + js_filename_alone[js_file_counter] + ".js"
                             array_js_filenames.append("resources/js/" + protocol +'/'+ js_filename_alone[js_file_counter] + ".js")
                         else:

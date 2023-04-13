@@ -23,8 +23,8 @@ X_DAYS_AGO = 7
 
 
 client = MongoClient('localhost',27017)
-db = client['filtered_sg_ip_list']
-col = db["ip"]
+# db = client['filtered_sg_ip_list']
+# col = db["ip"]
     
 
 app = Flask(__name__)
