@@ -1,0 +1,49 @@
+HTTP/1.1 200 OK
+Date: Tue, 18 Apr 2023 13:23:46 GMT
+Content-Length: 1948
+Content-Type: text/html; charset=utf-8
+Server: TwistedWeb/17.9.0
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Deluge: Web UI 1.3.15</title>
+		
+		<link rel="shortcut icon" href="/icons/deluge.png" type="image/png" />
+		<link rel="icon" href="/icons/deluge.png" type="image/png" />
+		<link rel="apple-touch-icon-precomposed" media="screen and (resolution: 163dpi)" href="/icons/apple-pre-57.png" />
+		<link rel="apple-touch-icon-precomposed" media="screen and (resolution: 132dpi)" href="/icons/apple-pre-72.png" />
+		<link rel="apple-touch-icon-precomposed" media="screen and (resolution: 326dpi)" href="/icons/apple-pre-114.png" />
+		
+		<!-- Stylesheets -->
+		<link rel="stylesheet" type="text/css" href="/css/ext-all-notheme.css" />
+		<link rel="stylesheet" type="text/css" href="/themes/css/xtheme-gray.css" />
+		<link rel="stylesheet" type="text/css" href="/css/ext-extensions.css" />
+		<link rel="stylesheet" type="text/css" href="/css/deluge.css" />
+
+		<script type="text/javascript">
+		deluge = {
+			author: 'Damien Churchill <damoxc@gmail.com>',
+			version: '1.3.15',
+			config: {"sidebar_show_zero": false, "show_session_speed": true, "first_login": false, "theme": "gray", "base": "/", "sidebar_multiple_filters": true}
+		}
+		</script>
+
+		<!-- Javascript -->
+		<script type="text/javascript" src="/gettext.js"></script>
+		<script type="text/javascript" src="/js/ext-base.js"></script>
+		<script type="text/javascript" src="/js/ext-all.js"></script>
+		<script type="text/javascript" src="/js/ext-extensions.js"></script>
+		<script type="text/javascript" src="/js/deluge-all.js"></script>
+		<script type="text/javascript">
+			Deluge.debug = false;
+		</script>
+	</head>
+	<body>
+		<div style="background-image: url('/themes/images/default/tree/loading.gif');"></div>
+
+		<!-- Preload icon classes -->
+		<div class="ext-mb-error"></div>
+		<div class="icon-ok"></div>
+	</body>
+</html>
