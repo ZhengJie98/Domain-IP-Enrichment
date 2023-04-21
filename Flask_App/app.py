@@ -48,6 +48,14 @@ def process_IP_test():
    
     return result
 
+
+@app.route("/processIPtest_without_vtcall", methods=['GET'])
+def process_IP_test_without_vtcall():
+
+    result = process_ip_parent_without_vtcall()
+   
+    return result
+
 @app.route("/test", methods=['POST'])
 def test():
 

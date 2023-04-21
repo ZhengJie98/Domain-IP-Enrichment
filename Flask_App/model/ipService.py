@@ -24,6 +24,8 @@ from pathlib import Path
 import time
 from pathvalidate import sanitize_filepath
 import chardet
+from slugify import slugify
+
 
 
 
@@ -54,15 +56,15 @@ ip_template = {
         
     }
 
-# API_KEY = '0d9fdb6e32d74b9d12e3d894309531838c3aabe8d66b049fd3a7976fbedf2c68'  #@param  {type: "string"}
-API_KEY = '207349263f9c5edd176cc079fa8000a5ab912df7d9e91154842c08031658675d'  #@param  {type: "string"}
+API_KEY = '0d9fdb6e32d74b9d12e3d894309531838c3aabe8d66b049fd3a7976fbedf2c68'  #@param  {type: "string"}
+# API_KEY = '207349263f9c5edd176cc079fa8000a5ab912df7d9e91154842c08031658675d'  #@param  {type: "string"}
 
 
 
 client = MongoClient('localhost',27017)
 # db = client['filtered_sg_ip_list']
 # db = client['jons_list']
-db = client['michelle_list']
+db = client['michelle_list_redo']
 col = db["ip"]
     
 
@@ -190,7 +192,7 @@ def retrieve_ips_to_process(how_many_ips):
     # ).sort("added_timestamp", pymongo.ASCENDING).limit(how_many_ips)
     
     # cursor = col.find(
-    #     {"$and" : [{"ip_address" : "82.217.40.121"},{"processed_timestamp" : ""}, {"to_skip" : ""}, {"is_priority" : 0}]}
+    #     {"$and" : [{"ip_address" : "106.11.130.221"},{"processed_timestamp" : ""}, {"to_skip" : ""}, {"is_priority" : 0}]}
     #     ).sort("added_timestamp", pymongo.ASCENDING).limit(how_many_ips)
     
     # print("===== retrieve_ips_to_process() END =====")
@@ -532,33 +534,43 @@ def grab_html_js(ip_doc):
                         # js_files_link.append(web_url+url)
                         print("web_url:", web_url)
                         print("url:", url)
-                        if url[0:4] == "http":
+                        if url[0:4] == "http": ## also accounts for https
                             js_files_link.append(url)
+                        
+                        elif url[0:2] == "//":  ## url: //g.alicdn.com/alilog/mlog/aplus_v2.js
+                            js_files_link.append(protocol + ":"+ url)
+
                         elif url[0] in ['/','\\']:
                             js_files_link.append(web_url+url)
                         elif url[0] not in ['/','\\']:
                             js_files_link.append(web_url+ "/" + url)
                     
                         # js_filename_alone.append(url.split('.js')[0].replace(":","") + '_' + dt_string) 
-                        js_filename_alone.append(sanitize_filepath(url.split('.js')[0], platform="auto")+ '_' + dt_string) 
-
+                        slugifyed_filepath = slugify(url.split('.js')[0])
+                        js_filename_alone.append(slugifyed_filepath + '_' + dt_string)
+                        # try:
+                        #     sanitized_filepath = sanitize_filepath(url.split('.js')[0], platform="auto")+ '_' + dt_string
+                        #     print("sanitized path:", sanitize_filepath(url.split('.js')[0], platform="auto")+ '_' + dt_string)
+                        #     js_filename_alone.append(sanitize_filepath(url.split('.js')[0], platform="auto")+ '_' + dt_string) 
+                        # except Exception as e:
+                        #     print("sanitize_filepath exception:", e)
+                        #     js_files_link.pop() ## removing as we do not want it to be called
                 # print(js_files)
                 js_file_counter = 0
                 array_js_filenames = []
                 js_files_link = list(dict.fromkeys(js_files_link))
                 js_filename_alone = list(dict.fromkeys(js_filename_alone))
                 print("total js_files_links:", js_files_link)
-                for each_js in js_files_link:
-                    print("starting get for each_js:", each_js)
+                for each_js_link in js_files_link:
+                    print("starting get for each_js_link:", each_js_link)
                     try:
 
-                        each_js = requests.get(each_js).content
+                        each_js = requests.get(each_js_link).content
                         # print(type(js.decode()))
                         # print("each_js gotten")
                         # js_file_path = "resources/js/" + protocol + js_filename_alone[js_file_counter] + ".js"
                         # array_js_filenames.append("resources/js/" + protocol + js_filename_alone[js_file_counter] + ".js")
-
-                        if (url[0:4] == "http") or (url[0] not in ['/','\\']):
+                        if (each_js_link[0:4] == "http") or (each_js_link[0] not in ['/','\\']):
                             js_file_path = "resources/js/" + protocol + '/' + js_filename_alone[js_file_counter] + ".js"
                             array_js_filenames.append("resources/js/" + protocol +'/'+ js_filename_alone[js_file_counter] + ".js")
                         else:
@@ -635,3 +647,79 @@ def grab_html_js(ip_doc):
     
     return ip_doc
     # both http and https
+
+def process_ip_parent_without_vtcall():
+
+    with client.start_session() as session:
+    # sessionId = session
+    # refreshTimestamp = datetime.datetime.now()
+
+
+
+        # while config.REMAINING_LIMIT > 0 and len(list(retrieve_ips_to_process(config.REMAINING_LIMIT))) > 0:
+            # print("new while loop config.REMAINING_LIMIT:", config.REMAINING_LIMIT)
+            cursor = col.find()            ## replicate to prevent closing
+            cursor = [x for x in cursor]
+            # print(cursor)
+
+            
+            for ip_doc in cursor:
+                # currentTimestamp = datetime.datetime.now()
+                # if ( (currentTimestamp-refreshTimestamp)/1000 > 300 ) {
+                #     print("refreshing session")
+                #     db.adminCommand({"refreshSessions" : [sessionId]})
+                #     refreshTimestamp = new Date()
+                # }
+                tic = time.perf_counter()
+
+                ## refreshing to keep connection alive
+                client.admin.command('refreshSessions', [session.session_id], session=session)
+
+                ip = str(ip_doc["ip_address"])
+                print("current ip in process_ip_parent:", ip)
+                
+                ## ip check to be here
+                if to_skip(ip_doc) == 1:
+                    continue
+    
+                db_id = ip_doc['_id']
+                updated_ip_doc = ip_doc
+                # updated_ip_doc = call_ip(ip_doc, X_DAYS_AGO)
+                # call_ip_status_code = updated_ip_doc.get("response_code") 
+
+                # ## breaking / continuing to quicken code
+                # # print("call_ip_status_code:", call_ip_status_code)
+                # if call_ip_status_code == 429:
+                #     # print("breaking")
+                #     return "QUOTA EXCEEDED, STOPPED ALL CALLS"
+                # elif call_ip_status_code != None and (call_ip_status_code < 200 or call_ip_status_code > 299):
+                #     print("call_ip_status_code:", call_ip_status_code, "continuing to next IP")
+                #     continue
+
+                ## screenshot and extract html js functions here
+                updated_ip_doc = screenshot(updated_ip_doc)
+                updated_ip_doc = grab_html_js(updated_ip_doc) 
+        
+                try : 
+                    col.replace_one({"_id" : db_id}, updated_ip_doc)
+                    print("replacement successful")
+                
+                except Exception as e:
+                    print(e)
+                    # e
+
+                ## COMMENT OUT FOR ACTUAL
+                # break
+                toc = time.perf_counter()
+                if (toc-tic) < 15:
+                    balance = 15-(toc-tic)
+                    print("sleeping to makeup 15 seconds: ", balance, "seconds" )
+                    time.sleep(15-(toc-tic))
+                    toc = time.perf_counter()
+
+                print(f"replacement SUCCESSFUL for {ip}, time taken {toc-tic} seconds\n\n\n")
+            # cursor.close()
+
+            # if call_ip_status_code == 429:
+
+            return "Replacement SUCCESSFUL"

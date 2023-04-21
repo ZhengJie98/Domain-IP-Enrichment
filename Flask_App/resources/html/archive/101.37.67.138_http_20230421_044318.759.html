@@ -1,0 +1,98 @@
+HTTP/1.1 200 
+Accept-Ranges: bytes
+ETag: W/"3683-1555050140000"
+Last-Modified: Fri, 12 Apr 2019 06:22:20 GMT
+Content-Type: text/html
+Content-Length: 3683
+Date: Thu, 20 Apr 2023 20:43:19 GMT
+
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="zh-CN">
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="http://www.redbudtek.com" name="description" />
+    <meta content="Redbudtek" name="author" />
+    <link rel="shortcut icon" type="image/ico" href="favicon.ico"/>
+    <!-- BEGIN PAGE FIRST SCRIPTS -->
+    <script src="assets/global/plugins/pace/pace.min.js" type="text/javascript"></script>
+    <!-- END PAGE FIRST SCRIPTS -->
+    <!-- BEGIN PAGE TOP STYLES -->
+    <link href="assets/global/plugins/pace/themes/pace-theme-flash.css" rel="stylesheet" type="text/css" />
+    <!-- END PAGE TOP STYLES -->
+    <script src="assets/global/plugins/treant/raphael.js" type="text/javascript"></script>
+</head>
+<body class="page-header-fixed page-sidebar-closed-hide-logo page-container-bg-solid page-content-white page-md">
+    <!--登录页面-->
+    <div class="user-login-customer" style="display:none;"></div>
+    <!--End 登录页面-->
+    <!--Loading page-->
+    <h1 id="loading" style="text-align:center;">LOADING...</h1>
+    <!--End loading-->
+    <!--导航栏-->
+    <div class="page-header-customer"></div>
+    <!-- 面包屑 -->
+    <div class="page-bar-customer page-bar" style="display:none">
+        <ul class="page-breadcrumb"></ul>
+    </div>
+    <!--End 导航栏-->
+    <div class="clearfix"></div>
+    <!--主容器-->
+    <div class="page-container" style="display:none;margin-top: 0">
+        <!--菜单栏-->
+        <div class="page-sidebar-wrapper" style="display:none"></div>
+        <!--End 菜单栏-->
+        <!--模块正文-->
+        <div class="page-content-wrapper">
+            <!-- BEGIN CONTENT BODY -->
+            <div class="page-content"></div>
+            <!-- END CONTENT BODY -->
+            <!-- BEGIN CONTENT OVERLAY -->
+            <div class="page-content-overlay hidden"></div>
+            <!-- END CONTENT OVERLAY -->
+            <!-- BEGIN MODULE LOADING -->
+            <div class="page-module-loading hidden"></div>
+            <!-- END MODULE LOADING -->
+        </div>
+        <!--End 模块正文-->
+        <!--侧边栏-->
+        <a href="javascript:;" class="page-quick-sidebar-toggler"></a>
+        <div class="page-quick-sidebar-wrapper" data-close-on-body-click="false"></div>
+        <!--End 侧边栏-->
+    </div>
+    <!--End 主容器-->
+    <!--Footer-->
+    <!-- <div class="page-footer" style="display:none;"></div> -->
+    <!--End Footer-->
+    <!--Guide-->
+    <div class="page-guide"></div>
+    <!--End Guide-->
+    <!--[if lt IE 9]>
+    <script src="../assets/global/plugins/respond.min.js"></script>
+    <script src="../assets/global/plugins/excanvas.min.js"></script> 
+    <![endif]-->
+    <!--JS-->
+    <script src="assets/global/plugins/require.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        requirejs.onError = function(e){
+            console.log(e);
+            if(typeof app == 'object'){
+                Backbone.history.fragment = '';
+                Backbone.Events.trigger('Error_LoadJsModule_View-render');
+                app.closeModuleLoading();
+            }
+        };
+        var version = '3.5.8';
+        document.write('<script type="text/javascript" src="scripts/apps/main.js?v=' + version +'"><\/script>');
+    </script>
+</body>
+</html>
