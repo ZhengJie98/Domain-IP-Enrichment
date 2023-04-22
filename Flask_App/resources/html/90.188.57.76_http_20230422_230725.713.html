@@ -1,0 +1,185 @@
+HTTP/1.1 401 Unauthorized
+Server: micro_httpd
+Cache-Control: no-cache
+Date: Sat, 22 Apr 2023 23:07:29 GMT
+WWW-Authenticate: XDigest realm="Eltex Router", domain="eltex.ru", nonce="YTFiNTlmYTE6ZjVmMTE5YTg6ODllMGJkMjY=", qop="auth", algorithm=MD5
+Content-Type: text/html; charset=UTF-8
+Connection: close
+
+<html>
+<head>
+    <title>Eltex - NTU-RG-1421G-Wac</title>
+    <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/favicon.ico">
+    <link rel="stylesheet" href="stylemain.css" type="text/css">
+    <link rel="stylesheet" href="colors.css" type="text/css">
+    <meta http-equiv="Pragma" content="no-cache">
+    <script src="md5.js"></script>
+    <script src="digestAuthRequest.js"></script>
+    <script>
+    if(window.top.location != window.location)
+        window.top.location = window.location;
+
+    /* Petrov: #60419, 23.05.16; */
+    var timeoutPeriod = "0";
+
+    function showTimer(show) {
+        document.getElementById('timer').style.display = (show) ? 'block' : 'none';
+    }
+
+    function disableElems(disable) {
+        document.getElementById('username').disabled = disable;
+        document.getElementById('password').disabled = disable;
+        document.getElementById('submitBtn').disabled = disable;
+    }
+
+    function countdown() {
+        if(timeoutPeriod > 0)
+        {
+            disableElems(true);
+            document.getElementById('timerValue').innerHTML = timeoutPeriod;
+            timeoutPeriod--;
+            setTimeout(countdown, 1000);
+        }
+        else
+        {
+            disableElems(false);
+            showTimer(false);
+        }
+    }
+    /* ~Petrov */
+
+var loginURL = "/";
+var userAgent = navigator.userAgent.toLowerCase();
+var firstLogIn = true;
+
+
+var login = function() {
+    var username = document.getElementById('username').value;
+    var password = document.getElementById('password').value;
+
+        // digest auth request
+
+        // create digest request object
+        
+        var req = new digestAuthRequest('GET', loginURL, username, password);
+        // make the request
+        req.request(function(data) {
+            console.log('Data retrieved successfully');
+            console.log(data);
+            //document.getElementById('result').innerHTML = 'Data retrieved successfully';
+            //document.getElementById('data').innerHTML = JSON.stringify(data);
+            eval('location="main.html"');
+        },function(errorCode) {
+/*            console.log('no dice: '+errorCode);
+            document.getElementById('result').innerHTML = 'Error: '+errorCode;
+            eval('location=login');*/
+            //console.log(data);
+            //document.getElementById('data').innerHTML = JSON.stringify(data);
+            eval('location="login"');
+        });
+}
+
+    function runScript(e) {
+        if (e.keyCode == 13) {
+            login();
+        }
+    }
+
+    </script>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        #header {
+            height:30px;
+            width: 100%;
+            padding: 15px 0px;
+            background: #2f3133 url('logo.png') no-repeat left center;
+            text-align:center;
+        }
+        #header b {
+            color: white;
+            font-size: 22px;
+        }
+        #auth-form {
+            margin: 80px auto 20px;
+            width: 330px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 14px;
+        }
+        td {
+            font-size: 12px;
+        }
+        td.text-td {
+            width: 140px;
+            text-align: right;
+        }
+        td.input-td {
+            width: 160px;
+        }
+        td.input-td input {
+            width: 150px;
+        }
+        #error-message {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <b>NTU-RG-1421G-Wac</b>
+        </div>
+        <div id="auth-form">
+            <form>
+                <table border="0" cellpadding="4" cellspacing="0">
+                    <tr>
+                        <td colspan="2"><h1>Авторизация</h1></td>
+                    </tr>
+                    <tr>
+                        <td class="text-td">Имя пользователя</td>
+                        <td class="input-td"><input type="text" id="username" name="username" value=""></td>
+                    </tr>
+                    <tr>
+                        <td class="text-td">Пароль</td>
+                        <td class="input-td"><input type="password" id="password" name="password" value="" onkeypress="runScript(event)"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                            <div id="error-message"></div>
+                        </td>
+                    </tr>
+
+                    <script language="javascript">
+                       <!-- hide
+                       {
+                            if(timeoutPeriod > 0)
+                            {
+                                document.writeln("<tr id='timer' align='center'>");
+                                document.writeln("<td colspan='2' align='center'>");
+                                document.writeln("&nbsp&nbsp&nbsp Следующая попытка через <span id='timerValue' style='color: #0099FF'; font-weight: bold>" + timeoutPeriod + "</span> сек");
+                                document.writeln("</td>");
+                                document.writeln("</tr>");
+                                setTimeout(countdown, 1);
+                            }
+                       }
+                       // done hiding -->
+                       </script>
+
+                    <tr>
+                        <td colspan="2" align="center">
+                            <input type="button" id="submitBtn" onClick="login()" value="Вход">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
+

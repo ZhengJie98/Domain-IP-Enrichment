@@ -1,0 +1,87 @@
+HTTP/1.1 200 OK
+Date: Sat, 22 Apr 2023 02:43:23 GMT
+Server: Apache
+Vary: Accept-Encoding
+Content-Length: 3591
+Content-Type: text/html; charset=UTF-8
+
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+  <title>Welcome to zentao!</title>
+  <link rel='stylesheet' href='/zentao/theme/zui/css/min.css' type='text/css' media='screen' />
+  <link rel='stylesheet' href='/zentao/theme/default/style.css' type='text/css' media='screen' />
+<style>
+html {background-color:#06294e;}
+#welcome{font-size:20px; border-bottom:1px solid #efefef; padding:10px}
+#logo{width:120px; border-right:1px solid #efefef}
+body {background-color: #06294e}
+.container{padding: 0}
+.modal-dialog{width: 800px}
+.modal-footer{text-align: center;margin-top: 0; padding: 10px 15px;}
+
+.modal-dialog{position: relative; margin-top: 10%;}
+.modal-body{padding: 20px 60px;}
+ 
+.nav>li>a {padding: 5px 10px}
+.nav.nav-pills > li.active > a, .nav.nav-pills > li.active > a:hover, .nav.nav-pills > li.active > a:focus {background: none; color: #1a4f85}
+.others .col-md-2 {width:20%;}
+.others .col-md-2 a{display:block;}
+.others .col-md-2 img{height:25px;}
+</style>
+</head>
+<script src='/zentao/js/jquery/lib.js' type='text/javascript'></script>
+<body>
+<div class='container'>
+  <div class='modal-dialog' style="width: 700px">
+    <div class='modal-content'>
+      <div class='modal-body'>
+        <div class="row">
+          <div class="col-xs-4 text-center">
+            <img src='?mode=getlogo' />
+          </div>          <div class="col-xs-8" style="border-left: 1px solid #ddd; padding: 25px 0 35px 8px">
+            <h3 style="margin-bottom: 20px">Welcome to zentao!</h3>
+            <a id='zentao' href='/zentao/' class='btn' target='_self'>ZenTao</a> &nbsp; &nbsp;           </div>
+        </div>
+	    <hr />
+	    <h5>Products also from Nature Easy Corp:</h5>
+	    <div class='row others en'>
+	      		  	      <div class='col-md-2 chanzhi'>
+  	        <a href='http://api.zentao.pm/goto.php?item=chanzhi' target='_blank'>
+              <img src='/zentao/theme/default/images/main/chanzhi.ico' /> Zsite	        </a>
+	      </div>
+	      		  	      <div class='col-md-2 zdoo'>
+  	        <a href='http://api.zentao.pm/goto.php?item=zdoo' target='_blank'>
+              <img src='/zentao/theme/default/images/main/zdoo.ico' /> Zdoo	        </a>
+	      </div>
+	      		  	      <div class='col-md-2 xuanxuan'>
+  	        <a href='http://api.zentao.pm/goto.php?item=xuanxuan' target='_blank'>
+              <img src='/zentao/theme/default/images/main/xuanxuan.ico' /> Xuan	        </a>
+	      </div>
+	      		  	      <div class='col-md-2 ydisk'>
+  	        <a href='http://api.zentao.pm/goto.php?item=ydisk' target='_blank'>
+              <img src='/zentao/theme/default/images/main/ydisk.ico' /> Y Disk	        </a>
+	      </div>
+	      		  	      <div class='col-md-2 meshiot'>
+  	        <a href='http://api.zentao.pm/goto.php?item=meshiot' target='_blank'>
+              <img src='/zentao/theme/default/images/main/meshiot.ico' /> MeshioT	        </a>
+	      </div>
+	      	    </div>
+      </div>
+    </div>
+    <div class='modal-footer'>
+      <ul class='pull-left nav nav-pills'><li class=''><a href='?lang=cn'>简体</a></li><li class='active'><a href='?lang=en'>English</a></li></ul>
+      <ul class='pull-right nav nav-pills'>
+        <li> <a href='http://www.apachefriends.org/en/xampp.html' target='_blank'>xampp</a> </li>
+        <li> <a href='https://www.zentao.pm' target='_blank'>Community</a></li>
+        <li><a href='/adminer/' target='_blank'>MySQL</a></li>
+        <li></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</body>
+<script>
+$('#zentao').addClass('btn-success');
+</script>
+</html>

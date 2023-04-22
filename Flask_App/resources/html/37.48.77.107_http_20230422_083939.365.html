@@ -1,0 +1,218 @@
+HTTP/1.1 200 OK
+Date: Sat, 22 Apr 2023 00:39:39 GMT
+Server: Apache/2.2.15 (CentOS)
+X-Powered-By: PHP/7.1.33
+Set-Cookie: PHPSESSID=d5bfe41eb3460aecb0b4fc85638a52f0; path=/
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Vary: Accept-Encoding,User-Agent
+Connection: close
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+        <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+        <html xmlns="http://www.w3.org/1999/xhtml" id='html'">
+
+        <head>
+            <meta name="referrer" content="no-referrer"/>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+            <script type="text/javascript"
+                    src="/classes/jquery.bundle.js?789306"></script>
+            <script type="text/javascript" src="/classes/js.js?691954"></script>
+            <script type="text/javascript" src="/classes/loadingoverlay.min.js"></script>
+
+            <script type="text/javascript"
+                    src="/classes/jquery.dropdown.js?905442"></script>
+            <link type="text/css" href="/classes/jquery.dropdown.css" rel="stylesheet"/>
+
+            <link type="text/css" href="/classes/jquery-ui.css" rel="stylesheet"/>
+            <link href="/templates/plugmod/styles/rl_style_pm.css?523752"
+                  rel="stylesheet" type="text/css"/>
+            <!--            <link href="/templates/plugmod/styles/bootstrap.css"-->
+            <!--                  rel="stylesheet" type="text/css"/>-->
+
+            <link href='/classes/RobotoFontCondensed.css' rel='stylesheet' type='text/css'>
+            <link href='/classes/RobotoFont.css' rel='stylesheet' type='text/css'>
+            <!--<link href='https://fonts.googleapis.com/css?family=Exo+2:400,700,800,900&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+            <link href='https://fonts.googleapis.com/css?family=Jura:400,600,500&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+            <link href='https://fonts.googleapis.com/css?family=Underdog&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+            <link href='https://fonts.googleapis.com/css?family=Tinos:400,400italic,700,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+            <link href='https://fonts.googleapis.com/css?family=Comfortaa:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+            <link href='https://fonts.googleapis.com/css?family=Cuprum:400,700,700italic,400italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>-->
+
+            <link rel="stylesheet" type="text/css" href="/classes/DataTables/datatables.min.css"/>
+            <script type="text/javascript"
+                    src="/classes/DataTables/datatables.min.js?605819"></script>
+            <script type="text/javascript" src="/classes/css_sensor/ResizeSensor.js"></script>
+            <script type="text/javascript" src="/classes/css_sensor/ElementQueries.js"></script>
+            <script type="text/javascript" src="/classes/jquery.caret-1.5.2.min.js"></script>
+
+
+            <!-- styles needed by jScrollPane -->
+<!--            <link type="text/css" href="/classes/jquery.jscrollpane.css" rel="stylesheet" media="all" />-->
+            <!-- the mousewheel plugin - optional to provide mousewheel support -->
+<!--            <script type="text/javascript" src="/classes/jquery.mousewheel.js"></script>-->
+            <!-- the jScrollPane script -->
+<!--            <script type="text/javascript" src="/classes/jquery.jscrollpane.min.js"></script>-->
+            <!--    <script type="text/javascript" language="javascript" src="classes/DataTables/colResizable.min.js"></script>-->
+
+            <title></title>
+            
+</head>
+
+<body>
+
+<script> var need_redirect=false; </script>        <form id="main_form" action="/index.php" method="POST" autocomplete="on"
+              style="display: none">
+            <div class="outer">
+                <div class="middle">
+                    <div class="inner mainbox ui-frontwindow" style="width: 373px">
+                        <h1>Authorization</h1>
+
+                        <table style="display: inline">
+                            <tr class="tinfoline auto_task_grey left">
+                                <td>
+                                    Login<br>
+                                    <input type="text" name="login_rl" value="" size="32">
+                                </td>
+                            </tr>
+                            <tr class="tinfoline auto_task_grey left">
+                                <td>
+                                    Password<br>
+                                    <input type="password" name="password_rl" value="" size="32">
+                                </td>
+                            </tr>
+                            <tr class="tinfoline">
+                                <td colspan="2">
+                                    <div class='vspace' style='height:16px;'>&nbsp</div>                                    <input id="submit_button" type="submit" name="submit"
+                                           value="Enter">
+                                    <div class='vspace' style='height:16px;'>&nbsp</div>                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </form>
+        
+        
+<script>
+    window.addEventListener('DOMContentLoaded', function () {
+        $('input').addClass("ui-widget ui-widget-content ui-corner-all padding4");
+        $("#submit_button, #exit_button").button();
+        //$("#exit_button").button();
+        $("#id_extend_behaviour").buttonsetv().find('label').width(200);
+        $("#id_delete").hide(0);
+
+        $("#main_form").show(200);
+
+        if (need_redirect) {
+            setTimeout(function () {
+                location.replace(location.href);
+            }, 4000);
+        }
+
+        $("#duration_spinner").spinner({
+            min: 10,
+            max: 2500,
+            step: 10,
+            numberFormat: "C",
+            change: function (event, ui) {
+                edit_duration_spinner();
+            },
+            spin: function (event, ui) {
+                edit_duration_spinner(ui.value);
+            }
+        });
+
+        update_payments('', false);
+
+
+    }, true);
+
+    function send_activation_pin(days) {
+        var pin = $("#pin_code_" + days);
+        pin_code = pin.val();
+        pin.val('');
+        var but = $("#send_pin_button");
+        but.addClass("disabled");
+        var fate = $('input[name="data_fate"]:checked').val();
+
+        update_payments('pin=' + urlencode(pin_code) + '&fate=' + fate, true, function () {
+            but.removeClass("disabled");
+            close_dialog();
+        }, function () {
+            but.removeClass("disabled");
+        });
+
+    }
+
+    function update_payments(post, is_fade, on_succ, on_err) {
+        var block = $("#payments_block");
+        if (is_fade) {
+            block.fadeTo(200, 0.5);
+            // block.LoadingOverlay("show");
+        }
+        just_ajax('ajax/payments_list.php', post + '&reload_on_active=1&hide_self_activate=1', true,
+            function (page) {
+                if (is_fade) {
+                    // block.LoadingOverlay("hide");
+                    block.fadeTo(200, 1);
+                    // } else {
+                }
+                screen.updateInterval = 100000;
+                // console.log(page);
+                block.html(page);
+                screen.updateInterval = 0;
+
+                if (typeof on_succ !== 'undefined') on_succ();
+                if (post.length == 0) setTimeout('update_payments("")', 5000);
+            },
+            function () {
+                if (typeof on_err !== 'undefined') on_err();
+                if (post.length == 0) setTimeout('update_payments("")', 5000);
+            }
+        );
+    }
+
+
+    function but_buy_duration_wm() {
+        var value = $("#duration_spinner").spinner("value");
+        open_pay_win("http://www.oplata.info/asp/pay_unit.asp?id_d=" + ("&unit_cnt=" + (value / 10)).replace(".", ","));
+    }
+
+    function but_buy_duration_crypto(th, coin) {
+        var value = $("#duration_spinner").spinner("value");
+        var price = value *0;
+        price = price *0.83076923076923;
+        $("input[id=crypto_price]").val(price);
+        // console.log($("#form_" + coin));
+        $("#form_" + coin).submit();
+    }
+
+    function edit_duration_spinner(value) {
+        if (typeof value == 'undefined') value = $("#duration_spinner").spinner("value");
+        var txt = '???';
+        if (value != null) {
+            var vl = value *0;
+            var mul = Number((vl).toFixed(2));
+            txt = value + ' Days = ' + mul + '$';
+        }
+        $("#lab_gb").html(txt);
+    }
+
+    function select_mode(th) {
+        if (th.value === '0') {
+            $("#id_delete").hide(0);
+            $("#id_keep").show(0);
+        } else {
+            $("#id_keep").hide(0);
+            $("#id_delete").show(0);
+        }
+
+    }
+
+
+</script>
+
+</body></html>

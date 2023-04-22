@@ -1,0 +1,29 @@
+HTTP/1.1 200 OK
+Date: Sat, 22 Apr 2023 14:00:04 GMT
+Server: Boa/0.94.14rc21
+Accept-Ranges: bytes
+Connection: Keep-Alive
+Keep-Alive: timeout=10, max=1000
+Content-Length: 839
+Last-Modified: Tue, 28 Nov 2017 06:10:20 GMT
+Content-Type: text/html
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<title></title>
+<!--codebase="RSVideoOcx.cab#version=1.0.1.60"--><!--IE package version number, for the board to read, can not delete-->
+<script>
+	var http = window.location.href;//ip ->ipc-> ip/login.html
+	var addInfo = http.split("//")[1].split("?")[1];
+	if(typeof addInfo == "undefined" || !(/https?/).test(http)){//local login,eg:file:///E:/.../login.html
+		var t=new Date;
+		location.replace("index.html?_"+t.getTime());
+	}else{  // eg: http://172.18.13.44/?999 ;eg:http://[ip]:[port]/?username=admin&password=000000
+		location.replace("index.html?"+addInfo);
+	}
+</script>
+
+</head>
+
+</html>

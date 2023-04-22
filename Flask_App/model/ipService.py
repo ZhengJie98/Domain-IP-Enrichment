@@ -658,13 +658,14 @@ def process_ip_parent_without_vtcall():
 
         # while config.REMAINING_LIMIT > 0 and len(list(retrieve_ips_to_process(config.REMAINING_LIMIT))) > 0:
             # print("new while loop config.REMAINING_LIMIT:", config.REMAINING_LIMIT)
-            cursor = col.find()            ## replicate to prevent closing
+            cursor = col.find({"has_html" : ""})            ## replicate to prevent closing
             cursor = [x for x in cursor]
             # print(cursor)
 
             
             for ip_doc in cursor:
-                # currentTimestamp = datetime.datetime.now()
+                currentTimestamp = datetime.datetime.now()
+                print(currentTimestamp)
                 # if ( (currentTimestamp-refreshTimestamp)/1000 > 300 ) {
                 #     print("refreshing session")
                 #     db.adminCommand({"refreshSessions" : [sessionId]})
@@ -676,11 +677,11 @@ def process_ip_parent_without_vtcall():
                 client.admin.command('refreshSessions', [session.session_id], session=session)
 
                 ip = str(ip_doc["ip_address"])
-                print("current ip in process_ip_parent:", ip)
+                print("current ip in process_ip_parent:", ip, "currentTimeStamp", currentTimestamp)
                 
                 ## ip check to be here
-                if to_skip(ip_doc) == 1:
-                    continue
+                # if to_skip(ip_doc) == 1:
+                #     continue
     
                 db_id = ip_doc['_id']
                 updated_ip_doc = ip_doc
@@ -711,11 +712,11 @@ def process_ip_parent_without_vtcall():
                 ## COMMENT OUT FOR ACTUAL
                 # break
                 toc = time.perf_counter()
-                if (toc-tic) < 15:
-                    balance = 15-(toc-tic)
-                    print("sleeping to makeup 15 seconds: ", balance, "seconds" )
-                    time.sleep(15-(toc-tic))
-                    toc = time.perf_counter()
+                # if (toc-tic) < 15:
+                #     balance = 15-(toc-tic)
+                #     print("sleeping to makeup 15 seconds: ", balance, "seconds" )
+                #     time.sleep(15-(toc-tic))
+                #     toc = time.perf_counter()
 
                 print(f"replacement SUCCESSFUL for {ip}, time taken {toc-tic} seconds\n\n\n")
             # cursor.close()
