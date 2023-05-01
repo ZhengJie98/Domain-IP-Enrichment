@@ -78,7 +78,11 @@ domain_template = {
         "has_html": "",
         "has_javascript": "",
         "files_log" : None, ## Array of sub-docs, [{type:"", file_location:""}, {}...]
-        "duration_log" : None
+        "duration_log" : None,
+        "who_is_info" : None,
+        "dns_info" : None,
+        "ssl_tls_cert_info": None,
+        "historical_web_version" : None
         
     }
 

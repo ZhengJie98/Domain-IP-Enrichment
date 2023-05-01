@@ -56,8 +56,8 @@ ip_template = {
         
     }
 
-# API_KEY = '0d9fdb6e32d74b9d12e3d894309531838c3aabe8d66b049fd3a7976fbedf2c68'  #@param  {type: "string"}
-API_KEY = '207349263f9c5edd176cc079fa8000a5ab912df7d9e91154842c08031658675d'  #@param  {type: "string"}
+API_KEY = '0d9fdb6e32d74b9d12e3d894309531838c3aabe8d66b049fd3a7976fbedf2c68'  #@param  {type: "string"}
+# API_KEY = '207349263f9c5edd176cc079fa8000a5ab912df7d9e91154842c08031658675d'  #@param  {type: "string"}
 
 
 
@@ -105,7 +105,10 @@ def process_ip_parent():
 
     now = datetime.datetime.now()
     dt_string = now.strftime("%Y%m%d_%H%M%S.%f")[:-3]   
-    config.CURR_LOGFILE = "logfile_" + dt_string + ".txt"
+    config.CURR_LOGFILE = "resources/logs/logfile_" + dt_string + ".txt"
+    output_file = Path(config.CURR_LOGFILE)
+    output_file.parent.mkdir(exist_ok=True, parents=True)
+                
 
     with client.start_session() as session:
     # sessionId = session
@@ -301,6 +304,8 @@ def call_ip(ip_doc, x_days_ago):
         # print("16 seconds waiting done")
         config.REMAINING_LIMIT -= 1
         print("remaining config.REMAINING_LIMIT:", config.REMAINING_LIMIT)
+        logfile.write("===== call_ip function end =====\n")
+
 
         toc = time.perf_counter()
         ip_doc["duration_log"] = {}
