@@ -1,0 +1,27 @@
+current ip in process_ip_parent:119.188.143.247
+===== to_skip function start =====
+119.188.143.247 has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip function start =====
+calling ip for: 119.188.143.247 now: 2023-05-01 16:27:33.403157
+duration_log vt_call: 0.9673325000330806
+===== call_ip function end =====
+===== screenshot function start =====
+duration_log screenshot: 49.323335099965334
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 28
+current protocol: https
+returncode: 28
+duration_log grab_html_js: 42.147814699914306
+===== grab_html_js function end =====
+replacement successful
+current ip in process_ip_parent:119.96.146.123
+===== to_skip function start =====
+119.96.146.123 has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip function start =====
+calling ip for: 119.96.146.123 now: 2023-05-01 16:29:05.911802
+duration_log vt_call: 1.0597224000375718
+===== call_ip function end =====
