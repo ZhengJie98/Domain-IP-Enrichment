@@ -56,15 +56,15 @@ ip_template = {
         
     }
 
-API_KEY = '0d9fdb6e32d74b9d12e3d894309531838c3aabe8d66b049fd3a7976fbedf2c68'  #@param  {type: "string"}
-# API_KEY = '207349263f9c5edd176cc079fa8000a5ab912df7d9e91154842c08031658675d'  #@param  {type: "string"}
+# API_KEY = '0d9fdb6e32d74b9d12e3d894309531838c3aabe8d66b049fd3a7976fbedf2c68'  #@param  {type: "string"}
+API_KEY = '207349263f9c5edd176cc079fa8000a5ab912df7d9e91154842c08031658675d'  #@param  {type: "string"}
 
 
 
 client = MongoClient('localhost',27017)
 # db = client['filtered_sg_ip_list']
 # db = client['jons_list']
-db = client['michelle_list_redo']
+db = client['michelle_list']
 col = db["ip"]
     
 
@@ -80,7 +80,7 @@ def save_ipfile(file):
     df.columns.values[0] = "ip_address"
 
     ## FOR HARDDISK
-    dt_string = now.strftime("%Y%m%d_%H%M%S.%f")[:-3]   
+    dt_string = now.strftime("%Y%m%d_%H%M%S.%f")[:-3]    
     filename_splitted = secure_filename(file.filename).split('.csv') 
     filename = filename_splitted[0] + '_' + str(dt_string) + ".csv"
     df.to_csv(os.path.join(app.config['UPLOAD_FOLDER'], filename))
@@ -95,12 +95,17 @@ def save_ipfile(file):
     df["is_priority"] = 0
     df["source"] = "csv"
     records_ = df.to_dict(orient = 'records') 
-    result = db.ip.insert_many(records_ ) 
+    # result = db.ip.insert_many(records_ ) 
+    result = col.insert_many(records_ ) 
 
     return result
 
 ## Checks to_skip(), else call_ip and update db with result
 def process_ip_parent():
+
+    now = datetime.datetime.now()
+    dt_string = now.strftime("%Y%m%d_%H%M%S.%f")[:-3]   
+    config.CURR_LOGFILE = "logfile_" + dt_string
 
     with client.start_session() as session:
     # sessionId = session
@@ -130,6 +135,8 @@ def process_ip_parent():
 
                 ip = str(ip_doc["ip_address"])
                 print("current ip in process_ip_parent:", ip)
+                with open(config.CURR_LOGFILE,'a+') as logfile:
+                    logfile.write("current ip in process_ip_parent:" + ip + '\n')
                 
                 ## ip check to be here
                 if to_skip(ip_doc) == 1:
@@ -293,41 +300,48 @@ def testing():
 def to_skip(ip_doc):
     
     print("===== to_skip function start =====")
+    with open(config.CURR_LOGFILE,'a+') as logfile:
+        logfile.write("===== to_skip function start =====\n")
     
-    x_days_ago = ip_doc['x_days_ago']
-    # print("global variable X_DAYS_AGO:", X_DAYS_AGO)
-    ip_address = str(ip_doc["ip_address"])
-    db_id = ip_doc['_id']
+        x_days_ago = ip_doc['x_days_ago']
+        # print("global variable X_DAYS_AGO:", X_DAYS_AGO)
+        ip_address = str(ip_doc["ip_address"])
+        db_id = ip_doc['_id']
 
-    now = datetime.datetime.now()
-    d = datetime.timedelta(days = x_days_ago)
-    deducted_date = (now - d)
-    
-    # cursor = col.find({"ip_address" : ip_address}, "processed_timestamp")
-    cursor = col.find( {'ip_address': ip_address, 'processed_timestamp': {'$gt': deducted_date} })
-    
-    len_cursor = len(list(cursor.clone()))
-
-    if len_cursor > 0:
-        print("len_cursor > 0 , " + ip_address + " has been processed in past X days")
-
-        # for each in cursor:
-            # print("processed document found:", each)
+        now = datetime.datetime.now()
+        d = datetime.timedelta(days = x_days_ago)
+        deducted_date = (now - d)
         
-        col.update_one(
-                    {"_id" : db_id }, 
-                    { "$set" : {"to_skip" : 1}}  
-                    )
-        print(ip_address + " HAS BEEN processed in past X days")
+        # cursor = col.find({"ip_address" : ip_address}, "processed_timestamp")
+        cursor = col.find( {'ip_address': ip_address, 'processed_timestamp': {'$gt': deducted_date} })
+        
+        len_cursor = len(list(cursor.clone()))
 
+        if len_cursor > 0:
+            print("len_cursor > 0 , " + ip_address + " has been processed in past X days")
+            logfile.write("len_cursor > 0 , " + ip_address + " has been processed in past X days\n")
+
+
+            # for each in cursor:
+                # print("processed document found:", each)
+            
+            col.update_one(
+                        {"_id" : db_id }, 
+                        { "$set" : {"to_skip" : 1}}  
+                        )
+            print(ip_address + " HAS BEEN processed in past X days")
+
+            print("===== to_skip function end =====")
+            logfile.write("===== to_skip function end =====\n")
+            cursor.close()
+            return 1
+        
+        print(ip_address + " has NOT been processed in past X days")
+        logfile.write(ip_address + " has NOT been processed in past X days\n")
         print("===== to_skip function end =====")
+        logfile.write("===== to_skip function end =====\n")
         cursor.close()
-        return 1
-    
-    print(ip_address + " has NOT been processed in past X days")
-    print("===== to_skip function end =====")
-    cursor.close()
-    return 0
+        return 0
     
 def custom_add():
     x = 'hehe'
