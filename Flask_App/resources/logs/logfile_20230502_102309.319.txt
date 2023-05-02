@@ -1,0 +1,787 @@
+current ip in process_ip_parent:123.188.24.60
+===== to_skip function start =====
+123.188.24.60 has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip function start =====
+calling ip for: 123.188.24.60 now: 2023-05-02 10:23:09.422619
+===== call_ip function end =====
+duration_log vt_call: 1.2318456000000007
+===== call_ip function end =====
+===== screenshot function start =====
+duration_log screenshot: 64.4689045
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 28
+current protocol: https
+returncode: 28
+duration_log grab_html_js: 42.1653963
+===== grab_html_js function end =====
+replacement successful
+replacement SUCCESSFUL for 123.188.24.60, time taken 107.9725751 seconds
+
+
+current ip in process_ip_parent:124.160.154.10
+===== to_skip function start =====
+124.160.154.10 has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip function start =====
+calling ip for: 124.160.154.10 now: 2023-05-02 10:24:57.405294
+===== call_ip function end =====
+duration_log vt_call: 0.9429291000000006
+===== call_ip function end =====
+===== screenshot function start =====
+duration_log screenshot: 45.83762309999999
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 28
+current protocol: https
+returncode: 28
+duration_log grab_html_js: 42.1476361
+===== grab_html_js function end =====
+replacement successful
+replacement SUCCESSFUL for 124.160.154.10, time taken 89.0179073 seconds
+
+
+current ip in process_ip_parent:122.243.209.232
+===== to_skip function start =====
+122.243.209.232 has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip function start =====
+calling ip for: 122.243.209.232 now: 2023-05-02 10:26:26.434064
+===== call_ip function end =====
+duration_log vt_call: 1.0350196999999923
+===== call_ip function end =====
+===== screenshot function start =====
+duration_log screenshot: 45.4176808
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 28
+current protocol: https
+returncode: 28
+duration_log grab_html_js: 42.12119390000001
+===== grab_html_js function end =====
+replacement successful
+replacement SUCCESSFUL for 122.243.209.232, time taken 88.66311970000001 seconds
+
+
+current ip in process_ip_parent:123.173.109.34
+===== to_skip function start =====
+123.173.109.34 has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip function start =====
+calling ip for: 123.173.109.34 now: 2023-05-02 10:27:55.134379
+===== call_ip function end =====
+duration_log vt_call: 1.0957261000000358
+===== call_ip function end =====
+===== screenshot function start =====
+duration_log screenshot: 46.17785729999997
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 28
+current protocol: https
+returncode: 28
+duration_log grab_html_js: 42.13609919999999
+===== grab_html_js function end =====
+replacement successful
+replacement SUCCESSFUL for 123.173.109.34, time taken 89.51825960000002 seconds
+
+
+current ip in process_ip_parent:124.251.100.65
+===== to_skip function start =====
+124.251.100.65 has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip function start =====
+calling ip for: 124.251.100.65 now: 2023-05-02 10:29:24.657538
+===== call_ip function end =====
+duration_log vt_call: 0.9366873000000169
+===== call_ip function end =====
+===== screenshot function start =====
+duration_log screenshot: 24.74626139999998
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 28
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 21.640835700000025
+===== grab_html_js function end =====
+replacement successful
+replacement SUCCESSFUL for 124.251.100.65, time taken 47.42012080000001 seconds
+
+
+current ip in process_ip_parent:122.143.172.203
+===== to_skip function start =====
+122.143.172.203 has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip function start =====
+calling ip for: 122.143.172.203 now: 2023-05-02 10:30:12.118572
+===== call_ip function end =====
+duration_log vt_call: 0.9822639000000208
+===== call_ip function end =====
+===== screenshot function start =====
+duration_log screenshot: 46.19082100000003
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 28
+current protocol: https
+returncode: 28
+duration_log grab_html_js: 42.16998109999997
+===== grab_html_js function end =====
+replacement successful
+replacement SUCCESSFUL for 122.143.172.203, time taken 89.48003350000005 seconds
+
+
+current ip in process_ip_parent:123.6.111.112
+===== to_skip function start =====
+123.6.111.112 has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip function start =====
+calling ip for: 123.6.111.112 now: 2023-05-02 10:31:41.590427
+===== call_ip function end =====
+duration_log vt_call: 1.2456306999999924
+===== call_ip function end =====
+===== screenshot function start =====
+duration_log screenshot: 6.792303999999945
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.6605651000000989
+===== grab_html_js function end =====
+replacement successful
+replacement SUCCESSFUL for 123.6.111.112, time taken 15.014252600000077 seconds
+
+
+current ip in process_ip_parent:121.35.102.208
+===== to_skip function start =====
+121.35.102.208 has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip function start =====
+calling ip for: 121.35.102.208 now: 2023-05-02 10:31:56.637135
+===== call_ip function end =====
+duration_log vt_call: 0.9562499000001026
+===== call_ip function end =====
+===== screenshot function start =====
+duration_log screenshot: 46.13012170000002
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 28
+current protocol: https
+returncode: 28
+duration_log grab_html_js: 42.15517160000002
+===== grab_html_js function end =====
+replacement successful
+replacement SUCCESSFUL for 121.35.102.208, time taken 89.34936720000007 seconds
+
+
+current ip in process_ip_parent:124.234.222.151
+===== to_skip function start =====
+124.234.222.151 has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip function start =====
+calling ip for: 124.234.222.151 now: 2023-05-02 10:33:26.001391
+===== call_ip function end =====
+duration_log vt_call: 0.9114210999999841
+===== call_ip function end =====
+===== screenshot function start =====
+duration_log screenshot: 45.90899000000002
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 28
+current protocol: https
+returncode: 28
+duration_log grab_html_js: 42.11643580000009
+===== grab_html_js function end =====
+replacement successful
+replacement SUCCESSFUL for 124.234.222.151, time taken 89.04311639999992 seconds
+
+
+current ip in process_ip_parent:123.115.145.213
+===== to_skip function start =====
+123.115.145.213 has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip function start =====
+calling ip for: 123.115.145.213 now: 2023-05-02 10:34:55.060090
+===== call_ip function end =====
+duration_log vt_call: 1.179775300000074
+===== call_ip function end =====
+===== screenshot function start =====
+duration_log screenshot: 45.5374276
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 28
+current protocol: https
+returncode: 28
+duration_log grab_html_js: 42.145160600000054
+===== grab_html_js function end =====
+replacement successful
+replacement SUCCESSFUL for 123.115.145.213, time taken 88.96363839999992 seconds
+
+
+current ip in process_ip_parent:123.169.47.128
+===== to_skip function start =====
+123.169.47.128 has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip function start =====
+calling ip for: 123.169.47.128 now: 2023-05-02 10:36:24.048648
+===== call_ip function end =====
+duration_log vt_call: 1.2806410000000596
+===== call_ip function end =====
+===== screenshot function start =====
+duration_log screenshot: 45.83167400000002
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 28
+current protocol: https
+returncode: 28
+duration_log grab_html_js: 42.129852899999946
+===== grab_html_js function end =====
+replacement successful
+replacement SUCCESSFUL for 123.169.47.128, time taken 89.36198810000008 seconds
+
+
+current ip in process_ip_parent:125.114.83.246
+===== to_skip function start =====
+125.114.83.246 has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip function start =====
+calling ip for: 125.114.83.246 now: 2023-05-02 10:37:53.444648
+===== call_ip function end =====
+duration_log vt_call: 0.9935058999999455
+===== call_ip function end =====
+===== screenshot function start =====
+duration_log screenshot: 45.48946749999993
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 28
+current protocol: https
+returncode: 28
+duration_log grab_html_js: 42.15076900000008
+===== grab_html_js function end =====
+replacement successful
+replacement SUCCESSFUL for 125.114.83.246, time taken 88.75784280000005 seconds
+
+
+current ip in process_ip_parent:122.138.95.115
+===== to_skip function start =====
+122.138.95.115 has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip function start =====
+calling ip for: 122.138.95.115 now: 2023-05-02 10:39:22.208344
+===== call_ip function end =====
+duration_log vt_call: 1.0096346999999923
+===== call_ip function end =====
+===== screenshot function start =====
+duration_log screenshot: 45.729130600000076
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 28
+current protocol: https
+returncode: 28
+duration_log grab_html_js: 42.15184929999987
+===== grab_html_js function end =====
+replacement successful
+replacement SUCCESSFUL for 122.138.95.115, time taken 88.9966781999999 seconds
+
+
+current ip in process_ip_parent:123.182.48.82
+===== to_skip function start =====
+123.182.48.82 has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip function start =====
+calling ip for: 123.182.48.82 now: 2023-05-02 10:40:51.219394
+===== call_ip function end =====
+duration_log vt_call: 1.4086379000000306
+===== call_ip function end =====
+===== screenshot function start =====
+duration_log screenshot: 45.61637689999998
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 28
+current protocol: https
+returncode: 28
+duration_log grab_html_js: 42.1182417
+===== grab_html_js function end =====
+replacement successful
+replacement SUCCESSFUL for 123.182.48.82, time taken 89.2497291000002 seconds
+
+
+current ip in process_ip_parent:121.231.29.229
+===== to_skip function start =====
+121.231.29.229 has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip function start =====
+calling ip for: 121.231.29.229 now: 2023-05-02 10:42:20.487674
+===== call_ip function end =====
+duration_log vt_call: 1.4067069000000174
+===== call_ip function end =====
+===== screenshot function start =====
+duration_log screenshot: 45.56815749999987
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 28
+current protocol: https
+returncode: 28
+duration_log grab_html_js: 42.10676519999993
+===== grab_html_js function end =====
+replacement successful
+replacement SUCCESSFUL for 121.231.29.229, time taken 89.18879000000015 seconds
+
+
+current ip in process_ip_parent:123.244.91.84
+===== to_skip function start =====
+123.244.91.84 has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip function start =====
+calling ip for: 123.244.91.84 now: 2023-05-02 10:43:49.692171
+===== call_ip function end =====
+duration_log vt_call: 1.005561999999827
+===== call_ip function end =====
+===== screenshot function start =====
+duration_log screenshot: 45.4136110999998
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 28
+current protocol: https
+returncode: 28
+duration_log grab_html_js: 42.15280419999999
+===== grab_html_js function end =====
+replacement successful
+replacement SUCCESSFUL for 123.244.91.84, time taken 88.67690590000007 seconds
+
+
+current ip in process_ip_parent:122.193.20.6
+===== to_skip function start =====
+122.193.20.6 has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip function start =====
+calling ip for: 122.193.20.6 now: 2023-05-02 10:45:18.379788
+===== call_ip function end =====
+duration_log vt_call: 0.9096383999999489
+===== call_ip function end =====
+===== screenshot function start =====
+duration_log screenshot: 45.31163249999986
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 28
+current protocol: https
+returncode: 28
+duration_log grab_html_js: 42.121118400000114
+===== grab_html_js function end =====
+replacement successful
+replacement SUCCESSFUL for 122.193.20.6, time taken 88.43783449999978 seconds
+
+
+current ip in process_ip_parent:123.60.94.121
+===== to_skip function start =====
+123.60.94.121 has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip function start =====
+calling ip for: 123.60.94.121 now: 2023-05-02 10:46:46.836026
+===== call_ip function end =====
+duration_log vt_call: 1.0173738999999387
+===== call_ip function end =====
+===== screenshot function start =====
+duration_log screenshot: 45.48409760000004
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 28
+current protocol: https
+returncode: 28
+duration_log grab_html_js: 42.135361200000034
+===== grab_html_js function end =====
+replacement successful
+replacement SUCCESSFUL for 123.60.94.121, time taken 88.73402299999998 seconds
+
+
+current ip in process_ip_parent:119.188.143.239
+===== to_skip function start =====
+119.188.143.239 has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip function start =====
+calling ip for: 119.188.143.239 now: 2023-05-02 10:48:15.587574
+===== call_ip function end =====
+duration_log vt_call: 1.0476407000001018
+===== call_ip function end =====
+===== screenshot function start =====
+duration_log screenshot: 45.4029438
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 28
+current protocol: https
+returncode: 28
+duration_log grab_html_js: 42.13311270000008
+===== grab_html_js function end =====
+replacement successful
+replacement SUCCESSFUL for 119.188.143.239, time taken 88.69087620000005 seconds
+
+
+current ip in process_ip_parent:124.223.17.68
+===== to_skip function start =====
+124.223.17.68 has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip function start =====
+calling ip for: 124.223.17.68 now: 2023-05-02 10:49:44.306450
+===== call_ip function end =====
+duration_log vt_call: 0.9648147999998855
+===== call_ip function end =====
+===== screenshot function start =====
+duration_log screenshot: 11.257650699999886
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 7
+duration_log grab_html_js: 5.369207000000188
+===== grab_html_js function end =====
+replacement successful
+replacement SUCCESSFUL for 124.223.17.68, time taken 17.699477500000057 seconds
+
+
+current ip in process_ip_parent:122.96.235.182
+===== to_skip function start =====
+122.96.235.182 has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip function start =====
+calling ip for: 122.96.235.182 now: 2023-05-02 10:50:02.018831
+===== call_ip function end =====
+duration_log vt_call: 1.0718215000001692
+===== call_ip function end =====
+===== screenshot function start =====
+duration_log screenshot: 7.397853299999952
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 35
+duration_log grab_html_js: 0.5748563000001923
+===== grab_html_js function end =====
+replacement successful
+replacement SUCCESSFUL for 122.96.235.182, time taken 15.00850730000002 seconds
+
+
+current ip in process_ip_parent:124.235.39.239
+===== to_skip function start =====
+124.235.39.239 has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip function start =====
+calling ip for: 124.235.39.239 now: 2023-05-02 10:50:17.044663
+===== call_ip function end =====
+duration_log vt_call: 0.9533646999998382
+===== call_ip function end =====
+===== screenshot function start =====
+duration_log screenshot: 45.969487099999924
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 28
+current protocol: https
+returncode: 28
+duration_log grab_html_js: 42.14166010000008
+===== grab_html_js function end =====
+replacement successful
+replacement SUCCESSFUL for 124.235.39.239, time taken 89.1841703 seconds
+
+
+current ip in process_ip_parent:121.46.24.111
+===== to_skip function start =====
+121.46.24.111 has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip function start =====
+calling ip for: 121.46.24.111 now: 2023-05-02 10:51:46.249880
+===== call_ip function end =====
+duration_log vt_call: 0.9357700999998997
+===== call_ip function end =====
+===== screenshot function start =====
+duration_log screenshot: 6.94860749999998
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 28
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 21.53513429999998
+===== grab_html_js function end =====
+replacement successful
+replacement SUCCESSFUL for 121.46.24.111, time taken 29.517565800000057 seconds
+
+
+current ip in process_ip_parent:124.71.238.168
+===== to_skip function start =====
+124.71.238.168 has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip function start =====
+calling ip for: 124.71.238.168 now: 2023-05-02 10:52:15.776823
+===== call_ip function end =====
+duration_log vt_call: 0.9358746999998857
+===== call_ip function end =====
+===== screenshot function start =====
+duration_log screenshot: 7.502316000000064
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 1.4797161000001324
+===== grab_html_js function end =====
+replacement successful
+replacement SUCCESSFUL for 124.71.238.168, time taken 15.004302699999926 seconds
+
+
+current ip in process_ip_parent:123.129.199.189
+===== to_skip function start =====
+123.129.199.189 has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip function start =====
+calling ip for: 123.129.199.189 now: 2023-05-02 10:52:30.800122
+===== call_ip function end =====
+duration_log vt_call: 1.5088711999999305
+===== call_ip function end =====
+===== screenshot function start =====
+duration_log screenshot: 45.76846249999994
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 28
+current protocol: https
+returncode: 28
+duration_log grab_html_js: 42.14731449999999
+===== grab_html_js function end =====
+replacement successful
+replacement SUCCESSFUL for 123.129.199.189, time taken 89.53587049999987 seconds
+
+
+current ip in process_ip_parent:123.153.56.15
+===== to_skip function start =====
+123.153.56.15 has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip function start =====
+calling ip for: 123.153.56.15 now: 2023-05-02 10:54:00.353574
+===== call_ip function end =====
+duration_log vt_call: 1.2165045000001555
+===== call_ip function end =====
+===== screenshot function start =====
+duration_log screenshot: 47.70418970000014
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 28
+current protocol: https
+returncode: 28
+duration_log grab_html_js: 42.14321860000018
+===== grab_html_js function end =====
+replacement successful
+replacement SUCCESSFUL for 123.153.56.15, time taken 91.21782340000004 seconds
+
+
+current ip in process_ip_parent:125.39.194.110
+===== to_skip function start =====
+125.39.194.110 has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip function start =====
+calling ip for: 125.39.194.110 now: 2023-05-02 10:55:31.592351
+===== call_ip function end =====
+duration_log vt_call: 0.9142256000000089
+===== call_ip function end =====
+===== screenshot function start =====
+duration_log screenshot: 7.229123099999924
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.645318300000099
+===== grab_html_js function end =====
+replacement successful
+replacement SUCCESSFUL for 125.39.194.110, time taken 15.007208999999875 seconds
+
+
+current ip in process_ip_parent:122.136.191.108
+===== to_skip function start =====
+122.136.191.108 has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip function start =====
+calling ip for: 122.136.191.108 now: 2023-05-02 10:55:46.627861
+===== call_ip function end =====
+duration_log vt_call: 1.0902022000000215
+===== call_ip function end =====
+===== screenshot function start =====
+duration_log screenshot: 45.386424400000124
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 28
+current protocol: https
+returncode: 28
+duration_log grab_html_js: 42.11435959999994
+===== grab_html_js function end =====
+replacement successful
+replacement SUCCESSFUL for 122.136.191.108, time taken 88.69444879999992 seconds
+
+
+current ip in process_ip_parent:123.172.50.142
+===== to_skip function start =====
+123.172.50.142 has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip function start =====
+calling ip for: 123.172.50.142 now: 2023-05-02 10:57:15.341546
+===== call_ip function end =====
+duration_log vt_call: 0.9322880999998233
+===== call_ip function end =====
+===== screenshot function start =====
+duration_log screenshot: 46.29142559999991
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 28
+current protocol: https
+returncode: 28
+duration_log grab_html_js: 42.16373340000018
+===== grab_html_js function end =====
+replacement successful
+replacement SUCCESSFUL for 123.172.50.142, time taken 89.49973279999995 seconds
+
+
+current ip in process_ip_parent:121.228.176.158
+===== to_skip function start =====
+121.228.176.158 has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip function start =====
+calling ip for: 121.228.176.158 now: 2023-05-02 10:58:44.902273
+===== call_ip function end =====
+duration_log vt_call: 1.2497079999998277
+===== call_ip function end =====
+===== screenshot function start =====
+duration_log screenshot: 8.894594400000187
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 2.3136445000000094
+===== grab_html_js function end =====
+replacement successful
+replacement SUCCESSFUL for 121.228.176.158, time taken 15.008467399999972 seconds
+
+
+current ip in process_ip_parent:123.173.85.66
+===== to_skip function start =====
+123.173.85.66 has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip function start =====
+calling ip for: 123.173.85.66 now: 2023-05-02 10:58:59.899807
+===== call_ip function end =====
+duration_log vt_call: 0.8815002999999706
+===== call_ip function end =====
+===== screenshot function start =====
+duration_log screenshot: 45.58165250000002
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 28
+current protocol: https
+returncode: 28
+duration_log grab_html_js: 42.11606370000027
+===== grab_html_js function end =====
+replacement successful
+replacement SUCCESSFUL for 123.173.85.66, time taken 88.7215597999998 seconds
+
+
+current ip in process_ip_parent:122.14.236.12
+===== to_skip function start =====
+122.14.236.12 has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip function start =====
+calling ip for: 122.14.236.12 now: 2023-05-02 11:00:28.696100
+===== call_ip function end =====
+duration_log vt_call: 1.1305307000002358
+===== call_ip function end =====
+===== screenshot function start =====
+duration_log screenshot: 10.25652029999992
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 2.253473600000234
+===== grab_html_js function end =====
+replacement successful
+replacement SUCCESSFUL for 122.14.236.12, time taken 15.0163778000001 seconds
+
+
+current ip in process_ip_parent:123.184.55.182
+===== to_skip function start =====
+123.184.55.182 has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip function start =====
+calling ip for: 123.184.55.182 now: 2023-05-02 11:00:43.765963
+===== call_ip function end =====
+duration_log vt_call: 0.9294293000002654
+===== call_ip function end =====
+===== screenshot function start =====
+duration_log screenshot: 7.535770400000274
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 2.262519400000201
+===== grab_html_js function end =====
+replacement successful
+replacement SUCCESSFUL for 123.184.55.182, time taken 15.00191390000009 seconds
+
+
+current ip in process_ip_parent:119.183.121.225
+===== to_skip function start =====
+119.183.121.225 has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip function start =====
+calling ip for: 119.183.121.225 now: 2023-05-02 11:00:58.735255
+===== call_ip function end =====
+duration_log vt_call: 1.1931463000000804
+===== call_ip function end =====
+===== screenshot function start =====
+duration_log screenshot: 14.67166559999987
+===== screenshot function end =====
