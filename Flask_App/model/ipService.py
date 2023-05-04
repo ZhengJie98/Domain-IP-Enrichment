@@ -125,12 +125,7 @@ def process_ip_parent():
 
             
             for ip_doc in cursor:
-                # currentTimestamp = datetime.datetime.now()
-                # if ( (currentTimestamp-refreshTimestamp)/1000 > 300 ) {
-                #     print("refreshing session")
-                #     db.adminCommand({"refreshSessions" : [sessionId]})
-                #     refreshTimestamp = new Date()
-                # }
+
                 tic = time.perf_counter()
 
                 ## refreshing to keep connection alive
@@ -745,11 +740,7 @@ def process_ip_parent_without_vtcall():
             for ip_doc in cursor:
                 currentTimestamp = datetime.datetime.now()
                 print(currentTimestamp)
-                # if ( (currentTimestamp-refreshTimestamp)/1000 > 300 ) {
-                #     print("refreshing session")
-                #     db.adminCommand({"refreshSessions" : [sessionId]})
-                #     refreshTimestamp = new Date()
-                # }
+
                 tic = time.perf_counter()
 
                 ## refreshing to keep connection alive
@@ -764,17 +755,6 @@ def process_ip_parent_without_vtcall():
     
                 db_id = ip_doc['_id']
                 updated_ip_doc = ip_doc
-                # updated_ip_doc = call_ip(ip_doc, X_DAYS_AGO)
-                # call_ip_status_code = updated_ip_doc.get("response_code") 
-
-                # ## breaking / continuing to quicken code
-                # # print("call_ip_status_code:", call_ip_status_code)
-                # if call_ip_status_code == 429:
-                #     # print("breaking")
-                #     return "QUOTA EXCEEDED, STOPPED ALL CALLS"
-                # elif call_ip_status_code != None and (call_ip_status_code < 200 or call_ip_status_code > 299):
-                #     print("call_ip_status_code:", call_ip_status_code, "continuing to next IP")
-                #     continue
 
                 ## screenshot and extract html js functions here
                 updated_ip_doc = screenshot(updated_ip_doc)

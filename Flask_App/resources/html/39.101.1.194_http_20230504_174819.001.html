@@ -1,0 +1,103 @@
+HTTP/1.1 200 OK
+Date: Thu, 04 May 2023 09:48:19 GMT
+Server: WSGIServer/0.2 CPython/3.10.1
+Content-Type: text/html; charset=utf-8
+X-Frame-Options: DENY
+Vary: Cookie
+Content-Length: 4758
+X-Content-Type-Options: nosniff
+Referrer-Policy: same-origin
+Cross-Origin-Opener-Policy: same-origin
+Set-Cookie:  csrftoken=zIca7YdCajsegPyiQFOv94hA1M4xlRRl; expires=Thu, 02 May 2024 09:48:19 GMT; Max-Age=31449600; Path=/; SameSite=Lax
+
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <title>全国特种设备公示信息查询平台</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="/static/assets/default/css/style.min.css">
+    <link rel="stylesheet" href="/static/assets/default/css/layui.css">
+    <link rel="stylesheet" href="/static/assets/default/css/hussar_font.css">
+    <link rel="stylesheet" href="/static/assets/default/css/hussar.css">
+    <link rel="stylesheet" href="/static/assets/default/css/hussar1.css">
+    <link rel="stylesheet" href="/static/assets/default/css/bootstrap-table.min.css">
+    <link rel="stylesheet" href="/static/assets/default/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/assets/default/css/bootstrap-editable.css">
+    <link rel="stylesheet" href="/static/assets/default/css/jquery-ui.min.css">
+    <link rel="stylesheet" href="/static/assets/default/css/dragtable.css">
+    <link rel="stylesheet" href="/static/assets/default/css/mui.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/assets/default/css/app.css">
+</head>
+
+<body>
+<header class="mui-bar mui-bar-nav">
+    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" style=" color:#5EADFC; font-size:28px;"></a>
+    <h1 class="mui-title">全国特种设备公示信息查询平台</h1>
+</header>
+<div class="mui-content" style="height:99%;">
+    <div class="mui-card" style="height:99%;">
+        <div style="border-bottom:none; margin:10px;">
+            <div style="border-bottom:none; margin:10px;">
+                <form action="/search/detail/" class="layui-form mui-input-group" id="search-form" method="post"
+                      style="margin-top:75px; border-bottom:none; position:static;">
+                    <input type="hidden" name="csrfmiddlewaretoken" value="4UoX0nGdYepy4vhzmBlil7qfeROZEUPgtsqXXbJFYnHCaaFH26ZDk1xF5tImPBwr">
+                    <div class="mui-input-row" style="margin-top:20px; margin-bottom:20px; position:static;">
+                        <input type="text" name="identify" id="identify"
+                               style="border:1px solid #e4e4e4; background-color:#fafafa" placeholder="请输入查询内容">
+                    </div>
+                    <div class="mui-input-row" style="margin-top:20px; margin-bottom:20px; position:static;">
+                        <input type="text" name="vCode" id="vCode"
+                               style="width:45%; border:1px solid #e4e4e4; background-color:#fafafa"
+                               placeholder="请输入验证码">
+                        <img id="imgVCode" src="/generate_captcha/" width="100" height="40"
+                             onclick="refreshCaptcha()" style="top:-2px;position: relative;">
+                    </div>
+                    <div class="mui-button-row" style="margin-top:50px; margin-bottom:50px;">
+                        <button type="submit"
+                                class="mui-btn mui-btn-primary"
+                                style="width:40%; height:40px; font-size:20px; background-color:#074fa1">查询
+                        </button>&nbsp;&nbsp;
+                        <button type="reset" class="mui-btn"
+                                style="width:40%; height:40px;font-size:20px;background-color:#dfdfdf">清空
+                        </button>
+                    </div>
+                    <hr>
+                    <div style=" position:static;">
+                        <p><b>查询说明：</b></p>
+                        <p><br/>1.单位查询请输入统一社会信用代码或证书编号；<br/>2.人员查询请输入身份证号码；<br/>3.设备查询请输入设备使用登记证编号。
+                        </p></div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function refreshCaptcha() {
+        document.getElementById("imgVCode").src = "/generate_captcha/?t=" + new Date().getTime();
+    }
+
+    document.getElementById("search-form").addEventListener("submit", function (event) {
+        var identifyInput = document.getElementById("identify").value.trim();
+
+        if (identifyInput === "") {
+            event.preventDefault(); // 阻止表单提交
+            layer.open({
+                title: '信息'
+                , content: '请输入查询内容'
+            });
+        }
+    });
+</script>
+<script src='/static/assets/layui-v2.7.6/layui/layui_all.js'></script>
+
+
+<script src="/static/assets/default/js/jquery1.11.0.js"></script>
+</body>
+
+
+</html>
