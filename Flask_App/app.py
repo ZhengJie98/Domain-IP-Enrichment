@@ -56,6 +56,15 @@ def process_IP_test_without_vtcall():
    
     return result
 
+@app.route("/process_individual", methods=['GET'])
+def process_Individual():
+
+    input = request.form['input']
+    # print(file)
+    result = process_individual(input)
+    # return file
+    return result
+
 @app.route("/test", methods=['POST'])
 def test():
 
@@ -135,5 +144,5 @@ def customAdd():
 
 
 if __name__ == "__main__":
-#    app.run(debug=True)
-    app.run(debug=True, use_reloader=False)
+   app.run(debug=True)
+    # app.run(debug=True, use_reloader=False)

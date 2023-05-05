@@ -676,6 +676,8 @@ def grab_html_js(ip_doc):
                         ip_doc['has_javascript'] = 1
                     else:
                         array_js_filenames = None
+                        if type(ip_doc['has_javascript']) == str:
+                            ip_doc['has_javascript'] = 0
                     # to_append = {"type": protocol, "stderr": response.stderr, "stdout": response.stdout, "html_file_location":filepath, "js_file_location": array_js_filenames}
                     to_append["js_file_location"] = array_js_filenames
 
@@ -784,3 +786,78 @@ def process_ip_parent_without_vtcall():
             # if call_ip_status_code == 429:
 
             return "Replacement SUCCESSFUL"
+    
+
+def process_individual(input):
+
+    now = datetime.datetime.now()
+    dt_string = now.strftime("%Y%m%d_%H%M%S.%f")[:-3]   
+    config.CURR_LOGFILE = "resources/logs/logfile_" + dt_string + ".txt"
+    output_file = Path(config.CURR_LOGFILE)
+    output_file.parent.mkdir(exist_ok=True, parents=True)
+    
+
+    with client.start_session() as session:
+    # sessionId = session
+    # refreshTimestamp = datetime.datetime.now()
+
+
+
+        # while config.REMAINING_LIMIT > 0 and len(list(retrieve_ips_to_process(config.REMAINING_LIMIT))) > 0:
+            # print("new while loop config.REMAINING_LIMIT:", config.REMAINING_LIMIT)
+            cursor = col.find({"ip_address" : input})            ## replicate to prevent closing
+            cursor = [x for x in cursor]
+            # print("cursor:", cursor)
+
+            
+            for ip_doc in cursor:
+                print("current ip_doc:", ip_doc['duration_log'])
+                currentTimestamp = datetime.datetime.now()
+                print(currentTimestamp)
+
+                tic = time.perf_counter()
+
+                ## refreshing to keep connection alive
+                client.admin.command('refreshSessions', [session.session_id], session=session)
+
+                ip = str(ip_doc["ip_address"])
+                print("current ip in process_ip_parent:", ip, "currentTimeStamp", currentTimestamp)
+                
+                ## ip check to be here
+                # if to_skip(ip_doc) == 1:
+                #     continue
+    
+                db_id = ip_doc['_id']
+                updated_ip_doc = ip_doc
+
+                ## screenshot and extract html js functions here
+                # updated_ip_doc = screenshot(updated_ip_doc)
+                updated_ip_doc = grab_html_js(updated_ip_doc) 
+                print("updated_ip_doc:", updated_ip_doc)
+        
+                try : 
+                    # col.replace_one({"_id" : db_id}, updated_ip_doc)
+                    # print("replacement successful")
+                    print("try loop conmpleted")
+                
+                except Exception as e:
+                    print(e)
+                    # e
+
+                ## COMMENT OUT FOR ACTUAL
+                # break
+                toc = time.perf_counter()
+                # if (toc-tic) < 15:
+                #     balance = 15-(toc-tic)
+                #     print("sleeping to makeup 15 seconds: ", balance, "seconds" )
+                #     time.sleep(15-(toc-tic))
+                #     toc = time.perf_counter()
+
+                print(f"replacement SUCCESSFUL for {ip}, time taken {toc-tic} seconds\n\n\n")
+             
+            # cursor.close()
+
+            # if call_ip_status_code == 429:
+
+            return "Replacement SUCCESSFUL"
+
