@@ -5,6 +5,7 @@ import requests
 import time
 import csv
 import datetime
+from datetime import timedelta
 import os
 import pandas as pd
 from dateutil import tz
@@ -19,185 +20,118 @@ import config
 import subprocess
 import requests
 from bs4 import BeautifulSoup
-from datetime import timedelta
-import time
 from pathlib import Path
+import time
 from pathvalidate import sanitize_filepath
 import chardet
+from slugify import slugify
 
 
-# print("===== grab_html_js function start =====")
-now = datetime.datetime.now()
-dt_string = now.strftime("%Y%m%d_%H%M%S.%f")[:-3]   
-# ip_address = str(ip_doc["ip_address"])
-# db_id = ip_doc['_id']  
-# ip_address = "1.1.1.1"
-# ip_address = "80.252.0.252"
-ip_address = "82.217.40.121"
 
 
-for protocol in ["http", "https"]:
-    print("current protocol:", protocol)
 
-    if protocol == "http":
-        filepath = "resources/html/*ip*_http_*dt_string*.html"
-        filepath = filepath.replace('*ip*', ip_address)
-        filepath = filepath.replace('*dt_string*', dt_string)
-        query = "curl -i http://{ip} --create-dirs -o {filepath}".format(ip=ip_address, filepath = filepath)
-
-    elif protocol == "https":
-        filepath = "resources/html/*ip*_https_*dt_string*.html"
-        filepath = filepath.replace('*ip*', ip_address)
-        filepath = filepath.replace('*dt_string*', dt_string)
-        query = "curl -i https://{ip} --create-dirs -o {filepath}".format(ip=ip_address, filepath = filepath)
-
-    try:
-        response = subprocess.run(query, shell=False, capture_output=True, text=True)
-    except Exception as e:
-        print("grab_html_js() exception triggered:", e)
-        e
-
-    returncode = response.returncode
-    print("return code:", returncode)
-
-    if returncode == 0:
-        # ip_doc['has_html'] = 1
-        to_append = {"type": protocol, "stderr": response.stderr, "stdout": response.stdout, "html_file_location":filepath}
-
-
-        ## Grab JS HERE
-        web_url = protocol + "://" + ip_address
-        # headers = {
-        #             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0",
-        #             "Accept-Encoding": "*",
-        #             "Connection": "keep-alive"
-        #         }
-        # html = requests.get(web_url, headers=headers).content
-
-        # html = requests.get(web_url).content
-        try:
-            print("starting html request.get")
-            html = requests.get(web_url).content
+ip_template = {
+    
+        # "ALL_COLUMNS_IN_EXCEL": "",
+        "x_days_ago": "",
+        "to_skip": "",
+        "whois_date": "",
+        "last_analysis_date": "",
+        "reputation": "",
+        "last_analysis_stats": "",
+        "total_votes": "",
+        "as_owner": "",
+        "country": "",
+        "asn": "",
+        "added_timestamp":"",
+        "processed_timestamp":"", ## leave empty until you process it from DB.
+        "failure_count": 0,## if it hits a threshold then stop calling it.
+        "is_priority": "", ## 1 for individual submissions or 0 for CSVs
+        "source":"", ## if its CSV then put csvName, if its individual then put individual
+        "has_screenshot": "",
+        "has_html": "",
+        "has_javascript": "",
+        "files_log" : None, ## Array of sub-docs, [{type:"", file_location:""}, {}...]
+        "duration_log" : None
         
+    }
 
-            # parse HTML Content
-            soup = BeautifulSoup(html, "html.parser")
-            
-            js_files_link = []
-            js_filename_alone = []
-            for script in soup.find_all("script"):
-                if script.attrs.get("src"):
-                    
-                    # if the tag has the attribute
-                    # 'src'
-                    url = script.attrs.get("src")
-                    print("web_url:", web_url)
-                    print("url:", url)
-                    
-                    if url[0:4] == "http":
-                        js_files_link.append(url)
-                        
-                    elif url[0] in ['/','\\']:
-                        js_files_link.append(web_url+url)
-                   
-                    elif url[0] not in ['/','\\']:
-                        js_files_link.append(web_url+ "/" + url)
-                   
-                    # js_filename_alone.append(url.split('.js')[0]+ '_' + dt_string) 
-                    js_filename_alone.append(sanitize_filepath(url.split('.js')[0], platform="auto")+ '_' + dt_string) 
-                    
-                    
-            # print(js_files)
-            js_file_counter = 0
-            js_files_link = list(dict.fromkeys(js_files_link))
-            js_filename_alone = list(dict.fromkeys(js_filename_alone))
-
-            array_js_filenames = []
-            print("total js_files_links:", js_files_link)
-            print("js_filename_alone", js_filename_alone)
-            for each_js in js_files_link:
-                print("starting get for each_js:", each_js)
-                try:
-
-                    each_js = requests.get(each_js).content
-                    # print(type(js.decode()))
-                    print("each_js gotten")
-                    if (url[0:4] == "http") or (url[0] not in ['/','\\']):
-                        js_file_path = "resources/js/" + protocol + '/' + js_filename_alone[js_file_counter] + ".js"
-                        array_js_filenames.append("resources/js/" + protocol +'/'+ js_filename_alone[js_file_counter] + ".js")
-                    else:
-                        js_file_path = "resources/js/" + protocol + js_filename_alone[js_file_counter] + ".js"
-                        array_js_filenames.append("resources/js/" + protocol + js_filename_alone[js_file_counter] + ".js")
-                    
-
-                    # print("array_js_filenames:", array_js_filenames)
-                    # print("js_filename_alone[js_file_counter]", js_filename_alone[js_file_counter])
-                    ## testing new folder creation
-                    # if not os.path.exists('resources/js'):
-                    #     os.mkdir('resources/js')
-                    # if not os.path.exists('resources/js/' + protocol):
-                    #     os.mkdir('resources/js/' + protocol)
-                    output_file = Path(js_file_path)
-                    output_file.parent.mkdir(exist_ok=True, parents=True)
-
-                    
-                    encoding = chardet.detect(each_js)['encoding']
-                    # encoding = json.detect_encoding(each_js)
-
-                    # # print("encoding:", encoding)
-                    #     # the_encoding = chardet.detect(rawdata)['encoding']
-
-                    # # print(type(each_js))
-
-                    with open(js_file_path, "w", encoding=encoding, errors='ignore') as f:
-                    # with open(js_file_path, "w") as f:
-                        
-                        # text_file = open(js_file_path, "w+")
-                        f.write(each_js.decode(errors='ignore'))
-                        # f.close()
-                    
-                    js_file_counter += 1
-                    print("file written")
-                except Exception as e:
-                    print("exception in getting js_file:", e)
-
-            if len(array_js_filenames) > 0:
-                # ip_doc['has_javascript'] = len(array_js_filenames)
-                print('has javascript')
-                # ip_doc['has_javascript'] = 1
-            else:
-                array_js_filenames = None
-            # to_append = {"type": protocol, "stderr": response.stderr, "stdout": response.stdout, "html_file_location":filepath, "js_file_location": array_js_filenames}
-            to_append["js_file_location"] = array_js_filenames
-            print("array_js_filenamess:", array_js_filenames)
-
-            # ip_doc['files_log'].append(to_append)
+# domain_template = {
+    
+#         # "ALL_COLUMNS_IN_EXCEL": "",
+#         "x_days_ago": "",
+#         "to_skip": "",
+#         "whois_date": "",
+#         "last_analysis_date": "",
+#         "reputation": "",
+#         "last_analysis_stats": "",
+#         "total_votes": "",
+#         "as_owner": "",
+#         "country": "",
+#         "asn": "",
+#         "added_timestamp":"",
+#         "processed_timestamp":"", ## leave empty until you process it from DB.
+#         "failure_count": 0,## if it hits a threshold then stop calling it.
+#         "is_priority": "", ## 1 for individual submissions or 0 for CSVs
+#         "source":"", ## if its CSV then put csvName, if its individual then put individual
+#         "has_screenshot": "",
+#         "has_html": "",
+#         "has_javascript": "",
+#         "files_log" : None, ## Array of sub-docs, [{type:"", file_location:""}, {}...]
+#         "duration_log" : None, ## {{extracted info}, {file location }}
+#         # "who_is_info" : {"item_1":"","item_2":""},
+#         "who_is_info" : None,
+#         "dns_info" : None,
+#         "ssl_tls_cert_info": None,
+#         "historical_web_version" : None
         
-        except Exception as e:
-            # print(e)
-            print("===== grab_html_js function exception occured")
-            print("exception e:", e)
-            # if type(ip_doc['has_html']) == str:
-            #     ip_doc['has_html'] = 0
-            # if type(ip_doc['has_javascript']) == str:
-            #     ip_doc['has_javascript'] = 0
-            # # to_append = {"type": protocol, "stderr": response.stderr, "stdout": response.stdout, "html_file_location": None, "js_file_location" : None}
-            # to_append["js_file_location"] = None
-            # # to_append["exception"] = e
-            # ip_doc['files_log'].append(to_append)
-            # print(" ===== grab_html_js function exception end =====")
-            # # return ip_doc
+#     }
+
+# API_KEY = '0d9fdb6e32d74b9d12e3d894309531838c3aabe8d66b049fd3a7976fbedf2c68'  #@param  {type: "string"}
+API_KEY = '207349263f9c5edd176cc079fa8000a5ab912df7d9e91154842c08031658675d'  #@param  {type: "string"}
 
 
-    # # ## else indicate its not good 
-    # else:
-    #     if type(ip_doc['has_html']) == str:
-    #         ip_doc['has_html'] = 0
-    #     if type(ip_doc['has_javascript']) == str:
-    #         ip_doc['has_javascript'] = 0
-    #     to_append = {"type": protocol, "stderr": response.stderr, "stdout": response.stdout, "html_file_location": None, "js_file_location" : None}
-    #     # ip_doc['files'] = [to_append]
-    #     ip_doc['files_log'].append(to_append)
 
-# print("CALL HTML JS IP_DOC:", ip_doc)
-print("===== grab_html_js function end =====")
+client = MongoClient('localhost',27017)
+# db = client['filtered_sg_ip_list']
+# db = client['jons_list']
+db = client['domain_test']
+col = db["domain"]
+
+def save_file(file):
+    print("===== save_iplist() =====:")
+    now = datetime.datetime.now()
+    df = pd.read_csv(file)
+
+    ## TAKING FIRST COL TO BE IP 
+    df.columns.values[0] = "domain"
+
+    ## FOR HARDDISK
+    dt_string = now.strftime("%Y%m%d_%H%M%S.%f")[:-3]    
+    # filename_splitted = secure_filename(file.filename).split('.csv') 
+    filename_splitted = secure_filename(file).split('.csv') 
+    filename = filename_splitted[0] + '_' + str(dt_string) + ".csv"
+    df.to_csv(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+
+
+    ## FOR DATABASE
+    # for k,v in domain_template.items():
+    for k,v in ip_template.items():
+        print("k,v:", (k,v))
+        print("df[k]:", df[k])
+        print("ip_template[k]:", ip_template[k])
+        df[k] = ip_template[k]
+    
+    df["x_days_ago"] = X_DAYS_AGO
+    df["added_timestamp"] = now
+    df["is_priority"] = 0
+    df["source"] = "csv"
+    records_ = df.to_dict(orient = 'records') 
+    # result = db.ip.insert_many(records_ ) 
+    result = col.insert_many(records_ ) 
+
+    return result
+
+    
+# print("hello")
+save_file(r"C:\Users\Jun Rong\Documents\GitHub\IMDA-Domain-IP-Enrichment\Flask_App\domain_test.csv")

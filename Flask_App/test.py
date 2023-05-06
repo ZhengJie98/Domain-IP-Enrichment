@@ -79,7 +79,9 @@ domain_template = {
         "has_javascript": "",
         "files_log" : None, ## Array of sub-docs, [{type:"", file_location:""}, {}...]
         "duration_log" : None, ## {{extracted info}, {file location }}
-        "who_is_info" : {"item_1":"","item_2":""},
+        "who_is_info" : {"item_1":"1","item_2":""},
+        # "who_is_info" : None,
+        # "who_is_info" : {},
         "dns_info" : None,
         "ssl_tls_cert_info": None,
         "historical_web_version" : None
@@ -115,7 +117,19 @@ def save_file(file):
 
     ## FOR DATABASE
     for k,v in domain_template.items():
-        df[k] = domain_template[k]
+        print("current (k,v):", (k,v))
+        print("current domain_template[k]:", domain_template[k])
+        print('v', v)
+        print("type v", type(v))
+        # df[k] = domain_template[k]
+        if type(v) == dict:
+            dict_df = pd.DataFrame.from_dict([v])
+            print(dict_df)
+        df[k] = v
+        
+        print("df[k]:", df[k])
+        print("domain_template[k]:", domain_template[k])
+        
     
     df["x_days_ago"] = X_DAYS_AGO
     df["added_timestamp"] = now

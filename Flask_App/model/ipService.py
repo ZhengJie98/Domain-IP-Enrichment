@@ -64,7 +64,8 @@ API_KEY = '207349263f9c5edd176cc079fa8000a5ab912df7d9e91154842c08031658675d'  #@
 client = MongoClient('localhost',27017)
 # db = client['filtered_sg_ip_list']
 # db = client['jons_list']
-db = client['michelle_list']
+# db = client['michelle_list']
+db = client['test_list']
 col = db["ip"]
     
 
