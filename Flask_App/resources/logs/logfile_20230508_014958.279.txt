@@ -1,0 +1,95 @@
+current domain in process_parent:www.cloudfare.com
+===== to_skip function start =====
+www.cloudfare.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: www.cloudfare.com now: 2023-05-08 01:49:58.295182
+duration_log vt_call: 0.9431367000000002
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 12.015979
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+web_url: http://www.cloudfare.com
+url: https://www.googleoptimize.com/optimize.js?id=GTM-N4JSZJ8
+web_url: http://www.cloudfare.com
+url: https://www.cloudflare.com/vendor/onetrust/scripttemplates/otSDKStub.js
+web_url: http://www.cloudfare.com
+url: https://performance.radar.cloudflare.com/beacon.js
+web_url: http://www.cloudfare.com
+url: /SearchModal-9a5e006aeba244b9dfb6.js
+web_url: http://www.cloudfare.com
+url: /polyfill-63fd3a7531a392260f25.js
+web_url: http://www.cloudfare.com
+url: /app-2eacf4d36123c7a073e4.js
+web_url: http://www.cloudfare.com
+url: /framework-44e1199ea63f577dfc41.js
+web_url: http://www.cloudfare.com
+url: /webpack-runtime-3a9653a0cc99e54d297f.js
+web_url: http://www.cloudfare.com
+url: https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816
+total js_files_links: ['https://www.googleoptimize.com/optimize.js?id=GTM-N4JSZJ8', 'https://www.cloudflare.com/vendor/onetrust/scripttemplates/otSDKStub.js', 'https://performance.radar.cloudflare.com/beacon.js', 'http://www.cloudfare.com/SearchModal-9a5e006aeba244b9dfb6.js', 'http://www.cloudfare.com/polyfill-63fd3a7531a392260f25.js', 'http://www.cloudfare.com/app-2eacf4d36123c7a073e4.js', 'http://www.cloudfare.com/framework-44e1199ea63f577dfc41.js', 'http://www.cloudfare.com/webpack-runtime-3a9653a0cc99e54d297f.js', 'https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816']
+starting get for each_js_link: https://www.googleoptimize.com/optimize.js?id=GTM-N4JSZJ8
+starting get for each_js_link: https://www.cloudflare.com/vendor/onetrust/scripttemplates/otSDKStub.js
+starting get for each_js_link: https://performance.radar.cloudflare.com/beacon.js
+starting get for each_js_link: http://www.cloudfare.com/SearchModal-9a5e006aeba244b9dfb6.js
+starting get for each_js_link: http://www.cloudfare.com/polyfill-63fd3a7531a392260f25.js
+starting get for each_js_link: http://www.cloudfare.com/app-2eacf4d36123c7a073e4.js
+starting get for each_js_link: http://www.cloudfare.com/framework-44e1199ea63f577dfc41.js
+starting get for each_js_link: http://www.cloudfare.com/webpack-runtime-3a9653a0cc99e54d297f.js
+starting get for each_js_link: https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816
+current protocol: https
+returncode: 0
+starting html request.get
+web_url: https://www.cloudfare.com
+url: https://www.googleoptimize.com/optimize.js?id=GTM-N4JSZJ8
+web_url: https://www.cloudfare.com
+url: https://www.cloudflare.com/vendor/onetrust/scripttemplates/otSDKStub.js
+web_url: https://www.cloudfare.com
+url: https://performance.radar.cloudflare.com/beacon.js
+web_url: https://www.cloudfare.com
+url: /SearchModal-9a5e006aeba244b9dfb6.js
+web_url: https://www.cloudfare.com
+url: /polyfill-63fd3a7531a392260f25.js
+web_url: https://www.cloudfare.com
+url: /app-2eacf4d36123c7a073e4.js
+web_url: https://www.cloudfare.com
+url: /framework-44e1199ea63f577dfc41.js
+web_url: https://www.cloudfare.com
+url: /webpack-runtime-3a9653a0cc99e54d297f.js
+web_url: https://www.cloudfare.com
+url: https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816
+total js_files_links: ['https://www.googleoptimize.com/optimize.js?id=GTM-N4JSZJ8', 'https://www.cloudflare.com/vendor/onetrust/scripttemplates/otSDKStub.js', 'https://performance.radar.cloudflare.com/beacon.js', 'https://www.cloudfare.com/SearchModal-9a5e006aeba244b9dfb6.js', 'https://www.cloudfare.com/polyfill-63fd3a7531a392260f25.js', 'https://www.cloudfare.com/app-2eacf4d36123c7a073e4.js', 'https://www.cloudfare.com/framework-44e1199ea63f577dfc41.js', 'https://www.cloudfare.com/webpack-runtime-3a9653a0cc99e54d297f.js', 'https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816']
+starting get for each_js_link: https://www.googleoptimize.com/optimize.js?id=GTM-N4JSZJ8
+starting get for each_js_link: https://www.cloudflare.com/vendor/onetrust/scripttemplates/otSDKStub.js
+starting get for each_js_link: https://performance.radar.cloudflare.com/beacon.js
+starting get for each_js_link: https://www.cloudfare.com/SearchModal-9a5e006aeba244b9dfb6.js
+starting get for each_js_link: https://www.cloudfare.com/polyfill-63fd3a7531a392260f25.js
+starting get for each_js_link: https://www.cloudfare.com/app-2eacf4d36123c7a073e4.js
+starting get for each_js_link: https://www.cloudfare.com/framework-44e1199ea63f577dfc41.js
+starting get for each_js_link: https://www.cloudfare.com/webpack-runtime-3a9653a0cc99e54d297f.js
+starting get for each_js_link: https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816
+duration_log grab_html_js: 5.258582999999998
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/www.cloudfare.com_20230508_015016.551.txt
+duration_log get_whois_info: 0.09261689999999945
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/www.cloudfare.com_gethostbyname_ex_20230508_015016.642.txt
+nameservers_filepath file written to resources/dns/www.cloudfare.com_nameservers_20230508_015016.642.txt
+duration_log get_dns_info: 0.03968009999999822
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/www.cloudfare.com_20230508_015016.690.json
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/www.cloudfare.com_20230508_015021.541.txt
+duration_log get_archived_page_info: 0.7196071999999987
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for www.cloudfare.com, time taken 23.9760139 seconds
+
+

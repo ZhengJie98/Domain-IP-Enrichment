@@ -25,6 +25,12 @@ import time
 from pathvalidate import sanitize_filepath
 import chardet
 from slugify import slugify
+from crtsh import crtshAPI ## search certificate /
+from waybackpy import WaybackMachineCDXServerAPI ## search historical copies of website
+import socket
+import dns.resolver
+import whois # query and response protocol that is often used for querying databases that store registered domain names.
+
 
 
 
@@ -80,11 +86,11 @@ domain_template = {
         "files_log" : None, ## Array of sub-docs, [{type:"", file_location:""}, {}...]
         "duration_log" : None, ## {{extracted info}, {file location }}
         # "who_is_info" : {"item_1":"1","item_2":""},
-        "who_is_info" : None,
+        "whois_info" : None,
         # "who_is_info" : {},
         "dns_info" : None,
-        "ssl_tls_cert_info": None,
-        "historical_web_version" : None
+        "cert_info": None,
+        "archived_page_info" : None
         
     }
 
@@ -198,6 +204,8 @@ def process_parent():
             # for ip_doc in cursor:
             for doc in cursor:
 
+                is_ip = 0
+
                 if "ip_address" in doc:
                     is_ip = 1 # if its ip 
                     ip_or_domain = str(doc["ip_address"])
@@ -206,7 +214,7 @@ def process_parent():
                         logfile.write("current ip in process_parent:" + ip_or_domain + '\n')
 
                 elif "domain" in doc:
-                    is_domain = 1 #if its domain
+                    is_ip = 0 #if its domain
                     ip_or_domain = str(doc["domain"])
                     print("current domain in process_parent:", ip_or_domain)
                     with open(config.CURR_LOGFILE,'a+') as logfile:
@@ -247,6 +255,12 @@ def process_parent():
                 #Continue Here Later!!
                 updated_doc = screenshot(updated_doc)
                 updated_doc = grab_html_js(updated_doc) 
+                
+                if (is_ip == 0): #means doc is domain
+                    updated_doc = get_whois_info(updated_doc)
+                    updated_doc = get_dns_info(updated_doc)
+                    updated_doc = get_cert_info(updated_doc)
+                    updated_doc = get_archived_page_info(doc)
         
                 try : 
                     col.replace_one({"_id" : db_id}, updated_doc)
@@ -255,7 +269,7 @@ def process_parent():
                         logfile.write("replacement successful\n")
                 
                 except Exception as e:
-                    print(e)
+                    print("exception occured in process_parent()", e)
                     with open(config.CURR_LOGFILE,'a+') as logfile:
                         logfile.write("exception: {e}\n".format(e=e))
                     # e
@@ -805,6 +819,274 @@ def grab_html_js(doc):
         
         return doc
         # both http and https
+
+def get_whois_info(doc):
+    #whois.whois()
+
+    #dasdsad
+    ## "info1" : ...
+    ## "info2" : ...
+    # "file_location" : ...
+    print("===== get_whois_info function start =====")
+    tic = time.perf_counter()
+
+    with open(config.CURR_LOGFILE,'a+') as logfile:
+        logfile.write("===== get_whois_info function start =====\n")
+
+        domain = str(doc["domain"])
+
+        now = datetime.datetime.now()
+        dt_string = now.strftime("%Y%m%d_%H%M%S.%f")[:-3]   
+
+        if not os.path.exists("resources/whois"):
+            os.makedirs("resources/whois")
+                            
+        try:
+            w = whois.whois(domain)
+            filepath = "resources/whois/" + domain + '_' + dt_string + ".txt"
+            with open(filepath, "w") as outfile:
+                outfile.write(str(w.text))
+
+            print("get_whois_info file written to {filepath}".format(filepath=filepath))
+            logfile.write("get_whois_info file written to {filepath}\n".format(filepath=filepath))
+
+            # to_append = {"type": protocol + "_screenshot", "stderr": response.stderr, "stdout": response.stdout, "ss_file_location":filepath}
+
+            doc['whois_info'] = {'registrar': w.registrar, 'name': w.name, 'org': w.org, 'creation_date':w.creation_date, 'updated_date':w.updated_date, 'whois_file_location': filepath}
+            # return [w.registrar, w.name, w.org, w.creation_date, w.updated_date]
+
+            
+        except Exception as e:
+
+            print("get_domain_whois_info() exception triggered:", e)
+      
+            logfile.write("get_domain_whois_info()  exception triggered: {e}\n".format(e=e))
+
+            # return ['', '', '', '', '']
+        toc = time.perf_counter()
+        doc['duration_log']['get_whois_info'] = toc-tic
+        logfile.write("duration_log get_whois_info: {time}\n".format(time=toc-tic))
+        logfile.write("===== get_whois_info function end =====\n")
+        print("===== get_whois_info function end =====")
+            
+        return doc
+    
+def get_dns_info(doc):
+    #dasdsad
+    ## "info1" : ...
+    ## "info2" : ...
+    # "file_location" : ...
+    
+    print("===== get_dns_info function start =====")
+    tic = time.perf_counter()
+
+    with open(config.CURR_LOGFILE,'a+') as logfile:
+        logfile.write("===== get_dns_info function start =====\n")
+
+        domain = str(doc["domain"])
+
+        now = datetime.datetime.now()
+        dt_string = now.strftime("%Y%m%d_%H%M%S.%f")[:-3]   
+
+        if not os.path.exists("resources/dns"):
+            os.makedirs("resources/dns")
+                            
+        try:
+            dns_info = socket.gethostbyname_ex(domain)
+            nameservers = dns.resolver.query(domain, 'NS')
+            nameserver_list = [i.to_text() for i in nameservers]
+
+            gethostbyname_ex_filepath = "resources/dns/" + domain + '_' +"gethostbyname_ex" + '_' + dt_string + ".txt"
+            nameservers_filepath = "resources/dns/" + domain + '_' + "nameservers" + '_' + dt_string + ".txt"
+
+            with open(gethostbyname_ex_filepath, "w") as outfile:
+                outfile.write(str(dns_info))
+            with open(nameservers_filepath, "w") as outfile:
+                outfile.write(str(nameservers))
+            
+
+            print("gethostbyname_ex_filepath file written to {gethostbyname_ex_filepath}".format(gethostbyname_ex_filepath=gethostbyname_ex_filepath))
+            logfile.write("gethostbyname_ex_filepath file written to {gethostbyname_ex_filepath}\n".format(gethostbyname_ex_filepath=gethostbyname_ex_filepath))
+            print("nameservers_filepath file written to {nameservers_filepath}".format(nameservers_filepath=nameservers_filepath))
+            logfile.write("nameservers_filepath file written to {nameservers_filepath}\n".format(nameservers_filepath=nameservers_filepath))
+
+            # return [dns_info[1], dns_info[2], nameserver_list]
+
+            doc['dns_info'] = {'alias': dns_info[1], 'other_ip_address': dns_info[2], 'nameserver_list': nameserver_list, 'gethostbyname_ex_filepath': gethostbyname_ex_filepath, 'nameservers_filepath' :nameservers_filepath }
+
+            
+        except Exception as e:
+
+            print("get_dns_info exception triggered", e)
+      
+            logfile.write("get_dns_info exception triggered: {e}\n".format(e=e))
+
+            # return ['', '', '', '', '']
+        toc = time.perf_counter()
+        doc['duration_log']['get_dns_info'] = toc-tic
+        logfile.write("duration_log get_dns_info: {time}\n".format(time=toc-tic))
+        logfile.write("===== get_dns_info function end =====\n")
+        print("===== get_dns_info function end =====")
+            
+        return doc
+    
+def get_cert_info(doc):
+    #dasdsad
+    ## "info1" : ...
+    ## "info2" : ...
+    # "file_location" : ...
+
+    print("===== get_cert_info function start =====")
+    tic = time.perf_counter()
+
+    with open(config.CURR_LOGFILE,'a+') as logfile:
+        logfile.write("===== get_cert_info function start =====\n")
+
+        domain = str(doc["domain"])
+
+        now = datetime.datetime.now()
+        dt_string = now.strftime("%Y%m%d_%H%M%S.%f")[:-3]   
+
+        if not os.path.exists("resources/cert"):
+            os.makedirs("resources/cert")
+                            
+        try:
+            # w = whois.whois(domain)
+            cert_json = crtshAPI().search(domain)
+            filepath = "resources/cert/" + domain + '_' + dt_string + ".json"
+            with open(filepath, "w") as outfile:
+                json.dump(cert_json, outfile)
+                json_str = json.dumps(cert_json)
+
+            print("get_cert_info file written to {filepath}".format(filepath=filepath))
+            logfile.write("get_cert_info file written to {filepath}\n".format(filepath=filepath))
+
+            # f = open(filepath)
+            # print('f:',f)
+            data = json.loads(json_str)
+            # print("data:", data)
+            # data = cert_json
+
+            SubjectCN_set = set()
+            Issuer_set = set()
+            SerialNo_set = set()
+            AltName_set = set()
+            AltName_count_min = 99999
+            AltName_count_max = 0
+
+            ## ending early if no cert info
+            if (len(data) == 0):
+                toc = time.perf_counter()
+                doc['duration_log']['get_cert_info'] = toc-tic
+                logfile.write("duration_log get_cert_info: {time}\n".format(time=toc-tic))
+                logfile.write("===== get_cert_info function end =====\n")
+                print("===== get_cert_info function end =====")   
+                return doc
+
+
+            for i in data:
+                #print(i)
+
+                SubjectCN_set.add(i["common_name"])
+                Issuer_set.add(i["issuer_name"])
+                SerialNo_set.add(i["serial_number"])
+                AltName_set.add(i["name_value"])
+
+
+                NumOfAltNamesInside = (i["name_value"].count("\n"))+1
+                if (NumOfAltNamesInside < AltName_count_min):
+                    AltName_count_min = NumOfAltNamesInside
+
+                if (NumOfAltNamesInside > AltName_count_max):
+                    AltName_count_max = NumOfAltNamesInside
+
+            SubjectCN_set = dict.fromkeys(SubjectCN_set,0)
+            Issuer_set= dict.fromkeys(Issuer_set,0)
+            SerialNo_set= dict.fromkeys(SerialNo_set,0)
+            AltName_set= dict.fromkeys(AltName_set,0)
+            # Closing file
+            # f.close()
+
+
+            doc['cert_info'] = {'common_name': cert_json[0]['common_name'], 'name_value': cert_json[0]['name_value'], 'issuer_name': cert_json[0]['issuer_name'], 'not_before':cert_json[0]['not_before'], "cert_json[len(cert_json)-1]['not_before']":cert_json[len(cert_json)-1]['not_before'], 'length_cert_json': len(cert_json),'cert_file_location': filepath, 
+                                "len(SubjectCN_set":len(SubjectCN_set), "SubjectCN_set":SubjectCN_set, "len(Issuer_set)":len(Issuer_set), "Issuer_set":Issuer_set, "len(AltName_set)":len(AltName_set), "AltName_count_min":AltName_count_min, "AltName_count_max":AltName_count_max}
+            
+            # return [len(SubjectCN_set), SubjectCN_set, len(Issuer_set), Issuer_set, len(AltName_set), AltName_count_min, AltName_count_max]
+            # return [cert_json[0]['common_name'], cert_json[0]['name_value'], cert_json[0]['issuer_name'], cert_json[0]['not_before'], cert_json[len(cert_json)-1]['not_before'], len(cert_json)]
+
+            # return doc
+            
+        except Exception as e:
+
+            print("get_cert_info() exception triggered:", e)
+      
+            logfile.write("get_cert_info()  exception triggered: {e}\n".format(e=e))
+
+            # return ['', '', '', '', '']
+        toc = time.perf_counter()
+        doc['duration_log']['get_cert_info'] = toc-tic
+        logfile.write("duration_log get_cert_info: {time}\n".format(time=toc-tic))
+        logfile.write("===== get_cert_info function end =====\n")
+        print("===== get_cert_info function end =====")
+            
+        return doc
+    
+def get_archived_page_info(doc):
+    #dasdsad
+    ## "info1" : ...
+    ## "info2" : ...
+    # "file_location" : ...
+
+    print("===== get_archived_page_info function start =====")
+    tic = time.perf_counter()
+
+    with open(config.CURR_LOGFILE,'a+') as logfile:
+        logfile.write("===== get_archived_page_info function start =====\n")
+
+        domain = str(doc["domain"])
+
+        now = datetime.datetime.now()
+        dt_string = now.strftime("%Y%m%d_%H%M%S.%f")[:-3]   
+
+        if not os.path.exists("resources/archived_page"):
+            os.makedirs("resources/archived_page")
+                            
+        try:
+            user_agent = "Mozilla/5.0 (Windows NT 5.1; rv:40.0) Gecko/20100101 Firefox/40.0"
+            cdx_api = WaybackMachineCDXServerAPI(domain, user_agent)
+            newest = cdx_api.newest()
+
+            filepath = "resources/archived_page/" + domain + '_' + dt_string + ".txt"
+            with open(filepath, "w") as outfile:
+                for i in vars(newest).values():
+                    outfile.write(str(i))
+
+            print("get_archived_page_info file written to {filepath}".format(filepath=filepath))
+            logfile.write("get_archived_page_info file written to {filepath}\n".format(filepath=filepath))
+
+            # to_append = {"type": protocol + "_screenshot", "stderr": response.stderr, "stdout": response.stdout, "ss_file_location":filepath}
+            
+            # return [newest.archive_url, newest.timestamp]
+            doc['archived_page_info'] = {'newest.archive_url': newest.archive_url, 'newest.timestamp': newest.timestamp, 'archived_paged_file_location': filepath}
+            # return [w.registrar, w.name, w.org, w.creation_date, w.updated_date]
+
+            
+        except Exception as e:
+
+            print("get_archived_page_info() exception triggered:", e)
+      
+            logfile.write("get_archived_page_info()  exception triggered: {e}\n".format(e=e))
+
+            # return ['', '', '', '', '']
+        toc = time.perf_counter()
+        doc['duration_log']['get_archived_page_info'] = toc-tic
+        logfile.write("duration_log get_archived_page_info: {time}\n".format(time=toc-tic))
+        logfile.write("===== get_archived_page_info function end =====\n")
+        print("===== get_archived_page_info function end =====")
+            
+        return doc
+    return
+
 
 def process_ip_parent_without_vtcall():
 
