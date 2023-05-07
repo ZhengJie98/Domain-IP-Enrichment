@@ -1,0 +1,134 @@
+current ip in process_parent:101.32.113.139
+===== to_skip function start =====
+101.32.113.139 has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: 101.32.113.139 now: 2023-05-07 20:01:34.078667
+duration_log vt_call: 1.1030650000000004
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 24.7548313
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 28
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 21.220255700000003
+===== grab_html_js function end =====
+replacement successful
+replacement SUCCESSFUL for 101.32.113.139, time taken 47.1309591 seconds
+
+
+current ip in process_parent:1.1.1.1
+===== to_skip function start =====
+1.1.1.1 has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: 1.1.1.1 now: 2023-05-07 20:02:21.259821
+duration_log vt_call: 1.0201410000000024
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 14.116942899999998
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+web_url: http://1.1.1.1
+url: /site-16bcc13e690cc771698c.js
+total js_files_links: ['http://1.1.1.1/site-16bcc13e690cc771698c.js']
+starting get for each_js_link: http://1.1.1.1/site-16bcc13e690cc771698c.js
+current protocol: https
+returncode: 0
+starting html request.get
+web_url: https://1.1.1.1
+url: /site-16bcc13e690cc771698c.js
+total js_files_links: ['https://1.1.1.1/site-16bcc13e690cc771698c.js']
+starting get for each_js_link: https://1.1.1.1/site-16bcc13e690cc771698c.js
+duration_log grab_html_js: 0.754841600000006
+===== grab_html_js function end =====
+replacement successful
+replacement SUCCESSFUL for 1.1.1.1, time taken 15.976469099999996 seconds
+
+
+current domain in process_parent:www.cloudfare.com
+===== to_skip function start =====
+www.cloudfare.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: www.cloudfare.com now: 2023-05-07 20:02:37.312000
+duration_log vt_call: 1.0504419000000098
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 14.936717599999994
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+web_url: http://www.cloudfare.com
+url: https://www.googleoptimize.com/optimize.js?id=GTM-N4JSZJ8
+web_url: http://www.cloudfare.com
+url: https://www.cloudflare.com/vendor/onetrust/scripttemplates/otSDKStub.js
+web_url: http://www.cloudfare.com
+url: https://performance.radar.cloudflare.com/beacon.js
+web_url: http://www.cloudfare.com
+url: /SearchModal-9a5e006aeba244b9dfb6.js
+web_url: http://www.cloudfare.com
+url: /polyfill-63fd3a7531a392260f25.js
+web_url: http://www.cloudfare.com
+url: /app-2eacf4d36123c7a073e4.js
+web_url: http://www.cloudfare.com
+url: /framework-44e1199ea63f577dfc41.js
+web_url: http://www.cloudfare.com
+url: /webpack-runtime-3a9653a0cc99e54d297f.js
+web_url: http://www.cloudfare.com
+url: https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816
+total js_files_links: ['https://www.googleoptimize.com/optimize.js?id=GTM-N4JSZJ8', 'https://www.cloudflare.com/vendor/onetrust/scripttemplates/otSDKStub.js', 'https://performance.radar.cloudflare.com/beacon.js', 'http://www.cloudfare.com/SearchModal-9a5e006aeba244b9dfb6.js', 'http://www.cloudfare.com/polyfill-63fd3a7531a392260f25.js', 'http://www.cloudfare.com/app-2eacf4d36123c7a073e4.js', 'http://www.cloudfare.com/framework-44e1199ea63f577dfc41.js', 'http://www.cloudfare.com/webpack-runtime-3a9653a0cc99e54d297f.js', 'https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816']
+starting get for each_js_link: https://www.googleoptimize.com/optimize.js?id=GTM-N4JSZJ8
+starting get for each_js_link: https://www.cloudflare.com/vendor/onetrust/scripttemplates/otSDKStub.js
+starting get for each_js_link: https://performance.radar.cloudflare.com/beacon.js
+starting get for each_js_link: http://www.cloudfare.com/SearchModal-9a5e006aeba244b9dfb6.js
+starting get for each_js_link: http://www.cloudfare.com/polyfill-63fd3a7531a392260f25.js
+starting get for each_js_link: http://www.cloudfare.com/app-2eacf4d36123c7a073e4.js
+starting get for each_js_link: http://www.cloudfare.com/framework-44e1199ea63f577dfc41.js
+starting get for each_js_link: http://www.cloudfare.com/webpack-runtime-3a9653a0cc99e54d297f.js
+starting get for each_js_link: https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816
+current protocol: https
+returncode: 0
+starting html request.get
+web_url: https://www.cloudfare.com
+url: https://www.googleoptimize.com/optimize.js?id=GTM-N4JSZJ8
+web_url: https://www.cloudfare.com
+url: https://www.cloudflare.com/vendor/onetrust/scripttemplates/otSDKStub.js
+web_url: https://www.cloudfare.com
+url: https://performance.radar.cloudflare.com/beacon.js
+web_url: https://www.cloudfare.com
+url: /SearchModal-9a5e006aeba244b9dfb6.js
+web_url: https://www.cloudfare.com
+url: /polyfill-63fd3a7531a392260f25.js
+web_url: https://www.cloudfare.com
+url: /app-2eacf4d36123c7a073e4.js
+web_url: https://www.cloudfare.com
+url: /framework-44e1199ea63f577dfc41.js
+web_url: https://www.cloudfare.com
+url: /webpack-runtime-3a9653a0cc99e54d297f.js
+web_url: https://www.cloudfare.com
+url: https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816
+total js_files_links: ['https://www.googleoptimize.com/optimize.js?id=GTM-N4JSZJ8', 'https://www.cloudflare.com/vendor/onetrust/scripttemplates/otSDKStub.js', 'https://performance.radar.cloudflare.com/beacon.js', 'https://www.cloudfare.com/SearchModal-9a5e006aeba244b9dfb6.js', 'https://www.cloudfare.com/polyfill-63fd3a7531a392260f25.js', 'https://www.cloudfare.com/app-2eacf4d36123c7a073e4.js', 'https://www.cloudfare.com/framework-44e1199ea63f577dfc41.js', 'https://www.cloudfare.com/webpack-runtime-3a9653a0cc99e54d297f.js', 'https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816']
+starting get for each_js_link: https://www.googleoptimize.com/optimize.js?id=GTM-N4JSZJ8
+starting get for each_js_link: https://www.cloudflare.com/vendor/onetrust/scripttemplates/otSDKStub.js
+starting get for each_js_link: https://performance.radar.cloudflare.com/beacon.js
+starting get for each_js_link: https://www.cloudfare.com/SearchModal-9a5e006aeba244b9dfb6.js
+starting get for each_js_link: https://www.cloudfare.com/polyfill-63fd3a7531a392260f25.js
+starting get for each_js_link: https://www.cloudfare.com/app-2eacf4d36123c7a073e4.js
+starting get for each_js_link: https://www.cloudfare.com/framework-44e1199ea63f577dfc41.js
+starting get for each_js_link: https://www.cloudfare.com/webpack-runtime-3a9653a0cc99e54d297f.js
+starting get for each_js_link: https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816
+duration_log grab_html_js: 10.731556799999993
+===== grab_html_js function end =====
+replacement successful
+replacement SUCCESSFUL for www.cloudfare.com, time taken 26.834272100000007 seconds
+
+

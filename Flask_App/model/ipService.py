@@ -240,13 +240,13 @@ def process_parent():
                 elif call_status_code != None and (call_status_code < 200 or call_status_code > 299):
                     print("call_status_code:", call_status_code, "continuing to next ip_or_domain")
                     with open(config.CURR_LOGFILE,'a+') as logfile:
-                        logfile.write("call_status_code: {call_status_code}, continuing to next IP\n".format(call_status_code=call_status_code))
+                        logfile.write("call_status_code: {call_status_code}, continuing to next ip_or_domain\n".format(call_status_code=call_status_code))
                     continue
 
                 ## screenshot and extract html js functions here
                 #Continue Here Later!!
                 updated_doc = screenshot(updated_doc)
-                # updated_doc = grab_html_js(updated_doc) 
+                updated_doc = grab_html_js(updated_doc) 
         
                 try : 
                     col.replace_one({"_id" : db_id}, updated_doc)
@@ -592,7 +592,7 @@ def screenshot(doc):
         logfile.write("===== screenshot function end =====\n")
         return doc
 
-def grab_html_js(ip_doc):
+def grab_html_js(doc):
 
     print("===== grab_html_js function start =====")
     with open(config.CURR_LOGFILE,'a+') as logfile:
@@ -601,9 +601,17 @@ def grab_html_js(ip_doc):
         tic = time.perf_counter()
 
         now = datetime.datetime.now()
-        dt_string = now.strftime("%Y%m%d_%H%M%S.%f")[:-3]   
-        ip_address = str(ip_doc["ip_address"])
-        db_id = ip_doc['_id']  
+        dt_string = now.strftime("%Y%m%d_%H%M%S.%f")[:-3] 
+
+        if "ip_address" in doc:
+            # is_ip = 1 # if its ip 
+            ip_or_domain = str(doc["ip_address"])
+        
+        elif "domain" in doc:
+            # is_domain = 1 #if its domain
+            ip_or_domain = str(doc["domain"])  
+        # ip_address = str(ip_doc["ip_address"])
+        db_id = doc['_id']  
 
 
         for protocol in ["http", "https"]:
@@ -611,16 +619,16 @@ def grab_html_js(ip_doc):
             logfile.write("current protocol: {protocol}\n".format(protocol=protocol))
 
             if protocol == "http":
-                filepath = "resources/html/*ip*_http_*dt_string*.html"
-                filepath = filepath.replace('*ip*', ip_address)
+                filepath = "resources/html/*ip_or_domain*_http_*dt_string*.html"
+                filepath = filepath.replace('*ip_or_domain*', ip_or_domain)
                 filepath = filepath.replace('*dt_string*', dt_string)
-                query = "curl -i http://{ip} --create-dirs -o {filepath}".format(ip=ip_address, filepath = filepath)
+                query = "curl -i http://{ip_or_domain} --create-dirs -o {filepath}".format(ip_or_domain=ip_or_domain, filepath = filepath)
 
             elif protocol == "https":
-                filepath = "resources/html/*ip*_https_*dt_string*.html"
-                filepath = filepath.replace('*ip*', ip_address)
+                filepath = "resources/html/*ip_or_domain*_https_*dt_string*.html"
+                filepath = filepath.replace('*ip_or_domain*', ip_or_domain)
                 filepath = filepath.replace('*dt_string*', dt_string)
-                query = "curl -i https://{ip} --create-dirs -o {filepath}".format(ip=ip_address, filepath = filepath)
+                query = "curl -i https://{ip_or_domain} --create-dirs -o {filepath}".format(ip_or_domain=ip_or_domain, filepath = filepath)
 
             try:
                 response = subprocess.run(query, shell=False, capture_output=True, text=True)
@@ -634,12 +642,12 @@ def grab_html_js(ip_doc):
             logfile.write("returncode: {returncode}\n".format(returncode=returncode))
 
             if returncode == 0:
-                ip_doc['has_html'] = 1
+                doc['has_html'] = 1
                 to_append = {"type": protocol, "stderr": response.stderr, "stdout": response.stdout, "html_file_location":filepath}
 
 
                 ## Grab JS HERE
-                web_url = protocol + "://" + ip_address
+                web_url = protocol + "://" + ip_or_domain
                 # headers = {
                 #             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0",
                 #             "Accept-Encoding": "*",
@@ -747,15 +755,15 @@ def grab_html_js(ip_doc):
                     if len(array_js_filenames) > 0:
                         # ip_doc['has_javascript'] = len(array_js_filenames)
                         
-                        ip_doc['has_javascript'] = 1
+                        doc['has_javascript'] = 1
                     else:
                         array_js_filenames = None
-                        if type(ip_doc['has_javascript']) == str:
-                            ip_doc['has_javascript'] = 0
+                        if type(doc['has_javascript']) == str:
+                            doc['has_javascript'] = 0
                     # to_append = {"type": protocol, "stderr": response.stderr, "stdout": response.stdout, "html_file_location":filepath, "js_file_location": array_js_filenames}
                     to_append["js_file_location"] = array_js_filenames
 
-                    ip_doc['files_log'].append(to_append)
+                    doc['files_log'].append(to_append)
                 
                 except Exception as e:
                     # print(e)
@@ -763,14 +771,14 @@ def grab_html_js(ip_doc):
                     print("exception e:", e)
                     logfile.write("===== grab_html_js function exception occured\n")
                     logfile.write("exception: {e}\n".format(e=e))
-                    if type(ip_doc['has_html']) == str:
-                        ip_doc['has_html'] = 0
-                    if type(ip_doc['has_javascript']) == str:
-                        ip_doc['has_javascript'] = 0
+                    if type(doc['has_html']) == str:
+                        doc['has_html'] = 0
+                    if type(doc['has_javascript']) == str:
+                        doc['has_javascript'] = 0
                     # to_append = {"type": protocol, "stderr": response.stderr, "stdout": response.stdout, "html_file_location": None, "js_file_location" : None}
                     to_append["js_file_location"] = None
                     # to_append["exception"] = e
-                    ip_doc['files_log'].append(to_append)
+                    doc['files_log'].append(to_append)
                     print(" ===== grab_html_js function exception end =====")
                     logfile.write("===== grab_html_js function exception end =====\n")
 
@@ -779,23 +787,23 @@ def grab_html_js(ip_doc):
 
             # ## else indicate its not good 
             else:
-                if type(ip_doc['has_html']) == str:
-                    ip_doc['has_html'] = 0
-                if type(ip_doc['has_javascript']) == str:
-                    ip_doc['has_javascript'] = 0
+                if type(doc['has_html']) == str:
+                    doc['has_html'] = 0
+                if type(doc['has_javascript']) == str:
+                    doc['has_javascript'] = 0
                 to_append = {"type": protocol, "stderr": response.stderr, "stdout": response.stdout, "html_file_location": None, "js_file_location" : None}
                 # ip_doc['files'] = [to_append]
-                ip_doc['files_log'].append(to_append)
+                doc['files_log'].append(to_append)
         
         toc = time.perf_counter()
-        ip_doc["duration_log"]["grab_html_js"] = toc-tic
+        doc["duration_log"]["grab_html_js"] = toc-tic
         logfile.write("duration_log grab_html_js: {time}\n".format(time=toc-tic))
 
         # print("CALL HTML JS IP_DOC:", ip_doc)
         print("===== grab_html_js function end =====")
         logfile.write("===== grab_html_js function end =====\n")
         
-        return ip_doc
+        return doc
         # both http and https
 
 def process_ip_parent_without_vtcall():
