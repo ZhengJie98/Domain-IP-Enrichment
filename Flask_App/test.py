@@ -79,8 +79,8 @@ domain_template = {
         "has_javascript": "",
         "files_log" : None, ## Array of sub-docs, [{type:"", file_location:""}, {}...]
         "duration_log" : None, ## {{extracted info}, {file location }}
-        "who_is_info" : {"item_1":"1","item_2":""},
-        # "who_is_info" : None,
+        # "who_is_info" : {"item_1":"1","item_2":""},
+        "who_is_info" : None,
         # "who_is_info" : {},
         "dns_info" : None,
         "ssl_tls_cert_info": None,

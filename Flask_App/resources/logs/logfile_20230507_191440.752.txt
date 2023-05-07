@@ -1,0 +1,48 @@
+current ip in process_parent:101.32.113.56
+===== to_skip function start =====
+101.32.113.56 has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: 101.32.113.56 now: 2023-05-07 19:14:40.788743
+duration_log vt_call: 1.1587323000000005
+===== call_ip_or_domain function end =====
+replacement successful
+replacement SUCCESSFUL for 101.32.113.56, time taken 15.011412599999996 seconds
+
+
+current domain in process_parent:www.cloudfare.com
+===== to_skip function start =====
+www.cloudfare.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: www.cloudfare.com now: 2023-05-07 19:14:55.827097
+duration_log vt_call: 1.0210031000000015
+===== call_ip_or_domain function end =====
+replacement successful
+replacement SUCCESSFUL for www.cloudfare.com, time taken 15.004762199999995 seconds
+
+
+current domain in process_parent:www.apple.com
+===== to_skip function start =====
+www.apple.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: www.apple.com now: 2023-05-07 19:15:10.855897
+duration_log vt_call: 0.9396745999999965
+===== call_ip_or_domain function end =====
+replacement successful
+replacement SUCCESSFUL for www.apple.com, time taken 15.007458899999996 seconds
+
+
+current domain in process_parent:www.facebook.com
+===== to_skip function start =====
+www.facebook.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: www.facebook.com now: 2023-05-07 19:15:25.896724
+duration_log vt_call: 1.0425862000000023
+===== call_ip_or_domain function end =====
+replacement successful
+replacement SUCCESSFUL for www.facebook.com, time taken 15.01323939999999 seconds
+
+

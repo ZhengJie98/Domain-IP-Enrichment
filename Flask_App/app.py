@@ -40,11 +40,19 @@ def upload_ip():
 
         return "ipfile saved"
     
+@app.route("/uploadDomain", methods=['POST'])
+def upload_domain():
+    if request.method == 'POST':
+        file = request.files['file']
+        save_ipfile_response = save_domainfile(file)
 
-@app.route("/processIPtest", methods=['GET'])
-def process_IP_test():
+        return "domainfile saved"
+    
 
-    result = process_ip_parent()
+@app.route("/processParent", methods=['GET'])
+def process_Parent():
+
+    result = process_parent()
    
     return result
 

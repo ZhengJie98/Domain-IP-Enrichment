@@ -1,0 +1,12 @@
+current domain in process_parent:www.cloudfare.com
+===== to_skip function start =====
+www.cloudfare.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: www.cloudfare.com now: 2023-05-07 19:47:01.218179
+duration_log vt_call: 1.0092398999999972
+===== call_ip_or_domain function end =====
+replacement successful
+replacement SUCCESSFUL for www.cloudfare.com, time taken 15.011791000000002 seconds
+
+
