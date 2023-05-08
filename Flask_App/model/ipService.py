@@ -95,8 +95,8 @@ domain_template = {
     }
 
 
-# API_KEY = '0d9fdb6e32d74b9d12e3d894309531838c3aabe8d66b049fd3a7976fbedf2c68'  #@param  {type: "string"}
-API_KEY = '207349263f9c5edd176cc079fa8000a5ab912df7d9e91154842c08031658675d'  #@param  {type: "string"}
+API_KEY = '0d9fdb6e32d74b9d12e3d894309531838c3aabe8d66b049fd3a7976fbedf2c68'  #@param  {type: "string"}
+# API_KEY = '207349263f9c5edd176cc079fa8000a5ab912df7d9e91154842c08031658675d'  #@param  {type: "string"}
 
 
 
@@ -106,8 +106,8 @@ client = MongoClient('localhost',27017)
 # db = client['michelle_list']
 # db = client['test_list']
 # col = db["ip"]
-db = client['test_bay']
-col = db["test_col"]
+db = client['jon_list']
+col = db["domain"]
     
 
 
@@ -892,8 +892,8 @@ def get_dns_info(doc):
             os.makedirs("resources/dns")
                             
         try:
-            dns_info = socket.gethostbyname_ex(domain)
-            nameservers = dns.resolver.query(domain, 'NS')
+            dns_info = socket.gethostbyname_ex(domain) ## e.g. www.amazon.com, 
+            nameservers = dns.resolver.query(domain, 'NS') ## e.g. www.amazon.com
             nameserver_list = [i.to_text() for i in nameservers]
 
             gethostbyname_ex_filepath = "resources/dns/" + domain + '_' +"gethostbyname_ex" + '_' + dt_string + ".txt"
@@ -954,16 +954,29 @@ def get_cert_info(doc):
             # w = whois.whois(domain)
             cert_json = crtshAPI().search(domain)
             filepath = "resources/cert/" + domain + '_' + dt_string + ".json"
+            json_str = json.dumps(cert_json)
+            data = json.loads(json_str)
+
+            if (data == None or len(data) == 0):
+                toc = time.perf_counter()
+                doc['duration_log']['get_cert_info'] = toc-tic
+                print("get_cert_info file is NONE ")   
+                logfile.write("get_cert_info file is NONE \n")
+                logfile.write("duration_log get_cert_info: {time}\n".format(time=toc-tic))
+                logfile.write("===== get_cert_info function end =====\n")
+                print("===== get_cert_info function end =====")   
+                return doc
+
+
             with open(filepath, "w") as outfile:
                 json.dump(cert_json, outfile)
-                json_str = json.dumps(cert_json)
 
             print("get_cert_info file written to {filepath}".format(filepath=filepath))
             logfile.write("get_cert_info file written to {filepath}\n".format(filepath=filepath))
 
+            
             # f = open(filepath)
             # print('f:',f)
-            data = json.loads(json_str)
             # print("data:", data)
             # data = cert_json
 
@@ -975,14 +988,7 @@ def get_cert_info(doc):
             AltName_count_max = 0
 
             ## ending early if no cert info
-            if (len(data) == 0):
-                toc = time.perf_counter()
-                doc['duration_log']['get_cert_info'] = toc-tic
-                logfile.write("duration_log get_cert_info: {time}\n".format(time=toc-tic))
-                logfile.write("===== get_cert_info function end =====\n")
-                print("===== get_cert_info function end =====")   
-                return doc
-
+            
 
             for i in data:
                 #print(i)

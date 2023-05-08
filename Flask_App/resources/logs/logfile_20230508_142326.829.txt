@@ -1,0 +1,3315 @@
+current domain in process_parent:drefurni-sgdwxap.com
+===== to_skip function start =====
+drefurni-sgdwxap.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: drefurni-sgdwxap.com now: 2023-05-08 14:23:26.895761
+duration_log vt_call: 1.3403520999999987
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 19.082649
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.17352920000000083
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/drefurni-sgdwxap.com_20230508_142347.522.txt
+duration_log get_whois_info: 1.2496442000000023
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: drefurni-sgdwxap.com. IN NS
+duration_log get_dns_info: 0.027264499999997582
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/drefurni-sgdwxap.com_20230508_142348.799.json
+duration_log get_cert_info: 0.8442874999999965
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7215473000000046
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for drefurni-sgdwxap.com, time taken 23.498807499999998 seconds
+
+
+current domain in process_parent:astrferdgaesfcwfcsg.com
+===== to_skip function start =====
+astrferdgaesfcwfcsg.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: astrferdgaesfcwfcsg.com now: 2023-05-08 14:23:50.407552
+duration_log vt_call: 0.9139958999999962
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 7.040076300000003
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.13674599999999515
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/astrferdgaesfcwfcsg.com_20230508_142358.531.txt
+duration_log get_whois_info: 0.934876899999999
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: astrferdgaesfcwfcsg.com. IN NS
+duration_log get_dns_info: 0.020531800000000544
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 0.848358999999995
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.788449700000001
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for astrferdgaesfcwfcsg.com, time taken 15.002323699999998 seconds
+
+
+current domain in process_parent:straightnorthdrink.com
+===== to_skip function start =====
+straightnorthdrink.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: straightnorthdrink.com now: 2023-05-08 14:24:05.448639
+duration_log vt_call: 1.0067063999999988
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 6.781573900000005
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.12344119999999492
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/straightnorthdrink.com_20230508_142413.406.txt
+duration_log get_whois_info: 0.806673399999994
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: straightnorthdrink.com. IN NS
+duration_log get_dns_info: 0.027774399999998423
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/straightnorthdrink.com_20230508_142414.235.json
+duration_log get_cert_info: 26.277363899999997
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 16.682403800000003
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for straightnorthdrink.com, time taken 51.7865251 seconds
+
+
+current domain in process_parent:mabangerp.plus
+===== to_skip function start =====
+mabangerp.plus has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: mabangerp.plus now: 2023-05-08 14:24:57.250459
+duration_log vt_call: 1.0386498000000017
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 6.277486400000001
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 1.1594043999999997
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/mabangerp.plus_20230508_142505.764.txt
+duration_log get_whois_info: 0.047319800000011014
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: mabangerp.plus. IN NS
+duration_log get_dns_info: 0.021288099999992482
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 0.7833845999999909
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7581136000000015
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for mabangerp.plus, time taken 15.001685299999991 seconds
+
+
+current domain in process_parent:in2ideas-work.com
+===== to_skip function start =====
+in2ideas-work.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: in2ideas-work.com now: 2023-05-08 14:25:12.282982
+duration_log vt_call: 0.9760454000000038
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 6.593224899999996
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.15325230000000545
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/in2ideas-work.com_20230508_142520.047.txt
+duration_log get_whois_info: 1.18363939999999
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: in2ideas-work.com. IN NS
+duration_log get_dns_info: 0.02713070000000073
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 0.7724067999999988
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.8181749000000025
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for in2ideas-work.com, time taken 15.011874300000002 seconds
+
+
+current domain in process_parent:onalytica-audit.com
+===== to_skip function start =====
+onalytica-audit.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: onalytica-audit.com now: 2023-05-08 14:25:27.350220
+duration_log vt_call: 0.8655129999999929
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 7.19866110000001
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.15421870000000126
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/onalytica-audit.com_20230508_142535.615.txt
+duration_log get_whois_info: 0.8224132999999938
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: onalytica-audit.com. IN NS
+duration_log get_dns_info: 0.024951100000009774
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/onalytica-audit.com_20230508_142536.454.json
+duration_log get_cert_info: 2.5851841999999863
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.8935089999999946
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for onalytica-audit.com, time taken 15.005089199999986 seconds
+
+
+current domain in process_parent:govserver.top
+===== to_skip function start =====
+govserver.top has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: govserver.top now: 2023-05-08 14:25:42.395472
+duration_log vt_call: 0.9344074999999918
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 7.044647199999986
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.15104809999999702
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_domain_whois_info()  exception triggered: 'charmap' codec can't encode character '\uff0c' in position 3860: character maps to <undefined>
+duration_log get_whois_info: 1.1135442000000069
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: govserver.top. IN NS
+duration_log get_dns_info: 0.022570200000018303
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/govserver.top_20230508_142551.700.json
+duration_log get_cert_info: 0.8692413999999928
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 1.007570199999975
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for govserver.top, time taken 15.015638300000006 seconds
+
+
+current domain in process_parent:replug.online
+===== to_skip function start =====
+replug.online has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: replug.online now: 2023-05-08 14:25:57.459350
+duration_log vt_call: 1.0246187999999847
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 6.730550600000015
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.1449414999999874
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/replug.online_20230508_142605.394.txt
+duration_log get_whois_info: 0.9334319000000164
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: replug.online. IN NS
+duration_log get_dns_info: 0.025724499999995487
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/replug.online_20230508_142606.350.json
+duration_log get_cert_info: 7.440768100000014
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/replug.online_20230508_142613.807.txt
+duration_log get_archived_page_info: 0.778943699999985
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for replug.online, time taken 17.152094800000015 seconds
+
+
+current domain in process_parent:paidlah3.life
+===== to_skip function start =====
+paidlah3.life has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: paidlah3.life now: 2023-05-08 14:26:14.633739
+duration_log vt_call: 0.9867265999999972
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 7.037027300000005
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.6074427000000071
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/paidlah3.life_20230508_142623.301.txt
+duration_log get_whois_info: 0.021367000000026337
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: paidlah3.life. IN NS
+duration_log get_dns_info: 0.02675579999998945
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/paidlah3.life_20230508_142623.351.json
+duration_log get_cert_info: 15.933874800000012
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7861450999999988
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for paidlah3.life, time taken 25.468809300000004 seconds
+
+
+current domain in process_parent:sgbanking.top
+===== to_skip function start =====
+sgbanking.top has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: sgbanking.top now: 2023-05-08 14:26:40.114573
+duration_log vt_call: 1.097610000000003
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 7.218143599999991
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.1330063999999993
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_domain_whois_info()  exception triggered: 'charmap' codec can't encode character '\uff0c' in position 3860: character maps to <undefined>
+duration_log get_whois_info: 0.7698560000000043
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: sgbanking.top. IN NS
+duration_log get_dns_info: 0.026542599999999084
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/sgbanking.top_20230508_142649.400.json
+duration_log get_cert_info: 0.8957635000000153
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7400524999999902
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for sgbanking.top, time taken 15.013591099999985 seconds
+
+
+current domain in process_parent:internetbakingib.com
+===== to_skip function start =====
+internetbakingib.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: internetbakingib.com now: 2023-05-08 14:26:55.164145
+duration_log vt_call: 0.886932900000005
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 6.327187600000002
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.4625127000000191
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/internetbakingib.com_20230508_142702.883.txt
+duration_log get_whois_info: 2.2498813999999925
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: internetbakingib.com. IN NS
+duration_log get_dns_info: 0.022620299999999816
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/internetbakingib.com_20230508_142705.150.json
+duration_log get_cert_info: 7.897276399999981
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7999302999999998
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for internetbakingib.com, time taken 18.714124099999992 seconds
+
+
+current domain in process_parent:chimera-aim.com
+===== to_skip function start =====
+chimera-aim.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: chimera-aim.com now: 2023-05-08 14:27:13.907782
+duration_log vt_call: 1.1029096000000038
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 6.657752699999975
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.13042330000001812
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/chimera-aim.com_20230508_142721.839.txt
+duration_log get_whois_info: 0.9419388999999967
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: chimera-aim.com. IN NS
+duration_log get_dns_info: 0.024998600000003535
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 0.8064983000000154
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7749472999999796
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for chimera-aim.com, time taken 15.004796900000002 seconds
+
+
+current domain in process_parent:applovinsparklab.com
+===== to_skip function start =====
+applovinsparklab.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: applovinsparklab.com now: 2023-05-08 14:27:28.936251
+duration_log vt_call: 1.1019060999999795
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 6.887257099999971
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.15196229999997968
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/applovinsparklab.com_20230508_142737.118.txt
+duration_log get_whois_info: 0.9978509999999687
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: applovinsparklab.com. IN NS
+duration_log get_dns_info: 0.022647699999993165
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 0.8249283000000105
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7430651000000239
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for applovinsparklab.com, time taken 15.012993100000017 seconds
+
+
+current domain in process_parent:vmi1292370.contaboserver.net
+===== to_skip function start =====
+vmi1292370.contaboserver.net has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: vmi1292370.contaboserver.net now: 2023-05-08 14:27:43.981610
+duration_log vt_call: 0.9641217999999867
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 7.0171655999999984
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.8509619999999813
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/vmi1292370.contaboserver.net_20230508_142752.861.txt
+duration_log get_whois_info: 1.67782040000003
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: vmi1292370.contaboserver.net. IN NS
+duration_log get_dns_info: 0.030402600000002167
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 0.8193008000000077
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.8291718999999489
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for vmi1292370.contaboserver.net, time taken 15.014688499999977 seconds
+
+
+current domain in process_parent:hk-algoscale-reviews.com
+===== to_skip function start =====
+hk-algoscale-reviews.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: hk-algoscale-reviews.com now: 2023-05-08 14:27:59.026971
+duration_log vt_call: 0.9373060000000351
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 8.442294500000003
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.22518569999999727
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/hk-algoscale-reviews.com_20230508_142808.669.txt
+duration_log get_whois_info: 0.9549723000000085
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: hk-algoscale-reviews.com. IN NS
+duration_log get_dns_info: 0.028976000000000113
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/hk-algoscale-reviews.com_20230508_142809.658.json
+duration_log get_cert_info: 3.1352673000000095
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7151252000000454
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for hk-algoscale-reviews.com, time taken 15.006156400000009 seconds
+
+
+current domain in process_parent:telegram.soy
+===== to_skip function start =====
+telegram.soy has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: telegram.soy now: 2023-05-08 14:28:14.078317
+duration_log vt_call: 1.3364296000000309
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 7.892303100000049
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.22703530000001138
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/telegram.soy_20230508_142823.571.txt
+duration_log get_whois_info: 2.007853800000021
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: telegram.soy. IN NS
+duration_log get_dns_info: 0.025288299999999708
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/telegram.soy_20230508_142825.607.json
+duration_log get_cert_info: 1.908131400000002
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.9098743999999783
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for telegram.soy, time taken 15.007185200000038 seconds
+
+
+current domain in process_parent:wunderfauks-platform.com
+===== to_skip function start =====
+wunderfauks-platform.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: wunderfauks-platform.com now: 2023-05-08 14:28:29.119544
+duration_log vt_call: 0.9178168000000255
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 7.860015900000008
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.17321020000002818
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/wunderfauks-platform.com_20230508_142838.109.txt
+duration_log get_whois_info: 0.825663899999995
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: wunderfauks-platform.com. IN NS
+duration_log get_dns_info: 0.03413790000001882
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/wunderfauks-platform.com_20230508_142838.971.json
+duration_log get_cert_info: 2.5003692999999885
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.8966537000000017
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for wunderfauks-platform.com, time taken 15.012806699999999 seconds
+
+
+current domain in process_parent:pay-lah-2.top
+===== to_skip function start =====
+pay-lah-2.top has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: pay-lah-2.top now: 2023-05-08 14:28:44.157545
+duration_log vt_call: 0.8694995000000176
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 7.274719600000026
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.9506051000000184
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_domain_whois_info()  exception triggered: 'charmap' codec can't encode character '\uff0c' in position 3919: character maps to <undefined>
+duration_log get_whois_info: 0.8616694000000393
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: pay-lah-2.top. IN NS
+duration_log get_dns_info: 0.02655919999995149
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/pay-lah-2.top_20230508_142854.178.json
+duration_log get_cert_info: 8.279938700000002
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7602792000000136
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for pay-lah-2.top, time taken 19.128168000000016 seconds
+
+
+current domain in process_parent:squarefrescosolutions-solution.com
+===== to_skip function start =====
+squarefrescosolutions-solution.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: squarefrescosolutions-solution.com now: 2023-05-08 14:29:03.318539
+duration_log vt_call: 1.044884799999977
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 7.321395499999994
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.1526243000000136
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/squarefrescosolutions-solution.com_20230508_142911.880.txt
+duration_log get_whois_info: 1.0813981000000013
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: squarefrescosolutions-solution.com. IN NS
+duration_log get_dns_info: 0.024932800000044608
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/squarefrescosolutions-solution.com_20230508_142912.981.json
+duration_log get_cert_info: 0.8588427000000252
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7136572000000001
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for squarefrescosolutions-solution.com, time taken 15.00926979999997 seconds
+
+
+current domain in process_parent:au-nexcess-aka.com
+===== to_skip function start =====
+au-nexcess-aka.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: au-nexcess-aka.com now: 2023-05-08 14:29:18.356043
+duration_log vt_call: 1.2061009999999897
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 7.9379089999999906
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.14132969999997158
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/au-nexcess-aka.com_20230508_142927.693.txt
+duration_log get_whois_info: 0.8341939000000025
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: au-nexcess-aka.com. IN NS
+duration_log get_dns_info: 0.02451130000002877
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/au-nexcess-aka.com_20230508_142928.546.json
+duration_log get_cert_info: 8.00594460000002
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 1.4261356000000092
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for au-nexcess-aka.com, time taken 19.653424400000006 seconds
+
+
+current domain in process_parent:onemotoring-sg.xyz
+===== to_skip function start =====
+onemotoring-sg.xyz has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: onemotoring-sg.xyz now: 2023-05-08 14:29:38.025784
+duration_log vt_call: 0.9032946000000379
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 7.03114260000001
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.15663080000001628
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/onemotoring-sg.xyz_20230508_142946.156.txt
+duration_log get_whois_info: 1.4486036000000126
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: onemotoring-sg.xyz. IN NS
+duration_log get_dns_info: 0.023047299999973347
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/onemotoring-sg.xyz_20230508_142947.634.json
+duration_log get_cert_info: 3.3674611999999797
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7705806000000166
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for onemotoring-sg.xyz, time taken 15.005312800000013 seconds
+
+
+current domain in process_parent:id-moontechnolabs.com
+===== to_skip function start =====
+id-moontechnolabs.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: id-moontechnolabs.com now: 2023-05-08 14:29:53.061741
+duration_log vt_call: 0.9350529999999821
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 7.088369899999975
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.12805709999997816
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/id-moontechnolabs.com_20230508_143001.258.txt
+duration_log get_whois_info: 1.15018409999999
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: id-moontechnolabs.com. IN NS
+duration_log get_dns_info: 0.022562199999981658
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/id-moontechnolabs.com_20230508_143002.428.json
+duration_log get_cert_info: 52.3264284
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/id-moontechnolabs.com_20230508_143054.755.txt
+duration_log get_archived_page_info: 0.7306557999999654
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for id-moontechnolabs.com, time taken 62.44923970000002 seconds
+
+
+current domain in process_parent:creativeans-audit.com
+===== to_skip function start =====
+creativeans-audit.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: creativeans-audit.com now: 2023-05-08 14:30:55.585619
+duration_log vt_call: 1.140338799999995
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 7.173240300000032
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.12857550000001083
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/creativeans-audit.com_20230508_143104.059.txt
+duration_log get_whois_info: 0.9752820999999585
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: creativeans-audit.com. IN NS
+duration_log get_dns_info: 0.02381189999999833
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/creativeans-audit.com_20230508_143105.064.json
+duration_log get_cert_info: 1.0708448999999973
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.9930163000000221
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for creativeans-audit.com, time taken 15.015327200000002 seconds
+
+
+current domain in process_parent:wunderfauksenhance.com
+===== to_skip function start =====
+wunderfauksenhance.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: wunderfauksenhance.com now: 2023-05-08 14:31:10.585577
+duration_log vt_call: 0.8907989999999586
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 7.833528199999989
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.12210379999999077
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/wunderfauksenhance.com_20230508_143119.477.txt
+duration_log get_whois_info: 0.8162188999999671
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: wunderfauksenhance.com. IN NS
+duration_log get_dns_info: 0.023397200000033536
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 0.7619323000000122
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7167815999999902
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for wunderfauksenhance.com, time taken 15.0073711 seconds
+
+
+current domain in process_parent:telegram-org.bar
+===== to_skip function start =====
+telegram-org.bar has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: telegram-org.bar now: 2023-05-08 14:31:25.616700
+duration_log vt_call: 0.8943486000000007
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 7.217888099999982
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.13548650000001317
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/telegram-org.bar_20230508_143133.903.txt
+duration_log get_whois_info: 1.247387099999969
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: telegram-org.bar. IN NS
+duration_log get_dns_info: 0.02390059999999039
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 0.7781239999999912
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.6851454000000103
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for telegram-org.bar, time taken 15.009451400000046 seconds
+
+
+current domain in process_parent:dreamin-pro.com
+===== to_skip function start =====
+dreamin-pro.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: dreamin-pro.com now: 2023-05-08 14:31:40.656400
+duration_log vt_call: 0.8745552999999973
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 7.271280300000001
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.14863699999995106
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/dreamin-pro.com_20230508_143148.998.txt
+duration_log get_whois_info: 1.0279443000000583
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: dreamin-pro.com. IN NS
+duration_log get_dns_info: 0.02172409999991487
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/dreamin-pro.com_20230508_143150.036.json
+duration_log get_cert_info: 0.8595004999999674
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.8113938999999846
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for dreamin-pro.com, time taken 15.006517899999949 seconds
+
+
+current domain in process_parent:weshop688.vip
+===== to_skip function start =====
+weshop688.vip has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: weshop688.vip now: 2023-05-08 14:31:55.706211
+duration_log vt_call: 0.9272646000000577
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 6.7858274000000165
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.13696950000007746
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/weshop688.vip_20230508_143203.606.txt
+duration_log get_whois_info: 0.07075499999996282
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: weshop688.vip. IN NS
+duration_log get_dns_info: 0.023046300000032716
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/weshop688.vip_20230508_143203.704.json
+duration_log get_cert_info: 34.000214500000084
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.8076410999999553
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for weshop688.vip, time taken 42.82729729999994 seconds
+
+
+current domain in process_parent:ppadvance.com
+===== to_skip function start =====
+ppadvance.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: ppadvance.com now: 2023-05-08 14:32:38.552857
+duration_log vt_call: 1.1003872000000001
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 7.46266449999996
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.1500701999999592
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/ppadvance.com_20230508_143247.316.txt
+duration_log get_whois_info: 1.1471859999999197
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: ppadvance.com. IN NS
+duration_log get_dns_info: 0.030175699999972494
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/ppadvance.com_20230508_143248.487.json
+duration_log get_cert_info: 0.9373690999999553
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/ppadvance.com_20230508_143249.431.txt
+duration_log get_archived_page_info: 0.7269786000000522
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for ppadvance.com, time taken 15.010295300000053 seconds
+
+
+current domain in process_parent:reschedule-track.com
+===== to_skip function start =====
+reschedule-track.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: reschedule-track.com now: 2023-05-08 14:32:53.616630
+duration_log vt_call: 0.8962665000000243
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 7.273923800000034
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.13425449999999728
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/reschedule-track.com_20230508_143301.962.txt
+duration_log get_whois_info: 1.1126956000000519
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: reschedule-track.com. IN NS
+duration_log get_dns_info: 0.0225882999999385
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/reschedule-track.com_20230508_143303.098.json
+duration_log get_cert_info: 2.188514600000076
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7846395999999913
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for reschedule-track.com, time taken 15.012563899999918 seconds
+
+
+current domain in process_parent:dreamin-enhance.com
+===== to_skip function start =====
+dreamin-enhance.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: dreamin-enhance.com now: 2023-05-08 14:33:08.654071
+duration_log vt_call: 0.9550368999999819
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 6.4671871000000465
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.9553849000000127
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/dreamin-enhance.com_20230508_143317.071.txt
+duration_log get_whois_info: 1.1178866000000198
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: dreamin-enhance.com. IN NS
+duration_log get_dns_info: 0.026642700000024888
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/dreamin-enhance.com_20230508_143318.222.json
+duration_log get_cert_info: 5.861505699999952
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7157284999999547
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for dreamin-enhance.com, time taken 16.165797999999995 seconds
+
+
+current domain in process_parent:imgg1228t.xyz
+===== to_skip function start =====
+imgg1228t.xyz has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: imgg1228t.xyz now: 2023-05-08 14:33:24.839946
+duration_log vt_call: 0.9314441000000215
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 6.770444099999963
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.15604499999994914
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/imgg1228t.xyz_20230508_143332.734.txt
+duration_log get_whois_info: 0.8518528999999262
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: imgg1228t.xyz. IN NS
+duration_log get_dns_info: 0.022926700000084566
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 5.9494988999999805
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 7.975179199999957
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for imgg1228t.xyz, time taken 22.725170100000014 seconds
+
+
+current domain in process_parent:forecepts-program.com
+===== to_skip function start =====
+forecepts-program.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: forecepts-program.com now: 2023-05-08 14:33:47.586823
+duration_log vt_call: 1.1362027000000126
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 6.3282339000001
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.1383342999999968
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/forecepts-program.com_20230508_143355.225.txt
+duration_log get_whois_info: 1.09076349999998
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: forecepts-program.com. IN NS
+duration_log get_dns_info: 0.02132369999992534
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/forecepts-program.com_20230508_143356.339.json
+duration_log get_cert_info: 1.0537249000000202
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.8245066999999153
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for forecepts-program.com, time taken 15.004962299999988 seconds
+
+
+current domain in process_parent:thesgpaylah.top
+===== to_skip function start =====
+thesgpaylah.top has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: thesgpaylah.top now: 2023-05-08 14:34:02.622399
+duration_log vt_call: 0.9385804000000917
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 6.317119199999979
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.17244190000008075
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/thesgpaylah.top_20230508_143410.087.txt
+duration_log get_whois_info: 0.5061039000000846
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: thesgpaylah.top. IN NS
+duration_log get_dns_info: 0.020843299999910414
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/thesgpaylah.top_20230508_143410.614.json
+duration_log get_cert_info: 15.096189699999968
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7406037000000651
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for thesgpaylah.top, time taken 23.86103700000001 seconds
+
+
+current domain in process_parent:wunderfauks.net
+===== to_skip function start =====
+wunderfauks.net has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: wunderfauks.net now: 2023-05-08 14:34:26.507247
+duration_log vt_call: 1.3293390999999701
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 7.1275633999999854
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.12724000000002889
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/wunderfauks.net_20230508_143435.135.txt
+duration_log get_whois_info: 0.9614849000000731
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: wunderfauks.net. IN NS
+duration_log get_dns_info: 0.02429580000000442
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/wunderfauks.net_20230508_143436.116.json
+duration_log get_cert_info: 21.816185999999902
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7939754999999877
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for wunderfauks.net, time taken 32.252528199999915 seconds
+
+
+current domain in process_parent:unrivaledinsight.com
+===== to_skip function start =====
+unrivaledinsight.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: unrivaledinsight.com now: 2023-05-08 14:34:58.814690
+duration_log vt_call: 1.161262899999997
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 6.340326599999912
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.13681930000007014
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/unrivaledinsight.com_20230508_143506.490.txt
+duration_log get_whois_info: 1.815982399999939
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: unrivaledinsight.com. IN NS
+duration_log get_dns_info: 0.026128999999968983
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 0.780647599999952
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.9797187000000349
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for unrivaledinsight.com, time taken 15.014364999999998 seconds
+
+
+current domain in process_parent:topnotchdezignshk-aim.com
+===== to_skip function start =====
+topnotchdezignshk-aim.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: topnotchdezignshk-aim.com now: 2023-05-08 14:35:13.817587
+duration_log vt_call: 0.883737799999949
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 6.231946499999935
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 1.1354771000000028
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/topnotchdezignshk-aim.com_20230508_143522.115.txt
+duration_log get_whois_info: 0.9481566999999131
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: topnotchdezignshk-aim.com. IN NS
+duration_log get_dns_info: 0.028167800000005627
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/topnotchdezignshk-aim.com_20230508_143523.083.json
+duration_log get_cert_info: 8.881087100000059
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 7.769981599999937
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for topnotchdezignshk-aim.com, time taken 25.9515361 seconds
+
+
+current domain in process_parent:fy31bb2152.xyz
+===== to_skip function start =====
+fy31bb2152.xyz has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: fy31bb2152.xyz now: 2023-05-08 14:35:39.786197
+duration_log vt_call: 0.9973789000000579
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 7.203078500000061
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.1932508999999527
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/fy31bb2152.xyz_20230508_143548.214.txt
+duration_log get_whois_info: 0.8844457999999804
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: fy31bb2152.xyz. IN NS
+duration_log get_dns_info: 0.021706300000005285
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 0.7812877000000071
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7015870999999834
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for fy31bb2152.xyz, time taken 15.00592620000009 seconds
+
+
+current domain in process_parent:ocdigitalnetwork-action.com
+===== to_skip function start =====
+ocdigitalnetwork-action.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: ocdigitalnetwork-action.com now: 2023-05-08 14:35:54.832731
+duration_log vt_call: 0.958373500000107
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 7.243766100000016
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.1354227000000492
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/ocdigitalnetwork-action.com_20230508_143603.207.txt
+duration_log get_whois_info: 0.9668217999999342
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: ocdigitalnetwork-action.com. IN NS
+duration_log get_dns_info: 0.02289389999998548
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/ocdigitalnetwork-action.com_20230508_143604.199.json
+duration_log get_cert_info: 1.0072073999999702
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7375405000000228
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for ocdigitalnetwork-action.com, time taken 15.006706699999995 seconds
+
+
+current domain in process_parent:impact.qc.com
+===== to_skip function start =====
+impact.qc.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: impact.qc.com now: 2023-05-08 14:36:09.872014
+call_status_code: 404, continuing to next ip_or_domain
+current domain in process_parent:riot-games-sg.vip
+===== to_skip function start =====
+riot-games-sg.vip has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: riot-games-sg.vip now: 2023-05-08 14:36:10.860260
+duration_log vt_call: 1.1585955000000467
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 7.12754469999993
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.12180669999997917
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/riot-games-sg.vip_20230508_143619.303.txt
+duration_log get_whois_info: 0.022993400000018482
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: riot-games-sg.vip. IN NS
+duration_log get_dns_info: 0.0202267000000802
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/riot-games-sg.vip_20230508_143619.353.json
+duration_log get_cert_info: 2.9377792000000227
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7941647000000103
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for riot-games-sg.vip, time taken 15.004125600000066 seconds
+
+
+current domain in process_parent:cryptokeppel.com
+===== to_skip function start =====
+cryptokeppel.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: cryptokeppel.com now: 2023-05-08 14:36:25.890227
+duration_log vt_call: 1.2178383999998914
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 6.403266899999949
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.11920640000005278
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/cryptokeppel.com_20230508_143633.677.txt
+duration_log get_whois_info: 1.3726409999999305
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: cryptokeppel.com. IN NS
+duration_log get_dns_info: 0.021686799999997675
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 0.7709360000000061
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7156243000000586
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for cryptokeppel.com, time taken 15.010197199999993 seconds
+
+
+current domain in process_parent:ltuys.com
+===== to_skip function start =====
+ltuys.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: ltuys.com now: 2023-05-08 14:36:40.929423
+duration_log vt_call: 1.214681300000052
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 6.503281700000002
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.12179059999994024
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/ltuys.com_20230508_143648.808.txt
+duration_log get_whois_info: 0.7418318999999656
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: ltuys.com. IN NS
+duration_log get_dns_info: 0.0211496999999099
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/ltuys.com_20230508_143649.574.json
+duration_log get_cert_info: 7.992517000000021
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.8031621999999743
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for ltuys.com, time taken 17.46897660000002 seconds
+
+
+current domain in process_parent:espire-network.com
+===== to_skip function start =====
+espire-network.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: espire-network.com now: 2023-05-08 14:36:58.420764
+duration_log vt_call: 1.3812705000000278
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 6.583863199999996
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.12660470000002988
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/espire-network.com_20230508_143706.557.txt
+duration_log get_whois_info: 1.1542170999999826
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: espire-network.com. IN NS
+duration_log get_dns_info: 0.019930000000044856
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 0.7751476000000821
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/espire-network.com_20230508_143708.508.txt
+duration_log get_archived_page_info: 0.7948020999999699
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for espire-network.com, time taken 15.005585200000041 seconds
+
+
+current domain in process_parent:dbssafety.top
+===== to_skip function start =====
+dbssafety.top has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: dbssafety.top now: 2023-05-08 14:37:13.456452
+duration_log vt_call: 1.0547272999999677
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 6.370714500000076
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 1.00322790000007
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/dbssafety.top_20230508_143721.925.txt
+duration_log get_whois_info: 0.5039264000000685
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: dbssafety.top. IN NS
+duration_log get_dns_info: 0.021811799999909454
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/dbssafety.top_20230508_143722.446.json
+duration_log get_cert_info: 0.8385683999999856
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.9941156000001001
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for dbssafety.top, time taken 15.007563599999912 seconds
+
+
+current domain in process_parent:arc-light.us
+===== to_skip function start =====
+arc-light.us has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: arc-light.us now: 2023-05-08 14:37:28.506298
+duration_log vt_call: 0.8708496000000423
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 6.5125260000000935
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.13270780000004834
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/arc-light.us_20230508_143736.069.txt
+duration_log get_whois_info: 1.511247699999899
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: arc-light.us. IN NS
+duration_log get_dns_info: 0.017355800000018462
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/arc-light.us_20230508_143737.587.json
+duration_log get_cert_info: 0.8522648000000572
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/arc-light.us_20230508_143738.441.txt
+duration_log get_archived_page_info: 0.7302573000000621
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for arc-light.us, time taken 15.005653800000005 seconds
+
+
+current domain in process_parent:squarefrescosolutions-logical.com
+===== to_skip function start =====
+squarefrescosolutions-logical.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: squarefrescosolutions-logical.com now: 2023-05-08 14:37:43.551688
+duration_log vt_call: 1.2316548999999668
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 6.583207200000061
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.15519919999997
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/squarefrescosolutions-logical.com_20230508_143751.558.txt
+duration_log get_whois_info: 1.043225800000073
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: squarefrescosolutions-logical.com. IN NS
+duration_log get_dns_info: 0.024370200000021214
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/squarefrescosolutions-logical.com_20230508_143752.625.json
+duration_log get_cert_info: 0.8201315999999679
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7783826999999519
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for squarefrescosolutions-logical.com, time taken 15.005475299999944 seconds
+
+
+current domain in process_parent:amplitude-scale.com
+===== to_skip function start =====
+amplitude-scale.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: amplitude-scale.com now: 2023-05-08 14:37:58.602210
+duration_log vt_call: 0.9601075999999011
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 6.465091400000006
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.12957480000000032
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/amplitude-scale.com_20230508_143806.192.txt
+duration_log get_whois_info: 0.8555186999999478
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: amplitude-scale.com. IN NS
+duration_log get_dns_info: 0.025035499999944477
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/amplitude-scale.com_20230508_143807.075.json
+duration_log get_cert_info: 5.310545100000013
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.9234431999999515
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for amplitude-scale.com, time taken 15.005139900000017 seconds
+
+
+current domain in process_parent:uspsling.xyz
+===== to_skip function start =====
+uspsling.xyz has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: uspsling.xyz now: 2023-05-08 14:38:13.645768
+duration_log vt_call: 0.9347941999999421
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 6.429153600000063
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.1534560000000056
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/uspsling.xyz_20230508_143821.212.txt
+duration_log get_whois_info: 1.1590281000000004
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: uspsling.xyz. IN NS
+duration_log get_dns_info: 0.02635290000000623
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/uspsling.xyz_20230508_143822.388.json
+duration_log get_cert_info: 14.206284500000038
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 1.0847959000000174
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for uspsling.xyz, time taken 24.06586260000006 seconds
+
+
+current domain in process_parent:3paylah.life
+===== to_skip function start =====
+3paylah.life has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: 3paylah.life now: 2023-05-08 14:38:37.732756
+duration_log vt_call: 0.8737912000000279
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 7.339353300000084
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.13316470000006575
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/3paylah.life_20230508_143846.112.txt
+duration_log get_whois_info: 0.052281399999969835
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: 3paylah.life. IN NS
+duration_log get_dns_info: 0.03438049999999748
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/3paylah.life_20230508_143846.210.json
+duration_log get_cert_info: 5.045440700000086
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 1.0223470000000816
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for 3paylah.life, time taken 15.00845890000005 seconds
+
+
+current domain in process_parent:onemotoringr-lta.shop
+===== to_skip function start =====
+onemotoringr-lta.shop has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: onemotoringr-lta.shop now: 2023-05-08 14:38:52.763780
+duration_log vt_call: 0.9338015000000723
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 6.550631700000054
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.16155169999990449
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/onemotoringr-lta.shop_20230508_143900.453.txt
+duration_log get_whois_info: 0.9542953999999781
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: onemotoringr-lta.shop. IN NS
+duration_log get_dns_info: 0.030438799999956245
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/onemotoringr-lta.shop_20230508_143901.428.json
+duration_log get_cert_info: 1.4301765999999816
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 2.0329565999999204
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for onemotoringr-lta.shop, time taken 15.00270420000004 seconds
+
+
+current domain in process_parent:squarefrescosolutions-session.com
+===== to_skip function start =====
+squarefrescosolutions-session.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: squarefrescosolutions-session.com now: 2023-05-08 14:39:07.792311
+duration_log vt_call: 1.251804600000014
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 7.349222399999917
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.15061230000003434
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/squarefrescosolutions-session.com_20230508_143916.592.txt
+duration_log get_whois_info: 1.0036413999999922
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: squarefrescosolutions-session.com. IN NS
+duration_log get_dns_info: 0.02418569999997544
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 0.8416217000000188
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.6686862000000247
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for squarefrescosolutions-session.com, time taken 15.015572599999928 seconds
+
+
+current domain in process_parent:telegraf.cc
+===== to_skip function start =====
+telegraf.cc has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: telegraf.cc now: 2023-05-08 14:39:22.839451
+duration_log vt_call: 0.9256735999999819
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 6.744357199999968
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.17397550000009687
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/telegraf.cc_20230508_143930.728.txt
+duration_log get_whois_info: 1.2392179000000851
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: telegraf.cc. IN NS
+duration_log get_dns_info: 0.023847000000046137
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 0.7593481000000111
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/telegraf.cc_20230508_143932.743.txt
+duration_log get_archived_page_info: 6.061005500000078
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for telegraf.cc, time taken 15.999833599999988 seconds
+
+
+current domain in process_parent:sgp-creativeans.net
+===== to_skip function start =====
+sgp-creativeans.net has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: sgp-creativeans.net now: 2023-05-08 14:39:38.857748
+duration_log vt_call: 1.1035752999999886
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 6.5250859999999875
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.14738339999996697
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/sgp-creativeans.net_20230508_143946.706.txt
+duration_log get_whois_info: 1.1392316000000164
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: sgp-creativeans.net. IN NS
+duration_log get_dns_info: 0.044107099999905586
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/sgp-creativeans.net_20230508_143947.885.json
+duration_log get_cert_info: 1.342015399999923
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.758760499999994
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for sgp-creativeans.net, time taken 15.005276700000081 seconds
+
+
+current domain in process_parent:forecepts-analysis.com
+===== to_skip function start =====
+forecepts-analysis.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: forecepts-analysis.com now: 2023-05-08 14:39:53.902898
+duration_log vt_call: 1.036000700000045
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 6.67041990000007
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.1391312000000653
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/forecepts-analysis.com_20230508_144001.798.txt
+duration_log get_whois_info: 0.8457533999999214
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: forecepts-analysis.com. IN NS
+duration_log get_dns_info: 0.02435620000005656
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/forecepts-analysis.com_20230508_144002.661.json
+duration_log get_cert_info: 0.941624499999989
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7815874000000349
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for forecepts-analysis.com, time taken 15.009127700000022 seconds
+
+
+current domain in process_parent:dreamin-aka.com
+===== to_skip function start =====
+dreamin-aka.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: dreamin-aka.com now: 2023-05-08 14:40:08.971418
+duration_log vt_call: 0.9816641999999547
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 6.551616100000047
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.15815120000002025
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/dreamin-aka.com_20230508_144016.710.txt
+duration_log get_whois_info: 0.8300817000000507
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: dreamin-aka.com. IN NS
+duration_log get_dns_info: 0.02531039999996665
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/dreamin-aka.com_20230508_144017.553.json
+duration_log get_cert_info: 6.85111140000015
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7099263000000064
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for dreamin-aka.com, time taken 16.182648500000028 seconds
+
+
+current domain in process_parent:b96495i6.beget.tech
+===== to_skip function start =====
+b96495i6.beget.tech has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: b96495i6.beget.tech now: 2023-05-08 14:40:25.157904
+duration_log vt_call: 1.5197904999999992
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 6.715570399999933
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.20159289999992325
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/b96495i6.beget.tech_20230508_144033.633.txt
+duration_log get_whois_info: 1.3192492000000584
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: b96495i6.beget.tech. IN NS
+duration_log get_dns_info: 0.017841200000020763
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 0.8725564999999733
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.729794800000036
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for b96495i6.beget.tech, time taken 15.015771099999938 seconds
+
+
+current domain in process_parent:appspage-hachi.com
+===== to_skip function start =====
+appspage-hachi.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: appspage-hachi.com now: 2023-05-08 14:40:40.213221
+duration_log vt_call: 1.0119736999999986
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 6.744369799999959
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.538896399999885
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/appspage-hachi.com_20230508_144048.551.txt
+duration_log get_whois_info: 0.9823798999998417
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: appspage-hachi.com. IN NS
+duration_log get_dns_info: 0.024546799999825453
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/appspage-hachi.com_20230508_144049.552.json
+duration_log get_cert_info: 1.213657000000012
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7687791000000743
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for appspage-hachi.com, time taken 15.01561589999983 seconds
+
+
+current domain in process_parent:newmall-furnitureshop.com
+===== to_skip function start =====
+newmall-furnitureshop.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: newmall-furnitureshop.com now: 2023-05-08 14:40:55.268493
+duration_log vt_call: 1.0726489000001038
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 6.4199680000001536
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.12810880000006364
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/newmall-furnitureshop.com_20230508_144102.933.txt
+duration_log get_whois_info: 0.8131192999999257
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: newmall-furnitureshop.com. IN NS
+duration_log get_dns_info: 0.02705370000012408
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/newmall-furnitureshop.com_20230508_144103.772.json
+duration_log get_cert_info: 1.1585156000001007
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7526940000000195
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for newmall-furnitureshop.com, time taken 15.007163300000002 seconds
+
+
+current domain in process_parent:onalytica-luck.com
+===== to_skip function start =====
+onalytica-luck.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: onalytica-luck.com now: 2023-05-08 14:41:10.318859
+duration_log vt_call: 0.8986483999999564
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 6.376958099999911
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.1299472999999125
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/onalytica-luck.com_20230508_144117.764.txt
+duration_log get_whois_info: 0.850785999999971
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: onalytica-luck.com. IN NS
+duration_log get_dns_info: 0.025292300000046453
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/onalytica-luck.com_20230508_144118.638.json
+duration_log get_cert_info: 1.35495549999996
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7302451999998993
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for onalytica-luck.com, time taken 15.004491199999848 seconds
+
+
+current domain in process_parent:squarefrescosolutions-sys.com
+===== to_skip function start =====
+squarefrescosolutions-sys.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: squarefrescosolutions-sys.com now: 2023-05-08 14:41:25.376955
+duration_log vt_call: 1.415156799999977
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 6.386117400000103
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 1.0784192000000985
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/squarefrescosolutions-sys.com_20230508_144134.296.txt
+duration_log get_whois_info: 0.9617922999998427
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: squarefrescosolutions-sys.com. IN NS
+duration_log get_dns_info: 0.026596300000164774
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/squarefrescosolutions-sys.com_20230508_144135.287.json
+duration_log get_cert_info: 14.33188599999994
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 3.7260418999999274
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for squarefrescosolutions-sys.com, time taken 28.01757870000006 seconds
+
+
+current domain in process_parent:bdsabrandsere.com
+===== to_skip function start =====
+bdsabrandsere.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: bdsabrandsere.com now: 2023-05-08 14:41:53.411016
+duration_log vt_call: 1.2037714999999025
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 6.700750900000003
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.12163970000005975
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/bdsabrandsere.com_20230508_144201.488.txt
+duration_log get_whois_info: 0.8075191000000359
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: bdsabrandsere.com. IN NS
+duration_log get_dns_info: 0.02088140000000749
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/bdsabrandsere.com_20230508_144202.304.json
+duration_log get_cert_info: 53.24939539999991
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7644563999999718
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for bdsabrandsere.com, time taken 62.94449929999996 seconds
+
+
+current domain in process_parent:eufmyio.shop
+===== to_skip function start =====
+eufmyio.shop has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: eufmyio.shop now: 2023-05-08 14:42:56.366494
+duration_log vt_call: 1.0493986999999834
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 6.986366599999883
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.11479999999983193
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/eufmyio.shop_20230508_144304.557.txt
+duration_log get_whois_info: 0.2514011999999184
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: eufmyio.shop. IN NS
+duration_log get_dns_info: 0.02976489999991827
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/eufmyio.shop_20230508_144304.835.json
+duration_log get_cert_info: 1.655257299999903
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/eufmyio.shop_20230508_144306.495.txt
+duration_log get_archived_page_info: 0.9862590999998702
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for eufmyio.shop, time taken 15.008443100000022 seconds
+
+
+current domain in process_parent:works-steelkiwi.com
+===== to_skip function start =====
+works-steelkiwi.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: works-steelkiwi.com now: 2023-05-08 14:43:11.408796
+duration_log vt_call: 1.0713826999999583
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 6.548303600000054
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.15344629999981407
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/works-steelkiwi.com_20230508_144319.224.txt
+duration_log get_whois_info: 1.1905467000001408
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: works-steelkiwi.com. IN NS
+duration_log get_dns_info: 0.026199399999995876
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 0.7998919999999998
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 1.2455312000001868
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for works-steelkiwi.com, time taken 15.00578170000017 seconds
+
+
+current domain in process_parent:chartercom-singapore-project.pages.dev
+===== to_skip function start =====
+chartercom-singapore-project.pages.dev has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: chartercom-singapore-project.pages.dev now: 2023-05-08 14:43:26.440714
+duration_log vt_call: 0.9369187000002057
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 6.4242547000001196
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.1654512000000068
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/chartercom-singapore-project.pages.dev_20230508_144334.015.txt
+duration_log get_whois_info: 0.6914959000000636
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: chartercom-singapore-project.pages.dev. IN NS
+duration_log get_dns_info: 0.021123099999840633
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 0.7709574999998949
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.9054002999998829
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for chartercom-singapore-project.pages.dev, time taken 15.012592599999834 seconds
+
+
+current domain in process_parent:corpdbs.com
+===== to_skip function start =====
+corpdbs.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: corpdbs.com now: 2023-05-08 14:43:41.477814
+duration_log vt_call: 0.8826233000002048
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 6.549794299999803
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.12433610000016415
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_domain_whois_info()  exception triggered: No match for "CORPDBS.COM".
+>>> Last update of whois database: 2023-05-08T06:43:39Z <<<
+
+NOTICE: The expiration date displayed in this record is the date the
+registrar's sponsorship of the domain name registration in the registry is
+currently set to expire. This date does not necessarily reflect the expiration
+date of the domain name registrant's agreement with the sponsoring
+registrar.  Users may consult the sponsoring registrar's Whois database to
+view the registrar's reported date of expiration for this registration.
+
+TERMS OF USE: You are not authorized to access or query our Whois
+database through the use of electronic processes that are high-volume and
+automated except as reasonably necessary to register domain names or
+modify existing registrations; the Data in VeriSign Global Registry
+Services' ("VeriSign") Whois database is provided by VeriSign for
+information purposes only, and to assist persons in obtaining information
+about or related to a domain name registration record. VeriSign does not
+guarantee its accuracy. By submitting a Whois query, you agree to abide
+by the following terms of use: You agree that you may use this Data only
+for lawful purposes and that under no circumstances will you use this Data
+to: (1) allow, enable, or otherwise support the transmission of mass
+unsolicited, commercial advertising or solicitations via e-mail, telephone,
+or facsimile; or (2) enable high volume, automated, electronic processes
+that apply to VeriSign (or its computer systems). The compilation,
+repackaging, dissemination or other use of this Data is expressly
+prohibited without the prior written consent of VeriSign. You agree not to
+use electronic processes that are automated and high-volume to access or
+query the Whois database except as reasonably necessary to register
+domain names or modify existing registrations. VeriSign reserves the right
+to restrict your access to the Whois database in its sole discretion to ensure
+operational stability.  VeriSign may restrict or terminate your access to the
+Whois database for failure to abide by these terms of use. VeriSign
+reserves the right to modify these terms at any time.
+
+The Registry database contains ONLY .COM, .NET, .EDU domains and
+Registrars.
+
+duration_log get_whois_info: 0.5419805000001361
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: corpdbs.com. IN NS
+duration_log get_dns_info: 0.017417099999875063
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/corpdbs.com_20230508_144349.630.json
+duration_log get_cert_info: 3.7228399000000536
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/corpdbs.com_20230508_144353.358.txt
+duration_log get_archived_page_info: 0.9055527999998958
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for corpdbs.com, time taken 15.002306800000042 seconds
+
+
+current domain in process_parent:cryptoin-trade.com
+===== to_skip function start =====
+cryptoin-trade.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: cryptoin-trade.com now: 2023-05-08 14:43:56.526388
+duration_log vt_call: 0.8889792999998463
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 6.519582799999853
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.29366559999994024
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/cryptoin-trade.com_20230508_144404.268.txt
+duration_log get_whois_info: 0.9324280999999246
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: cryptoin-trade.com. IN NS
+duration_log get_dns_info: 0.02799349999986589
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/cryptoin-trade.com_20230508_144405.229.json
+duration_log get_cert_info: 3.8772550999999567
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.937629300000026
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for cryptoin-trade.com, time taken 15.006016999999929 seconds
+
+
+current domain in process_parent:bravebison-aim.com
+===== to_skip function start =====
+bravebison-aim.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: bravebison-aim.com now: 2023-05-08 14:44:11.557236
+duration_log vt_call: 0.9278964000000087
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 6.632265899999993
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.1249543999999787
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/bravebison-aim.com_20230508_144419.284.txt
+duration_log get_whois_info: 0.9731409000000895
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: bravebison-aim.com. IN NS
+duration_log get_dns_info: 0.023747599999978775
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/bravebison-aim.com_20230508_144420.281.json
+duration_log get_cert_info: 38.22014389999981
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/bravebison-aim.com_20230508_144458.509.txt
+duration_log get_archived_page_info: 0.7744513000000097
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for bravebison-aim.com, time taken 47.74866470000006 seconds
+
+
+current domain in process_parent:sawe1q.web.app
+===== to_skip function start =====
+sawe1q.web.app has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: sawe1q.web.app now: 2023-05-08 14:44:59.359587
+duration_log vt_call: 0.9207850999998755
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 6.546400699999822
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.14565070000003288
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/sawe1q.web.app_20230508_144507.017.txt
+duration_log get_whois_info: 0.6801262999999835
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: sawe1q.web.app. IN NS
+duration_log get_dns_info: 0.01896800000008625
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 0.812377799999922
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7533336999999847
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for sawe1q.web.app, time taken 15.01389180000001 seconds
+
+
+current domain in process_parent:fusionex-advance.com
+===== to_skip function start =====
+fusionex-advance.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: fusionex-advance.com now: 2023-05-08 14:45:14.388183
+duration_log vt_call: 0.9193167000000813
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 6.6725849000001745
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.13917240000000675
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/fusionex-advance.com_20230508_144522.170.txt
+duration_log get_whois_info: 1.202338999999938
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: fusionex-advance.com. IN NS
+duration_log get_dns_info: 0.025746600000047692
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/fusionex-advance.com_20230508_144523.391.json
+duration_log get_cert_info: 9.262554500000078
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.8041845000000194
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for fusionex-advance.com, time taken 19.098765500000127 seconds
+
+
+current domain in process_parent:sg-app.top
+===== to_skip function start =====
+sg-app.top has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: sg-app.top now: 2023-05-08 14:45:33.505440
+duration_log vt_call: 0.94366140000011
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 7.1741976000000705
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.1484891999998581
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/sg-app.top_20230508_144541.823.txt
+duration_log get_whois_info: 0.5807188000001133
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: sg-app.top. IN NS
+duration_log get_dns_info: 0.01722380000001067
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/sg-app.top_20230508_144542.407.json
+duration_log get_cert_info: 12.319762800000035
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7587005999998837
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for sg-app.top, time taken 22.016685399999915 seconds
+
+
+current domain in process_parent:kyanon-aim.com
+===== to_skip function start =====
+kyanon-aim.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: kyanon-aim.com now: 2023-05-08 14:45:55.532197
+duration_log vt_call: 0.8871069999997871
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 6.573489500000051
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.12804040000014538
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/kyanon-aim.com_20230508_144603.157.txt
+duration_log get_whois_info: 1.1571920999999747
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: kyanon-aim.com. IN NS
+duration_log get_dns_info: 0.022349099999928512
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/kyanon-aim.com_20230508_144604.334.json
+duration_log get_cert_info: 4.344539700000041
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7891807000000881
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for kyanon-aim.com, time taken 15.01424750000001 seconds
+
+
+current domain in process_parent:qqcjqxz1023.xyz
+===== to_skip function start =====
+qqcjqxz1023.xyz has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: qqcjqxz1023.xyz now: 2023-05-08 14:46:10.588669
+duration_log vt_call: 0.9644161000001077
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 6.666310700000167
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.18293130000006386
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/qqcjqxz1023.xyz_20230508_144618.447.txt
+duration_log get_whois_info: 1.5141317000000072
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: qqcjqxz1023.xyz. IN NS
+duration_log get_dns_info: 0.02385479999998097
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/qqcjqxz1023.xyz_20230508_144619.982.json
+duration_log get_cert_info: 53.615517599999976
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.8233940000000075
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for qqcjqxz1023.xyz, time taken 63.86968270000011 seconds
+
+
+current domain in process_parent:reservation75386.cloud
+===== to_skip function start =====
+reservation75386.cloud has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: reservation75386.cloud now: 2023-05-08 14:47:14.472817
+duration_log vt_call: 1.338644499999873
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 6.364231800000198
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.11625350000008439
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/reservation75386.cloud_20230508_144722.327.txt
+duration_log get_whois_info: 0.9440933999999288
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: reservation75386.cloud. IN NS
+duration_log get_dns_info: 0.09104299999989962
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 0.8031034999999065
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7556445000000167
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for reservation75386.cloud, time taken 15.016215600000123 seconds
+
+
+current domain in process_parent:coinupty.co
+===== to_skip function start =====
+coinupty.co has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: coinupty.co now: 2023-05-08 14:47:29.535324
+duration_log vt_call: 1.1346720999999889
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 6.861324599999989
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.12650809999990997
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/coinupty.co_20230508_144737.692.txt
+duration_log get_whois_info: 0.9917077000000063
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: coinupty.co. IN NS
+duration_log get_dns_info: 0.024605800000017553
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/coinupty.co_20230508_144738.742.json
+duration_log get_cert_info: 3.503866799999969
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/coinupty.co_20230508_144742.219.txt
+duration_log get_archived_page_info: 0.7250830999998925
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for coinupty.co, time taken 15.003339399999959 seconds
+
+
+current domain in process_parent:rplg.work
+===== to_skip function start =====
+rplg.work has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: rplg.work now: 2023-05-08 14:47:44.578590
+duration_log vt_call: 0.8954941000001782
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 6.86806619999993
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.1628485000001092
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/rplg.work_20230508_144752.546.txt
+duration_log get_whois_info: 0.027535700000044017
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: rplg.work. IN NS
+duration_log get_dns_info: 0.025356099999953585
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/rplg.work_20230508_144752.610.json
+duration_log get_cert_info: 0.8157125999998698
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7831538999998884
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for rplg.work, time taken 15.00230979999992 seconds
+
+
+current domain in process_parent:sdkjggjnvsltujks.com
+===== to_skip function start =====
+sdkjggjnvsltujks.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: sdkjggjnvsltujks.com now: 2023-05-08 14:47:59.621569
+duration_log vt_call: 0.9933553000000757
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 6.668505100000175
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.5290952999998808
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/sdkjggjnvsltujks.com_20230508_144807.863.txt
+duration_log get_whois_info: 1.2891960000001745
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: sdkjggjnvsltujks.com. IN NS
+duration_log get_dns_info: 0.023885700000164434
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 10.544261600000027
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 8.174367600000096
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for sdkjggjnvsltujks.com, time taken 28.30250500000011 seconds
+
+
+current domain in process_parent:kryst-aim.com
+===== to_skip function start =====
+kryst-aim.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: kryst-aim.com now: 2023-05-08 14:48:27.949512
+duration_log vt_call: 1.2355352999998104
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 6.649983700000121
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.12861720000000787
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/kryst-aim.com_20230508_144836.018.txt
+duration_log get_whois_info: 0.8148206000000755
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: kryst-aim.com. IN NS
+duration_log get_dns_info: 0.0265254000000823
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/kryst-aim.com_20230508_144836.855.json
+duration_log get_cert_info: 1.1268932999998924
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 7.776505499999985
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for kryst-aim.com, time taken 17.844332800000075 seconds
+
+
+current domain in process_parent:dbso.me
+===== to_skip function start =====
+dbso.me has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: dbso.me now: 2023-05-08 14:48:45.808695
+duration_log vt_call: 1.2510244999998577
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 6.692128700000012
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.16645309999989877
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/dbso.me_20230508_144853.957.txt
+duration_log get_whois_info: 0.54052519999982
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: dbso.me. IN NS
+duration_log get_dns_info: 0.018721099999993385
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/dbso.me_20230508_144854.519.json
+duration_log get_cert_info: 4.83260509999991
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7342863000001216
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for dbso.me, time taken 15.017210199999909 seconds
+
+
+current domain in process_parent:very-glassbox.com
+===== to_skip function start =====
+very-glassbox.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: very-glassbox.com now: 2023-05-08 14:49:00.850886
+duration_log vt_call: 0.8934267999998156
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 6.444184299999961
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.13700600000015584
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/very-glassbox.com_20230508_144908.368.txt
+duration_log get_whois_info: 1.3062158000000181
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: very-glassbox.com. IN NS
+duration_log get_dns_info: 0.02528699999993478
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/very-glassbox.com_20230508_144909.705.json
+duration_log get_cert_info: 17.267924600000015
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.9596524000000954
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for very-glassbox.com, time taken 27.11448029999997 seconds
+
+
+current domain in process_parent:fy31bb2388.xyz
+===== to_skip function start =====
+fy31bb2388.xyz has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: fy31bb2388.xyz now: 2023-05-08 14:49:27.985884
+duration_log vt_call: 0.9040589999999611
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 6.370657500000107
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 1.1547230999999556
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/fy31bb2388.xyz_20230508_144936.452.txt
+duration_log get_whois_info: 0.87760389999994
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: fy31bb2388.xyz. IN NS
+duration_log get_dns_info: 0.02477550000003248
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 2.0978554999999233
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.9085747999999967
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for fy31bb2388.xyz, time taken 15.009007399999973 seconds
+
+
+current domain in process_parent:ocdigitalnetwork-tiffany.com
+===== to_skip function start =====
+ocdigitalnetwork-tiffany.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: ocdigitalnetwork-tiffany.com now: 2023-05-08 14:49:43.035825
+duration_log vt_call: 0.9138379999999415
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 6.4887988000000405
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.34905430000003435
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/ocdigitalnetwork-tiffany.com_20230508_144950.828.txt
+duration_log get_whois_info: 1.0093511000000035
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: ocdigitalnetwork-tiffany.com. IN NS
+duration_log get_dns_info: 0.024935099999993326
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/ocdigitalnetwork-tiffany.com_20230508_144951.865.json
+duration_log get_cert_info: 11.141971700000113
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7825354999999945
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for ocdigitalnetwork-tiffany.com, time taken 20.77918869999985 seconds
+
+
+current domain in process_parent:paidlahone.top
+===== to_skip function start =====
+paidlahone.top has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: paidlahone.top now: 2023-05-08 14:50:03.830604
+duration_log vt_call: 1.2212173000000348
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 6.8307614000000285
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.15896799999995892
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_domain_whois_info()  exception triggered: 'charmap' codec can't encode character '\uff0c' in position 3920: character maps to <undefined>
+duration_log get_whois_info: 1.0380574000000706
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: paidlahone.top. IN NS
+duration_log get_dns_info: 0.022173699999939345
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 0.7756376000002092
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.803882799999883
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for paidlahone.top, time taken 15.01222000000007 seconds
+
+
+current domain in process_parent:internet-ib-baking.com
+===== to_skip function start =====
+internet-ib-baking.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: internet-ib-baking.com now: 2023-05-08 14:50:18.883589
+duration_log vt_call: 0.924342999999908
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 6.578750000000127
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.16428210000003673
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/internet-ib-baking.com_20230508_145026.591.txt
+duration_log get_whois_info: 1.984055200000057
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: internet-ib-baking.com. IN NS
+duration_log get_dns_info: 0.02836099999990438
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/internet-ib-baking.com_20230508_145028.603.json
+duration_log get_cert_info: 7.555586299999959
+===== get_cert_info function end =====

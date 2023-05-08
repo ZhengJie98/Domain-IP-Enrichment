@@ -1,0 +1,40 @@
+current domain in process_parent:notchstudio-aim.com
+===== to_skip function start =====
+notchstudio-aim.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: notchstudio-aim.com now: 2023-05-08 11:16:49.949796
+duration_log vt_call: 1.9770278000000001
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 7.085611400000001
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 35
+duration_log grab_html_js: 0.15866819999999748
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/notchstudio-aim.com_20230508_111659.201.txt
+duration_log get_whois_info: 0.5749274
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: notchstudio-aim.com. IN NS
+duration_log get_dns_info: 0.03535039999999867
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/notchstudio-aim.com_20230508_111659.853.json
+duration_log get_cert_info: 4.8975276
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.9228802000000016
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for notchstudio-aim.com, time taken 15.7110349 seconds
+
+

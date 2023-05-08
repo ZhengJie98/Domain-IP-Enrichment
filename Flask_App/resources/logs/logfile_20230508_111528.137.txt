@@ -1,0 +1,41 @@
+current domain in process_parent:notchstudio-aim.com
+===== to_skip function start =====
+notchstudio-aim.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: notchstudio-aim.com now: 2023-05-08 11:15:28.174390
+duration_log vt_call: 0.9364792000000008
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 15.158713700000003
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 35
+duration_log grab_html_js: 0.1775711999999956
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/notchstudio-aim.com_20230508_111544.521.txt
+duration_log get_whois_info: 0.6506217999999961
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: notchstudio-aim.com. IN NS
+duration_log get_dns_info: 0.042331900000000644
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/notchstudio-aim.com_20230508_111545.210.json
+get_cert_info()  exception triggered: local variable 'data' referenced before assignment
+duration_log get_cert_info: 4.4461873999999995
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 1.0759805
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for notchstudio-aim.com, time taken 22.592304 seconds
+
+
