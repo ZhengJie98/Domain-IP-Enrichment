@@ -1,0 +1,92 @@
+current domain in process_parent:www.amazon.com
+===== to_skip function start =====
+www.amazon.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: www.amazon.com now: 2023-05-10 17:30:27.011535
+duration_log vt_call: 1.3867285999999979
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 30.93084019999999
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 0
+starting html request.get
+total js_files_links: []
+duration_log grab_html_js: 1.369592400000002
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/www.amazon.com_20230510_173100.761.txt
+duration_log get_whois_info: 0.6102173000000022
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/www.amazon.com_gethostbyname_ex_20230510_173101.375.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: www.amazon.com. IN NS
+duration_log get_dns_info: 0.058908599999995204
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 1.3905933000000061
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/www.amazon.com_20230510_173102.848.txt
+duration_log get_archived_page_info: 0.6785079999999937
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for www.amazon.com, time taken 36.565122499999994 seconds
+
+
+current domain in process_parent:www.facebook.com
+===== to_skip function start =====
+www.facebook.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: www.facebook.com now: 2023-05-10 17:31:03.606264
+duration_log vt_call: 1.6681173999999999
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 11.834418200000002
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+web_url: http://www.facebook.com
+url: https://static.xx.fbcdn.net/rsrc.php/v3/yp/r/_baNOCp1jbU.js?_nc_x=Ij3Wp8lg5Kz
+total js_files_links: ['https://static.xx.fbcdn.net/rsrc.php/v3/yp/r/_baNOCp1jbU.js?_nc_x=Ij3Wp8lg5Kz']
+starting get for each_js_link: https://static.xx.fbcdn.net/rsrc.php/v3/yp/r/_baNOCp1jbU.js?_nc_x=Ij3Wp8lg5Kz
+current protocol: https
+returncode: 0
+starting html request.get
+web_url: https://www.facebook.com
+url: https://static.xx.fbcdn.net/rsrc.php/v3/yp/r/_baNOCp1jbU.js?_nc_x=Ij3Wp8lg5Kz
+total js_files_links: ['https://static.xx.fbcdn.net/rsrc.php/v3/yp/r/_baNOCp1jbU.js?_nc_x=Ij3Wp8lg5Kz']
+starting get for each_js_link: https://static.xx.fbcdn.net/rsrc.php/v3/yp/r/_baNOCp1jbU.js?_nc_x=Ij3Wp8lg5Kz
+duration_log grab_html_js: 1.945390400000008
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/www.facebook.com_20230510_173119.106.txt
+duration_log get_whois_info: 0.7141628000000111
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/www.facebook.com_gethostbyname_ex_20230510_173119.820.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: www.facebook.com. IN NS
+duration_log get_dns_info: 0.037767799999997465
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/www.facebook.com_20230510_173119.862.json
+duration_log get_cert_info: 10.303010400000005
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/www.facebook.com_20230510_173130.172.txt
+duration_log get_archived_page_info: 0.891315800000001
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for www.facebook.com, time taken 27.508388800000006 seconds
+
+

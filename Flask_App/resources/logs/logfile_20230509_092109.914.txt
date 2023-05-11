@@ -1,0 +1,188 @@
+current domain in process_parent:mabangerm.cc
+===== to_skip function start =====
+mabangerm.cc has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: mabangerm.cc now: 2023-05-09 09:21:09.958084
+duration_log vt_call: 1.2467545999999992
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 20.071300499999996
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.1663142000000022
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/mabangerm.cc_20230509_092131.466.txt
+duration_log get_whois_info: 0.9253388999999999
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: mabangerm.cc. IN NS
+duration_log get_dns_info: 0.020808999999999855
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 1.0060325999999975
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 1.3713923999999977
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for mabangerm.cc, time taken 24.8580132 seconds
+
+
+current domain in process_parent:uk-steelkiwi.net
+===== to_skip function start =====
+uk-steelkiwi.net has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: uk-steelkiwi.net now: 2023-05-09 09:21:34.841511
+duration_log vt_call: 0.9501157000000049
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 6.737793199999999
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.1372213000000002
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/uk-steelkiwi.net_20230509_092142.699.txt
+duration_log get_whois_info: 1.1440089000000029
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: uk-steelkiwi.net. IN NS
+duration_log get_dns_info: 0.01784229999999809
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/uk-steelkiwi.net_20230509_092143.856.json
+duration_log get_cert_info: 2.6480351000000013
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7646599999999992
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for uk-steelkiwi.net, time taken 15.015801100000004 seconds
+
+
+current domain in process_parent:uk-wakeapp.net
+===== to_skip function start =====
+uk-wakeapp.net has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: uk-wakeapp.net now: 2023-05-09 09:21:49.887953
+duration_log vt_call: 1.2335987999999958
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 6.672264700000007
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.15410499999998706
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_domain_whois_info()  exception triggered: 'charmap' codec can't encode character '\u94dc' in position 3599: character maps to <undefined>
+duration_log get_whois_info: 0.8051006000000029
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: uk-wakeapp.net. IN NS
+duration_log get_dns_info: 0.020373899999995615
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/uk-wakeapp.net_20230509_092158.806.json
+duration_log get_cert_info: 0.8436461999999949
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7040879999999987
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for uk-wakeapp.net, time taken 15.012762200000004 seconds
+
+
+current domain in process_parent:asda-boost.com
+===== to_skip function start =====
+asda-boost.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: asda-boost.com now: 2023-05-09 09:22:04.927017
+duration_log vt_call: 0.8873668000000094
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 7.925922700000001
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.2008672000000047
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/asda-boost.com_20230509_092213.978.txt
+duration_log get_whois_info: 1.1329409000000084
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: asda-boost.com. IN NS
+duration_log get_dns_info: 0.020931000000004474
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/asda-boost.com_20230509_092215.133.json
+duration_log get_cert_info: 6.998322400000006
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 2.442781400000001
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for asda-boost.com, time taken 19.682339799999994 seconds
+
+
+current domain in process_parent:au-netsells.com
+===== to_skip function start =====
+au-netsells.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: au-netsells.com now: 2023-05-09 09:22:24.646142
+duration_log vt_call: 0.9978454999999968
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 6.927374700000001
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.5143020000000007
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/au-netsells.com_20230509_092233.129.txt
+duration_log get_whois_info: 1.015160999999992
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+get_dns_info exception triggered: The DNS response does not contain an answer to the question: au-netsells.com. IN NS
+duration_log get_dns_info: 0.018101500000000215
+===== get_dns_info function end =====

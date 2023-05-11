@@ -1,0 +1,91 @@
+current domain in process_parent:www.cloudfare.com
+===== to_skip function start =====
+www.cloudfare.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: www.cloudfare.com now: 2023-05-10 14:31:39.617414
+duration_log vt_call: 1.7474206999999993
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 27.1571562
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+web_url: http://www.cloudfare.com
+url: https://www.googleoptimize.com/optimize.js?id=GTM-N4JSZJ8
+web_url: http://www.cloudfare.com
+url: https://www.cloudflare.com/vendor/onetrust/scripttemplates/otSDKStub.js
+web_url: http://www.cloudfare.com
+url: https://performance.radar.cloudflare.com/beacon.js
+web_url: http://www.cloudfare.com
+url: /polyfill-3a1d2e8e00fc5944e375.js
+web_url: http://www.cloudfare.com
+url: /app-4aadcbeb69a04748c1c3.js
+web_url: http://www.cloudfare.com
+url: /framework-ebc4889893a1cb16a41c.js
+web_url: http://www.cloudfare.com
+url: /webpack-runtime-ce3a2d86c2325bd75f16.js
+web_url: http://www.cloudfare.com
+url: https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816
+total js_files_links: ['https://www.googleoptimize.com/optimize.js?id=GTM-N4JSZJ8', 'https://www.cloudflare.com/vendor/onetrust/scripttemplates/otSDKStub.js', 'https://performance.radar.cloudflare.com/beacon.js', 'http://www.cloudfare.com/polyfill-3a1d2e8e00fc5944e375.js', 'http://www.cloudfare.com/app-4aadcbeb69a04748c1c3.js', 'http://www.cloudfare.com/framework-ebc4889893a1cb16a41c.js', 'http://www.cloudfare.com/webpack-runtime-ce3a2d86c2325bd75f16.js', 'https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816']
+starting get for each_js_link: https://www.googleoptimize.com/optimize.js?id=GTM-N4JSZJ8
+starting get for each_js_link: https://www.cloudflare.com/vendor/onetrust/scripttemplates/otSDKStub.js
+starting get for each_js_link: https://performance.radar.cloudflare.com/beacon.js
+starting get for each_js_link: http://www.cloudfare.com/polyfill-3a1d2e8e00fc5944e375.js
+starting get for each_js_link: http://www.cloudfare.com/app-4aadcbeb69a04748c1c3.js
+starting get for each_js_link: http://www.cloudfare.com/framework-ebc4889893a1cb16a41c.js
+starting get for each_js_link: http://www.cloudfare.com/webpack-runtime-ce3a2d86c2325bd75f16.js
+starting get for each_js_link: https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816
+current protocol: https
+returncode: 0
+starting html request.get
+web_url: https://www.cloudfare.com
+url: https://www.googleoptimize.com/optimize.js?id=GTM-N4JSZJ8
+web_url: https://www.cloudfare.com
+url: https://www.cloudflare.com/vendor/onetrust/scripttemplates/otSDKStub.js
+web_url: https://www.cloudfare.com
+url: https://performance.radar.cloudflare.com/beacon.js
+web_url: https://www.cloudfare.com
+url: /polyfill-3a1d2e8e00fc5944e375.js
+web_url: https://www.cloudfare.com
+url: /app-4aadcbeb69a04748c1c3.js
+web_url: https://www.cloudfare.com
+url: /framework-ebc4889893a1cb16a41c.js
+web_url: https://www.cloudfare.com
+url: /webpack-runtime-ce3a2d86c2325bd75f16.js
+web_url: https://www.cloudfare.com
+url: https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816
+total js_files_links: ['https://www.googleoptimize.com/optimize.js?id=GTM-N4JSZJ8', 'https://www.cloudflare.com/vendor/onetrust/scripttemplates/otSDKStub.js', 'https://performance.radar.cloudflare.com/beacon.js', 'https://www.cloudfare.com/polyfill-3a1d2e8e00fc5944e375.js', 'https://www.cloudfare.com/app-4aadcbeb69a04748c1c3.js', 'https://www.cloudfare.com/framework-ebc4889893a1cb16a41c.js', 'https://www.cloudfare.com/webpack-runtime-ce3a2d86c2325bd75f16.js', 'https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816']
+starting get for each_js_link: https://www.googleoptimize.com/optimize.js?id=GTM-N4JSZJ8
+starting get for each_js_link: https://www.cloudflare.com/vendor/onetrust/scripttemplates/otSDKStub.js
+starting get for each_js_link: https://performance.radar.cloudflare.com/beacon.js
+starting get for each_js_link: https://www.cloudfare.com/polyfill-3a1d2e8e00fc5944e375.js
+starting get for each_js_link: https://www.cloudfare.com/app-4aadcbeb69a04748c1c3.js
+starting get for each_js_link: https://www.cloudfare.com/framework-ebc4889893a1cb16a41c.js
+starting get for each_js_link: https://www.cloudfare.com/webpack-runtime-ce3a2d86c2325bd75f16.js
+starting get for each_js_link: https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816
+duration_log grab_html_js: 4.563556599999998
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/www.cloudfare.com_20230510_143213.137.txt
+duration_log get_whois_info: 0.12996400000000108
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/www.cloudfare.com_gethostbyname_ex_20230510_143213.269.txt
+nameservers_filepath file written to resources/dns/www.cloudfare.com_nameservers_20230510_143213.269.txt
+duration_log get_dns_info: 0.06293399999999849
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 13.257077099999997
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/www.cloudfare.com_20230510_143226.607.txt
+duration_log get_archived_page_info: 1.6325041999999996
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for www.cloudfare.com, time taken 48.6644389 seconds
+
+

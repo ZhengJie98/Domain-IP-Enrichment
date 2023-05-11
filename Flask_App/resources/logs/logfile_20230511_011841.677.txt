@@ -1,0 +1,234 @@
+current domain in process_parent:imbbk3238g.xyz
+===== to_skip function start =====
+imbbk3238g.xyz has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: imbbk3238g.xyz now: 2023-05-11 01:18:41.724828
+duration_log vt_call: 1.1775368000000022
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 15.173626800000001
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 35
+duration_log grab_html_js: 0.1804011999999986
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/imbbk3238g.xyz_20230511_011858.308.txt
+duration_log get_whois_info: 1.0254878000000005
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/imbbk3238g.xyz_gethostbyname_ex_20230511_011859.335.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: imbbk3238g.xyz. IN NS
+duration_log get_dns_info: 0.05435600000000562
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/imbbk3238g.xyz_20230511_011859.393.json
+duration_log get_cert_info: 34.922167200000004
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7581062000000003
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for imbbk3238g.xyz, time taken 53.401043200000004 seconds
+
+
+current domain in process_parent:imbbk323q.xyz
+===== to_skip function start =====
+imbbk323q.xyz has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: imbbk323q.xyz now: 2023-05-11 01:19:35.182388
+duration_log vt_call: 0.917036699999997
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 7.506353599999997
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 35
+duration_log grab_html_js: 0.15797120000000575
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/imbbk323q.xyz_20230511_011943.815.txt
+duration_log get_whois_info: 0.8186041000000017
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/imbbk323q.xyz_gethostbyname_ex_20230511_011944.636.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: imbbk323q.xyz. IN NS
+duration_log get_dns_info: 0.11344189999999799
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/imbbk323q.xyz_20230511_011944.767.json
+duration_log get_cert_info: 44.804545700000006
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.6765987999999936
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for imbbk323q.xyz, time taken 55.11774319999999 seconds
+
+
+current domain in process_parent:imgg6625p.xyz
+===== to_skip function start =====
+imgg6625p.xyz has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: imgg6625p.xyz now: 2023-05-11 01:20:30.337597
+duration_log vt_call: 0.977397499999995
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 7.625146000000001
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 35
+duration_log grab_html_js: 0.17614209999999275
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/imgg6625p.xyz_20230511_012039.168.txt
+duration_log get_whois_info: 0.872165200000012
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/imgg6625p.xyz_gethostbyname_ex_20230511_012040.040.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: imgg6625p.xyz. IN NS
+duration_log get_dns_info: 0.044079799999991565
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 0.7751925999999969
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 1.1209253000000103
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for imgg6625p.xyz, time taken 15.013263199999983 seconds
+
+
+current domain in process_parent:imgg6679p.xyz
+===== to_skip function start =====
+imgg6679p.xyz has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: imgg6679p.xyz now: 2023-05-11 01:20:45.398710
+duration_log vt_call: 0.9559185000000241
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 7.618586800000003
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 35
+duration_log grab_html_js: 0.16426749999999402
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/imgg6679p.xyz_20230511_012054.188.txt
+duration_log get_whois_info: 0.8641819999999996
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/imgg6679p.xyz_gethostbyname_ex_20230511_012055.052.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: imgg6679p.xyz. IN NS
+duration_log get_dns_info: 0.04942650000000981
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 0.7937003000000118
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.6384194999999977
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for imgg6679p.xyz, time taken 15.013894600000015 seconds
+
+
+current domain in process_parent:lta-sg.shop
+===== to_skip function start =====
+lta-sg.shop has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: lta-sg.shop now: 2023-05-11 01:21:00.462537
+duration_log vt_call: 1.0274576000000195
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 7.545188300000007
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 35
+duration_log grab_html_js: 0.17658579999999802
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/lta-sg.shop_20230511_012109.262.txt
+duration_log get_whois_info: 0.48449029999997606
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/lta-sg.shop_gethostbyname_ex_20230511_012109.753.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: lta-sg.shop. IN NS
+duration_log get_dns_info: 0.04725399999998103
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 0.7774894000000074
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 1.0556856000000039
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for lta-sg.shop, time taken 15.007573000000008 seconds
+
+
+current domain in process_parent:hokaaushoes.com
+===== to_skip function start =====
+hokaaushoes.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: hokaaushoes.com now: 2023-05-11 01:21:15.514740
+duration_log vt_call: 1.2974499999999978
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 8.85690600000001
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 35
+duration_log grab_html_js: 0.21327410000000668
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/hokaaushoes.com_20230511_012125.944.txt
+duration_log get_whois_info: 0.0883269999999925
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/hokaaushoes.com_gethostbyname_ex_20230511_012126.029.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: hokaaushoes.com. IN NS
+duration_log get_dns_info: 0.05273520000000076
+===== get_dns_info function end =====

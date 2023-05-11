@@ -30,6 +30,7 @@ from waybackpy import WaybackMachineCDXServerAPI ## search historical copies of 
 import socket
 import dns.resolver
 import whois # query and response protocol that is often used for querying databases that store registered domain names.
+from urllib.parse import urlparse
 
 
 
@@ -58,8 +59,8 @@ ip_template = {
         "has_html": "",
         "has_javascript": "",
         "files_log" : None, ## Array of sub-docs, [{type:"", file_location:""}, {}...]
-        "duration_log" : None
-        
+        "duration_log" : None,
+        "log_file" : None
     }
 
 domain_template = {
@@ -87,16 +88,18 @@ domain_template = {
         "duration_log" : None, ## {{extracted info}, {file location }}
         # "who_is_info" : {"item_1":"1","item_2":""},
         "whois_info" : None,
-        # "who_is_info" : {},
         "dns_info" : None,
+        # "dns_info" : {'gethostbyname_ex': None, 
+        #               'dns_resolver_query': None },
         "cert_info": None,
-        "archived_page_info" : None
+        "archived_page_info" : None,
+        "log_file" : None
         
     }
 
 
-API_KEY = '0d9fdb6e32d74b9d12e3d894309531838c3aabe8d66b049fd3a7976fbedf2c68'  #@param  {type: "string"}
-# API_KEY = '207349263f9c5edd176cc079fa8000a5ab912df7d9e91154842c08031658675d'  #@param  {type: "string"}
+# API_KEY = '0d9fdb6e32d74b9d12e3d894309531838c3aabe8d66b049fd3a7976fbedf2c68'  #@param  {type: "string"}
+API_KEY = '207349263f9c5edd176cc079fa8000a5ab912df7d9e91154842c08031658675d'  #@param  {type: "string"}   
 
 
 
@@ -107,8 +110,12 @@ client = MongoClient('localhost',27017)
 # db = client['test_list']
 # col = db["ip"]
 db = client['jon_list']
-col = db["domain"]
-    
+# col = db["domain"]
+# col = db["domain_new"]
+# col = db["famous_domains"]
+# col = db["domain_test"]
+col = db["domain_v2"]
+# col = db["domain_url"]
 
 
 
@@ -125,7 +132,11 @@ def save_ipfile(file):
     dt_string = now.strftime("%Y%m%d_%H%M%S.%f")[:-3]    
     filename_splitted = secure_filename(file.filename).split('.csv') 
     filename = filename_splitted[0] + '_' + str(dt_string) + ".csv"
-    df.to_csv(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+    # filepath = os.path.join(app.config['UPLOAD_FOLDER'], filename)
+    filepath = "resources/upload_folder/" + filename
+    if not os.path.exists("resources/upload_folder"):
+            os.makedirs("resources/upload_folder")
+    df.to_csv(filepath)
 
 
     ## FOR DATABASE
@@ -135,7 +146,8 @@ def save_ipfile(file):
     df["x_days_ago"] = X_DAYS_AGO
     df["added_timestamp"] = now
     df["is_priority"] = 0
-    df["source"] = "csv"
+    # df["source"] = "csv"
+    df["source"] = filepath
     records_ = df.to_dict(orient = 'records') 
     # result = db.ip.insert_many(records_ ) 
     result = col.insert_many(records_ ) 
@@ -156,7 +168,11 @@ def save_domainfile(file):
     # filename_splitted = secure_filename(file.filename).split('.csv') 
     filename_splitted = secure_filename(file.filename).split('.csv') 
     filename = filename_splitted[0] + '_' + str(dt_string) + ".csv"
-    df.to_csv(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+    # filepath = os.path.join(app.config['UPLOAD_FOLDER'], filename)
+    filepath = "resources/upload_folder/" + filename
+    if not os.path.exists("resources/upload_folder"):
+            os.makedirs("resources/upload_folder")
+    df.to_csv(filepath)
 
 
     ## FOR DATABASE
@@ -171,7 +187,8 @@ def save_domainfile(file):
     df["x_days_ago"] = X_DAYS_AGO
     df["added_timestamp"] = now
     df["is_priority"] = 0
-    df["source"] = "csv"
+    # df["source"] = "csv"
+    df["source"] = filepath
     records_ = df.to_dict(orient = 'records') 
     # result = db.ip.insert_many(records_ ) 
     result = col.insert_many(records_ ) 
@@ -216,6 +233,19 @@ def process_parent():
                 elif "domain" in doc:
                     is_ip = 0 #if its domain
                     ip_or_domain = str(doc["domain"])
+
+                    # if is_url(ip_or_domain): ## if its url, then add a field
+                    #     print("current URL in process_parent " + ip_or_domain)
+                    #     with open(config.CURR_LOGFILE,'a+') as logfile:
+                    #        logfile.write("current URL in process_parent: " + ip_or_domain + '\n')
+                    #     doc['url'] = ip_or_domain
+                    #     ip_or_domain = retrieve_domain(ip_or_domain)
+                    #     doc['domain'] = ip_or_domain
+                    
+                    # else:
+                    #     print("current domain in process_parent:", ip_or_domain)
+                    #     with open(config.CURR_LOGFILE,'a+') as logfile:
+                    #         logfile.write("current domain in process_parent:" + ip_or_domain + '\n')
                     print("current domain in process_parent:", ip_or_domain)
                     with open(config.CURR_LOGFILE,'a+') as logfile:
                         logfile.write("current domain in process_parent:" + ip_or_domain + '\n')
@@ -261,7 +291,9 @@ def process_parent():
                     updated_doc = get_dns_info(updated_doc)
                     updated_doc = get_cert_info(updated_doc)
                     updated_doc = get_archived_page_info(doc)
-        
+
+                updated_doc['log_file'] = config.CURR_LOGFILE
+
                 try : 
                     col.replace_one({"_id" : db_id}, updated_doc)
                     print("replacement successful")
@@ -549,7 +581,10 @@ def screenshot(doc):
         
         elif "domain" in doc:
             # is_domain = 1 #if its domain
-            ip_or_domain = str(doc["domain"])
+            if "url" in doc: ## If domain is URL 
+                ip_or_domain = str(doc["url"])
+            else:
+                ip_or_domain = str(doc["domain"])
             
         db_id = doc['_id']  
 
@@ -576,7 +611,8 @@ def screenshot(doc):
             if returncode == 0:
                 doc['has_screenshot'] = 1
                 to_append = {"type": protocol + "_screenshot", "stderr": response.stderr, "stdout": response.stdout, "ss_file_location":filepath}
-
+                print(f"screenshot found for protocol: {protocol} and saved to {filepath}")
+                logfile.write(f"screenshot found for protocol: {protocol} and saved to {filepath}")
                 ## proceed to extract js 
 
 
@@ -879,6 +915,8 @@ def get_dns_info(doc):
     
     print("===== get_dns_info function start =====")
     tic = time.perf_counter()
+    doc["dns_info"] = {'gethostbyname_ex': None, 
+                      'dns_resolver_query': None }
 
     with open(config.CURR_LOGFILE,'a+') as logfile:
         logfile.write("===== get_dns_info function start =====\n")
@@ -893,35 +931,57 @@ def get_dns_info(doc):
                             
         try:
             dns_info = socket.gethostbyname_ex(domain) ## e.g. www.amazon.com, 
-            nameservers = dns.resolver.query(domain, 'NS') ## e.g. www.amazon.com
-            nameserver_list = [i.to_text() for i in nameservers]
-
             gethostbyname_ex_filepath = "resources/dns/" + domain + '_' +"gethostbyname_ex" + '_' + dt_string + ".txt"
-            nameservers_filepath = "resources/dns/" + domain + '_' + "nameservers" + '_' + dt_string + ".txt"
 
             with open(gethostbyname_ex_filepath, "w") as outfile:
                 outfile.write(str(dns_info))
-            with open(nameservers_filepath, "w") as outfile:
-                outfile.write(str(nameservers))
-            
 
             print("gethostbyname_ex_filepath file written to {gethostbyname_ex_filepath}".format(gethostbyname_ex_filepath=gethostbyname_ex_filepath))
             logfile.write("gethostbyname_ex_filepath file written to {gethostbyname_ex_filepath}\n".format(gethostbyname_ex_filepath=gethostbyname_ex_filepath))
-            print("nameservers_filepath file written to {nameservers_filepath}".format(nameservers_filepath=nameservers_filepath))
-            logfile.write("nameservers_filepath file written to {nameservers_filepath}\n".format(nameservers_filepath=nameservers_filepath))
+
 
             # return [dns_info[1], dns_info[2], nameserver_list]
-
-            doc['dns_info'] = {'alias': dns_info[1], 'other_ip_address': dns_info[2], 'nameserver_list': nameserver_list, 'gethostbyname_ex_filepath': gethostbyname_ex_filepath, 'nameservers_filepath' :nameservers_filepath }
+            # print("[dns_info[1], dns_info[2], nameserver_list]:", [dns_info[1], dns_info[2], gethostbyname_ex_filepath])
+            # doc['dns_info'] = {'alias': dns_info[1], 'other_ip_address': dns_info[2], 'nameserver_list': nameserver_list, 'gethostbyname_ex_filepath': gethostbyname_ex_filepath, 'nameservers_filepath' :nameservers_filepath }
+            doc['dns_info']['gethostbyname_ex'] =   {'alias': dns_info[1], 
+                                                    'other_ip_address': dns_info[2],
+                                                    'gethostbyname_ex_filepath' : gethostbyname_ex_filepath
+                                                    }
 
             
         except Exception as e:
 
-            print("get_dns_info exception triggered", e)
-      
-            logfile.write("get_dns_info exception triggered: {e}\n".format(e=e))
+            print("socket.gethostbyname_ex() exception triggered", e)
+            logfile.write("socket.gethostbyname_ex() exception triggered: {e}\n".format(e=e))
 
             # return ['', '', '', '', '']
+
+        try: 
+            nameservers = dns.resolver.query(domain, 'NS') ## e.g. www.amazon.com
+            nameserver_list = [i.to_text() for i in nameservers]
+            nameservers_filepath = "resources/dns/" + domain + '_' + "nameservers" + '_' + dt_string + ".txt"
+
+            with open(nameservers_filepath, "w") as outfile:
+                outfile.write(str(nameservers))
+            
+            # 'nameserver_list': nameserver_list, 'gethostbyname_ex_filepath': gethostbyname_ex_filepath, 'nameservers_filepath' :nameservers_filepath }
+
+            # doc['dns_info']['nameserver_list'] = nameserver_list
+            # doc['dns_info']['gethostbyname_ex_filepath'] = gethostbyname_ex_filepath
+            # doc['dns_info']['nameservers_filepath']: nameservers_filepath
+            doc['dns_info']['dns_resolver_query'] = {'nameserver_list': nameserver_list,
+                                                    'nameservers_filepath': nameservers_filepath
+                                                    }
+
+            print("nameservers_filepath file written to {nameservers_filepath}".format(nameservers_filepath=nameservers_filepath))
+            logfile.write("nameservers_filepath file written to {nameservers_filepath}\n".format(nameservers_filepath=nameservers_filepath))
+
+        except Exception as e: 
+            
+            print("dns.resolver.query() exception triggered", e)
+            logfile.write("dns.resolver.query() exception triggered: {e}\n".format(e=e))
+
+
         toc = time.perf_counter()
         doc['duration_log']['get_dns_info'] = toc-tic
         logfile.write("duration_log get_dns_info: {time}\n".format(time=toc-tic))
@@ -1006,16 +1066,29 @@ def get_cert_info(doc):
                 if (NumOfAltNamesInside > AltName_count_max):
                     AltName_count_max = NumOfAltNamesInside
 
-            SubjectCN_set = dict.fromkeys(SubjectCN_set,0)
-            Issuer_set= dict.fromkeys(Issuer_set,0)
-            SerialNo_set= dict.fromkeys(SerialNo_set,0)
-            AltName_set= dict.fromkeys(AltName_set,0)
+            # SubjectCN_set = dict.fromkeys(SubjectCN_set,0)
+            # Issuer_set= dict.fromkeys(Issuer_set,0)
+            # SerialNo_set= dict.fromkeys(SerialNo_set,0)
+            # AltName_set= dict.fromkeys(AltName_set,0)
             # Closing file
             # f.close()
 
 
-            doc['cert_info'] = {'common_name': cert_json[0]['common_name'], 'name_value': cert_json[0]['name_value'], 'issuer_name': cert_json[0]['issuer_name'], 'not_before':cert_json[0]['not_before'], "cert_json[len(cert_json)-1]['not_before']":cert_json[len(cert_json)-1]['not_before'], 'length_cert_json': len(cert_json),'cert_file_location': filepath, 
-                                "len(SubjectCN_set":len(SubjectCN_set), "SubjectCN_set":SubjectCN_set, "len(Issuer_set)":len(Issuer_set), "Issuer_set":Issuer_set, "len(AltName_set)":len(AltName_set), "AltName_count_min":AltName_count_min, "AltName_count_max":AltName_count_max}
+            doc['cert_info'] = {'common_name': cert_json[0]['common_name'], 
+                                'name_value': cert_json[0]['name_value'], 
+                                'issuer_name': cert_json[0]['issuer_name'], 
+                                'not_before':cert_json[0]['not_before'], 
+                                "latest_cert":cert_json[len(cert_json)-1]['not_before'], 
+                                'length_cert_json': len(cert_json),
+                                'cert_file_location': filepath, 
+
+                                "len(SubjectCN_set)":len(SubjectCN_set), 
+                                "SubjectCN_set":list(SubjectCN_set), 
+                                "len(Issuer_set)":len(Issuer_set),
+                                "Issuer_set":list(Issuer_set), 
+                                "len(AltName_set)":len(AltName_set), 
+                                "AltName_count_min":AltName_count_min, 
+                                "AltName_count_max":AltName_count_max}
             
             # return [len(SubjectCN_set), SubjectCN_set, len(Issuer_set), Issuer_set, len(AltName_set), AltName_count_min, AltName_count_max]
             # return [cert_json[0]['common_name'], cert_json[0]['name_value'], cert_json[0]['issuer_name'], cert_json[0]['not_before'], cert_json[len(cert_json)-1]['not_before'], len(cert_json)]
@@ -1038,10 +1111,7 @@ def get_cert_info(doc):
         return doc
     
 def get_archived_page_info(doc):
-    #dasdsad
-    ## "info1" : ...
-    ## "info2" : ...
-    # "file_location" : ...
+
 
     print("===== get_archived_page_info function start =====")
     tic = time.perf_counter()
@@ -1062,10 +1132,12 @@ def get_archived_page_info(doc):
             cdx_api = WaybackMachineCDXServerAPI(domain, user_agent)
             newest = cdx_api.newest()
 
-            filepath = "resources/archived_page/" + domain + '_' + dt_string + ".txt"
+            filepath = "resources/archived_page/" + domain + '_' + dt_string + ".json"
             with open(filepath, "w") as outfile:
-                for i in vars(newest).values():
-                    outfile.write(str(i))
+                # for i in vars(newest).values():
+                outfile.write(json.dumps(newest.__dict__, indent=4, sort_keys=True, default=str))
+                # for i in vars(newest):
+                #     outfile.write(str(i))
 
             print("get_archived_page_info file written to {filepath}".format(filepath=filepath))
             logfile.write("get_archived_page_info file written to {filepath}\n".format(filepath=filepath))
@@ -1091,8 +1163,20 @@ def get_archived_page_info(doc):
         print("===== get_archived_page_info function end =====")
             
         return doc
-    return
 
+def is_url(domain_or_url):
+    result = True
+    o = urlparse(domain_or_url)
+    # print(o)
+    domain = o.path
+    if (domain == domain_or_url):
+        result = False        
+    return result
+
+def retrieve_domain(domain_or_url):
+    o = urlparse(domain_or_url)
+    domain = o.path
+    return domain
 
 def process_ip_parent_without_vtcall():
 

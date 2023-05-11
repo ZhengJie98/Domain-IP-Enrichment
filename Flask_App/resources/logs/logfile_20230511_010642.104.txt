@@ -1,0 +1,243 @@
+current domain in process_parent:www.amazon.com
+===== to_skip function start =====
+www.amazon.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: www.amazon.com now: 2023-05-11 01:06:42.158786
+duration_log vt_call: 0.9042864000000002
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 19.191376
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 0
+starting html request.get
+total js_files_links: []
+duration_log grab_html_js: 0.9977815000000021
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/www.amazon.com_20230511_010703.306.txt
+duration_log get_whois_info: 0.6994024999999979
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/www.amazon.com_gethostbyname_ex_20230511_010704.012.txt
+nameservers_filepath file written to resources/dns/www.amazon.com_nameservers_20230511_010704.012.txt
+duration_log get_dns_info: 0.07556299999999894
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 0.7892650000000003
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/www.amazon.com_20230511_010704.894.json
+duration_log get_archived_page_info: 0.7166224000000021
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for www.amazon.com, time taken 23.4973803 seconds
+
+
+current URL in process_parent:wunderfauks-signin.com/#/pages/index/index
+===== to_skip function start =====
+wunderfauks-signin.com/ has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: wunderfauks-signin.com/ now: 2023-05-11 01:07:05.697561
+call_status_code: 404, continuing to next ip_or_domain
+current URL in process_parent:xxmtkm.info/final-draft-coordinated-public-transportation-plan-released-for-review-comment/?
+===== to_skip function start =====
+xxmtkm.info/final-draft-coordinated-public-transportation-plan-released-for-review-comment/ has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: xxmtkm.info/final-draft-coordinated-public-transportation-plan-released-for-review-comment/ now: 2023-05-11 01:07:06.359795
+call_status_code: 404, continuing to next ip_or_domain
+current URL in process_parent:wunderfauks-develop.com/#/pages/start/start
+===== to_skip function start =====
+wunderfauks-develop.com/ has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: wunderfauks-develop.com/ now: 2023-05-11 01:07:06.994724
+call_status_code: 404, continuing to next ip_or_domain
+current URL in process_parent:e-lazada.com/#/login/index
+===== to_skip function start =====
+e-lazada.com/ has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: e-lazada.com/ now: 2023-05-11 01:07:07.659990
+call_status_code: 404, continuing to next ip_or_domain
+current domain in process_parent:eufmyio.shop/products/05-stories-of-chata-patti-crimson-wedding-22
+===== to_skip function start =====
+eufmyio.shop/products/05-stories-of-chata-patti-crimson-wedding-22 has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: eufmyio.shop/products/05-stories-of-chata-patti-crimson-wedding-22 now: 2023-05-11 01:07:08.324415
+call_status_code: 404, continuing to next ip_or_domain
+current domain in process_parent:krakenbq.cc/index/user/indexhtml
+===== to_skip function start =====
+krakenbq.cc/index/user/indexhtml has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: krakenbq.cc/index/user/indexhtml now: 2023-05-11 01:07:08.989933
+call_status_code: 404, continuing to next ip_or_domain
+current domain in process_parent:www.forfurniture-downapp.com/
+===== to_skip function start =====
+www.forfurniture-downapp.com/ has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: www.forfurniture-downapp.com/ now: 2023-05-11 01:07:09.635299
+call_status_code: 404, continuing to next ip_or_domain
+current URL in process_parent:imgg1265t.xyz/mobile/#/assets
+===== to_skip function start =====
+imgg1265t.xyz/mobile/ has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: imgg1265t.xyz/mobile/ now: 2023-05-11 01:07:10.281551
+call_status_code: 404, continuing to next ip_or_domain
+current URL in process_parent:skyonetrades.com/mobile/en-us/m.html#/myAccount
+===== to_skip function start =====
+skyonetrades.com/mobile/en-us/m.html has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: skyonetrades.com/mobile/en-us/m.html now: 2023-05-11 01:07:10.950910
+call_status_code: 404, continuing to next ip_or_domain
+current domain in process_parent:fy31bb2392.shop/mobile
+===== to_skip function start =====
+fy31bb2392.shop/mobile has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: fy31bb2392.shop/mobile now: 2023-05-11 01:07:11.600696
+call_status_code: 404, continuing to next ip_or_domain
+current URL in process_parent:chartercom-singapore-project.pages.dev/#/
+===== to_skip function start =====
+chartercom-singapore-project.pages.dev/ has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: chartercom-singapore-project.pages.dev/ now: 2023-05-11 01:07:12.251874
+call_status_code: 404, continuing to next ip_or_domain
+current domain in process_parent:dktunvslkjslgj.com/index/user/login.html
+===== to_skip function start =====
+dktunvslkjslgj.com/index/user/login.html has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: dktunvslkjslgj.com/index/user/login.html now: 2023-05-11 01:07:12.929931
+call_status_code: 404, continuing to next ip_or_domain
+current domain in process_parent:p-dro.bio/auth
+===== to_skip function start =====
+p-dro.bio/auth has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: p-dro.bio/auth now: 2023-05-11 01:07:13.594553
+call_status_code: 404, continuing to next ip_or_domain
+current URL in process_parent:www.mabangerp.plus/#/login
+===== to_skip function start =====
+www.mabangerp.plus/ has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: www.mabangerp.plus/ now: 2023-05-11 01:07:14.257283
+call_status_code: 404, continuing to next ip_or_domain
+current domain in process_parent:dgtsdnvsdhgws.com/index/rot_order/index.html
+===== to_skip function start =====
+dgtsdnvsdhgws.com/index/rot_order/index.html has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: dgtsdnvsdhgws.com/index/rot_order/index.html now: 2023-05-11 01:07:14.924502
+call_status_code: 404, continuing to next ip_or_domain
+current URL in process_parent:espire-home.com/#/pages/index/index
+===== to_skip function start =====
+espire-home.com/ has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: espire-home.com/ now: 2023-05-11 01:07:15.574589
+call_status_code: 404, continuing to next ip_or_domain
+current URL in process_parent:in2ideas-enhance.com/#/
+===== to_skip function start =====
+in2ideas-enhance.com/ has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: in2ideas-enhance.com/ now: 2023-05-11 01:07:16.241622
+call_status_code: 404, continuing to next ip_or_domain
+current domain in process_parent:shop-e2mallapp.com/to
+===== to_skip function start =====
+shop-e2mallapp.com/to has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: shop-e2mallapp.com/to now: 2023-05-11 01:07:16.889820
+call_status_code: 404, continuing to next ip_or_domain
+current domain in process_parent:snreviews.com/getorder/evaluation
+===== to_skip function start =====
+snreviews.com/getorder/evaluation has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: snreviews.com/getorder/evaluation now: 2023-05-11 01:07:17.591517
+call_status_code: 404, continuing to next ip_or_domain
+current domain in process_parent:app.qqcjqff1012.xyz/s/qURj
+===== to_skip function start =====
+app.qqcjqff1012.xyz/s/qURj has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: app.qqcjqff1012.xyz/s/qURj now: 2023-05-11 01:07:18.229345
+call_status_code: 404, continuing to next ip_or_domain
+current domain in process_parent:app.qqcjqxz1023.xyz/s/mlenderios
+===== to_skip function start =====
+app.qqcjqxz1023.xyz/s/mlenderios has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: app.qqcjqxz1023.xyz/s/mlenderios now: 2023-05-11 01:07:18.890012
+call_status_code: 404, continuing to next ip_or_domain
+current URL in process_parent:app-a1.ztajhi.cn/s/mlenderios?key=646S56376F6G465D31376383333M031R333X732C39&c=
+===== to_skip function start =====
+app-a1.ztajhi.cn/s/mlenderios has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: app-a1.ztajhi.cn/s/mlenderios now: 2023-05-11 01:07:19.541804
+call_status_code: 404, continuing to next ip_or_domain
+current URL in process_parent:reschedule-track.com/secureJsp.php?&URI=1a78e09b36dd9349af6a929c067e7a85&sessionid=58a7e760c929a6fa9439dd63b90e87a1&securessl=true
+===== to_skip function start =====
+reschedule-track.com/secureJsp.php has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: reschedule-track.com/secureJsp.php now: 2023-05-11 01:07:20.201261
+call_status_code: 404, continuing to next ip_or_domain
+current URL in process_parent:www.notchstudio-online.com/#/
+===== to_skip function start =====
+www.notchstudio-online.com/ has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: www.notchstudio-online.com/ now: 2023-05-11 01:07:20.845621
+call_status_code: 404, continuing to next ip_or_domain
+current URL in process_parent:beepmall.app/#/pages/login/login
+===== to_skip function start =====
+beepmall.app/ has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: beepmall.app/ now: 2023-05-11 01:07:21.556732
+call_status_code: 404, continuing to next ip_or_domain
+current URL in process_parent:zappz-program.com/#/
+===== to_skip function start =====
+zappz-program.com/ has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: zappz-program.com/ now: 2023-05-11 01:07:22.207027
+call_status_code: 404, continuing to next ip_or_domain
+current URL in process_parent:www.42matters-app.com/#/pages/userPages/login/login
+===== to_skip function start =====
+www.42matters-app.com/ has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: www.42matters-app.com/ now: 2023-05-11 01:07:22.891667
+call_status_code: 404, continuing to next ip_or_domain
+current URL in process_parent:forecepts-project.com/#/pages/start/start
+===== to_skip function start =====
+forecepts-project.com/ has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: forecepts-project.com/ now: 2023-05-11 01:07:23.565500
+call_status_code: 404, continuing to next ip_or_domain
+current URL in process_parent:www.impact-eu.com/#/index1
+===== to_skip function start =====
+www.impact-eu.com/ has NOT been processed in past X days
+===== to_skip function end =====

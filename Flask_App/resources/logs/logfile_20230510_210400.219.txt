@@ -1,0 +1,41 @@
+current domain in process_parent:simonshop.com
+===== to_skip function start =====
+simonshop.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: simonshop.com now: 2023-05-10 21:04:00.256884
+duration_log vt_call: 1.7368121000000016
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 7.2045885
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 35
+duration_log grab_html_js: 0.15008410000000083
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/simonshop.com_20230510_210409.391.txt
+duration_log get_whois_info: 0.5964444000000029
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/simonshop.com_gethostbyname_ex_20230510_210409.988.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: simonshop.com. IN NS
+duration_log get_dns_info: 0.04805839999999861
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 0.9440586999999994
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/simonshop.com_20230510_210411.001.json
+duration_log get_archived_page_info: 0.9175080999999992
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for simonshop.com, time taken 15.004101400000003 seconds
+
+

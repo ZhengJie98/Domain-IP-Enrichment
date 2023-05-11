@@ -1,0 +1,72 @@
+current domain in process_parent:nztagovsetnz.xyz
+===== to_skip function start =====
+nztagovsetnz.xyz has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: nztagovsetnz.xyz now: 2023-05-10 14:46:35.131021
+duration_log vt_call: 1.0840583000000006
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 15.038996000000001
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 35
+duration_log grab_html_js: 0.14203179999999804
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/nztagovsetnz.xyz_20230510_144651.449.txt
+duration_log get_whois_info: 10.666423100000003
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/nztagovsetnz.xyz_gethostbyname_ex_20230510_144702.113.txt
+socket.gethostbyname_ex() exception triggered: local variable 'nameserver_list' referenced before assignment
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: nztagovsetnz.xyz. IN NS
+duration_log get_dns_info: 0.0449153000000031
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 0.8512060999999953
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7204113000000021
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for nztagovsetnz.xyz, time taken 28.6588454 seconds
+
+
+current domain in process_parent:sendo-market.homes
+===== to_skip function start =====
+sendo-market.homes has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: sendo-market.homes now: 2023-05-10 14:47:03.829920
+duration_log vt_call: 1.0468140000000048
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 7.518449500000003
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 35
+duration_log grab_html_js: 0.17674680000000365
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/sendo-market.homes_20230510_144712.615.txt
+duration_log get_whois_info: 0.02091639999999728
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/sendo-market.homes_gethostbyname_ex_20230510_144712.644.txt
+socket.gethostbyname_ex() exception triggered: local variable 'nameserver_list' referenced before assignment
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: sendo-market.homes. IN NS
+duration_log get_dns_info: 0.03812500000000085
+===== get_dns_info function end =====

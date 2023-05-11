@@ -1,0 +1,307 @@
+current domain in process_parent:vmi1292370.contaboserver.net
+===== to_skip function start =====
+vmi1292370.contaboserver.net has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: vmi1292370.contaboserver.net now: 2023-05-10 17:44:38.817631
+duration_log vt_call: 1.4562594000000004
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 15.2714915
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 35
+duration_log grab_html_js: 0.15489670000000189
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/vmi1292370.contaboserver.net_20230510_174455.759.txt
+duration_log get_whois_info: 0.8947439999999993
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/vmi1292370.contaboserver.net_gethostbyname_ex_20230510_174456.663.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: vmi1292370.contaboserver.net. IN NS
+duration_log get_dns_info: 0.06384740000000022
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 0.9326366999999998
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7493404999999989
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for vmi1292370.contaboserver.net, time taken 19.6421415 seconds
+
+
+current domain in process_parent:gopaylah.life
+===== to_skip function start =====
+gopaylah.life has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: gopaylah.life now: 2023-05-10 17:44:58.503243
+duration_log vt_call: 1.4267724999999984
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 7.2675795
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 35
+duration_log grab_html_js: 0.146766300000003
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/gopaylah.life_20230510_174507.399.txt
+duration_log get_whois_info: 0.029845399999999245
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/gopaylah.life_gethostbyname_ex_20230510_174507.430.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: gopaylah.life. IN NS
+duration_log get_dns_info: 0.04399819999999721
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 0.833021599999995
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.8019776999999948
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for gopaylah.life, time taken 15.007276100000002 seconds
+
+
+current domain in process_parent:superminted-aim.com
+===== to_skip function start =====
+superminted-aim.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: superminted-aim.com now: 2023-05-10 17:45:13.544934
+duration_log vt_call: 0.8961439999999996
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 7.196643399999999
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 35
+duration_log grab_html_js: 0.1551624000000018
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/superminted-aim.com_20230510_174521.869.txt
+duration_log get_whois_info: 0.5851951
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/superminted-aim.com_gethostbyname_ex_20230510_174522.460.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: superminted-aim.com. IN NS
+duration_log get_dns_info: 0.04669990000000013
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 0.843457100000002
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.812599199999994
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for superminted-aim.com, time taken 15.003599400000006 seconds
+
+
+current domain in process_parent:nimbleintel.com
+===== to_skip function start =====
+nimbleintel.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: nimbleintel.com now: 2023-05-10 17:45:28.596169
+duration_log vt_call: 1.7725317999999959
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 7.302714200000004
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 35
+duration_log grab_html_js: 0.1737085000000036
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/nimbleintel.com_20230510_174537.889.txt
+duration_log get_whois_info: 0.5864876000000123
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/nimbleintel.com_gethostbyname_ex_20230510_174538.479.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: nimbleintel.com. IN NS
+duration_log get_dns_info: 0.040261600000008
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 0.8135171999999926
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.6860451000000012
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for nimbleintel.com, time taken 15.005298399999994 seconds
+
+
+current domain in process_parent:amplitude-scale.com
+===== to_skip function start =====
+amplitude-scale.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: amplitude-scale.com now: 2023-05-10 17:45:43.644236
+duration_log vt_call: 1.4241083000000003
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 8.328522300000003
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 35
+duration_log grab_html_js: 0.18061009999999555
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/amplitude-scale.com_20230510_174553.630.txt
+duration_log get_whois_info: 0.515063799999993
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/amplitude-scale.com_gethostbyname_ex_20230510_174554.151.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: amplitude-scale.com. IN NS
+duration_log get_dns_info: 0.05005289999999718
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 0.9066708000000006
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.9096653000000003
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for amplitude-scale.com, time taken 15.0135152 seconds
+
+
+current domain in process_parent:mowebnew-drive.com
+===== to_skip function start =====
+mowebnew-drive.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: mowebnew-drive.com now: 2023-05-10 17:45:58.716661
+duration_log vt_call: 0.914883599999996
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 7.599786199999997
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 35
+duration_log grab_html_js: 0.1732632999999879
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/mowebnew-drive.com_20230510_174607.472.txt
+duration_log get_whois_info: 0.5220082000000019
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/mowebnew-drive.com_gethostbyname_ex_20230510_174607.985.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: mowebnew-drive.com. IN NS
+duration_log get_dns_info: 0.05169910000000755
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 0.8901925000000119
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7037028000000021
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for mowebnew-drive.com, time taken 15.00476830000001 seconds
+
+
+current domain in process_parent:sg-internetbaking.com
+===== to_skip function start =====
+sg-internetbaking.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: sg-internetbaking.com now: 2023-05-10 17:46:13.769971
+duration_log vt_call: 1.9308935000000105
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 7.665348299999991
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 35
+duration_log grab_html_js: 0.1955374000000063
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/sg-internetbaking.com_20230510_174623.613.txt
+duration_log get_whois_info: 1.6215784999999983
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/sg-internetbaking.com_gethostbyname_ex_20230510_174625.241.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: sg-internetbaking.com. IN NS
+duration_log get_dns_info: 0.04915390000000741
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/sg-internetbaking.com_20230510_174625.295.json
+duration_log get_cert_info: 1.0775806999999986
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 1.0943388000000027
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for sg-internetbaking.com, time taken 15.007549400000002 seconds
+
+
+current domain in process_parent:hk-algoscale-examines.com
+===== to_skip function start =====
+hk-algoscale-examines.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: hk-algoscale-examines.com now: 2023-05-10 17:46:28.816922
+duration_log vt_call: 0.9957390999999944
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 1.6973295000000093
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 35
+duration_log grab_html_js: 0.18408989999998937
+===== grab_html_js function end =====

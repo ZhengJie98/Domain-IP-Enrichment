@@ -1,0 +1,70 @@
+current domain in process_parent:onlinefavoured.com
+===== to_skip function start =====
+onlinefavoured.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: onlinefavoured.com now: 2023-05-10 21:06:30.228909
+duration_log vt_call: 1.054950999999999
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 7.245636600000001
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 35
+duration_log grab_html_js: 0.1422346999999995
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/onlinefavoured.com_20230510_210638.728.txt
+duration_log get_whois_info: 0.7577561000000017
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/onlinefavoured.com_gethostbyname_ex_20230510_210639.486.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: onlinefavoured.com. IN NS
+duration_log get_dns_info: 0.05515630000000016
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 0.8417191000000024
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 1.2288241999999983
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for onlinefavoured.com, time taken 15.0134708 seconds
+
+
+current domain in process_parent:onalyticaka.com
+===== to_skip function start =====
+onalyticaka.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: onalyticaka.com now: 2023-05-10 21:06:45.293600
+duration_log vt_call: 1.0443341000000004
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 7.239777500000002
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 35
+duration_log grab_html_js: 0.14208479999999923
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/onalyticaka.com_20230510_210653.763.txt
+duration_log get_whois_info: 0.5572089000000062
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/onalyticaka.com_gethostbyname_ex_20230510_210654.324.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: onalyticaka.com. IN NS
+duration_log get_dns_info: 0.03409249999999986
+===== get_dns_info function end =====
