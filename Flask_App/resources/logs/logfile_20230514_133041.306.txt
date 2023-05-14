@@ -1,0 +1,107 @@
+current domain in process_parent:azttcall.com
+===== to_skip function start =====
+azttcall.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: azttcall.com now: 2023-05-14 13:30:41.340151
+duration_log vt_call: 0.9259230000316165
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 3.678240499983076
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 6
+current protocol: https
+returncode: 6
+duration_log grab_html_js: 0.05889869999373332
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/azttcall.com_20230514_133046.051.txt
+duration_log get_whois_info: 0.6147395999869332
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+socket.gethostbyname_ex() exception triggered: [Errno 11001] getaddrinfo failed
+dns.resolver.query() exception triggered: The DNS query name does not exist: azttcall.com.
+duration_log get_dns_info: 0.02248939999844879
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 0.7514045999851078
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/azttcall.com_20230514_133047.468.json
+duration_log get_archived_page_info: 0.7162904000142589
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for azttcall.com, time taken 15.000623299973086 seconds
+
+
+current domain in process_parent:katongcredit.online
+===== to_skip function start =====
+katongcredit.online has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: katongcredit.online now: 2023-05-14 13:30:56.394054
+duration_log vt_call: 0.8367818999686278
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/katongcredit.online_http_20230514_133057.250.pngduration_log screenshot: 7.147629599960055
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 35
+duration_log grab_html_js: 0.16184790001716465
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/katongcredit.online_20230514_133104.588.txt
+duration_log get_whois_info: 0.9871895000105724
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/katongcredit.online_gethostbyname_ex_20230514_133105.580.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: katongcredit.online. IN NS
+duration_log get_dns_info: 0.03999979997752234
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 0.7724858999717981
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/katongcredit.online_20230514_133106.417.json
+duration_log get_archived_page_info: 0.8156586999539286
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for katongcredit.online, time taken 15.000633199990261 seconds
+
+
+current domain in process_parent:infinite110.com
+===== to_skip function start =====
+infinite110.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: infinite110.com now: 2023-05-14 13:31:11.438153
+duration_log vt_call: 0.9220601999550126
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 3.5605352999991737
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 6
+current protocol: https
+returncode: 6
+duration_log grab_html_js: 0.05897229997208342
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/infinite110.com_20230514_133116.031.txt
+duration_log get_whois_info: 0.6213265000260435
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+socket.gethostbyname_ex() exception triggered: [Errno 11001] getaddrinfo failed
+nameservers_filepath file written to resources/dns/infinite110.com_nameservers_20230514_133116.664.txt
+duration_log get_dns_info: 0.3641710000229068
+===== get_dns_info function end =====

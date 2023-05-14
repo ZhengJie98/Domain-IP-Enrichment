@@ -98,8 +98,8 @@ domain_template = {
     }
 
 
-# API_KEY = '0d9fdb6e32d74b9d12e3d894309531838c3aabe8d66b049fd3a7976fbedf2c68'  #@param  {type: "string"}
-API_KEY = '207349263f9c5edd176cc079fa8000a5ab912df7d9e91154842c08031658675d'  #@param  {type: "string"}   
+API_KEY = '0d9fdb6e32d74b9d12e3d894309531838c3aabe8d66b049fd3a7976fbedf2c68'  #@param  {type: "string"}
+# API_KEY = '207349263f9c5edd176cc079fa8000a5ab912df7d9e91154842c08031658675d'  #@param  {type: "string"}   
 
 
 
@@ -110,13 +110,50 @@ client = MongoClient('localhost',27017)
 # db = client['test_list']
 # col = db["ip"]
 db = client['jon_list']
+# collection = "domain_older"
+collection = "testing_environ"
 # col = db["domain"]
 # col = db["domain_new"]
 # col = db["famous_domains"]
 # col = db["domain_test"]
-col = db["domain_v2"]
+# col = db["domain_v2"]
 # col = db["domain_url"]
+col = db[collection]
+# col = db["domain_older_v2"]
 
+
+def export_db():
+    start_time = time.time()
+    now = datetime.datetime.now()
+    dt_string = now.strftime("%Y%m%d_%H%M%S.%f")[:-3]    
+
+    cursor = col.find()
+    print ("total docs in collection:", col.count_documents( {} ))
+    mongo_docs = list(cursor)
+    docs = pd.DataFrame(columns=[])
+    for num, doc in enumerate( mongo_docs ):
+        doc["_id"] = str(doc["_id"])
+        doc_id = doc["_id"]
+        #  create a Series obj from the MongoDB dict
+        series_obj = pd.Series( doc, name=doc_id )
+
+        # append the MongoDB Series obj to the DataFrame obj
+        docs = docs.append(series_obj)
+
+        # only print every 10th document
+        if num % 10 == 0:
+            print (type(doc))
+            print (type(doc["_id"]))
+            # print (num, "--", doc, "\n")
+
+    if not os.path.exists("resources/exportdb"):
+            os.makedirs("resources/exportdb")
+
+    filename = 'resources/exportdb/' + collection + '_' + dt_string + '.csv'
+    docs.to_csv(filename, ",") # CSV delimited by commas
+    print(f"\n\n file same to: ${filename}")
+    print ("\n\ntime elapsed:", time.time()-start_time)
+    return filename
 
 
 ## Saves to db and a harddisk file
@@ -1163,6 +1200,10 @@ def get_archived_page_info(doc):
         print("===== get_archived_page_info function end =====")
             
         return doc
+
+
+
+
 
 def is_url(domain_or_url):
     result = True

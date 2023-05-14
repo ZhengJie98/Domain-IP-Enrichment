@@ -56,6 +56,12 @@ def process_Parent():
    
     return result
 
+@app.route("/exportDB", methods=['GET'])
+def export_DB():
+
+    result = export_db()
+   
+    return result
 
 @app.route("/processIPtest_without_vtcall", methods=['GET'])
 def process_IP_test_without_vtcall():
@@ -152,5 +158,5 @@ def customAdd():
 
 
 if __name__ == "__main__":
-#    app.run(debug=True)
-    app.run(debug=True, use_reloader=False)
+   app.run(debug=True)
+    # app.run(debug=True, use_reloader=False)

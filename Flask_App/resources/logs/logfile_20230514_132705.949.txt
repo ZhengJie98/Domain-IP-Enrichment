@@ -1,0 +1,228 @@
+current domain in process_parent:binance-sgd-club.pages.dev
+===== to_skip function start =====
+binance-sgd-club.pages.dev has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: binance-sgd-club.pages.dev now: 2023-05-14 13:27:05.987946
+duration_log vt_call: 1.0181728000170551
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/binance-sgd-club.pages.dev_http_20230514_132707.016.pngduration_log screenshot: 19.87116470001638
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 35
+duration_log grab_html_js: 0.18675860000075772
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_domain_whois_info()  exception triggered: module 'whois' has no attribute 'whois'
+duration_log get_whois_info: 0.009321400022599846
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/binance-sgd-club.pages.dev_gethostbyname_ex_20230514_132727.120.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: binance-sgd-club.pages.dev. IN NS
+duration_log get_dns_info: 0.052067200012970716
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/binance-sgd-club.pages.dev_20230514_132727.179.json
+duration_log get_cert_info: 17.83628689998295
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/binance-sgd-club.pages.dev_20230514_132745.015.json
+duration_log get_archived_page_info: 1.0458265999914147
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for binance-sgd-club.pages.dev, time taken 40.12054899998475 seconds
+
+
+current domain in process_parent:caruopay-sg-point.firebaseapp.com
+===== to_skip function start =====
+caruopay-sg-point.firebaseapp.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: caruopay-sg-point.firebaseapp.com now: 2023-05-14 13:27:46.140217
+duration_log vt_call: 0.8905249999952503
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/caruopay-sg-point.firebaseapp.com_http_20230514_132747.044.pngscreenshot found for protocol: https and saved to resources/shot-scraper/caruopay-sg-point.firebaseapp.com_https_20230514_132747.044.pngduration_log screenshot: 9.60547069995664
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 0
+starting html request.get
+total js_files_links: []
+duration_log grab_html_js: 0.33962480002082884
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_domain_whois_info()  exception triggered: module 'whois' has no attribute 'whois'
+duration_log get_whois_info: 0.009427900018636137
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/caruopay-sg-point.firebaseapp.com_gethostbyname_ex_20230514_132757.037.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: caruopay-sg-point.firebaseapp.com. IN NS
+duration_log get_dns_info: 0.02782020001905039
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 2.1278948999824934
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.694273000000976
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for caruopay-sg-point.firebaseapp.com, time taken 15.000926700013224 seconds
+
+
+current domain in process_parent:laoergood.cn
+===== to_skip function start =====
+laoergood.cn has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: laoergood.cn now: 2023-05-14 13:28:01.181071
+duration_log vt_call: 0.8730390000273474
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 3.368953600001987
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 6
+current protocol: https
+returncode: 6
+duration_log grab_html_js: 0.05710660002660006
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_domain_whois_info()  exception triggered: module 'whois' has no attribute 'whois'
+duration_log get_whois_info: 0.010011800040956587
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+socket.gethostbyname_ex() exception triggered: [Errno 11001] getaddrinfo failed
+nameservers_filepath file written to resources/dns/laoergood.cn_nameservers_20230514_132805.544.txt
+duration_log get_dns_info: 0.3818809000076726
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 32.628551300032996
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.6503304000361823
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for laoergood.cn, time taken 38.07407349999994 seconds
+
+
+current domain in process_parent:police088762sg.homes
+===== to_skip function start =====
+police088762sg.homes has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: police088762sg.homes now: 2023-05-14 13:28:39.310648
+duration_log vt_call: 0.8885366999893449
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 3.4884585000108927
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 6
+current protocol: https
+returncode: 6
+duration_log grab_html_js: 0.04794189997483045
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_domain_whois_info()  exception triggered: module 'whois' has no attribute 'whois'
+duration_log get_whois_info: 0.009905200044158846
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+socket.gethostbyname_ex() exception triggered: [Errno 11001] getaddrinfo failed
+dns.resolver.query() exception triggered: The DNS query name does not exist: police088762sg.homes.
+duration_log get_dns_info: 0.015640400000847876
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 0.7641089000389911
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/police088762sg.homes_20230514_132844.584.json
+duration_log get_archived_page_info: 0.680779899994377
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for police088762sg.homes, time taken 15.000780800008215 seconds
+
+
+current domain in process_parent:unovb.com
+===== to_skip function start =====
+unovb.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: unovb.com now: 2023-05-14 13:28:54.348733
+duration_log vt_call: 0.8761748999822885
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 3.744685699988622
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 6
+current protocol: https
+returncode: 6
+duration_log grab_html_js: 0.057244099967647344
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_domain_whois_info()  exception triggered: module 'whois' has no attribute 'whois'
+duration_log get_whois_info: 0.01106009999057278
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+socket.gethostbyname_ex() exception triggered: [Errno 11001] getaddrinfo failed
+dns.resolver.query() exception triggered: The DNS query name does not exist: unovb.com.
+duration_log get_dns_info: 0.017549099982716143
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 0.755639000039082
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/unovb.com_20230514_132859.890.json
+duration_log get_archived_page_info: 3.7248623000341468
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for unovb.com, time taken 15.000838899984956 seconds
+
+
+current domain in process_parent:azttcall.com
+===== to_skip function start =====
+azttcall.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: azttcall.com now: 2023-05-14 13:29:09.368117
+duration_log vt_call: 0.9951808000332676
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 0.8185922999982722
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 6
+current protocol: https
+returncode: 6
+duration_log grab_html_js: 0.053270300035364926
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_domain_whois_info()  exception triggered: module 'whois' has no attribute 'whois'
+duration_log get_whois_info: 0.009894400020129979
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+socket.gethostbyname_ex() exception triggered: [Errno 11001] getaddrinfo failed
+dns.resolver.query() exception triggered: The DNS query name does not exist: azttcall.com.
+duration_log get_dns_info: 0.023731900029815733
+===== get_dns_info function end =====

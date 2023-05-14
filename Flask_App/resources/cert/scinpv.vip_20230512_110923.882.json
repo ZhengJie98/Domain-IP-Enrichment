@@ -1,0 +1,1 @@
+[{"issuer_ca_id": 247115, "issuer_name": "C=US, O=Amazon, CN=Amazon RSA 2048 M02", "common_name": "scinpv.vip", "name_value": "*.scinpv.vip\nscinpv.vip", "id": 8747147070, "entry_timestamp": "2023-02-26T08:37:48.729", "not_before": "2023-02-26T00:00:00", "not_after": "2024-03-26T23:59:59", "serial_number": "069456dd23ebfb6a2b1601cbed365ca7"}]
