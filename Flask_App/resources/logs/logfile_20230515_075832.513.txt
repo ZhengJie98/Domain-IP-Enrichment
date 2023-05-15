@@ -1,0 +1,78 @@
+current domain in process_parent:imbbk3238g.xyz
+===== to_skip function start =====
+imbbk3238g.xyz has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: imbbk3238g.xyz now: 2023-05-15 07:58:32.535749+00:00
+duration_log vt_call: 0.9176459000445902
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/imbbk3238g.xyz_http_20230515_075833.460.pngduration_log screenshot: 14.543244700005744
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.1674627999891527
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/imbbk3238g.xyz_20230515_075848.203.txt
+duration_log get_whois_info: 14.322948299988639
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/imbbk3238g.xyz_gethostbyname_ex_20230515_075902.532.txt
+nameservers_filepath file written to resources/dns/imbbk3238g.xyz_nameservers_20230515_075902.532.txt
+duration_log get_dns_info: 0.4857254000380635
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 1.7908672000048682
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 4.189719100017101
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for imbbk3238g.xyz, time taken 36.50643549999222 seconds
+
+
+current domain in process_parent:imbbk3238g.xyz
+===== to_skip function start =====
+imbbk3238g.xyz has NOT been processed in past X days
+===== to_skip function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/imbbk3238g.xyz_http_20230515_080537.554.pngduration_log screenshot: 7.585265600006096
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.24011030001565814
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/imbbk3238g.xyz_20230515_080545.408.txt
+duration_log get_whois_info: 0.8886768000083975
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/imbbk3238g.xyz_gethostbyname_ex_20230515_080546.294.txt
+nameservers_filepath file written to resources/dns/imbbk3238g.xyz_nameservers_20230515_080546.294.txt
+duration_log get_dns_info: 0.4924876999575645
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/imbbk3238g.xyz_20230515_080546.796.json
+duration_log get_cert_info: 0.9487831000005826
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7594865999999456
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for imbbk3238g.xyz, time taken 15.000741700001527 seconds
+
+

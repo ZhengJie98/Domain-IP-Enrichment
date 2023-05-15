@@ -36,25 +36,20 @@ from dns import resolver
 
 
 
-domain = 'imbbk3238g.xyz'
 
-# from dns import *
-resolver = resolver.Resolver()
-resolver.nameservers = ['1.1.1.1']
-a = resolver.query(domain,'NS')
-# print(type(a))
-# print(vars(a))
-# # for each in a.values():
-# #     print(each)
-# print(list(a))
+url = "https://www.imda.gov.sg/"
+headers = {'User-Agent': 'user_agent',}
+# s = requests.Session()
+# response = requests.get(url, headers, allow_redirects=True)
 
-nameserver_list = [i.to_text() for i in a]
-print(nameserver_list)
-# for each in a.rrset:
-    # print("each:", each)
-# text = a.rrset.to_text
-# print(a.rrset.to_text)
-# print(text)
-# print(type(a.rrset))
-# print(list(a.rrset))
-# a.rrset.items[0].address #'54.241.2.241'
+response = requests.get(url, allow_redirects=False)
+print(response.is_redirect)
+print(response.url)
+print(response.status_code)
+print(response.history)
+if response.history:
+    for resp in response.history:
+        print(resp.status_code, resp.url)
+    print("Final destination:")
+    print(response.status_code, response.url)
+# print(response.headers['Location'])   

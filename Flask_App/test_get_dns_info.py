@@ -33,40 +33,25 @@ import dns.resolver
 import whois # query and response protocol that is often used for querying databases that store registered domain names.
 
 
-# domain = 'www.facebook.com'
-domain = 'www.amazon.com'
-# domain = 'imbbk3238g.xyz'
-# dns_info = socket.gethostbyname_ex(domain)
-# # dns_info = ('fy31bb2w66.xyz', [], ['43.245.107.46'])
-doc = {}
-# doc['dns_info'] = {'alias': dns_info[1], 'other_ip_address': dns_info[2] }
+domain = 'imbbk3238g.xyz'
 
-try: 
-    # nameservers = dns.resolver.query(domain, 'NS') ## e.g. www.amazon.com  ## findout who is the registered authoritative NS
-    nameservers = dns.resolver.query(domain, 'NS') ## e.g. www.amazon.com
-    nameserver_list = [i.to_text() for i in nameservers]
-    print(nameservers)
-    print(nameserver_list)
-    
-    # nameservers_filepath = "resources/dns/" + domain + '_' + "nameservers" + '_' + dt_string + ".txt"
+# from dns import *
+resolver = resolver.Resolver()
+resolver.nameservers = ['1.1.1.1']
+a = resolver.query(domain,'NS')
+# print(type(a))
+# print(vars(a))
+# # for each in a.values():
+# #     print(each)
+# print(list(a))
 
-    # with open(nameservers_filepath, "w") as outfile:
-    #     outfile.write(str(nameservers))
-    
-    # 'nameserver_list': nameserver_list, 'gethostbyname_ex_filepath': gethostbyname_ex_filepath, 'nameservers_filepath' :nameservers_filepath }
-
-    # doc['dns_info']['nameserver_list'] = nameserver_list
-    # doc['dns_info']['gethostbyname_ex_filepath'] = gethostbyname_ex_filepath
-    # doc['dns_info']['nameservers_filepath']: nameservers_filepath
-
-
-    # print("nameservers_filepath file written to {nameservers_filepath}".format(nameservers_filepath=nameservers_filepath))
-    # logfile.write("nameservers_filepath file written to {nameservers_filepath}\n".format(nameservers_filepath=nameservers_filepath))
-
-except Exception as e: 
-    
-    print("dns.resolver.query() exception triggered", e)
-    # logfile.write("dns.resolver.query() exception triggered: {e}\n".format(e=e))
-    print(e)
-
-# print(doc)
+nameserver_list = [i.to_text() for i in a]
+print(nameserver_list)
+# for each in a.rrset:
+    # print("each:", each)
+# text = a.rrset.to_text
+# print(a.rrset.to_text)
+# print(text)
+# print(type(a.rrset))
+# print(list(a.rrset))
+# a.rrset.items[0].address #'54.241.2.241'

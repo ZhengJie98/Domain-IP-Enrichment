@@ -1,0 +1,1399 @@
+current domain in process_parent:binance-sgd-club.pages.dev
+===== to_skip function start =====
+binance-sgd-club.pages.dev has NOT been processed in past X days
+===== to_skip function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/binance-sgd-club.pages.dev_http_20230515_112654.016.pngduration_log screenshot: 15.500962299993262
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 35
+duration_log grab_html_js: 0.2166774999932386
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/binance-sgd-club.pages.dev_20230515_112709.766.txt
+duration_log get_whois_info: 0.4350147999939509
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/binance-sgd-club.pages.dev_gethostbyname_ex_20230515_112710.202.txt
+nameservers_filepath file written to resources/dns/binance-sgd-club.pages.dev_nameservers_20230515_112710.202.txt
+duration_log get_dns_info: 0.06490880000637844
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/binance-sgd-club.pages.dev_20230515_112710.269.json
+duration_log get_cert_info: 1.2096139999921434
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/binance-sgd-club.pages.dev_20230515_112711.486.json
+duration_log get_archived_page_info: 1.1626663000206463
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for binance-sgd-club.pages.dev, time taken 18.67441510001663 seconds
+
+
+current domain in process_parent:caruopay-sg-point.firebaseapp.com
+===== to_skip function start =====
+caruopay-sg-point.firebaseapp.com has NOT been processed in past X days
+===== to_skip function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/caruopay-sg-point.firebaseapp.com_http_20230515_112712.734.pngscreenshot found for protocol: https and saved to resources/shot-scraper/caruopay-sg-point.firebaseapp.com_https_20230515_112712.734.pngduration_log screenshot: 10.98494459997164
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 0
+starting html request.get
+total js_files_links: []
+duration_log grab_html_js: 0.48809100000653416
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_domain_whois_info()  exception triggered: No match for "CARUOPAY-SG-POINT.FIREBASEAPP.COM".
+>>> Last update of whois database: 2023-05-15T11:27:03Z <<<
+
+NOTICE: The expiration date displayed in this record is the date the
+registrar's sponsorship of the domain name registration in the registry is
+currently set to expire. This date does not necessarily reflect the expiration
+date of the domain name registrant's agreement with the sponsoring
+registrar.  Users may consult the sponsoring registrar's Whois database to
+view the registrar's reported date of expiration for this registration.
+
+TERMS OF USE: You are not authorized to access or query our Whois
+database through the use of electronic processes that are high-volume and
+automated except as reasonably necessary to register domain names or
+modify existing registrations; the Data in VeriSign Global Registry
+Services' ("VeriSign") Whois database is provided by VeriSign for
+information purposes only, and to assist persons in obtaining information
+about or related to a domain name registration record. VeriSign does not
+guarantee its accuracy. By submitting a Whois query, you agree to abide
+by the following terms of use: You agree that you may use this Data only
+for lawful purposes and that under no circumstances will you use this Data
+to: (1) allow, enable, or otherwise support the transmission of mass
+unsolicited, commercial advertising or solicitations via e-mail, telephone,
+or facsimile; or (2) enable high volume, automated, electronic processes
+that apply to VeriSign (or its computer systems). The compilation,
+repackaging, dissemination or other use of this Data is expressly
+prohibited without the prior written consent of VeriSign. You agree not to
+use electronic processes that are automated and high-volume to access or
+query the Whois database except as reasonably necessary to register
+domain names or modify existing registrations. VeriSign reserves the right
+to restrict your access to the Whois database in its sole discretion to ensure
+operational stability.  VeriSign may restrict or terminate your access to the
+Whois database for failure to abide by these terms of use. VeriSign
+reserves the right to modify these terms at any time.
+
+The Registry database contains ONLY .COM, .NET, .EDU domains and
+Registrars.
+
+duration_log get_whois_info: 0.05009330000029877
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/caruopay-sg-point.firebaseapp.com_gethostbyname_ex_20230515_112724.298.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: caruopay-sg-point.firebaseapp.com. IN NS
+duration_log get_dns_info: 0.1122040000045672
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 3.068023500032723
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.6765549999545328
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for caruopay-sg-point.firebaseapp.com, time taken 15.497298300033435 seconds
+
+
+current domain in process_parent:laoergood.cn
+===== to_skip function start =====
+laoergood.cn has NOT been processed in past X days
+===== to_skip function end =====
+===== screenshot function start =====
+duration_log screenshot: 4.5742723000003025
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 6
+current protocol: https
+returncode: 6
+duration_log grab_html_js: 0.07933059998322278
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_domain_whois_info()  exception triggered: 'charmap' codec can't encode characters in position 92-94: character maps to <undefined>
+duration_log get_whois_info: 0.23439189995406196
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+socket.gethostbyname_ex() exception triggered: [Errno 11001] getaddrinfo failed
+nameservers_filepath file written to resources/dns/laoergood.cn_nameservers_20230515_112733.236.txt
+duration_log get_dns_info: 0.9284494000021368
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 8.177734400029294
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 1.0150085000204854
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for laoergood.cn, time taken 15.13665979995858 seconds
+
+
+current domain in process_parent:police088762sg.homes
+===== to_skip function start =====
+police088762sg.homes has NOT been processed in past X days
+===== to_skip function end =====
+===== screenshot function start =====
+duration_log screenshot: 4.2647668000427075
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 6
+current protocol: https
+returncode: 6
+duration_log grab_html_js: 0.0728250999818556
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/police088762sg.homes_20230515_112747.834.txt
+duration_log get_whois_info: 0.032249199983198196
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+socket.gethostbyname_ex() exception triggered: [Errno 11001] getaddrinfo failed
+dns.resolver.query() exception triggered: The DNS query name does not exist: police088762sg.homes.
+duration_log get_dns_info: 0.037846799998078495
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/police088762sg.homes_20230515_112747.915.json
+duration_log get_cert_info: 8.797441000002436
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/police088762sg.homes_20230515_112756.718.json
+duration_log get_archived_page_info: 1.1646884999936447
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for police088762sg.homes, time taken 14.485144199978095 seconds
+
+
+current domain in process_parent:unovb.com
+===== to_skip function start =====
+unovb.com has NOT been processed in past X days
+===== to_skip function end =====
+===== screenshot function start =====
+duration_log screenshot: 4.228273499989882
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 6
+current protocol: https
+returncode: 6
+duration_log grab_html_js: 0.07627859996864572
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/unovb.com_20230515_112802.326.txt
+duration_log get_whois_info: 2.034236299979966
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+socket.gethostbyname_ex() exception triggered: [Errno 11001] getaddrinfo failed
+dns.resolver.query() exception triggered: The DNS query name does not exist: unovb.com.
+duration_log get_dns_info: 0.2903639000141993
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 0.7816943000070751
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/unovb.com_20230515_112805.471.json
+duration_log get_archived_page_info: 1.0439712000079453
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for unovb.com, time taken 8.57760820002295 seconds
+
+
+current domain in process_parent:azttcall.com
+===== to_skip function start =====
+azttcall.com has NOT been processed in past X days
+===== to_skip function end =====
+===== screenshot function start =====
+duration_log screenshot: 4.2914231000468135
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 6
+current protocol: https
+returncode: 6
+duration_log grab_html_js: 0.07673640002030879
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/azttcall.com_20230515_112811.021.txt
+duration_log get_whois_info: 0.6025257000001147
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+socket.gethostbyname_ex() exception triggered: [Errno 11001] getaddrinfo failed
+dns.resolver.query() exception triggered: The DNS query name does not exist: azttcall.com.
+duration_log get_dns_info: 0.21680430002743378
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/azttcall.com_20230515_112811.861.json
+duration_log get_cert_info: 1.6768572999862954
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/azttcall.com_20230515_112813.541.json
+duration_log get_archived_page_info: 0.7722438999917358
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for azttcall.com, time taken 7.754582200024743 seconds
+
+
+current domain in process_parent:katongcredit.online
+===== to_skip function start =====
+katongcredit.online has NOT been processed in past X days
+===== to_skip function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/katongcredit.online_http_20230515_112814.378.pngduration_log screenshot: 7.637886399985291
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 35
+duration_log grab_html_js: 0.16758389997994527
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/katongcredit.online_20230515_112822.217.txt
+duration_log get_whois_info: 0.8532905000029132
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/katongcredit.online_gethostbyname_ex_20230515_112823.084.txt
+nameservers_filepath file written to resources/dns/katongcredit.online_nameservers_20230515_112823.084.txt
+duration_log get_dns_info: 0.0742529000272043
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 0.9551258999854326
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/katongcredit.online_20230515_112824.132.json
+duration_log get_archived_page_info: 0.7811822999501601
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for katongcredit.online, time taken 10.599556199973449 seconds
+
+
+current domain in process_parent:infinite110.com
+===== to_skip function start =====
+infinite110.com has NOT been processed in past X days
+===== to_skip function end =====
+===== screenshot function start =====
+duration_log screenshot: 4.889772299968172
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 6
+current protocol: https
+returncode: 6
+duration_log grab_html_js: 0.10069379996275529
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/infinite110.com_20230515_112830.074.txt
+duration_log get_whois_info: 0.6154018999659456
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+socket.gethostbyname_ex() exception triggered: [Errno 11001] getaddrinfo failed
+nameservers_filepath file written to resources/dns/infinite110.com_nameservers_20230515_112830.692.txt
+duration_log get_dns_info: 0.7400884000235237
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/infinite110.com_20230515_112831.432.json
+duration_log get_cert_info: 5.609876400034409
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.8930561000015587
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for infinite110.com, time taken 12.96508710004855 seconds
+
+
+current domain in process_parent:topnotchdezignsevolve.com
+===== to_skip function start =====
+topnotchdezignsevolve.com has NOT been processed in past X days
+===== to_skip function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/topnotchdezignsevolve.com_http_20230515_112838.060.pngduration_log screenshot: 9.062223399989307
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.36611849995097145
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/topnotchdezignsevolve.com_20230515_112847.534.txt
+duration_log get_whois_info: 0.7923156000324525
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/topnotchdezignsevolve.com_gethostbyname_ex_20230515_112848.326.txt
+nameservers_filepath file written to resources/dns/topnotchdezignsevolve.com_nameservers_20230515_112848.326.txt
+duration_log get_dns_info: 0.6757622000295669
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/topnotchdezignsevolve.com_20230515_112849.007.json
+duration_log get_cert_info: 9.427447199996095
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.8474631999852136
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for topnotchdezignsevolve.com, time taken 21.293598400021438 seconds
+
+
+current domain in process_parent:tylysp.com
+===== to_skip function start =====
+tylysp.com has NOT been processed in past X days
+===== to_skip function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/tylysp.com_http_20230515_112859.365.pngduration_log screenshot: 29.800985200039577
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 28
+duration_log grab_html_js: 23.060803000000305
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/tylysp.com_20230515_112952.291.txt
+duration_log get_whois_info: 1.1414707999792881
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/tylysp.com_gethostbyname_ex_20230515_112953.434.txt
+nameservers_filepath file written to resources/dns/tylysp.com_nameservers_20230515_112953.434.txt
+duration_log get_dns_info: 0.6480893000261858
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/tylysp.com_20230515_112954.083.json
+duration_log get_cert_info: 1.3012897000298835
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/tylysp.com_20230515_112955.388.json
+duration_log get_archived_page_info: 0.8907108000130393
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for tylysp.com, time taken 56.957624199974816 seconds
+
+
+current domain in process_parent:ubisoftu.cc
+===== to_skip function start =====
+ubisoftu.cc has NOT been processed in past X days
+===== to_skip function end =====
+===== screenshot function start =====
+duration_log screenshot: 4.446314400003757
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 6
+current protocol: https
+returncode: 6
+duration_log grab_html_js: 0.08703789999708533
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/ubisoftu.cc_20230515_113000.939.txt
+duration_log get_whois_info: 0.12638929998502135
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+socket.gethostbyname_ex() exception triggered: [Errno 11001] getaddrinfo failed
+nameservers_filepath file written to resources/dns/ubisoftu.cc_nameservers_20230515_113001.083.txt
+duration_log get_dns_info: 0.23392620001686737
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/ubisoftu.cc_20230515_113001.317.json
+duration_log get_cert_info: 1.0225832999567501
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 1.0720356000238098
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for ubisoftu.cc, time taken 7.110384900006466 seconds
+
+
+current domain in process_parent:zaobao-hit.com
+===== to_skip function start =====
+zaobao-hit.com has NOT been processed in past X days
+===== to_skip function end =====
+===== screenshot function start =====
+duration_log screenshot: 4.425820800010115
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 6
+current protocol: https
+returncode: 6
+duration_log grab_html_js: 0.07033339998451993
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/zaobao-hit.com_20230515_113008.079.txt
+duration_log get_whois_info: 1.2349653000128455
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+socket.gethostbyname_ex() exception triggered: [Errno 11001] getaddrinfo failed
+dns.resolver.query() exception triggered: The DNS query name does not exist: zaobao-hit.com.
+duration_log get_dns_info: 0.20304649998433888
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/zaobao-hit.com_20230515_113009.538.json
+duration_log get_cert_info: 3.766433499986306
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/zaobao-hit.com_20230515_113013.291.json
+duration_log get_archived_page_info: 0.7907729999860749
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for zaobao-hit.com, time taken 10.601926900038961 seconds
+
+
+current domain in process_parent:zaobao-viral.com
+===== to_skip function start =====
+zaobao-viral.com has NOT been processed in past X days
+===== to_skip function end =====
+===== screenshot function start =====
+duration_log screenshot: 4.36399760004133
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 6
+current protocol: https
+returncode: 6
+duration_log grab_html_js: 0.08402800001204014
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/zaobao-viral.com_20230515_113018.654.txt
+duration_log get_whois_info: 3.9325653000269085
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+socket.gethostbyname_ex() exception triggered: [Errno 11001] getaddrinfo failed
+dns.resolver.query() exception triggered: The DNS query name does not exist: zaobao-viral.com.
+duration_log get_dns_info: 0.03817380004329607
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/zaobao-viral.com_20230515_113022.639.json
+duration_log get_cert_info: 2.126344699994661
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/zaobao-viral.com_20230515_113024.764.json
+duration_log get_archived_page_info: 0.7564664999954402
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for zaobao-viral.com, time taken 11.406320200010668 seconds
+
+
+current domain in process_parent:zaobaosgd.com
+===== to_skip function start =====
+zaobaosgd.com has NOT been processed in past X days
+===== to_skip function end =====
+===== screenshot function start =====
+duration_log screenshot: 4.291744199988898
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 6
+current protocol: https
+returncode: 6
+duration_log grab_html_js: 0.08048469998175278
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/zaobaosgd.com_20230515_113030.029.txt
+duration_log get_whois_info: 0.6728122000349686
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+socket.gethostbyname_ex() exception triggered: [Errno 11001] getaddrinfo failed
+dns.resolver.query() exception triggered: The DNS query name does not exist: zaobaosgd.com.
+duration_log get_dns_info: 0.03081870003370568
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/zaobaosgd.com_20230515_113030.747.json
+duration_log get_cert_info: 0.9470589999691583
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/zaobaosgd.com_20230515_113031.693.json
+duration_log get_archived_page_info: 1.1228147999499924
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for zaobaosgd.com, time taken 7.260261200019158 seconds
+
+
+current domain in process_parent:aprankseer.com
+===== to_skip function start =====
+aprankseer.com has NOT been processed in past X days
+===== to_skip function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/aprankseer.com_http_20230515_113032.916.pngduration_log screenshot: 7.470210999948904
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 35
+duration_log grab_html_js: 0.174737700028345
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/aprankseer.com_20230515_113040.603.txt
+duration_log get_whois_info: 0.6811973000294529
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/aprankseer.com_gethostbyname_ex_20230515_113041.284.txt
+nameservers_filepath file written to resources/dns/aprankseer.com_nameservers_20230515_113041.284.txt
+duration_log get_dns_info: 0.65008840005612
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/aprankseer.com_20230515_113041.939.json
+duration_log get_cert_info: 30.136029699991923
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.892249799973797
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for aprankseer.com, time taken 40.11766559997341 seconds
+
+
+current domain in process_parent:intelegain2-summaries.com
+===== to_skip function start =====
+intelegain2-summaries.com has NOT been processed in past X days
+===== to_skip function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/intelegain2-summaries.com_http_20230515_113113.059.pngscreenshot found for protocol: https and saved to resources/shot-scraper/intelegain2-summaries.com_https_20230515_113113.059.pngduration_log screenshot: 12.19327859999612
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 0
+starting html request.get
+total js_files_links: []
+duration_log grab_html_js: 0.9834450000198558
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/intelegain2-summaries.com_20230515_113126.288.txt
+duration_log get_whois_info: 0.558968500001356
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/intelegain2-summaries.com_gethostbyname_ex_20230515_113126.849.txt
+nameservers_filepath file written to resources/dns/intelegain2-summaries.com_nameservers_20230515_113126.849.txt
+duration_log get_dns_info: 1.0477390000014566
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/intelegain2-summaries.com_20230515_113127.905.json
+duration_log get_cert_info: 1.6751131999772042
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/intelegain2-summaries.com_20230515_113129.589.json
+duration_log get_archived_page_info: 0.8035933999926783
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for intelegain2-summaries.com, time taken 17.386201600020286 seconds
+
+
+current domain in process_parent:ink-ur.xyz
+===== to_skip function start =====
+ink-ur.xyz has NOT been processed in past X days
+===== to_skip function end =====
+===== screenshot function start =====
+duration_log screenshot: 46.38603220001096
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 28
+current protocol: https
+returncode: 28
+duration_log grab_html_js: 42.172273400006816
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/ink-ur.xyz_20230515_113259.113.txt
+duration_log get_whois_info: 1.3012318999972194
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/ink-ur.xyz_gethostbyname_ex_20230515_113300.410.txt
+nameservers_filepath file written to resources/dns/ink-ur.xyz_nameservers_20230515_113300.410.txt
+duration_log get_dns_info: 0.2972052999539301
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/ink-ur.xyz_20230515_113300.723.json
+duration_log get_cert_info: 0.9445653000148013
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 1.0806956999585964
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for ink-ur.xyz, time taken 92.3355678000371 seconds
+
+
+current domain in process_parent:redaygovip.com
+===== to_skip function start =====
+redaygovip.com has NOT been processed in past X days
+===== to_skip function end =====
+===== screenshot function start =====
+duration_log screenshot: 8.707830600033049
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 7
+current protocol: https
+returncode: 7
+duration_log grab_html_js: 4.227431699982844
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/redaygovip.com_20230515_113315.869.txt
+duration_log get_whois_info: 0.5049448999925517
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/redaygovip.com_gethostbyname_ex_20230515_113316.383.txt
+nameservers_filepath file written to resources/dns/redaygovip.com_nameservers_20230515_113316.383.txt
+duration_log get_dns_info: 0.608825400006026
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/redaygovip.com_20230515_113317.001.json
+duration_log get_cert_info: 1.0195403999532573
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.8555522999959067
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for redaygovip.com, time taken 16.06216490000952 seconds
+
+
+current domain in process_parent:tattach.top
+===== to_skip function start =====
+tattach.top has NOT been processed in past X days
+===== to_skip function end =====
+===== screenshot function start =====
+duration_log screenshot: 9.257415000000037
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 7
+current protocol: https
+returncode: 7
+duration_log grab_html_js: 4.234245900006499
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_domain_whois_info()  exception triggered: 'charmap' codec can't encode character '\uff0c' in position 3761: character maps to <undefined>
+duration_log get_whois_info: 2.071233199967537
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/tattach.top_gethostbyname_ex_20230515_113334.600.txt
+nameservers_filepath file written to resources/dns/tattach.top_nameservers_20230515_113334.600.txt
+duration_log get_dns_info: 0.7425899999798276
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/tattach.top_20230515_113335.350.json
+duration_log get_cert_info: 5.528326900035609
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7468311000266112
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for tattach.top, time taken 22.706641700002365 seconds
+
+
+current domain in process_parent:mozaicaura.com
+===== to_skip function start =====
+mozaicaura.com has NOT been processed in past X days
+===== to_skip function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/mozaicaura.com_http_20230515_113341.708.pngduration_log screenshot: 7.591418600000907
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 35
+duration_log grab_html_js: 0.15082670003175735
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/mozaicaura.com_20230515_113349.494.txt
+duration_log get_whois_info: 0.6918962999479845
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/mozaicaura.com_gethostbyname_ex_20230515_113350.190.txt
+dns.resolver.query() exception triggered: The DNS query name does not exist: mozaicaura.com.
+duration_log get_dns_info: 0.28023340000072494
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/mozaicaura.com_20230515_113350.482.json
+duration_log get_cert_info: 4.012515900016297
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/mozaicaura.com_20230515_113354.496.json
+duration_log get_archived_page_info: 0.9987638000166044
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for mozaicaura.com, time taken 13.842248100030702 seconds
+
+
+current domain in process_parent:scinpv.vip
+===== to_skip function start =====
+scinpv.vip has NOT been processed in past X days
+===== to_skip function end =====
+===== screenshot function start =====
+duration_log screenshot: 4.28025950002484
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 6
+current protocol: https
+returncode: 6
+duration_log grab_html_js: 0.07598889997461811
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/scinpv.vip_20230515_113400.019.txt
+duration_log get_whois_info: 0.05068570002913475
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+socket.gethostbyname_ex() exception triggered: [Errno 11001] getaddrinfo failed
+nameservers_filepath file written to resources/dns/scinpv.vip_nameservers_20230515_113400.068.txt
+duration_log get_dns_info: 0.040918299986515194
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/scinpv.vip_20230515_113400.119.json
+duration_log get_cert_info: 20.53307720000157
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7592916000285186
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for scinpv.vip, time taken 25.86679910001112 seconds
+
+
+current domain in process_parent:se1ha5pxml.web.app
+===== to_skip function start =====
+se1ha5pxml.web.app has NOT been processed in past X days
+===== to_skip function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/se1ha5pxml.web.app_http_20230515_113421.497.pngscreenshot found for protocol: https and saved to resources/shot-scraper/se1ha5pxml.web.app_https_20230515_113421.497.pngduration_log screenshot: 10.98735279997345
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 0
+starting html request.get
+total js_files_links: []
+duration_log grab_html_js: 0.37725530000170693
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/se1ha5pxml.web.app_20230515_113432.913.txt
+duration_log get_whois_info: 0.7856559000210837
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/se1ha5pxml.web.app_gethostbyname_ex_20230515_113433.697.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: se1ha5pxml.web.app. IN NS
+duration_log get_dns_info: 0.032100000011269
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 60.850960800016765
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.8261230000061914
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for se1ha5pxml.web.app, time taken 73.99459329998353 seconds
+
+
+current domain in process_parent:sg1qu7wxio.web.app
+===== to_skip function start =====
+sg1qu7wxio.web.app has NOT been processed in past X days
+===== to_skip function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/sg1qu7wxio.web.app_http_20230515_113535.567.pngscreenshot found for protocol: https and saved to resources/shot-scraper/sg1qu7wxio.web.app_https_20230515_113535.567.pngduration_log screenshot: 10.948247199994512
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 0
+starting html request.get
+total js_files_links: []
+duration_log grab_html_js: 0.32914579997304827
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/sg1qu7wxio.web.app_20230515_113546.883.txt
+duration_log get_whois_info: 0.7779690000461414
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/sg1qu7wxio.web.app_gethostbyname_ex_20230515_113547.674.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: sg1qu7wxio.web.app. IN NS
+duration_log get_dns_info: 0.08205959998304024
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 0.9872918000328355
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 7.735918699996546
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for sg1qu7wxio.web.app, time taken 20.999591600033455 seconds
+
+
+current domain in process_parent:ssr1ht2ddi.web.app
+===== to_skip function start =====
+ssr1ht2ddi.web.app has NOT been processed in past X days
+===== to_skip function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/ssr1ht2ddi.web.app_http_20230515_113556.611.pngscreenshot found for protocol: https and saved to resources/shot-scraper/ssr1ht2ddi.web.app_https_20230515_113556.611.pngduration_log screenshot: 11.149504000029992
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 0
+starting html request.get
+total js_files_links: []
+duration_log grab_html_js: 0.6627613000455312
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/ssr1ht2ddi.web.app_20230515_113608.487.txt
+duration_log get_whois_info: 0.7022053000400774
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/ssr1ht2ddi.web.app_gethostbyname_ex_20230515_113609.189.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: ssr1ht2ddi.web.app. IN NS
+duration_log get_dns_info: 0.031767999986186624
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 7.719834899995476
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.8106669000117108
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for ssr1ht2ddi.web.app, time taken 21.226681700034533 seconds
+
+
+current domain in process_parent:guessoutletsingapore.com
+===== to_skip function start =====
+guessoutletsingapore.com has NOT been processed in past X days
+===== to_skip function end =====
+===== screenshot function start =====
+duration_log screenshot: 4.295407900004648
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 6
+current protocol: https
+returncode: 6
+duration_log grab_html_js: 0.08394400001270697
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/guessoutletsingapore.com_20230515_113622.289.txt
+duration_log get_whois_info: 1.0481216000043787
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+socket.gethostbyname_ex() exception triggered: [Errno 11001] getaddrinfo failed
+dns.resolver.query() exception triggered: The DNS query name does not exist: guessoutletsingapore.com.
+duration_log get_dns_info: 0.028207800001837313
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/guessoutletsingapore.com_20230515_113623.381.json
+duration_log get_cert_info: 6.1279203000012785
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.9063718999968842
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for guessoutletsingapore.com, time taken 12.606094899994787 seconds
+
+
+current domain in process_parent:zaobaosng.com
+===== to_skip function start =====
+zaobaosng.com has NOT been processed in past X days
+===== to_skip function end =====
+===== screenshot function start =====
+duration_log screenshot: 4.2999084000475705
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 6
+current protocol: https
+returncode: 6
+duration_log grab_html_js: 0.06635580002330244
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/zaobaosng.com_20230515_113634.932.txt
+duration_log get_whois_info: 0.7193038000259548
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+socket.gethostbyname_ex() exception triggered: [Errno 11001] getaddrinfo failed
+dns.resolver.query() exception triggered: The DNS query name does not exist: zaobaosng.com.
+duration_log get_dns_info: 0.033997500024270266
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/zaobaosng.com_20230515_113635.701.json
+duration_log get_cert_info: 0.9763582000159658
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.8016092999605462
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for zaobaosng.com, time taken 7.019754600012675 seconds
+
+
+current domain in process_parent:zaobaoviral.com
+===== to_skip function start =====
+zaobaoviral.com has NOT been processed in past X days
+===== to_skip function end =====
+===== screenshot function start =====
+duration_log screenshot: 4.461145700013731
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 6
+current protocol: https
+returncode: 6
+duration_log grab_html_js: 0.0741293000173755
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/zaobaoviral.com_20230515_113642.171.txt
+duration_log get_whois_info: 10.273353099997621
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+socket.gethostbyname_ex() exception triggered: [Errno 11001] getaddrinfo failed
+dns.resolver.query() exception triggered: The DNS query name does not exist: zaobaoviral.com.
+duration_log get_dns_info: 0.296740299963858
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/zaobaoviral.com_20230515_113652.764.json
+duration_log get_cert_info: 1.9429507000022568
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/zaobaoviral.com_20230515_113654.706.json
+duration_log get_archived_page_info: 0.9243409999762662
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for zaobaoviral.com, time taken 18.112761199998204 seconds
+
+
+current domain in process_parent:zaobaovirals.com
+===== to_skip function start =====
+zaobaovirals.com has NOT been processed in past X days
+===== to_skip function end =====
+===== screenshot function start =====
+duration_log screenshot: 4.6366726999985985
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 6
+current protocol: https
+returncode: 6
+duration_log grab_html_js: 0.08989300002576783
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/zaobaovirals.com_20230515_113700.528.txt
+duration_log get_whois_info: 0.8278804000001401
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+socket.gethostbyname_ex() exception triggered: [Errno 11001] getaddrinfo failed
+dns.resolver.query() exception triggered: The DNS query name does not exist: zaobaovirals.com.
+duration_log get_dns_info: 0.21074459998635575
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 60.893067199969664
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/zaobaovirals.com_20230515_113802.501.json
+duration_log get_archived_page_info: 0.7357328000362031
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for zaobaovirals.com, time taken 67.53019060002407 seconds
+
+
+current domain in process_parent:zaobaoviralsg.com
+===== to_skip function start =====
+zaobaoviralsg.com has NOT been processed in past X days
+===== to_skip function end =====
+===== screenshot function start =====
+duration_log screenshot: 4.281291000021156
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 6
+current protocol: https
+returncode: 6
+duration_log grab_html_js: 0.07802359998458996
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/zaobaoviralsg.com_20230515_113807.746.txt
+duration_log get_whois_info: 0.6909790000063367
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+socket.gethostbyname_ex() exception triggered: [Errno 11001] getaddrinfo failed
+dns.resolver.query() exception triggered: The DNS query name does not exist: zaobaoviralsg.com.
+duration_log get_dns_info: 0.2549161000060849
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/zaobaoviralsg.com_20230515_113808.718.json
+duration_log get_cert_info: 1.9645587000413798
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/zaobaoviralsg.com_20230515_113810.679.json
+duration_log get_archived_page_info: 0.754921399988234
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for zaobaoviralsg.com, time taken 8.156056199979503 seconds
+
+
+current domain in process_parent:zaobaoviralsgd.com
+===== to_skip function start =====
+zaobaoviralsgd.com has NOT been processed in past X days
+===== to_skip function end =====
+===== screenshot function start =====
+duration_log screenshot: 4.298930399992969
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 6
+current protocol: https
+returncode: 6
+duration_log grab_html_js: 0.0706913000321947
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/zaobaoviralsgd.com_20230515_113815.926.txt
+duration_log get_whois_info: 0.5749478000216186
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+socket.gethostbyname_ex() exception triggered: [Errno 11001] getaddrinfo failed
+dns.resolver.query() exception triggered: The DNS query name does not exist: zaobaoviralsgd.com.
+duration_log get_dns_info: 0.23054960003355518
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/zaobaoviralsgd.com_20230515_113816.754.json
+duration_log get_cert_info: 1.1031785999657586
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/zaobaoviralsgd.com_20230515_113817.858.json
+duration_log get_archived_page_info: 0.8105686000199057
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for zaobaoviralsgd.com, time taken 7.198392699996475 seconds
+
+
+current domain in process_parent:loads19421.online
+===== to_skip function start =====
+loads19421.online has NOT been processed in past X days
+===== to_skip function end =====
+===== screenshot function start =====
+duration_log screenshot: 5.149841999984346
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 6
+current protocol: https
+returncode: 6
+duration_log grab_html_js: 0.07437759998720139
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/loads19421.online_20230515_113824.026.txt
+duration_log get_whois_info: 1.8086364000337198
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+socket.gethostbyname_ex() exception triggered: [Errno 11001] getaddrinfo failed
+dns.resolver.query() exception triggered: The DNS query name does not exist: loads19421.online.
+duration_log get_dns_info: 0.044422100007068366
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 0.8643247000291012
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/loads19421.online_20230515_113826.758.json
+duration_log get_archived_page_info: 1.222633900004439
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for loads19421.online, time taken 9.281051199999638 seconds
+
+
+current domain in process_parent:dbs-ibannking-webdigital.com
+===== to_skip function start =====
+dbs-ibannking-webdigital.com has NOT been processed in past X days
+===== to_skip function end =====
+===== screenshot function start =====
+duration_log screenshot: 4.365471400029492
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 6
+current protocol: https
+returncode: 6
+duration_log grab_html_js: 0.07548640004824847
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_domain_whois_info()  exception triggered: No match for "DBS-IBANNKING-WEBDIGITAL.COM".
+>>> Last update of whois database: 2023-05-15T11:38:23Z <<<
+
+NOTICE: The expiration date displayed in this record is the date the
+registrar's sponsorship of the domain name registration in the registry is
+currently set to expire. This date does not necessarily reflect the expiration
+date of the domain name registrant's agreement with the sponsoring
+registrar.  Users may consult the sponsoring registrar's Whois database to
+view the registrar's reported date of expiration for this registration.
+
+TERMS OF USE: You are not authorized to access or query our Whois
+database through the use of electronic processes that are high-volume and
+automated except as reasonably necessary to register domain names or
+modify existing registrations; the Data in VeriSign Global Registry
+Services' ("VeriSign") Whois database is provided by VeriSign for
+information purposes only, and to assist persons in obtaining information
+about or related to a domain name registration record. VeriSign does not
+guarantee its accuracy. By submitting a Whois query, you agree to abide
+by the following terms of use: You agree that you may use this Data only
+for lawful purposes and that under no circumstances will you use this Data
+to: (1) allow, enable, or otherwise support the transmission of mass
+unsolicited, commercial advertising or solicitations via e-mail, telephone,
+or facsimile; or (2) enable high volume, automated, electronic processes
+that apply to VeriSign (or its computer systems). The compilation,
+repackaging, dissemination or other use of this Data is expressly
+prohibited without the prior written consent of VeriSign. You agree not to
+use electronic processes that are automated and high-volume to access or
+query the Whois database except as reasonably necessary to register
+domain names or modify existing registrations. VeriSign reserves the right
+to restrict your access to the Whois database in its sole discretion to ensure
+operational stability.  VeriSign may restrict or terminate your access to the
+Whois database for failure to abide by these terms of use. VeriSign
+reserves the right to modify these terms at any time.
+
+The Registry database contains ONLY .COM, .NET, .EDU domains and
+Registrars.
+
+duration_log get_whois_info: 0.03211780003039166
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+socket.gethostbyname_ex() exception triggered: [Errno 11001] getaddrinfo failed
+dns.resolver.query() exception triggered: The DNS query name does not exist: dbs-ibannking-webdigital.com.
+duration_log get_dns_info: 0.024394999956712127
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/dbs-ibannking-webdigital.com_20230515_113832.622.json
+duration_log get_cert_info: 1.153698500012979
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7310484999907203
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for dbs-ibannking-webdigital.com, time taken 6.485109900007956 seconds
+
+
+current domain in process_parent:impact-gi.com
+===== to_skip function start =====
+impact-gi.com has NOT been processed in past X days
+===== to_skip function end =====
+===== screenshot function start =====
+duration_log screenshot: 4.869557099998929
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 6
+current protocol: https
+returncode: 6
+duration_log grab_html_js: 0.07879400003002957
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/impact-gi.com_20230515_113839.597.txt
+duration_log get_whois_info: 1.3100141999893822
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+socket.gethostbyname_ex() exception triggered: [Errno 11001] getaddrinfo failed
+nameservers_filepath file written to resources/dns/impact-gi.com_nameservers_20230515_113840.906.txt
+duration_log get_dns_info: 0.898516200017184
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/impact-gi.com_20230515_113841.810.json
+duration_log get_cert_info: 0.926318000012543
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/impact-gi.com_20230515_113842.743.json
+duration_log get_archived_page_info: 0.7876626999932341
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for impact-gi.com, time taken 8.987113300012425 seconds
+
+
+current domain in process_parent:bittrex-sg.com
+===== to_skip function start =====
+bittrex-sg.com has NOT been processed in past X days
+===== to_skip function end =====
+===== screenshot function start =====
+duration_log screenshot: 5.047291500028223
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 6
+current protocol: https
+returncode: 6
+duration_log grab_html_js: 0.08281440002610907
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/bittrex-sg.com_20230515_113848.789.txt
+duration_log get_whois_info: 0.5591648000408895
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+socket.gethostbyname_ex() exception triggered: [Errno 11001] getaddrinfo failed
+nameservers_filepath file written to resources/dns/bittrex-sg.com_nameservers_20230515_113849.350.txt
+duration_log get_dns_info: 0.618563299998641
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/bittrex-sg.com_20230515_113849.977.json
+duration_log get_cert_info: 1.1201223999960348
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 1.6559138000011444
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for bittrex-sg.com, time taken 9.207479700038675 seconds
+
+
+current domain in process_parent:bittrex-sgl.com
+===== to_skip function start =====
+bittrex-sgl.com has NOT been processed in past X days
+===== to_skip function end =====
+===== screenshot function start =====
+duration_log screenshot: 6.764118599996436
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 6
+current protocol: https
+returncode: 6
+duration_log grab_html_js: 0.14555959997233003
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/bittrex-sgl.com_20230515_113859.906.txt
+duration_log get_whois_info: 0.9680165000027046
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+socket.gethostbyname_ex() exception triggered: [Errno 11001] getaddrinfo failed
+nameservers_filepath file written to resources/dns/bittrex-sgl.com_nameservers_20230515_113900.878.txt
+duration_log get_dns_info: 0.6301554999663495
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/bittrex-sgl.com_20230515_113901.504.json
+duration_log get_cert_info: 13.284234699967783
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 1.1834972000215203
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for bittrex-sgl.com, time taken 23.121553800010588 seconds
+
+
+current domain in process_parent:barbourjacket-singapore.com
+===== to_skip function start =====
+barbourjacket-singapore.com has NOT been processed in past X days
+===== to_skip function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/barbourjacket-singapore.com_http_20230515_113916.069.pngscreenshot found for protocol: https and saved to resources/shot-scraper/barbourjacket-singapore.com_https_20230515_113916.069.pngduration_log screenshot: 39.716965099971276
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+web_url: http://barbourjacket-singapore.com
+url: //www.barbourjacket-singapore.com/includes/templates/barbourjacket-singapore/jscript/jscript_1.11.1.min.js
+===== grab_html_js function exception occured
+exception: name 'unicode' is not defined
+===== grab_html_js function exception end =====
+current protocol: https
+returncode: 0
+starting html request.get
+web_url: https://barbourjacket-singapore.com
+url: //www.barbourjacket-singapore.com/includes/templates/barbourjacket-singapore/jscript/jscript_1.11.1.min.js
+===== grab_html_js function exception occured
+exception: name 'unicode' is not defined
+===== grab_html_js function exception end =====
+duration_log grab_html_js: 6.279201099998318
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/barbourjacket-singapore.com_20230515_114002.125.txt
+duration_log get_whois_info: 0.5785637000226416
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/barbourjacket-singapore.com_gethostbyname_ex_20230515_114002.703.txt
+nameservers_filepath file written to resources/dns/barbourjacket-singapore.com_nameservers_20230515_114002.703.txt
+duration_log get_dns_info: 0.313640900014434
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/barbourjacket-singapore.com_20230515_114003.023.json
+duration_log get_cert_info: 2.149997800006531
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.9001006000326015
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for barbourjacket-singapore.com, time taken 50.0609642000054 seconds
+
+
+current domain in process_parent:bbew3.com
+===== to_skip function start =====
+bbew3.com has NOT been processed in past X days
+===== to_skip function end =====
+===== screenshot function start =====
+duration_log screenshot: 46.625136099988595
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 28
+current protocol: https
+returncode: 28
+duration_log grab_html_js: 42.1857998999767
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/bbew3.com_20230515_114135.074.txt
+duration_log get_whois_info: 0.6355524999671616
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/bbew3.com_gethostbyname_ex_20230515_114135.709.txt
+nameservers_filepath file written to resources/dns/bbew3.com_nameservers_20230515_114135.709.txt
+duration_log get_dns_info: 0.6911186999641359
+===== get_dns_info function end =====

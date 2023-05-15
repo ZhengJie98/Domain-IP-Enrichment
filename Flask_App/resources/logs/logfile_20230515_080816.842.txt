@@ -1,0 +1,37 @@
+current domain in process_parent:imbbk3238g.xyz
+===== to_skip function start =====
+imbbk3238g.xyz has NOT been processed in past X days
+===== to_skip function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/imbbk3238g.xyz_http_20230515_080816.873.pngduration_log screenshot: 7.996332700015046
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.20477840001694858
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/imbbk3238g.xyz_20230515_080825.111.txt
+duration_log get_whois_info: 0.8673605000367388
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/imbbk3238g.xyz_gethostbyname_ex_20230515_080825.983.txt
+nameservers_filepath file written to resources/dns/imbbk3238g.xyz_nameservers_20230515_080825.983.txt
+duration_log get_dns_info: 0.25891269999556243
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/imbbk3238g.xyz_20230515_080826.255.json
+duration_log get_cert_info: 0.959608200006187
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.8332871999591589
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for imbbk3238g.xyz, time taken 15.00062219996471 seconds
+
+

@@ -111,8 +111,9 @@ client = MongoClient('localhost',27017)
 # db = client['test_list']
 # col = db["ip"]
 db = client['jon_list']
-# collection = "domain_older"
-collection = "testing_environ"
+collection = "domain_older"
+# collection = "imda_test"
+# collection = "testing_environ"
 # col = db["domain"]
 # col = db["domain_new"]
 # col = db["famous_domains"]
@@ -383,16 +384,6 @@ def retrieve_docs_to_process(how_many_docs):
         {"$and" : [{"processed_timestamp" : ""}, {"to_skip" : ""}, {"is_priority" : 0}]}
     ).sort("added_timestamp", pymongo.ASCENDING).limit(how_many_docs)
 
-    # ## auto closes after 30 minutes
-    # cursor = col.find(
-    #     {"$and" : [{"processed_timestamp" : ""}, {"to_skip" : ""}, {"is_priority" : 0}]}, no_cursor_timeout = True
-    # ).sort("added_timestamp", pymongo.ASCENDING).limit(how_many_ips)
-    
-    # cursor = col.find(
-    #     {"$and" : [{"ip_address" : "106.11.130.221"},{"processed_timestamp" : ""}, {"to_skip" : ""}, {"is_priority" : 0}]}
-    #     ).sort("added_timestamp", pymongo.ASCENDING).limit(how_many_ips)
-    
-    # print("===== retrieve_docs_to_process() END =====")
 
     return cursor
 
@@ -1234,6 +1225,12 @@ def retrieve_domain(domain_or_url):
 
 def process_parent_without_vtcall():
 
+    now = datetime.datetime.now(timezone('UTC'))
+    dt_string = now.strftime("%Y%m%d_%H%M%S.%f")[:-3]   
+    config.CURR_LOGFILE = "resources/logs/logfile_" + dt_string + ".txt"
+    output_file = Path(config.CURR_LOGFILE)
+    output_file.parent.mkdir(exist_ok=True, parents=True)
+
     with client.start_session() as session:
             
             # cursor = col.find({"has_html" : ""})
@@ -1303,6 +1300,7 @@ def process_parent_without_vtcall():
                     updated_doc = get_archived_page_info(doc)
 
                 updated_doc['log_file'] = config.CURR_LOGFILE
+                updated_doc['processed_timestamp'] = datetime.datetime.now(timezone('UTC'))
 
                 try : 
                     col.replace_one({"_id" : db_id}, updated_doc)
@@ -1319,11 +1317,11 @@ def process_parent_without_vtcall():
                 ## COMMENT OUT FOR ACTUAL
                 # break
                 toc = time.perf_counter()
-                if (toc-tic) < 15:
-                    balance = 15-(toc-tic)
-                    print("sleeping to makeup 15 seconds: ", balance, "seconds" )
-                    time.sleep(15-(toc-tic))
-                    toc = time.perf_counter()
+                # if (toc-tic) < 15:
+                #     balance = 15-(toc-tic)
+                #     print("sleeping to makeup 15 seconds: ", balance, "seconds" )
+                #     time.sleep(15-(toc-tic))
+                #     toc = time.perf_counter()
 
                 print(f"replacement SUCCESSFUL for {ip_or_domain}, time taken {toc-tic} seconds\n\n\n")
                 with open(config.CURR_LOGFILE,'a+') as logfile:

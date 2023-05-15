@@ -1,0 +1,51 @@
+current domain in process_parent:www.imda.gov.sg
+===== to_skip function start =====
+www.imda.gov.sg has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: www.imda.gov.sg now: 2023-05-15 12:09:52.922914+00:00
+duration_log vt_call: 1.1749902999727055
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/www.imda.gov.sg_http_20230515_120954.115.pngscreenshot found for protocol: https and saved to resources/shot-scraper/www.imda.gov.sg_https_20230515_120954.115.pngduration_log screenshot: 21.72278050001478
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+web_url: http://www.imda.gov.sg
+url: https://assets.wogaa.sg/scripts/wogaa.js
+===== grab_html_js function exception occured
+exception: name 'unicode' is not defined
+===== grab_html_js function exception end =====
+current protocol: https
+returncode: 0
+starting html request.get
+web_url: https://www.imda.gov.sg
+url: https://assets.wogaa.sg/scripts/wogaa.js
+===== grab_html_js function exception occured
+exception: name 'unicode' is not defined
+===== grab_html_js function exception end =====
+duration_log grab_html_js: 0.317520999989938
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/www.imda.gov.sg_20230515_121016.194.txt
+duration_log get_whois_info: 0.09415070002432913
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/www.imda.gov.sg_gethostbyname_ex_20230515_121016.291.txt
+nameservers_filepath file written to resources/dns/www.imda.gov.sg_nameservers_20230515_121016.291.txt
+duration_log get_dns_info: 0.07223729998804629
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/www.imda.gov.sg_20230515_121016.360.json
+duration_log get_cert_info: 1.5092622000374831
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/www.imda.gov.sg_20230515_121017.877.json
+duration_log get_archived_page_info: 0.8047569999471307
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for www.imda.gov.sg, time taken 25.7923415999976 seconds
+
+
