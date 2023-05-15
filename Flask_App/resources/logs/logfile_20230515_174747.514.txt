@@ -1,0 +1,9 @@
+current domain in process_parent:cons.top
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/cons.top_20230515_174747.562.txt
+duration_log get_whois_info: 1.0147828999906778
+===== get_whois_info function end =====
+replacement successful
+replacement SUCCESSFUL for cons.top, time taken 1.0394619000144303 seconds
+
+

@@ -1,0 +1,4 @@
+current domain in process_parent:tattach.top
+===== to_skip function start =====
+len_cursor > 0 , tattach.top has been processed in past X days
+===== to_skip function end =====

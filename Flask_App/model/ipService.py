@@ -6,7 +6,7 @@ import time
 import csv
 import datetime
 from datetime import timedelta
-import os
+import sys, os
 import pandas as pd
 from dateutil import tz
 import pytz
@@ -855,6 +855,10 @@ def grab_html_js(doc):
                 
                 except Exception as e:
                     # print(e)
+                    exc_type, exc_obj, exc_tb = sys.exc_info()
+                    fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+                    print(exc_type, fname, exc_tb.tb_lineno)
+
                     print("===== grab_html_js function exception occured")
                     print("exception e:", e)
                     logfile.write("===== grab_html_js function exception occured\n")
@@ -918,7 +922,7 @@ def get_whois_info(doc):
         try:
             w = whois.whois(domain)
             filepath = "resources/whois/" + domain + '_' + dt_string + ".txt"
-            with open(filepath, "w") as outfile:
+            with open(filepath, "w", encoding="utf-8") as outfile:
                 outfile.write(str(w.text))
 
             print("get_whois_info file written to {filepath}".format(filepath=filepath))
@@ -1234,7 +1238,9 @@ def process_parent_without_vtcall():
     with client.start_session() as session:
             
             # cursor = col.find({"has_html" : ""})
-            cursor = col.find()            ## replicate to prevent closing
+            cursor = col.find()
+            # cursor = col.find({"domain":"zshhks.top"})
+            # cursor = col.find({"processed_timestamp" : {"$ne": ""}})            ## replicate to prevent closing
             cursor = [x for x in cursor]
             # print(cursor)
 
@@ -1265,8 +1271,8 @@ def process_parent_without_vtcall():
                 
                 
                 ## ip check to be here
-                if to_skip(doc) == 1:
-                    continue
+                # if to_skip(doc) == 1:
+                #     continue
     
                 db_id = doc['_id']
                 # updated_doc  = call_ip_or_domain(doc, X_DAYS_AGO)
@@ -1290,6 +1296,7 @@ def process_parent_without_vtcall():
                 updated_doc = doc 
                 ## screenshot and extract html js functions here
                 #Continue Here Later!!
+
                 updated_doc = screenshot(updated_doc)
                 updated_doc = grab_html_js(updated_doc) 
                 

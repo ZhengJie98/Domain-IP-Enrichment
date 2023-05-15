@@ -1,0 +1,9 @@
+current domain in process_parent:dbsbank.top
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/dbsbank.top_20230515_174707.045.txt
+duration_log get_whois_info: 0.9732491000322625
+===== get_whois_info function end =====
+replacement successful
+replacement SUCCESSFUL for dbsbank.top, time taken 0.9924303000443615 seconds
+
+

@@ -1,0 +1,9 @@
+current domain in process_parent:sgxgroupapp.top
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/sgxgroupapp.top_20230515_174552.732.txt
+duration_log get_whois_info: 0.9730037999688648
+===== get_whois_info function end =====
+replacement successful
+replacement SUCCESSFUL for sgxgroupapp.top, time taken 0.9940575999789871 seconds
+
+

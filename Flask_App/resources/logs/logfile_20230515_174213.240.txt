@@ -1,0 +1,9 @@
+current domain in process_parent:jdonggobuys.top
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/jdonggobuys.top_20230515_174213.271.txt
+duration_log get_whois_info: 2.725328099972103
+===== get_whois_info function end =====
+replacement successful
+replacement SUCCESSFUL for jdonggobuys.top, time taken 2.748191999970004 seconds
+
+

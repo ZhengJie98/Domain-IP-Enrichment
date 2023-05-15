@@ -1,0 +1,44 @@
+current domain in process_parent:barbourjacket-singapore.com
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/barbourjacket-singapore.com_http_20230515_172710.905.pngscreenshot found for protocol: https and saved to resources/shot-scraper/barbourjacket-singapore.com_https_20230515_172710.905.pngduration_log screenshot: 39.20095550001133
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+web_url: http://barbourjacket-singapore.com
+url: //www.barbourjacket-singapore.com/includes/templates/barbourjacket-singapore/jscript/jscript_1.11.1.min.js
+===== grab_html_js function exception occured
+exception: name 'unicode' is not defined
+===== grab_html_js function exception end =====
+current protocol: https
+returncode: 0
+starting html request.get
+web_url: https://barbourjacket-singapore.com
+url: //www.barbourjacket-singapore.com/includes/templates/barbourjacket-singapore/jscript/jscript_1.11.1.min.js
+===== grab_html_js function exception occured
+exception: name 'unicode' is not defined
+===== grab_html_js function exception end =====
+duration_log grab_html_js: 5.391085800016299
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/barbourjacket-singapore.com_20230515_172755.563.txt
+duration_log get_whois_info: 0.733522999973502
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/barbourjacket-singapore.com_gethostbyname_ex_20230515_172756.294.txt
+nameservers_filepath file written to resources/dns/barbourjacket-singapore.com_nameservers_20230515_172756.294.txt
+duration_log get_dns_info: 0.4453950999886729
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/barbourjacket-singapore.com_20230515_172756.745.json
+duration_log get_cert_info: 17.829125399992336
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 1.0973622999736108
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for barbourjacket-singapore.com, time taken 64.801711099979 seconds
+
+

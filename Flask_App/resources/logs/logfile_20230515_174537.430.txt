@@ -1,0 +1,9 @@
+current domain in process_parent:dbspaymentlah.top
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/dbspaymentlah.top_20230515_174537.448.txt
+duration_log get_whois_info: 0.9960792999481782
+===== get_whois_info function end =====
+replacement successful
+replacement SUCCESSFUL for dbspaymentlah.top, time taken 1.0215823000180535 seconds
+
+

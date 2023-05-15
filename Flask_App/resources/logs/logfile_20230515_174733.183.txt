@@ -1,0 +1,9 @@
+current domain in process_parent:casn.top
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/casn.top_20230515_174733.233.txt
+duration_log get_whois_info: 2.1713345000171103
+===== get_whois_info function end =====
+replacement successful
+replacement SUCCESSFUL for casn.top, time taken 2.1936222999938764 seconds
+
+

@@ -1,0 +1,32 @@
+current domain in process_parent:tattach.top
+===== screenshot function start =====
+duration_log screenshot: 16.859270000015385
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 7
+current protocol: https
+returncode: 7
+duration_log grab_html_js: 4.212991499982309
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/tattach.top_20230515_171212.587.txt
+duration_log get_whois_info: 1.2581462999805808
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/tattach.top_gethostbyname_ex_20230515_171213.840.txt
+nameservers_filepath file written to resources/dns/tattach.top_nameservers_20230515_171213.840.txt
+duration_log get_dns_info: 0.5568047999986447
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/tattach.top_20230515_171214.402.json
+duration_log get_cert_info: 16.757401999959257
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.756142699974589
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for tattach.top, time taken 40.456924900005106 seconds
+
+

@@ -1,0 +1,9 @@
+current domain in process_parent:shopee899.top
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/shopee899.top_20230515_174609.997.txt
+duration_log get_whois_info: 11.68860739999218
+===== get_whois_info function end =====
+replacement successful
+replacement SUCCESSFUL for shopee899.top, time taken 11.710552099975757 seconds
+
+

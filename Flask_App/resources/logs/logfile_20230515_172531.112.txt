@@ -1,0 +1,10 @@
+current domain in process_parent:barbourjacket-singapore.com
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/barbourjacket-singapore.com_http_20230515_172531.134.pngscreenshot found for protocol: https and saved to resources/shot-scraper/barbourjacket-singapore.com_https_20230515_172531.134.pngduration_log screenshot: 58.39767340000253
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+web_url: http://barbourjacket-singapore.com
+url: //www.barbourjacket-singapore.com/includes/templates/barbourjacket-singapore/jscript/jscript_1.11.1.min.js

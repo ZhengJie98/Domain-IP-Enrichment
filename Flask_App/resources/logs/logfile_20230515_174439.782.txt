@@ -1,0 +1,9 @@
+current domain in process_parent:sleekdigital.pro
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/sleekdigital.pro_20230515_174439.802.txt
+duration_log get_whois_info: 1.3985349999857135
+===== get_whois_info function end =====
+replacement successful
+replacement SUCCESSFUL for sleekdigital.pro, time taken 1.4249430000199936 seconds
+
+

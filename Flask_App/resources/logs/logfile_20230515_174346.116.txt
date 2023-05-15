@@ -1,0 +1,9 @@
+current domain in process_parent:cpt-tt.top
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/cpt-tt.top_20230515_174346.135.txt
+duration_log get_whois_info: 2.1199770999955945
+===== get_whois_info function end =====
+replacement successful
+replacement SUCCESSFUL for cpt-tt.top, time taken 2.139555800007656 seconds
+
+

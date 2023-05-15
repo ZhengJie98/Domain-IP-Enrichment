@@ -1,0 +1,9 @@
+current domain in process_parent:linkhtom.top
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/linkhtom.top_20230515_174502.064.txt
+duration_log get_whois_info: 2.0783704000059515
+===== get_whois_info function end =====
+replacement successful
+replacement SUCCESSFUL for linkhtom.top, time taken 2.1069469999638386 seconds
+
+

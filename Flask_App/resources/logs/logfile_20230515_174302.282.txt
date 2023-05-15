@@ -1,0 +1,9 @@
+current domain in process_parent:hokasingaporeshop.top
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/hokasingaporeshop.top_20230515_174302.301.txt
+duration_log get_whois_info: 1.5905163999996148
+===== get_whois_info function end =====
+replacement successful
+replacement SUCCESSFUL for hokasingaporeshop.top, time taken 1.6101073999889195 seconds
+
+

@@ -1,0 +1,9 @@
+current domain in process_parent:dhlpost.top
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/dhlpost.top_20230515_174405.669.txt
+duration_log get_whois_info: 10.62150109995855
+===== get_whois_info function end =====
+replacement successful
+replacement SUCCESSFUL for dhlpost.top, time taken 10.644554099999368 seconds
+
+

@@ -1,0 +1,9 @@
+current domain in process_parent:smturl.top
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/smturl.top_20230515_174422.656.txt
+duration_log get_whois_info: 10.73141539999051
+===== get_whois_info function end =====
+replacement successful
+replacement SUCCESSFUL for smturl.top, time taken 10.752361999999266 seconds
+
+

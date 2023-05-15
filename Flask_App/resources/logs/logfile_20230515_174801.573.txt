@@ -1,0 +1,9 @@
+current domain in process_parent:zshhks.top
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/zshhks.top_20230515_174801.591.txt
+duration_log get_whois_info: 10.593407900014427
+===== get_whois_info function end =====
+replacement successful
+replacement SUCCESSFUL for zshhks.top, time taken 10.614432699978352 seconds
+
+

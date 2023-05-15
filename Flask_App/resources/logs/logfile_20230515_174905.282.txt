@@ -1,0 +1,105 @@
+current domain in process_parent:binance-sgd-club.pages.dev
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+web_url: http://binance-sgd-club.pages.dev
+url: /static/js/chunk-vendors.507e0223.js
+web_url: http://binance-sgd-club.pages.dev
+url: /static/js/index.9fdb386b.js
+total js_files_links: ['http://binance-sgd-club.pages.dev/static/js/chunk-vendors.507e0223.js', 'http://binance-sgd-club.pages.dev/static/js/index.9fdb386b.js']
+starting get for each_js_link: http://binance-sgd-club.pages.dev/static/js/chunk-vendors.507e0223.js
+starting get for each_js_link: http://binance-sgd-club.pages.dev/static/js/index.9fdb386b.js
+current protocol: https
+returncode: 0
+starting html request.get
+web_url: https://binance-sgd-club.pages.dev
+url: /static/js/chunk-vendors.507e0223.js
+web_url: https://binance-sgd-club.pages.dev
+url: /static/js/index.9fdb386b.js
+total js_files_links: ['https://binance-sgd-club.pages.dev/static/js/chunk-vendors.507e0223.js', 'https://binance-sgd-club.pages.dev/static/js/index.9fdb386b.js']
+starting get for each_js_link: https://binance-sgd-club.pages.dev/static/js/chunk-vendors.507e0223.js
+starting get for each_js_link: https://binance-sgd-club.pages.dev/static/js/index.9fdb386b.js
+duration_log grab_html_js: 11.558072399988305
+===== grab_html_js function end =====
+replacement successful
+replacement SUCCESSFUL for binance-sgd-club.pages.dev, time taken 11.590604300028645 seconds
+
+
+current domain in process_parent:caruopay-sg-point.firebaseapp.com
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 0
+starting html request.get
+total js_files_links: []
+duration_log grab_html_js: 0.36529330001212656
+===== grab_html_js function end =====
+replacement successful
+replacement SUCCESSFUL for caruopay-sg-point.firebaseapp.com, time taken 0.40002919995458797 seconds
+
+
+current domain in process_parent:laoergood.cn
+===== grab_html_js function start =====
+current protocol: http
+returncode: 6
+current protocol: https
+returncode: 6
+duration_log grab_html_js: 0.709914100007154
+===== grab_html_js function end =====
+replacement successful
+replacement SUCCESSFUL for laoergood.cn, time taken 0.7564836000092328 seconds
+
+
+current domain in process_parent:police088762sg.homes
+===== grab_html_js function start =====
+current protocol: http
+returncode: 6
+current protocol: https
+returncode: 6
+duration_log grab_html_js: 0.0861721999826841
+===== grab_html_js function end =====
+replacement successful
+replacement SUCCESSFUL for police088762sg.homes, time taken 0.12484090001089498 seconds
+
+
+current domain in process_parent:unovb.com
+===== grab_html_js function start =====
+current protocol: http
+returncode: 6
+current protocol: https
+returncode: 6
+duration_log grab_html_js: 0.2549573999713175
+===== grab_html_js function end =====
+replacement successful
+replacement SUCCESSFUL for unovb.com, time taken 0.29722040001070127 seconds
+
+
+current domain in process_parent:azttcall.com
+===== grab_html_js function start =====
+current protocol: http
+returncode: 6
+current protocol: https
+returncode: 6
+duration_log grab_html_js: 0.2671672999858856
+===== grab_html_js function end =====
+replacement successful
+replacement SUCCESSFUL for azttcall.com, time taken 0.31346460001077503 seconds
+
+
+current domain in process_parent:katongcredit.online
+===== grab_html_js function start =====
+current protocol: http
+returncode: 28
+current protocol: https
+returncode: 3221225786
+duration_log grab_html_js: 25.79920059995493
+===== grab_html_js function end =====
+replacement successful
+replacement SUCCESSFUL for katongcredit.online, time taken 25.85307480004849 seconds
+
+
+current domain in process_parent:infinite110.com
