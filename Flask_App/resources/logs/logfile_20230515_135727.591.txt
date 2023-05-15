@@ -1,0 +1,41 @@
+current domain in process_parent:imbbk3238g.xyz
+===== to_skip function start =====
+imbbk3238g.xyz has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: imbbk3238g.xyz now: 2023-05-15 13:57:27.609074
+duration_log vt_call: 1.0553127999883145
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/imbbk3238g.xyz_http_20230515_135728.672.pngduration_log screenshot: 6.9634779000189155
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.6608553000260144
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/imbbk3238g.xyz_20230515_135736.326.txt
+duration_log get_whois_info: 0.8617318999604322
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/imbbk3238g.xyz_gethostbyname_ex_20230515_135737.203.txt
+nameservers_filepath file written to resources/dns/imbbk3238g.xyz_nameservers_20230515_135737.203.txt
+duration_log get_dns_info: 0.06833239999832585
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/imbbk3238g.xyz_20230515_135737.271.json
+duration_log get_cert_info: 1.6645915000117384
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 1.5972518000053242
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for imbbk3238g.xyz, time taken 15.00091689999681 seconds
+
+

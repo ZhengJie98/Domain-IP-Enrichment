@@ -1,0 +1,29 @@
+current domain in process_parent:imbbk3238g.xyz
+===== to_skip function start =====
+imbbk3238g.xyz has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: imbbk3238g.xyz now: 2023-05-15 13:47:00.922777
+duration_log vt_call: 1.119754500046838
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/imbbk3238g.xyz_http_20230515_134702.053.pngduration_log screenshot: 9.550621600006707
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.23960589995840564
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/imbbk3238g.xyz_20230515_134711.885.txt
+duration_log get_whois_info: 0.8391007999889553
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/imbbk3238g.xyz_gethostbyname_ex_20230515_134712.732.txt
+dns.resolver.query() exception triggered: cannot access local variable 'resolver' where it is not associated with a value
+duration_log get_dns_info: 0.03194759995676577
+===== get_dns_info function end =====

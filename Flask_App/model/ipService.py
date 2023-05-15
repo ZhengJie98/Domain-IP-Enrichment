@@ -28,9 +28,10 @@ from slugify import slugify
 from crtsh import crtshAPI ## search certificate /
 from waybackpy import WaybackMachineCDXServerAPI ## search historical copies of website
 import socket
-import dns.resolver
 import whois # query and response protocol that is often used for querying databases that store registered domain names.
 from urllib.parse import urlparse
+from pytz import timezone
+from dns import resolver
 
 
 
@@ -122,44 +123,48 @@ col = db[collection]
 # col = db["domain_older_v2"]
 
 
-def export_db():
-    start_time = time.time()
-    now = datetime.datetime.now()
-    dt_string = now.strftime("%Y%m%d_%H%M%S.%f")[:-3]    
+# def export_db():
+#     print("=====export db starting=====")
+#     start_time = time.time()
+#     now = datetime.datetime.now(timezone('UTC'))
+#     dt_string = now.strftime("%Y%m%d_%H%M%S.%f")[:-3]    
 
-    cursor = col.find()
-    print ("total docs in collection:", col.count_documents( {} ))
-    mongo_docs = list(cursor)
-    docs = pd.DataFrame(columns=[])
-    for num, doc in enumerate( mongo_docs ):
-        doc["_id"] = str(doc["_id"])
-        doc_id = doc["_id"]
-        #  create a Series obj from the MongoDB dict
-        series_obj = pd.Series( doc, name=doc_id )
+#     cursor = col.find()
+#     print ("total docs in collection:", col.count_documents( {} ))
+#     mongo_docs = list(cursor)
+#     docs = pd.DataFrame(columns=[])
+#     for num, doc in enumerate( mongo_docs ):
+#         doc["_id"] = str(doc["_id"])
+#         doc_id = doc["_id"]
+#         #  create a Series obj from the MongoDB dict
+#         series_obj = pd.Series( doc, name=doc_id )
 
-        # append the MongoDB Series obj to the DataFrame obj
-        docs = docs.append(series_obj)
+#         # append the MongoDB Series obj to the DataFrame obj
+#         docs = docs.append(series_obj)
 
-        # only print every 10th document
-        if num % 10 == 0:
-            print (type(doc))
-            print (type(doc["_id"]))
-            # print (num, "--", doc, "\n")
+#         # only print every 10th document
+#         if num % 10 == 0:
+#             print (type(doc))
+#             print (type(doc["_id"]))
+#             # print (num, "--", doc, "\n")
 
-    if not os.path.exists("resources/exportdb"):
-            os.makedirs("resources/exportdb")
+#     if not os.path.exists("resources/exportdb"):
+#             os.makedirs("resources/exportdb")
 
-    filename = 'resources/exportdb/' + collection + '_' + dt_string + '.csv'
-    docs.to_csv(filename, ",") # CSV delimited by commas
-    print(f"\n\n file same to: ${filename}")
-    print ("\n\ntime elapsed:", time.time()-start_time)
-    return filename
+#     filename = 'resources/exportdb/' + collection + '_' + dt_string + '.csv'
+#     docs.to_csv(filename, ",") # CSV delimited by commas
+#     print(f"\n\n file same to: ${filename}")
+#     print ("\n\ntime elapsed:", time.time()-start_time)
+#     return filename
 
 
 ## Saves to db and a harddisk file
 def save_ipfile(file):
     print("===== save_iplist() =====:")
-    now = datetime.datetime.now()
+    # now = datetime.datetime.now(timezone('UTC'))
+    now = datetime.datetime.now(timezone('UTC'))
+    # now = now_utc.astimezone(timezone('Asia/Singapore'))
+
     df = pd.read_csv(file)
 
     ## TAKING FIRST COL TO BE IP 
@@ -194,7 +199,10 @@ def save_ipfile(file):
 
 def save_domainfile(file):
     print("===== save_domainfile() =====:")
-    now = datetime.datetime.now()
+    now = datetime.datetime.now(timezone('UTC'))
+    # now_utc = datetime.datetime.now(timezone('UTC'))
+    # now = now_utc.astimezone(timezone('Asia/Singapore'))
+
     df = pd.read_csv(file)
 
     ## TAKING FIRST COL TO BE IP 
@@ -234,7 +242,7 @@ def save_domainfile(file):
 ## Checks to_skip(), else call_ip and update db with result
 def process_parent():
 
-    now = datetime.datetime.now()
+    now = datetime.datetime.now(timezone('UTC'))
     dt_string = now.strftime("%Y%m%d_%H%M%S.%f")[:-3]   
     config.CURR_LOGFILE = "resources/logs/logfile_" + dt_string + ".txt"
     output_file = Path(config.CURR_LOGFILE)
@@ -330,6 +338,7 @@ def process_parent():
                     updated_doc = get_archived_page_info(doc)
 
                 updated_doc['log_file'] = config.CURR_LOGFILE
+                updated_doc['processed_timestamp'] = datetime.datetime.now(timezone('UTC'))
 
                 try : 
                     col.replace_one({"_id" : db_id}, updated_doc)
@@ -351,6 +360,7 @@ def process_parent():
                     print("sleeping to makeup 15 seconds: ", balance, "seconds" )
                     time.sleep(15-(toc-tic))
                     toc = time.perf_counter()
+
 
                 print(f"replacement SUCCESSFUL for {ip_or_domain}, time taken {toc-tic} seconds\n\n\n")
                 with open(config.CURR_LOGFILE,'a+') as logfile:
@@ -409,7 +419,7 @@ def call_ip_or_domain(doc):
 
         db_id = doc['_id']
 
-        now = datetime.datetime.now()
+        now = datetime.datetime.now(timezone('UTC'))
         dt_string = now.strftime("%d%m%Y")
         # d = datetime.timedelta(days = x_days_ago)
         # deducted_date = (now - d).strftime("%d%m%Y")
@@ -464,7 +474,7 @@ def call_ip_or_domain(doc):
             # print("type r after json dumps:", type(r))
 
         ## populate fields in JSON template
-        doc['processed_timestamp'] = now
+        # doc['processed_timestamp'] = now
         for k,v in doc.items():
             # print("current (k,v)", (k,v))
             
@@ -513,7 +523,7 @@ def to_skip(doc):
         logfile.write("===== to_skip function start =====\n")
 
         x_days_ago = doc['x_days_ago']
-        now = datetime.datetime.now()
+        now = datetime.datetime.now(timezone('UTC'))
         d = datetime.timedelta(days = x_days_ago)
         deducted_date = (now - d)
         # print("global variable X_DAYS_AGO:", X_DAYS_AGO)
@@ -574,7 +584,7 @@ def custom_add():
     # print(folders)
     # os.path.join("C:/Users/puddi/OneDrive/Documents/GitHub/IMDA/IMDA-Domain-IP-Enrichment/Flask_App/downloaded_vtresponse/15032023")
     # print(os.path)
-    now = datetime.datetime.now()
+    now = datetime.datetime.now(timezone('UTC'))
 
     for file in files:
         ip_address = file.split(".json")[0]
@@ -609,7 +619,7 @@ def screenshot(doc):
 
 
         tic = time.perf_counter()
-        now = datetime.datetime.now()
+        now = datetime.datetime.now(timezone('UTC'))
         dt_string = now.strftime("%Y%m%d_%H%M%S.%f")[:-3]   
         
         if "ip_address" in doc:
@@ -687,7 +697,7 @@ def grab_html_js(doc):
         logfile.write("===== grab_html_js function start =====\n")
         tic = time.perf_counter()
 
-        now = datetime.datetime.now()
+        now = datetime.datetime.now(timezone('UTC'))
         dt_string = now.strftime("%Y%m%d_%H%M%S.%f")[:-3] 
 
         if "ip_address" in doc:
@@ -908,7 +918,7 @@ def get_whois_info(doc):
 
         domain = str(doc["domain"])
 
-        now = datetime.datetime.now()
+        now = datetime.datetime.now(timezone('UTC'))
         dt_string = now.strftime("%Y%m%d_%H%M%S.%f")[:-3]   
 
         if not os.path.exists("resources/whois"):
@@ -960,7 +970,7 @@ def get_dns_info(doc):
 
         domain = str(doc["domain"])
 
-        now = datetime.datetime.now()
+        now = datetime.datetime.now(timezone('UTC'))
         dt_string = now.strftime("%Y%m%d_%H%M%S.%f")[:-3]   
 
         if not os.path.exists("resources/dns"):
@@ -994,12 +1004,15 @@ def get_dns_info(doc):
             # return ['', '', '', '', '']
 
         try: 
-            nameservers = dns.resolver.query(domain, 'NS') ## e.g. www.amazon.com
+            from dns import resolver
+            resolver = resolver.Resolver()
+            resolver.nameservers = ['1.1.1.1']
+            nameservers = resolver.query(domain, 'NS') ## e.g. www.amazon.com
             nameserver_list = [i.to_text() for i in nameservers]
             nameservers_filepath = "resources/dns/" + domain + '_' + "nameservers" + '_' + dt_string + ".txt"
 
             with open(nameservers_filepath, "w") as outfile:
-                outfile.write(str(nameservers))
+                outfile.write(str(nameserver_list))
             
             # 'nameserver_list': nameserver_list, 'gethostbyname_ex_filepath': gethostbyname_ex_filepath, 'nameservers_filepath' :nameservers_filepath }
 
@@ -1041,7 +1054,7 @@ def get_cert_info(doc):
 
         domain = str(doc["domain"])
 
-        now = datetime.datetime.now()
+        now = datetime.datetime.now(timezone('UTC'))
         dt_string = now.strftime("%Y%m%d_%H%M%S.%f")[:-3]   
 
         if not os.path.exists("resources/cert"):
@@ -1158,7 +1171,7 @@ def get_archived_page_info(doc):
 
         domain = str(doc["domain"])
 
-        now = datetime.datetime.now()
+        now = datetime.datetime.now(timezone('UTC'))
         dt_string = now.strftime("%Y%m%d_%H%M%S.%f")[:-3]   
 
         if not os.path.exists("resources/archived_page"):
@@ -1219,73 +1232,109 @@ def retrieve_domain(domain_or_url):
     domain = o.path
     return domain
 
-def process_ip_parent_without_vtcall():
+def process_parent_without_vtcall():
 
     with client.start_session() as session:
-    # sessionId = session
-    # refreshTimestamp = datetime.datetime.now()
-
-
-
-        # while config.REMAINING_LIMIT > 0 and len(list(retrieve_docs_to_process(config.REMAINING_LIMIT))) > 0:
-            # print("new while loop config.REMAINING_LIMIT:", config.REMAINING_LIMIT)
-            cursor = col.find({"has_html" : ""})            ## replicate to prevent closing
+            
+            # cursor = col.find({"has_html" : ""})
+            cursor = col.find()            ## replicate to prevent closing
             cursor = [x for x in cursor]
             # print(cursor)
 
             
-            for ip_doc in cursor:
-                currentTimestamp = datetime.datetime.now()
-                print(currentTimestamp)
+            for doc in cursor:
 
+                is_ip = 0
+
+                if "ip_address" in doc:
+                    is_ip = 1 # if its ip 
+                    ip_or_domain = str(doc["ip_address"])
+                    print("current ip in process_ip_parent:", ip_or_domain)
+                    with open(config.CURR_LOGFILE,'a+') as logfile:
+                        logfile.write("current ip in process_parent:" + ip_or_domain + '\n')
+
+                elif "domain" in doc:
+                    is_ip = 0 #if its domain
+                    ip_or_domain = str(doc["domain"])
+                    print("current domain in process_parent:", ip_or_domain)
+                    with open(config.CURR_LOGFILE,'a+') as logfile:
+                        logfile.write("current domain in process_parent:" + ip_or_domain + '\n')
+ 
                 tic = time.perf_counter()
 
                 ## refreshing to keep connection alive
                 client.admin.command('refreshSessions', [session.session_id], session=session)
 
-                ip = str(ip_doc["ip_address"])
-                print("current ip in process_ip_parent:", ip, "currentTimeStamp", currentTimestamp)
+                
                 
                 ## ip check to be here
-                # if to_skip(ip_doc) == 1:
-                #     continue
+                if to_skip(doc) == 1:
+                    continue
     
-                db_id = ip_doc['_id']
-                updated_ip_doc = ip_doc
+                db_id = doc['_id']
+                # updated_doc  = call_ip_or_domain(doc, X_DAYS_AGO)
+                # updated_doc  = call_ip_or_domain(doc)
+                # # call_ip_status_code = updated_ip_doc.get("response_code")
+                # call_status_code = updated_doc.get("response_code") 
+ 
 
+                # ## breaking / continuing to quicken code
+                # # print("call_ip_status_code:", call_ip_status_code)
+                # if call_status_code == 429:
+                #     # print("breaking")
+                #     with open(config.CURR_LOGFILE,'a+') as logfile:
+                #         logfile.write("QUOTA EXCEEDED, STOPPED ALL CALLS")
+                #     return "QUOTA EXCEEDED, STOPPED ALL CALLS"
+                # elif call_status_code != None and (call_status_code < 200 or call_status_code > 299):
+                #     print("call_status_code:", call_status_code, "continuing to next ip_or_domain")
+                #     with open(config.CURR_LOGFILE,'a+') as logfile:
+                #         logfile.write("call_status_code: {call_status_code}, continuing to next ip_or_domain\n".format(call_status_code=call_status_code))
+                #     continue
+                updated_doc = doc 
                 ## screenshot and extract html js functions here
-                updated_ip_doc = screenshot(updated_ip_doc)
-                updated_ip_doc = grab_html_js(updated_ip_doc) 
-        
+                #Continue Here Later!!
+                updated_doc = screenshot(updated_doc)
+                updated_doc = grab_html_js(updated_doc) 
+                
+                if (is_ip == 0): #means doc is domain
+                    updated_doc = get_whois_info(updated_doc)
+                    updated_doc = get_dns_info(updated_doc)
+                    updated_doc = get_cert_info(updated_doc)
+                    updated_doc = get_archived_page_info(doc)
+
+                updated_doc['log_file'] = config.CURR_LOGFILE
+
                 try : 
-                    col.replace_one({"_id" : db_id}, updated_ip_doc)
+                    col.replace_one({"_id" : db_id}, updated_doc)
                     print("replacement successful")
+                    with open(config.CURR_LOGFILE,'a+') as logfile:
+                        logfile.write("replacement successful\n")
                 
                 except Exception as e:
-                    print(e)
+                    print("exception occured in process_parent()", e)
+                    with open(config.CURR_LOGFILE,'a+') as logfile:
+                        logfile.write("exception: {e}\n".format(e=e))
                     # e
 
                 ## COMMENT OUT FOR ACTUAL
                 # break
                 toc = time.perf_counter()
-                # if (toc-tic) < 15:
-                #     balance = 15-(toc-tic)
-                #     print("sleeping to makeup 15 seconds: ", balance, "seconds" )
-                #     time.sleep(15-(toc-tic))
-                #     toc = time.perf_counter()
+                if (toc-tic) < 15:
+                    balance = 15-(toc-tic)
+                    print("sleeping to makeup 15 seconds: ", balance, "seconds" )
+                    time.sleep(15-(toc-tic))
+                    toc = time.perf_counter()
 
-                print(f"replacement SUCCESSFUL for {ip}, time taken {toc-tic} seconds\n\n\n")
-             
-            # cursor.close()
-
-            # if call_ip_status_code == 429:
+                print(f"replacement SUCCESSFUL for {ip_or_domain}, time taken {toc-tic} seconds\n\n\n")
+                with open(config.CURR_LOGFILE,'a+') as logfile:
+                    logfile.write(f"replacement SUCCESSFUL for {ip_or_domain}, time taken {toc-tic} seconds\n\n\n")
 
             return "Replacement SUCCESSFUL"
     
 
 def process_individual(input):
 
-    now = datetime.datetime.now()
+    now = datetime.datetime.now(timezone('UTC'))
     dt_string = now.strftime("%Y%m%d_%H%M%S.%f")[:-3]   
     config.CURR_LOGFILE = "resources/logs/logfile_" + dt_string + ".txt"
     output_file = Path(config.CURR_LOGFILE)

@@ -30,7 +30,9 @@ client = MongoClient('localhost',27017)
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
-
+@app.route('/')
+def hello_world():
+  return 'Hello from Flask!'
 
 @app.route("/uploadIP", methods=['POST'])
 def upload_ip():
@@ -56,17 +58,17 @@ def process_Parent():
    
     return result
 
-@app.route("/exportDB", methods=['GET'])
-def export_DB():
+# @app.route("/exportDB", methods=['GET'])
+# def export_DB():
 
-    result = export_db()
+#     result = export_db()
    
-    return result
+#     return result
 
-@app.route("/processIPtest_without_vtcall", methods=['GET'])
-def process_IP_test_without_vtcall():
+@app.route("/process_without_vtcall", methods=['GET'])
+def process_without_vtcall():
 
-    result = process_ip_parent_without_vtcall()
+    result = process_parent_without_vtcall()
    
     return result
 

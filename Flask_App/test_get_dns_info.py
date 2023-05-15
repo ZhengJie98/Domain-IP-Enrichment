@@ -28,11 +28,13 @@ from slugify import slugify
 from crtsh import crtshAPI ## search certificate /
 from waybackpy import WaybackMachineCDXServerAPI ## search historical copies of website
 import socket
+# import dns.resolver
 import dns.resolver
 import whois # query and response protocol that is often used for querying databases that store registered domain names.
 
 
-domain = 'www.facebook.com'
+# domain = 'www.facebook.com'
+domain = 'www.amazon.com'
 # domain = 'imbbk3238g.xyz'
 # dns_info = socket.gethostbyname_ex(domain)
 # # dns_info = ('fy31bb2w66.xyz', [], ['43.245.107.46'])
@@ -41,7 +43,7 @@ doc = {}
 
 try: 
     # nameservers = dns.resolver.query(domain, 'NS') ## e.g. www.amazon.com  ## findout who is the registered authoritative NS
-    nameservers = dns.resolver.resolve(domain, 'NS') ## e.g. www.amazon.com
+    nameservers = dns.resolver.query(domain, 'NS') ## e.g. www.amazon.com
     nameserver_list = [i.to_text() for i in nameservers]
     print(nameservers)
     print(nameserver_list)
@@ -67,4 +69,4 @@ except Exception as e:
     # logfile.write("dns.resolver.query() exception triggered: {e}\n".format(e=e))
     print(e)
 
-print(doc)
+# print(doc)
