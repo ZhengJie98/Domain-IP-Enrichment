@@ -1,0 +1,81 @@
+%%
+%% This is the AFNIC Whois server.
+%%
+%% complete date format: YYYY-MM-DDThh:mm:ssZ
+%%
+%% Rights restricted by copyright.
+%% See https://www.afnic.fr/en/domain-names-and-support/everything-there-is-to-know-about-domain-names/find-a-domain-name-or-a-holder-using-whois/
+%%
+%%
+
+domain:                        line.pm
+status:                        ACTIVE
+eppstatus:                     active
+hold:                          NO
+holder-c:                      ML64728-FRNIC
+admin-c:                       ML64728-FRNIC
+tech-c:                        D153216-FRNIC
+registrar:                     KEY-SYSTEMS GmbH
+Expiry Date:                   2025-06-28T19:55:19Z
+created:                       2022-06-28T19:55:19Z
+last-update:                   2023-05-14T18:16:52.185868Z
+source:                        FRNIC
+
+nserver:                       ns10.dnsexit.com
+nserver:                       ns11.dnsexit.com
+nserver:                       ns12.dnsexit.com
+nserver:                       ns13.dnsexit.com
+source:                        FRNIC
+
+registrar:                     KEY-SYSTEMS GmbH
+address:                       Im Oberen Werk 1
+address:                       DE-66386 Sankt INGBERT
+country:                       DE
+phone:                         +49.68949396850
+fax-no:                        +49.68949396851
+e-mail:                        info@key-systems.net
+website:                       http://www.key-systems.net/tld/fr
+anonymous:                     No
+registered:                    2006-07-24T00:00:00Z
+source:                        FRNIC
+
+nic-hdl:                       ML64728-FRNIC
+type:                          ORGANIZATION
+contact:                       Maquinarias Lorenzi
+address:                       Arthur Lorenzi
+address:                       67 Av. Pierre Mendes-France
+address:                       75013 Paris
+country:                       FR
+phone:                         +1.5134003888
+e-mail:                        dnsexit@gmail.com
+registrar:                     KEY-SYSTEMS GmbH
+anonymous:                     NO
+obsoleted:                     NO
+eppstatus:                     associated
+eppstatus:                     active
+eligstatus:                    not identified
+reachstatus:                   not identified
+source:                        FRNIC
+
+nic-hdl:                       D153216-FRNIC
+type:                          ORGANIZATION
+contact:                       DNSExit.com
+address:                       Le Monde Services
+address:                       67 Av. Pierre Mendes-France
+address:                       75013 Paris
+country:                       FR
+phone:                         +1.5134003888
+fax-no:                        +1.5134003888
+e-mail:                        dnsexit@gmail.com
+registrar:                     KEY-SYSTEMS GmbH
+changed:                       2022-06-28T20:01:12Z
+anonymous:                     NO
+obsoleted:                     NO
+eppstatus:                     associated
+eppstatus:                     active
+eligstatus:                    not identified
+reachstatus:                   not identified
+source:                        FRNIC
+
+>>> WHOIS request date: 2023-05-15T21:47:34.684879Z <<<
+

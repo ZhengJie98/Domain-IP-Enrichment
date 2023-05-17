@@ -1,0 +1,341 @@
+HTTP/1.1 200 OK
+Date: Mon, 15 May 2023 20:59:35 GMT
+Content-Type: text/html; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=Whaiz1S%2BfFL0dyyzGUO2bciN%2FmLSp8K8XJv50BwYZJxAYgJghwF7b%2Fg2u2y7LYkT1r%2FUarUrUn5UU%2FRzMOxoWK4%2BvUyilA4Y1JQceZ3c06p4dTpRrDAakkIBNIGj1hEVqQ6h43OJPzEZm24%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 7c7e4e37a8664df8-SIN
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="author" content="" />
+  <title>Singapore Pools Deluxe</title>
+
+  <meta name="description" content="Singapore Pools Deluxe" />
+  <meta name="keywords" content="Singapore Pools Deluxe, Lottery Online, Livedraw Online" />
+  <!-- Favicon-->
+  <link rel="icon" type="image/png" href="/images/favicon.png?v=035935" />
+  <link rel='shortcut icon' type='image/vnd.microsoft.icon' href='/images/favicon.png?v=035935'/>
+  <link rel="icon" href='/images/favicon.png' type="image/x-icon" />
+  <link rel="shortcut icon" href='/images/favicon.png?v=035935' type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Thasadith:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Core theme CSS (includes Bootstrap)-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<script src="template/lottery/assets/js/jquery-1.9.1.min.js"></script>
+  
+    <script src="js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</head>
+
+<body>  <!-- Responsive navbar-->
+  <div class="pt-2 pb-2 header">
+    <div class="container">
+      <div class="wrapper-logo align-items-center">
+          <div><a class="navbar-brand" href="./"><img class="img-responsive logo" alt="Singapore Pools Deluxe" src="template/lottery/assets/img/logo.png?v=035935" /></a></div>
+          <div class="header-icon">
+            <nav class="navbar navbar-expand-lg">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="./">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="result.php">View Results</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="live.php?time=4D" target="_blank">Livedraw</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="page.php?content=about">About us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="page.php?content=contact">Contact Us</a></li>
+                  </ul>
+                </div>
+            </nav>
+          </div>
+      </div>
+    </div>
+  </div>
+  <div class="runningtext">
+    <div class="container d-flex align-items-center py-2">
+      <marquee behavior="scroll" direction="left" class="text-white">Welcome to Our Site. Please check Number drawing everyday</marquee>
+    </div>
+  </div>
+
+
+
+
+  <input type="hidden" id="timestamp" name="timestamp" value="" />
+  <script type="text/javascript">
+    $('#day-select').change(function(event) {
+      /* Act on the event */
+      window.location = $(this).val();
+    });
+
+  var currenttime = $('#timestamp').val();
+  var montharray = new Array('Jan', 'Feb', 'Mar', 'Apr', 'Mei', 'Jun', 'Jul', 'Ags', 'Sep', 'Okt', 'Nov', 'Des');
+  var serverdate = new Date(currenttime);
+  var dayarray = new Array('Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu');
+  
+  var daylight = 'AM';
+  
+  function padlength(what) {
+    var output = (what.toString().length == 1) ? "0" + what : what;
+    return output;
+  }
+  
+  function format12jam(jam){
+    if(jam >= 12){
+      daylight = 'PM';
+      return padlength(jam - 12);
+    }else{
+      daylight = 'AM';
+      return padlength(jam);
+    }
+  }
+
+  function displaytime() {
+    serverdate.setSeconds(serverdate.getSeconds() + 1);
+    var hari = dayarray[serverdate.getDay()];
+    var tanggal = padlength(serverdate.getDate());
+    var bulan = montharray[serverdate.getMonth()];
+    var tahun = serverdate.getFullYear();
+    
+    if(serverdate.getDate() == 1){
+      tanggal = padlength(serverdate.getDate()) + 'st';
+    }else if(serverdate.getDate() == 2){
+      tanggal = padlength(serverdate.getDate()) + 'nd';
+    }else if(serverdate.getDate() == 3){
+      tanggal = padlength(serverdate.getDate()) + 'rd';
+    }else{
+      tanggal = padlength(serverdate.getDate()) + 'th';
+    }
+
+    //var datestring = montharray[serverdate.getMonth()] + " " + padlength(serverdate.getDate()) + ", " + serverdate.getFullYear();
+
+    var format = 'Selasa, 12-Feb-2014 16:22:20';
+    var datestring = hari + ', ' + tanggal + '-' + bulan + '-' + tahun + ' ';
+    var timestring = padlength(serverdate.getHours()) + ":" + padlength(serverdate.getMinutes()) + ":" + padlength(serverdate.getSeconds());
+    
+    $string = montharray[serverdate.getMonth()] + ' ' + tanggal + ', ' + serverdate.getFullYear() + ' ';
+    $string += serverdate.getHours() + ':' + padlength(serverdate.getMinutes()) + ':'+ padlength(serverdate.getSeconds());
+    $string += ' ';
+    console.log($string);
+    $('#waktu_server').html($string);
+    //document.getElementById("waktu_server").innerHTML = datestring + " " + timestring;
+  }
+
+  $(function() {
+    setInterval("displaytime()", 1000);
+  });
+
+</script>
+
+
+  <script type="text/javascript">
+    $('#day-select').change(function(event) {
+      /* Act on the event */
+      window.location = $(this).val();
+    });
+
+  var currenttime = $('#timestamp').val();
+  var montharray = new Array('Jan', 'Feb', 'Mar', 'Apr', 'Mei', 'Jun', 'Jul', 'Ags', 'Sep', 'Okt', 'Nov', 'Des');
+  var serverdate = new Date(currenttime);
+  var dayarray = new Array('Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu');
+  
+  var daylight = 'AM';
+  
+  function padlength(what) {
+    var output = (what.toString().length == 1) ? "0" + what : what;
+    return output;
+  }
+  
+  function format12jam(jam){
+    if(jam >= 12){
+      daylight = 'PM';
+      return padlength(jam - 12);
+    }else{
+      daylight = 'AM';
+      return padlength(jam);
+    }
+  }
+
+  function displaytime() {
+    serverdate.setSeconds(serverdate.getSeconds() + 1);
+    var hari = dayarray[serverdate.getDay()];
+    var tanggal = padlength(serverdate.getDate());
+    var bulan = montharray[serverdate.getMonth()];
+    var tahun = serverdate.getFullYear();
+    
+    if(serverdate.getDate() == 1){
+      tanggal = padlength(serverdate.getDate()) + 'st';
+    }else if(serverdate.getDate() == 2){
+      tanggal = padlength(serverdate.getDate()) + 'nd';
+    }else if(serverdate.getDate() == 3){
+      tanggal = padlength(serverdate.getDate()) + 'rd';
+    }else{
+      tanggal = padlength(serverdate.getDate()) + 'th';
+    }
+
+    //var datestring = montharray[serverdate.getMonth()] + " " + padlength(serverdate.getDate()) + ", " + serverdate.getFullYear();
+
+    var format = 'Selasa, 12-Feb-2014 16:22:20';
+    var datestring = hari + ', ' + tanggal + '-' + bulan + '-' + tahun + ' ';
+    var timestring = padlength(serverdate.getHours()) + ":" + padlength(serverdate.getMinutes()) + ":" + padlength(serverdate.getSeconds());
+    
+    $string = montharray[serverdate.getMonth()] + ' ' + tanggal + ', ' + serverdate.getFullYear() + ' ';
+    $string += serverdate.getHours() + ':' + padlength(serverdate.getMinutes()) + ':'+ padlength(serverdate.getSeconds());
+    $string += ' ';
+    console.log($string);
+    $('#waktu_server2').html($string);
+    //document.getElementById("waktu_server").innerHTML = datestring + " " + timestring;
+  }
+
+  $(function() {
+    setInterval("displaytime()", 1000);
+  });
+
+</script>
+
+
+<div class="container">
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/slideshow/slide1.jpg?v=035935" class="d-block w-100" alt="slide 1">
+      </div>
+      <div class="carousel-item">
+        <img src="images/slideshow/slide2.jpg?v=035935" class="d-block w-100" alt="slide 2">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+  <!-- Page content-->
+
+<div id="section-2">
+  <div class="container">
+    <div class="row mb-4">
+      <div class="col-md-12" id="baris-result">
+        <div class="page-header">
+          <div>Singapore Pools Deluxe Latest Result</div>
+        </div>
+        <div class="wrapper-subkolom">
+          <div class="isi-subkolom">
+            <div class="row">
+
+                                        <div class="col-lg-12" align="center">
+                <div class="rounded-1 p-5 pt-2 bola-home 4D">
+                  <div class="tanggal-home mb-4">Friday. May 12, 2023</div>
+
+                  <div class="d-flex justify-content-around mb-2 gap-4 bola-wrapper">
+                    <div class="prize-item">
+                      <div class="fw-bold fs-4"><img src="images/p1.png" class="img-fluid"></div>
+                      <div class="fw-bold fs-3 gap-1 mt-2 d-flex justify-content-center">
+                        <span class="bola">9</span>
+                        <span class="bola">0</span>
+                        <span class="bola">5</span>
+                        <span class="bola">6</span>
+                      </div>
+                    </div>
+
+                    <div class="prize-item">
+                      <div class="fw-bold fs-4"><img src="images/p2.png" class="img-fluid"></div>
+                      <div class="fw-bold fs-3 mt-2">
+                        <div class="fw-bold fs-3 gap-1 mt-2 d-flex justify-content-center">
+                          <span class="bola">0</span>
+                          <span class="bola">7</span>
+                          <span class="bola">9</span>
+                          <span class="bola">6</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="prize-item">
+                      <div class="fw-bold fs-4"><img src="images/p3.png" class="img-fluid"></div>
+                      <div class="fw-bold fs-3 mt-2">
+                        <div class="fw-bold fs-3 gap-1 mt-2 d-flex justify-content-center">
+                          <span class="bola">5</span>
+                          <span class="bola">1</span>
+                          <span class="bola">9</span>
+                          <span class="bola">2</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                      
+                </div>
+              </div>
+                                      </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="row m-lg-0">
+      <div class="col-lg-4 p-lg-0"><img src="images/centerbanner1.jpg?v=1" class="img-fluid"></div>
+      <div class="col-lg-4 p-lg-0"><img src="images/centerbanner2.jpg?v=1" class="img-fluid"></div>
+      <div class="col-lg-4 p-lg-0"><img src="images/centerbanner3.jpg?v=1" class="img-fluid"></div>
+    </div>
+  </div>
+</div>
+
+
+
+<footer id="footer-wrapper" class="mt-4">
+	<div class="footer-top">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="d-flex flex-wrap gap-2 align-items-center justify-content-around py-3">
+						<img src="images/foot1.png" class="img-fluid">
+						<img src="images/foot2.png" class="img-fluid">
+						<img src="images/foot3.png" class="img-fluid">
+						<img src="images/foot4.png" class="img-fluid">
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col my-3 small">
+					Singapore Pools Deluxe takes a strong Play Responsibly stand. Customers should play our games just for a little flutter and it must not adversely affect their finances or lifestyle. Our game rules do not allow any person under the age of 18 to place a bet or claim a winning ticket prize. Account betting is only available to those above 21 years old. Any information, statistics or editorials which originate from third-party service providers (e.g. event-related content, venue information, scores, timings or results) and are displayed here, are intended for general information purposes only. We accept no responsibility for bets placed in reliance on the same. You are encouraged to read our Terms and Conditions and Privacy Policy before proceeding. Please exit if you are under 18.
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="text-center mt-2">
+			  	Copyright &copy; 2021 Singapore Pools Deluxe All rights reserved.
+			  </div>
+			</div>
+		</div>
+	</div>
+</footer>
+<script src="/template/lottery/assets/js/script.js"></script>
+
+  <!-- Bootstrap core JS-->
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/np/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+  <!-- Core theme JS-->
+  <!-- <script src="js/scripts.js"></script> -->
+
+  <link href="template/lottery/assets/css/style.css?v=035935" rel="stylesheet" type="text/css">
+  <link href="template/lottery/assets/css/fonts.css?v=035935" rel="stylesheet" type="text/css">
+  <link href="template/lottery/assets/css/mobile.css?v=035935" rel="stylesheet" type="text/css">
+
+
+</body>
+</html>

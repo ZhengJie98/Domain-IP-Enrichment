@@ -1,0 +1,1 @@
+window.configObj={timeZone:-3,title:'ETH',abc:'123'};

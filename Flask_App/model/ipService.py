@@ -111,7 +111,8 @@ client = MongoClient('localhost',27017)
 # db = client['test_list']
 # col = db["ip"]
 db = client['jon_list']
-collection = "domain_older"
+# collection = "domain_older"
+collection = "domain_v2"
 # collection = "imda_test"
 # collection = "testing_environ"
 # col = db["domain"]
@@ -471,6 +472,10 @@ def call_ip_or_domain(doc):
             
             try:
                 doc[k] = r['data']['attributes'][k]
+
+                ## test UTC date WHEN WAKE
+                if k == "last_analysis_date":
+                    doc[k] = datetime.datetime.fromtimestamp(r['data']['attributes'][k])
             
             except Exception as e:
                 # print(e, "for", (k,v))
@@ -1238,8 +1243,9 @@ def process_parent_without_vtcall():
     with client.start_session() as session:
             
             # cursor = col.find({"has_html" : ""})
-            cursor = col.find()
+            # cursor = col.find()
             # cursor = col.find({"domain":"zshhks.top"})
+            cursor = col.find({"processed_timestamp" : ""})
             # cursor = col.find({"processed_timestamp" : {"$ne": ""}})            ## replicate to prevent closing
             cursor = [x for x in cursor]
             # print(cursor)

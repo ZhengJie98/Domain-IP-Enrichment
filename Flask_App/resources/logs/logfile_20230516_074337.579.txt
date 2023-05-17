@@ -1,0 +1,68 @@
+current domain in process_parent:imbbk3238g.xyz
+===== screenshot function start =====
+duration_log screenshot: 63.37210390000837
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 28
+current protocol: https
+returncode: 28
+duration_log grab_html_js: 42.722409199981485
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/imbbk3238g.xyz_20230516_074523.802.txt
+duration_log get_whois_info: 1.4829214999917895
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/imbbk3238g.xyz_gethostbyname_ex_20230516_074525.286.txt
+nameservers_filepath file written to resources/dns/imbbk3238g.xyz_nameservers_20230516_074525.286.txt
+duration_log get_dns_info: 0.5143765999819152
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/imbbk3238g.xyz_20230516_074525.799.json
+duration_log get_cert_info: 0.9683254999690689
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.999197400000412
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for imbbk3238g.xyz, time taken 110.13270799996099 seconds
+
+
+current domain in process_parent:imbbk323q.xyz
+===== screenshot function start =====
+duration_log screenshot: 46.917811599967536
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 28
+current protocol: https
+returncode: 28
+duration_log grab_html_js: 42.7388815000304
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/imbbk323q.xyz_20230516_074657.520.txt
+duration_log get_whois_info: 1.7027638999861665
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/imbbk323q.xyz_gethostbyname_ex_20230516_074659.224.txt
+nameservers_filepath file written to resources/dns/imbbk323q.xyz_nameservers_20230516_074659.224.txt
+duration_log get_dns_info: 0.4997383000445552
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/imbbk323q.xyz_20230516_074659.725.json
+duration_log get_cert_info: 0.9380861999816261
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 1.0170174000086263
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for imbbk323q.xyz, time taken 93.88751070003491 seconds
+
+
+current domain in process_parent:imgg6625p.xyz
+===== screenshot function start =====
+duration_log screenshot: 27.92248639999889
+===== screenshot function end =====
