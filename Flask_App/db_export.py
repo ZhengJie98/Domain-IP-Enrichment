@@ -3,6 +3,9 @@ import sys
 from pymongo import MongoClient
 
 # https://github.com/surya-shodan/mongoexportcsv
+#python db_export.py jon_list domain_v2  domain_v2.csv   
+#python db_export.py jon_list domain_v2  testing.csv   
+
 class generic_converter:
 
     def __init__(self):
@@ -46,6 +49,8 @@ class generic_converter:
             self.retrieve_headers(cursor, '')
             for item_label in header_list:
                 if item_label in self.header_dict:
+                    print("item_label:", item_label)
+                    print("type:", type(self.header_dict[item_label]))
                     row_to_push.append(self.header_dict[item_label])
                 else:
                     row_to_push.append('')

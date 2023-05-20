@@ -21,36 +21,26 @@ import subprocess
 
 
 client = MongoClient('localhost',27017)
-db = client['filtered_sg_ip_list']
-col = db["ip"]
+db = client['jon_list']
+col = db["domain_v2"]
     
 
 
-ip_template = {
-    
-        # "ALL_COLUMNS_IN_EXCEL": "",
-        "x_days_ago": "",
-        "to_skip": "",
-        "whois_date": "",
-        "last_analysis_date": "",
-        "reputation": "",
-        "last_analysis_stats": "",
-        "total_votes": "",
-        "as_owner": "",
-        "country": "",
-        "asn": "",
-        "added_timestamp":"",
-        "processed_timestamp":"", ## leave empty until you process it from DB.
-        "failure_count": 0,## if it hits a threshold then stop calling it.
-        "is_priority": "", ## 1 for individual submissions or 0 for CSVs
-        "source":"", ## if its CSV then put csvName, if its individual then put individual
-        "has_screenshot": "",
-        "has_html": "",
-        "has_javascript": "",
-        "files" : [] ## Array of sub-docs, [{type:"", file_location:""}, {}...]
+
+with client.start_session() as session:
         
-    }
+    # cursor = col.find({"has_html" : ""})
+    cursor = col.find()
+    # cursor = col.find({"domain":"zshhks.top"})
+    # cursor = col.find({"processed_timestamp" : ""})
 
-x = [1,2,3]
-x.append(4)
-print(x)
+    # cursor = col.find({"processed_timestamp" : {"$ne": ""}})            ## replicate to prevent closing
+    cursor = [x for x in cursor]
+    # print(cursor)
+
+    
+    for doc in cursor:
+        # print(doc)
+        retrieved = doc['processed_timestamp']
+        print(type(retrieved) == datetime.datetime)
+        print(retrieved)

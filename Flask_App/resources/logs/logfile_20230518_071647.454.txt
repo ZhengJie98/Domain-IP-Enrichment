@@ -1,0 +1,39 @@
+current domain in process_parent:azttcall.com
+===== to_skip function start =====
+azttcall.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: azttcall.com now: 2023-05-18 07:16:47.483611+00:00
+duration_log vt_call: 1.0836793999988004
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 11.464345899999898
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 6
+current protocol: https
+returncode: 6
+duration_log grab_html_js: 0.13407050000023446
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/azttcall.com_20230518_071700.234.txt
+duration_log get_whois_info: 2.056964799998241
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+socket.gethostbyname_ex() exception triggered: [Errno 11001] getaddrinfo failed
+dns.resolver.query() exception triggered: The DNS query name does not exist: azttcall.com.
+duration_log get_dns_info: 0.29681519999940065
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 1.0018415999984427
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/azttcall.com_20230518_071703.621.json
+duration_log get_archived_page_info: 0.8277534999979252
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for azttcall.com, time taken 17.009139100002358 seconds
+
+

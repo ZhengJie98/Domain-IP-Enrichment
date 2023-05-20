@@ -112,9 +112,9 @@ client = MongoClient('localhost',27017)
 # col = db["ip"]
 db = client['jon_list']
 # collection = "domain_older"
-collection = "domain_v2"
+# collection = "domain_v2"
 # collection = "imda_test"
-# collection = "testing_environ"
+collection = "testing_environ"
 # col = db["domain"]
 # col = db["domain_new"]
 # col = db["famous_domains"]
@@ -474,7 +474,7 @@ def call_ip_or_domain(doc):
                 doc[k] = r['data']['attributes'][k]
 
                 ## test UTC date WHEN WAKE
-                if k == "last_analysis_date":
+                if k == "last_analysis_date" or k == "whois_date":
                     doc[k] = datetime.datetime.fromtimestamp(r['data']['attributes'][k])
             
             except Exception as e:
@@ -990,8 +990,8 @@ def get_dns_info(doc):
             # return [dns_info[1], dns_info[2], nameserver_list]
             # print("[dns_info[1], dns_info[2], nameserver_list]:", [dns_info[1], dns_info[2], gethostbyname_ex_filepath])
             # doc['dns_info'] = {'alias': dns_info[1], 'other_ip_address': dns_info[2], 'nameserver_list': nameserver_list, 'gethostbyname_ex_filepath': gethostbyname_ex_filepath, 'nameservers_filepath' :nameservers_filepath }
-            doc['dns_info']['gethostbyname_ex'] =   {'alias': dns_info[1], 
-                                                    'other_ip_address': dns_info[2],
+            doc['dns_info']['gethostbyname_ex'] =   {'alias': dns_info[1].sort(), 
+                                                    'other_ip_address': dns_info[2].sort(),
                                                     'gethostbyname_ex_filepath' : gethostbyname_ex_filepath
                                                     }
 
@@ -1008,7 +1008,7 @@ def get_dns_info(doc):
             resolver = resolver.Resolver()
             resolver.nameservers = ['1.1.1.1']
             nameservers = resolver.query(domain, 'NS') ## e.g. www.amazon.com
-            nameserver_list = [i.to_text() for i in nameservers]
+            nameserver_list = [i.to_text() for i in nameservers].sort()
             nameservers_filepath = "resources/dns/" + domain + '_' + "nameservers" + '_' + dt_string + ".txt"
 
             with open(nameservers_filepath, "w") as outfile:
@@ -1019,7 +1019,7 @@ def get_dns_info(doc):
             # doc['dns_info']['nameserver_list'] = nameserver_list
             # doc['dns_info']['gethostbyname_ex_filepath'] = gethostbyname_ex_filepath
             # doc['dns_info']['nameservers_filepath']: nameservers_filepath
-            doc['dns_info']['dns_resolver_query'] = {'nameserver_list': nameserver_list,
+            doc['dns_info']['dns_resolver_query'] = {'nameserver_list': nameserver_list.sort(),
                                                     'nameservers_filepath': nameservers_filepath
                                                     }
 
@@ -1195,7 +1195,7 @@ def get_archived_page_info(doc):
             # to_append = {"type": protocol + "_screenshot", "stderr": response.stderr, "stdout": response.stdout, "ss_file_location":filepath}
             
             # return [newest.archive_url, newest.timestamp]
-            doc['archived_page_info'] = {'newest.archive_url': newest.archive_url, 'newest.timestamp': newest.timestamp, 'archived_paged_file_location': filepath}
+            doc['archived_page_info'] = {'newest.archive_url': newest.archive_url, 'newest.timestamp': newest.datetime_timestamp.strftime("%d-%m-%YT%H:%M:%S"), 'archived_paged_file_location': filepath}
             # return [w.registrar, w.name, w.org, w.creation_date, w.updated_date]
 
             

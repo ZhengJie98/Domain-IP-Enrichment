@@ -1,0 +1,22 @@
+current ip in process_parent:1.1.1.1
+===== to_skip function start =====
+1.1.1.1 has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: 1.1.1.1 now: 2023-05-18 07:49:36.788026+00:00
+duration_log vt_call: 1.643793100000039
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 48.73598109999875
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 28
+current protocol: https
+returncode: 28
+duration_log grab_html_js: 42.24288479999814
+===== grab_html_js function end =====
+replacement successful
+replacement SUCCESSFUL for 1.1.1.1, time taken 92.75855030000093 seconds
+
+

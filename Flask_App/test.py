@@ -6,7 +6,7 @@ import time
 import csv
 import datetime
 from datetime import timedelta
-import os
+import sys, os
 import pandas as pd
 from dateutil import tz
 import pytz
@@ -28,10 +28,10 @@ from slugify import slugify
 from crtsh import crtshAPI ## search certificate /
 from waybackpy import WaybackMachineCDXServerAPI ## search historical copies of website
 import socket
-# import dns.resolver
 import whois # query and response protocol that is often used for querying databases that store registered domain names.
 from urllib.parse import urlparse
 from pytz import timezone
+from dns import resolver
 from dns import resolver
 
 
@@ -78,17 +78,8 @@ url = "https://www.imda.gov.sg/"
 #     print(res.history)
     
 ## Try 5
-import requests
-from bs4 import BeautifulSoup
-s = requests.Session()
-# url='https://scanlibs.com/neural-networks-systems-evolutionary-algorithms-2nd/'
-url = "https://www.imda.gov.sg"
-r=html=s.get(url).text
-soup=BeautifulSoup(html,'html.parser')
-relative_link=soup.find('a',{'id':'download'})['href'] #get the relative link
-download_redirect_link=url+relative_link
-headers={
-"referer": url
-}
-r2=requests.get(download_redirect_link,headers=headers)
-print(r2.url) 
+url = 'https://openlayers.org/'
+
+a = [1,3,2]
+a.sort()
+print(a)
