@@ -16,7 +16,9 @@ import AlertPage from "../pages/component/AlertPage";
 import ButtonPage from "../pages/component/ButtonPage";
 // import InstallationPage from "../pages/installation/InstallationPage";
 import DomainIPEnrichmentLayout from "../pages/DomainIPEnrichment/DomainIPEnrichmentLayout";
-import Func1 from "../pages/DomainIPEnrichment/Func1"
+// import Func1 from "../pages/DomainIPEnrichment/Func1"
+import CSVUploader from "../pages/DomainIPEnrichment/Func1"
+
 import DocumentationPage from "../pages/documentation/DocumentationPage";
 
 const appRoutes: RouteType[] = [
@@ -36,7 +38,7 @@ const appRoutes: RouteType[] = [
     child: [
       {
         path: "/DomainIPEnrichment/Func1",
-        element: <Func1 />,
+        element: <CSVUploader />,
         state: "DomainIPEnrichment.func1",
         sidebarProps: {
           displayText: "func1"
@@ -50,7 +52,7 @@ const appRoutes: RouteType[] = [
     element: <DashboardPageLayout />,
     state: "dashboard",
     sidebarProps: {
-      displayText: "Dashboard",
+      displayText: "Honeypots",
       icon: <DashboardOutlinedIcon />
     },
     child: [

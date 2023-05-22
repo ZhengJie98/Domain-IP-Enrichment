@@ -1,0 +1,17 @@
+===== grab_html_js function start =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 23
+===== grab_html_js function start =====
+current protocol: http
+returncode: 23
+===== grab_html_js function start =====
+current protocol: http
+returncode: 23
+===== grab_html_js function start =====
+current protocol: http
+returncode: 23
+current protocol: https
+returncode: 23
+duration_log grab_html_js: 0.04663969995453954
+===== grab_html_js function end =====
