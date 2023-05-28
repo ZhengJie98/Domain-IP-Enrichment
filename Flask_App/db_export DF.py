@@ -41,7 +41,6 @@ for col in cols:
         if type(row[0]) == list:
             final_list = []
             for each in row[0]:
-                # final_list.append(each.strftime("%d-%m-%YT%H:%M:%S"))
                 final_list.append(each.strftime("%d-%m-%YT%H:%M:%S"))
 
             df[col][i] = final_list
@@ -63,7 +62,7 @@ for col in cols:
 # print((df['whois_info.updated_date'][0]))
 # df.to_csv('testing2.csv',date_format='%Y-%m-%d %H:%M:%S:%f')
 # df.to_csv('testing3.csv',date_format='%d-%m-%Y %H:%M:%S')
-df.to_csv('1000_domains_standardised_dates.csv',date_format='%d-%m-%YT%H:%M:%S')
+df.to_csv('test.csv',date_format='%d-%m-%YT%H:%M:%S')
 # df.to_csv('domain_twobatch_standardised_dates.csv',date_format='%d-%m-%YT%H:%M:%S')
 
 # df.to_csv('testing7.csv',date_format='%d-%m-%YT%H:%M:%S')

@@ -17,7 +17,7 @@ import ButtonPage from "../pages/component/ButtonPage";
 // import InstallationPage from "../pages/installation/InstallationPage";
 import DomainIPEnrichmentLayout from "../pages/DomainIPEnrichment/DomainIPEnrichmentLayout";
 // import Func1 from "../pages/DomainIPEnrichment/Func1"
-import CSVUploader from "../pages/DomainIPEnrichment/Func1"
+import CSVReader1 from "../pages/DomainIPEnrichment/Func1"
 
 import DocumentationPage from "../pages/documentation/DocumentationPage";
 
@@ -38,7 +38,7 @@ const appRoutes: RouteType[] = [
     child: [
       {
         path: "/DomainIPEnrichment/Func1",
-        element: <CSVUploader />,
+        element: <CSVReader1 />,
         state: "DomainIPEnrichment.func1",
         sidebarProps: {
           displayText: "func1"

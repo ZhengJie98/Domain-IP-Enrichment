@@ -51,6 +51,7 @@ ip_template = {
         "as_owner": "",
         "country": "",
         "asn": "",
+        "vt_file_location":"",
         "added_timestamp":"",
         "processed_timestamp":"", ## leave empty until you process it from DB.
         "failure_count": 0,## if it hits a threshold then stop calling it.
@@ -77,6 +78,7 @@ domain_template = {
         # "as_owner": "",
         # "country": "",
         # "asn": "",
+        "vt_file_location":"",
         "added_timestamp":"",
         "processed_timestamp":"", ## leave empty until you process it from DB.
         "failure_count": 0,## if it hits a threshold then stop calling it.
@@ -99,22 +101,24 @@ domain_template = {
     }
 
 
-API_KEY = '0d9fdb6e32d74b9d12e3d894309531838c3aabe8d66b049fd3a7976fbedf2c68'  #@param  {type: "string"}
-# API_KEY = '207349263f9c5edd176cc079fa8000a5ab912df7d9e91154842c08031658675d'  #@param  {type: "string"}   
+# API_KEY = '0d9fdb6e32d74b9d12e3d894309531838c3aabe8d66b049fd3a7976fbedf2c68'  #@param  {type: "string"}
+API_KEY = '207349263f9c5edd176cc079fa8000a5ab912df7d9e91154842c08031658675d'  #@param  {type: "string"}   
 
 
 
 client = MongoClient('localhost',27017)
 # db = client['filtered_sg_ip_list']
 # db = client['jons_list']
-# db = client['michelle_list']
+db = client['michelle_list']
 # db = client['test_list']
 # col = db["ip"]
-db = client['jon_list']
+# db = client['jon_list']
 # collection = "domain_older"
 # collection = "domain_v2"
 # collection = "imda_test"
-collection = "testing_environ"
+# collection = "testing_environ"
+# collection = "may12_ips"
+collection = "single_c2_ip"
 # col = db["domain"]
 # col = db["domain_new"]
 # col = db["famous_domains"]
@@ -125,39 +129,6 @@ col = db[collection]
 # col = db["domain_older_v2"]
 
 
-# def export_db():
-#     print("=====export db starting=====")
-#     start_time = time.time()
-#     now = datetime.datetime.now(timezone('UTC'))
-#     dt_string = now.strftime("%Y%m%d_%H%M%S.%f")[:-3]    
-
-#     cursor = col.find()
-#     print ("total docs in collection:", col.count_documents( {} ))
-#     mongo_docs = list(cursor)
-#     docs = pd.DataFrame(columns=[])
-#     for num, doc in enumerate( mongo_docs ):
-#         doc["_id"] = str(doc["_id"])
-#         doc_id = doc["_id"]
-#         #  create a Series obj from the MongoDB dict
-#         series_obj = pd.Series( doc, name=doc_id )
-
-#         # append the MongoDB Series obj to the DataFrame obj
-#         docs = docs.append(series_obj)
-
-#         # only print every 10th document
-#         if num % 10 == 0:
-#             print (type(doc))
-#             print (type(doc["_id"]))
-#             # print (num, "--", doc, "\n")
-
-#     if not os.path.exists("resources/exportdb"):
-#             os.makedirs("resources/exportdb")
-
-#     filename = 'resources/exportdb/' + collection + '_' + dt_string + '.csv'
-#     docs.to_csv(filename, ",") # CSV delimited by commas
-#     print(f"\n\n file same to: ${filename}")
-#     print ("\n\ntime elapsed:", time.time()-start_time)
-#     return filename
 
 
 ## Saves to db and a harddisk file
@@ -388,10 +359,43 @@ def retrieve_docs_to_process(how_many_docs):
 
     return cursor
 
+def exportDB():
+    # client = MongoClient('localhost',27017)
+    # db = client['michelle_list']
+    # collection = 'may12_ips'
+    # col = db[collection]
+    cursor = col.find()
+    now = datetime.datetime.now(timezone('UTC'))
+    dt_string = now.strftime("%Y%m%d_%H%M%S.%f")[:-3]    
+   
+    datapoints = list(cursor)
+    df = pd.json_normalize(datapoints)
+    cols = ['whois_date','whois_info.updated_date','whois_info.creation_date','last_analysis_date']
+
+    for each_col in cols:
+        if each_col in df:
+            for i, row in df[[each_col]].iterrows():
+                if type(row[0]) == list:
+                    final_list = []
+                    for each in row[0]:
+                        final_list.append(each.strftime("%d-%m-%YT%H:%M:%S"))
+
+                    df[each_col][i] = final_list
+                else: 
+                    if row[0] and type(row[0]) != float:
+                        # print(type(row[0]))
+                        # print("current row[0]", row[0])
+                        holder = row[0].strftime("%d-%m-%YT%H:%M:%S")
+                        print(holder)
+                        df[each_col][i] = holder
+
+    df.to_csv("resources/exportdb/" + collection + '_' + dt_string + ".csv",date_format='%d-%m-%YT%H:%M:%S')
+
+    return "DB exported successfully"
+
 ## Calls VT API, writes response to hard disk and update failure count. RETURNS UPDATED IP DOC
 # def call_ip_or_domain(doc, x_days_ago):
 def call_ip_or_domain(doc):
-
    
     print("===== call_ip_or_domain function start =====") 
     with open(config.CURR_LOGFILE,'a+') as logfile:
@@ -463,6 +467,7 @@ def call_ip_or_domain(doc):
         with open("resources/downloaded_vtresponse/" + dt_string + "/" + ip_or_domain + ".json", "w") as outfile:
             json_obj = json.dumps(r)
             outfile.write(json_obj)
+            doc["vt_file_location"] = "resources/downloaded_vtresponse/" + dt_string + "/" + ip_or_domain + ".json"
             # print("type r after json dumps:", type(r))
 
         ## populate fields in JSON template
