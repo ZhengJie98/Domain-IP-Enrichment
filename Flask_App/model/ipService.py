@@ -118,7 +118,7 @@ db = client['michelle_list']
 # collection = "imda_test"
 # collection = "testing_environ"
 # collection = "may12_ips"
-collection = "single_c2_ip"
+collection = "mirai_aurora_deimos"
 # col = db["domain"]
 # col = db["domain_new"]
 # col = db["famous_domains"]
@@ -355,6 +355,15 @@ def retrieve_docs_to_process(how_many_docs):
     cursor = col.find(
         {"$and" : [{"processed_timestamp" : ""}, {"to_skip" : ""}, {"is_priority" : 0}]}
     ).sort("added_timestamp", pymongo.ASCENDING).limit(how_many_docs)
+
+
+    return cursor
+
+def retrieve_all_docs():
+    # print("===== retrieve_docs_to_process() START =====")
+
+    # # auto closes after 10 minutes
+    cursor = col.find()
 
 
     return cursor

@@ -1,0 +1,171 @@
+HTTP/1.1 200 OK
+Cache-Control: no-cache
+Content-Type: text/html
+Accept-Ranges: bytes
+ETag: "3020700717"
+Last-Modified: Tue, 05 Oct 2021 13:07:10 GMT
+Content-Length: 6843
+Date: Sat, 27 May 2023 11:00:54 GMT
+Server: lighttpd/1.4.37
+
+<!DOCTYPE html>
+
+<html ng-app="homeApp">
+<head>
+
+<!-- Favicon -->
+<link rel="icon" type="image/icon" href="hughesnet-favicon.ico">
+
+<meta charset="utf-8"/>
+
+<!-- Bower JavaScript -->
+<link rel="stylesheet" href="/bower_components/css/bower.min.css">
+
+<!-- Bower CSS -->
+<script src="/bower_components/js/bower.min.js"></script>
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="/css/hns.min.css">
+
+<!-- Custom JS -->
+<script src="/js/angular-shared.min.js"></script>
+<script src="/js/filters/localeNumber.js"></script>
+<script src="/js/routes/homeRoutes.js"></script>
+<script src="/js/controllers/home/homeControllers.js"></script>
+
+</head>
+
+<body ng-controller="customerHomeController">
+<div ng-hide="blocked">
+
+<title>{{deviceinfo.board_type}} {{deviceinfo.nsp_display_name}} {{home.system_control_center}} </title>
+<!-- Navigation Bar -->
+<nav class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="container">
+
+        <div class="navbar-header">
+          <button class="navbar-toggle" type="button" ng-click="hamburgerCollapsed = !hamburgerCollapsed;">
+            <span class="sr-only"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <!-- Everything in this div will collapse when the browser or device is small -->
+        <div collapse="hamburgerCollapsed" class="navbar-collapse navbar-collapse-center bs-js-navbar-collapse">
+        <ul class="nav navbar-nav navbar-center">
+            <li>
+                <a ng-click="route('/home/status')" tooltip-placement="bottom" data-container="body" data-tooltip-html-unsafe="{{home.system_status_tooltip}}" style="cursor: pointer;"><i class="fa fa-square led_{{ss_led.color}}"></i> {{home.system_status}}</a>
+            </li>
+            <li>
+                <a ng-click="route('/home/information')" tooltip-placement="bottom" tooltip="{{home.system_information_tooltip}}" style="cursor: pointer;"><i class="fa fa-square led_{{si_led.color}}"></i> {{home.system_info}}</a>
+            </li>
+            <li class="dropdown" on-toggle="toggled(open)" dropdown ng-show="language_locale!='N/A'">
+                <a href class="dropdown-toggle" dropdown-toggle><span class="flag-icon flag-icon-{{abv[selected_language]}}"></span> {{selected_language}} <i class="fa fa-caret-down"></i></a>
+
+                <ul class="dropdown-menu">
+                    <li ng-repeat="language in languages">
+                        <a href ng-click="$parent.select(language)"><span class="flag-icon flag-icon-{{abv[language]}}"></span> {{language}} </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="{{access.url}}"><i class="fa fa-info-circle fa-lg adv-icon"></i></a>
+            </li>
+        </ul>
+        </div>
+
+    </div> <!-- container -->
+</nav>
+
+<div class="container top-buffer">
+
+<div class="row">
+<div class="col-md-3">
+
+    <!-- Left Panel -->
+    <div class="panel panel-hns">
+        <div class="panel-body">
+
+            <!-- Logo -->
+            <div class="row">
+            <div class="col-md-12">
+                <a href="/#/"><img class="img-responsive img-center" src="/dyn_http/nsp_logo.gif"></a>
+                <hr>
+            </div>
+            </div>
+            <!-- End Logo -->
+
+            <!-- Links -->
+            <div class="row">
+                <div class="col-md-12">
+                    <tabset vertical="true" type="pills">
+                        <tab ng-click="route('/home')" active="sidebar_active.home"><tab-heading><i class="fa fa-chevron-circle-right"></i> {{side_bar.home}}</tab-heading></tab>
+                        <tab ng-click="route('/home/connectivity')"  active="sidebar_active.connectivity"><tab-heading><i class="fa fa-chevron-circle-right"></i> {{side_bar.connectivity_test}}</tab-heading></tab>
+                        <tab ng-click="route('/home/bist')" active="sidebar_active.bist"><tab-heading><i class="fa fa-chevron-circle-right"></i> {{side_bar.builtin_self_test}}</tab-heading></tab>
+                        <tab ng-click="link('http://'+nsp_links[0].link_url+'?ESN='+suffix)" ng-show="installed && nsp_links[0].link_url && !nsp_links[0].link_name"><tab-heading><i class="fa fa-chevron-circle-right"></i> {{side_bar.service_activation}}</tab-heading></tab>
+                        <tab ng-click="link('http://'+nsp_links[0].link_url+'?ESN='+suffix)" ng-show="installed && nsp_links[0].link_url && nsp_links[0].link_name"><tab-heading><i class="fa fa-chevron-circle-right" ng-bind-html="toTrustedHTML('&nbsp;' + nsp_links[0].link_name)"></i></tab-heading></tab>
+                        <tab ng-click="route('/home/led')" ng-show="led_settings" active="sidebar_active.led"><tab-heading><i class="fa fa-chevron-circle-right"></i> {{side_bar.front_panel_brightness}}</tab-heading></tab>
+                        <tab ng-click="link('http://'+wifiLANAddr)" ng-show="wifi"><tab-heading><i class="fa fa-chevron-circle-right"></i> {{side_bar.wifi}}</tab-heading></tab>
+                        <tab ng-click="link('/install.html')" ng-show="!installed"><tab-heading><i class="fa fa-chevron-circle-right"></i> {{side_bar.install}}</tab-heading></tab>
+                    </tabset>
+                </div>
+            </div>
+            <!-- End Links -->
+
+        </div>
+    </div>
+    <!-- End Left Panel -->
+
+</div>
+
+<div class="col-md-9">
+
+    <!-- Info Box -->
+    <div class="panel panel-hns">
+        <div class="panel-body">
+            <div class="col-md-4 hnsText">
+                {{home.san}}: {{deviceinfo.san}}
+            </div>
+            <div class="col-md-3 hnsText">
+                {{home.esn}}: {{deviceinfo.esn}}
+            </div>
+            <div class="col-md-5 hnsText">
+                {{home.state_code}} :
+                <span tooltip="{{state_code_basic[sc.language_index]}}" tooltip-placement="bottom" ng-class="{red: sc.severity == 'error', orange: sc.severity == 'marginal', green: sc.severity == 'no_error'}">
+                    <b>{{deviceinfo.state_code}}</b>
+                </span>
+            </div>
+        </div>
+    </div> <!-- End Panel -->
+    <!-- End Info Box -->
+
+
+<!-- Angular View -->
+<div ng-view></div>
+
+</div> <!-- End Column 9-->
+
+</div> <!-- End World Row-->
+</div> <!-- End Container-->
+
+</div> <!-- End Blocked-->
+
+<div ng-show="blocked">
+<div class="container top-buffer">
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel panel-hns">
+            <div class="panel-body">
+                <span class="col-md-12 hnsText"><i class="fa fa-warning"></i> {{lui_block.message}}</span>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<p class="footer copyright_grey" align="center">©{{deviceinfo.bld_year}} HUGHES</p>
+</body>
+
+</html>

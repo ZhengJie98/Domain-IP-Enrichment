@@ -1,0 +1,1 @@
+sharedTools.filter("localeNumber",["language",function(a){return function(b,c){if(void 0!==b&&void 0!==c)return a.usesFractionCommas(c)?b.replace(".",","):b.replace(",",".")}}]);

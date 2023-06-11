@@ -1,0 +1,36 @@
+HTTP/1.1 200 OK
+server: 03_1678674733
+content-type: text/html;charset=utf-8
+content-length: 1016
+expires: -1
+pragma: no-cache
+cache-control: no-cache,no-store
+
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp" ng-controller="errormain">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title></title>
+<style>
+    html,body,div{padding: 0; margin: 0;}
+</style>
+</head>
+<body>
+    <iframe id="autherframe" frameBorder="0" src="https://speresources.nexusguard.com/errpage/error.html#404;175.156.239.234;5StAWgAAAAAAAAAAr5zv6se2;4040" height="100%" width="100%"></iframe> 
+<script>
+var doc = document,
+    autherframe = doc.getElementById("autherframe");
+    var frameWin = autherframe.contentWindow;    //window对象  
+    var frameDoc = autherframe.contentWindow.document;  //document对象  
+    var frameBody = autherframe.contentWindow.document.body;   //body对象  
+
+    autherframe.onload = function(){
+        this.height = window.innerHeight>600?window.innerHeight:"600px";
+        this.scrolling = window.innerHeight>600?"no":"yes"
+    }
+
+</script>
+</body>
+</html>

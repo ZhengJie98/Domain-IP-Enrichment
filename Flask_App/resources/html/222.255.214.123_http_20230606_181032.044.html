@@ -1,0 +1,76 @@
+HTTP/1.1 200 OK
+Server: nginx/1.19.1
+Date: Tue, 06 Jun 2023 18:10:32 GMT
+Content-Type: text/html; charset=UTF-8
+Content-Length: 2066
+Connection: keep-alive
+X-Powered-By: PHP/8.0.28
+Set-Cookie: PHPSESSID=vd23fbedgbidd51rclfm114qle; path=/
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Đăng Nhập</title>
+  <link rel="stylesheet" href="bundles/web/authenticate/skin/006/css/main.css" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <style>
+  body {
+    background: transparent;
+  }
+
+  #popup-login {
+    display: block;
+    background: transparent;
+  }
+  </style>
+</head>
+
+
+
+
+<div class="popup" id="popup-login">
+  <a class="close-popup-out"></a>
+  <div class="content-popup">
+    <div class="wrapper-popup">
+
+      <div class="title-pop t-center f-azerisans-bold t-upper d-flex a-center j-center">
+        <span>Đăng Nhập</span>
+      </div>
+
+      <div class="main-popup mt-3per">
+        <form action="#" method="POST">
+          <input type="hidden" name="_token" value="JEGpj39vMoqzUAPDoHWTY8Y4jJiy4t0mhPST9nds">
+                    <div class="form-control m-auto">
+            <input class="text  t-center" type="text" name="username" placeholder="Tên Tài Khoản" required>
+          </div>
+          <div class="form-control m-auto">
+            <input class="password  t-center" type="password" name="password" placeholder="Mật Khẩu" required>
+          </div>
+          <h2 style="text-align:center; color: red;">
+                        <div class="t-center mt-4per">
+              <p class="t-center"></p>
+
+              <button class="btn-login c-pointer btn-tranY btn-yellow c-btn-yellow f-alphyliliangheij t-upper t-center"
+                type="submit">Đăng nhập</button>
+            </div>
+        </form>
+        <div class="note  m-auto">
+          <p class="t-center"><a href="dowloadgame.php"> Tải Về?</a> Chưa có tài khoản? <a href="register.php" class="">Đăng
+              ký</a></p>
+        </div>
+
+
+
+
+      </div>
+      <a class="close-popup"></a>
+    </div>
+  </div>
+</div>

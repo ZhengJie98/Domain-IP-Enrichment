@@ -1,4 +1,5 @@
 from flask import Flask, request, jsonify, flash, redirect, url_for
+from flask_cors import CORS, cross_origin
 from os.path import join, dirname, realpath
 from werkzeug.utils import secure_filename
 from model.ipService import *
@@ -10,6 +11,8 @@ from apscheduler.triggers.interval import IntervalTrigger
 import pymongo
 import config
 from flask.cli import FlaskGroup
+from bson import json_util
+
 
 # import os
 
@@ -29,6 +32,16 @@ client = MongoClient('localhost',27017)
 
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+# CORS(app, support_credentials=True)
+# cors = CORS(app, origins='http://localhost:3000')
+CORS(app)
+cors = CORS(app, resources={
+    r"/*":{
+        "origins":"*"
+    }
+})
+app.config['CORS_HEADERS'] = 'Content-Type'
+
 
 @app.route('/')
 def hello_world():
@@ -105,38 +118,40 @@ def test():
 
     return "testing successful"
 
-@app.route("/customAdd", methods=['POST'])
-def customAdd():
-
+@app.route('/upload', methods=['POST', 'GET'])
+# @cross_origin(supports_credentials=True)
+def upload_csv():
+    # return jsonify({'success': 'ok'})
+    print("currently in upload_csv")
+    file = request.files['file']
+    print(file)
+    print(type(file))
     
-    print("=====TEST FUNCTION CALLED=====")
-    # cursor = retrieve_ips_to_process(1700)
+    if file and file.filename.endswith('.csv'):
+        # Save the file or process it as needed
+        file.save(file.filename)
+        return "File uploaded successfully."
+    else:
+        return "Invalid file. Only CSV files are allowed."
 
-    custom_add()
-    # print("remaining config.REMAINING_LIMIT:", config.REMAINING_LIMIT)
+# Custom CORS headers
+@app.after_request
+def add_cors_headers(response):
+    # response.headers['Access-Control-Allow-Origin'] = 'http://localhost:3000'
+    response.headers['Access-Control-Allow-Origin'] = '*'
+    # response.headers['Access-Control-Allow-Methods'] = 'PUT,GET,POST,DELETE'
+    response.headers['Access-Control-Allow-Headers'] = '*'
+    # response.headers['Access-Control-Allow-Headers'] = 'Content-Type,Authorization'
 
+    return response
 
-    return "testing successful"
+@app.route('/todos', methods=['GET'])
+def get_todos():
+    todos = retrieve_all_docs()
+    # print(len(todos))
 
-# ## SAVES FILE AS FILENAME_DTSTRING TO PREVENT OVERWRITING
-# def saveFile(file):
-#     now = datetime.datetime.now()
-#     dt_string = now.strftime("%Y%d%m_%H%M%S")
-#     filename_splitted = secure_filename(file.filename).split('.csv') 
-#     filename = filename_splitted[0] + '_' + str(dt_string) + ".csv"
-#     # filename = secure_filename(file.filename)
-#     row_count = sum(1 for row in file) - 1
-#     # print("row_count:", row_count)
-
-#     file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
-#     # file.save(secure_filename(file.filename))
-    
-#     global TASK_QUEUE
-#     TASK_QUEUE.append([filename,row_count])
-#     print("TASK_QUEUE:", TASK_QUEUE)
-#     return jsonify(TASK_QUEUE) 
-
-
+    # print(todos)
+    return json.loads(json_util.dumps(todos))
 # Scheduled Processing
 
 # scheduler = BackgroundScheduler()

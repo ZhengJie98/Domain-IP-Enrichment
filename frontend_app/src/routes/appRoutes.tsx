@@ -17,7 +17,9 @@ import ButtonPage from "../pages/component/ButtonPage";
 // import InstallationPage from "../pages/installation/InstallationPage";
 import DomainIPEnrichmentLayout from "../pages/DomainIPEnrichment/DomainIPEnrichmentLayout";
 // import Func1 from "../pages/DomainIPEnrichment/Func1"
-import CSVReader1 from "../pages/DomainIPEnrichment/Func1"
+import UploadCSV from "../pages/DomainIPEnrichment/UploadCSV"
+import ShowRecords from "../pages/DomainIPEnrichment/ShowRecords"
+
 
 import DocumentationPage from "../pages/documentation/DocumentationPage";
 
@@ -37,13 +39,23 @@ const appRoutes: RouteType[] = [
     },
     child: [
       {
-        path: "/DomainIPEnrichment/Func1",
-        element: <CSVReader1 />,
-        state: "DomainIPEnrichment.func1",
+        path: "/DomainIPEnrichment/UploadCSV",
+        
+        element: <UploadCSV />,
+        state: "DomainIPEnrichment.CSV",
         sidebarProps: {
-          displayText: "func1"
+          displayText: "Upload CSV"
         },
       },
+      {
+        path: "/DomainIPEnrichment/ShowRecords",
+        
+        element: <ShowRecords />,
+        state: "DomainIPEnrichment.ShowRecords",
+        sidebarProps: {
+          displayText: "Show Records"
+        },
+      }
     ]
     
   },
