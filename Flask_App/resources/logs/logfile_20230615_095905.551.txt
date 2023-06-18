@@ -1,0 +1,43 @@
+current URL in process_parent: wunderfauks-signin.com/#/pages/index/index
+===== to_skip function start =====
+wunderfauks-signin.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: wunderfauks-signin.com now: 2023-06-15 09:59:05.593349+00:00
+duration_log vt_call: 1.2032282000000123
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 3.5022592000022996
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 6
+current protocol: https
+returncode: 6
+duration_log grab_html_js: 0.2679788999957964
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/wunderfauks-signin.com_20230615_095910.597.txt
+duration_log get_whois_info: 1.209846199999447
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+socket.gethostbyname_ex() exception triggered: [Errno 11001] getaddrinfo failed
+dns.resolver.query() exception triggered: The DNS query name does not exist: wunderfauks-signin.com.
+duration_log get_dns_info: 0.0254648999980418
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 0.7481695000024047
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 1.1158790999979828
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for wunderfauks-signin.com, time taken 15.000743999997212 seconds
+
+
+current URL in process_parent: wunderfauks-signin.com/#/pages/index/index
+===== to_skip function start =====
+len_cursor > 0 , wunderfauks-signin.com has been processed in past X days
+===== to_skip function end =====

@@ -1,0 +1,238 @@
+current URL in process_parent: www.mabangerp.plus/#/login
+===== to_skip function start =====
+www.mabangerp.plus has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: www.mabangerp.plus now: 2023-06-16 03:41:20.701272+00:00
+duration_log vt_call: 1.3659033999865642
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 11.161596599995391
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 6
+current protocol: https
+returncode: 6
+duration_log grab_html_js: 0.12112500000512227
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/www.mabangerp.plus_20230616_034133.386.txt
+duration_log get_whois_info: 0.03429340000730008
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+socket.gethostbyname_ex() exception triggered: [Errno 11001] getaddrinfo failed
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: www.mabangerp.plus. IN NS
+duration_log get_dns_info: 0.09343839999928605
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 3.2205009999888716
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 5.42598359999829
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for www.mabangerp.plus, time taken 21.521289299998898 seconds
+
+
+current URL in process_parent: app.qqcjqff1012.xyz/s/qURj
+===== to_skip function start =====
+app.qqcjqff1012.xyz has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: app.qqcjqff1012.xyz now: 2023-06-16 03:41:42.252661+00:00
+duration_log vt_call: 1.1648392000060994
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/app.qqcjqff1012.xyz/s/qURj_http_20230616_034143.429.pngduration_log screenshot: 7.3385312000027625
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 1.1517434999987017
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/app.qqcjqff1012.xyz_20230616_034151.956.txt
+duration_log get_whois_info: 1.0484810000052676
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/app.qqcjqff1012.xyz_gethostbyname_ex_20230616_034153.010.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: app.qqcjqff1012.xyz. IN NS
+duration_log get_dns_info: 0.0962502000038512
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/app.qqcjqff1012.xyz_20230616_034153.105.json
+duration_log get_cert_info: 0.9597751000110293
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 15.725616800002172
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for app.qqcjqff1012.xyz, time taken 27.590574700006982 seconds
+
+
+current URL in process_parent: app.qqcjqxz1023.xyz/s/mlenderios
+===== to_skip function start =====
+app.qqcjqxz1023.xyz has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: app.qqcjqxz1023.xyz now: 2023-06-16 03:42:09.869233+00:00
+duration_log vt_call: 0.8751486999972258
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/app.qqcjqxz1023.xyz/s/mlenderios_http_20230616_034210.756.pngduration_log screenshot: 7.645633100008126
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.9422113000036916
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/app.qqcjqxz1023.xyz_20230616_034219.380.txt
+duration_log get_whois_info: 0.9578697999968426
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/app.qqcjqxz1023.xyz_gethostbyname_ex_20230616_034220.338.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: app.qqcjqxz1023.xyz. IN NS
+duration_log get_dns_info: 0.37101410000468604
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/app.qqcjqxz1023.xyz_20230616_034220.731.json
+duration_log get_cert_info: 2.635202499994193
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 8.242791900003795
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for app.qqcjqxz1023.xyz, time taken 21.773956700009876 seconds
+
+
+current URL in process_parent: www.notchstudio-online.com/#/
+===== to_skip function start =====
+www.notchstudio-online.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: www.notchstudio-online.com now: 2023-06-16 03:42:31.684063+00:00
+duration_log vt_call: 1.0899787999951513
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 3.8133445999992546
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 6
+current protocol: https
+returncode: 6
+duration_log grab_html_js: 0.0682564999879105
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/www.notchstudio-online.com_20230616_034236.700.txt
+duration_log get_whois_info: 0.850810799995088
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+socket.gethostbyname_ex() exception triggered: [Errno 11001] getaddrinfo failed
+dns.resolver.query() exception triggered: The DNS query name does not exist: www.notchstudio-online.com.
+duration_log get_dns_info: 0.025461500001256354
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/www.notchstudio-online.com_20230616_034237.591.json
+duration_log get_cert_info: 2.153310599998804
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 16.66993230000662
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for www.notchstudio-online.com, time taken 24.80944769999769 seconds
+
+
+current URL in process_parent: www.impact-eu.com/#/index1
+===== to_skip function start =====
+www.impact-eu.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: www.impact-eu.com now: 2023-06-16 03:42:56.579718+00:00
+duration_log vt_call: 1.2142618000070797
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 4.408748300003936
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 6
+current protocol: https
+returncode: 6
+duration_log grab_html_js: 0.614863199996762
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/www.impact-eu.com_20230616_034302.872.txt
+duration_log get_whois_info: 0.6307677000004333
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+socket.gethostbyname_ex() exception triggered: [Errno 11001] getaddrinfo failed
+dns.resolver.query() exception triggered: The DNS query name does not exist: www.impact-eu.com.
+duration_log get_dns_info: 0.5939284000050975
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 1.094099299996742
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/www.impact-eu.com_20230616_034305.228.json
+duration_log get_archived_page_info: 7.998766799995792
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for www.impact-eu.com, time taken 16.72695620000013 seconds
+
+
+current URL in process_parent: www.impact-bv.com/#/index1
+===== to_skip function start =====
+www.impact-bv.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: www.impact-bv.com now: 2023-06-16 03:43:13.315941+00:00
+duration_log vt_call: 0.8904367000068305
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 4.260234999994282
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 6
+current protocol: https
+returncode: 6
+duration_log grab_html_js: 0.6830323000031058
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/www.impact-bv.com_20230616_034319.204.txt
+duration_log get_whois_info: 0.4783733999938704
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+socket.gethostbyname_ex() exception triggered: [Errno 11001] getaddrinfo failed
+dns.resolver.query() exception triggered: The DNS query name does not exist: www.impact-bv.com.
+duration_log get_dns_info: 0.5929222000122536
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/www.impact-bv.com_20230616_034320.290.json
+duration_log get_cert_info: 1.4335664999962319
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 7.843054199998733
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for www.impact-bv.com, time taken 16.31040970000322 seconds
+
+

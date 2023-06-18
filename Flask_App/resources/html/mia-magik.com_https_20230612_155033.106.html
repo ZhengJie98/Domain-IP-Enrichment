@@ -1,0 +1,1976 @@
+HTTP/1.1 200 
+server: nginx
+date: Mon, 12 Jun 2023 15:50:35 GMT
+content-type: text/html;charset=utf-8
+transfer-encoding: chunked
+vary: Accept-Encoding
+cache-control: no-cache, no-store, must-revalidate
+expires: Thu, 01 Jan 1970 00:00:00 GMT
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000; preload
+x-frame-options: SAMEORIGIN
+content-security-policy: frame-ancestors 'self'
+vary: user-agent,accept-encoding
+d-geo: US
+
+<!doctype html >
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"
+      class="">
+<head>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    window._currentDevice = 'desktop';
+    window.Parameters = window.Parameters || {
+        AjaxContainer: 'div.dmBody',
+        WrappingContainer: 'div.dmOuter',
+        HomeUrl: 'https://mia-magik.com/',
+        AccountUUID: 'b8efca5b5fa74776917f1fa1c3b587f5',
+        SystemID: 'US_DIRECT_PRODUCTION',
+        SiteAlias: '37f533df',
+        SiteType: atob('RFVEQU9ORQ=='),
+        PublicationDate: 'Sun Jun 04 01:26:42 UTC 2023',
+        ExternalUid: null,
+        IsSiteMultilingual: false,
+        InitialPostAlias: '',
+        InitialDynamicItem: '',
+        DynamicPageInfo: {
+            isDynamicPage: false,
+            base64JsonRowData: 'null',
+        },
+        InitialPageAlias: 'home',
+        InitialPageUuid: 'aee461e8763148be9f8515cfc05ab33e',
+        InitialEncodedPageAlias: 'aG9tZQ==',
+        CurrentPageUrl: '',
+        IsCurrentHomePage: true,
+        AllowAjax: false,
+        AfterAjaxCommand: null,
+        HomeLinkText: 'Back To Home',
+        UseGalleryModule: false,
+        CurrentThemeName: 'Layout Theme',
+        ThemeVersion: '9955',
+        DefaultPageAlias: '',
+        RemoveDID: true,
+        WidgetStyleID: null,
+        IsHeaderFixed: false,
+        IsHeaderSkinny: false,
+        IsBfs: true,
+        StorePageAlias: 'shop',
+        StorePagesUrls: 'e30=',
+        IsNewStore: 'false',
+        StorePath: '/shop',
+        StoreId: '30002311',
+        StoreVersion: 2,
+        StoreBaseUrl: '/shop',
+        StoreCleanUrl: true,
+        StoreDisableScrolling: true,
+        IsStoreSuspended: false,
+        NotificationSubDomain: 'mia-magik',
+        HasCustomDomain: true,
+        showCookieNotification: false,
+        cookiesNotificationMarkup: 'null',
+        translatedPageUrl: '',
+        isFastMigrationSite: false,
+        sidebarPosition: 'NA',
+        currentLanguage: 'en',
+        currentLocale: 'en',
+        NavItems: '{}',
+        errors: {
+            general: 'There was an error connecting to the page.<br/> Make sure you are not offline.',
+            password: 'Incorrect name/password combination',
+            tryAgain: 'Try again'
+        },
+        NavigationAreaParams: {
+            ShowBackToHomeOnInnerPages: true,
+            NavbarSize: -1,
+            NavbarLiveHomePage: 'https://mia-magik.com/',
+            BlockContainerSelector: '.dmBody',
+            NavbarSelector: '#dmNav:has(a)',
+            SubNavbarSelector: '#subnav_main'
+        },
+        hasCustomCode: true,
+        planID: '9',
+        customTemplateId: 'null',
+        siteTemplateId: 'null',
+        productId: 'DM_DIRECT',
+        disableTracking: false,
+        pageType: 'FROM_SCRATCH',
+        isRuntimeServer: true,
+        isInEditor: false,
+    };
+
+    window.Parameters.LayoutID = {};
+    window.Parameters.LayoutID[window._currentDevice] = 6;
+    window.Parameters.LayoutVariationID = {};
+    window.Parameters.LayoutVariationID[window._currentDevice] = 5;
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Injecting site-wide to the head -->
+
+
+
+
+<!-- End Injecting site-wide to the head -->
+
+<!-- Inject secured cdn script -->
+
+
+<!-- ========= Meta Tags ========= -->
+<!-- PWA settings -->
+<script>
+    function toHash(str) {
+        var hash = 5381, i = str.length;
+        while (i) {
+            hash = hash * 33 ^ str.charCodeAt(--i)
+        }
+        return hash >>> 0
+    }
+</script>
+<script>
+    (function (global) {
+    //const cacheKey = global.cacheKey;
+    const isOffline = 'onLine' in navigator && navigator.onLine === false;
+    const hasServiceWorkerSupport = 'serviceWorker' in navigator;
+    if (isOffline) {
+        console.log('offline mode');
+    }
+    if (!hasServiceWorkerSupport) {
+        console.log('service worker is not supported');
+    }
+    if (hasServiceWorkerSupport && !isOffline) {
+        window.addEventListener('load', function () {
+            const serviceWorkerPath = '/runtime-service-worker.js?v=3';
+            navigator.serviceWorker
+                .register(serviceWorkerPath, { scope: './' })
+                .then(
+                    function (registration) {
+                        // Registration was successful
+                        console.log(
+                            'ServiceWorker registration successful with scope: ',
+                            registration.scope
+                        );
+                    },
+                    function (err) {
+                        // registration failed :(
+                        console.log('ServiceWorker registration failed: ', err);
+                    }
+                )
+                .catch(function (err) {
+                    console.log(err);
+                });
+        });
+
+        // helper function to refresh the page
+        var refreshPage = (function () {
+            var refreshing;
+            return function () {
+                if (refreshing) return;
+                // prevent multiple refreshes
+                var refreshkey = 'refreshed' + location.href;
+                var prevRefresh = localStorage.getItem(refreshkey);
+                if (prevRefresh) {
+                    localStorage.removeItem(refreshkey);
+                    if (Date.now() - prevRefresh < 30000) {
+                        return; // dont go into a refresh loop
+                    }
+                }
+                refreshing = true;
+                localStorage.setItem(refreshkey, Date.now());
+                console.log('refereshing page');
+                window.location.reload();
+            };
+        })();
+
+        function messageServiceWorker(data) {
+            return new Promise(function (resolve, reject) {
+                if (navigator.serviceWorker.controller) {
+                    var worker = navigator.serviceWorker.controller;
+                    var messageChannel = new MessageChannel();
+                    messageChannel.port1.onmessage = replyHandler;
+                    worker.postMessage(data, [messageChannel.port2]);
+                    function replyHandler(event) {
+                        resolve(event.data);
+                    }
+                } else {
+                    resolve();
+                }
+            });
+        }
+    }
+})(window);
+</script>
+<!-- Add manifest -->
+<!-- End PWA settings -->
+
+
+<meta http-equiv="Content-type" content="text/html;charset=utf-8">
+<meta charset="utf-8">
+
+<link rel="canonical" href="https://www.mia-magik.com/">
+
+<meta id="view" name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=5, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<!--Add favorites icons-->
+
+<link rel="apple-touch-icon" href="https://irp-cdn.multiscreensite.com/37f533df/dms3rep/multi/IMG_2368.JPG"/>
+
+<link rel="icon" type="image/x-icon" href="https://irp-cdn.multiscreensite.com/37f533df/site_favicon_16_1594404374130.ico"/>
+
+<!-- End favorite icons -->
+
+<link rel="preconnect" href="https://lirp.cdn-website.com/" crossorigin />
+
+
+<!-- Prefetch Ecwid Javascript to speed up loading -->
+<link rel="prefetch" href="https://app.multiscreenstore.com/script.js?30002311"></link>
+
+
+<!-- render the required CSS and JS in the head section -->
+<script>
+    window.SystemID = 'US_DIRECT_PRODUCTION';
+
+    if(!window.dmAPI) {
+        window.dmAPI = {
+            registerExternalRuntimeComponent: function() {
+            },
+            getCurrentDeviceType: function() {
+                return window._currentDevice;
+            }
+        };
+    }
+
+    if (!window.requestIdleCallback) {
+        window.requestIdleCallback = function (fn) {
+            setTimeout(fn, 0);
+        }
+    }
+</script>
+<!-- loadCSS function -->
+<script>
+(function () {
+  let cssLinks = {};
+  function loadCssLink(link) {
+    link.onload = null;
+    link.rel = "stylesheet";
+    link.type = "text/css";
+  }
+
+  function checkCss() {
+    if (cssLinks && cssLinks.runtime && cssLinks.global) {
+      loadCssLink(cssLinks.runtime);
+      loadCssLink(cssLinks.global);
+      cssLinks = null;
+    }
+  }
+
+  function loadCSS(link) {
+    try {
+      var urlParams = new URLSearchParams(window.location.search);
+      var noCSS = !!urlParams.get("nocss");
+      var cssTimeout = urlParams.get("cssTimeout") || 0;
+
+      if (noCSS) {
+        return;
+      }
+      if (link.href.includes("d-css-runtime")) {
+        cssLinks.runtime = link;
+        checkCss();
+      } else if (link.id === "siteGlobalCss") {
+        cssLinks.global = link;
+        checkCss();
+      } else {
+        requestIdleCallback(function () {
+          window.setTimeout(function () {
+            loadCssLink(link);
+          }, parseInt(cssTimeout, 10));
+        });
+      }
+    } catch (e) {
+      /* Never fail - this is just a tool for measurements */
+    }
+  }
+  window.loadCSS = window.loadCSS || loadCSS;
+})();
+</script>
+
+<script data-role="deferred-init" type="text/javascript">
+    /* usage: window.getDeferred(<deferred name>).resolve() or window.getDeferred(<deferred name>).promise.then(...)*/
+    function Def(){this.promise=new Promise((function(a,b){this.resolve=a,this.reject=b}).bind(this))}
+    const defs={};
+    window.getDeferred=function(a){return null==defs[a]&&(defs[a]=new Def),defs[a]}
+    window.waitForDeferred = function (b, a, c) {
+      let d = window?.getDeferred?.(b);
+      d
+        ? d.promise.then(a)
+        : c && ["complete", "interactive"].includes(document.readyState)
+        ? setTimeout(a, 1)
+        : c
+        ? document.addEventListener("DOMContentLoaded", a)
+        : console.error(`Deferred  does not exist`);
+    };
+</script>
+<style id="forceCssIncludes">
+    /* This file is auto-generated from a `scss` file with the same name */
+
+.videobgwrapper{overflow:hidden;position:absolute;z-index:0;width:100%;height:100%;top:0;left:0;pointer-events:none;border-radius:inherit}.videobgframe{position:absolute;width:101%;height:100%;top:50%;left:50%;transform:translateY(-50%) translateX(-50%);object-fit:fill}#dm video.videobgframe{margin:0}@media (max-width:767px){.dmRoot .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:80vh}}@media (min-width:1025px){.dmRoot .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:45vh}}@media (min-width:768px) and (max-width:1024px){.responsiveTablet .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done){min-height:45vh}}#dm [data-show-on-page-only]{display:none!important}
+</style>
+<style id="cssVariables" type="text/css">
+    :root {
+  --color_1: rgba(73, 13, 73, 1);
+  --color_2: rgba(7, 79, 77, 1);
+  --color_3: rgba(226,254,255,1);
+  --color_4: rgba(213,209,225,1);
+  --color_5: rgba(215,184,93,1);
+  --color_6: rgba(2,99,10,1);
+  --color_7: rgba(41,137,49,1);
+  --color_8: rgba(5, 112, 96, 1);
+}
+</style>
+
+
+<style id="hideAnimFix">
+  .dmDesktopBody:not(.editGrid) [data-anim-desktop]:not([data-anim-desktop='none']), .dmDesktopBody:not(.editGrid) [data-anim-extended] {
+    visibility: hidden;
+  }
+  .dmDesktopBody:not(.editGrid) .dmNewParagraph[data-anim-desktop]:not([data-anim-desktop='none']), .dmDesktopBody:not(.editGrid) .dmNewParagraph[data-anim-extended] {
+    visibility: hidden !important;
+  }
+</style>
+
+
+
+<style id="criticalCss">
+    @charset "UTF-8";.display_None,.dmPopupMask{display:none}#dm .dmInner .dmWidget,.dmRespRow:after,.dmSocialHub,DIV.dmBody{clear:both}@font-face{font-family:Montserrat;font-style:normal;font-weight:100;font-display:block;src:url(https://irp.cdn-website.com/fonts/s/montserrat/v25/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Montserrat;font-style:italic;font-weight:100;font-display:block;src:url(https://irp.cdn-website.com/fonts/s/montserrat/v25/JTUQjIg1_i6t8kCHKm459WxRyS7m.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Inter;font-style:normal;font-weight:100;font-display:block;src:url(https://irp.cdn-website.com/fonts/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Montserrat;font-style:normal;font-weight:200;font-display:block;src:url(https://irp.cdn-website.com/fonts/s/montserrat/v25/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Montserrat;font-style:italic;font-weight:200;font-display:block;src:url(https://irp.cdn-website.com/fonts/s/montserrat/v25/JTUQjIg1_i6t8kCHKm459WxRyS7m.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Inter;font-style:normal;font-weight:200;font-display:block;src:url(https://irp.cdn-website.com/fonts/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Roboto;font-style:normal;font-weight:300;font-display:block;src:url(https://irp.cdn-website.com/fonts/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc4.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Montserrat;font-style:normal;font-weight:300;font-display:block;src:url(https://irp.cdn-website.com/fonts/s/montserrat/v25/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Montserrat;font-style:italic;font-weight:300;font-display:block;src:url(https://irp.cdn-website.com/fonts/s/montserrat/v25/JTUQjIg1_i6t8kCHKm459WxRyS7m.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Inter;font-style:normal;font-weight:300;font-display:block;src:url(https://irp.cdn-website.com/fonts/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Merriweather;font-style:normal;font-weight:400;font-display:block;src:url(https://irp.cdn-website.com/fonts/s/merriweather/v30/u-440qyriQwlOrhSvowK_l5-fCZM.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Roboto;font-style:normal;font-weight:400;font-display:block;src:url(https://irp.cdn-website.com/fonts/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxK.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Fjalla One';font-style:normal;font-weight:400;font-display:block;src:url(https://irp.cdn-website.com/fonts/s/fjallaone/v15/Yq6R-LCAWCX3-6Ky7FAFrOF6kg.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Cardo;font-style:normal;font-weight:400;font-display:block;src:url(https://irp.cdn-website.com/fonts/s/cardo/v19/wlp_gwjKBV1pqhv43IE.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Be Vietnam';font-style:normal;font-weight:400;font-display:block;src:url(https://irp.cdn-website.com/fonts/s/bevietnam/v10/FBVzdDflz-iPfoPuIC2iIqYn6A.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:FontAwesome;font-display:block;src:url(https://static.cdn-website.com/fonts/fontawesome-webfont.eot?v=6);src:url(https://static.cdn-website.com/fonts/fontawesome-webfont.eot?#iefix&v=6) format("embedded-opentype"),url(https://static.cdn-website.com/fonts/fontawesome-webfont.woff?v=6) format("woff"),url(https://static.cdn-website.com/fonts/fontawesome-webfont.ttf?v=6) format("truetype"),url(https://static.cdn-website.com/fonts/fontawesome-webfont.svg#fontawesomeregular?v=6) format("svg");font-weight:400;font-style:normal}@font-face{font-family:'Playfair Display';font-style:normal;font-weight:400;font-display:block;src:url(https://irp.cdn-website.com/fonts/s/playfairdisplay/v30/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Montserrat;font-style:normal;font-weight:400;font-display:block;src:url(https://irp.cdn-website.com/fonts/s/montserrat/v25/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Montserrat;font-style:italic;font-weight:400;font-display:block;src:url(https://irp.cdn-website.com/fonts/s/montserrat/v25/JTUQjIg1_i6t8kCHKm459WxRyS7m.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Inter;font-style:normal;font-weight:400;font-display:block;src:url(https://irp.cdn-website.com/fonts/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Playfair Display';font-style:normal;font-weight:500;font-display:block;src:url(https://irp.cdn-website.com/fonts/s/playfairdisplay/v30/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Montserrat;font-style:normal;font-weight:500;font-display:block;src:url(https://irp.cdn-website.com/fonts/s/montserrat/v25/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Montserrat;font-style:italic;font-weight:500;font-display:block;src:url(https://irp.cdn-website.com/fonts/s/montserrat/v25/JTUQjIg1_i6t8kCHKm459WxRyS7m.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Inter;font-style:normal;font-weight:500;font-display:block;src:url(https://irp.cdn-website.com/fonts/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Playfair Display';font-style:normal;font-weight:600;font-display:block;src:url(https://irp.cdn-website.com/fonts/s/playfairdisplay/v30/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Montserrat;font-style:normal;font-weight:600;font-display:block;src:url(https://irp.cdn-website.com/fonts/s/montserrat/v25/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Montserrat;font-style:italic;font-weight:600;font-display:block;src:url(https://irp.cdn-website.com/fonts/s/montserrat/v25/JTUQjIg1_i6t8kCHKm459WxRyS7m.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Inter;font-style:normal;font-weight:600;font-display:block;src:url(https://irp.cdn-website.com/fonts/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Crimson Text';font-style:normal;font-weight:700;font-display:block;src:url(https://irp.cdn-website.com/fonts/s/crimsontext/v19/wlppgwHKFkZgtmSR3NB0oRJX1C1GDNNQ.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Playfair Display';font-style:normal;font-weight:700;font-display:block;src:url(https://irp.cdn-website.com/fonts/s/playfairdisplay/v30/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Montserrat;font-style:normal;font-weight:700;font-display:block;src:url(https://irp.cdn-website.com/fonts/s/montserrat/v25/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Montserrat;font-style:italic;font-weight:700;font-display:block;src:url(https://irp.cdn-website.com/fonts/s/montserrat/v25/JTUQjIg1_i6t8kCHKm459WxRyS7m.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Inter;font-style:normal;font-weight:700;font-display:block;src:url(https://irp.cdn-website.com/fonts/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Playfair Display';font-style:normal;font-weight:800;font-display:block;src:url(https://irp.cdn-website.com/fonts/s/playfairdisplay/v30/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Montserrat;font-style:normal;font-weight:800;font-display:block;src:url(https://irp.cdn-website.com/fonts/s/montserrat/v25/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Montserrat;font-style:italic;font-weight:800;font-display:block;src:url(https://irp.cdn-website.com/fonts/s/montserrat/v25/JTUQjIg1_i6t8kCHKm459WxRyS7m.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Inter;font-style:normal;font-weight:800;font-display:block;src:url(https://irp.cdn-website.com/fonts/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Playfair Display';font-style:normal;font-weight:900;font-display:block;src:url(https://irp.cdn-website.com/fonts/s/playfairdisplay/v30/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Montserrat;font-style:normal;font-weight:900;font-display:block;src:url(https://irp.cdn-website.com/fonts/s/montserrat/v25/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Montserrat;font-style:italic;font-weight:900;font-display:block;src:url(https://irp.cdn-website.com/fonts/s/montserrat/v25/JTUQjIg1_i6t8kCHKm459WxRyS7m.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Inter;font-style:normal;font-weight:900;font-display:block;src:url(https://irp.cdn-website.com/fonts/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}:root{--color_1:rgba(73, 13, 73, 1);--color_2:rgba(7, 79, 77, 1);--color_3:rgba(226,254,255,1);--color_4:rgba(213,209,225,1);--color_5:rgba(215,184,93,1);--color_6:rgba(2,99,10,1);--color_7:rgba(41,137,49,1);--color_8:rgba(5, 112, 96, 1)}.dmInner{min-height:100vh!important;position:relative;min-width:768px!important}.dmPopup,.dmPopupMask{position:fixed;left:0}@media (hover:none) and (pointer:coarse){#dmRoot #dm .dmOuter :not(.dmInner){background-attachment:scroll!important}}#dm .dmBody .u_1113742937,#dm .dmBody .u_1241687791,#dm .dmBody .u_1253770160,#dm .dmBody .u_1346582721,#dm .dmBody .u_1595324687,#dm .dmBody .u_1788727347,#dm .dmBody .u_1875435952,#dm .dmBody .u_1929870217,#dm .dmBody a.u_1246211226 .iconBg,.dmDisplay_None{display:none!important}#dm .dmWidget .icon{font-size:26px}body.dmRoot #dm .dmOuter .dmInner .dmWidget .icon.hasFontIcon{height:26px;margin-top:-13px;line-height:normal;text-align:center;background-image:none}.dmRoot .hasFontIcon{background-image:none!important}.dmPopupMask{margin:0;width:10px;z-index:1000000999;top:0}#dmRoot .dmPopup,.dmPopup,.dmPopupClose:before,[data-display-type=block]{display:block}.dmPopup{padding:10px;text-align:left;margin:0 10px;top:10px;width:93%;z-index:1000009999!important;box-sizing:border-box;background:#f5f5f5;overflow-y:auto;height:100%}.dmPopup .dmPopupTitle{text-align:left;font:700 19px Helvetica,Arial;margin:20px 20px 35px;color:#999}#dmPopup{opacity:0}.dmPopupClose,.dmPopupClose:before{position:absolute;visibility:visible}.dmPopupClose{border-radius:25px;width:27px;height:27px;z-index:1;background-color:rgba(255,255,255,.4);top:12px;right:12px}.dmPopupClose:before{font-size:20px;color:#000;top:3px;right:3px}body.dmDesktopBody:not(.mac) .data::-webkit-scrollbar{width:5px;height:5px}body.dmDesktopBody:not(.mac) .data::-webkit-scrollbar-track{background:rgba(0,0,0,.1)}body.dmDesktopBody:not(.mac) .data::-webkit-scrollbar-thumb{background:#c8c8c8;box-shadow:inset 0 1px 2px #454545;border-radius:45px}.dmRespRow.fullBleedMode>.dmRespColsWrapper{width:100%!important;max-width:100%!important}.dmRespRow.fullBleedMode{padding-left:0!important;padding-right:0!important}#dm .dmRespRow .dmRespColsWrapper{display:flex}.pswp{display:none;z-index:9999999999!important}#dm .hasBackgroundOverlay:not(.dmPopupPage):not(.layout-drawer){position:relative!important}#dm .hasBackgroundOverlay:not(.hasExtraLayerOverlay):before{display:block!important;position:absolute!important;top:0!important;left:0!important;width:100%!important;height:100%!important;content:' '!important;border-radius:inherit}#dm .dmInner .dmWidget.align-center,.align-center{margin-left:auto;margin-right:auto}.text-align-center{text-align:center}body.fix-mobile-scrolling{overflow:initial}#dmRoot{text-decoration-skip-ink:none}.flex-widgets-container{display:none}@media (max-width:767px){#dmRoot.responsiveTablet #dm .dmInner .hide-for-small{display:none!important}}body{-webkit-overflow-scrolling:touch}@media (min-width:1025px){#dmRoot.responsiveTablet #dm .dmInner .hide-for-large{display:none!important}:root{--btn-text-font-size:20px}}@media (min-width:768px) and (max-width:1024px){#dmRoot.responsiveTablet #dm .dmInner .hide-for-medium{display:none!important}:root{--btn-text-font-size:20px}}nav{display:block}html{font-family:Source Sans Pro;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}hr{box-sizing:content-box;height:0}img{border:0;max-width:100%;-ms-interpolation-mode:bicubic;display:inline-block}svg:not(:root){overflow:hidden}button{font-family:inherit;font-size:100%;margin:0;line-height:normal;text-transform:none;-webkit-appearance:button}button::-moz-focus-inner{border:0;padding:0}*,:after,:before{box-sizing:border-box}.dmRespRow.dmRespRowNoPadding{padding:0}.dmRespRow{padding-top:15px;padding-bottom:15px}.dmRespRow:after,.dmRespRow:before{content:' ';display:table}.dmRespRow,.dmRespRow .dmRespColsWrapper{max-width:960px;position:relative;margin:0 auto;width:100%}.dmRespRow .dmRespCol{position:relative;width:100%;display:inline-block;vertical-align:top;float:left}.dmRespRow .dmRespCol>*{max-width:100%}.dmDesktopBody .dmRespRow .large-6{position:relative;width:50%}.dmDesktopBody .dmRespRow .large-12{position:relative;width:100%}.socialHubIcon,[class*=' dm-common-icons-'],[class*=' dm-social-icons-']{font-family:dm-social-icons!important;speak:none;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.dm-social-icons-email:before{content:'\eace'}.dm-social-icons-facebook:before{content:'\ea90'}.dm-social-icons-instagram:before{content:'\ea92'}.dm-social-icons-youtube:before{content:'\ea9d'}[class*=' dm-common-icons-']{font-family:dm-common-icons!important}.dm-common-icons-close:before{content:'\e901'}#dm div.dmContent [class*=' icon-'],[class*=' icon-']{font-family:FontAwesome!important;font-weight:400;font-style:normal;text-decoration:inherit;-webkit-font-smoothing:antialiased}[class*=' icon-']:before{text-decoration:none;display:inline-block;speak:none}a [class*=' icon-']{display:inline}[class*=' icon-']{display:inline;width:auto;height:auto;line-height:normal;vertical-align:baseline;background-image:none;background-position:0 0;background-repeat:repeat;margin-top:0}.icon-star:before{content:'\f005'}.icon-angle-right:before{content:'\f105'}.icon-angle-down:before{content:'\f107'}#dm .dmRespRow .dmRespCol>.dmWidget{overflow:initial}@media (min-width:768px){#dm .dmRespRow .dmRespCol>.dmWidget{width:280px;max-width:100%}}@media (max-width:767px){#dm .dmInner .dmWidget{width:100%}}#dm .dmInner .dmWidget:not(.displayNone){display:inline-block}#dm .dmInner .dmWidget:not(.displayNone)[data-display-type=block]{display:block}#dm .dmInner .dmWidget{text-decoration:none;margin:10px 0;position:relative;text-align:center;line-height:22px;box-shadow:none;background-image:none;padding:0;height:auto;border-style:solid;white-space:nowrap}#dm .dmInner .dmWidget:after{content:'';display:inline-block;height:100%;vertical-align:middle;width:0;margin-right:-.25em}#dm .dmInner .dmWidget .iconBg{position:absolute;left:0;width:50px;top:50%;margin-top:-13px}#dm .dmWidget .text{display:inline-block;vertical-align:middle;font-size:1.125em;line-height:normal;white-space:normal;padding:10px 7px;max-width:98%}#dm .dmRespRow.dmRespRowNoPadding,.dmContent,.dmInner ul:not(.defaultList),DIV.dmBody{padding:0}html:not(.ios-preview) #dm .hasStickyHeader .dmInner div.dmHeaderContainer{position:fixed!important;z-index:101;width:100%;min-width:768px}.dmNewParagraph[data-version]{line-height:initial}.dmNewParagraph[data-version] .text-align-center{text-align:center!important}.dmNewParagraph[data-version] h2,.dmNewParagraph[data-version] h3,.dmNewParagraph[data-version] p{margin-top:0;margin-bottom:0}@media (max-width:767px){.dmRoot .dmNewParagraph[data-version] .m-text-align-center{text-align:center!important}}.flexslider .slides img{width:100%;display:block;margin:auto}.flexslider .slides>li .slide-inner *{line-height:normal}.flexslider .slides>li .slide-inner .slide-title{margin:0}.flexslider.ed-version .slides img{display:none}.flexslider.ed-version[layout=center] .slide-inner .slide-title{display:block!important;text-align:center!important}.graphicWidget{width:200px;height:200px;margin:10px auto;text-align:center}.graphicWidget svg.svg{width:100%;height:100%;color:#000;fill:#000}#dm .socialHubInnerDiv a:not(:last-child){margin-right:5px}.socialHubIcon{display:flex!important;align-items:center;justify-content:center}.imageWidget a{font-style:italic;text-align:center}.imageWidget img[width][height],img[width][height]{height:auto}*{border:0 solid #333;scrollbar-arrow-color:#fff;scrollbar-track-color:#F2F2F2;scrollbar-face-color:silver;scrollbar-highlight-color:silver;scrollbar-3dlight-color:silver;scrollbar-shadow-color:silver;scrollbar-darkshadow-color:silver;scrollbar-width:12px}body{width:100%;overflow:hidden;-webkit-text-size-adjust:100%!important;-ms-text-size-adjust:100%!important}A IMG{border:none}h2,h3,ul{margin-left:0;margin-right:0}.dmInner *{-webkit-font-smoothing:antialiased}span.oneIcon:before{display:inline-block}a,img,li,ul{vertical-align:top}#iscrollBody,#site_content{position:relative}.dmOuter{word-wrap:break-word}.dmInner{font-size:16px;background:#fff;color:#666}.dmDesktopBody .dmInner{min-width:960px}.dmInner a{color:#463939}.dmHeader{background:#68ccd1;color:#666;text-align:center;position:relative;width:100%;max-width:100%}.dmContent{margin:0}#site_content ul:not(.defaultList){-webkit-padding-start:0;-moz-padding-start:0;list-style-position:inside}#innerBar{position:relative;height:36px;width:100%;font-size:20px;margin:0;z-index:80}.dmRespRowsWrapper{max-width:960px;margin:0 auto}.dmLargeBody .imageWidget:not(.displayNone){display:inline-block;max-width:100%}.imageWidget:not(.displayNone) img{width:100%}h3{font-weight:400;font-size:23px}#dm .dmRespColsWrapper{display:block}.dmNewParagraph{text-align:left;margin:8px 0;padding:2px 0}.dmLargeBody .dmRespRowsWrapper>.dmRespRow .dmRespCol,.dmLargeBody .fHeader .dmRespRow .dmRespCol{padding-left:.75%;padding-right:.75%}.dmLargeBody .dmRespRowsWrapper>.dmRespRow .dmRespCol:first-child,.dmLargeBody .fHeader .dmRespRow .dmRespCol:first-child{padding-left:0;padding-right:1.5%}.dmLargeBody .dmRespRowsWrapper>.dmRespRow .dmRespCol:last-child,.dmLargeBody .fHeader .dmRespRow .dmRespCol:last-child{padding-right:0;padding-left:1.5%}.dmLargeBody .dmRespRowsWrapper>.dmRespRow .dmRespCol:only-child{padding-left:0;padding-right:0}#innerBar.lineInnerBar{display:table;width:100%;box-shadow:none;-webkit-box-shadow:none;-moz-box-shadow:none;font-size:20px;margin-top:30px;margin-bottom:30px;background-color:transparent;color:#666}#innerBar .titleLine{display:table-cell;vertical-align:middle;width:50%}.dmPageTitleRow:not(#innerBar){display:none}.titleLine hr{min-height:1px;background-color:rgba(102,102,102,.2)}.standardHeaderLayout .dmHeader{float:none;display:block;height:auto}.dmInner a{outline:0;vertical-align:inherit}.dmLinksMenu>ul{display:block;margin:0;font-size:inherit}.dmStandardDesktop{display:block;margin:0 auto}#dm .dmSocialHub a{display:inline-block;text-decoration:none;margin:0;vertical-align:bottom}.dmSocialHub>div{text-align:inherit}a span.socialHubIcon{width:36px;height:36px;font-size:31px;display:inline-block;text-align:center;margin-right:0;margin-bottom:5px;line-height:36px;box-sizing:content-box;background-image:none!important}.socialHubIcon.style5{color:#fff}#dm .dmSocialHub .socialHubWrapper{display:inline-block;max-width:100%}body{background-color:#eee}.main-navigation.unifiednav{display:flex;justify-content:flex-start;align-items:stretch;overflow:visible}.main-navigation.unifiednav ul{list-style:none;padding:0;margin:0;font-size:1rem}.main-navigation.unifiednav .unifiednav__container{display:flex;justify-content:flex-start;list-style:none}.main-navigation.unifiednav .unifiednav__container>.unifiednav__item-wrap{display:flex;justify-content:flex-start;position:relative;font-weight:400}.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap::after,.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap::before{content:'';-ms-grid-row-align:center;align-self:center;font-weight:700}.main-navigation.unifiednav .unifiednav__container>.unifiednav__item-wrap>.unifiednav__item{display:flex;justify-content:flex-start;align-items:center;flex-direction:row;color:inherit;text-decoration:none;position:relative;padding:12px 15px;margin:0;font-weight:inherit;letter-spacing:.03em}.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item{padding:0 15px}.main-navigation.unifiednav .unifiednav__container>.unifiednav__item-wrap>.unifiednav__item .nav-item-text{white-space:nowrap}.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item .nav-item-text::after,.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item .nav-item-text::before{content:'';width:100%;height:0;border:0 solid transparent;border-top-color:currentColor;display:block;opacity:0}#dm .dmOuter .dmInner .dmWidget[data-buttonstyle=ROUND_SIDES] .iconBg,#dm .dmWidget:not([data-buttonstyle]) .iconBg,.main-navigation.unifiednav .unifiednav__container .unifiednav__item:not(.unifiednav__item_has-sub-nav) .icon{display:none}.main-navigation.unifiednav.effect-top-bottom{padding:calc(12px - .2em - 2px) 15px}.main-navigation.unifiednav.effect-top-bottom .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item .nav-item-text::before{margin-bottom:.2em;transform:translate3d(0,-8px,0)}.main-navigation.unifiednav.effect-top-bottom .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item .nav-item-text::after,.main-navigation.unifiednav.effect-top-bottom .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item .nav-item-text::before{border-top-width:2px}.main-navigation.unifiednav.effect-top-bottom .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item .nav-item-text::after{margin-top:.2em;transform:translate3d(0,8px,0)}.main-navigation.unifiednav .unifiednav__container[data-depth]{position:absolute;top:0;left:0;flex-direction:column;opacity:0;z-index:100;background-color:#faf9f9}.main-navigation.unifiednav .unifiednav__container[data-depth='0']{top:100%;transform:translateY(-10px)}.main-navigation.unifiednav:not(.unifiednav_vertical) .unifiednav__container[data-depth='0']{left:15px}.main-navigation.unifiednav .unifiednav__container>.unifiednav__item-wrap .unifiednav__container>.unifiednav__item-wrap{flex-direction:column}.main-navigation.unifiednav .unifiednav__container[data-depth]>.unifiednav__item-wrap .unifiednav__item{padding:15px 30px 15px 15px;margin:0}.main-navigation.unifiednav .unifiednav__container[data-depth]>.unifiednav__item-wrap:not(:last-child)::after{content:''!important;width:100%;height:0;color:#ececec;-ms-grid-row-align:center;align-self:center;border:0 solid currentColor}.main-navigation.unifiednav[layout-sub=submenu_horizontal_2] .unifiednav__container[data-depth]{color:#999}.main-navigation.unifiednav[layout-sub=submenu_horizontal_2] .unifiednav__container[data-depth]>.unifiednav__item-wrap:not(:last-child)::after{border-top-width:1px}.main-navigation.unifiednav .unifiednav__container>.unifiednav__item-wrap>.unifiednav__item.unifiednav__item_has-sub-nav .icon{display:initial;padding-left:10px;margin-left:0}.main-navigation.unifiednav:not(.unifiednav_vertical)>.unifiednav__container{justify-content:inherit}#dm .p_hfcontainer nav.main-navigation.unifiednav{min-width:9em!important;text-align:initial!important}#dm .main-navigation.unifiednav .unifiednav__container[data-depth]{background-color:transparent}#dm .main-navigation.unifiednav[layout-sub=submenu_horizontal_2] .unifiednav__container[data-depth]{background-color:#faf9f9}#dm .main-navigation.unifiednav .unifiednav__container[data-depth]>.unifiednav__item-wrap:not(:last-child)::after{color:#d1d1d1}#dm .main-navigation.unifiednav:not([data-nav-structure=VERTICAL])>.unifiednav__container{flex-wrap:wrap;justify-content:inherit}#dm .main-navigation.unifiednav:not([data-nav-structure=VERTICAL])>.unifiednav__container .nav-item-text::before{text-align:left}#dm .main-navigation.unifiednav:not([data-nav-structure=VERTICAL]) .unifiednav__container:not([data-depth])>.unifiednav__item-wrap:not(:last-child)::after,#dm .main-navigation.unifiednav:not([data-nav-structure=VERTICAL]) .unifiednav__container:not([data-depth])>.unifiednav__item-wrap:not(:last-child)::before,#dm .main-navigation.unifiednav:not([data-nav-structure=VERTICAL])[data-divider]:not([data-direction=RIGHT]) .unifiednav__container:not([data-depth])>.unifiednav__item-wrap:not(:last-child)::before{content:''}#dm .main-navigation.unifiednav:not([data-nav-structure=VERTICAL])[data-divider=PIPE] .unifiednav__container:not([data-depth])>.unifiednav__item-wrap:not(:last-child)::after{content:'|'}#dm .main-navigation.unifiednav:not([data-nav-structure=SPLIT]) .unifiednav__container:not([data-depth])>.unifiednav__item-wrap:last-child .unifiednav__container[data-depth='0']{left:auto;right:0}#dm .dmBody .dmRespRowsWrapper{max-width:none;background-color:transparent}.dmLargeBody .dmRespRow{width:100%;max-width:none;margin-left:0;margin-right:0;padding-left:40px;padding-right:40px}.dm-bfs.dm-layout-home div.dmInner{background-color:#fff}.dmStandardDesktop .dmHeader{background-color:#68ccd1;max-width:100%}#dm div.dmRespCol>*{line-height:normal}#dm div.dmContent h2,#dm div.dmContent h2 *,#dm div.dmContent h3,#dm div.dmContent h3 *,#dm div.dmInner{line-height:initial}#dm div.dmContent h3{color:#fff}#dm div.dmInner h2,#dm div.dmInner h3{font-family:Montserrat}#dm div.dmContent h2{color:#333}#dm DIV.dmInner{background-repeat:no-repeat;background-image:url(https://irt-cdn.multiscreensite.com/ce0bb35f932b47bb809d0e37905542ba/dms3rep/multi/site_background_education-2087x1173.jpg);background-size:cover;background-position:50% 0}#dm div.dmOuter div.dmInner{background-position:center center;background-repeat:repeat;background-size:auto}#dm div.dmInner,#dm div.dmInner .dmRespCol{font-weight:300}#dm .dmContent .dmRespRow{background-color:rgba(0,0,0,0)}#dm .dmRespCol div.dmNewParagraph,#dm div.dmInner,#dm div.dmInner .dmRespCol{font-family:IMFellDoublePica-Regular;color:rgba(0,0,0,1)}#dm div.dmContent h2,#dm div.dmContent h3{color:rgba(0,0,0,1);direction:ltr;font-family:Montserrat}#dm #dm-outer-wrapper .imageWidget img{border-width:0;border-style:solid;border-radius:0;-webkit-border-radius:0;-moz-border-radius:0}.dmLargeBody .dmBody .dmRespRowsWrapper{background-color:transparent}#dm div.dmContent h2{font-weight:700;font-style:normal;text-decoration:none;font-size:30px}#dm div.dmContent .dmNewParagraph[data-version] h2{text-decoration:inherit}#dm div.dmContent .dmNewParagraph[data-version] h2 *,#dm div.dmContent h3{text-decoration:none}#dm div.dmContent h3{font-weight:400;font-style:normal}#dm div.dmContent .dmNewParagraph[data-version] h3{text-decoration:inherit}#dm div.dmContent .dmNewParagraph[data-version] h3 *{text-decoration:none}#dm DIV.dmOuter DIV.dmInner{background-size:contain;background-repeat:no-repeat;background-position:50% 0;background-image:none;background-color:rgba(255,255,255,1)}#dm div.dmInner,#dm div.dmInner .dmRespCol{font-size:16px}#dm div.dmContent h3{font-size:24px}#dm .dmContent .dmRespRow .dmRespCol{padding:10px;margin:10px 20px}#dm .dmContent .dmRespRow{padding:5px;margin:0}#dm div.dmNewParagraph p{font-size:22px}@media (min-width:0px) and (max-width:767px){:root{--btn-text-font-size:20px}}#dm .dmWidget:not([data-buttonstyle]){border-radius:50px}#dm .dmWidget:not([data-buttonstyle]) .text{padding:10px 0}#dm div.dmInner #site_content .dmWidget{background-color:var(--btn-bg-color);border-color:var(--btn-border-color);border-bottom-color:var(--btn-border-b-color);border-left-color:var(--btn-border-l-color);border-right-color:var(--btn-border-r-color);border-top-color:var(--btn-border-t-color);border-radius:var(--btn-border-radius);border-bottom-left-radius:var(--btn-border-bl-radius);border-bottom-right-radius:var(--btn-border-br-radius);border-top-left-radius:var(--btn-border-tl-radius);border-top-right-radius:var(--btn-border-tr-radius);border-width:var(--btn-border-width);border-bottom-width:var(--btn-border-b-width);border-left-width:var(--btn-border-l-width);border-right-width:var(--btn-border-r-width);border-top-width:var(--btn-border-t-width);box-shadow:var(--btn-box-shadow);direction:var(--btn-text-direction);text-align:var(--btn-text-align)}#dm div.dmInner #site_content .dmWidget span.text{color:var(--btn-text-color);font-family:var(--btn-text-font-family);font-size:var(--btn-text-font-size);font-style:var(--btn-text-font-style);font-weight:var(--btn-text-font-weight);text-decoration:var(--btn-text-decoration)}#dm div.dmInner #site_content .dmWidget span.icon{color:var(--btn-icon-color);fill:var(--btn-icon-fill)}#dm div.dmInner #site_content .dmWidget:not([data-buttonstyle]) .iconBg{display:var(--btn-icon-wrpr-display)}#dm .p_hfcontainer .main-navigation.unifiednav:not(.unifiednav_vertical) .unifiednav__container:not([data-depth])>.unifiednav__item-wrap:not(:last-child)::after,#dm .p_hfcontainer .main-navigation.unifiednav:not(.unifiednav_vertical) .unifiednav__container:not([data-depth])>.unifiednav__item-wrap:not(:last-child)::before{font-size:14px!important}#dm .p_hfcontainer .u_1176267702.main-navigation.unifiednav:not([image]) .unifiednav__container[data-depth="0"]{top:calc(100% - 0px - 0px)!important}#dm .p_hfcontainer .u_1176267702.main-navigation.unifiednav[data-nav-structure=HORIZONTAL] .unifiednav__container:not([data-depth])>.unifiednav__item-wrap:not(:last-child) .unifiednav__container[data-depth="0"]{left:10px!important}#dm .p_hfcontainer nav.u_1176267702{color:#000!important}#dm .dmInner div.dmHeader,#dm .dmInner div.dmHeader.u_hcontainer,#dm .dmInner div.u_hcontainer{background-color:rgba(255,255,255,1)!important;box-shadow:none!important;-moz-box-shadow:none!important;-webkit-box-shadow:none!important}#dm .p_hfcontainer .u_1176267702.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item{padding:0 10px!important;margin:0!important}#dm .p_hfcontainer nav.u_1176267702.main-navigation.unifiednav .unifiednav__container[data-depth]{background-color:rgba(255,255,255,1)!important}#dm .p_hfcontainer nav.u_1176267702.main-navigation.unifiednav:not([data-nav-structure=VERTICAL]) .unifiednav__container[data-depth]{box-shadow:rgba(0,0,0,.25) 3px 3px 11px 0!important;-moz-box-shadow:rgba(0,0,0,.25) 3px 3px 11px 0!important;-webkit-box-shadow:rgba(0,0,0,.25) 3px 3px 11px 0!important}#dm .p_hfcontainer .u_1176267702.main-navigation.unifiednav .unifiednav__container[data-depth] .unifiednav__item{margin:0!important;padding:11px 15px!important}#dm .p_hfcontainer .u_1176267702.main-navigation.unifiednav:not([data-nav-structure=VERTICAL]) .unifiednav__container:not([data-depth])>.unifiednav__item-wrap:not(:last-child)::after,#dm .p_hfcontainer .u_1176267702.main-navigation.unifiednav:not([data-nav-structure=VERTICAL]) .unifiednav__container:not([data-depth])>.unifiednav__item-wrap:not(:last-child)::before{font-size:15px!important;color:transparent!important}#dm .p_hfcontainer nav.u_1176267702.main-navigation.unifiednav.effect-top-bottom .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item .nav-item-text::after,#dm .p_hfcontainer nav.u_1176267702.main-navigation.unifiednav.effect-top-bottom .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item .nav-item-text::before{border-top-color:rgba(193,193,193,1)!important}#dm .p_hfcontainer nav.u_1176267702.main-navigation.unifiednav .unifiednav__container[data-depth]>.unifiednav__item-wrap:not(:last-child)::after{border-top-style:solid!important;border-top-width:2px!important;border-top-color:rgba(207,207,207,1)!important}#dm .p_hfcontainer div.u_1009370394 .socialHubIcon{color:rgba(135,135,135,1)!important;border-color:rgba(135,135,135,1)!important}#dm .p_hfcontainer nav.u_1176267702.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item,#dm .p_hfcontainer nav.u_1176267702.main-navigation.unifiednav .unifiednav__container[data-depth] .unifiednav__item{color:rgba(135,135,135,1)!important;font-family:'Playfair Display'!important}#dm .dmInner div.u_hcontainer{float:none!important;top:0!important;left:0!important;width:100%!important;position:relative!important;height:auto!important;max-width:100%!important;min-width:0!important;text-align:center!important;padding:25px 0 20px!important;margin:0 auto!important}#dm .dmInner div.dmHeader.u_hcontainer{padding-bottom:20px!important;padding-top:25px!important}#dm .dmInner div.fHeader .dmHeader[freeheader=true]{padding:15px 0!important}.fHeader #hcontainer.dmHeader[freeheader=true]{padding-top:initial!important;padding-bottom:initial!important}#dm .p_hfcontainer div.u_1745911023{padding:0!important}#dm .p_hfcontainer .u_1009370394 .socialHubIcon{width:28px!important;height:28px!important;font-size:18.67px!important;line-height:28px!important}#dm .p_hfcontainer .u_1009370394 .socialHubIcon:after{width:36px!important;height:28px!important}#dm .p_hfcontainer div.u_1009370394,#dm .p_hfcontainer nav.u_1176267702{height:auto!important;float:none!important;top:0!important;left:0!important;position:relative!important}#dm .p_hfcontainer .u_1009370394 .socialHubInnerDiv a{margin-right:8px!important}#dm .p_hfcontainer .u_1009370394.dmSocialHub .socialHubInnerDiv a:not(:last-child){margin-right:5px!important}#dm .p_hfcontainer div.u_1009370394{display:block!important;width:180px!important;max-width:100%!important;min-width:0!important;text-align:right!important;padding:0 5px 0 0!important;margin:9px 0 0 auto!important}#dm .p_hfcontainer nav.u_1176267702{width:100%!important;max-width:calc(100% - 0px)!important;justify-content:flex-start!important;align-items:stretch!important;min-width:25px!important;text-align:center!important;padding:12px 15px 12px 10px!important;margin:2px 0 0!important}#dm .p_hfcontainer nav.u_1176267702.main-navigation.unifiednav:not([data-nav-structure=VERTICAL]) .unifiednav__container:not([data-depth])>.unifiednav__item-wrap:not(:last-child)::after,#dm .p_hfcontainer nav.u_1176267702.main-navigation.unifiednav:not([data-nav-structure=VERTICAL]) .unifiednav__container:not([data-depth])>.unifiednav__item-wrap:not(:last-child)::before{padding-top:0!important;padding-bottom:0!important;margin-top:0!important;margin-bottom:0!important}#dm .dmInner div.fHeader.dmHeaderContainer #hcontainer.dmHeader[freeheader=true],#dm .p_hfcontainer div.u_1108197914{padding:0!important;margin:0!important}@media (min-width:1025px){.responsiveTablet .stickyHeaderSpacer{height:57px!important}}@media (min-width:768px) and (max-width:1024px){.responsiveTablet .stickyHeaderSpacer{height:57px!important}}#dm .p_hfcontainer nav.u_1176267702.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item{font-size:15px!important}#dm .p_hfcontainer div.u_1811743959{background-color:rgba(255,255,255,1)!important;float:none!important;top:0!important;left:0!important;width:auto!important;position:relative!important;height:auto!important;max-width:100%!important;min-width:0!important;text-align:center!important;padding:.5px 15px!important;margin:0!important}#dm .dmBody .u_1692892815:before,#dm .dmBody .u_JoinWaitingList1:before{background-color:#fff!important;opacity:.5!important}#dm .p_hfcontainer nav.u_1176267702.main-navigation.unifiednav .unifiednav__container[data-depth] .unifiednav__item{font-size:12px!important}.stickyHeaderSpacer{height:57px!important}#dm .dmBody div.u_1714215785 .slides .slide-title{color:rgba(255,255,255,1)!important;font-weight:700!important;font-family:Helvetica!important;font-size:44px!important}#dm .dmBody a.u_1522212044{background-color:var(--color_6)!important}#dm .dmBody a.u_1522212044 span.text{color:rgba(255,255,255,1)!important;font-family:Inter!important;font-size:16px!important}#dm .dmBody div.u_1397589781{background-repeat:no-repeat!important;background-image:url(https://lirp.cdn-website.com/md/pexels/dms3rep/multi/opt/pexels-photo-3873488-1920w.jpeg),url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAABhGlDQ1BJQ0MgcHJvZmlsZQAAKJF9kT1Iw0AcxV9TpUUqHSwo4pChOlkQFemoVShChVArtOpgcukXNGlIUlwcBdeCgx+LVQcXZ10dXAVB8APEzc1J0UVK/F9aaBHjwXE/3t173L0DhEaFaVbPBKDptplOJsRsblUMvEJAGEEMIi4zy5iTpBQ8x9c9fHy9i/Es73N/jn41bzHAJxLPMsO0iTeIZzZtg/M+cYSVZJX4nHjcpAsSP3JdafEb56LLAs+MmJn0PHGEWCx2sdLFrGRqxNPEUVXTKV/ItljlvMVZq9RY+578haG8vrLMdZojSGIRS5AgQkENZVRgI0arToqFNO0nPPzDrl8il0KuMhg5FlCFBtn1g//B726twtRkKymUAHpfHOdjFAjsAs2643wfO07zBPA/A1d6x19tAPFP0usdLXoEhLeBi+uOpuwBlzvA0JMhm7Ir+WkKhQLwfkbflAMGboG+tVZv7X2cPgAZ6ip1AxwcAmNFyl73eHewu7d/z7T7+wFwJnKmZ9+MiwAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAuIwAALiMBeKU/dgAAAAd0SU1FB+UCDwksLkLIPkkAAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAAC0lEQVQI12NgAAIAAAUAAeImBZsAAAAASUVORK5CYII=)!important}#dm .dmBody .u_1397589781:before{opacity:.5!important;background-color:#fff!important}#dm .dmBody div.u_1397589781:before{opacity:.72!important}#dm .dmBody div.u_1458025857{border-radius:6px!important;-moz-border-radius:6px!important;-webkit-border-radius:6px!important;background-color:rgba(0,0,0,0)!important;box-shadow:none!important;-moz-box-shadow:none!important;-webkit-box-shadow:none!important}#dm .dmBody .u_1991065318{width:100%!important}#dm .dmBody div.u_JoinWaitingList1{background-color:rgba(0,0,0,1)!important;background-image:none!important;box-shadow:none!important;-moz-box-shadow:none!important;-webkit-box-shadow:none!important}#dm .dmBody div.u_1692892815{background-repeat:no-repeat!important;background-image:url(https://lirp.cdn-website.com/37f533df/dms3rep/multi/opt/2V4A9859-7bdfc7f6-1920w.jpg),url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAABhGlDQ1BJQ0MgcHJvZmlsZQAAKJF9kT1Iw0AcxV9TpUUqHSwo4pChOlkQFemoVShChVArtOpgcukXNGlIUlwcBdeCgx+LVQcXZ10dXAVB8APEzc1J0UVK/F9aaBHjwXE/3t173L0DhEaFaVbPBKDptplOJsRsblUMvEJAGEEMIi4zy5iTpBQ8x9c9fHy9i/Es73N/jn41bzHAJxLPMsO0iTeIZzZtg/M+cYSVZJX4nHjcpAsSP3JdafEb56LLAs+MmJn0PHGEWCx2sdLFrGRqxNPEUVXTKV/ItljlvMVZq9RY+578haG8vrLMdZojSGIRS5AgQkENZVRgI0arToqFNO0nPPzDrl8il0KuMhg5FlCFBtn1g//B726twtRkKymUAHpfHOdjFAjsAs2643wfO07zBPA/A1d6x19tAPFP0usdLXoEhLeBi+uOpuwBlzvA0JMhm7Ir+WkKhQLwfkbflAMGboG+tVZv7X2cPgAZ6ip1AxwcAmNFyl73eHewu7d/z7T7+wFwJnKmZ9+MiwAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAuIwAALiMBeKU/dgAAAAd0SU1FB+UCDwksLkLIPkkAAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAAC0lEQVQI12NgAAIAAAUAAeImBZsAAAAASUVORK5CYII=)!important;background-size:cover!important}#dm .d-page-1716942098 DIV.dmInner{background-image:none!important}#dm .dmBody div.u_JoinWaitingList1{background-repeat:no-repeat!important;background-size:contain!important;background-position:50% 50%!important;padding:0!important;margin:0!important}#dm .dmBody div.u_1140680709,#dm .dmBody div.u_1833245198{width:100%!important;padding:2px 0!important;float:none!important;top:0!important;left:0!important;height:auto!important}#dm .dmBody div.u_1833245198{position:relative!important;max-width:calc(100% - 0px)!important;min-width:25px!important;margin:14px auto 8px!important}#dm .dmBody div.u_1140680709{display:block!important;position:relative!important;max-width:100%!important;min-width:0!important;margin:8px auto!important}#dm .dmBody a.u_1522212044{float:none!important;top:0!important;left:0!important;width:280px!important;position:relative!important;height:52px!important;max-width:calc(100% - 369px)!important;min-width:25px!important;text-align:center!important;padding:0 22px!important;margin:33px 300px 10px!important}#dm .dmBody div.u_1397589781,#dm .dmBody div.u_1991065318{float:none!important;top:0!important;left:0!important;position:relative!important;min-width:0!important}#dm .dmBody div.u_1397589781{width:auto!important;height:auto!important;max-width:none!important;text-align:center!important;background-attachment:fixed!important;background-size:cover!important;padding:50px 40px 25px!important;margin:0!important}#dm .dmBody div.u_1458025857{margin:10px 22px!important;padding:22px 11px!important}#dm .dmBody div.u_1692892815{background-position:50% 0!important;background-attachment:initial!important;width:auto!important;margin:0!important;padding:155px 22px 500px!important}#dm .dmBody div.u_1991065318{width:500px!important;display:block!important;max-width:100%!important;text-align:start!important;height:354px!important;padding:44px 0 0 44px!important;margin:0 196px!important}@media all{:root{--btn-text-direction:ltr;--btn-border-r-color:var(--btn-border-color);--btn-border-l-color:var(--btn-border-color);--btn-border-b-width:var(--btn-border-width);--btn-border-width:0px;--btn-border-radius:50px;--btn-border-t-width:var(--btn-border-width);--btn-border-tl-radius:var(--btn-border-radius);--btn-border-br-radius:var(--btn-border-radius);--btn-border-bl-radius:var(--btn-border-radius);--btn-bg-color:var(--color_1);--btn-box-shadow:rgb(159, 159, 159) 3px 3px 11px 0px;--btn-border-color:rgb(65, 67, 69);--btn-border-tr-radius:var(--btn-border-radius);--btn-border-r-width:var(--btn-border-width);--btn-border-b-color:var(--btn-border-color);--btn-border-l-width:var(--btn-border-width);--btn-border-t-color:var(--btn-border-color);--btn-text-align:center;--btn-text-color:rgb(255, 255, 255);--btn-text-decoration:none;--btn-text-font-weight:700;--btn-text-font-style:normal;--btn-text-font-family:Cardo;--btn-icon-color:rgb(247, 247, 247);--btn-icon-fill:rgb(247, 247, 247);--btn-icon-wrpr-display:none;--btn-hover-border-b-color:var(--btn-hover-border-color);--btn-hover-bg:var(--color_2);--btn-hover-border-t-color:var(--btn-hover-border-color);--btn-hover-border-r-color:var(--btn-hover-border-color);--btn-hover-border-l-color:var(--btn-hover-border-color);--btn-hover-border-color:rgba(0, 0, 0, 0);--btn-hover-text-color:var(--btn-text-color);--btn-hover-text-font-weight:var(--btn-text-font-weight);--btn-hover-text-decoration:var(--btn-text-decoration);--btn-hover-text-font-style:var(--btn-text-font-style)}}.font-size-77,.size-77{font-size:77px!important}.font-size-60,.size-60{font-size:60px!important}.font-size-16,.size-16{font-size:16px!important}.font-size-24,.size-24{font-size:24px!important}.font-size-20,.size-20{font-size:20px!important}.dmDesktopBody:not(.editGrid) [data-anim-desktop]:not([data-anim-desktop=none]){visibility:hidden}
+    .dmDesktopBody [data-anim-desktop]:not([data-anim-desktop='none']) {
+      visibility: hidden;
+    }
+    
+</style>
+
+
+
+
+<!-- End render the required css and JS in the head section -->
+
+
+
+
+
+
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+    {
+        "@context" : "https://schema.org",
+        "@type" : "WebSite",
+        "name" : "Mia Magik",
+        "url" : "https://www.mia-magik.com/"
+    }
+</script>
+  <title>
+    Mia Magik | Home
+  </title>
+  <meta name="keywords" content="Mia Magik, Online Courses, Witch School, Witchy Rich, Apparel, Moon Rituals, LIVE Events, Retreats, Learn How to Be a Witch, Magical, Magik, Witch, Magikal"/>
+  <meta name="description" content="Mia Magik | Online Courses - Witch School &amp; Witchy Rich - Apparel - Moon Rituals - LIVE Events - Retreats | Learn How to Be a Witch, Magical, Magik"/>
+  <script>
+
+
+
+
+
+
+  (function(w, d, t, h, s, n) {
+    w.FlodeskObject = n;
+    var fn = function() {
+      (w[n].q = w[n].q || []).push(arguments);
+    };
+    w[n] = w[n] || fn;
+    var f = d.getElementsByTagName(t)[0];
+    var v = '?v=' + Math.floor(new Date().getTime() / (120 * 1000)) * 60;
+    var sm = d.createElement(t);
+    sm.async = true;
+    sm.type = 'module';
+    sm.src = h + s + '.mjs' + v;
+    f.parentNode.insertBefore(sm, f);
+    var sn = d.createElement(t);
+    sn.async = true;
+    sn.noModule = true;
+    sn.src = h + s + '.js' + v;
+    f.parentNode.insertBefore(sn, f);
+  })(window, document, 'script', 'https://assets.flodesk.com', '/universal', 'fd');
+
+
+  
+
+  
+
+  </script>
+
+  <!-- TruConversion for miamagik.com -->  <script type="text/javascript">
+
+
+
+
+
+
+
+    var _tip = _tip || [];
+    (function(d,s,id){
+        var js, tjs = d.getElementsByTagName(s)[0];
+        if(d.getElementById(id)) { return; }
+        js = d.createElement(s); js.id = id;
+        js.async = true;
+        js.src = d.location.protocol + '//app.truconversion.com/ti-js/20945/4ba53.js';
+        tjs.parentNode.insertBefore(js, tjs);
+    }(document, 'script', 'ti-js'));
+  
+
+  
+
+  
+
+  
+
+  </script>
+
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:title" content="Mia Magik | Home"/>
+  <meta name="twitter:description" content="Mia Magik | Online Courses - Witch School &amp; Witchy Rich - Apparel - Moon Rituals - LIVE Events - Retreats | Learn How to Be a Witch, Magical, Magik"/>
+  <meta name="twitter:image" content="https://lirp.cdn-website.com/37f533df/dms3rep/multi/opt/IMG_2368-1920w.JPG"/>
+  <meta property="og:description" content="Mia Magik | Online Courses - Witch School &amp; Witchy Rich - Apparel - Moon Rituals - LIVE Events - Retreats | Learn How to Be a Witch, Magical, Magik"/>
+  <meta property="og:title" content="Mia Magik | Home"/>
+  <meta property="og:image" content="https://lirp.cdn-website.com/37f533df/dms3rep/multi/opt/IMG_2368-1920w.JPG"/>
+
+
+
+
+<!-- SYS- VVNfRElSRUNUX1BST0RVQ1RJT04= -->
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body id="dmRoot" data-page-alias="home"  class="dmRoot dmDesktopBody fix-mobile-scrolling addCanvasBorder dmResellerSite dmLargeBody responsiveTablet " style="padding:0;margin:0;"
+      
+      >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ========= Site Content ========= -->
+<div id="dm" class='dmwr'>
+    
+    <div class="dm_wrapper standard-var5 widgetStyle-3 standard">
+         <div dmwrapped="true" id="1901957768" class="dm-home-page" themewaschanged="true"> <div dmtemplateid="StandardLayoutMultiD" class="standardHeaderLayout dm-bfs dm-layout-home hasAnimations hasStickyHeader hasStickyHeader dmPageBody d-page-1716942098 dmFreeHeader" id="dm-outer-wrapper" data-page-class="1716942098" data-soch="true" data-background-parallax-selector=".dmHomeSection1, .dmSectionParallex"> <div id="dmStyle_outerContainer" class="dmOuter"> <div id="dmStyle_innerContainer" class="dmInner"> <div class="dmLayoutWrapper standard-var dmStandardDesktop"> <div> <div id="iscrollBody"> <div id="site_content"> <div class="dmHeaderContainer fHeader d-header-wrapper"> <div id="hcontainer" class="u_hcontainer dmHeader p_hfcontainer" freeheader="true" headerlayout="b58ba5b5703b4cd7b5f5f7951565dc87===horizontal-layout-5" layout="e687f1ebb1404dcf886f0d6f6bd648e5===header"> <div dm:templateorder="85" class="dmHeaderResp dmHeaderStack noSwitch" id="1709005236"> <div class="u_1811743959 dmRespRow dmDefaultListContentRow fullBleedChanged fullBleedMode" style="text-align:center" id="1811743959"> <div class="dmRespColsWrapper" id="1859756465"> <div class="u_1745911023 small-12 dmRespCol medium-6 large-6" id="1745911023"> <nav class="u_1176267702 effect-top-bottom main-navigation unifiednav dmLinksMenu" role="navigation" layout-main="horizontal_nav_layout_3" layout-sub="submenu_horizontal_2" data-show-vertical-sub-items="HOVER" data-divider="PIPE" id="1176267702" dmle_extension="onelinksmenu" data-element-type="onelinksmenu" data-nav-structure="HORIZONTAL" wr="true" icon="true" surround="true" adwords="" navigation-id="unifiedNav"> <ul role="menubar" class="unifiednav__container  " data-auto="navigation-pages"> <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="http://www.miamagik.com" class="unifiednav__item    " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="Home" data-auto="page-text-style">Home<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" aria-haspopup="true" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="#" class="unifiednav__item    unifiednav__item_has-sub-nav" target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="Courses" data-auto="page-text-style">Courses<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+ <ul role="menu" aria-expanded="false" class="unifiednav__container unifiednav__container_sub-nav" data-depth="0" data-auto="sub-pages"> <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="/Courses" class="unifiednav__item    " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         Courses
+        " data-auto="page-text-style">Courses<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+ <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="https://miamagik.mykajabi.com/login" class="unifiednav__item    " target="_blank" data-target-page-alias=""> <span class="nav-item-text " data-link-text="Login to My Course" data-auto="page-text-style">Login to My Course<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</li> 
+ <li role="menuitem" aria-haspopup="true" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="0"> <a href="#" class="unifiednav__item    unifiednav__item_has-sub-nav" target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="Retreats" data-auto="page-text-style">Retreats<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+ <ul role="menu" aria-expanded="false" class="unifiednav__container unifiednav__container_sub-nav" data-depth="0" data-auto="sub-pages"> <li role="menuitem" class=" unifiednav__item-wrap " data-auto="more-pages" data-depth="1"> <a href="/oct-2023-coed-retreat" class="unifiednav__item    " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+         Co-Ed Most Magikal Life Retreat Oct. 2023
+        " data-auto="page-text-style">Co-Ed Most Magikal Life Retreat Oct. 2023<span class="icon icon-angle-right"></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</li> 
+</ul> 
+</nav> 
+</div> 
+ <div class="u_1108197914 dmRespCol small-12 medium-6 large-6" id="1108197914"> <div class="u_1009370394 align-center text-align-center dmSocialHub" id="1009370394" dmle_extension="social_hub" data-element-type="social_hub" wr="true" networks="" icon="true" surround="true" adwords=""> <div class="socialHubWrapper"> <div class="socialHubInnerDiv "> <a href="https://instagram.com/miamagik" target="_blank" dm_dont_rewrite_url="true" aria-label="instagram" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Instagram&apos;)"> <span class="dmSocialInstagram dm-social-icons-instagram oneIcon socialHubIcon style5" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+ <a href="https://www.youtube.com/channel/UC_wts55XbgCLWzNMqbvheVQ" target="_blank" dm_dont_rewrite_url="true" aria-label="youtube" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Youtube&apos;)"> <span class="dmSocialYoutube dm-social-icons-youtube oneIcon socialHubIcon style5" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+ <a href="mailto:team@miamagik.com" dm_dont_rewrite_url="true" aria-label="email" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Email&apos;)"> <span class="dmSocialEmail dm-social-icons-email oneIcon socialHubIcon style5" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+ <a href="https://facebook.com/miamagik" target="_blank" dm_dont_rewrite_url="true" aria-label="facebook" onclick="dm_gaq_push_event &amp;&amp; dm_gaq_push_event(&apos;socialLink&apos;, &apos;click&apos;, &apos;Facebook&apos;)"> <span class="dmSocialFacebook dm-social-icons-facebook oneIcon socialHubIcon style5" aria-hidden="true" data-hover-effect=""></span> 
+</a> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="stickyHeaderSpacer" id="stickyHeaderSpacer" data-new="true"></div> 
+ <div class="dmRespRow dmRespRowStable dmRespRowNoPadding dmPageTitleRow "> <div class="dmRespColsWrapper"> <div class="large-12 dmRespCol"> <div id="innerBar" class="innerBar lineInnerBar dmDisplay_None"> <div class="titleLine display_None"><hr/></div> 
+<!-- Page title is hidden in css for new responsive sites. It is left here only so we don't break old sites. Don't copy it to new layouts --> <div id="pageTitleText"></div> 
+ <div class="titleLine display_None"><hr/></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div dmwrapped="true" id="1901957768" class="dmBody u_dmStyle_template_home dm-home-page" themewaschanged="true"> <div id="allWrapper" class="allWrapper"><!-- navigation placeholders --> <div id="dm_content" class="dmContent"> <div dm:templateorder="170" class="dmHomeRespTmpl mainBorder dmRespRowsWrapper dmFullRowRespTmpl" id="1716942098"> <div class="u_1692892815 dmRespRow" id="1692892815"> <div class="dmRespColsWrapper" id="1603870833"> <div class="dmRespCol large-12 medium-12 small-12 u_1458025857" id="1458025857"> <div class="u_1991065318 imageWidget align-center" data-element-type="image" data-widget-type="image" id="1991065318"><img src="https://lirp.cdn-website.com/37f533df/dms3rep/multi/opt/Mia-s+Signature+2023+-+Wider+-+Gold-1920w.png" alt="" id="1060328261" class="" data-dm-image-path="https://irp.cdn-website.com/37f533df/dms3rep/multi/Mia-s+Signature+2023+-+Wider+-+Gold.png" width="1920" height="1306" onerror="handleImageLoadError(this)"/></div> 
+</div> 
+</div> 
+</div> 
+ <div data-flex-id="637d53ef62117e5165194e04" data-auto="flex-section" id="1232792760" data-layout-section=""> <div class="flex-widgets-container" id="1216772376"></div> 
+ <section id="637d53ef62117e5165194e05" class="flex-element section" data-auto="flex-element-section"> <div id="637d53ef62117e5165194e07" class="flex-element grid" data-auto="flex-element-grid" data-layout-grid=""> <div id="637d53ef62117e5165194e06" class="flex-element group" data-auto="flex-element-group"> <div id="637d53ef62117e5165194e08" class="flex-element group" data-auto="flex-element-group"> <div id="637d53ef62117e5165194e09" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="paragraph" data-external-id="1309350663"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1309350663" style=""> <h1 class="m-size-28 text-align-center size-44"><span class="m-font-size-28 font-size-44" m-font-size-set="true" style="text-shadow: rgb(207, 207, 207) 3px 3px 1px; font-weight: bold; font-family: IMFellDoublePica-Regular; color: var(--color_1); display: unset; font-style: normal;">Welcome To Your Most Magikal Life</span></h1> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</section> 
+</div> 
+ <div data-flex-id="637d52ad62117e51651870f3" data-auto="flex-section" id="1336027548" data-layout-section="" class="u_1336027548"> <div class="flex-widgets-container" id="1436899009"> <div class="graphicWidget" data-element-type="graphic" data-widget-type="graphic" id="1494056820"> <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 70 70" id="1484614107" class="svg u_1484614107" data-icon-name="wp-road_signs_thin"> <path d="M51,30l9-8l-9-8H36v-4h-2v4H20v16h14v4H19l-9,8l9,8h15v10h2V50h14V34H36v-4H51z M48,48H19.8L13,42l6.7-6H48V48z M22,16h28.2
+	l6.8,6l-6.8,6H22V16z"></path> 
+</svg> 
+</div> 
+ <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1394547946" style=""><p class="text-align-center size-16 m-size-16" style="line-height: 1.5;"><span class="font-size-16 m-font-size-16" style="display: unset; color: rgb(26, 27, 31);"><span class="font-size-16 m-font-size-16" style="display: unset; color: rgb(26, 27, 31);" m-font-size-set="true">Describe some quality or feature of the company. Write a short paragraph about it and choose an appropriate icon.</span> 
+</span></p></div> 
+ <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1528220286" style=""> <h3 class="text-align-center size-24 m-size-19"><span style="display: unset; color: rgb(26, 27, 31);" class="font-size-24 m-font-size-19">Short title</span></h3> 
+</div> 
+</div> 
+ <section id="637d52ad62117e51651870f4" class="flex-element section" data-auto="flex-element-section"> <div id="637d52ad62117e51651870f5" class="flex-element grid" data-auto="flex-element-grid" data-layout-grid=""> <div id="637d52ad62117e51651870f6" class="flex-element group" data-auto="flex-element-group"> <div id="644848df6bcf562d09b15a71" class="flex-element group" data-auto="flex-element-group"> <div id="644848df6bcf562d09b15a72" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="image" data-keep-proportion="true" data-external-id="1981329690"> <div class="imageWidget align-center u_1981329690" data-element-type="image" data-widget-type="image" id="1981329690"><img src="https://lirp.cdn-website.com/37f533df/dms3rep/multi/opt/MIAMAGIK-HUMBOLDT-1390-square-1920w.jpg" alt="" id="1476394210" class="" data-dm-image-path="https://irp.cdn-website.com/37f533df/dms3rep/multi/MIAMAGIK-HUMBOLDT-1390-square.jpg" width="900" height="900" onerror="handleImageLoadError(this)"/></div> 
+</div> 
+ <div id="644848df6bcf562d09b15a70" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="image" data-keep-proportion="true" data-external-id="1186469824"> <div class="imageWidget align-center u_1186469824" data-element-type="image" data-widget-type="image" id="1186469824"><img src="https://lirp.cdn-website.com/37f533df/dms3rep/multi/opt/mm+copy6-1920w.png" alt="" id="1617124125" class="" data-dm-image-path="https://irp.cdn-website.com/37f533df/dms3rep/multi/mm+copy6.png" width="872" height="261" onerror="handleImageLoadError(this)"/></div> 
+</div> 
+ <div id="644848df6bcf562d09b15a6f" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="image" data-keep-proportion="true" data-external-id="1729309703"> <div class="imageWidget align-center u_1729309703" data-element-type="image" data-widget-type="image" id="1729309703"><img src="https://lirp.cdn-website.com/37f533df/dms3rep/multi/opt/cropped-textwdiamond-1920w.png" alt="" id="1252906620" class="" data-dm-image-path="https://irp.cdn-website.com/37f533df/dms3rep/multi/cropped-textwdiamond.png" width="512" height="512" onerror="handleImageLoadError(this)"/></div> 
+</div> 
+ <div id="644848df6bcf562d09b15a73" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="paragraph" data-external-id="1546490581"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1546490581" style=""><p class="text-align-center m-text-align-center size-22 m-size-18"><span style="display: initial; font-family: 'Playfair Display';" class="font-size-22 m-font-size-18">A Mystical Guide to The Wealth &amp; Life of Your Dreams</span></p></div> 
+</div> 
+ <div id="644848df6bcf562d09b15a74" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="link" data-external-id="1950659661"> <a data-display-type="block" class="align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient u_1950659661" file="false" href="https://miamagik.link/w-moneymagik" data-element-type="dButtonLinkId" id="1950659661" target="_blank"> <span class="iconBg" aria-hidden="true" id="1640487419"> <span class="icon hasFontIcon icon-star" id="1450927112"></span> 
+</span> 
+ <span class="text" id="1580893324">Join Now</span> 
+</a> 
+</div> 
+</div> 
+ <div id="6448495b6bcf562d09b198e1" class="flex-element group" data-auto="flex-element-group"> <div id="6448495b6bcf562d09b198e2" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="paragraph" data-external-id="1174719744"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1174719744" style=""> <h3 class="m-size-33 text-align-center size-22"><span style="font-weight: bold; font-style: italic; display: unset; color: var(--color_1);" class="m-font-size-33 font-size-22" m-font-size-set="true">Level 1</span></h3> 
+</div> 
+</div> 
+ <div id="6448495b6bcf562d09b198e3" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="image" data-keep-proportion="true" data-external-id="1224694039"> <div class="imageWidget align-center u_1224694039" data-element-type="image" data-widget-type="image" id="1224694039"><img src="https://lirp.cdn-website.com/37f533df/dms3rep/multi/opt/Buy_Image+-+Small-1920w.jpg" alt="" id="1359089128" class="" data-dm-image-path="https://irp.cdn-website.com/37f533df/dms3rep/multi/Buy_Image+-+Small.jpg" width="962" height="962" onerror="handleImageLoadError(this)"/></div> 
+</div> 
+ <div id="6448495b6bcf562d09b198e6" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="image" data-keep-proportion="true" data-external-id="1750040682"> <div class="imageWidget align-center u_1750040682" data-element-type="image" data-widget-type="image" id="1750040682"><img src="https://lirp.cdn-website.com/37f533df/dms3rep/multi/opt/Gold-Leaf---Witch-School-1920w.png" alt="" id="1959215553" class="" data-dm-image-path="https://irp.cdn-website.com/37f533df/dms3rep/multi/Gold-Leaf---Witch-School.png" width="750" height="602" onerror="handleImageLoadError(this)"/></div> 
+</div> 
+ <div id="6448495b6bcf562d09b198e4" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="paragraph" data-external-id="1797645943"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1797645943" style=""><p class="text-align-center m-text-align-center size-22 m-size-18"><span style="font-family: 'Playfair Display'; display: initial;" class="font-size-22 m-font-size-18" m-font-size-set="true">6 Weeks to the</span></p><p class="text-align-center m-text-align-center size-22 m-size-18"><span style="font-family: 'Playfair Display'; display: initial;" class="font-size-22 m-font-size-18" m-font-size-set="true">MOST Magikal You!</span></p></div> 
+</div> 
+ <div id="6448495b6bcf562d09b198e5" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="link" data-external-id="1666162735"> <a data-display-type="block" class="align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient u_1666162735" file="false" href="https://b.link/miamagikwitchschoollevel1" data-element-type="dButtonLinkId" id="1666162735" target="_blank"> <span class="iconBg" aria-hidden="true" id="1719041380"> <span class="icon hasFontIcon icon-star" id="1297138400"></span> 
+</span> 
+ <span class="text" id="1905183003">Join Now</span> 
+</a> 
+</div> 
+</div> 
+ <div id="644849816bcf562d09b1aa70" class="flex-element group" data-auto="flex-element-group"> <div id="644849816bcf562d09b1aa74" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="image" data-keep-proportion="true" data-external-id="1950361375"> <div class="imageWidget align-center u_1950361375" data-element-type="image" data-widget-type="image" id="1950361375"><img src="https://lirp.cdn-website.com/37f533df/dms3rep/multi/opt/1+Financial+Archetypes-1920w.png" alt="" id="1220850435" class="" data-dm-image-path="https://irp.cdn-website.com/37f533df/dms3rep/multi/1+Financial+Archetypes.png" width="1000" height="1000" onerror="handleImageLoadError(this)"/></div> 
+</div> 
+ <div id="644849816bcf562d09b1aa73" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="image" data-keep-proportion="true" data-external-id="1295666471"> <div class="imageWidget align-center u_1295666471" data-element-type="image" data-widget-type="image" id="1295666471"><img src="https://lirp.cdn-website.com/37f533df/dms3rep/multi/opt/Gold-Leaf---Witch-School-1920w.png" alt="" id="1924057498" class="" data-dm-image-path="https://irp.cdn-website.com/37f533df/dms3rep/multi/Gold-Leaf---Witch-School.png" width="750" height="602" onerror="handleImageLoadError(this)"/></div> 
+</div> 
+ <div id="644849816bcf562d09b1aa72" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="paragraph" data-external-id="1467701177"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1467701177" style=""> <h3 class="m-size-33 text-align-center size-22"><span style="color: var(--color_1); display: unset; font-weight: bold; font-style: italic;" class="m-font-size-33 font-size-22" m-font-size-set="true">Level 2</span></h3> 
+</div> 
+</div> 
+ <div id="644849816bcf562d09b1aa6f" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="paragraph" data-external-id="1433277867"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1433277867" style=""><p class="text-align-center m-text-align-center size-22 m-size-18"><span style="font-family: 'Playfair Display'; display: initial;" class="font-size-22 m-font-size-18" m-font-size-set="true">6 Weeks to the</span></p><p class="text-align-center m-text-align-center size-22 m-size-18"><span style="font-family: 'Playfair Display'; display: initial;" class="font-size-22 m-font-size-18" m-font-size-set="true">MORE Magikal You!</span></p></div> 
+</div> 
+ <div id="644849816bcf562d09b1aa71" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="link" data-external-id="1568068627"> <a data-display-type="block" class="align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient u_1568068627" file="false" href="https://b.link/miamagikwitchschoollevel2" data-element-type="dButtonLinkId" id="1568068627" target="_blank"> <span class="iconBg" aria-hidden="true" id="1582559460"> <span class="icon hasFontIcon icon-star" id="1838468376"></span> 
+</span> 
+ <span class="text" id="1056698947">Join Now</span> 
+</a> 
+</div> 
+</div> 
+ <div id="6448499d6bcf562d09b1c333" class="flex-element group" data-auto="flex-element-group"> <div id="6448499d6bcf562d09b1c331" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="image" data-keep-proportion="true" data-external-id="1265365208"> <div class="imageWidget align-center u_1265365208" data-element-type="image" data-widget-type="image" id="1265365208"><img src="https://lirp.cdn-website.com/37f533df/dms3rep/multi/opt/Witchy+Rich+-+Circular+Image-1920w.png" alt="" id="1994257426" class="" data-dm-image-path="https://irp.cdn-website.com/37f533df/dms3rep/multi/Witchy+Rich+-+Circular+Image.png" width="1000" height="1000" onerror="handleImageLoadError(this)"/></div> 
+</div> 
+ <div id="6448499d6bcf562d09b1c334" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="image" data-keep-proportion="true" data-external-id="1009135641"> <div class="imageWidget align-center u_1009135641" data-element-type="image" data-widget-type="image" id="1009135641"><img src="https://lirp.cdn-website.com/37f533df/dms3rep/multi/opt/Witchy+Rich+-+Custom+Text+for+Website+GOLD+-+BLACK-1920w.png" alt="" id="1314229003" class="" data-dm-image-path="https://irp.cdn-website.com/37f533df/dms3rep/multi/Witchy+Rich+-+Custom+Text+for+Website+GOLD+-+BLACK.png" width="1920" height="1352" onerror="handleImageLoadError(this)"/></div> 
+</div> 
+ <div id="6448499d6bcf562d09b1c330" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="link" data-external-id="1072932464"> <a data-display-type="block" class="align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient u_1072932464" file="false" href="https://shop.miamagik.com/witchyrich/" data-element-type="dButtonLinkId" id="1072932464" target="_blank"> <span class="iconBg" aria-hidden="true" id="1456904412"> <span class="icon hasFontIcon icon-star" id="1254210066"></span> 
+</span> 
+ <span class="text" id="1799604728">Join Now</span> 
+</a> 
+</div> 
+ <div id="6448499d6bcf562d09b1c332" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="paragraph" data-external-id="1011082258"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1011082258" style=""><p class="text-align-center m-text-align-center size-22 m-size-18"><span style="display: unset; font-family: 'Playfair Display';" class="font-size-22 m-font-size-18" m-font-size-set="true">Manifest Money in the</span></p><p class="text-align-center m-text-align-center size-22 m-size-18"><span style="display: unset; font-family: 'Playfair Display';" class="font-size-22 m-font-size-18" m-font-size-set="true">Most Magikal Way!</span></p></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</section> 
+</div> 
+ <div data-auto="flex-section" id="1849335687" data-flex-id="63b3d4b8e54ce11057c6c845" data-layout-section=""> <div class="flex-widgets-container" id="1369655781"></div> 
+ <section id="63b3d4b8e54ce11057c6c844" class="flex-element section" data-auto="flex-element-section"> <div id="63b3d4b8e54ce11057c6c846" class="flex-element grid" data-auto="flex-element-grid" data-layout-grid=""> <div id="63b3d4b8e54ce11057c6c847" class="flex-element group" data-auto="flex-element-group"> <div id="63b3d4b8e54ce11057c6c848" class="flex-element group" data-auto="flex-element-group"> <div id="widget_45o" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="image" data-external-id="1296357726"> <div class="imageWidget align-center u_1296357726" data-element-type="image" data-widget-type="image" id="1296357726"><img src="https://lirp.cdn-website.com/37f533df/dms3rep/multi/opt/MIAMAGIK-HUMBOLDT-1388-fe904bd0-1920w.jpg" alt="" id="1002375261" class="" data-dm-image-path="https://irp.cdn-website.com/37f533df/dms3rep/multi/MIAMAGIK-HUMBOLDT-1388-fe904bd0.jpg" width="1817" height="2400" onerror="handleImageLoadError(this)"/></div> 
+</div> 
+</div> 
+ <div id="63b3d4b8e54ce11057c6c849" class="flex-element group" data-auto="flex-element-group"> <div id="widget_c00" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="paragraph" data-external-id="1586847660"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1586847660" style=""><p class="text-align-center size-24 m-size-19"><span style="display: initial; color: var(--color_1);" class="font-size-24 m-font-size-19">Do you remember when you believed you could create or accomplish anything you dreamed of?</span></p><p class="text-align-center size-24 m-size-19"><span style="display: initial; color: var(--color_1);" class="font-size-24 m-font-size-19">When life was full of magic?</span><span class="font-size-24 m-font-size-19" m-font-size-set="true" style="color: var(--color_1); display: initial;"><br/><br/></span><span style="display: initial; color: var(--color_1);" class="font-size-24 m-font-size-19">Life CAN be Magik again.</span><span class="font-size-24 m-font-size-19" m-font-size-set="true" style="color: var(--color_1); display: initial;"><br/><br/></span><span style="display: initial; color: var(--color_1);" class="font-size-24 m-font-size-19">We can give ourselves permission to PLAY, to say what we really think, and be whoever we desire to be!</span></p><p class="text-align-center"><span style="display: initial;"><span class="ql-cursor">﻿</span></span></p><p class="text-align-center size-24 m-size-19"><span style="display: initial; color: var(--color_1);" class="font-size-24 m-font-size-19">I hope you&rsquo;re here to own who you are. To claim your greatest wisdom &amp; fully express yourself. That by now you know hiding your true self is a disservice to the world.</span></p></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</section> 
+</div> 
+ <div data-auto="flex-section" id="1107074638" data-flex-id="63b3d5c6e54ce11057c73abf" data-layout-section=""> <div class="flex-widgets-container" id="1892540734"></div> 
+ <section id="63b3d5c6e54ce11057c73abe" class="flex-element section" data-auto="flex-element-section"> <div id="63b3d5c6e54ce11057c73ac0" class="flex-element grid" data-auto="flex-element-grid" data-layout-grid=""> <div id="63b3d5c6e54ce11057c73ac1" class="flex-element group" data-auto="flex-element-group"> <div id="63b3d5c6e54ce11057c73ac3" class="flex-element group" data-auto="flex-element-group"> <div id="widget_r9l" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="paragraph" data-external-id="1446038947"> <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1446038947" style=""><p class="text-align-center size-24 m-size-19"><span style="display: initial; color: var(--color_1);" class="font-size-24 m-font-size-19" m-font-size-set="true">It&rsquo;s time to make magic unapologetically &amp; unabashedly.</span></p><p class="text-align-center"><span style="display: initial; color: var(--color_1);" class="font-size-24 m-font-size-19"><br/></span></p><p class="text-align-center size-24 m-size-19"><span style="display: initial; color: var(--color_1);" class="font-size-24 m-font-size-19" m-font-size-set="true">Is your soul remembering?<br/><br/>Because I wasn&rsquo;t always like this. It was a long road to remembrance. And my deep study of the craft has served me more than anything else in making my most magikal life.<br/></span></p><p class="text-align-center size-24 m-size-19"><span style="display: initial; color: var(--color_1);" class="font-size-24 m-font-size-19" m-font-size-set="true"><br/>As I worked tirelessly through my own shadows and wounds, the life of my dreams blossomed, and it is my deepest honor and pleasure to serve and support you on the same journey.</span><span style="display: initial;"><span class="ql-cursor">﻿</span></span></p></div> 
+</div> 
+</div> 
+ <div id="63b3d5c6e54ce11057c73ac2" class="flex-element group" data-auto="flex-element-group"> <div id="widget_egf" class="flex-element widget-wrapper" data-auto="flex-element-widget-wrapper" data-widget-type="image" data-external-id="1703081895"> <div class="imageWidget align-center u_1703081895" data-element-type="image" data-widget-type="image" id="1703081895"><img src="https://lirp.cdn-website.com/37f533df/dms3rep/multi/opt/MIAMAGIK-HUMBOLDT-1889-1920w.jpg" alt="" id="1183065011" class="" data-dm-image-path="https://irp.cdn-website.com/37f533df/dms3rep/multi/MIAMAGIK-HUMBOLDT-1889.jpg" width="1920" height="2400" onerror="handleImageLoadError(this)"/></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</section> 
+</div> 
+ <div class="dmRespRow u_1230305673" id="1230305673"> <div class="dmRespColsWrapper" id="1921712552"> <div class="dmRespCol large-12 medium-12 small-12 u_1710444791" id="1710444791"> <a data-display-type="block" class="u_1246211226 align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient" file="false" href="/Courses" data-element-type="dButtonLinkId" id="1246211226" data-buttonstyle="ROUND_SIDES" data-anim-extended="eyJtb2JpbGUiOnsidHJpZ2dlciI6ImVudHJhbmNlIiwiYW5pbWF0aW9uIjoiem9vbUluIiwiZHVyYXRpb24iOjEsImRlbGF5IjowLCJpbnRlbnNpdHkiOjAuNH0sImRlc2t0b3AiOnsidHJpZ2dlciI6ImVudHJhbmNlIiwiYW5pbWF0aW9uIjoiYm91bmNlSW4iLCJkdXJhdGlvbiI6MSwiZGVsYXkiOjAsImludGVuc2l0eSI6MX19" data-anim-mobile="zoomIn" data-anim-desktop="bounceIn"> <span class="iconBg" id="1646051545"> <span class="icon hasFontIcon icon-star" id="1542399532"></span> 
+</span> 
+ <span class="text" id="1650787521">Show Me The MAGIK!</span> 
+</a> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1703605791" id="1703605791"> <div class="dmRespColsWrapper" id="1878091158"> <div class="dmRespCol large-12 medium-12 small-12 u_1259005157" id="1259005157"> <div class="u_1245851886 dmNewParagraph" id="1245851886" data-element-type="paragraph" style="transition: none 0s ease 0s; display: block; text-align: center;" data-version="5"> <h2 class="text-align-center"><span style="display: initial; color: rgb(0, 0, 0);">By working with me you will learn, embody, and activate...</span><span style="display: initial;"><br/></span></h2> 
+</div></div> 
+</div> 
+</div> 
+ <div class="u_1502713449 dmRespRow" style="text-align: center;" id="1502713449" mode="1"> <div class="dmRespColsWrapper" id="1097426131"> <div class="u_1403657665 dmRespCol small-12 large-2 medium-2" id="1403657665"> <div class="u_1995766069 default dmShape" id="1995766069" dmle_extension="shape" data-element-type="shape" text-position="center_center" data-hover-effect="zoomout" data-anim-desktop="none" wr="true" icon="true" surround="true" adwords="" shape-text="" shape-description="PHAgY2xhc3M9InJ0ZUJsb2NrIj48c3BhbiBzdHlsZT0iY29sb3I6cmdiYSgyNTUsIDI1NSwgMjU1LCAxKSI+MTwvc3Bhbj48L3A+" shape-image="https://irp.cdn-website.com/37f533df/dms3rep/multi/pexels-photo-6757423-cc06e276.jpeg" alt-text="" tooltip="" shape-type="shape1" show-text-on-shape="false" show-description-on-shape="true" shape-color="" shape-show-shadow="true" border-color-shape="" show-background-overlay="false" overlay-color="#ffffff" image-position="xMidYMid" shape-keep-proportion="false" shape-layout="layout2" border-width-shape="0" overlay-opacity="50" link-attrs="e30="> <a data-link-id="shape-link-container" id="1382267196"> <div class="container-text container-padding center_center" id="1833416039"> <div class="shape-description" id="1770883728"> <p class="rteBlock" id="1382412196"> <span style="color:rgba(255, 255, 255, 1)" id="1985099995">1</span> 
+</p> 
+</div> 
+</div> 
+ <svg width="100%" height="100%" viewbox="0.00 0.00 100 100" preserveaspectratio="none" class="shadow" id="1053625013"> <g> <clippath id="shape-1995766069"> <polygon points="64.4,25 50,0 35.6,25 21.1,50 35.6,75 50,100 64.4,75 78.9,50"></polygon> 
+</clippath> 
+ <image clip-path="url(#shape-1995766069)" width="100%" height="100%" xlink:href="https://lirp.cdn-website.com/37f533df/dms3rep/multi/opt/pexels-photo-6757423-cc06e276-1920w.jpeg" preserveaspectratio="xMidYMid slice"></image> 
+<!-- In order to add stroke on image, need to create new shape without fill just with stroke --></g> 
+</svg> 
+</a> 
+</div> 
+</div> 
+ <div class="u_1956251119 dmRespCol small-12 large-4 medium-4" id="1956251119"> <div class="u_1753347318 dmNewParagraph" id="1753347318" style="display: block; visibility: visible;" data-element-type="paragraph" data-version="5" data-anim-extended="eyJkZXNrdG9wIjp7fSwibW9iaWxlIjp7InRyaWdnZXIiOiJlbnRyYW5jZSIsImFuaW1hdGlvbiI6ImZhZGVJblJpZ2h0IiwiZHVyYXRpb24iOjEsImRlbGF5IjowLCJpbnRlbnNpdHkiOjAuNH19" data-anim-desktop="none" data-anim-mobile="fadeInRight"> <h4><span style="font-style: italic; color: rgb(0, 0, 0); display: initial;">Relationships</span><span style="display: initial;"><br/></span></h4> 
+</div> <div class="u_1410438830 dmNewParagraph" id="1410438830" style="transition: opacity 1s ease-in-out;" data-version="5"><p class="text-align-left"><span style="display: initial; color: rgb(0, 0, 0);">How to claim your pleasure and get what you want, create harmony and synergy in your partnership.<br/><br/> Release any of the subconscious programming which has kept you from finding a partner.<br/><br/>Create rituals/ energetic magnetism to attract that person, or deepen your connection with your current mate.<br/></span></p><p class="text-align-left"><span style="display: initial; color: rgb(0, 0, 0);"><br/></span></p><p class="text-align-left"><span style="display: initial; color: rgb(0, 0, 0);">Heal your relationships with your family (trust me I have seen some MIRACLES occur here, remember, impossible is an opinion.)</span></p><p class="text-align-left"><span style="display: initial; color: rgb(0, 0, 0);"><br/></span></p><p class="text-align-left"><span style="display: initial; color: rgb(0, 0, 0);">Connect with and heal your inner child to bring her belief in Magik to life again.</span><span style="display: initial; color: rgb(255, 255, 255);"><br/></span></p></div></div> 
+ <div class="u_1605939510 dmRespCol small-12 large-2 medium-2" id="1605939510"> <div class="u_1851659228 default dmShape" id="1851659228" dmle_extension="shape" data-element-type="shape" text-position="center_center" data-hover-effect="zoomout" wr="true" icon="true" surround="true" adwords="" shape-text="" shape-description="PHAgY2xhc3M9InJ0ZUJsb2NrIj48c3BhbiBzdHlsZT0iY29sb3I6cmdiYSgyNTUsIDI1NSwgMjU1LCAxKSI+Mjwvc3Bhbj48L3A+" shape-image="https://irp.cdn-website.com/37f533df/dms3rep/multi/pexels-photo-6757423-cc06e276.jpeg" alt-text="" tooltip="" shape-type="shape1" show-text-on-shape="false" show-description-on-shape="true" shape-color="" shape-show-shadow="true" border-color-shape="" show-background-overlay="false" overlay-color="#ffffff" image-position="xMidYMid" shape-keep-proportion="false" shape-layout="layout2" border-width-shape="0" overlay-opacity="50" link-attrs="e30="> <a data-link-id="shape-link-container" id="1947443000"> <div class="container-text container-padding center_center" id="1980280119"> <div class="shape-description" id="1538790675"> <p class="rteBlock" id="1786788637"> <span style="color:rgba(255, 255, 255, 1)" id="1521015326">2</span> 
+</p> 
+</div> 
+</div> 
+ <svg width="100%" height="100%" viewbox="0.00 0.00 100 100" preserveaspectratio="none" class="shadow" id="1455947864"> <g> <clippath id="shape-1851659228"> <polygon points="64.4,25 50,0 35.6,25 21.1,50 35.6,75 50,100 64.4,75 78.9,50"></polygon> 
+</clippath> 
+ <image clip-path="url(#shape-1851659228)" width="100%" height="100%" xlink:href="https://lirp.cdn-website.com/37f533df/dms3rep/multi/opt/pexels-photo-6757423-cc06e276-1920w.jpeg" preserveaspectratio="xMidYMid slice"></image> 
+<!-- In order to add stroke on image, need to create new shape without fill just with stroke --></g> 
+</svg> 
+</a> 
+</div> 
+</div> 
+ <div class="u_1448880676 dmRespCol small-12 large-4 medium-4" id="1448880676"> <div class="u_1197216634 dmNewParagraph" id="1197216634" style="display: block;" data-element-type="paragraph" data-anim-extended="eyJkZXNrdG9wIjp7fSwibW9iaWxlIjp7InRyaWdnZXIiOiJlbnRyYW5jZSIsImFuaW1hdGlvbiI6ImZhZGVJblJpZ2h0IiwiZHVyYXRpb24iOjEsImRlbGF5IjowLCJpbnRlbnNpdHkiOjAuNH19" data-version="5" data-anim-desktop="none" data-anim-mobile="fadeInRight"> <h4><span style="font-style: italic; color: rgb(0, 0, 0); display: initial;">Abundance</span></h4> 
+</div> <div class="u_1663857874 dmNewParagraph" id="1663857874" style="transition: opacity 1s ease-in-out;" data-version="5"><p class="text-align-left"><span style="color: rgb(0, 0, 0); display: initial;">Learn to slay scarcity and turn poverty into prosperity consciousness.<br/><br/>Rise into abundance and be the king or queen you are born to be.</span></p><p class="text-align-left"><span style="color: rgb(0, 0, 0); display: initial;"><br/></span></p><p class="text-align-left"><span style="color: rgb(0, 0, 0); display: initial;">Learn how to use your mission as a magnet for money.</span></p><p class="text-align-left"><span style="color: rgb(0, 0, 0); display: initial;"><br/></span></p><p class="text-align-left"><span style="color: rgb(0, 0, 0); display: initial;">Know your worthiness &amp; divine birthright for abundance.</span></p><p class="text-align-left"><span style="color: rgb(0, 0, 0); display: initial;"><br/></span></p><p class="text-align-left"><span style="color: rgb(0, 0, 0); display: initial;">Create abundance spells and rituals to call in aligned financial rewards.</span><span style="color: rgb(255, 255, 255); display: initial;"><br/></span></p></div></div> 
+</div> 
+</div> 
+ <div class="u_1446468927 dmRespRow" style="text-align: center;" id="1446468927" mode="1"> <div class="dmRespColsWrapper" id="1157113231"> <div class="u_1057834023 dmRespCol small-12 large-2 medium-2" id="1057834023"> <div class="u_1342793629 default dmShape" id="1342793629" dmle_extension="shape" data-element-type="shape" text-position="center_center" data-hover-effect="zoomout" wr="true" icon="true" surround="true" adwords="" shape-text="" shape-description="PHAgY2xhc3M9InJ0ZUJsb2NrIj48c3BhbiBzdHlsZT0iY29sb3I6cmdiYSgyNTUsIDI1NSwgMjU1LCAxKSI+Mzwvc3Bhbj48L3A+" shape-image="https://irp.cdn-website.com/37f533df/dms3rep/multi/pexels-photo-6757423-cc06e276.jpeg" alt-text="" tooltip="" shape-type="shape1" show-text-on-shape="false" show-description-on-shape="true" shape-color="" shape-show-shadow="true" border-color-shape="" show-background-overlay="false" overlay-color="#ffffff" image-position="xMidYMid" shape-keep-proportion="false" shape-layout="layout2" border-width-shape="0" overlay-opacity="50" link-attrs="e30="> <a data-link-id="shape-link-container" id="1002873545"> <div class="container-text container-padding center_center" id="1095303994"> <div class="shape-description" id="1732851705"> <p class="rteBlock" id="1138389884"> <span style="color:rgba(255, 255, 255, 1)" id="1346755682">3</span> 
+</p> 
+</div> 
+</div> 
+ <svg width="100%" height="100%" viewbox="0.00 0.00 100 100" preserveaspectratio="none" class="shadow" id="1764410194"> <g> <clippath id="shape-1342793629"> <polygon points="64.4,25 50,0 35.6,25 21.1,50 35.6,75 50,100 64.4,75 78.9,50"></polygon> 
+</clippath> 
+ <image clip-path="url(#shape-1342793629)" width="100%" height="100%" xlink:href="https://lirp.cdn-website.com/37f533df/dms3rep/multi/opt/pexels-photo-6757423-cc06e276-1920w.jpeg" preserveaspectratio="xMidYMid slice"></image> 
+<!-- In order to add stroke on image, need to create new shape without fill just with stroke --></g> 
+</svg> 
+</a> 
+</div> 
+</div> 
+ <div class="u_1464328221 dmRespCol small-12 large-4 medium-4" id="1464328221"> <div class="u_1598027788 dmNewParagraph" id="1598027788" style="display: block; visibility: visible;" data-element-type="paragraph" data-version="5" data-anim-extended="eyJkZXNrdG9wIjp7fSwibW9iaWxlIjp7InRyaWdnZXIiOiJlbnRyYW5jZSIsImFuaW1hdGlvbiI6ImZhZGVJblJpZ2h0IiwiZHVyYXRpb24iOjEsImRlbGF5IjowLCJpbnRlbnNpdHkiOjAuNH19" data-anim-desktop="none" data-anim-mobile="fadeInRight"> <h4><span style="display: initial; color: rgb(0, 0, 0); font-style: italic;">Pleasure</span><span style="display: initial;"><br/></span></h4> 
+</div> <div class="u_1580263000 dmNewParagraph" id="1580263000" style="transition: opacity 1s ease-in-out;" data-version="5"><p class="text-align-left"><span style="display: initial; color: rgb(0, 0, 0);">How to connect with your pleasure portal in and out of the bedroom.<br/><br/> Be guided by the eternal wisdom of what feels good to you.<br/><br/> Heal any wounds or shame you may be carrying from past experiences so you can move forward into a (sex) life that ignites and inspires you.</span><span style="display: initial;"><br/></span></p></div></div> 
+ <div class="u_1019325132 dmRespCol small-12 large-2 medium-2" id="1019325132"> <div class="u_1565134546 default dmShape" id="1565134546" dmle_extension="shape" data-element-type="shape" text-position="center_center" data-hover-effect="zoomout" wr="true" icon="true" surround="true" adwords="" shape-text="" shape-description="PHAgY2xhc3M9InJ0ZUJsb2NrIj48c3BhbiBzdHlsZT0iY29sb3I6cmdiYSgyNTUsIDI1NSwgMjU1LCAxKSI+NDwvc3Bhbj48L3A+" shape-image="https://irp.cdn-website.com/37f533df/dms3rep/multi/pexels-photo-6757423-cc06e276.jpeg" alt-text="" tooltip="" shape-type="shape1" show-text-on-shape="false" show-description-on-shape="true" shape-color="" shape-show-shadow="true" border-color-shape="" show-background-overlay="false" overlay-color="#ffffff" image-position="xMidYMid" shape-keep-proportion="false" shape-layout="layout2" border-width-shape="0" overlay-opacity="50" link-attrs="e30="> <a data-link-id="shape-link-container" id="1732054535"> <div class="container-text container-padding center_center" id="1882806361"> <div class="shape-description" id="1158694286"> <p class="rteBlock" id="1656291180"> <span style="color:rgba(255, 255, 255, 1)" id="1550460764">4</span> 
+</p> 
+</div> 
+</div> 
+ <svg width="100%" height="100%" viewbox="0.00 0.00 100 100" preserveaspectratio="none" class="shadow" id="1290145515"> <g> <clippath id="shape-1565134546"> <polygon points="64.4,25 50,0 35.6,25 21.1,50 35.6,75 50,100 64.4,75 78.9,50"></polygon> 
+</clippath> 
+ <image clip-path="url(#shape-1565134546)" width="100%" height="100%" xlink:href="https://lirp.cdn-website.com/37f533df/dms3rep/multi/opt/pexels-photo-6757423-cc06e276-1920w.jpeg" preserveaspectratio="xMidYMid slice"></image> 
+<!-- In order to add stroke on image, need to create new shape without fill just with stroke --></g> 
+</svg> 
+</a> 
+</div> 
+</div> 
+ <div class="u_1251344858 dmRespCol small-12 large-4 medium-4" id="1251344858"> <div class="u_1592863881 dmNewParagraph" id="1592863881" style="display: block; visibility: visible;" data-element-type="paragraph" data-version="5" data-anim-extended="eyJkZXNrdG9wIjp7fSwibW9iaWxlIjp7InRyaWdnZXIiOiJlbnRyYW5jZSIsImFuaW1hdGlvbiI6ImZhZGVJblJpZ2h0IiwiZHVyYXRpb24iOjEsImRlbGF5IjowLCJpbnRlbnNpdHkiOjAuNH19" data-anim-desktop="none" data-anim-mobile="fadeInRight"> <h4><span style="font-style: italic; color: rgb(0, 0, 0); display: initial;">Expression</span></h4> 
+</div> <div class="u_1211882326 dmNewParagraph" id="1211882326" style="transition: opacity 1s ease-in-out 0s; display: block;" data-version="5"><p class="text-align-left"><span style="color: rgb(0, 0, 0); display: initial;">Eradicate any limiting beliefs which have kept you from feeling safe to be yourself and express your truth.<br/><br/> Release any fears about being abandoned or rejected for who you are.<br/><br/> How you can show up as your true self and magnetize the soul tribe you know you are destined to have.</span></p></div></div> 
+</div> 
+</div> 
+ <div class="u_1091742682 dmRespRow" style="text-align: center;" id="1091742682" mode="1"> <div class="dmRespColsWrapper" id="1916958111"> <div class="u_1045267080 dmRespCol small-12 large-2 medium-2" id="1045267080"> <div class="u_1054465802 default dmShape" id="1054465802" dmle_extension="shape" data-element-type="shape" text-position="center_center" data-hover-effect="zoomout" wr="true" icon="true" surround="true" adwords="" shape-text="" shape-description="PHAgY2xhc3M9InJ0ZUJsb2NrIj48c3BhbiBzdHlsZT0iY29sb3I6cmdiYSgyNTUsIDI1NSwgMjU1LCAxKSI+NTwvc3Bhbj48L3A+" shape-image="https://irp.cdn-website.com/37f533df/dms3rep/multi/pexels-photo-6757423-cc06e276.jpeg" alt-text="" tooltip="" shape-type="shape1" show-text-on-shape="false" show-description-on-shape="true" shape-color="" shape-show-shadow="true" border-color-shape="" show-background-overlay="false" overlay-color="#ffffff" image-position="xMidYMid" shape-keep-proportion="false" shape-layout="layout2" border-width-shape="0" overlay-opacity="50" link-attrs="e30="> <a data-link-id="shape-link-container" id="1525300389"> <div class="container-text container-padding center_center" id="1895893172"> <div class="shape-description" id="1249590087"> <p class="rteBlock" id="1273071165"> <span style="color:rgba(255, 255, 255, 1)" id="1453034589">5</span> 
+</p> 
+</div> 
+</div> 
+ <svg width="100%" height="100%" viewbox="0.00 0.00 100 100" preserveaspectratio="none" class="shadow" id="1956846287"> <g> <clippath id="shape-1054465802"> <polygon points="64.4,25 50,0 35.6,25 21.1,50 35.6,75 50,100 64.4,75 78.9,50"></polygon> 
+</clippath> 
+ <image clip-path="url(#shape-1054465802)" width="100%" height="100%" xlink:href="https://lirp.cdn-website.com/37f533df/dms3rep/multi/opt/pexels-photo-6757423-cc06e276-1920w.jpeg" preserveaspectratio="xMidYMid slice"></image> 
+<!-- In order to add stroke on image, need to create new shape without fill just with stroke --></g> 
+</svg> 
+</a> 
+</div> 
+</div> 
+ <div class="u_1614101881 dmRespCol small-12 large-10 medium-10" id="1614101881"> <div class="u_1022721327 dmNewParagraph" id="1022721327" style="display: block;" data-element-type="paragraph" data-version="5" data-anim-extended="eyJkZXNrdG9wIjp7fSwibW9iaWxlIjp7InRyaWdnZXIiOiJlbnRyYW5jZSIsImFuaW1hdGlvbiI6ImZhZGVJblJpZ2h0IiwiZHVyYXRpb24iOjEsImRlbGF5IjowLCJpbnRlbnNpdHkiOjAuNH19" data-anim-desktop="none" data-anim-mobile="fadeInRight"> <h4><span style="display: initial; color: rgb(0, 0, 0); font-style: italic;">Magik</span><span style="display: initial;"><br/></span></h4> 
+</div> <div class="u_1121061667 dmNewParagraph" id="1121061667" style="transition: opacity 1s ease-in-out;" data-version="5"><p class="text-align-left"><span style="color: rgb(0, 0, 0); display: initial;">Hone your intuition to become your internal GPS.&nbsp; Activate and cultivate your super NATURAL gifts &amp; abilities.</span></p><p class="text-align-left"><span style="color: rgb(0, 0, 0); display: initial;"><br/></span></p><p class="text-align-left"><span style="color: rgb(0, 0, 0); display: initial;">Rewire the neural pathways and rewrite the stories so you can live in your greatest power.</span></p><p class="text-align-left"><span style="color: rgb(0, 0, 0); display: initial;"><br/></span></p><p class="text-align-left"><span style="color: rgb(0, 0, 0); display: initial;">Learn to harness the universe life force energy to make your dreams come true.</span><span style="color: rgb(255, 255, 255); display: initial;"><br/></span></p></div></div> 
+</div> 
+</div> 
+ <div class="u_JoinWaitingList1 dmRespRow hide-for-medium hide-for-small hide-for-large" id="JoinWaitingList1" data-anchor="Join Waiting List 1"> <div class="dmRespColsWrapper" id="1905750030"> <div class="dmRespCol large-12 medium-12 small-12" id="1507449965"> <div class="imageWidget align-center u_1163123382" data-element-type="image" data-widget-type="image" id="1163123382"> <a id="1647794009"><img src="https://lirp.cdn-website.com/37f533df/dms3rep/multi/opt/Product+Text+w+Gold+-+Coaching+Cauldron-1920w.png" alt="" id="1875512748" class="" data-dm-image-path="https://irp-cdn.multiscreensite.com/37f533df/dms3rep/multi/Product+Text+w+Gold+-+Coaching+Cauldron.png" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1684293872" style="transition: opacity 1s ease-in-out 0s;"><p class="text-align-center m-size-14 size-20"><span style="color: rgb(212, 196, 131); display: initial;" class="font-size-20 m-font-size-14">Magick has been relegated to fairytales &amp; fantasy. Yet the more I believe in magick, the more fantasies become my reality. As we rise and remember who we truly are, however, so much old programming emerges.</span></p><p class="text-align-center"><span style="color: rgb(212, 196, 131); display: initial;" class="font-size-20 m-font-size-14"><br/></span></p><p class="text-align-center m-size-14 size-20"><span style="color: rgb(212, 196, 131); display: initial;" class="font-size-20 m-font-size-14">The Coaching Cauldron was born to support our Witch School coven in transcending the painful programming which perpetuated the witch wound and kept us from our magick.</span></p><p class="text-align-center"><span style="color: rgb(212, 196, 131); display: initial;" class="font-size-20 m-font-size-14"><br/></span></p><p class="text-align-center m-size-14 size-20"><span style="color: rgb(212, 196, 131); display: initial;" class="font-size-20 m-font-size-14">Focusing on interpersonal alchemy, The Coaching Cauldron is designed to free us from anything that might hinder our belief in ourselves and the magick we&rsquo;ve come to learn and create. Healing our pain, feeling confident and worthy of all this beauty and magick, then allowing ourselves to receive it.<br/></span></p><p class="text-align-center"><span style="color: rgb(212, 196, 131); display: initial;" class="font-size-20 m-font-size-14"><br/></span></p><p class="text-align-center m-size-14 size-20"><span style="color: rgb(212, 196, 131); display: initial;" class="font-size-20 m-font-size-14">As we advance beyond what we once thought was possible, anything left to be healed comes to the surface. We&rsquo;ve all got a bit of an inner critic (or Voldemort), and there is no better service to the planet than to heal it so we can become the most powerful, purposeful, pleasurable and prosperous versions of ourselves!</span><span style="color: rgb(212, 196, 131); display: initial;"><br/></span></p></div> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1690689760 dmRespRow hasBackgroundOverlay" style="text-align: center;" id="1690689760"> <div class="dmRespColsWrapper" id="1061416172"> <div class="u_1511897540 dmRespCol small-12 medium-12 large-12" id="1511897540"> <div class="u_1714215785 flex-container dmImageSlider dmNoMargin dmNoMark" data-widget-type="imageSlider" dmle_volatile_widget="true" id="1714215785" data-element-type="dSliderId"> <div class="flexslider ed-version arrows-visible nav-layout-3" sliderscriptparams="{'stretch':true,'animation':true,'randomize':false,'directionNav':true,'isAutoPlay':true,'isFade':false,'controlNav':false,'slideshowSpeed':7000,'animationDuration':600,'pausePlay':true,'prevText':'','nextText':'','pauseOnHover':true}" id="1491905002" layout="center"> <ul class="slides" id="1423156624"> <li layout="center" position="center" animation="slideInLeft" show-content="true" color-overlay="true" text-background="true" id="1635249585" class="u_1635249585" show-caption="true"><img dm="true" src="https://irt-cdn.multiscreensite.com/md/dmtmpl/dms3rep/multi/transparent_background.png" id="1488378353" class="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1332926327"></div> 
+ <div class="slide-inner" id="1447092912"> <div class="text-wrapper" id="1758662828"> <h3 class="slide-title u_1113742937" id="1113742937">Testimonial 1</h3> 
+ <div class="slide-text u_1630730682" id="1630730682"><p class="rteBlock">&ldquo;I&rsquo;m very new to all this... claiming myself as a Witch.</p><br/><p class="rteBlock">After every class, I feel more and more connected to our truths as women, and that we ARE Witches!&nbsp;</p><br/><p class="rteBlock">We have always been one, and we are in a world that tells us this is bad, and to disown this innate part of us.</p><br/><p class="rteBlock">WOW&hellip; This course has absolutely blown my mind and I am cracking open!</p><p class="rteBlock">Thank you, Mia!&quot;</p></div> 
+</div> 
+ <div class="slide-button dmWidget clearfix slide-button-visible" id="1011823401"> <span class="iconBg" id="1864558387"> <span class="icon hasFontIcon icon-star" id="1475291061"></span> 
+</span> 
+ <span class="text" id="1329877223">Mariah S.</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="slideInLeft" show-content="true" color-overlay="true" text-background="true" id="1647708961" class="u_1647708961" show-caption="true"><img dm="true" src="https://lirp.cdn-website.com/37f533df/dms3rep/multi/opt/transparent_background-640w-1920w.png" id="1248841452" class="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1072558830"></div> 
+ <div class="slide-inner" id="1144137840"> <div class="text-wrapper" id="1183103284"> <h3 class="slide-title u_1875435952" id="1875435952">Testimonial 2</h3> 
+ <div class="slide-text richText u_1177367937" id="1177367937"><p class="rteBlock">&quot;I can&rsquo;t thank Mia enough.</p><br/><p class="rteBlock">I strongly believe she was sent to us to be the doorway between the world we were programmed to believe and the actual world we live in.</p><br/><p class="rteBlock">She has saved me in ways she will never even know! She has brought us together in such a hateful and heavy time. I mean the timing of this school was beyond spot on.</p><br/><p class="rteBlock">I will forever hold a place in my heart for her and all of my coven sisters I have been blessed to meet!&quot;</p></div> 
+</div> 
+ <div class="slide-button dmWidget clearfix slide-button-visible" id="1062628914"> <span class="iconBg" id="1809835409"> <span class="icon hasFontIcon icon-star" id="1968669803"></span> 
+</span> 
+ <span class="text" id="1958004430">Mailyn C.</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="slideInLeft" show-content="true" color-overlay="true" text-background="true" id="1276119344" class="u_1276119344" show-caption="true"><img dm="true" src="https://irt-cdn.multiscreensite.com/md/dmtmpl/dms3rep/multi/transparent_background.png" id="1174236468" class="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1504310571"></div> 
+ <div class="slide-inner" id="1797837020"> <div class="text-wrapper" id="1297132868"> <h3 class="slide-title u_1346582721" id="1346582721">Testimonial 3</h3> 
+ <div class="slide-text u_1756786355" id="1756786355"><p class="rteBlock">&quot;I&rsquo;ve been on a deep spiritual journey for two years now, but I haven&rsquo;t been able to step away from being triggered by my mom. What Mia said made me see everything differently. I was able to converse with her from a completely different perspective.</p><br/><br/><br/><p class="rteBlock">Thanks Mia! This is just one of the amazing ways Witch School has changed my life in 5 short weeks!&quot;</p></div> 
+</div> 
+ <div class="slide-button dmWidget clearfix slide-button-visible" id="1704807573"> <span class="iconBg" id="1307942846"> <span class="icon hasFontIcon icon-star" id="1473024450"></span> 
+</span> 
+ <span class="text" id="1985698048">Jessica W.</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="slideInLeft" show-content="true" color-overlay="true" text-background="true" id="1271235113" class="u_1271235113" show-caption="true"><img dm="true" src="https://lirp.cdn-website.com/37f533df/dms3rep/multi/opt/transparent_background-640w-1920w.png" id="1689818858" class="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1535493794"></div> 
+ <div class="slide-inner" id="1015181471"> <div class="text-wrapper" id="1179251957"> <h3 class="slide-title u_1253770160" id="1253770160">Testimonial 4</h3> 
+ <div class="slide-text richText u_1786802671" id="1786802671"><p class="rteBlock">&quot;During Witch School I was able to connect more with the part of me I shamed or stepped away from. I started trusting y intuwitchen when it came to my magik and rituals. I looked forward to every call, and the meditations were so beautiful.</p><br/><p class="rteBlock">During the meditations I was able to talk to my inner goddess and my inner child. I've been in nature and receptive to all the subtle signs and nudges from her. During Witch School there have been major shifts within myself, and I could see it reflecting in everything around me. Things are manifesting at a rapid speed lately, and so much clearer. I am finding my purpose, and I have a place to connect and learn from other beautiful women!&quot;</p></div> 
+</div> 
+ <div class="slide-button dmWidget clearfix slide-button-visible" id="1907297943"> <span class="iconBg" id="1919327897"> <span class="icon hasFontIcon icon-star" id="1196716562"></span> 
+</span> 
+ <span class="text" id="1238180357">Toniann V.</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="slideInLeft" show-content="true" color-overlay="true" text-background="true" id="1491855270" class="u_1491855270" show-caption="true"><img dm="true" src="https://irt-cdn.multiscreensite.com/md/dmtmpl/dms3rep/multi/transparent_background.png" id="1892350650" class="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1502692790"></div> 
+ <div class="slide-inner" id="1773324237"> <div class="text-wrapper" id="1929976088"> <h3 class="slide-title u_1788727347" id="1788727347">Testimonials 5</h3> 
+ <div class="slide-text u_1713502711" id="1713502711"><p class="rteBlock">&quot;It was a firehouse of information, which was awesome! Astrology, casting circles, colors, days of the week... all of that was so informative!</p><br/><p class="rteBlock">Witch School 1 inspired me to start my own business and finally reach out of my comfort zone to get into a space that is more in line with what I want to do.</p><br/><p class="rteBlock">I think more importantly, Witch School gave me the courage to practice this stuff with my kids, and talk to my dad about the changes I've made in my life, which was the hardest conversation I've ever had!&quot;</p></div> 
+</div> 
+ <div class="slide-button dmWidget clearfix slide-button-visible" id="1884165122"> <span class="iconBg" id="1315661335"> <span class="icon hasFontIcon icon-star" id="1682674441"></span> 
+</span> 
+ <span class="text" id="1512266263">Sarah W.</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="slideInLeft" show-content="true" color-overlay="true" text-background="true" id="1023555669" class="u_1023555669" show-caption="true"><img dm="true" src="https://lirp.cdn-website.com/37f533df/dms3rep/multi/opt/transparent_background-640w-1920w.png" id="1821400427" class="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1523506494"></div> 
+ <div class="slide-inner" id="1728813900"> <div class="text-wrapper" id="1250686066"> <h3 class="slide-title u_1929870217" id="1929870217">Testimonial 6</h3> 
+ <div class="slide-text richText u_1372602070" id="1372602070"><p class="rteBlock">&quot;One of my biggest wins is that the wisdom is within me, and developing a relationship with my intuition. For the longest time I have always looked to external sources for the right answers. My time in Witch School has taught me that I have known all the answers I seek all along. I just needed to tap into my inner voice.</p><br/><p class="rteBlock">I'm still working through feeling like I am deserving of a magikal life, but having the support of all my sister witches makes it easier. As I work on deepening my relationship to the Goddess, I have been noticing more signs in my daily life.</p><br/><p class="rteBlock">I know I have a long way to go, but this experience so far has taught me to believe in myself and to love myself.&quot;</p></div> 
+</div> 
+ <div class="slide-button dmWidget clearfix slide-button-visible" id="1194050782"> <span class="iconBg" id="1149243137"> <span class="icon hasFontIcon icon-star" id="1025271047"></span> 
+</span> 
+ <span class="text" id="1650142644">Tanya C.</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="slideInLeft" show-content="true" color-overlay="true" text-background="true" id="1838985680" class="u_1838985680" show-caption="true"><img dm="true" src="https://lirp.cdn-website.com/37f533df/dms3rep/multi/opt/transparent_background-640w-1920w.png" id="1622768462" class="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1380960268"></div> 
+ <div class="slide-inner" id="1252703180"> <div class="text-wrapper" id="1964725027"> <h3 class="slide-title u_1241687791" id="1241687791">Testimonial 7</h3> 
+ <div class="slide-text richText u_1456659236" id="1456659236" style=""><p class="rteBlock">&quot;This class was the cherry on top of the quarantine sundae I had created of following my dreams of owning my own holistic healing center where I will be teaching yoga classes, practicing acupuncture and reiki, hosting women's circles, red tent circles, and workshops.</p><br/><p class="rteBlock">The knowledge, rituals, and confidence I gained from Mia helped me step into my power even more and more second guess myself.</p><br/><p class="rteBlock">I am so in love with the work that the Queen Bee Mia is doing and wanted to shout out and give you the biggest air hug! &lt;3 &nbsp;Thank you for everything, and can't wait to get to know you better with the small group coaching!&quot;</p></div> 
+</div> 
+ <div class="slide-button dmWidget clearfix slide-button-visible" id="1417576777"> <span class="iconBg" id="1232386786"> <span class="icon hasFontIcon icon-star" id="1956133397"></span> 
+</span> 
+ <span class="text" id="1419075673">Tawny N.</span> 
+</div> 
+</div> 
+</li> 
+ <li layout="center" position="center" animation="slideInLeft" show-content="true" color-overlay="true" text-background="true" id="1029519366" class="u_1029519366" show-caption="true"><img dm="true" src="https://lirp.cdn-website.com/37f533df/dms3rep/multi/opt/transparent_background-640w-1920w.png" id="1641768406" class="" onerror="handleImageLoadError(this)"/> <div class="color-overlay" id="1294179715"></div> 
+ <div class="slide-inner" id="1099326998"> <div class="text-wrapper" id="1633646854"> <h3 class="slide-title u_1595324687" id="1595324687">Testimonial 8</h3> 
+ <div class="slide-text richText u_1787087521" id="1787087521"><p class="rteBlock">&quot;So much growth in such a short period of time! I gained way more connection to my third eye visions. And better yet, I trusted them! With this class, you and the other Women to not brush off anything as &quot;nothing&quot; or coincidence. Especially if my intuition is whispering otherwise. Your meditations gave me brilliant guidance to places I never even dreamed of going.</p><br/><p class="rteBlock">This has given me permission to be 100% me and put myself out there. I loved learning the history, and UNlearning the lies. At the beginning then speaking in the group I would shake. By the end I felt strong and my throat chakra blossomed. I am just blown away by how much can happen in 6 weeks!&quot;</p></div> 
+</div> 
+ <div class="slide-button dmWidget clearfix slide-button-visible" id="1033797233"> <span class="iconBg" id="1052145733"> <span class="icon hasFontIcon icon-star" id="1479272651"></span> 
+</span> 
+ <span class="text" id="1535451766">Sienna R.</span> 
+</div> 
+</div> 
+</li> 
+</ul> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1704355260" id="1704355260"> <div class="dmRespColsWrapper" id="1720402544"> <div class="dmRespCol large-12 medium-12 small-12" id="1883966437"> <div data-element-type="html" class="dmCustomHtml u_1982888536" id="1982888536"> <div id="fd-form-602ffd54db8c9f34fd7378ef"></div> 
+ <script>
+
+
+  window.fd('form', {
+    formId: '602ffd54db8c9f34fd7378ef',
+    containerEl: '#fd-form-602ffd54db8c9f34fd7378ef'
+  });
+                                                                                                                                                                                                                        
+
+                </script> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmRespRow u_1464386774" id="1464386774"> <div class="dmRespColsWrapper" id="1059648558"> <div class="dmRespCol large-12 medium-12 small-12 u_1376639494" id="1376639494"> <div data-element-type="html" class="dmCustomHtml u_1764909307" id="1764909307"> <div id="1869706685"></div> 
+ <script>
+
+
+  window.fd('form', {
+    formId: '602ffd54db8c9f34fd7378ef',
+    containerEl: '#fd-form-602ffd54db8c9f34fd7378ef'
+  });
+                                                                                                                                                                                                                        
+
+                </script> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="sticky-widgets-container-global" id="1077740781"></div> 
+ <div class="dmFooterContainer"> <div id="fcontainer" class="u_fcontainer f_hcontainer dmFooter p_hfcontainer"> <div dm:templateorder="250" class="dmFooterResp generalFooter" id="1943048428"> <div class="dmRespRow u_1632155419" style="text-align: center;" id="1632155419"> <div class="dmRespColsWrapper" id="1253858808"> <div class="u_1332161287 dmRespCol small-12 medium-12 large-12" id="1332161287"> <div class="u_1521574249 dmNewParagraph" data-element-type="paragraph" id="1521574249" style="display: block; text-align: right;" data-version="5"> <h6 class="text-align-right m-size-12 m-text-align-center"><span style="font-weight: 300; color: rgb(0, 0, 0); display: initial;" m-font-size-set="true" class="m-font-size-12">All Rights Reserved 2020-2023 &copy; Mia Magik</span></h6> 
+</div></div> 
+</div> 
+</div> 
+</div> 
+ <div id="1236746004" dmle_extension="powered_by" data-element-type="powered_by" icon="true" surround="false"></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+
+    </div>
+</div>
+<!--  Add full CSS and Javascript before the close tag of the body if needed -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Google Fonts Include -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- loadCSS function -->
+<script>
+(function () {
+  let cssLinks = {};
+  function loadCssLink(link) {
+    link.onload = null;
+    link.rel = "stylesheet";
+    link.type = "text/css";
+  }
+
+  function checkCss() {
+    if (cssLinks && cssLinks.runtime && cssLinks.global) {
+      loadCssLink(cssLinks.runtime);
+      loadCssLink(cssLinks.global);
+      cssLinks = null;
+    }
+  }
+
+  function loadCSS(link) {
+    try {
+      var urlParams = new URLSearchParams(window.location.search);
+      var noCSS = !!urlParams.get("nocss");
+      var cssTimeout = urlParams.get("cssTimeout") || 0;
+
+      if (noCSS) {
+        return;
+      }
+      if (link.href.includes("d-css-runtime")) {
+        cssLinks.runtime = link;
+        checkCss();
+      } else if (link.id === "siteGlobalCss") {
+        cssLinks.global = link;
+        checkCss();
+      } else {
+        requestIdleCallback(function () {
+          window.setTimeout(function () {
+            loadCssLink(link);
+          }, parseInt(cssTimeout, 10));
+        });
+      }
+    } catch (e) {
+      /* Never fail - this is just a tool for measurements */
+    }
+  }
+  window.loadCSS = window.loadCSS || loadCSS;
+})();
+</script>
+
+<link rel="preload" href="https://irp.cdn-website.com/fonts/css?family=Quattrocento:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Inter:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Be+Vietnam:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Playball:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Roboto:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Mulish:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Playfair+Display:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Amiri:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Montserrat:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Poppins:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Bebas+Neue:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Noto+Serif:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Questrial:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Slabo+27px:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Cardo:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Fjalla+One:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Jost:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Barlow:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Alegreya:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Lato:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Lora:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Playfair+Display+SC:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Old+Standard+TT:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Rubik:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic&amp;subset=latin-ext&amp;display=block"  as="style" fetchpriority="low" onload="loadCSS(this)" />
+
+<link rel="preload" href="https://irp.cdn-website.com/fonts/css?family=Crimson+Text:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Merriweather:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Open+Sans:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Nunito+Sans:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic&amp;subset=latin-ext&amp;display=block"  as="style" fetchpriority="low" onload="loadCSS(this)" />
+
+<style>
+@font-face {
+  font-family: "Ratilla Script";
+  src: url("https://irp.cdn-website.com/37f533df/fonts/Ratilla+Script-9472_400.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+</style>
+
+
+<style>
+@font-face {
+  font-family: "Amsterdam One";
+  src: url("https://irp.cdn-website.com/37f533df/fonts/Amsterdam+One-9b93_400.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+</style>
+
+
+<style>
+@font-face {
+  font-family: "Amsterdam Two";
+  src: url("https://irp.cdn-website.com/37f533df/fonts/Amsterdam+Two-89e8_400.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+</style>
+
+
+<style>
+@font-face {
+  font-family: "Claston Script";
+  src: url("https://irp.cdn-website.com/37f533df/fonts/Claston+Script-19f7_400.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+</style>
+
+
+<style>
+@font-face {
+  font-family: "Lilium Star";
+  src: url("https://irp.cdn-website.com/37f533df/fonts/Lilium+Star-9015_400.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+</style>
+
+
+<style>
+@font-face {
+  font-family: "Raphael";
+  src: url("https://irp.cdn-website.com/37f533df/fonts/Raphael-8130_400.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+</style>
+
+
+<style>
+@font-face {
+  font-family: "Dandelion Fall";
+  src: url("https://irp.cdn-website.com/37f533df/fonts/Dandelion+Fall-e8dc_400.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+</style>
+
+
+<style>
+@font-face {
+  font-family: "Summer Rose";
+  src: url("https://irp.cdn-website.com/37f533df/fonts/Summer+Rose-a4dd_400.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+</style>
+
+
+<style>
+@font-face {
+  font-family: "Butterie";
+  src: url("https://irp.cdn-website.com/37f533df/fonts/Butterie-87f8_400.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+</style>
+
+
+<style>
+@font-face {
+  font-family: "Beautica";
+  src: url("https://irp.cdn-website.com/37f533df/fonts/Beautica-4b09_400.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+</style>
+
+
+<style>
+@font-face {
+  font-family: "Agnetta";
+  src: url("https://irp.cdn-website.com/37f533df/fonts/Agnetta-6bce_400.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+</style>
+
+
+<style>
+@font-face {
+  font-family: "Strawberry Swirl";
+  src: url("https://irp.cdn-website.com/37f533df/fonts/Strawberry+Swirl-2c2a_400.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+</style>
+
+
+<style>
+@font-face {
+  font-family: "Butterscotch";
+  src: url("https://irp.cdn-website.com/37f533df/fonts/Butterscotch-d977_400.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+</style>
+
+
+<style>
+@font-face {
+  font-family: "Authentica";
+  src: url("https://irp.cdn-website.com/37f533df/fonts/Authentica-7c74_400.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+</style>
+
+
+<style>
+@font-face {
+  font-family: "Caride Script";
+  src: url("https://irp.cdn-website.com/37f533df/fonts/Caride+Script-72ab_400.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+</style>
+
+
+<style>
+@font-face {
+  font-family: "Amsterdam Three";
+  src: url("https://irp.cdn-website.com/37f533df/fonts/Amsterdam+Three-c73a_400.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+</style>
+
+
+<style>
+@font-face {
+  font-family: "Topsy-Turvy";
+  src: url("https://irp.cdn-website.com/37f533df/fonts/Topsy-Turvy-57c8_400.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+</style>
+
+
+<style>
+@font-face {
+  font-family: "Billy Holiday";
+  src: url("https://irp.cdn-website.com/37f533df/fonts/Billy+Holiday-cc3b_400.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+</style>
+
+
+<style>
+@font-face {
+  font-family: "Birgitte";
+  src: url("https://irp.cdn-website.com/37f533df/fonts/Birgitte-2c47_400.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+</style>
+
+
+<style>
+@font-face {
+  font-family: "Angello";
+  src: url("https://irp.cdn-website.com/37f533df/fonts/Angello-da77_400.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+</style>
+
+
+<style>
+@font-face {
+  font-family: "Wild & Brave";
+  src: url("https://irp.cdn-website.com/37f533df/fonts/Wild+%26+Brave-9ba5_400.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+</style>
+
+
+<style>
+@font-face {
+  font-family: "IMFellDoublePica-Regular";
+  src: url("https://irp.cdn-website.com/37f533df/fonts/IMFellDoublePica-Regular-9d87_400.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+</style>
+
+
+<style>
+@font-face {
+  font-family: "Cherry Pop";
+  src: url("https://irp.cdn-website.com/37f533df/fonts/Cherry+Pop-1fe7_400.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+</style>
+
+
+<style>
+@font-face {
+  font-family: "Burnt Rose";
+  src: url("https://irp.cdn-website.com/37f533df/fonts/Burnt+Rose-6932_400.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+</style>
+
+
+<style>
+@font-face {
+  font-family: "Lavender";
+  src: url("https://irp.cdn-website.com/37f533df/fonts/Lavender-5730_400.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+</style>
+
+
+<style>
+@font-face {
+  font-family: "Blossoms";
+  src: url("https://irp.cdn-website.com/37f533df/fonts/Blossoms-4e5b_400.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+</style>
+
+
+<style>
+@font-face {
+  font-family: "Paper Trail";
+  src: url("https://irp.cdn-website.com/37f533df/fonts/Paper+Trail-c69_400.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+</style>
+
+
+<style>
+@font-face {
+  font-family: "Alliette";
+  src: url("https://irp.cdn-website.com/37f533df/fonts/Alliette-3748_400.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+</style>
+
+
+<style>
+@font-face {
+  font-family: "Amsterdam Brush";
+  src: url("https://irp.cdn-website.com/37f533df/fonts/Amsterdam+Brush-fc75_400.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+</style>
+
+
+<style>
+@font-face {
+  font-family: "Amsterdam Four";
+  src: url("https://irp.cdn-website.com/37f533df/fonts/Amsterdam+Four-26bd_400.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+</style>
+
+
+<style>
+@font-face {
+  font-family: "Namaqua";
+  src: url("https://irp.cdn-website.com/37f533df/fonts/Namaqua-240b_400.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+</style>
+
+
+<style>
+@font-face {
+  font-family: "Elizabeth";
+  src: url("https://irp.cdn-website.com/37f533df/fonts/Elizabeth-126d_400.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+</style>
+
+
+<style>
+@font-face {
+  font-family: "Pathita Script";
+  src: url("https://irp.cdn-website.com/37f533df/fonts/Pathita+Script-af29_400.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+</style>
+
+
+<style>
+@font-face {
+  font-family: "Fenway";
+  src: url("https://irp.cdn-website.com/37f533df/fonts/Fenway-ba05_400.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+</style>
+
+
+<style>
+@font-face {
+  font-family: "abigail-v4";
+  src: url("https://irp.cdn-website.com/37f533df/fonts/abigail-v4-e104_400.woff");
+  font-weight: 400;
+  font-style: normal;
+}
+</style>
+
+
+<style>
+@font-face {
+  font-family: "Bankstory";
+  src: url("https://irp.cdn-website.com/37f533df/fonts/Bankstory-be17_400.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+</style>
+
+
+<style>
+@font-face {
+  font-family: "Blackstone";
+  src: url("https://irp.cdn-website.com/37f533df/fonts/Blackstone-ab47_400.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+</style>
+
+
+<style>
+@font-face {
+  font-family: "Amsterdam Two Slant";
+  src: url("https://irp.cdn-website.com/37f533df/fonts/Amsterdam+Two+Slant-8f86_400.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+</style>
+
+
+<style>
+@font-face {
+  font-family: "Casira Script";
+  src: url("https://irp.cdn-website.com/37f533df/fonts/Casira+Script-98ee_400.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+</style>
+
+
+<style>
+@font-face {
+  font-family: "The Daylight";
+  src: url("https://irp.cdn-website.com/37f533df/fonts/The+Daylight-1a1d_400.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+</style>
+
+
+<style>
+@font-face {
+  font-family: "Letterose";
+  src: url("https://irp.cdn-website.com/37f533df/fonts/Letterose-2d78_400.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+</style>
+
+
+
+
+
+
+<!-- RT CSS Include d-css-runtime-desktop-one-package-structured-global-->
+<link rel="preload" as="style" fetchpriority="low" onload="loadCSS(this)" href="https://static.cdn-website.com/mnlt/production/3472/_dm/s/rt/dist/css/d-css-runtime-desktop-one-package-structured-global.min.css" />
+
+<!-- End of RT CSS Include -->
+
+
+<link rel="preload" href="https://irp.cdn-website.com/WIDGET_CSS/production_3472/957468e564ba5da95adfd5cafc39a28d.css" id="widgetCSS" as="style" fetchpriority="low" onload="loadCSS(this)" />
+
+
+<!-- Support `img` size attributes -->
+<style>img[width][height] {
+  height: auto;
+}</style>
+
+<!-- Support showing sticky element on page only -->
+<style>
+  body[data-page-alias="home"] #dm [data-show-on-page-only="home"] {
+    display: block !important;
+  }
+</style>
+
+<!-- This is populated in Ajax navigation -->
+<style id="pageAdditionalWidgetsCss" type="text/css">
+</style>
+
+
+
+
+<!-- Site CSS -->
+<link rel="preload" href="https://irp.cdn-website.com/37f533df/files/37f533df_withFlex_1.min.css?v=2168" id="siteGlobalCss" as="style" fetchpriority="low" onload="loadCSS(this)" />
+
+
+
+<style id="customWidgetStyle" type="text/css">
+    
+</style>
+<style id="innerPagesStyle" type="text/css">
+    
+</style>
+
+
+<style
+        id="additionalGlobalCss" type="text/css"
+>
+</style>
+
+<!-- Page CSS -->
+<link rel="preload" href="https://irp.cdn-website.com/37f533df/files/37f533df_home_withFlex_1.min.css?v=2168" id="homeCssLink" as="style" fetchpriority="low" onload="loadCSS(this)" />
+
+<style id="pagestyle" type="text/css">
+    
+</style>
+
+<style id="pagestyleDevice" type="text/css">
+    
+</style>
+
+<!-- Flex Sections CSS -->
+
+
+
+
+
+<style id="globalFontSizeStyle" type="text/css">
+    .font-size-44, .size-44, .size-44 > font { font-size: 44px !important; }.font-size-44, .size-44, .size-44 > font { font-size: 44px !important; }.font-size-16, .size-16, .size-16 > font { font-size: 16px !important; }.font-size-16, .size-16, .size-16 > font { font-size: 16px !important; }.font-size-16, .size-16, .size-16 > font { font-size: 16px !important; }.font-size-24, .size-24, .size-24 > font { font-size: 24px !important; }.font-size-24, .size-24, .size-24 > font { font-size: 24px !important; }.font-size-22, .size-22, .size-22 > font { font-size: 22px !important; }.font-size-22, .size-22, .size-22 > font { font-size: 22px !important; }.font-size-22, .size-22, .size-22 > font { font-size: 22px !important; }.font-size-22, .size-22, .size-22 > font { font-size: 22px !important; }.font-size-22, .size-22, .size-22 > font { font-size: 22px !important; }.font-size-22, .size-22, .size-22 > font { font-size: 22px !important; }.font-size-22, .size-22, .size-22 > font { font-size: 22px !important; }.font-size-22, .size-22, .size-22 > font { font-size: 22px !important; }.font-size-22, .size-22, .size-22 > font { font-size: 22px !important; }.font-size-22, .size-22, .size-22 > font { font-size: 22px !important; }.font-size-22, .size-22, .size-22 > font { font-size: 22px !important; }.font-size-22, .size-22, .size-22 > font { font-size: 22px !important; }.font-size-22, .size-22, .size-22 > font { font-size: 22px !important; }.font-size-22, .size-22, .size-22 > font { font-size: 22px !important; }.font-size-22, .size-22, .size-22 > font { font-size: 22px !important; }.font-size-22, .size-22, .size-22 > font { font-size: 22px !important; }.font-size-22, .size-22, .size-22 > font { font-size: 22px !important; }.font-size-22, .size-22, .size-22 > font { font-size: 22px !important; }.font-size-24, .size-24, .size-24 > font { font-size: 24px !important; }.font-size-24, .size-24, .size-24 > font { font-size: 24px !important; }.font-size-24, .size-24, .size-24 > font { font-size: 24px !important; }.font-size-24, .size-24, .size-24 > font { font-size: 24px !important; }.font-size-24, .size-24, .size-24 > font { font-size: 24px !important; }.font-size-24, .size-24, .size-24 > font { font-size: 24px !important; }.font-size-24, .size-24, .size-24 > font { font-size: 24px !important; }.font-size-24, .size-24, .size-24 > font { font-size: 24px !important; }.font-size-24, .size-24, .size-24 > font { font-size: 24px !important; }.font-size-24, .size-24, .size-24 > font { font-size: 24px !important; }.font-size-24, .size-24, .size-24 > font { font-size: 24px !important; }.font-size-24, .size-24, .size-24 > font { font-size: 24px !important; }.font-size-24, .size-24, .size-24 > font { font-size: 24px !important; }.font-size-24, .size-24, .size-24 > font { font-size: 24px !important; }.font-size-24, .size-24, .size-24 > font { font-size: 24px !important; }.font-size-24, .size-24, .size-24 > font { font-size: 24px !important; }.font-size-24, .size-24, .size-24 > font { font-size: 24px !important; }.font-size-20, .size-20, .size-20 > font { font-size: 20px !important; }.font-size-20, .size-20, .size-20 > font { font-size: 20px !important; }.font-size-20, .size-20, .size-20 > font { font-size: 20px !important; }.font-size-20, .size-20, .size-20 > font { font-size: 20px !important; }.font-size-20, .size-20, .size-20 > font { font-size: 20px !important; }.font-size-20, .size-20, .size-20 > font { font-size: 20px !important; }.font-size-20, .size-20, .size-20 > font { font-size: 20px !important; }.font-size-20, .size-20, .size-20 > font { font-size: 20px !important; }.font-size-20, .size-20, .size-20 > font { font-size: 20px !important; }.font-size-20, .size-20, .size-20 > font { font-size: 20px !important; }.font-size-20, .size-20, .size-20 > font { font-size: 20px !important; }
+</style>
+<style id="pageFontSizeStyle" type="text/css">
+</style>
+
+<!-- ========= JS Section ========= -->
+
+<script>
+    var isWLR = true;
+
+    window.customWidgetsFunctions = {};
+    window.customWidgetsStrings = {};
+    window.collections = {};
+    window.currentLanguage = "ENGLISH"
+    window.isSitePreview = false;
+</script>
+<script type="text/javascript">
+
+    var d_version = "22..42";
+    var build = "2023-06-01T12_52_43";
+    window['v' + 'ersion'] = d_version;
+
+    function buildEditorParent() {
+        window.isMultiScreen = true;
+        window.editorParent = {};
+        window.previewParent = {};
+        window.assetsCacheQueryParam = "?version=2023-06-01T12_52_43";
+        try {
+            var _p = window.parent;
+            if (_p && _p.document && _p.$ && _p.$.dmfw) {
+                window.editorParent = _p;
+            } else if (_p.isSitePreview) {
+                window.previewParent = _p;
+            }
+        } catch (e) {
+
+        }
+    }
+
+    buildEditorParent();
+
+
+</script>
+<!-- Load jQuery -->
+<script type="text/javascript" id='d-js-jquery'
+        src="https://static.cdn-website.com/libs/jquery/jquery-3.6.0.min.js"></script>
+<!-- End Load jQuery -->
+
+<!-- Injecting site-wide before scripts -->
+<!-- End Injecting site-wide to the head -->
+
+
+<script>
+    var _jquery = window.$;
+
+    var jqueryAliases = ['$', 'jquery', 'jQuery'];
+
+    jqueryAliases.forEach((alias) => {
+        Object.defineProperty(window, alias, {
+            get() {
+                return _jquery;
+            },
+            set() {
+                console.warn("Trying to over-write the global jquery object!");
+            }
+        });
+    });
+
+</script>
+<script type="text/javascript">
+    window.popups =
+    [{"title":"Newsletter Registration","url":"/f0a9e59a07f648a4b6a2f25f2e4e1621","options":{"backgroundColor":"#FFFFFF","borderRadius":"5","width":"555","overlayColor":"rgba(5, 28, 42,0.6)","height":"555","animation":"fadeIn"},"name":"f0a9e59a07f648a4b6a2f25f2e4e1621"}]</script>
+<script>
+    window.cookiesNotificationMarkupPreview = 'null';
+</script>
+
+<!-- HEAD RT JS Include -->
+<script id='d-js-params'>
+    window.INSITE = window.INSITE || {};
+    window.INSITE.device = "desktop";
+    window.rtCommonProps = {};
+    rtCommonProps["rt.ajax.ajaxScriptsFix"] =true;
+    rtCommonProps["rt.pushnotifs.sslframe.encoded"] = 'aHR0cHM6Ly97c3ViZG9tYWlufS5wdXNoLW5vdGlmcy5jb20=';
+    rtCommonProps["runtimecollector.url"] = 'https://rtc.multiscreensite.com';
+    rtCommonProps["performance.tabletPreview.removeScroll"] = 'false';
+    rtCommonProps["inlineEditGrid.snap"] =true;
+    rtCommonProps["popup.insite.cookie.ttl"] = '0.5';
+    rtCommonProps["rt.pushnotifs.force.button"] =true;
+    rtCommonProps["google.places.key"] = 'AIzaSyBAwUOqPUB1CU31yDztoZYaUE7sPv4ktEI';
+    rtCommonProps["common.mapbox.token"] = 'pk.eyJ1IjoiZGFubnliMTIzIiwiYSI6ImNqMGljZ256dzAwMDAycXBkdWxwbDgzeXYifQ.Ck5P-0NKPVKAZ6SH98gxxw';
+    rtCommonProps["common.mapbox.js.override"] =false;
+    rtCommonProps["common.opencage.token"] = '319e14f32bcce967ba55cd263478796d';
+    rtCommonProps["common.here.appId"] = 'iYvDjIQ2quyEu0rg0hLo';
+    rtCommonProps["common.here.appCode"] = '1hcIxLJcbybmtBYTD9Z1UA';
+    rtCommonProps["isCoverage.test"] =false;
+    rtCommonProps["ecommerce.ecwid.script"] = 'https://app.multiscreenstore.com/script.js';
+    rtCommonProps["feature.flag.mappy.kml"] =false;
+    rtCommonProps["common.resources.dist.cdn"] =true;
+    rtCommonProps["common.build.dist.folder"] = 'production/3472';
+    rtCommonProps["common.resources.cdn.host"] = 'https://static.cdn-website.com';
+    rtCommonProps["common.resources.folder"] = 'https://static.cdn-website.com/mnlt/production/3472';
+    rtCommonProps["feature.flag.runtime.backgroundSlider.preload.slowly"] =true;
+    rtCommonProps["feature.flag.runtime.photoswipe.fix"] =true;
+    rtCommonProps["feature.flag.runtime.newAnimation.enabled"] =true;
+    rtCommonProps["feature.flag.runtime.newAnimation.respectCssAnimationProps.enabled"] =true;
+    rtCommonProps["feature.flag.runtime.newAnimation.jitAnimation.enabled"] =true;
+    rtCommonProps["feature.flag.sites.google.analytics.gtag"] =true;
+    rtCommonProps["feature.flag.runOnReadyNewTask"] =true;
+    rtCommonProps["feature.flag.addTargetBlankToExternalLinks"] =true;
+    rtCommonProps["unsuspendEcwidStoreOnRuntime.enabled"] =true;
+    rtCommonProps["keyboard.navigation.enabled"] =true;
+    rtCommonProps["runtime.navigationWidget.menu.clipPath"] =true;
+    rtCommonProps["scripts.widgetCount.enabled"] =true;
+    rtCommonProps["maps.cookiebot.enabled"] =true;
+
+    
+    rtCommonProps['common.mapsProvider'] = 'mapbox';
+    rtCommonProps['common.mapsProvider.version'] = '0.52.0';
+    rtCommonProps['common.geocodeProvider'] = 'here';
+    rtCommonProps['common.map.defaults.radiusSize'] = '1500';
+    rtCommonProps['common.map.defaults.radiusBg'] = 'rgba(255, 255, 255, 0.4)';
+    rtCommonProps['common.map.defaults.strokeColor'] = 'rgba(255, 255, 255, 1)';
+    rtCommonProps['common.map.defaults.strokeSize'] = '2';
+    rtCommonProps['server.for.resources'] = '';
+    rtCommonProps['feature.flag.lazy.widgets'] = false;
+    rtCommonProps['feature.flag.single.wow'] = false;
+    rtCommonProps['feature.flag.disallowPopupsInEditor'] = true;
+    rtCommonProps['feature.flag.mark.anchors'] = true;
+    rtCommonProps['captcha.public.key'] = '6LffcBsUAAAAAMU-MYacU-6QHY4iDtUEYv_Ppwlz';
+    rtCommonProps['captcha.invisible.public.key'] = '6LeiWB8UAAAAAHYnVJM7_-7ap6bXCUNGiv7bBPME';
+    rtCommonProps["images.sizes.small"] =160;
+    rtCommonProps["images.sizes.mobile"] =640;
+    rtCommonProps["images.sizes.tablet"] =1280;
+    rtCommonProps["images.sizes.desktop"] =1920;
+    rtCommonProps["modules.resources.cdn"] =true;
+    rtCommonProps["import.images.storage.imageCDN"] = 'https://lirp.cdn-website.com/';
+    rtCommonProps["ecom.ecwid.categoryPage.modifyLinks"] = true;
+    rtCommonProps["ecom.ecwidNewUrlStructure.enabled"] = false;
+    rtCommonProps["ecom.ecwid.fixFacebookLink"] = true;
+    rtCommonProps["facebook.api.version"] = '7.0';
+    rtCommonProps["runtime.save.restore.function.bind"] =true;
+    rtCommonProps["feature.flag.photo.gallery.exact.size"] =false;
+    rtCommonProps["new.store.fix.ecwid.back.bug"] =true;
+    rtCommonProps["new.store.accountPage.ecwid.signIn.fix"] =true;
+    rtCommonProps["fix.ecwid.sign.in.page.with.return.url"] =true;
+    rtCommonProps["site.runtime.video.background.ssr"] =true;
+    rtCommonProps["geocode.search.localize"] =false;
+    rtCommonProps["facebook.runtime.widgets.upgrade"] =true;
+    rtCommonProps["feature.flag.runtime.inp.threshold"] =150;
+    rtCommonProps["feature.flag.runtime.newAnimation.asyncInit.setTimeout.enabled"] =false;
+    rtCommonProps["feature.flag.performance.logs"] =true;
+    rtCommonProps["site.contact.form.fix.for.attribute"] =true;
+    rtCommonProps["site.widget.form.captcha.type"] = 'g_recaptcha';
+    rtCommonProps["friendly.captcha.site.key"] = 'FCMGSQG9GVNMFS8K';
+    rtCommonProps["contact.form.date.format.enabled"] = true;
+    rtCommonProps["platform.monolith.personalization.userVisitsCondition.inClient.enabled"] = true;
+    rtCommonProps["ecom.widgets.menu.categories.toggles.enabled"] =  true;
+    rtCommonProps["filestack.uploadToTempBucket.enabled"] = false;
+</script>
+<script src="https://static.cdn-website.com/mnlt/production/3472/_dm/s/rt/dist/scripts/d-js-one-runtime-unified-desktop.min.js"  id="d-js-core"></script>
+<!-- End of HEAD RT JS Include -->
+<script src="https://static.cdn-website.com/mnlt/production/3472/_dm/s/rt/dist/scripts/d-js-jquery-migrate.min.js" ></script>
+<script>jQuery.DM.updateWidthAndHeight();
+$(window).resize(function () {
+    
+});
+$(window).bind("orientationchange", function (e) {
+    $.layoutManager.initLayout();
+    
+});
+$(document).resize(function () {
+    
+});
+</script>
+<script src="/_dm/s/rt/smart/popup.js" type="text/javascript"></script><script>(function(global){
+global.insiteScripts.popup({useNew: true, ruleId : '3638029', ruleType : 'bfs', settings : 'eyJkZWxheSI6IiIsInBvcHVwTmFtZSI6ImYwYTllNTlhMDdmNjQ4YTRiNmEyZjI1ZjJlNGUxNjIxIn0=', duration : null, isForced : false });
+})(this);</script><script type="text/javascript" id="d_track_campaign">
+(function() {
+ 	var campaign = (/utm_campaign=([^&]*)/).exec(window.location.search);
+
+ 	if (campaign && campaign != null && campaign.length > 1) {
+ 		campaign = campaign[1];
+ 		document.cookie = "_dm_rt_campaign=" + campaign + ";expires=" + new Date().getTime() + 24*60*60*1000 + ";domain=" + window.location.hostname + ";path=/";
+ 	}
+}());
+</script>
+<script type="text/javascript" >
+  var _dm_gaq = {};
+  var _gaq = _gaq || [];
+  var _dm_insite = [{ruleId: 3638029, actionName:'popup', ruleType: 'bfs'}];
+</script>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-186875542-1"></script>
+	<script type="text/javascript" id="d_track_ga">
+	  _dm_gaq.siteAlias = '37f533df';
+	  _dm_gaq.systemAggregatedGaqID = '';
+	  _dm_gaq.externalGaqID = 'UA-186875542-1';
+	  _dm_gaq.gaAggregatedEventAttributes = {
+		  'site_alias':  _dm_gaq.siteAlias,
+		  'product': 'DM_DIRECT',
+		  'plan': 'BUSINESS_PLUS_ECOMMERCE_LARGE',
+		  'dfooter': 'false',
+		  'sitetype': '1',
+		  'pwaEnabled': 'true'
+	  }
+
+	  _dm_gaq.pushEvent = function(trackingId, event, category, label, value, additionalParams) {
+	  	  var initialProps = {
+			  send_to: trackingId,
+			  event_category: category,
+			  event_label: label,
+			  value: value
+		  }
+		  additionalParams = additionalParams || {};
+	  	  var eventProps = $.extend({}, initialProps, additionalParams, trackingId === _dm_gaq.systemAggregatedGaqID?_dm_gaq.gaAggregatedEventAttributes:{});
+		  gtag('event', event, eventProps);
+	  }
+
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+	  function pushInsiteImpressions(id) {
+		  $.each(_dm_insite, function(idx, rule) {
+			  _dm_gaq.pushEvent(id, 'insite_impression', 'insite', rule.ruleType + '__' + rule.ruleId);
+		  });
+	  }
+
+	if(_dm_gaq.systemAggregatedGaqID){
+		// track aggregated account
+		gtag('config', '', {
+			'send_page_view': false,
+			'anonymize_ip': true,
+			'transport_type': 'beacon',
+			'custom_map': {'dimension1': 'site_alias', 'dimension2': 'product', 'dimension3': 'dFooter', 'dimension4': 'sitetype'}
+		});
+		gtag('set', 'developer_id.dMDU5Nj', true);
+
+		_dm_gaq.pushEvent('', 'page_view');
+		pushInsiteImpressions(_dm_gaq.systemAggregatedGaqID);
+	}
+
+	if(_dm_gaq.externalGaqID && _dm_gaq.externalGaqID!= '') {
+		gtag('config', 'UA-186875542-1', {
+			'send_page_view': false,
+			'anonymize_ip': true,
+			'transport_type': 'beacon',
+			'linker': {
+				'domains': ['mia-magik.com']
+			}
+		});
+		_dm_gaq.pushEvent('UA-186875542-1', 'page_view');
+		pushInsiteImpressions(_dm_gaq.externalGaqID);
+	}
+
+  </script>
+<script type="text/javascript" id="d_track_sp">
+;(function(p,l,o,w,i,n,g){if(!p[i]){p.GlobalSnowplowNamespace=p.GlobalSnowplowNamespace||[];
+p.GlobalSnowplowNamespace.push(i);p[i]=function(){(p[i].q=p[i].q||[]).push(arguments)
+};p[i].q=p[i].q||[];n=l.createElement(o);g=l.getElementsByTagName(o)[0];n.async=1;
+n.src=w;g.parentNode.insertBefore(n,g)}}(window,document,"script","//d32hwlnfiv2gyn.cloudfront.net/sp-2.0.0-dm-0.1.min.js","snowplow"));
+window.dmsnowplow  = window.snowplow;
+
+dmsnowplow('newTracker', 'cf', 'd32hwlnfiv2gyn.cloudfront.net', { // Initialise a tracker
+  appId: '37f533df'
+});
+
+dmsnowplow('trackPageView')
+$.each(_dm_insite, function(idx, rule) {
+	//('trackStructEvent', 'category','action','label','property','value');
+			// Specifically in popup only the client knows if it is shown or not so we don't always want to track its impression here
+	        // the tracking is in popup.js
+			if (rule.actionName !== "popup") {
+                dmsnowplow('trackStructEvent', 'insite', 'impression', rule.ruleType, rule.ruleId);
+            }
+ 			$(document).ready(function(){
+ 				$.DM.events.trigger('event-ruleTriggered', {value: rule})}
+ 			);
+ 		});
+</script>
+   <div style="display:none;" id="P6iryBW0Wu"></div>
+
+<!-- photoswipe markup -->
+
+
+
+
+
+
+
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<div id="fb-root"
+        data-locale="en"></div>
+<!-- Alias: 37f533df -->
+<div class="dmPopupMask" id="dmPopupMask"></div>
+<div id="dmPopup" class="dmPopup">
+	<div class="dmPopupCloseWrapper"> <div class="dmPopupClose dm-common-icons-close oneIcon" onclick="dmHidePopup(event);"></div> </div>
+ 	<div class="dmPopupTitle"> <span></span> Share by:</div> 
+	<div class="data"></div>
+</div><script id="d_track_personalization">
+// Collects client data and updates cookies used by smart sites
+var expireDays = 365,visitLength = 30 * 60000;
+$.setCookie("dm_timezone_offset", (new Date()).getTimezoneOffset(), expireDays);
+function setSmartSiteCookies() {
+	setSmartSiteCookiesInternal("dm_this_page_view","dm_last_page_view","dm_total_visits","dm_last_visit");
+}
+$.DM.events.on("afterAjax", setSmartSiteCookies);
+setSmartSiteCookies();
+</script>
+<script type="text/javascript">
+    
+    Parameters.NavigationAreaParams.MoreButtonText = 'MORE';
+    
+    Parameters.NavigationAreaParams.LessButtonText = 'LESS';
+    Parameters.HomeLinkText = 'Home';
+    </script>
+<script>
+    jQuery(window).on('load', function () {
+        try {
+            jQuery.DM.updateIOSHeight();
+        } catch (e) {
+        }
+    });
+</script>
+<script>
+    dmAPI.loadScript(
+        window.rtCommonProps['common.resources.cdn.host'] + '/libs/lozad/1.15.0/lozad.min.js',
+        function () {
+            dmAPI.runOnReady('lozadInit', function () {
+                window.document.querySelectorAll('img.lazy').forEach(function (img) {
+                    img.addEventListener('load', function (event) {
+                        var img = event.target;
+                        img.style.filter = 'blur(0)';
+                        setTimeout(function () {
+                            $(img).closest('.imageWidget').addClass('lazyLoaded');
+                        }, 250)
+                    });
+                });
+                lozad('.lazy', {
+                    threshold: 0.1,
+                    loaded: function (element) {
+                        if (element.getAttribute('data-background-image')) {
+                            element.style.setProperty(
+                                'background-image',
+                                "url('" + element.getAttribute('data-background-image') + "')",
+                                "important"
+                            );
+                        }
+                    }
+                }).observe();
+            });
+        }
+    );
+</script>
+<!--  End Script tags -->
+
+<!--  Begin Body End Markup -->
+  <script src='https://adilo.bigcommand.com/dist/script.js'></script>
+  <script>
+
+  (function(w, d, t, s, n) {
+    w.FlodeskObject = n;
+    var fn = function() {
+      (w[n].q = w[n].q || []).push(arguments);
+    };
+    w[n] = w[n] || fn;
+    var f = d.getElementsByTagName(t)[0];
+    var e = d.createElement(t);
+    var h = '?v=' + new Date().getTime();
+    e.async = true;
+    e.src = s + h;
+    f.parentNode.insertBefore(e, f);
+  })(window, document, 'script', 'https://assets.flodesk.com/universal.js', 'fd');
+  
+  </script>
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-186875542-1">
+
+  </script>
+  
+  <script>
+
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-186875542-1');
+
+  </script>
+  
+  <script>function loadScript(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}loadScript(function(){beTracker.t({hash:"b32d994e999843f4ea94731cc92175f"})});</script><!--  End Body End Markup -->
+
+<!--  Site Wide Html Markup -->
+<!--  Site Wide Html Markup -->
+</body>
+</html>

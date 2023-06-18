@@ -1,0 +1,1 @@
+[{"issuer_ca_id": 246719, "issuer_name": "C=US, O=Amazon, CN=Amazon RSA 2048 M01", "common_name": "*.eimdx.com", "name_value": "*.eimdx.com\neimdx.com", "id": 9541270754, "entry_timestamp": "2023-06-01T08:16:21.18", "not_before": "2023-06-01T00:00:00", "not_after": "2024-06-29T23:59:59", "serial_number": "023997c81026ec28d34439388067d694"}]

@@ -1,0 +1,144 @@
+current domain in process_parent:1688ypo.com
+===== to_skip function start =====
+1688ypo.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: 1688ypo.com now: 2023-06-12 06:43:33.243128+00:00
+duration_log vt_call: 2.159006599977147
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 24.398663499974646
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 6
+current protocol: https
+returncode: 6
+duration_log grab_html_js: 0.0799055999959819
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/1688ypo.com_20230612_064359.926.txt
+duration_log get_whois_info: 1.3506373999989592
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+socket.gethostbyname_ex() exception triggered: [Errno 11001] getaddrinfo failed
+dns.resolver.query() exception triggered: The DNS query name does not exist: 1688ypo.com.
+duration_log get_dns_info: 0.033415200014133006
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/1688ypo.com_20230612_064401.318.json
+duration_log get_cert_info: 19.97238049999578
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 1.3471369000035338
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for 1688ypo.com, time taken 49.44225679995725 seconds
+
+
+current domain in process_parent:ae.1688oka.com
+===== to_skip function start =====
+ae.1688oka.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: ae.1688oka.com now: 2023-06-12 06:44:22.718998+00:00
+duration_log vt_call: 0.9917807999881916
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 3.0484416999970563
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 6
+current protocol: https
+returncode: 6
+duration_log grab_html_js: 0.0798132000491023
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/ae.1688oka.com_20230612_064426.880.txt
+duration_log get_whois_info: 0.9653140000300482
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+socket.gethostbyname_ex() exception triggered: [Errno 11001] getaddrinfo failed
+dns.resolver.query() exception triggered: The DNS query name does not exist: ae.1688oka.com.
+duration_log get_dns_info: 0.033882200019434094
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 0.7978772000060417
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/ae.1688oka.com_20230612_064428.704.json
+duration_log get_archived_page_info: 0.8880570000037551
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for ae.1688oka.com, time taken 15.001174099976197 seconds
+
+
+current domain in process_parent:kf.1688ypi.com
+===== to_skip function start =====
+kf.1688ypi.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: kf.1688ypi.com now: 2023-06-12 06:44:37.785850+00:00
+duration_log vt_call: 1.0840882000047714
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 3.809066999994684
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 6
+current protocol: https
+returncode: 6
+duration_log grab_html_js: 0.10628260002704337
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/kf.1688ypi.com_20230612_064442.844.txt
+duration_log get_whois_info: 0.9389781999634579
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+socket.gethostbyname_ex() exception triggered: [Errno 11001] getaddrinfo failed
+dns.resolver.query() exception triggered: The DNS query name does not exist: kf.1688ypi.com.
+duration_log get_dns_info: 0.02640629996312782
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 0.7522376999841072
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/kf.1688ypi.com_20230612_064444.581.json
+duration_log get_archived_page_info: 0.6503794000018388
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for kf.1688ypi.com, time taken 15.025700700003654 seconds
+
+
+current domain in process_parent:app.qianxz4.xyz
+===== to_skip function start =====
+app.qianxz4.xyz has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: app.qianxz4.xyz now: 2023-06-12 06:44:52.874381+00:00
+duration_log vt_call: 1.0264301000279374
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/app.qianxz4.xyz_http_20230612_064453.914.pngscreenshot found for protocol: https and saved to resources/shot-scraper/app.qianxz4.xyz_https_20230612_064453.914.pngduration_log screenshot: 15.186870299978182
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 6
+current protocol: https
+returncode: 6
+duration_log grab_html_js: 22.38644510001177
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/app.qianxz4.xyz_20230612_064531.532.txt
+duration_log get_whois_info: 0.038153600005898625
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/app.qianxz4.xyz_gethostbyname_ex_20230612_064531.569.txt
+dns.resolver.query() exception triggered: The resolution lifetime expired after 5.404 seconds: Server 1.1.1.1 UDP port 53 answered The DNS operation timed out.; Server 1.1.1.1 UDP port 53 answered The DNS operation timed out.; Server 1.1.1.1 UDP port 53 answered The DNS operation timed out.
+duration_log get_dns_info: 5.429255300026853
+===== get_dns_info function end =====

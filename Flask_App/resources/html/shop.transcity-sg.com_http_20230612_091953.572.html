@@ -1,0 +1,615 @@
+HTTP/1.1 200 OK
+Date: Mon, 12 Jun 2023 09:19:56 GMT
+Server: Apache/2.4.6
+X-Powered-By: PHP/7.4.33
+Set-Cookie: PHPSESSID=nu6h54p3ruu714vk8jviit57ua; path=/; HttpOnly
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Set-Cookie: language=en; expires=Wed, 12-Jul-2023 09:19:56 GMT; Max-Age=2592000; path=/; domain=shop.transcity-sg.com
+Set-Cookie: currency=SGD; expires=Wed, 12-Jul-2023 09:19:56 GMT; Max-Age=2592000; path=/; domain=shop.transcity-sg.com
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=utf-8
+
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<!--[if IE 8 ]><html dir="ltr" lang="en" class="ie8"><![endif]-->
+<!--[if IE 9 ]><html dir="ltr" lang="en" class="ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html dir="ltr" lang="en">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>.: TransCity Frozen Foods :.</title>
+<base href="http://shop.transcity-sg.com/" />
+<meta name="description" content="My Store" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link href="http://shop.transcity-sg.com/image/catalog/slicing/home/favicon.png" rel="icon" />
+<script src="catalog/view/javascript/jquery/jquery-2.1.1.min.js" type="text/javascript"></script>
+<link href="catalog/view/javascript/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen" />
+<link href="catalog/view/theme/default/stylesheet/bootstrap-text.css" rel="stylesheet" media="screen" />
+<link href="catalog/view/theme/default/stylesheet/bootstrap-pull.css" rel="stylesheet" media="screen" />
+<link href="catalog/view/theme/default/stylesheet/bootstrap-five-cols.css" rel="stylesheet" media="screen" />
+<link href="catalog/view/theme/default/stylesheet/bootstrap-equal-height.css" rel="stylesheet" media="screen" />
+<script src="catalog/view/javascript/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="catalog/view/javascript/bootstrap/js/bootstrap-dialog.min.js" type="text/javascript"></script>
+<link href="catalog/view/javascript/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+<link href="//fonts.googleapis.com/css?family=Open+Sans:400,400i,300,700" rel="stylesheet" type="text/css" />
+<link href="catalog/view/theme/default/stylesheet/stylesheet.css" rel="stylesheet">
+<link href="catalog/view/javascript/jquery/owl-carousel/owl.carousel.css" type="text/css" rel="stylesheet" media="screen" />
+<link href="catalog/view/theme/default/stylesheet/blog-news.css" type="text/css" rel="stylesheet" media="screen" />
+<link href="catalog/view/theme/default/fcs/responsive-xs.css" type="text/css" rel="stylesheet" media="screen" />
+<link href="catalog/view/theme/default/fcs/custom.css" type="text/css" rel="stylesheet" media="screen" />
+<link href="catalog/view/theme/default/fcs/fcs.css" type="text/css" rel="stylesheet" media="screen" />
+<script src="catalog/view/javascript/common.js" type="text/javascript"></script>
+<script src="catalog/view/javascript/jquery/owl-carousel/owl.carousel.min.js" type="text/javascript"></script>
+
+					<style type="text/css">
+						div.product-quantity-container {
+	margin: 0 3px 3px 0;
+	display: inline-block;
+}
+.product-grid div.product-quantity-container,
+.pq-module div.product-quantity-container {
+	margin: 6px 3px 3px 0;
+	display: block;
+	text-align: center;
+}
+div.product-quantity-container.pq-product #button-cart {
+	margin-top: 5px;
+	display: inline-block;
+}
+div.product-quantity-container.pq-product br {
+	display: none;
+}
+.product-quantity-container .product-quantity-button {
+	padding: 2px 7px 5px;
+}
+.pq-module .product-quantity-container .product-quantity-button {
+	margin-top: -3px;
+}
+.product-quantity-container .product-quantity-input {
+	display: inline-block !important;
+	margin: 0 3px;
+	padding: 5px;
+	text-align: center;
+	width: 33px;
+}
+div.product-quantity-container.pq-cart .product-quantity-button {
+	float: left;
+	margin-top: 4px;
+}
+div.product-quantity-container.pq-cart .input-group-btn {
+	margin-left: 5px;
+	float: left;
+	display: block;
+}
+.product-list .pq-product .product-quantity-container {
+	width: 20%;
+	float: left;
+	text-align: center;
+	margin: 0; 
+}
+.product-list .product-thumb .pq-product button {
+	width: 40%;
+}
+.product-list .product-thumb .pq-product button + button {
+	width: 20%;
+}					</style>
+				
+					<script type="text/javascript">
+						function pq_setQuantity( $input, add ) {
+							var val = pq_getQuantity( $input );
+								
+							val += 1 * ( add ? 1 : -1 );
+								
+							if( val < 1 )
+								val = 1;
+								
+							$input.attr('value', val.toString()).val( val.toString() );
+						}				
+						
+						function pq_getQuantity( $input ) {
+							var val = parseInt( $input.val() );
+								
+							if( typeof val == 'NaN' || val < 1 )
+								val = 1;
+								
+							return val;
+						}
+						
+						function pq_plus( $item ) {
+							pq_setQuantity( $item.find('.product-quantity-input'), true );
+						}
+						
+						function pq_minus( $item ) {
+							pq_setQuantity( $item.find('.product-quantity-input'), false );
+						}
+						
+						function pq_addToCart( product_id, $item ) {
+							return cart.add( product_id, pq_getQuantity( $item.parent().find('.product-quantity-input') ) );
+						}
+						
+						function pq_initExt() {
+							$('[data-type][data-active=1]').each(function(){
+								var $items	= null
+									fn		= null,
+									type	= $(this).attr('data-type');
+							
+								switch( type ) {
+									case 'v-category' :
+									case 'v-search' :
+									case 'v-manufacturer' :
+									case 'v-special' :
+									case 'm-latest' :
+									case 'm-special' :
+									case 'm-featured' :
+									case 'm-bestseller' : {
+										$items	= type == 'v-category' || type == 'v-search' || type == 'v-manufacturer' || type == 'v-special' ? $(this) : $(this).find('[onclick^="cart.add("]');
+										fn		= function( $this, $input, $plus, $minus, $div ){
+											$div.append( $minus );
+											$div.append( $input );
+											$div.append( $plus );
+											$this.parent().addClass('pq-product');
+										
+											$this
+												.before( $div )
+												.attr( 'onclick', 'pq_addToCart( ' + $this.attr('onclick').match(/[0-9]+/) + ', $(this) )' );
+										}
+										
+										break;
+									}
+									case 'v-product' : {
+										$items		= $(this).parent();
+										fn			= function( $this, $input, $plus, $minus, $div ) {
+											var $q = $this.parent().find('[name=quantity]');
+											
+											$q.parent().addClass( 'product-quantity-container pq-product' );
+											$q.before( $minus );
+											$q.after( $plus );
+											$q.addClass( 'product-quantity-input' );
+										}
+										
+										break;
+									}
+									case 'v-cart' : {
+										$items		= $(this).parent().find('[name^=quantity]');
+										fn			= function( $this, $input, $plus, $minus, $div ) {
+											var $q = $this;
+											
+											$q.parent().addClass( 'product-quantity-container pq-cart' );
+											$q.before( $minus );
+											$q.after( $plus );
+											$q.addClass( 'product-quantity-input' );
+										}
+										
+										break;
+									}
+								}
+								
+								if( $items === null || fn === null ) return;
+								
+								$items.each(function(){			
+									var $input	= $('<input>')
+											.attr({
+												'class'	: 'form-control product-quantity-input',
+												'type'	: 'text',
+												'value'	: '1',
+												'size'	: '1'
+											}),
+										$plus	= $('<input>')
+											.attr({
+												'class'	: 'btn btn-primary product-quantity-button',
+												'type'	: 'button',
+												'value'	: '+'
+											})
+											.attr('onclick', 'pq_plus( $(this).parent() )'),
+										$minus	= $('<input>')
+											.attr({
+												'class'	: 'btn btn-primary product-quantity-button',
+												'type'	: 'button',
+												'value'	: '-'
+											})
+											.attr('onclick', 'pq_minus( $(this).parent() )'),
+										$div = $('<div>')
+											.addClass( 'product-quantity-container' );
+									
+									fn( $(this), $input, $plus, $minus, $div );
+								});
+							});
+						}
+					
+						$().ready(function(){
+							pq_initExt();
+						});
+					</script>
+				</head>	
+			
+<body class="common-home">
+<nav id="top" class="hidden">
+  <div class="container">
+            <div id="top-links" class="nav pull-right">
+      <ul class="list-inline">
+        <li><a href="http://shop.transcity-sg.com/contact"><i class="fa fa-phone"></i></a> <span class="hidden-xs hidden-sm hidden-md">+65 6756 7562</span></li>
+        <li class="dropdown"><a href="http://shop.transcity-sg.com/account" title="My Account" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <span class="hidden-xs hidden-sm hidden-md">My Account</span> <span class="caret"></span></a>
+          
+        </li>
+        <li><a href="http://shop.transcity-sg.com/index.php?route=checkout/cart" title="Cart"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md">Cart</span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<header>
+  <div class="container">
+    <div id="top-bar" class="row">
+      <div class="logo-container col-xs-6 col-sm-3 col-md-2">
+                <a href="http://shop.transcity-sg.com/"><img src="http://shop.transcity-sg.com/image/catalog/slicing/home/logo.png" title="TransCity Frozen Foods Supplier Pte Ltd" alt="TransCity Frozen Foods Supplier Pte Ltd" class="img-responsive" /></a>
+              </div>
+      <div class="search-container col-xs-6 col-sm-4 col-md-3"><div id="search" class="input-group">
+  <div class="left-inner-addon">
+  	  <button type="button" class="btn btn-xs btn-transparent"><i class="fa fa-search"></i></button>
+	  <input type="search" name="search" value="" placeholder="Search" class="form-control" />
+  </div>
+</div></div>
+      <div class="phone-container text-right col-sm-pull-right col-xxs-12 col-xs-12 col-sm-4 col-md-3">
+        <a href="tel: +65 6756 7562"><i class="fa fa-phone"></i>&nbsp;+65 6756 7562</a>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <nav id="menu" class="navbar">
+      <div class="container">
+        <div class="row">
+          <div class="navbar-header"><span id="category" class="visible-xs">Menu</span>
+            <button type="button" class="btn btn-navbar btn-xs navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"><i class="fa fa-bars"></i></button>
+          </div>
+          <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="http://shop.transcity-sg.com/" class="active">Home</a></li>
+              <li><a href="http://shop.transcity-sg.com/about-us" >About Us</a></li>
+              <li><a href="http://shop.transcity-sg.com/product" >Products</a></li>
+              <li><a href="http://shop.transcity-sg.com/recipes" >Recipes</a></li>
+              <li><a href="http://shop.transcity-sg.com/contact" >Contact Us</a></li>
+              <li class="col-sm-pull-right"><a href="http://shop.transcity-sg.com/index.php?route=checkout/cart" title="Cart"><i class="fa fa-shopping-cart hidden-xs">&nbsp;&nbsp;</i>Cart</a></li>
+                              <li class="col-sm-pull-right"><a href="http://shop.transcity-sg.com/register"><i class="fa fa-lock hidden-xs">&nbsp;&nbsp;</i>Register</a></li>
+                <li class="col-sm-pull-right"><a href="http://shop.transcity-sg.com/login"><i class="fa fa-user hidden-xs">&nbsp;&nbsp;</i>Login</a></li>
+                          </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+<div class="container-fluid">
+  <div class="row">                <div id="content" class="col-sm-12"><div id="content-top">
+			<div class="ctm-0">
+			<div class = "html">
+    <div class="alert alert-success">
+<p>Welcome to Transcity’s online store! Free delivery with minimum $100 purchase. </p>
+</div>
+</div>
+		</div>
+			<div class="ctm-1">
+			<div id="carousel0" class="owl-carousel">
+    <div class="item text-center">
+        <img src="http://shop.transcity-sg.com/image/cache/catalog/slicing/products/pork-320x320.png" alt="pork-1.png" class="img-responsive" data-hover="http://shop.transcity-sg.com/image/cache/catalog/slicing/products/pork-1-320x320.png" onmouseover="ImageHover(this);" onmouseout="ImageReset(this,'http://shop.transcity-sg.com/image/cache/catalog/slicing/products/pork-320x320.png');"/>
+      </div>
+    <div class="item text-center">
+        <img src="http://shop.transcity-sg.com/image/cache/catalog/slicing/products/fish2-320x320.png" alt="fish-1.png" class="img-responsive" data-hover="http://shop.transcity-sg.com/image/cache/catalog/slicing/products/fish-1-320x320.png" onmouseover="ImageHover(this);" onmouseout="ImageReset(this,'http://shop.transcity-sg.com/image/cache/catalog/slicing/products/fish2-320x320.png');"/>
+      </div>
+    <div class="item text-center">
+        <img src="http://shop.transcity-sg.com/image/cache/catalog/slicing/products/beef2-320x320.png" alt="beef-1.png" class="img-responsive" data-hover="http://shop.transcity-sg.com/image/cache/catalog/slicing/products/beef-1-320x320.png" onmouseover="ImageHover(this);" onmouseout="ImageReset(this,'http://shop.transcity-sg.com/image/cache/catalog/slicing/products/beef2-320x320.png');"/>
+      </div>
+  </div>
+<script type="text/javascript"><!--
+$('#carousel0').owlCarousel({
+  margin: 30,
+	nav: false,
+  responsiveClass: true,
+  responsive: {
+    0: {
+      items: 1,
+      mouseDrag: true,
+      touchDrag: true,
+      loop: true
+    },
+    768: {
+      items: 3,
+      mouseDrag: false,
+      touchDrag: false,
+      loop: false
+    }
+  }
+});
+
+function ImageHover(obj){
+  var image_hover = obj.dataset.hover;
+  if(image_hover != "false"){
+    $(obj).fadeOut(160, 'linear', function(){
+      obj.src = image_hover;
+      $(this).fadeIn(160, 'linear');
+    });
+  }
+}
+
+function ImageReset(obj, src){
+  if(obj.dataset.hover != "false"){
+    $(obj).fadeOut(160, 'linear', function(){
+      obj.src = src;
+      $(this).fadeIn(160, 'linear');
+    });
+  }
+}
+--></script>
+		</div>
+			<div class="ctm-2">
+			<div class = "html">
+    <h1><strong><span style="color:#000000;">Trans</span><span style="color:#167E1F;">City</span></strong> <span style="color:#554546;">Caters For Your Family</span></h1>
+
+<p><a href="./index.php?route=product/category"><img alt="" src="./image/catalog/slicing/home/buy-now.png" /></a></p>
+</div>
+		</div>
+	</div><div id="content-middle">
+			<div class="cmm-0">
+			<div data-type="m-bestseller" data-active="" class="pq-module"><div class="row">
+  <h1>Bestsellers</h1>
+  <h3>Our Seasonal Favourite Products</h3>
+</div>
+<div class="row">
+  <div class="bestseller-carousel">
+        <div class="item">
+      <div class="product-layout">
+        <div class="product-thumb transition">
+          <div class="image" style="background-image: url('http://shop.transcity-sg.com/image/cache/catalog/FC.Transcity.EDITED-190-zoom-243x300.jpg');">
+            <div class="hover">
+              <a href="http://shop.transcity-sg.com/beef-shin"><i class="icon-view"></i></a>
+              <a href="javascript:cart.add('112');"><i class="icon-cart"></i></a>
+            </div>
+          </div>
+          <div class="caption">
+            <h4><a href="http://shop.transcity-sg.com/beef-shin">Beef Shin</a></h4>
+                                    <p class="price">
+                            $10.50                                        </p>
+                      </div>
+        </div>
+      </div>
+    </div>
+        <div class="item">
+      <div class="product-layout">
+        <div class="product-thumb transition">
+          <div class="image" style="background-image: url('http://shop.transcity-sg.com/image/cache/catalog/FC.Transcity.EDITED-117-zoom-243x300.jpg');">
+            <div class="hover">
+              <a href="http://shop.transcity-sg.com/lamb-chop"><i class="icon-view"></i></a>
+              <a href="javascript:cart.add('123');"><i class="icon-cart"></i></a>
+            </div>
+          </div>
+          <div class="caption">
+            <h4><a href="http://shop.transcity-sg.com/lamb-chop">Lamb Chop cut 1cm</a></h4>
+                                    <p class="price">
+                            $12.00                                        </p>
+                      </div>
+        </div>
+      </div>
+    </div>
+        <div class="item">
+      <div class="product-layout">
+        <div class="product-thumb transition">
+          <div class="image" style="background-image: url('http://shop.transcity-sg.com/image/cache/catalog/ChickenMiddleWing-500x500-zoom-243x300.jpg');">
+            <div class="hover">
+              <a href="http://shop.transcity-sg.com/chicken-middle-wing"><i class="icon-view"></i></a>
+              <a href="javascript:cart.add('146');"><i class="icon-cart"></i></a>
+            </div>
+          </div>
+          <div class="caption">
+            <h4><a href="http://shop.transcity-sg.com/chicken-middle-wing">Chicken Middle Wing</a></h4>
+                                    <p class="price">
+                            $8.50                                        </p>
+                      </div>
+        </div>
+      </div>
+    </div>
+        <div class="item">
+      <div class="product-layout">
+        <div class="product-thumb transition">
+          <div class="image" style="background-image: url('http://shop.transcity-sg.com/image/cache/catalog/FC.Transcity.EDITED-171-zoom-243x300.jpg');">
+            <div class="hover">
+              <a href="http://shop.transcity-sg.com/beef-brisket"><i class="icon-view"></i></a>
+              <a href="javascript:cart.add('108');"><i class="icon-cart"></i></a>
+            </div>
+          </div>
+          <div class="caption">
+            <h4><a href="http://shop.transcity-sg.com/beef-brisket">Beef Brisket</a></h4>
+                                    <p class="price">
+                            $13.00                                        </p>
+                      </div>
+        </div>
+      </div>
+    </div>
+        <div class="item">
+      <div class="product-layout">
+        <div class="product-thumb transition">
+          <div class="image" style="background-image: url('http://shop.transcity-sg.com/image/cache/catalog/FC.Transcity.EDITED-21-zoom-243x300.jpg');">
+            <div class="hover">
+              <a href="http://shop.transcity-sg.com/pork-soft-bone"><i class="icon-view"></i></a>
+              <a href="javascript:cart.add('185');"><i class="icon-cart"></i></a>
+            </div>
+          </div>
+          <div class="caption">
+            <h4><a href="http://shop.transcity-sg.com/pork-soft-bone">Pork Soft Bone</a></h4>
+                                    <p class="price">
+                            $8.50                                        </p>
+                      </div>
+        </div>
+      </div>
+    </div>
+        <div class="item">
+      <div class="product-layout">
+        <div class="product-thumb transition">
+          <div class="image" style="background-image: url('http://shop.transcity-sg.com/image/cache/catalog/FC.Transcity.EDITED-3-zoom-243x300.jpg');">
+            <div class="hover">
+              <a href="http://shop.transcity-sg.com/pork-belly"><i class="icon-view"></i></a>
+              <a href="javascript:cart.add('171');"><i class="icon-cart"></i></a>
+            </div>
+          </div>
+          <div class="caption">
+            <h4><a href="http://shop.transcity-sg.com/pork-belly">Pork Belly</a></h4>
+                                    <p class="price">
+                            $12.50                                        </p>
+                      </div>
+        </div>
+      </div>
+    </div>
+      </div>
+</div>
+<script>
+$('.bestseller-carousel').owlCarousel({
+  margin: 5,
+  loop: true,
+  responsiveClass:true,
+  responsive: {
+    0: {
+      items: 1
+    },
+    480: {
+      items: 2
+    },
+    768: {
+      items: 3
+    },
+    992: {
+      items: 4
+    }
+  },
+  nav: true,
+  navText: ["<i class=\"icon-arrow-left\"></i>","<i class=\"icon-arrow-right\"></i>"]
+});
+</script></div>		</div>
+			<div class="cmm-1">
+					</div>
+	</div><div id="content-bottom">
+			<div class="cbm-0">
+			<div class="box-content">
+    <div class="bnews-list">
+					<div class="artblock">
+				<div class="article-meta hidden">
+																Posted on 08 Jun 2021 |
+																Updated on 08 Jun 2021 |
+														</div>
+								<div class="image col-xs-12 col-sm-6 col-md-5 col-lg-5" style="background-image: url('http://shop.transcity-sg.com/image/cache/catalog/recipes/dumpling-zoom-371x412.jpg');"></div>
+								<div class="news-content col-xs-12 col-sm-6 col-md-7 col-lg-7">
+					<h1>Recipes</h1>
+											<div class="name"><a href="http://shop.transcity-sg.com/recipes/savoury-rice-dumpling">Savoury Rice Dumpling</a></div>
+																<div class="description"><p>Recipe for Savory Rice Dumpling<br></p></div>
+																																									<div class="blog-button"><a class="btn btn-default" href="http://shop.transcity-sg.com/recipes/savoury-rice-dumpling">Read More</a></div>
+									</div>
+			</div>
+		    </div>
+  </div>
+<script type="text/javascript"><!--
+	$(document).ready(function() {
+		$('img.article-image').each(function(index, element) {
+		var articleWidth = $(this).parent().parent().width() * 0.7;
+		var imageWidth = $(this).width() + 10;
+		if (imageWidth >= articleWidth) {
+			$(this).attr("align","center");
+			$(this).parent().addClass('bigimagein');
+		}
+		});
+	});
+//--></script>
+		</div>
+	</div></div>
+    </div>
+</div>
+<script>
+cart.add = function(product_id, quantity) {
+    $.ajax({
+        url: 'index.php?route=checkout/cart/add',
+        type: 'post',
+        data: 'product_id=' + product_id + '&quantity=' + (typeof(quantity) != 'undefined' ? quantity : 1),
+        dataType: 'json',
+        beforeSend: function() {
+            $('#cart > button').button('loading');
+        },
+        complete: function() {
+            $('#cart > button').button('reset');
+        },          
+        success: function(json) {
+            $('.alert, .text-danger').remove();
+
+            if (json['redirect']) {
+                location = json['redirect'];
+            }
+
+            if (json['success']) {                
+                $('body').append('<div class="alert alert-success alert-float"><i class="fa fa-check-circle"></i> ' + json['success'] + '<button type="button" class="close" data-dismiss="alert">&times;</button></div>');
+
+                setTimeout(function(){
+                    $('.alert-float').fadeOut(1500, function(){
+                        $(this).remove();
+                    });
+                }, 2000);
+            }
+        }
+    });
+}
+</script>
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12"></div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <h1>TransCity Frozen Foods Supplier Pte Ltd</h1>
+        <address>Woodlands East Industrial Estate<br />
+#01-04, 15 Woodlands Loop, (S)738322</address>
+        <p><span class="green">T: <a href="tel:+65 6756 7562">+65 6756 7562</a></span></p>
+        <p><span class="green">E: <a href="mailto:shop@transcity-sg.com">shop@transcity-sg.com</a></span></p>
+        <p>Mon - Fri : 8am-5pm<br />
+Sat           : 8am-1pm <br />
+Sun          : Closed</p>
+      </div>
+      <br class="visible-xs"/>
+      <div class="col-sm-5">
+        <div class="col-sm-6" style="padding: 0;">
+          <h5>Information</h5>
+          <ul class="list-unstyled">
+                                                                    <li><a href="http://shop.transcity-sg.com/faq">FAQ</a></li>
+                                                                                  <li><a href="http://shop.transcity-sg.com/delivery">Delivery Information</a></li>
+                                                              </ul>
+          <br/>
+          <h5>Company</h5>
+          <ul class="list-unstyled">
+                                          <li><a href="http://shop.transcity-sg.com/about-us">About Us</a></li>
+                                                                                                                                              <li><a href="http://shop.transcity-sg.com/contact">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-6" style="padding: 0;">
+          <h5>Customer</h5>
+          <ul class="list-unstyled">
+                                                                                              <li><a href="http://shop.transcity-sg.com/terms">Terms &amp; Conditions</a></li>
+                                                                                  <li><a href="http://shop.transcity-sg.com/privacy">Privacy Policy</a></li>
+                                    </ul>
+          <br/>
+          <h5>My Account</h5>
+          <ul class="list-unstyled">
+            <li><a href="http://shop.transcity-sg.com/account">My Account</a></li>
+            <li><a href="http://shop.transcity-sg.com/index.php?route=account/order">Order History</a></li>
+          </ul>
+        </div>
+    </div>
+    <br class="visible-xs"/>
+    <div class="col-sm-2">
+      <h5>Payment</h5>
+      <img src="catalog/view/theme/default/image/payment.png" class="img-responsive"/>
+    </div>
+    </div>
+    <hr>
+    <div class="clearfix">
+      <p class="text-center"><small>&copy; 2023 TransCity Frozen Foods Supplier Pte Ltd. All Rights Reserved.</small></p>
+          </div>
+  </div>
+</footer>
+</body></html>

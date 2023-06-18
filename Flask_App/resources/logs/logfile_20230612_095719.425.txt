@@ -1,0 +1,352 @@
+current domain in process_parent:www-premiereco-com-sg.webpkgcache.com
+===== to_skip function start =====
+www-premiereco-com-sg.webpkgcache.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: www-premiereco-com-sg.webpkgcache.com now: 2023-06-12 09:57:19.465214+00:00
+duration_log vt_call: 1.1277457000105642
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/www-premiereco-com-sg.webpkgcache.com_http_20230612_095720.599.pngscreenshot found for protocol: https and saved to resources/shot-scraper/www-premiereco-com-sg.webpkgcache.com_https_20230612_095720.599.pngduration_log screenshot: 13.220372200012207
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 0
+starting html request.get
+total js_files_links: []
+duration_log grab_html_js: 1.2435423000133596
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/www-premiereco-com-sg.webpkgcache.com_20230612_095735.088.txt
+duration_log get_whois_info: 0.8486362000112422
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/www-premiereco-com-sg.webpkgcache.com_gethostbyname_ex_20230612_095735.940.txt
+nameservers_filepath file written to resources/dns/www-premiereco-com-sg.webpkgcache.com_nameservers_20230612_095735.940.txt
+duration_log get_dns_info: 0.0356937000178732
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 0.9091363999759778
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 1.0891757000354119
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for www-premiereco-com-sg.webpkgcache.com, time taken 18.553922900056932 seconds
+
+
+current domain in process_parent:www.y-com.com.cn
+===== to_skip function start =====
+www.y-com.com.cn has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: www.y-com.com.cn now: 2023-06-12 09:57:38.043924+00:00
+duration_log vt_call: 0.8559993000235409
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/www.y-com.com.cn_http_20230612_095738.909.pngduration_log screenshot: 12.077770700037945
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 7
+duration_log grab_html_js: 5.977755300002173
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/www.y-com.com.cn_20230612_095756.988.txt
+duration_log get_whois_info: 0.28386999998474494
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/www.y-com.com.cn_gethostbyname_ex_20230612_095757.274.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: www.y-com.com.cn. IN NS
+duration_log get_dns_info: 0.9454429000033997
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 1.0083297999808565
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/www.y-com.com.cn_20230612_095759.246.json
+duration_log get_archived_page_info: 0.9186044000089169
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for www.y-com.com.cn, time taken 22.14966369996546 seconds
+
+
+current domain in process_parent:www-activesgcircle-gov-sg.sandbox.hs-sites.com
+===== to_skip function start =====
+www-activesgcircle-gov-sg.sandbox.hs-sites.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: www-activesgcircle-gov-sg.sandbox.hs-sites.com now: 2023-06-12 09:58:00.217174+00:00
+duration_log vt_call: 0.8675847999984398
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/www-activesgcircle-gov-sg.sandbox.hs-sites.com_http_20230612_095801.102.pngscreenshot found for protocol: https and saved to resources/shot-scraper/www-activesgcircle-gov-sg.sandbox.hs-sites.com_https_20230612_095801.102.pngduration_log screenshot: 18.90883880003821
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+web_url: http://www-activesgcircle-gov-sg.sandbox.hs-sites.com
+url: /hs/hsstatic/jquery-libs/static-1.4/jquery/jquery-1.11.2.js
+web_url: http://www-activesgcircle-gov-sg.sandbox.hs-sites.com
+url: /hs/hsstatic/jquery-libs/static-1.4/jquery-migrate/jquery-migrate-1.2.1.js
+web_url: http://www-activesgcircle-gov-sg.sandbox.hs-sites.com
+url: https://play.vidyard.com/embed/v4.js
+web_url: http://www-activesgcircle-gov-sg.sandbox.hs-sites.com
+url: https://www.googletagmanager.com/gtag/js?id=G-G0DYDDP2BY
+web_url: http://www-activesgcircle-gov-sg.sandbox.hs-sites.com
+url: https://assets.wogaa.sg/scripts/wogaa.js
+web_url: http://www-activesgcircle-gov-sg.sandbox.hs-sites.com
+url: https://static.hsappstatic.net/content-cwv-embed/static-1.240/embed.js
+web_url: http://www-activesgcircle-gov-sg.sandbox.hs-sites.com
+url: //cdn2.hubspot.net/hub/6212555/hub_generated/template_assets/58844823398/1681816892693/Circle_2-0_2021-_Circle_Website_Refresh/js/jquery-2.2.4.min.js
+web_url: http://www-activesgcircle-gov-sg.sandbox.hs-sites.com
+url: //cdn2.hubspot.net/hub/6212555/hub_generated/template_assets/74551990200/1686285215636/Circle_2-0_2021-_Circle_Website_Refresh/js/header-v2.min.js
+web_url: http://www-activesgcircle-gov-sg.sandbox.hs-sites.com
+url: //cdn2.hubspot.net/hub/6212555/hub_generated/template_assets/63257793143/1681816886060/Circle_2-0_2021-_Circle_Website_Refresh/js/lazy-load.min.js
+web_url: http://www-activesgcircle-gov-sg.sandbox.hs-sites.com
+url: //cdn2.hubspot.net/hub/6212555/hub_generated/template_assets/74240226613/1681816893166/Circle_2-0_2021-_Circle_Website_Refresh/js/slick.min.js
+web_url: http://www-activesgcircle-gov-sg.sandbox.hs-sites.com
+url: //cdn2.hubspot.net/hub/6212555/hub_generated/template_assets/58844698655/1682917403720/Circle_2-0_2021-_Circle_Website_Refresh/js/main.min.js
+web_url: http://www-activesgcircle-gov-sg.sandbox.hs-sites.com
+url: //cdn2.hubspot.net/hub/6212555/hub_generated/template_assets/58844154553/1681816890183/Circle_2-0_2021-_Circle_Website_Refresh/js/scripts.min.js
+web_url: http://www-activesgcircle-gov-sg.sandbox.hs-sites.com
+url: //cdn2.hubspot.net/hub/6212555/hub_generated/template_assets/60330279260/1681816890135/Circle_2-0_2021-_Circle_Website_Refresh/js/isotope.pkgd.min.js
+web_url: http://www-activesgcircle-gov-sg.sandbox.hs-sites.com
+url: https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js
+web_url: http://www-activesgcircle-gov-sg.sandbox.hs-sites.com
+url: https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js
+web_url: http://www-activesgcircle-gov-sg.sandbox.hs-sites.com
+url: /hs/hsstatic/cos-i18n/static-1.53/bundles/project.js
+web_url: http://www-activesgcircle-gov-sg.sandbox.hs-sites.com
+url: https://cdn2.hubspot.net/hub/6212555/hub_generated/module_assets/110803672902/1681391612905/module_110803672902_search-input.min.js
+web_url: http://www-activesgcircle-gov-sg.sandbox.hs-sites.com
+url: https://cdn2.hubspot.net/hub/6212555/hub_generated/module_assets/73082696860/1652090014313/module_73082696860_Mobile_Search.min.js
+web_url: http://www-activesgcircle-gov-sg.sandbox.hs-sites.com
+url: /_hcms/forms/v2.js
+web_url: http://www-activesgcircle-gov-sg.sandbox.hs-sites.com
+url: /hs/hsstatic/keyboard-accessible-menu-flyouts/static-1.17/bundles/project.js
+web_url: http://www-activesgcircle-gov-sg.sandbox.hs-sites.com
+url: /hs/scriptloader/6212555.js?businessUnitId=0
+web_url: http://www-activesgcircle-gov-sg.sandbox.hs-sites.com
+url: /hs/hsstatic/HubspotToolsMenu/static-1.191/js/index.js
+total js_files_links: ['http://www-activesgcircle-gov-sg.sandbox.hs-sites.com/hs/hsstatic/jquery-libs/static-1.4/jquery/jquery-1.11.2.js', 'http://www-activesgcircle-gov-sg.sandbox.hs-sites.com/hs/hsstatic/jquery-libs/static-1.4/jquery-migrate/jquery-migrate-1.2.1.js', 'https://play.vidyard.com/embed/v4.js', 'https://www.googletagmanager.com/gtag/js?id=G-G0DYDDP2BY', 'https://assets.wogaa.sg/scripts/wogaa.js', 'https://static.hsappstatic.net/content-cwv-embed/static-1.240/embed.js', 'http://cdn2.hubspot.net/hub/6212555/hub_generated/template_assets/58844823398/1681816892693/Circle_2-0_2021-_Circle_Website_Refresh/js/jquery-2.2.4.min.js', 'http://cdn2.hubspot.net/hub/6212555/hub_generated/template_assets/74551990200/1686285215636/Circle_2-0_2021-_Circle_Website_Refresh/js/header-v2.min.js', 'http://cdn2.hubspot.net/hub/6212555/hub_generated/template_assets/63257793143/1681816886060/Circle_2-0_2021-_Circle_Website_Refresh/js/lazy-load.min.js', 'http://cdn2.hubspot.net/hub/6212555/hub_generated/template_assets/74240226613/1681816893166/Circle_2-0_2021-_Circle_Website_Refresh/js/slick.min.js', 'http://cdn2.hubspot.net/hub/6212555/hub_generated/template_assets/58844698655/1682917403720/Circle_2-0_2021-_Circle_Website_Refresh/js/main.min.js', 'http://cdn2.hubspot.net/hub/6212555/hub_generated/template_assets/58844154553/1681816890183/Circle_2-0_2021-_Circle_Website_Refresh/js/scripts.min.js', 'http://cdn2.hubspot.net/hub/6212555/hub_generated/template_assets/60330279260/1681816890135/Circle_2-0_2021-_Circle_Website_Refresh/js/isotope.pkgd.min.js', 'https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js', 'https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js', 'http://www-activesgcircle-gov-sg.sandbox.hs-sites.com/hs/hsstatic/cos-i18n/static-1.53/bundles/project.js', 'https://cdn2.hubspot.net/hub/6212555/hub_generated/module_assets/110803672902/1681391612905/module_110803672902_search-input.min.js', 'https://cdn2.hubspot.net/hub/6212555/hub_generated/module_assets/73082696860/1652090014313/module_73082696860_Mobile_Search.min.js', 'http://www-activesgcircle-gov-sg.sandbox.hs-sites.com/_hcms/forms/v2.js', 'http://www-activesgcircle-gov-sg.sandbox.hs-sites.com/hs/hsstatic/keyboard-accessible-menu-flyouts/static-1.17/bundles/project.js', 'http://www-activesgcircle-gov-sg.sandbox.hs-sites.com/hs/scriptloader/6212555.js?businessUnitId=0', 'http://www-activesgcircle-gov-sg.sandbox.hs-sites.com/hs/hsstatic/HubspotToolsMenu/static-1.191/js/index.js']
+starting get for each_js_link: http://www-activesgcircle-gov-sg.sandbox.hs-sites.com/hs/hsstatic/jquery-libs/static-1.4/jquery/jquery-1.11.2.js
+starting get for each_js_link: http://www-activesgcircle-gov-sg.sandbox.hs-sites.com/hs/hsstatic/jquery-libs/static-1.4/jquery-migrate/jquery-migrate-1.2.1.js
+starting get for each_js_link: https://play.vidyard.com/embed/v4.js
+starting get for each_js_link: https://www.googletagmanager.com/gtag/js?id=G-G0DYDDP2BY
+starting get for each_js_link: https://assets.wogaa.sg/scripts/wogaa.js
+starting get for each_js_link: https://static.hsappstatic.net/content-cwv-embed/static-1.240/embed.js
+starting get for each_js_link: http://cdn2.hubspot.net/hub/6212555/hub_generated/template_assets/58844823398/1681816892693/Circle_2-0_2021-_Circle_Website_Refresh/js/jquery-2.2.4.min.js
+starting get for each_js_link: http://cdn2.hubspot.net/hub/6212555/hub_generated/template_assets/74551990200/1686285215636/Circle_2-0_2021-_Circle_Website_Refresh/js/header-v2.min.js
+starting get for each_js_link: http://cdn2.hubspot.net/hub/6212555/hub_generated/template_assets/63257793143/1681816886060/Circle_2-0_2021-_Circle_Website_Refresh/js/lazy-load.min.js
+starting get for each_js_link: http://cdn2.hubspot.net/hub/6212555/hub_generated/template_assets/74240226613/1681816893166/Circle_2-0_2021-_Circle_Website_Refresh/js/slick.min.js
+starting get for each_js_link: http://cdn2.hubspot.net/hub/6212555/hub_generated/template_assets/58844698655/1682917403720/Circle_2-0_2021-_Circle_Website_Refresh/js/main.min.js
+starting get for each_js_link: http://cdn2.hubspot.net/hub/6212555/hub_generated/template_assets/58844154553/1681816890183/Circle_2-0_2021-_Circle_Website_Refresh/js/scripts.min.js
+starting get for each_js_link: http://cdn2.hubspot.net/hub/6212555/hub_generated/template_assets/60330279260/1681816890135/Circle_2-0_2021-_Circle_Website_Refresh/js/isotope.pkgd.min.js
+starting get for each_js_link: https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js
+starting get for each_js_link: https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js
+starting get for each_js_link: http://www-activesgcircle-gov-sg.sandbox.hs-sites.com/hs/hsstatic/cos-i18n/static-1.53/bundles/project.js
+starting get for each_js_link: https://cdn2.hubspot.net/hub/6212555/hub_generated/module_assets/110803672902/1681391612905/module_110803672902_search-input.min.js
+starting get for each_js_link: https://cdn2.hubspot.net/hub/6212555/hub_generated/module_assets/73082696860/1652090014313/module_73082696860_Mobile_Search.min.js
+starting get for each_js_link: http://www-activesgcircle-gov-sg.sandbox.hs-sites.com/_hcms/forms/v2.js
+starting get for each_js_link: http://www-activesgcircle-gov-sg.sandbox.hs-sites.com/hs/hsstatic/keyboard-accessible-menu-flyouts/static-1.17/bundles/project.js
+starting get for each_js_link: http://www-activesgcircle-gov-sg.sandbox.hs-sites.com/hs/scriptloader/6212555.js?businessUnitId=0
+starting get for each_js_link: http://www-activesgcircle-gov-sg.sandbox.hs-sites.com/hs/hsstatic/HubspotToolsMenu/static-1.191/js/index.js
+current protocol: https
+returncode: 0
+starting html request.get
+web_url: https://www-activesgcircle-gov-sg.sandbox.hs-sites.com
+url: /hs/hsstatic/jquery-libs/static-1.4/jquery/jquery-1.11.2.js
+web_url: https://www-activesgcircle-gov-sg.sandbox.hs-sites.com
+url: /hs/hsstatic/jquery-libs/static-1.4/jquery-migrate/jquery-migrate-1.2.1.js
+web_url: https://www-activesgcircle-gov-sg.sandbox.hs-sites.com
+url: https://play.vidyard.com/embed/v4.js
+web_url: https://www-activesgcircle-gov-sg.sandbox.hs-sites.com
+url: https://www.googletagmanager.com/gtag/js?id=G-G0DYDDP2BY
+web_url: https://www-activesgcircle-gov-sg.sandbox.hs-sites.com
+url: https://assets.wogaa.sg/scripts/wogaa.js
+web_url: https://www-activesgcircle-gov-sg.sandbox.hs-sites.com
+url: https://static.hsappstatic.net/content-cwv-embed/static-1.240/embed.js
+web_url: https://www-activesgcircle-gov-sg.sandbox.hs-sites.com
+url: //cdn2.hubspot.net/hub/6212555/hub_generated/template_assets/58844823398/1681816892693/Circle_2-0_2021-_Circle_Website_Refresh/js/jquery-2.2.4.min.js
+web_url: https://www-activesgcircle-gov-sg.sandbox.hs-sites.com
+url: //cdn2.hubspot.net/hub/6212555/hub_generated/template_assets/74551990200/1686285215636/Circle_2-0_2021-_Circle_Website_Refresh/js/header-v2.min.js
+web_url: https://www-activesgcircle-gov-sg.sandbox.hs-sites.com
+url: //cdn2.hubspot.net/hub/6212555/hub_generated/template_assets/63257793143/1681816886060/Circle_2-0_2021-_Circle_Website_Refresh/js/lazy-load.min.js
+web_url: https://www-activesgcircle-gov-sg.sandbox.hs-sites.com
+url: //cdn2.hubspot.net/hub/6212555/hub_generated/template_assets/74240226613/1681816893166/Circle_2-0_2021-_Circle_Website_Refresh/js/slick.min.js
+web_url: https://www-activesgcircle-gov-sg.sandbox.hs-sites.com
+url: //cdn2.hubspot.net/hub/6212555/hub_generated/template_assets/58844698655/1682917403720/Circle_2-0_2021-_Circle_Website_Refresh/js/main.min.js
+web_url: https://www-activesgcircle-gov-sg.sandbox.hs-sites.com
+url: //cdn2.hubspot.net/hub/6212555/hub_generated/template_assets/58844154553/1681816890183/Circle_2-0_2021-_Circle_Website_Refresh/js/scripts.min.js
+web_url: https://www-activesgcircle-gov-sg.sandbox.hs-sites.com
+url: //cdn2.hubspot.net/hub/6212555/hub_generated/template_assets/60330279260/1681816890135/Circle_2-0_2021-_Circle_Website_Refresh/js/isotope.pkgd.min.js
+web_url: https://www-activesgcircle-gov-sg.sandbox.hs-sites.com
+url: https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js
+web_url: https://www-activesgcircle-gov-sg.sandbox.hs-sites.com
+url: https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js
+web_url: https://www-activesgcircle-gov-sg.sandbox.hs-sites.com
+url: /hs/hsstatic/cos-i18n/static-1.53/bundles/project.js
+web_url: https://www-activesgcircle-gov-sg.sandbox.hs-sites.com
+url: https://cdn2.hubspot.net/hub/6212555/hub_generated/module_assets/110803672902/1681391612905/module_110803672902_search-input.min.js
+web_url: https://www-activesgcircle-gov-sg.sandbox.hs-sites.com
+url: https://cdn2.hubspot.net/hub/6212555/hub_generated/module_assets/73082696860/1652090014313/module_73082696860_Mobile_Search.min.js
+web_url: https://www-activesgcircle-gov-sg.sandbox.hs-sites.com
+url: /_hcms/forms/v2.js
+web_url: https://www-activesgcircle-gov-sg.sandbox.hs-sites.com
+url: /hs/hsstatic/keyboard-accessible-menu-flyouts/static-1.17/bundles/project.js
+web_url: https://www-activesgcircle-gov-sg.sandbox.hs-sites.com
+url: /hs/scriptloader/6212555.js?businessUnitId=0
+web_url: https://www-activesgcircle-gov-sg.sandbox.hs-sites.com
+url: /hs/hsstatic/HubspotToolsMenu/static-1.191/js/index.js
+total js_files_links: ['https://www-activesgcircle-gov-sg.sandbox.hs-sites.com/hs/hsstatic/jquery-libs/static-1.4/jquery/jquery-1.11.2.js', 'https://www-activesgcircle-gov-sg.sandbox.hs-sites.com/hs/hsstatic/jquery-libs/static-1.4/jquery-migrate/jquery-migrate-1.2.1.js', 'https://play.vidyard.com/embed/v4.js', 'https://www.googletagmanager.com/gtag/js?id=G-G0DYDDP2BY', 'https://assets.wogaa.sg/scripts/wogaa.js', 'https://static.hsappstatic.net/content-cwv-embed/static-1.240/embed.js', 'https://cdn2.hubspot.net/hub/6212555/hub_generated/template_assets/58844823398/1681816892693/Circle_2-0_2021-_Circle_Website_Refresh/js/jquery-2.2.4.min.js', 'https://cdn2.hubspot.net/hub/6212555/hub_generated/template_assets/74551990200/1686285215636/Circle_2-0_2021-_Circle_Website_Refresh/js/header-v2.min.js', 'https://cdn2.hubspot.net/hub/6212555/hub_generated/template_assets/63257793143/1681816886060/Circle_2-0_2021-_Circle_Website_Refresh/js/lazy-load.min.js', 'https://cdn2.hubspot.net/hub/6212555/hub_generated/template_assets/74240226613/1681816893166/Circle_2-0_2021-_Circle_Website_Refresh/js/slick.min.js', 'https://cdn2.hubspot.net/hub/6212555/hub_generated/template_assets/58844698655/1682917403720/Circle_2-0_2021-_Circle_Website_Refresh/js/main.min.js', 'https://cdn2.hubspot.net/hub/6212555/hub_generated/template_assets/58844154553/1681816890183/Circle_2-0_2021-_Circle_Website_Refresh/js/scripts.min.js', 'https://cdn2.hubspot.net/hub/6212555/hub_generated/template_assets/60330279260/1681816890135/Circle_2-0_2021-_Circle_Website_Refresh/js/isotope.pkgd.min.js', 'https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js', 'https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js', 'https://www-activesgcircle-gov-sg.sandbox.hs-sites.com/hs/hsstatic/cos-i18n/static-1.53/bundles/project.js', 'https://cdn2.hubspot.net/hub/6212555/hub_generated/module_assets/110803672902/1681391612905/module_110803672902_search-input.min.js', 'https://cdn2.hubspot.net/hub/6212555/hub_generated/module_assets/73082696860/1652090014313/module_73082696860_Mobile_Search.min.js', 'https://www-activesgcircle-gov-sg.sandbox.hs-sites.com/_hcms/forms/v2.js', 'https://www-activesgcircle-gov-sg.sandbox.hs-sites.com/hs/hsstatic/keyboard-accessible-menu-flyouts/static-1.17/bundles/project.js', 'https://www-activesgcircle-gov-sg.sandbox.hs-sites.com/hs/scriptloader/6212555.js?businessUnitId=0', 'https://www-activesgcircle-gov-sg.sandbox.hs-sites.com/hs/hsstatic/HubspotToolsMenu/static-1.191/js/index.js']
+starting get for each_js_link: https://www-activesgcircle-gov-sg.sandbox.hs-sites.com/hs/hsstatic/jquery-libs/static-1.4/jquery/jquery-1.11.2.js
+starting get for each_js_link: https://www-activesgcircle-gov-sg.sandbox.hs-sites.com/hs/hsstatic/jquery-libs/static-1.4/jquery-migrate/jquery-migrate-1.2.1.js
+starting get for each_js_link: https://play.vidyard.com/embed/v4.js
+starting get for each_js_link: https://www.googletagmanager.com/gtag/js?id=G-G0DYDDP2BY
+starting get for each_js_link: https://assets.wogaa.sg/scripts/wogaa.js
+starting get for each_js_link: https://static.hsappstatic.net/content-cwv-embed/static-1.240/embed.js
+starting get for each_js_link: https://cdn2.hubspot.net/hub/6212555/hub_generated/template_assets/58844823398/1681816892693/Circle_2-0_2021-_Circle_Website_Refresh/js/jquery-2.2.4.min.js
+starting get for each_js_link: https://cdn2.hubspot.net/hub/6212555/hub_generated/template_assets/74551990200/1686285215636/Circle_2-0_2021-_Circle_Website_Refresh/js/header-v2.min.js
+starting get for each_js_link: https://cdn2.hubspot.net/hub/6212555/hub_generated/template_assets/63257793143/1681816886060/Circle_2-0_2021-_Circle_Website_Refresh/js/lazy-load.min.js
+starting get for each_js_link: https://cdn2.hubspot.net/hub/6212555/hub_generated/template_assets/74240226613/1681816893166/Circle_2-0_2021-_Circle_Website_Refresh/js/slick.min.js
+starting get for each_js_link: https://cdn2.hubspot.net/hub/6212555/hub_generated/template_assets/58844698655/1682917403720/Circle_2-0_2021-_Circle_Website_Refresh/js/main.min.js
+starting get for each_js_link: https://cdn2.hubspot.net/hub/6212555/hub_generated/template_assets/58844154553/1681816890183/Circle_2-0_2021-_Circle_Website_Refresh/js/scripts.min.js
+starting get for each_js_link: https://cdn2.hubspot.net/hub/6212555/hub_generated/template_assets/60330279260/1681816890135/Circle_2-0_2021-_Circle_Website_Refresh/js/isotope.pkgd.min.js
+starting get for each_js_link: https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js
+starting get for each_js_link: https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js
+starting get for each_js_link: https://www-activesgcircle-gov-sg.sandbox.hs-sites.com/hs/hsstatic/cos-i18n/static-1.53/bundles/project.js
+starting get for each_js_link: https://cdn2.hubspot.net/hub/6212555/hub_generated/module_assets/110803672902/1681391612905/module_110803672902_search-input.min.js
+starting get for each_js_link: https://cdn2.hubspot.net/hub/6212555/hub_generated/module_assets/73082696860/1652090014313/module_73082696860_Mobile_Search.min.js
+starting get for each_js_link: https://www-activesgcircle-gov-sg.sandbox.hs-sites.com/_hcms/forms/v2.js
+starting get for each_js_link: https://www-activesgcircle-gov-sg.sandbox.hs-sites.com/hs/hsstatic/keyboard-accessible-menu-flyouts/static-1.17/bundles/project.js
+starting get for each_js_link: https://www-activesgcircle-gov-sg.sandbox.hs-sites.com/hs/scriptloader/6212555.js?businessUnitId=0
+starting get for each_js_link: https://www-activesgcircle-gov-sg.sandbox.hs-sites.com/hs/hsstatic/HubspotToolsMenu/static-1.191/js/index.js
+duration_log grab_html_js: 17.408154000004288
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/www-activesgcircle-gov-sg.sandbox.hs-sites.com_20230612_095837.452.txt
+duration_log get_whois_info: 1.2037659999914467
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/www-activesgcircle-gov-sg.sandbox.hs-sites.com_gethostbyname_ex_20230612_095838.657.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: www-activesgcircle-gov-sg.sandbox.hs-sites.com. IN NS
+duration_log get_dns_info: 0.03328140004305169
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 11.18382879998535
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.6872827999759465
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for www-activesgcircle-gov-sg.sandbox.hs-sites.com, time taken 50.395798499986995 seconds
+
+
+current domain in process_parent:www-houze-com-sg%2fpages%2fonline--shopping--the--houze--way.cdn.ampproject.org
+===== to_skip function start =====
+www-houze-com-sg%2fpages%2fonline--shopping--the--houze--way.cdn.ampproject.org has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: www-houze-com-sg%2fpages%2fonline--shopping--the--houze--way.cdn.ampproject.org now: 2023-06-12 09:58:50.643546+00:00
+call_status_code: 404, continuing to next ip_or_domain
+current domain in process_parent:www-houze-com-sg.cdn.ampproject.org
+===== to_skip function start =====
+www-houze-com-sg.cdn.ampproject.org has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: www-houze-com-sg.cdn.ampproject.org now: 2023-06-12 09:58:51.262220+00:00
+duration_log vt_call: 0.9708339999779128
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/www-houze-com-sg.cdn.ampproject.org_http_20230612_095852.244.pngscreenshot found for protocol: https and saved to resources/shot-scraper/www-houze-com-sg.cdn.ampproject.org_https_20230612_095852.244.pngduration_log screenshot: 10.220129099965561
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 0
+starting html request.get
+total js_files_links: []
+duration_log grab_html_js: 0.2528537000180222
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/www-houze-com-sg.cdn.ampproject.org_20230612_095902.746.txt
+duration_log get_whois_info: 0.9621127999853343
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/www-houze-com-sg.cdn.ampproject.org_gethostbyname_ex_20230612_095903.713.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: www-houze-com-sg.cdn.ampproject.org. IN NS
+duration_log get_dns_info: 0.034147300000768155
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 10.133352899982128
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7800537999719381
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for www-houze-com-sg.cdn.ampproject.org, time taken 23.457617899985053 seconds
+
+
+current domain in process_parent:houze-com-sg.cdn.ampproject.org
+===== to_skip function start =====
+houze-com-sg.cdn.ampproject.org has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: houze-com-sg.cdn.ampproject.org now: 2023-06-12 09:59:14.751826+00:00
+duration_log vt_call: 1.019886200025212
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/houze-com-sg.cdn.ampproject.org_http_20230612_095915.785.pngscreenshot found for protocol: https and saved to resources/shot-scraper/houze-com-sg.cdn.ampproject.org_https_20230612_095915.785.pngduration_log screenshot: 10.89458319998812
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 0
+starting html request.get
+total js_files_links: []
+duration_log grab_html_js: 0.26818549999734387
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/houze-com-sg.cdn.ampproject.org_20230612_095926.977.txt
+duration_log get_whois_info: 0.44596480001928285
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/houze-com-sg.cdn.ampproject.org_gethostbyname_ex_20230612_095927.424.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: houze-com-sg.cdn.ampproject.org. IN NS
+duration_log get_dns_info: 0.02925730001879856
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 0.8128407999756746
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.899595600028988
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for houze-com-sg.cdn.ampproject.org, time taken 15.000780300004408 seconds
+
+

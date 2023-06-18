@@ -1,0 +1,4 @@
+current domain in process_parent:www.facebook.com
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/www.facebook.com_http_20230616_040915.934.pngduration_log screenshot: 16.825071600003866
+===== screenshot function end =====

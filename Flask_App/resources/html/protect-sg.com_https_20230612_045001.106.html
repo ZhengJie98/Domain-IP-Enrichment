@@ -1,0 +1,877 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Mon, 12 Jun 2023 04:50:04 GMT
+Content-Type: text/html; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Strict-Transport-Security: max-age=86400
+Vary: Accept-Encoding
+X-hacker: If you're reading this, you should visit automattic.com/jobs and apply to join the fun, mention this header.
+Host-Header: WordPress.com
+Link: <https://wp.me/P1FFMF-22>; rel=shortlink
+Vary: accept, content-type, cookie
+X-ac: 2.sin _bur EXPIRED
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Protect-Singapore | Official Representative for Itay Gil&#039;s Protect Krav Maga in Singapore</title>
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="https://protect-sg.com/xmlrpc.php">
+<meta name='robots' content='max-image-preview:large' />
+
+<!-- Async WordPress.com Remote Login -->
+<script id="wpcom_remote_login_js">
+var wpcom_remote_login_extra_auth = '';
+function wpcom_remote_login_remove_dom_node_id( element_id ) {
+	var dom_node = document.getElementById( element_id );
+	if ( dom_node ) { dom_node.parentNode.removeChild( dom_node ); }
+}
+function wpcom_remote_login_remove_dom_node_classes( class_name ) {
+	var dom_nodes = document.querySelectorAll( '.' + class_name );
+	for ( var i = 0; i < dom_nodes.length; i++ ) {
+		dom_nodes[ i ].parentNode.removeChild( dom_nodes[ i ] );
+	}
+}
+function wpcom_remote_login_final_cleanup() {
+	wpcom_remote_login_remove_dom_node_classes( "wpcom_remote_login_msg" );
+	wpcom_remote_login_remove_dom_node_id( "wpcom_remote_login_key" );
+	wpcom_remote_login_remove_dom_node_id( "wpcom_remote_login_validate" );
+	wpcom_remote_login_remove_dom_node_id( "wpcom_remote_login_js" );
+	wpcom_remote_login_remove_dom_node_id( "wpcom_request_access_iframe" );
+	wpcom_remote_login_remove_dom_node_id( "wpcom_request_access_styles" );
+}
+
+// Watch for messages back from the remote login
+window.addEventListener( "message", function( e ) {
+	if ( e.origin === "https://r-login.wordpress.com" ) {
+		var data = {};
+		try {
+			data = JSON.parse( e.data );
+		} catch( e ) {
+			wpcom_remote_login_final_cleanup();
+			return;
+		}
+
+		if ( data.msg === 'LOGIN' ) {
+			// Clean up the login check iframe
+			wpcom_remote_login_remove_dom_node_id( "wpcom_remote_login_key" );
+
+			var id_regex = new RegExp( /^[0-9]+$/ );
+			var token_regex = new RegExp( /^.*|.*|.*$/ );
+			if (
+				token_regex.test( data.token )
+				&& id_regex.test( data.wpcomid )
+			) {
+				// We have everything we need to ask for a login
+				var script = document.createElement( "script" );
+				script.setAttribute( "id", "wpcom_remote_login_validate" );
+				script.src = '/remote-login.php?wpcom_remote_login=validate'
+					+ '&wpcomid=' + data.wpcomid
+					+ '&token=' + encodeURIComponent( data.token )
+					+ '&host=' + window.location.protocol
+					+ '//' + window.location.hostname
+					+ '&postid=126'
+					+ '&is_singular=';
+				document.body.appendChild( script );
+			}
+
+			return;
+		}
+
+		// Safari ITP, not logged in, so redirect
+		if ( data.msg === 'LOGIN-REDIRECT' ) {
+			window.location = 'https://wordpress.com/log-in?redirect_to=' + window.location.href;
+			return;
+		}
+
+		// Safari ITP, storage access failed, remove the request
+		if ( data.msg === 'LOGIN-REMOVE' ) {
+			var css_zap = 'html { -webkit-transition: margin-top 1s; transition: margin-top 1s; } /* 9001 */ html { margin-top: 0 !important; } * html body { margin-top: 0 !important; } @media screen and ( max-width: 782px ) { html { margin-top: 0 !important; } * html body { margin-top: 0 !important; } }';
+			var style_zap = document.createElement( 'style' );
+			style_zap.type = 'text/css';
+			style_zap.appendChild( document.createTextNode( css_zap ) );
+			document.body.appendChild( style_zap );
+
+			var e = document.getElementById( 'wpcom_request_access_iframe' );
+			e.parentNode.removeChild( e );
+
+			document.cookie = 'wordpress_com_login_access=denied; path=/; max-age=31536000';
+
+			return;
+		}
+
+		// Safari ITP
+		if ( data.msg === 'REQUEST_ACCESS' ) {
+			console.log( 'request access: safari' );
+
+			// Check ITP iframe enable/disable knob
+			if ( wpcom_remote_login_extra_auth !== 'safari_itp_iframe' ) {
+				return;
+			}
+
+			// If we are in a "private window" there is no ITP.
+			var private_window = false;
+			try {
+				var opendb = window.openDatabase( null, null, null, null );
+			} catch( e ) {
+				private_window = true;
+			}
+
+			if ( private_window ) {
+				console.log( 'private window' );
+				return;
+			}
+
+			var iframe = document.createElement( 'iframe' );
+			iframe.id = 'wpcom_request_access_iframe';
+			iframe.setAttribute( 'scrolling', 'no' );
+			iframe.setAttribute( 'sandbox', 'allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-top-navigation-by-user-activation' );
+			iframe.src = 'https://r-login.wordpress.com/remote-login.php?wpcom_remote_login=request_access&origin=' + encodeURIComponent( data.origin ) + '&wpcomid=' + encodeURIComponent( data.wpcomid );
+
+			var css = 'html { -webkit-transition: margin-top 1s; transition: margin-top 1s; } /* 9001 */ html { margin-top: 46px !important; } * html body { margin-top: 46px !important; } @media screen and ( max-width: 660px ) { html { margin-top: 71px !important; } * html body { margin-top: 71px !important; } #wpcom_request_access_iframe { display: block; height: 71px !important; } } #wpcom_request_access_iframe { border: 0px; height: 46px; position: fixed; top: 0; left: 0; width: 100%; min-width: 100%; z-index: 99999; background: #23282d; } ';
+
+			var style = document.createElement( 'style' );
+			style.type = 'text/css';
+			style.id = 'wpcom_request_access_styles';
+			style.appendChild( document.createTextNode( css ) );
+			document.body.appendChild( style );
+
+			document.body.appendChild( iframe );
+		}
+
+		if ( data.msg === 'DONE' ) {
+			wpcom_remote_login_final_cleanup();
+		}
+	}
+}, false );
+
+// Inject the remote login iframe after the page has had a chance to load
+// more critical resources
+window.addEventListener( "DOMContentLoaded", function( e ) {
+	var iframe = document.createElement( "iframe" );
+	iframe.style.display = "none";
+	iframe.setAttribute( "scrolling", "no" );
+	iframe.setAttribute( "id", "wpcom_remote_login_key" );
+	iframe.src = "https://r-login.wordpress.com/remote-login.php"
+		+ "?wpcom_remote_login=key"
+		+ "&origin=aHR0cHM6Ly9wcm90ZWN0LXNnLmNvbQ%3D%3D"
+		+ "&wpcomid=24708405"
+		+ "&time=1686545404";
+	document.body.appendChild( iframe );
+}, false );
+</script>
+<link rel='dns-prefetch' href='//s2.wp.com' />
+<link rel='dns-prefetch' href='//s0.wp.com' />
+<link rel='dns-prefetch' href='//s1.wp.com' />
+<link rel='dns-prefetch' href='//fonts-api.wp.com' />
+<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="Protect-Singapore &raquo; Feed" href="https://protect-sg.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Protect-Singapore &raquo; Comments Feed" href="https://protect-sg.com/comments/feed/" />
+	<script type="text/javascript">
+		/* <![CDATA[ */
+		function addLoadEvent(func) {
+			var oldonload = window.onload;
+			if (typeof window.onload != 'function') {
+				window.onload = func;
+			} else {
+				window.onload = function () {
+					oldonload();
+					func();
+				}
+			}
+		}
+		/* ]]> */
+	</script>
+	<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s0.wp.com\/wp-content\/mu-plugins\/wpcom-smileys\/twemoji\/2\/72x72\/","ext":".png","svgUrl":"https:\/\/s0.wp.com\/wp-content\/mu-plugins\/wpcom-smileys\/twemoji\/2\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/s2.wp.com\/wp-includes\/js\/wp-emoji-release.min.js?m=1677072837i&ver=6.2.1-RC1-55769"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){p.clearRect(0,0,i.width,i.height),p.fillText(e,0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(t,0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(p&&p.fillText)switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s("\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!s("\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!s("\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!s("\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff","\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff")}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);
+</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link crossorigin='anonymous' rel='stylesheet' id='all-css-0-1' href='https://s2.wp.com/_static/??-eJyFUdFuwjAM/KGlFhIweJj2KVOaWJlZkkaxA+vfzysrKtuAFytn+3znGE7FuCELZoESW6DMEJrCHmvQSkU4rjbdvltB3yh66OPgPkykvto6AssYsXPMT7AYlJqZZx1QilXCGQO3PKfejpj9UME2GZIVIXdpPpLHoVRkvhJFT6KECTBMTRrxdNGn7GLzqKoMSbstRkyToQUo0Y5YTcRg3dglyo/pWlviK9Ltz/vxOS+lskMTEyr5G9/2cES1QjnwL/rFtibARctMzsi7WuV/nS6u831fzadi/y55h3YiH1DOgue3Efy8TykqY/p+uqrRmKil2aXyXtPLarvbPK93683+8AVVFPoH&cssminify=yes' type='text/css' media='all' />
+<style id='wp-block-library-inline-css'>
+.has-text-align-justify {
+	text-align:justify;
+}
+.wp-block-cover__image-background.has-parallax {
+	background-size: cover;
+}
+</style>
+<style id='global-styles-inline-css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--font-family--albert-sans: 'Albert Sans';--wp--preset--font-family--alegreya: Alegreya;--wp--preset--font-family--arvo: Arvo;--wp--preset--font-family--bodoni-moda: 'Bodoni Moda';--wp--preset--font-family--cabin: Cabin;--wp--preset--font-family--chivo: Chivo;--wp--preset--font-family--commissioner: Commissioner;--wp--preset--font-family--cormorant: Cormorant;--wp--preset--font-family--courier-prime: 'Courier Prime';--wp--preset--font-family--crimson-pro: 'Crimson Pro';--wp--preset--font-family--dm-mono: 'DM Mono';--wp--preset--font-family--dm-sans: 'DM Sans';--wp--preset--font-family--domine: Domine;--wp--preset--font-family--eb-garamond: 'EB Garamond';--wp--preset--font-family--epilogue: Epilogue;--wp--preset--font-family--figtree: Figtree;--wp--preset--font-family--fira-sans: 'Fira Sans';--wp--preset--font-family--fraunces: Fraunces;--wp--preset--font-family--ibm-plex-mono: 'IBM Plex Mono';--wp--preset--font-family--ibm-plex-sans: 'IBM Plex Sans';--wp--preset--font-family--inter: Inter;--wp--preset--font-family--josefin-sans: 'Josefin Sans';--wp--preset--font-family--jost: Jost;--wp--preset--font-family--libre-baskerville: 'Libre Baskerville';--wp--preset--font-family--libre-franklin: 'Libre Franklin';--wp--preset--font-family--literata: Literata;--wp--preset--font-family--lora: Lora;--wp--preset--font-family--merriweather: Merriweather;--wp--preset--font-family--montserrat: Montserrat;--wp--preset--font-family--newsreader: Newsreader;--wp--preset--font-family--nunito: Nunito;--wp--preset--font-family--open-sans: 'Open Sans';--wp--preset--font-family--overpass: Overpass;--wp--preset--font-family--petrona: Petrona;--wp--preset--font-family--piazzolla: Piazzolla;--wp--preset--font-family--playfair-display: 'Playfair Display';--wp--preset--font-family--plus-jakarta-sans: 'Plus Jakarta Sans';--wp--preset--font-family--poppins: Poppins;--wp--preset--font-family--raleway: Raleway;--wp--preset--font-family--roboto-slab: 'Roboto Slab';--wp--preset--font-family--roboto: Roboto;--wp--preset--font-family--rubik: Rubik;--wp--preset--font-family--sora: Sora;--wp--preset--font-family--source-sans-pro: 'Source Sans Pro';--wp--preset--font-family--source-serif-pro: 'Source Serif Pro';--wp--preset--font-family--space-mono: 'Space Mono';--wp--preset--font-family--texturina: Texturina;--wp--preset--font-family--work-sans: 'Work Sans';--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+</style>
+<link crossorigin='anonymous' rel='stylesheet' id='all-css-2-1' href='https://s0.wp.com/wp-content/themes/pub/big-brother/style.css?m=1513292499i&cssminify=yes' type='text/css' media='all' />
+<link rel='stylesheet' id='big-brother-gentium-css' href='https://fonts-api.wp.com/css?family=Gentium+Basic%3A400%2C700%2C400italic%2C700italic&#038;subset=latin%2Clatin-ext&#038;ver=6.2.1-RC1-55769' media='all' />
+<link rel='stylesheet' id='big-brother-open-sans-css' href='https://fonts-api.wp.com/css?family=Open+Sans%3A400%2C800&#038;subset=latin%2Clatin-ext&#038;ver=6.2.1-RC1-55769' media='all' />
+<link crossorigin='anonymous' rel='stylesheet' id='all-css-6-1' href='https://s2.wp.com/_static/??-eJx9ztEKAiEQBdAfymZ92KWX6FNC3cHcHBVnRPr7XAgKit7uHbiHgV6Uy0kwCVBTJTYfEsOGUoy7vzpwS3ANyYHHhDWMAf+OR8d8gA9TbkjIUJoFG7yyNY9Lhd1ieURUvbhMX7P/r1BeWxxqD6tH4aGxGF8NvdMuXuisl9Os9Twt0/YECe5Xzw==&cssminify=yes' type='text/css' media='all' />
+<style id='jetpack_facebook_likebox-inline-css'>
+.widget_facebook_likebox {
+	overflow: hidden;
+}
+
+</style>
+<link crossorigin='anonymous' rel='stylesheet' id='all-css-8-1' href='https://s1.wp.com/_static/??-eJzTLy/QTc7PK0nNK9HPLdUtyClNz8wr1k9PzdfNyU9OLMnMz0Ph6KblJGYW6SUXF+voY9dalJqUk58OZKbrA1UhcUGa7HNtDU1MLU1MLMwNTbIAmkQtqg==&cssminify=yes' type='text/css' media='all' />
+<link crossorigin='anonymous' rel='stylesheet' id='print-css-9-1' href='https://s1.wp.com/wp-content/mu-plugins/global-print/global-print.css?m=1465851035i&cssminify=yes' type='text/css' media='print' />
+<style id='jetpack-global-styles-frontend-style-inline-css'>
+:root { --font-headings: unset; --font-base: unset; --font-headings-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif; --font-base-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;}
+</style>
+<link crossorigin='anonymous' rel='stylesheet' id='all-css-12-1' href='https://s2.wp.com/wp-content/themes/h4/global.css?m=1420737423i&cssminify=yes' type='text/css' media='all' />
+<script id='wpcom-actionbar-placeholder-js-extra'>
+var actionbardata = {"siteID":"24708405","siteURL":"https:\/\/protect-sg.com","xhrURL":"https:\/\/protect-sg.com\/wp-admin\/admin-ajax.php","nonce":"d140d23ef4","isLoggedIn":"","statusMessage":"","subsEmailDefault":"instantly","proxyScriptUrl":"https:\/\/s0.wp.com\/wp-content\/js\/wpcom-proxy-request.js?ver=20211021","shortlink":"https:\/\/wp.me\/P1FFMF-22","i18n":{"followedText":"New posts from this site will now appear in your <a href=\"https:\/\/wordpress.com\/read\">Reader<\/a>","foldBar":"Collapse this bar","unfoldBar":"Expand this bar"}};
+</script>
+<script crossorigin='anonymous' type='text/javascript' src='https://s1.wp.com/_static/??/wp-content/js/mobile-useragent-info.js,/wp-content/js/rlt-proxy.js?m=1637704497j'></script>
+<script type='text/javascript'>
+	window.addEventListener( 'DOMContentLoaded', function() {
+		rltInitialize( {"token":null,"iframeOrigins":["https:\/\/widgets.wp.com"]} );
+	} );
+</script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://protectsingapore.wordpress.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://s1.wp.com/wp-includes/wlwmanifest.xml" />
+<meta name="generator" content="WordPress.com" />
+<link rel="canonical" href="https://protect-sg.com/" />
+<link rel='shortlink' href='https://wp.me/P1FFMF-22' />
+<link rel="alternate" type="application/json+oembed" href="https://public-api.wordpress.com/oembed/?format=json&amp;url=https%3A%2F%2Fprotect-sg.com%2F&amp;for=wpcom-auto-discovery" /><link rel="alternate" type="application/xml+oembed" href="https://public-api.wordpress.com/oembed/?format=xml&amp;url=https%3A%2F%2Fprotect-sg.com%2F&amp;for=wpcom-auto-discovery" />
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Protect-Singapore" />
+<meta property="og:description" content="Official Representative for Itay Gil&#039;s Protect Krav Maga in Singapore" />
+<meta property="og:url" content="https://protect-sg.com/" />
+<meta property="og:site_name" content="Protect-Singapore" />
+<meta property="og:image" content="https://protectsingapore.files.wordpress.com/2011/09/philosophy.png" />
+<meta property="og:image:width" content="1312" />
+<meta property="og:image:height" content="657" />
+<meta property="og:image:alt" content="" />
+<meta property="og:locale" content="en_US" />
+<meta property="article:publisher" content="https://www.facebook.com/WordPresscom" />
+<meta name="twitter:text:title" content="Top Israeli Combative&nbsp;System" />
+<meta name="twitter:image" content="https://protectsingapore.files.wordpress.com/2011/09/philosophy.png?w=640" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<!-- End Jetpack Open Graph Tags -->
+<link rel='openid.server' href='https://protect-sg.com/?openidserver=1' />
+<link rel='openid.delegate' href='https://protect-sg.com/' />
+<link rel="search" type="application/opensearchdescription+xml" href="https://protect-sg.com/osd.xml" title="Protect-Singapore" />
+<link rel="search" type="application/opensearchdescription+xml" href="https://s1.wp.com/opensearch.xml" title="WordPress.com" />
+<meta name="theme-color" content="#f5f6f7" />
+		<style type="text/css">
+			.recentcomments a {
+				display: inline !important;
+				padding: 0 !important;
+				margin: 0 !important;
+			}
+
+			table.recentcommentsavatartop img.avatar, table.recentcommentsavatarend img.avatar {
+				border: 0px;
+				margin: 0;
+			}
+
+			table.recentcommentsavatartop a, table.recentcommentsavatarend a {
+				border: 0px !important;
+				background-color: transparent !important;
+			}
+
+			td.recentcommentsavatarend, td.recentcommentsavatartop {
+				padding: 0px 0px 1px 0px;
+				margin: 0px;
+			}
+
+			td.recentcommentstextend {
+				border: none !important;
+				padding: 0px 0px 2px 10px;
+			}
+
+			.rtl td.recentcommentstextend {
+				padding: 0px 10px 2px 0px;
+			}
+
+			td.recentcommentstexttop {
+				border: none;
+				padding: 0px 0px 0px 10px;
+			}
+
+			.rtl td.recentcommentstexttop {
+				padding: 0px 10px 0px 0px;
+			}
+		</style>
+		<meta name="application-name" content="Protect-Singapore" /><meta name="msapplication-window" content="width=device-width;height=device-height" /><meta name="msapplication-tooltip" content="Official Representative for Itay Gil&#039;s Protect Krav Maga in Singapore" /><meta name="msapplication-task" content="name=Subscribe;action-uri=https://protect-sg.com/feed/;icon-uri=https://protectsingapore.files.wordpress.com/2017/09/cropped-protect-sg-logo-transparent-e1505137991606.png?w=16" /><meta name="msapplication-task" content="name=Sign up for a free blog;action-uri=http://wordpress.com/signup/;icon-uri=https://s1.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=WordPress.com Support;action-uri=http://support.wordpress.com/;icon-uri=https://s1.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=WordPress.com Forums;action-uri=http://forums.wordpress.com/;icon-uri=https://s1.wp.com/i/favicon.ico" /><meta name="description" content="REALISTIC TRAINING • REALISTIC SCENARIOS • REALISTIC APPLICATIONS Protect-SG is the sole representative for Protect-Israel in Singapore. Apart from customised Krav Maga training for both commercial and individual needs, Protect-SG also serves as a platform for businesses in Singapore to work with Israeli security experts for a whole range of security needs. The Krav Maga&hellip;" />
+	<style type="text/css">
+			.site-title,
+		.site-description {
+			position: absolute;
+			clip: rect(1px, 1px, 1px, 1px);
+		}
+		</style>
+	<link rel="icon" href="https://protectsingapore.files.wordpress.com/2017/09/cropped-protect-sg-logo-transparent-e1505137991606.png?w=32" sizes="32x32" />
+<link rel="icon" href="https://protectsingapore.files.wordpress.com/2017/09/cropped-protect-sg-logo-transparent-e1505137991606.png?w=192" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://protectsingapore.files.wordpress.com/2017/09/cropped-protect-sg-logo-transparent-e1505137991606.png?w=180" />
+<meta name="msapplication-TileImage" content="https://protectsingapore.files.wordpress.com/2017/09/cropped-protect-sg-logo-transparent-e1505137991606.png?w=265" />
+
+</head>
+
+<body class="home page-template-default page page-id-126 wp-custom-logo customizer-styles-applied has-site-logo highlander-enabled highlander-light">
+<div id="page" class="hfeed site">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+		<header id="masthead" class="site-header clearfix" role="banner">
+								<div class="header-image" style="background-image: url(https://protectsingapore.files.wordpress.com/2014/11/cropped-banner115.png); "></div>
+				<div class="site-branding has-header">
+			<a href="https://protect-sg.com/" class="site-logo-link" rel="home" itemprop="url"><img width="912" height="221" src="https://protectsingapore.files.wordpress.com/2014/11/transparent1.png?w=912" class="site-logo attachment-big-brother-logo" alt="" decoding="async" loading="lazy" data-size="big-brother-logo" itemprop="logo" srcset="https://protectsingapore.files.wordpress.com/2014/11/transparent1.png?w=912 912w, https://protectsingapore.files.wordpress.com/2014/11/transparent1.png?w=150 150w, https://protectsingapore.files.wordpress.com/2014/11/transparent1.png?w=300 300w, https://protectsingapore.files.wordpress.com/2014/11/transparent1.png?w=768 768w, https://protectsingapore.files.wordpress.com/2014/11/transparent1.png?w=1024 1024w, https://protectsingapore.files.wordpress.com/2014/11/transparent1.png 1093w" sizes="(max-width: 912px) 100vw, 912px" data-attachment-id="1078" data-permalink="https://protect-sg.com/transparent1/" data-orig-file="https://protectsingapore.files.wordpress.com/2014/11/transparent1.png" data-orig-size="1093,265" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Transparent1" data-image-description="" data-image-caption="" data-medium-file="https://protectsingapore.files.wordpress.com/2014/11/transparent1.png?w=300" data-large-file="https://protectsingapore.files.wordpress.com/2014/11/transparent1.png?w=700" /></a>			<h1 class="site-title"><a href="https://protect-sg.com/" rel="home">Protect-Singapore</a></h1>
+			<h2 class="site-description">Official Representative for Itay Gil&#039;s Protect Krav Maga in Singapore</h2>
+		</div>
+
+		<nav id="site-navigation" class="main-navigation nav-horizontal has-header" role="navigation">
+			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">Menu</button>
+			<div class="menu-navigation-container"><ul id="primary-menu" class="menu"><li id="menu-item-955" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-955"><a href="https://protect-sg.com/" aria-current="page">Home</a></li>
+<li id="menu-item-923" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-923"><a>About Us</a>
+<ul class="sub-menu">
+	<li id="menu-item-1158" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1158"><a href="https://protect-sg.com/global-team/">Global Team</a>
+	<ul class="sub-menu">
+		<li id="menu-item-1161" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1161"><a href="https://protect-sg.com/protect-israel/">Protect-Israel</a></li>
+		<li id="menu-item-1162" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1162"><a href="https://protect-sg.com/itay-gil/">Dr. Itay Gil</a></li>
+		<li id="menu-item-1159" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1159"><a href="https://protect-sg.com/clients/">Clients</a></li>
+		<li id="menu-item-1160" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1160"><a href="https://protect-sg.com/accredition/">Accreditation</a></li>
+	</ul>
+</li>
+	<li id="menu-item-927" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-927"><a href="https://protect-sg.com/protect-sgteam/">Protect-SG Team</a>
+	<ul class="sub-menu">
+		<li id="menu-item-1187" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1187"><a href="https://protect-sg.com/about-protect-sg/">About Protect-SG</a></li>
+		<li id="menu-item-928" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-928"><a href="https://protect-sg.com/director/">Director Protect (SG) – Pyong</a></li>
+		<li id="menu-item-929" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-929"><a href="https://protect-sg.com/master-instructor/">Master Instructor – G.L</a></li>
+		<li id="menu-item-2693" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2693"><a href="https://protect-sg.com/protect-instructor-daniel-poey/">Senior Instructor – Daniel Poey</a></li>
+		<li id="menu-item-3407" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3407"><a href="https://protect-sg.com/female-instructor-ira/">Female Instructor – Ira Kezia</a></li>
+		<li id="menu-item-5474" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5474"><a href="https://protect-sg.com/protect-sgteam/senior-instructor-garry-yan/">Instructor – Garry Yan</a></li>
+	</ul>
+</li>
+	<li id="menu-item-931" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-931"><a href="https://protect-sg.com/about-krav-maga/">About Krav Maga</a></li>
+</ul>
+</li>
+<li id="menu-item-932" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-932"><a href="https://protect-sg.com/schedule-rates/">Schedule &amp; Rates</a></li>
+<li id="menu-item-935" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-935"><a>Training and Services</a>
+<ul class="sub-menu">
+	<li id="menu-item-1271" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1271"><a href="https://protect-sg.com/krav-maga-courses-2/">Krav Maga Courses</a></li>
+	<li id="menu-item-1286" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1286"><a href="https://protect-sg.com/specialist-courses/">Specialist Courses</a>
+	<ul class="sub-menu">
+		<li id="menu-item-941" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-941"><a href="https://protect-sg.com/executive-protection-course/">Executive Protection Krav Maga Course</a></li>
+		<li id="menu-item-1285" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1285"><a href="https://protect-sg.com/law-enforcement-krav-maga-course/">Law Enforcement Krav Maga Course</a></li>
+		<li id="menu-item-1284" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1284"><a href="https://protect-sg.com/military-krav-maga-course/">Military Krav Maga Course</a></li>
+	</ul>
+</li>
+	<li id="menu-item-1282" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1282"><a href="https://protect-sg.com/combat-and-fighting-course/">Combat and Fighting Course</a></li>
+	<li id="menu-item-943" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-943"><a href="https://protect-sg.com/corporategroup-sales/">Corporate/Customized Seminar &amp; Workshop</a></li>
+</ul>
+</li>
+<li id="menu-item-945" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-945"><a>Gallery</a>
+<ul class="sub-menu">
+	<li id="menu-item-934" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-934"><a href="https://protect-sg.com/facilities/">Facilities</a></li>
+	<li id="menu-item-946" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-946"><a href="https://protect-sg.com/pictures/">Pictures Links</a>
+	<ul class="sub-menu">
+		<li id="menu-item-947" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-947"><a href="https://protect-sg.com/self-defence-seminars/">Self Defence Seminars</a></li>
+	</ul>
+</li>
+	<li id="menu-item-949" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-949"><a>Videos</a>
+	<ul class="sub-menu">
+		<li id="menu-item-950" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-950"><a href="https://protect-sg.com/online-tutorials/">Online Tutorials</a></li>
+		<li id="menu-item-2029" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2029"><a href="https://protect-sg.com/protect-sg-seminar/">Seminars</a></li>
+		<li id="menu-item-2030" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2030"><a href="https://protect-sg.com/professor-itay-gil/">Professor Itay Gil</a></li>
+		<li id="menu-item-2054" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2054"><a href="https://protect-sg.com/media-videos/">Media Videos</a></li>
+	</ul>
+</li>
+	<li id="menu-item-1182" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1182"><a href="https://protect-sg.com/press/">Press</a></li>
+</ul>
+</li>
+<li id="menu-item-2713" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2713"><a href="https://protect-sg.com/news-2/">News</a></li>
+<li id="menu-item-952" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-952"><a>Contact Us</a>
+<ul class="sub-menu">
+	<li id="menu-item-1169" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1169"><a href="https://protect-sg.com/contacts/">Contacts</a></li>
+	<li id="menu-item-1179" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1179"><a href="https://protect-sg.com/locate-us/">Locate Us</a></li>
+</ul>
+</li>
+</ul></div>		</nav><!-- #site-navigation -->
+	</header><!-- #masthead -->
+
+	<div id="content" class="site-content clearfix">
+
+			<div class="breadcrumbs">
+					</div>
+		<div class="content-area primary">
+		<main id="main" class="site-main" role="main">
+
+							<div class="article-wrapper">
+					
+<article id="post-126" class="post-126 page type-page status-publish hentry">
+	<header class="entry-header">
+		<h1 class="entry-title">Top Israeli Combative&nbsp;System</h1>
+	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<p>REALISTIC TRAINING • REALISTIC SCENARIOS • REALISTIC APPLICATIONS</p>
+<hr />
+<div style="text-align:center;font-size:20px;">
+<div class="jetpack-video-wrapper"><span class="embed-youtube" style="text-align:center; display: block;"><iframe class="youtube-player" width="700" height="394" src="https://www.youtube.com/embed/_3dx_NYooUg?version=3&#038;rel=1&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;fs=1&#038;hl=en&#038;autohide=2&#038;wmode=transparent" allowfullscreen="true" style="border:0;" sandbox="allow-scripts allow-same-origin allow-popups allow-presentation"></iframe></span></div>
+<hr />
+<div class="jetpack-video-wrapper"><span class="embed-youtube" style="text-align:center; display: block;"><iframe class="youtube-player" width="700" height="394" src="https://www.youtube.com/embed/aJNnE7y_tjA?version=3&#038;rel=0&#038;showsearch=0&#038;showinfo=0&#038;iv_load_policy=1&#038;fs=1&#038;hl=en&#038;autohide=2&#038;start=9&#038;wmode=transparent" allowfullscreen="true" style="border:0;" sandbox="allow-scripts allow-same-origin allow-popups allow-presentation"></iframe></span></div>
+<hr />
+</div>
+<p><a href="https://protect-sg.com/about-protect-sg/"><img data-attachment-id="1097" data-permalink="https://protect-sg.com/protect-singapore/slide1/#main" data-orig-file="https://protectsingapore.files.wordpress.com/2011/09/slide1.jpg" data-orig-size="810,341" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Slide1" data-image-description="" data-image-caption="" data-medium-file="https://protectsingapore.files.wordpress.com/2011/09/slide1.jpg?w=300" data-large-file="https://protectsingapore.files.wordpress.com/2011/09/slide1.jpg?w=700" class="aligncenter wp-image-1097 size-full" src="https://protectsingapore.files.wordpress.com/2011/09/slide1.jpg?w=700" alt="Slide1" srcset="https://protectsingapore.files.wordpress.com/2011/09/slide1.jpg?w=700 700w, https://protectsingapore.files.wordpress.com/2011/09/slide1.jpg?w=150 150w, https://protectsingapore.files.wordpress.com/2011/09/slide1.jpg?w=300 300w, https://protectsingapore.files.wordpress.com/2011/09/slide1.jpg?w=768 768w, https://protectsingapore.files.wordpress.com/2011/09/slide1.jpg 810w" sizes="(max-width: 700px) 100vw, 700px"   /></a></p>
+<p style="text-align:justify;">Protect-SG is the sole representative for Protect-Israel in Singapore. Apart from customised Krav Maga training for both commercial and individual needs, Protect-SG also serves as a platform for businesses in Singapore to work with Israeli security experts for a whole range of security needs.</p>
+<hr />
+<p><a href="https://protect-sg.com/protect-sg-krav-maga/krav-maga/"><img loading="lazy" data-attachment-id="1099" data-permalink="https://protect-sg.com/protect-singapore/slide2/#main" data-orig-file="https://protectsingapore.files.wordpress.com/2011/09/slide2.jpg" data-orig-size="818,344" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Slide2" data-image-description="" data-image-caption="" data-medium-file="https://protectsingapore.files.wordpress.com/2011/09/slide2.jpg?w=300" data-large-file="https://protectsingapore.files.wordpress.com/2011/09/slide2.jpg?w=700" class="size-full wp-image-1099 aligncenter" src="https://protectsingapore.files.wordpress.com/2014/11/homekravmaga.png?w=700&#038;h=294" alt="Slide2" width="700" height="294" /></a></p>
+<p style="text-align:justify;">The Krav Maga Curriculum at Protect-SG is a rigorous one year programme that aims to impart proper self defence skills in realistic situations and improve the overall fitness of the average Joe.</p>
+<hr />
+<p style="text-align:justify;"><a href="https://protect-sg.com/executive-protection-course/"><img data-attachment-id="1116" data-permalink="https://protect-sg.com/homevip/" data-orig-file="https://protectsingapore.files.wordpress.com/2014/11/homevip.png" data-orig-size="1276,545" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="HomeVIP" data-image-description="" data-image-caption="" data-medium-file="https://protectsingapore.files.wordpress.com/2014/11/homevip.png?w=300" data-large-file="https://protectsingapore.files.wordpress.com/2014/11/homevip.png?w=700" class="aligncenter wp-image-1116 size-large" src="https://protectsingapore.files.wordpress.com/2014/11/homevip.png?w=700&#038;h=299" alt="" srcset="https://protectsingapore.files.wordpress.com/2014/11/homevip.png?w=700&amp;h=299 700w, https://protectsingapore.files.wordpress.com/2014/11/homevip.png?w=150&amp;h=64 150w, https://protectsingapore.files.wordpress.com/2014/11/homevip.png?w=300&amp;h=128 300w, https://protectsingapore.files.wordpress.com/2014/11/homevip.png?w=768&amp;h=328 768w, https://protectsingapore.files.wordpress.com/2014/11/homevip.png?w=1024&amp;h=437 1024w, https://protectsingapore.files.wordpress.com/2014/11/homevip.png 1276w" sizes="(max-width: 700px) 100vw, 700px"   /></a><br />
+Protect-SG provides the highest quality of Front-line Krav Maga Defensive Tactics training. We place heavy emphasis on real-world scenarios and realistic training to ensure that our graduates are operationally ready.</p>
+<hr />
+<p><a href="https://protect-sg.com/our-philosophy/"><img loading="lazy" data-attachment-id="1307" data-permalink="https://protect-sg.com/protect-singapore/philosophy/#main" data-orig-file="https://protectsingapore.files.wordpress.com/2011/09/philosophy.png" data-orig-size="1312,657" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="philosophy" data-image-description="" data-image-caption="" data-medium-file="https://protectsingapore.files.wordpress.com/2011/09/philosophy.png?w=300" data-large-file="https://protectsingapore.files.wordpress.com/2011/09/philosophy.png?w=700" class="aligncenter wp-image-1307 size-large" src="https://protectsingapore.files.wordpress.com/2011/09/philosophy.png?w=700&#038;h=350" alt="philosophy" width="700" height="350" srcset="https://protectsingapore.files.wordpress.com/2011/09/philosophy.png?w=700&amp;h=350 700w, https://protectsingapore.files.wordpress.com/2011/09/philosophy.png?w=150&amp;h=75 150w, https://protectsingapore.files.wordpress.com/2011/09/philosophy.png?w=300&amp;h=150 300w, https://protectsingapore.files.wordpress.com/2011/09/philosophy.png?w=768&amp;h=385 768w, https://protectsingapore.files.wordpress.com/2011/09/philosophy.png?w=1024&amp;h=513 1024w, https://protectsingapore.files.wordpress.com/2011/09/philosophy.png 1312w" sizes="(max-width: 700px) 100vw, 700px" /></a></p>
+<p style="text-align:center;">
+			</div><!-- .entry-content -->
+	</article><!-- #post-## -->
+				</div>
+				
+			
+		</main><!-- #main -->
+	</div><!-- #primary -->
+
+					<div class="secondary widget-area" role="complementary">
+			<aside id="text-4" class="widget widget_text"><h1 class="widget-title">Contact Us</h1>			<div class="textwidget"><p>Protect-SG Enquiry</p>
+<p>HP: 8127 8628 (Coach GL)</p>
+<p>E-mail: queries@protect-sg.com</p>
+<p>(If could not get through on HP, please drop us an sms or email. We will reply by the end of the day.Thanks)</p></div>
+		</aside><aside id="text-9" class="widget widget_text"><h1 class="widget-title">Latest News !</h1>			<div class="textwidget"><p><strong>17/06/2020</strong></p>
+<div dir="auto">We are back!!!</div>
+<div dir="auto">Protect Krav Maga will resume the class on 23th June, 7pm.</div>
+<div dir="auto">For this period we will not be accepting any new students.</div>
+<div dir="auto">Booking class system will be implemented for this period.</div>
+<div dir="auto">Only 6 students will be allow for each class.</div>
+<div dir="auto"><img decoding="async" src="https://protectsingapore.files.wordpress.com/2020/11/90240451_2604092469700548_8902166417927831552_o.jpg?w=700" alt="90240451_2604092469700548_8902166417927831552_o" /></div>
+</div>
+		</aside><aside id="text-8" class="widget widget_text"><h1 class="widget-title">Drop us a message</h1>			<div class="textwidget"><div data-test='contact-form' id='contact-form-widget-text-8' class='wp-block-jetpack-contact-form-container '>
+<form action='/#contact-form-widget-text-8' method='post' class='contact-form commentsblock'>
+<script>
+			( function () {
+				const contact_forms = document.getElementsByClassName('contact-form');
+
+				for ( const form of contact_forms ) {
+					form.onsubmit = function() {
+						const buttons = form.getElementsByTagName('button');
+
+						for( const button of buttons ) {
+							button.setAttribute('disabled', true);
+						}
+					}
+				}
+			} )();
+		</script>
+<div style="" class='grunion-field-name-wrap grunion-field-wrap'  >
+<label
+				for='gwidget-text-8-name'
+				class='grunion-field-label name'>Name<span>(required)</span></label>
+<input
+					type='text'
+					name='gwidget-text-8-name'
+					id='gwidget-text-8-name'
+					value=''
+					class='name  grunion-field' 
+					required aria-required='true' />
+	</div>
+
+<div style="" class='grunion-field-email-wrap grunion-field-wrap'  >
+<label
+				for='gwidget-text-8-email'
+				class='grunion-field-label email'>Email<span>(required)</span></label>
+<input
+					type='email'
+					name='gwidget-text-8-email'
+					id='gwidget-text-8-email'
+					value=''
+					class='email  grunion-field' 
+					required aria-required='true' />
+	</div>
+
+<div style="" class='grunion-field-textarea-wrap grunion-field-wrap'  >
+<label
+				for='contact-form-comment-gwidget-text-8-queries'
+				class='grunion-field-label textarea'>Queries<span>(required)</span></label>
+<textarea
+		                style=''
+		                name='gwidget-text-8-queries'
+		                id='contact-form-comment-gwidget-text-8-queries'
+		                rows='20' class='textarea  grunion-field'  required aria-required='true'></textarea>
+	</div>
+	<p class='contact-submit'>
+		<button type='submit' class='pushbutton-wide'>Submit</button>		<input type='hidden' name='contact-form-id' value='widget-text-8' />
+		<input type='hidden' name='action' value='grunion-contact-form' />
+		<input type='hidden' name='contact-form-hash' value='88d726abc0e99ed9677e5b1315c0ae86675bf37f' />
+	</p>
+<p style="display: none !important;"><label>&#916;<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="ak_js" value="64"/><script>document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() );</script></p></form>
+</div>
+</div>
+		</aside><aside id="media_image-4" class="widget widget_media_image"><h1 class="widget-title">Training Schedule</h1><style>.widget.widget_media_image { overflow: hidden; }.widget.widget_media_image img { height: auto; max-width: 100%; }</style><a href="https://protectsingapore.files.wordpress.com/2018/10/schedule-20181.jpg" rel="httpsprotectsingaporefileswordpresscom201709schedule_aug17jpg noopener" target="_blank"><img width="700" height="394" src="https://protectsingapore.files.wordpress.com/2018/10/schedule-20181.jpg" class="image wp-image-2773 aligncenter attachment-full size-full" alt="" decoding="async" loading="lazy" style="max-width: 100%; height: auto;" srcset="https://protectsingapore.files.wordpress.com/2018/10/schedule-20181.jpg?w=700&amp;h=394 700w, https://protectsingapore.files.wordpress.com/2018/10/schedule-20181.jpg?w=150&amp;h=84 150w, https://protectsingapore.files.wordpress.com/2018/10/schedule-20181.jpg?w=300&amp;h=169 300w, https://protectsingapore.files.wordpress.com/2018/10/schedule-20181.jpg?w=768&amp;h=432 768w, https://protectsingapore.files.wordpress.com/2018/10/schedule-20181.jpg?w=1024&amp;h=576 1024w, https://protectsingapore.files.wordpress.com/2018/10/schedule-20181.jpg 1280w" sizes="(max-width: 700px) 100vw, 700px" data-attachment-id="2773" data-permalink="https://protect-sg.com/schedule-rates/schedule-2018-2/#main" data-orig-file="https://protectsingapore.files.wordpress.com/2018/10/schedule-20181.jpg" data-orig-size="1280,720" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="sCHEDULE 2018" data-image-description="" data-image-caption="" data-medium-file="https://protectsingapore.files.wordpress.com/2018/10/schedule-20181.jpg?w=300" data-large-file="https://protectsingapore.files.wordpress.com/2018/10/schedule-20181.jpg?w=700" /></a></aside><aside id="text-6" class="widget widget_text"><h1 class="widget-title">Our Location</h1>			<div class="textwidget"><p><a href="https://protectsingapore.files.wordpress.com/2015/06/screenshot-2015-06-14-18-55-26.png"><img src="https://protectsingapore.files.wordpress.com/2015/06/screenshot-2015-06-14-18-55-26.png" alt="Map" width="250" align="center" /></a></p>
+<div>
+<p><a href="https://protectsingapore.files.wordpress.com/2015/06/screenshot-2015-06-14-18-56-00.png"><img src="https://protectsingapore.files.wordpress.com/2015/06/screenshot-2015-06-14-18-56-00.png" alt="Map" width="250" align="center" /></a></p>
+<div>
+<p align="center">11D Hong Kong Street (Level 5)</p>
+<p align="justify">We are conveniently located at Hong Kong Street, 2 minutes walk from Clarke Quay MRT station and right opposite Central Shopping Mall</p>
+</div>
+</div>
+		</aside><aside id="facebook-likebox-2" class="widget widget_facebook_likebox"><h1 class="widget-title"><a href="http://www.facebook.com/protectsg">Protect-SG Facebook Page</a></h1>		<div id="fb-root"></div>
+		<div class="fb-page" data-href="http://www.facebook.com/protectsg" data-width="250"  data-height="432" data-hide-cover="false" data-show-facepile="false" data-tabs="timeline" data-hide-cta="false" data-small-header="false">
+		<div class="fb-xfbml-parse-ignore"><blockquote cite="http://www.facebook.com/protectsg"><a href="http://www.facebook.com/protectsg">Protect-SG Facebook Page</a></blockquote></div>
+		</div>
+		</aside><aside id="media_image-3" class="widget widget_media_image"><h1 class="widget-title">Krav Maga Online Tutorials</h1><style>.widget.widget_media_image { overflow: hidden; }.widget.widget_media_image img { height: auto; max-width: 100%; }</style><figure style="width: 205px" class="wp-caption alignnone"><a href="https://protect-sg.com/krav-maga-courses/online-tutorials/"><img width="205" height="200" src="https://protectsingapore.files.wordpress.com/2012/07/video_icon.png?w=205" class="image wp-image-624 aligncenter attachment-205x200 size-205x200" alt="" decoding="async" loading="lazy" style="max-width: 100%; height: auto;" srcset="https://protectsingapore.files.wordpress.com/2012/07/video_icon.png?w=205 205w, https://protectsingapore.files.wordpress.com/2012/07/video_icon.png?w=410 410w, https://protectsingapore.files.wordpress.com/2012/07/video_icon.png?w=150 150w, https://protectsingapore.files.wordpress.com/2012/07/video_icon.png?w=300 300w" sizes="(max-width: 205px) 100vw, 205px" data-attachment-id="624" data-permalink="https://protect-sg.com/video_icon/" data-orig-file="https://protectsingapore.files.wordpress.com/2012/07/video_icon.png" data-orig-size="1742,1700" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;}" data-image-title="Video Tutorial" data-image-description="" data-image-caption="" data-medium-file="https://protectsingapore.files.wordpress.com/2012/07/video_icon.png?w=300" data-large-file="https://protectsingapore.files.wordpress.com/2012/07/video_icon.png?w=700" /></a><figcaption class="wp-caption-text">Learn basic Krav Maga skills immediately and for free today!</figcaption></figure></aside>		</div><!-- #secondary -->
+	
+	</div><!-- #content -->
+
+	<footer id="colophon" class="site-footer" role="contentinfo">
+		<div class="site-footer-wrapper">
+			<div class="site-info">
+								<a href="https://wordpress.com/?ref=footer_custom_powered" rel="nofollow">Website Powered by WordPress.com</a>.
+				
+							</div><!-- .site-info -->
+					</div><!-- .site-footer-wrapper -->
+	</footer><!-- #colophon -->
+</div><!-- #page -->
+
+<!--  -->
+	<div style="display:none">
+	</div>
+	<div id="actionbar" style="display: none;"
+			class="actnbr-pub-big-brother actnbr-has-follow">
+		<ul>
+								<li class="actnbr-btn actnbr-hidden">
+								<a class="actnbr-action actnbr-actn-follow " href="">
+			<svg class="gridicon gridicons-reader-follow" height="24" width="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><path d="M23 16v2h-3v3h-2v-3h-3v-2h3v-3h2v3h3zM20 2v9h-4v3h-3v4H4c-1.1 0-2-.9-2-2V2h18zM8 13v-1H4v1h4zm3-3H4v1h7v-1zm0-2H4v1h7V8zm7-4H4v2h14V4z"/></g></svg><span>Follow</span>
+		</a>
+		<a class="actnbr-action actnbr-actn-following  no-display" href="">
+			<svg class="gridicon gridicons-reader-following" height="24" width="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><path d="M23 13.482L15.508 21 12 17.4l1.412-1.388 2.106 2.188 6.094-6.094L23 13.482zm-7.455 1.862L20 10.89V2H2v14c0 1.1.9 2 2 2h4.538l4.913-4.832 2.095 2.176zM8 13H4v-1h4v1zm3-2H4v-1h7v1zm0-2H4V8h7v1zm7-3H4V4h14v2z"/></g></svg><span>Following</span>
+		</a>
+							<div class="actnbr-popover tip tip-top-left actnbr-notice" id="follow-bubble">
+							<div class="tip-arrow"></div>
+							<div class="tip-inner actnbr-follow-bubble">
+															<ul>
+											<li class="actnbr-sitename">
+			<a href="https://protect-sg.com">
+				<img alt='' src='https://protectsingapore.files.wordpress.com/2017/09/cropped-protect-sg-logo-transparent-e1505137991606.png?w=50' class='avatar avatar-50' height='50' width='50' />				Protect-Singapore			</a>
+		</li>
+										<form method="post" action="https://subscribe.wordpress.com" accept-charset="utf-8" style="display: none;">
+																				<div>
+										<input type="email" name="email" placeholder="Enter your email address" class="actnbr-email-field" aria-label="Enter your email address" />
+										</div>
+										<input type="hidden" name="action" value="subscribe" />
+										<input type="hidden" name="blog_id" value="24708405" />
+										<input type="hidden" name="source" value="https://protect-sg.com/" />
+										<input type="hidden" name="sub-type" value="actionbar-follow" />
+										<input type="hidden" id="_wpnonce" name="_wpnonce" value="24fa1fee46" />										<div class="actnbr-button-wrap">
+											<button type="submit" value="Sign me up">
+												Sign me up											</button>
+										</div>
+									</form>
+									<li class="actnbr-login-nudge">
+										<div>
+											Already have a WordPress.com account? <a href="https://wordpress.com/log-in?redirect_to=https%3A%2F%2Fr-login.wordpress.com%2Fremote-login.php%3Faction%3Dlink%26back%3Dhttps%253A%252F%252Fprotect-sg.com%252F">Log in now.</a>										</div>
+									</li>
+								</ul>
+															</div>
+						</div>
+					</li>
+							<li class="actnbr-ellipsis actnbr-hidden">
+				<svg class="gridicon gridicons-ellipsis" height="24" width="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><path d="M7 12c0 1.104-.896 2-2 2s-2-.896-2-2 .896-2 2-2 2 .896 2 2zm12-2c-1.104 0-2 .896-2 2s.896 2 2 2 2-.896 2-2-.896-2-2-2zm-7 0c-1.104 0-2 .896-2 2s.896 2 2 2 2-.896 2-2-.896-2-2-2z"/></g></svg>				<div class="actnbr-popover tip tip-top-left actnbr-more">
+					<div class="tip-arrow"></div>
+					<div class="tip-inner">
+						<ul>
+									<li class="actnbr-sitename">
+			<a href="https://protect-sg.com">
+				<img alt='' src='https://protectsingapore.files.wordpress.com/2017/09/cropped-protect-sg-logo-transparent-e1505137991606.png?w=50' class='avatar avatar-50' height='50' width='50' />				Protect-Singapore			</a>
+		</li>
+								<li class="actnbr-folded-customize">
+								<a href="https://protectsingapore.wordpress.com/wp-admin/customize.php?url=https%3A%2F%2Fprotectsingapore.wordpress.com%2F">
+									<svg class="gridicon gridicons-customize" height="20" width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><path d="M2 6c0-1.505.78-3.08 2-4 0 .845.69 2 2 2 1.657 0 3 1.343 3 3 0 .386-.08.752-.212 1.09.74.594 1.476 1.19 2.19 1.81L8.9 11.98c-.62-.716-1.214-1.454-1.807-2.192C6.753 9.92 6.387 10 6 10c-2.21 0-4-1.79-4-4zm12.152 6.848l1.34-1.34c.607.304 1.283.492 2.008.492 2.485 0 4.5-2.015 4.5-4.5 0-.725-.188-1.4-.493-2.007L18 9l-2-2 3.507-3.507C18.9 3.188 18.225 3 17.5 3 15.015 3 13 5.015 13 7.5c0 .725.188 1.4.493 2.007L3 20l2 2 6.848-6.848c1.885 1.928 3.874 3.753 5.977 5.45l1.425 1.148 1.5-1.5-1.15-1.425c-1.695-2.103-3.52-4.092-5.448-5.977z"/></g></svg>									<span>Customize</span>
+								</a>
+							</li>
+																<li class="actnbr-folded-follow">
+												<a class="actnbr-action actnbr-actn-follow " href="">
+			<svg class="gridicon gridicons-reader-follow" height="24" width="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><path d="M23 16v2h-3v3h-2v-3h-3v-2h3v-3h2v3h3zM20 2v9h-4v3h-3v4H4c-1.1 0-2-.9-2-2V2h18zM8 13v-1H4v1h4zm3-3H4v1h7v-1zm0-2H4v1h7V8zm7-4H4v2h14V4z"/></g></svg><span>Follow</span>
+		</a>
+		<a class="actnbr-action actnbr-actn-following  no-display" href="">
+			<svg class="gridicon gridicons-reader-following" height="24" width="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><path d="M23 13.482L15.508 21 12 17.4l1.412-1.388 2.106 2.188 6.094-6.094L23 13.482zm-7.455 1.862L20 10.89V2H2v14c0 1.1.9 2 2 2h4.538l4.913-4.832 2.095 2.176zM8 13H4v-1h4v1zm3-2H4v-1h7v1zm0-2H4V8h7v1zm7-3H4V4h14v2z"/></g></svg><span>Following</span>
+		</a>
+										</li>
+																	<li class="actnbr-signup"><a href="https://wordpress.com/start/">Sign up</a></li>
+									<li class="actnbr-login"><a href="https://wordpress.com/log-in?redirect_to=https%3A%2F%2Fr-login.wordpress.com%2Fremote-login.php%3Faction%3Dlink%26back%3Dhttps%253A%252F%252Fprotect-sg.com%252F">Log in</a></li>
+																	<li class="actnbr-shortlink"><a href="https://wp.me/P1FFMF-22">Copy shortlink</a></li>
+																	<li class="flb-report">
+										<a href="http://en.wordpress.com/abuse/?report_url=https://protect-sg.com/" target="_blank">
+											Report this content										</a>
+									</li>
+																	<li class="actnbr-reader">
+										<a href="https://wordpress.com/read/blogs/24708405/posts/126">
+											View post in Reader										</a>
+									</li>
+																	<li class="actnbr-subs">
+										<a href="https://subscribe.wordpress.com/">Manage subscriptions</a>
+									</li>
+																		<li class="actnbr-fold"><a href="">Collapse this bar</a></li>
+															</ul>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	
+<script>
+window.addEventListener( "load", function( event ) {
+	var link = document.createElement( "link" );
+	link.href = "https://s0.wp.com/wp-content/mu-plugins/actionbar/actionbar.css?v=20210915";
+	link.type = "text/css";
+	link.rel = "stylesheet";
+	document.head.appendChild( link );
+
+	var script = document.createElement( "script" );
+	script.src = "https://s0.wp.com/wp-content/mu-plugins/actionbar/actionbar.js?v=20220329";
+	script.defer = true;
+	document.body.appendChild( script );
+} );
+</script>
+
+			<div id="jp-carousel-loading-overlay">
+			<div id="jp-carousel-loading-wrapper">
+				<span id="jp-carousel-library-loading">&nbsp;</span>
+			</div>
+		</div>
+		<div class="jp-carousel-overlay" style="display: none;">
+
+		<div class="jp-carousel-container">
+			<!-- The Carousel Swiper -->
+			<div
+				class="jp-carousel-wrap swiper-container jp-carousel-swiper-container jp-carousel-transitions"
+				itemscope
+				itemtype="https://schema.org/ImageGallery">
+				<div class="jp-carousel swiper-wrapper"></div>
+				<div class="jp-swiper-button-prev swiper-button-prev">
+					<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<mask id="maskPrev" mask-type="alpha" maskUnits="userSpaceOnUse" x="8" y="6" width="9" height="12">
+							<path d="M16.2072 16.59L11.6496 12L16.2072 7.41L14.8041 6L8.8335 12L14.8041 18L16.2072 16.59Z" fill="white"/>
+						</mask>
+						<g mask="url(#maskPrev)">
+							<rect x="0.579102" width="23.8823" height="24" fill="#FFFFFF"/>
+						</g>
+					</svg>
+				</div>
+				<div class="jp-swiper-button-next swiper-button-next">
+					<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<mask id="maskNext" mask-type="alpha" maskUnits="userSpaceOnUse" x="8" y="6" width="8" height="12">
+							<path d="M8.59814 16.59L13.1557 12L8.59814 7.41L10.0012 6L15.9718 12L10.0012 18L8.59814 16.59Z" fill="white"/>
+						</mask>
+						<g mask="url(#maskNext)">
+							<rect x="0.34375" width="23.8822" height="24" fill="#FFFFFF"/>
+						</g>
+					</svg>
+				</div>
+			</div>
+			<!-- The main close buton -->
+			<div class="jp-carousel-close-hint">
+				<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<mask id="maskClose" mask-type="alpha" maskUnits="userSpaceOnUse" x="5" y="5" width="15" height="14">
+						<path d="M19.3166 6.41L17.9135 5L12.3509 10.59L6.78834 5L5.38525 6.41L10.9478 12L5.38525 17.59L6.78834 19L12.3509 13.41L17.9135 19L19.3166 17.59L13.754 12L19.3166 6.41Z" fill="white"/>
+					</mask>
+					<g mask="url(#maskClose)">
+						<rect x="0.409668" width="23.8823" height="24" fill="#FFFFFF"/>
+					</g>
+				</svg>
+			</div>
+			<!-- Image info, comments and meta -->
+			<div class="jp-carousel-info">
+				<div class="jp-carousel-info-footer">
+					<div class="jp-carousel-pagination-container">
+						<div class="jp-swiper-pagination swiper-pagination"></div>
+						<div class="jp-carousel-pagination"></div>
+					</div>
+					<div class="jp-carousel-photo-title-container">
+						<h2 class="jp-carousel-photo-caption"></h2>
+					</div>
+					<div class="jp-carousel-photo-icons-container">
+						<a href="#" class="jp-carousel-icon-btn jp-carousel-icon-info" aria-label="Toggle photo metadata visibility">
+							<span class="jp-carousel-icon">
+								<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<mask id="maskInfo" mask-type="alpha" maskUnits="userSpaceOnUse" x="2" y="2" width="21" height="20">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M12.7537 2C7.26076 2 2.80273 6.48 2.80273 12C2.80273 17.52 7.26076 22 12.7537 22C18.2466 22 22.7046 17.52 22.7046 12C22.7046 6.48 18.2466 2 12.7537 2ZM11.7586 7V9H13.7488V7H11.7586ZM11.7586 11V17H13.7488V11H11.7586ZM4.79292 12C4.79292 16.41 8.36531 20 12.7537 20C17.142 20 20.7144 16.41 20.7144 12C20.7144 7.59 17.142 4 12.7537 4C8.36531 4 4.79292 7.59 4.79292 12Z" fill="white"/>
+									</mask>
+									<g mask="url(#maskInfo)">
+										<rect x="0.8125" width="23.8823" height="24" fill="#FFFFFF"/>
+									</g>
+								</svg>
+							</span>
+						</a>
+												<a href="#" class="jp-carousel-icon-btn jp-carousel-icon-comments" aria-label="Toggle photo comments visibility">
+							<span class="jp-carousel-icon">
+								<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<mask id="maskComments" mask-type="alpha" maskUnits="userSpaceOnUse" x="2" y="2" width="21" height="20">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M4.3271 2H20.2486C21.3432 2 22.2388 2.9 22.2388 4V16C22.2388 17.1 21.3432 18 20.2486 18H6.31729L2.33691 22V4C2.33691 2.9 3.2325 2 4.3271 2ZM6.31729 16H20.2486V4H4.3271V18L6.31729 16Z" fill="white"/>
+									</mask>
+									<g mask="url(#maskComments)">
+										<rect x="0.34668" width="23.8823" height="24" fill="#FFFFFF"/>
+									</g>
+								</svg>
+
+								<span class="jp-carousel-has-comments-indicator" aria-label="This image has comments."></span>
+							</span>
+						</a>
+											</div>
+				</div>
+				<div class="jp-carousel-info-extra">
+					<div class="jp-carousel-info-content-wrapper">
+						<div class="jp-carousel-photo-title-container">
+							<h2 class="jp-carousel-photo-title"></h2>
+						</div>
+						<div class="jp-carousel-comments-wrapper">
+															<div id="jp-carousel-comments-loading">
+									<span>Loading Comments...</span>
+								</div>
+								<div class="jp-carousel-comments"></div>
+								<div id="jp-carousel-comment-form-container">
+									<span id="jp-carousel-comment-form-spinner">&nbsp;</span>
+									<div id="jp-carousel-comment-post-results"></div>
+																														<form id="jp-carousel-comment-form">
+												<label for="jp-carousel-comment-form-comment-field" class="screen-reader-text">Write a Comment...</label>
+												<textarea
+													name="comment"
+													class="jp-carousel-comment-form-field jp-carousel-comment-form-textarea"
+													id="jp-carousel-comment-form-comment-field"
+													placeholder="Write a Comment..."
+												></textarea>
+												<div id="jp-carousel-comment-form-submit-and-info-wrapper">
+													<div id="jp-carousel-comment-form-commenting-as">
+																													<fieldset>
+																<label for="jp-carousel-comment-form-email-field">Email (Required)</label>
+																<input type="text" name="email" class="jp-carousel-comment-form-field jp-carousel-comment-form-text-field" id="jp-carousel-comment-form-email-field" />
+															</fieldset>
+															<fieldset>
+																<label for="jp-carousel-comment-form-author-field">Name (Required)</label>
+																<input type="text" name="author" class="jp-carousel-comment-form-field jp-carousel-comment-form-text-field" id="jp-carousel-comment-form-author-field" />
+															</fieldset>
+															<fieldset>
+																<label for="jp-carousel-comment-form-url-field">Website</label>
+																<input type="text" name="url" class="jp-carousel-comment-form-field jp-carousel-comment-form-text-field" id="jp-carousel-comment-form-url-field" />
+															</fieldset>
+																											</div>
+													<input
+														type="submit"
+														name="submit"
+														class="jp-carousel-comment-form-button"
+														id="jp-carousel-comment-form-button-submit"
+														value="Post Comment" />
+												</div>
+											</form>
+																											</div>
+													</div>
+						<div class="jp-carousel-image-meta">
+							<div class="jp-carousel-title-and-caption">
+								<div class="jp-carousel-photo-info">
+									<h3 class="jp-carousel-caption" itemprop="caption description"></h3>
+								</div>
+
+								<div class="jp-carousel-photo-description"></div>
+							</div>
+							<ul class="jp-carousel-image-exif" style="display: none;"></ul>
+							<a class="jp-carousel-image-download" target="_blank" style="display: none;">
+								<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="3" y="3" width="19" height="18">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M5.84615 5V19H19.7775V12H21.7677V19C21.7677 20.1 20.8721 21 19.7775 21H5.84615C4.74159 21 3.85596 20.1 3.85596 19V5C3.85596 3.9 4.74159 3 5.84615 3H12.8118V5H5.84615ZM14.802 5V3H21.7677V10H19.7775V6.41L9.99569 16.24L8.59261 14.83L18.3744 5H14.802Z" fill="white"/>
+									</mask>
+									<g mask="url(#mask0)">
+										<rect x="0.870605" width="23.8823" height="24" fill="#FFFFFF"/>
+									</g>
+								</svg>
+								<span class="jp-carousel-download-text"></span>
+							</a>
+							<div class="jp-carousel-image-map" style="display: none;"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		</div>
+		<link crossorigin='anonymous' rel='stylesheet' id='all-css-0-2' href='https://s1.wp.com/_static/??-eJydjUsOwjAMBS9EcLugYoM4ShUSA4HEjmK7vT4ftazYwPKNnmZgri4wKZJCMVezXRIJ3FCrD/dlgxhB4WgZBYJvbIIZZE4VmzsZxYzbILKB/2XrZwU/+sZEAU6WcgS9YkGnzFmgoVQmSRO6KUXkL+TH0ILGCSlyA2/Kxaum8DmfuRUBaQFeRh/0TeCZgUszSkyv5LEc+mG/6/tdN3S3B5h6lGM=&cssminify=yes' type='text/css' media='all' />
+<script id='jetpack-facebook-embed-js-extra'>
+var jpfbembed = {"appid":"249643311490","locale":"en_US"};
+</script>
+<script id='jetpack-carousel-js-extra'>
+var jetpackSwiperLibraryPath = {"url":"https:\/\/s2.wp.com\/wp-content\/mu-plugins\/jetpack-plugin\/sun\/_inc\/build\/carousel\/swiper-bundle.min.js"};
+var jetpackCarouselStrings = {"widths":[370,700,1000,1200,1400,2000],"is_logged_in":"","lang":"en","ajaxurl":"https:\/\/protect-sg.com\/wp-admin\/admin-ajax.php","nonce":"9c59404ef8","display_exif":"1","display_comments":"1","single_image_gallery":"1","single_image_gallery_media_file":"","background_color":"black","comment":"Comment","post_comment":"Post Comment","write_comment":"Write a Comment...","loading_comments":"Loading Comments...","download_original":"View full size <span class=\"photo-size\">{0}<span class=\"photo-size-times\">\u00d7<\/span>{1}<\/span>","no_comment_text":"Please be sure to submit some text with your comment.","no_comment_email":"Please provide an email address to comment.","no_comment_author":"Please provide your name to comment.","comment_post_error":"Sorry, but there was an error posting your comment. Please try again later.","comment_approved":"Your comment was approved.","comment_unapproved":"Your comment is in moderation.","camera":"Camera","aperture":"Aperture","shutter_speed":"Shutter Speed","focal_length":"Focal Length","copyright":"Copyright","comment_registration":"0","require_name_email":"1","login_url":"https:\/\/protectsingapore.wordpress.com\/wp-login.php?redirect_to=https%3A%2F%2Fprotect-sg.com%2F","blog_id":"24708405","meta_data":["camera","aperture","shutter_speed","focal_length","copyright"],"stats_query_args":"blog=24708405&v=wpcom&tz=0&user_id=0&subd=protectsingapore","is_public":"1"};
+</script>
+<script crossorigin='anonymous' type='text/javascript' src='https://s2.wp.com/_static/??-eJydkM1OAzEMhF+I1AJaBAfEo6D8eBfvJnaU2Ft4e7JSqZC4VBw9M5+tMZyri8KKrLB0SLhRxPp5WPod/LL0Awt2qBYg0OxCk6G0nWC/0eyVhG9n+krVZeLVTRKtu4n+HCzmaraZuMOCWn1cLzN0Y3gnjjD5iEFkdVgCpn8sCEY5QfRNrGO+xn6EQ6FrpxHPlkab/UfUFTbkJG23quSviXIeGWx6C9RwxpH1Ks01Y6WCF+ytvN4/PZ9Ox+Pjw8vyDcNYmWQ='></script>
+<script src='https://s2.wp.com/wp-content/plugins/gutenberg-core/v15.9.1/build/vendors/inert-polyfill.min.js?m=1685748459i&#038;ver=6.2.1-RC1-55769' id='wp-inert-polyfill-js'></script>
+<script crossorigin='anonymous' type='text/javascript' src='https://s1.wp.com/wp-includes/js/dist/vendor/wp-polyfill.min.js?m=1666876734i'></script>
+<script crossorigin='anonymous' src='https://s0.wp.com/wp-content/plugins/gutenberg-core/v15.9.1/build/hooks/index.min.js?m=1685748459i&#038;ver=da24a732bf5c2bfffa4b' id='wp-hooks-js'></script>
+<script crossorigin='anonymous' src='https://s0.wp.com/wp-content/plugins/gutenberg-core/v15.9.1/build/i18n/index.min.js?m=1685748459i&#038;ver=3b062a0d308091df74bc' id='wp-i18n-js'></script>
+<script id='wp-i18n-js-after'>
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script crossorigin='anonymous' type='text/javascript' src='https://s1.wp.com/_static/??-eJx9jUsOwjAMBS9EakrFb4E4ShUSA24TO4qT9vogPhtUsZzRGz2Yk3HCBblArCaFeiNWGLAk68YPg1aGntjBpVLwUO4Y0RSRoJBRk7DShGYij7JgmkjcDLqC5S87kkYspmvW75OvuObX2P9pnc1SFYOZk5P4g8/uHE/t7rBt20133A8P5oNYMg=='></script>
+<script type="text/javascript">
+// <![CDATA[
+(function() {
+try{
+  if ( window.external &&'msIsSiteMode' in window.external) {
+    if (window.external.msIsSiteMode()) {
+      var jl = document.createElement('script');
+      jl.type='text/javascript';
+      jl.async=true;
+      jl.src='/wp-content/plugins/ie-sitemode/custom-jumplist.php';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(jl, s);
+    }
+  }
+}catch(e){}
+})();
+// ]]>
+</script><script src="//stats.wp.com/w.js?63" defer></script> <script type="text/javascript">
+_tkq = window._tkq || [];
+_stq = window._stq || [];
+_tkq.push(['storeContext', {'blog_id':'24708405','blog_tz':'0','user_lang':'en','blog_lang':'en','user_id':'0'}]);
+_stq.push(['view', {'blog':'24708405','v':'wpcom','tz':'0','user_id':'0','post':'126','subd':'protectsingapore'}]);
+_stq.push(['extra', {'crypt':'UE40eW5QN0p8M2Y/RE1mNzc2NTVTamdsd0xoLz9RQkM2K298TXY9bERQMXc2MjhEaVZfb2wwakRoSj0mUkp1THptM1NdbkV1WjZIcU9mVWQmPUIvMlN6Jk8wW3NYVEJ3dWZOWExuWD9IY3FyNGhLUHV8YnU3VzFYbVt6dSxQVz8vcktZcUgycFpwVlQzLlIrfGg0dFRdW1dPc203Mj14eC5WPSVjNWd+ZHdycEV5SUt4RXxmcl1nanlZSEFFflFbLllzQTV0b1R2VHg9UFloNXF5ZWUrdUl8UDZTQlgvPz9wN3lYdjd3Ri5seVZLMnNIWyY5OGY/OFtZcm9EUy03fltaa0VXdFNjWXhmYi9CXVdvP0FmXVh1Ql1LVkFhVDVtP3FqaW9jXzRvVFN6SlY3TkYl'}]);
+_stq.push([ 'clickTrackerInit', '24708405', '126' ]);
+	</script>
+<noscript><img src="https://pixel.wp.com/b.gif?v=noscript" style="height:1px;width:1px;overflow:hidden;position:absolute;bottom:1px;" alt="" /></noscript>
+<script>
+if ( 'object' === typeof wpcom_mobile_user_agent_info ) {
+
+	wpcom_mobile_user_agent_info.init();
+	var mobileStatsQueryString = "";
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedPlatformName )
+		mobileStatsQueryString += "&x_" + 'mobile_platforms' + '=' + wpcom_mobile_user_agent_info.matchedPlatformName;
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedUserAgentName )
+		mobileStatsQueryString += "&x_" + 'mobile_devices' + '=' + wpcom_mobile_user_agent_info.matchedUserAgentName;
+	
+	if( wpcom_mobile_user_agent_info.isIPad() )
+		mobileStatsQueryString += "&x_" + 'ipad_views' + '=' + 'views';
+
+	if( "" != mobileStatsQueryString ) {
+		new Image().src = document.location.protocol + '//pixel.wp.com/g.gif?v=wpcom-no-pv' + mobileStatsQueryString + '&baba=' + Math.random();
+	}
+	
+}
+</script>
+</body>
+</html>

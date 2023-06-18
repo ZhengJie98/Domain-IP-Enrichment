@@ -1,0 +1,102 @@
+HTTP/1.1 200 OK
+Content-Type: text/html
+Content-Length: 3309
+Connection: keep-alive
+Date: Mon, 12 Jun 2023 02:41:13 GMT
+Last-Modified: Sat, 03 Jun 2023 09:08:49 GMT
+ETag: "f52ed5d52870e55b095d262c96f03968"
+Server: AmazonS3
+Vary: Accept-Encoding
+X-Cache: Hit from cloudfront
+Via: 1.1 f2f73edfafc086543441bca742024226.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: SIN5-C1
+X-Amz-Cf-Id: aWO7rO9BZsRrttzXa6_QoBCPEo-NqLLMczXm-YAcRn0M5q_m93-chQ==
+Age: 48088
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet">
+
+    <!-- JS/JQUERY -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="animatescroll.js"></script>
+    <script type="text/javascript">
+      $(function () {
+        $(document).scroll(function () {
+          var $nav = $(".navbar");
+          var $logoNav = $(".logo-nav");
+          $nav.toggleClass('scrolled',$(this).scrollTop() > $nav.height());
+          $logoNav.toggleClass('scrolled', $(this).scrollTop()>$nav.height()); 
+        });
+
+        $('#form1').submit(function(e){
+  
+            e.preventDefault(); // Prevent Default Submission
+          
+            $.ajax({
+               url: 'insert.php',
+               type: 'POST',
+               data: $(this).serialize(), // it will serialize the form data
+                      dataType: 'html'
+                  });
+          });
+        
+      });
+    </script>
+
+    <title>Double Tick Ventures</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md fixed-top">
+      <a href="#" class="nav-logo-a" onclick="$('#home-con').animatescroll();" href="#"><img src="img/logo.png" class="logo-nav img-fluid"></a>
+        <div class="mobShow">
+          <h1 class="he11">Double Tick Ventures</h1>
+        </div>
+        <a class="navbar-toggler" data-toggle="collapse" data-target="#nav-coll" aria-controls="nav-coll" aria-expanded="false" aria-label="Toggle navigation">
+             &#9776
+          </a>
+      <div class="collapse navbar-collapse" id="nav-coll">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" onclick="$('#why-con').animatescroll();$('.navbar-collapse').collapse('hide');" href="#">ABOUT</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container-fluid con1 con-bg" id="home-con">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h1 class="he1">
+            Double Tick Ventures
+          </h1>
+          <p class="p1">
+            We enable you to offer services on WhatsApp with a tailor made solution. 
+          </p>
+          <!---- <a href="#" onclick="$('#why-con').animatescroll();" class="btn btn1">Learn more   <span class="span1"> > </span></a> --->
+        </div>
+        <div class="col-sm-12 col-md-6">
+          <img src="img/i1.png" class="i1" />
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  </body>
+</html>

@@ -1,0 +1,324 @@
+current domain in process_parent:www.facebook.com
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: name 'domain' is not defined
+duration_log get_archived_page_info: 0.0022166999988257885
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for www.facebook.com, time taken 0.023716600000625476 seconds
+
+
+current URL in process_parent: wunderfauks-signin.com/#/pages/index/index
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: name 'domain' is not defined
+duration_log get_archived_page_info: 0.008923200002755038
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for wunderfauks-signin.com, time taken 0.036598799997591414 seconds
+
+
+current URL in process_parent: xxmtkm.info/final-draft-coordinated-public-transportation-plan-released-for-review-comment/?
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: name 'domain' is not defined
+duration_log get_archived_page_info: 0.012594800005899742
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for xxmtkm.info, time taken 0.037186699992162175 seconds
+
+
+current URL in process_parent: wunderfauks-develop.com/#/pages/start/start
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: name 'domain' is not defined
+duration_log get_archived_page_info: 0.010951200005365536
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for wunderfauks-develop.com, time taken 0.04090140000334941 seconds
+
+
+current URL in process_parent: e-lazada.com/#/login/index
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: name 'domain' is not defined
+duration_log get_archived_page_info: 0.01642590000119526
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for e-lazada.com, time taken 0.08594940000330098 seconds
+
+
+current URL in process_parent: eufmyio.shop/products/05-stories-of-chata-patti-crimson-wedding-22
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: name 'domain' is not defined
+duration_log get_archived_page_info: 0.014626799995312467
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for eufmyio.shop, time taken 0.044828800004324876 seconds
+
+
+current URL in process_parent: krakenbq.cc/index/user/indexhtml
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: name 'domain' is not defined
+duration_log get_archived_page_info: 0.011916999996174127
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for krakenbq.cc, time taken 0.03768819999822881 seconds
+
+
+current URL in process_parent: www.forfurniture-downapp.com/
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: name 'domain' is not defined
+duration_log get_archived_page_info: 0.00784949999069795
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for www.forfurniture-downapp.com, time taken 0.026221299995086156 seconds
+
+
+current domain in process_parent:www.facebook.com
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: name 'domain' is not defined
+duration_log get_archived_page_info: 0.008979000005638227
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for www.facebook.com, time taken 0.05677320000540931 seconds
+
+
+current URL in process_parent: imgg1265t.xyz/mobile/#/assets
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: name 'domain' is not defined
+duration_log get_archived_page_info: 0.00777320000634063
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for imgg1265t.xyz, time taken 0.026946600002702326 seconds
+
+
+current URL in process_parent: skyonetrades.com/mobile/en-us/m.html#/myAccount
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: name 'domain' is not defined
+duration_log get_archived_page_info: 0.01045210000302177
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for skyonetrades.com, time taken 0.029455500000040047 seconds
+
+
+current URL in process_parent: fy31bb2392.shop/mobile
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: name 'domain' is not defined
+duration_log get_archived_page_info: 0.012632400001166388
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for fy31bb2392.shop, time taken 0.04457919999549631 seconds
+
+
+current URL in process_parent: chartercom-singapore-project.pages.dev/#/
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: name 'domain' is not defined
+duration_log get_archived_page_info: 0.012163100007455796
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for chartercom-singapore-project.pages.dev, time taken 0.049254400000791065 seconds
+
+
+current URL in process_parent: dktunvslkjslgj.com/index/user/login.html
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: name 'domain' is not defined
+duration_log get_archived_page_info: 0.008729799999855459
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for dktunvslkjslgj.com, time taken 0.02848480000102427 seconds
+
+
+current URL in process_parent: p-dro.bio/auth
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: name 'domain' is not defined
+duration_log get_archived_page_info: 0.011503999994602054
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for p-dro.bio, time taken 0.0335443999938434 seconds
+
+
+current URL in process_parent: www.mabangerp.plus/#/login
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: name 'domain' is not defined
+duration_log get_archived_page_info: 0.00950310000916943
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for www.mabangerp.plus, time taken 0.030109599989373237 seconds
+
+
+current URL in process_parent: dgtsdnvsdhgws.com/index/rot_order/index.html
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: name 'domain' is not defined
+duration_log get_archived_page_info: 0.007943600008729845
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for dgtsdnvsdhgws.com, time taken 0.03951629999210127 seconds
+
+
+current URL in process_parent: espire-home.com/#/pages/index/index
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: name 'domain' is not defined
+duration_log get_archived_page_info: 0.01176090000080876
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for espire-home.com, time taken 0.03963080000539776 seconds
+
+
+current URL in process_parent: in2ideas-enhance.com/#/
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: name 'domain' is not defined
+duration_log get_archived_page_info: 0.01102099999843631
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for in2ideas-enhance.com, time taken 0.03770240000449121 seconds
+
+
+current URL in process_parent: shop-e2mallapp.com/to
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: name 'domain' is not defined
+duration_log get_archived_page_info: 0.01103789999615401
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for shop-e2mallapp.com, time taken 0.034965200000442564 seconds
+
+
+current URL in process_parent: snreviews.com/getorder/evaluation
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: name 'domain' is not defined
+duration_log get_archived_page_info: 0.010852599996724166
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for snreviews.com, time taken 0.04205319999891799 seconds
+
+
+current URL in process_parent: app.qqcjqff1012.xyz/s/qURj
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: name 'domain' is not defined
+duration_log get_archived_page_info: 0.013634599992656149
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for app.qqcjqff1012.xyz, time taken 0.04461289999017026 seconds
+
+
+current URL in process_parent: app.qqcjqxz1023.xyz/s/mlenderios
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: name 'domain' is not defined
+duration_log get_archived_page_info: 0.013564600012614392
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for app.qqcjqxz1023.xyz, time taken 0.03815919999033213 seconds
+
+
+current URL in process_parent: app-a1.ztajhi.cn/s/mlenderios?key=646S56376F6G465D31376383333M031R333X732C39&c=
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: name 'domain' is not defined
+duration_log get_archived_page_info: 0.013128400009009056
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for app-a1.ztajhi.cn, time taken 0.04024990000471007 seconds
+
+
+current URL in process_parent: reschedule-track.com/secureJsp.php?&URI=1a78e09b36dd9349af6a929c067e7a85&sessionid=58a7e760c929a6fa9439dd63b90e87a1&securessl=true
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: name 'domain' is not defined
+duration_log get_archived_page_info: 0.0123611000017263
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for reschedule-track.com, time taken 0.040315399994142354 seconds
+
+
+current URL in process_parent: www.notchstudio-online.com/#/
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: name 'domain' is not defined
+duration_log get_archived_page_info: 0.00829909999447409
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for www.notchstudio-online.com, time taken 0.03548700000101235 seconds
+
+
+current URL in process_parent: beepmall.app/#/pages/login/login
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: name 'domain' is not defined
+duration_log get_archived_page_info: 0.011877800003276207
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for beepmall.app, time taken 0.03488609999476466 seconds
+
+
+current URL in process_parent: zappz-program.com/#/
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: name 'domain' is not defined
+duration_log get_archived_page_info: 0.008817800000542775
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for zappz-program.com, time taken 0.03531269999803044 seconds
+
+
+current URL in process_parent: www.42matters-app.com/#/pages/userPages/login/login
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: name 'domain' is not defined
+duration_log get_archived_page_info: 0.008363699991605245
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for www.42matters-app.com, time taken 0.03451509999285918 seconds
+
+
+current URL in process_parent: forecepts-project.com/#/pages/start/start
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: name 'domain' is not defined
+duration_log get_archived_page_info: 0.012373799996566959
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for forecepts-project.com, time taken 0.03585450000537094 seconds
+
+
+current URL in process_parent: www.impact-eu.com/#/index1
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: name 'domain' is not defined
+duration_log get_archived_page_info: 0.008326099996338598
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for www.impact-eu.com, time taken 0.036285800000769086 seconds
+
+
+current URL in process_parent: ksldhglslsdjg.com/index/user/login.html
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: name 'domain' is not defined
+duration_log get_archived_page_info: 0.008377599995583296
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for ksldhglslsdjg.com, time taken 0.03501999999571126 seconds
+
+
+current URL in process_parent: unrivaledinsight.com/web
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: name 'domain' is not defined
+duration_log get_archived_page_info: 0.010231799999019131
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for unrivaledinsight.com, time taken 0.03559010000026319 seconds
+
+
+current URL in process_parent: dbshk.cc/speed.html#/
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: name 'domain' is not defined
+duration_log get_archived_page_info: 0.012644400005228817
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for dbshk.cc, time taken 0.03624780000245664 seconds
+
+
+current URL in process_parent: www.impact-bv.com/#/index1
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: name 'domain' is not defined
+duration_log get_archived_page_info: 0.009147599994321354
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for www.impact-bv.com, time taken 0.04032369999913499 seconds
+
+
+current URL in process_parent: rs51rma7kwfuchvsl.7ut37gb.buzz/www.dbs.com.hk
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: name 'domain' is not defined
+duration_log get_archived_page_info: 0.01319290000537876
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for rs51rma7kwfuchvsl.7ut37gb.buzz, time taken 0.03733700000157114 seconds
+
+

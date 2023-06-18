@@ -1,0 +1,44 @@
+HTTP/1.1 200 OK
+Date: Mon, 12 Jun 2023 06:57:09 GMT
+Content-Type: text/html
+Transfer-Encoding: chunked
+Connection: keep-alive
+last-modified: Wed, 12 Apr 2023 06:58:56 GMT
+vary: Accept-Encoding
+x-powered-by: ASP.NET
+access-control-allow-origin: *
+access-control-allow-methods: GET, POST, PUT, DELETE, OPTIONS
+access-control-allow-headers: Origin, X-Requested-With, Content-Type, Accept, Authorization
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=otyef5H668RGjr2IzzR7P6FHp370mKF%2F%2F9ZD5vCGt0c4lZwncm40WzkB%2BIPPiuQp1snrPFjyMSZrb%2BsT7XYjlMVt3vagFcfaxMe0Tf8W1chNaCM9N2YLabVscBP6%2FtTOpLOM7wAvEwz%2BkRN4I8i1"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 7d6032abe9123dd4-SIN
+alt-svc: h3=":443"; ma=86400
+
+<!DOCTYPE html>
+<html ng-cloak>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <base href="/">
+    <title></title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+    <link rel="preload" as="image" href="/images/icons/intro_logo.svg">
+    <link rel="preload" as="image" href="/settings/logos/logo.svg">
+    <!-- версия перепишется в билдере, одинаковый формат строки для замены -->
+    <script type="text/javascript" src="/settings/config.js?version=2.21.1.0"></script>
+<script defer src="/assets/vendors.js?6fdc78450f5a56c14a31"></script><script defer src="/assets/extensions.js?6fdc78450f5a56c14a31"></script><script defer src="/assets/index.js?6fdc78450f5a56c14a31"></script><link href="/assets/vendors.css?6fdc78450f5a56c14a31" rel="stylesheet"><link href="/assets/index.css?6fdc78450f5a56c14a31" rel="stylesheet"></head>
+
+<body ng-controller="mainController" md-theme="{{theme}}">
+    <tr-header-menu ng-if="showMenu" ng-show="!isReloadingLang"></tr-header-menu>
+    <main class="container" ng-show="!isReloadingLang" layout="row">
+        <tr-left-menu ng-if="showMenu" class="navigation-menu"></tr-left-menu>
+        <md-content flex id="content" class="main-container">
+            <section ng-view></section>
+        </md-content>
+    </main>
+    <script>window.version="2.21.1.0";</script>
+</body>
+</html>

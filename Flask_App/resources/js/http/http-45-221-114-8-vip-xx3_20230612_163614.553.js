@@ -1,0 +1,2 @@
+﻿﻿document.writeln("<p align=\'center\'><span style=\'background-color: #FFFF00\'><b>");
+document.writeln("<font color=\'#0000FF\'>\u5e7f\u544a\u5408\u4f5c\u98de\u673a\u53f7\u0040\u0063\u0061\u0069\u0038\u0038\u0030\u0030</font></b></span></p>"); 

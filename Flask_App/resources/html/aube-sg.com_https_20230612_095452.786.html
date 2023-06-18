@@ -1,0 +1,565 @@
+HTTP/1.1 200 OK
+Date: Mon, 12 Jun 2023 09:54:58 GMT
+Content-Type: text/html; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: Apache
+X-Powered-By: PHP/8.1.20
+Vary: Range,Accept-Encoding
+Accept-Ranges: none
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="index,follow" />
+<meta name="format-detection" content="telephone=no"/>
+<meta name="viewport" content="width=device-width,maximum-scale=5,user-scalable=yes">
+
+<title>AUBE BEAUTY SALON - Japanese beauty salon - Wheelock Place, Marina Square, Somerset</title>
+
+<link rel="alternate" href="https://aube-sg.com/" hreflang="en"/>
+<link rel="alternate" href="https://aube-sg.com/jp/" hreflang="ja"/>
+<link rel="alternate" href="https://aube-sg.com/" hreflang="x-default"/>
+
+
+
+<!-- Favicon -->
+<link rel="apple-touch-icon" sizes="57x57" href="/common/img/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/common/img/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/common/img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/common/img/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/common/img/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/common/img/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/common/img/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/common/img/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/common/img/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="/common/img/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/common/img/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="/common/img/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/common/img/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/common/img/manifest.json">
+<link rel="mask-icon" href="/common/img/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="/common/img/favicon.ico">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/common/img/mstile-144x144.png">
+<meta name="msapplication-config" content="/common/img/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+
+
+<!--CSS-->
+<link rel="stylesheet" href="/common/css/common.css?20230601" />
+<link rel="stylesheet" href="/common/css/style.css?20230601" />
+<link rel="stylesheet" href="/common/css/style-pc.css?20230601" media="only screen and (min-width: 737px)" />
+<link rel="stylesheet" href="/css/script.css" />
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://use.typekit.net/fok1xwf.css">
+
+<!-- Javascript --> 
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="/js/jquery.bgswitcher.js"></script>
+<script src="/js/script.js"></script>
+<script src="/common/js/common.js?20230601"></script>
+
+<link rel="stylesheet" href="/css/top.css?20230501" />
+
+<script type="text/javascript" async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAhB69dn4p0Q0C31L-n4ecc1fFWhjdD1ms&callback=initialize"></script>
+
+<script>
+	function initialize() {
+	var latlng = new google.maps.LatLng(1.300585, 103.843287);
+	var opts = {
+	zoom: 13,
+	center: latlng,
+	mapTypeControl: true,
+	mapTypeId: google.maps.MapTypeId.ROADMAP,
+	scaleControl: true,
+	scrollwheel: false,
+	draggable: true ,
+	};
+	/* 表示エリアのID名を指定。この場合id="mapCanvas"のところに出力 */
+	var map = new google.maps.Map(document.getElementById("mapCanvas"), opts);
+	
+	/* 地図style */
+	var styleOptions = [{
+	
+	'stylers': [{
+	'gamma': 0.8
+	}, {
+	'saturation': -100
+	}, {
+	'lightness': 20
+	}]
+	}]
+	
+	
+	//地図の切り替え
+	var styledMapOptions = {
+	name: 'モノクロ地図'
+	}
+	
+	var monoType = new google.maps.StyledMapType(styleOptions, styledMapOptions);
+	map.mapTypes.set('mono', monoType);
+	map.setMapTypeId('mono');
+	
+	//マーカーの画像パス(相対、絶対どっちでも)
+	var image = {
+			url : 'https://aube-sg.com/img/top/mappin.png',
+			scaledSize : new google.maps.Size(55, 70)
+			}
+	var Marker = new google.maps.Marker({
+	position: new google.maps.LatLng(1.304792,103.830727),
+	map: map,
+	icon: image//デフォルトのマーカーを表示する場合は指定無し
+	});
+	
+	var image = {
+			url : 'https://aube-sg.com/img/top/mappin.png',
+			scaledSize : new google.maps.Size(55, 70)
+			}
+	var Marker = new google.maps.Marker({
+	position: new google.maps.LatLng(1.29107,103.857144,15),
+	map: map,
+	icon: image//デフォルトのマーカーを表示する場合は指定無し
+	});
+	
+	
+	var image = {
+			url : 'https://aube-sg.com/img/top/mappin.png',
+			scaledSize : new google.maps.Size(55, 70)
+			}
+	var Marker = new google.maps.Marker({
+	position: new google.maps.LatLng(1.301585, 103.836287),
+	map: map,
+	icon: image//デフォルトのマーカーを表示する場合は指定無し
+	});
+	
+	var image = {
+			url : 'https://aube-sg.com/img/top/mappin.png',
+			scaledSize : new google.maps.Size(55, 70)
+			}
+	var Marker = new google.maps.Marker({
+	position: new google.maps.LatLng(1.2890376793302012, 103.84662683287745),
+	map: map,
+	icon: image//デフォルトのマーカーを表示する場合は指定無し
+	});
+	
+	
+	//infowindow.open(map, lopanMarker);//初期状態で吹き出しを表示させる場合は有効にする 
+	google.maps.event.addListener(Marker, 'click', function() {
+	infowindow.open(map, Marker);
+	});
+	}
+</script>
+
+<script>
+	
+	$(function(){
+		if (window.matchMedia( '(min-width: 769px)' ).matches) {
+			$(".mainVis").bgswitcher({
+			images: ["/img/top/main_01.jpg", "/img/top/main_02.jpg"],
+	        interval: 10000
+	        });
+		} else {
+		    $(".mainVis").bgswitcher({
+			images: ["/img/top/main_sp_01.jpg", "/img/top/main_sp_02.jpg"],
+	        interval: 10000
+	        });
+		};
+		
+	});
+	
+	$( '.swipebox' ).swipebox();
+
+</script>
+
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5BTVDNQ');</script>
+<!-- End Google Tag Manager -->
+</head>
+
+
+<body>
+	
+	<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5BTVDNQ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+    <div id="wrapper">
+	    
+		<header>
+        	<div id="inner_head">
+            	<p class="siteID"><a href="https://aube-sg.com/">AUBE Singapore</a></p>
+                <nav id="pcMenu">
+                    <ul class="clearFix">
+                        <li><a href="/about/">ABOUT</a></li>
+                        <li><a href="/stylist/">STYLIST</a></li>
+                        <li><a href="/hairstyle/">SALON HAIR STYLE</a></li>
+                        <li><a href="/menu/">MENU</a></li>
+                        <li><a href="/location/">LOCATION</a></li>
+	                    <li class="sns"><a href="https://www.facebook.com/aubesg/" target="_blank" rel="noopener"><i class="fa fa-facebook"></i></a></li>
+	                    <li class="sns"><a href="https://www.instagram.com/aubesingapore/" target="_blank" rel="noopener"><i class="fa fa-instagram"></i></a></li>
+	                    <li class="sns"><a href="mailto:aubehairsg@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+	                    <li class="sns"><a href="#modal-whatsup" data-reveal-id="modal-whatsapp"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+                    </ul>
+                </nav>
+                <form NAME="languages">
+                    <select NAME="select1" onChange="if(document.languages.select1.value){location.href=document.languages.select1.value;}" class="mySelectBoxClass">
+                        <option selected value="https://aube-sg.com/">ENGLISH</option>
+                        <option value="/jp/">日本語</option>
+                    </select>
+                </form>
+                <p class="menuBtn"><a href="#modal-navi"><i class="fa fa-bars"></i></a></p>
+            </div>
+            
+        </header>
+
+        
+        
+		
+		<!-- モーダルメニュー -->
+		<div class="remodal-bg">
+			<div id="navi" class="remodal" data-remodal-id="modal-navi">
+				 <ul class="clearFix">
+		            <li><a href="/">TOP</a></li>
+		            <li><a href="/about/">ABOUT</a></li>
+		            <li><a href="/stylist/">STYLIST</a></li>
+		            <li><a href="/hairstyle/">SALON HAIR STYLE</a></li>
+		            <li><a href="/menu/">MENU</a></li>
+		            <li><a href="/location/">LOCATION</a></li>
+		            <li><a href="/jp/"><i class="fa fa-globe" aria-hidden="true"></i> 日本語サイト</a></li>
+		        </ul>
+				<a data-remodal-action="close" class="remodal-close">&#215; CLOSE</a>
+			</div>
+			
+			<div id="whatsup" class="remodal" data-remodal-id="modal-whatsup">
+				 <ul class="clearFix">
+		            <li><a href="https://wa.me/6588382418" target="_blank" rel="noopener"><i class="fa fa-whatsapp" aria-hidden="true"></i> Wheelock Place</a></li>
+		            <li><a href="https://wa.me/6588237918" target="_blank" rel="noopener"><i class="fa fa-whatsapp" aria-hidden="true"></i> Marina Square</a></li>
+		            <li><a href="https://wa.me/6596965046" target="_blank" rel="noopener"><i class="fa fa-whatsapp" aria-hidden="true"></i> Somerset</a></li>
+		            <li><a href="https://wa.me/6592307741" target="_blank" rel="noopener"><i class="fa fa-whatsapp" aria-hidden="true"></i> Clarke Quay Central</a></li>
+					<a data-remodal-action="close" class="remodal-whatsup">&#215; CLOSE</a>
+		        </ul>
+			</div>
+		</div>	
+        
+    <div id="container" class="clearFix">
+    
+    	<div class="mainVisArea">
+        	<div class="mainVis">
+            	<div class="mainCopy">
+                    <h1>Japanese Beauty Salon in Singapore<br><span>AUBE BEAUTY HAIR</span></h1>
+					<h2>The quality of "AUBE hair", a salon with over 200 locations <br>across Japan, is now available 3 locations,<br>
+						 Wheelock Place, Marina Square, Somerset<br>in Singapore!</h2>
+                </div>
+            </div>
+            <div class="bgMain"></div>
+    	</div>
+       
+        <div class="contents clearFix">
+            
+            <p class="notice">
+	           <!--  More Japanese new stylists from Japan, so 30% OFF in Clarke Quay Central branch! -->
+	            <span>More Japanese new stylists from Japan, <br class="sp">so 30% OFF in Clarke Quay Central branch!</span>
+            </p>
+            
+          
+<!--
+
+	        <div class="news-box">
+	            <p>A new branch will be opened in <br class="sp">Clarke Quay Central on 5th May.</p>
+            </div>
+-->
+
+         
+        
+
+            
+            <!-- AboutArea -->
+            <div class="aboutArea">
+	           <div class="two_third grid">
+		            <dl>
+			            <dt>June Promotions<span>June 1st, 2023 Updated<br class="sp"> <div class="attention">*Available from Jun. 1 through Jun. 30</div></span></dt>
+			            <dd>
+			            	<p class="promo-text">Please tell staff when you book "I'm from homepage promo".</p>
+			            	
+			            	<div class="flex-box">
+					            	
+					            <div class="promo-holder one_half clearFix">
+						            <img src="/img/top/promo_wheelock.jpg" alt="promo_Wheelock" width="200" height="200" >
+						            <div class="promo-right clearFix">
+							            <p class="salon-name wheelock">Wheelock place</p>
+							            <p class="mb5"><span>Weekdays,Weekends,PH 10% off</span><br>*For first visit to Aube group salon.<br>(Not applicable for stylist AYA.)</p>
+							            <p><span>Weekdays,Weekends,PH 20% off</span><br>*For first visit to Wheelock branch.<br>*Request for stylist Kaori.</p>
+						            </div>
+					            </div>
+					            <div class="promo-holder one_half_end clearFix">
+						            <img src="/img/top/promo_marina.jpg" alt="promo_Marina" width="200" height="200" >
+						            <div class="promo-right clearFix">
+							            <p class="salon-name mariana">Marina</p>
+							            <p><span>Weekdays 20% off</span><br><span>Weekends,PH 10% off</span><br>*For first visit to Marina branch.</p>
+						            </div>
+					            </div>
+					            <div class="promo-holder one_half clearFix">
+						            <img src="/img/top/promo_%20somerset.jpg" alt="promo_ somerset" width="200" height="200" >
+						            <div class="promo-right clearFix">
+							            <p class="salon-name somerset">Somerset</p>
+							            <p><span>Weekdays,Weekends,PH 20% off</span><br>*For first visit to Somerset branch.<br>(Not applicable for stylist TAKA.)</p>
+						            </div>
+					            </div>
+					            <div class="promo-holder one_half_end clearFix">
+						            <img src="/img/top/promo_clarke.jpg" alt="promo_Wheelock" width="200" height="200" >
+						            <div class="promo-right clearFix">
+							            <p class="salon-name wheelock">Clarke Quay Central</p>
+							            <p><span>Weekdays,Weekends,PH 30% off</span><br>*First visit for Clarke quay branch.<br>(Not applicable for Kazuki Tamura.)</p>
+						            </div>
+					            </div>
+					            <div class="promo-holder one_half clearFix">
+						            <img src="/img/top/promo_nail.jpg" alt="promo_ nail" width="200" height="200" >
+						            <div class="promo-right clearFix">
+							            <p class="salon-name somerset">NAIL (only at Marina)</p>
+							            <p><span>20% off for first visit for nail service.</span><br>Free gel-off for first-time users of gel nail service (excluding hard gel and scalp-off)</p>
+						            </div>
+					            </div>
+			            	</div>
+			            </dd>
+		            </dl>
+<!--
+		            <ul class="promo-memo">
+			            <li></li>
+		            </ul>
+-->
+
+	            </div>
+	            
+	            
+	            
+	            <div class="one_third grid">
+		            <dl>
+			            <dt>About "AUBE"</dt>
+			            <dd>AUBE Hair group operates 200 beauty hair salons in Japan and 12 overseas, and with the latest equipment, treatments and state-of-the-art techniques we make our customers'beauty ideas a reality.<br>
+			            In the interior, we make abundant use of popular furniture brands and imported goods, as a trend-setting beauty shop should, and we continue to create salons that are in keeping with the times and stimulate our customers'senses.</dd>
+		            </dl>
+		            <div class="cover"></div>
+	            </div>
+	            
+            </div><!-- / AboutArea -->
+		
+            <div class="serviceArea clearFix">
+	            <div class="one_third grid">
+		            <dl>
+			            <dt>CONCEPT</dt>
+			            <dd>
+			            The stylists at our beauty salon are Japanese beauticians that have extensive experience working in Japan and are highly skilled. <br>
+			            At our salon, we insist on Japanese products, as our chemicals, furniture, and chairs all come from Japan.<br>Customers can rely on their personal stylists for everything from the instant they set foot in our salon; from shampooing to cutting, dying, perming, and styling; from start to finish.<br>
+			            We have prepared an environment where we provide the exact same quality from Tokyo in Singapore. We promise soothing moments in a relaxed atmosphere.</dd>
+		            </dl>
+	            </div>
+	            <div class="two_third_end grid"></div>
+            </div><!-- / serviceArea -->
+            
+        </div>
+        
+		<div class="contsBlk clearFix"> 
+        
+        <div class="contents">
+            <!--１カラム -->
+            <div class="hairStyleBox clearFix">
+	            
+	            <div class="fullwidth grid">
+                    <p class="ttl01">SALON HAIR STYLE</p>
+                </div><!-- / .fullwidth -->
+            
+		        <div class="clearFix">
+		            <div class="hairBox">
+		                <a href="/img/hairstyle/img_24.jpg" class="swipebox">
+			                <div>
+				                <figure>
+									<img src="/img/hairstyle/img_24_thumb.jpg" alt="SALON HAIR STYLE 24">
+									<figcaption><p>VIEW STYLE</p></figcaption>
+								</figure>
+			                </div>
+		                </a>
+		            </div>
+		            <div class="hairBox">
+		                <a href="/img/hairstyle/img_20.jpg" class="swipebox">
+			                <div>
+				                <figure>
+									<img src="/img/hairstyle/img_20_thumb.jpg" alt="SALON HAIR STYLE 20">
+									<figcaption><p>VIEW STYLE</p></figcaption>
+								</figure>
+			                </div>
+		                </a>
+		            </div>
+		            <div class="hairBox">
+		                <a href="/img/hairstyle/img_09.jpg" class="swipebox">
+			                <div>
+				                <figure>
+									<img src="/img/hairstyle/img_09_thumb.jpg" alt="SALON HAIR STYLE 09">
+									<figcaption><p>VIEW STYLE</p></figcaption>
+								</figure>
+			                </div>
+		                </a>
+		            </div>
+		            <div class="hairBox">
+		                <a href="/img/hairstyle/img_01.jpg" class="swipebox">
+			                <div>
+				                <figure>
+									<img src="/img/hairstyle/img_01_thumb.jpg" alt="SALON HAIR STYLE 01">
+									<figcaption><p>VIEW STYLE</p></figcaption>
+								</figure>
+			                </div>
+		                </a>
+		            </div>
+		            <div class="hairBox">
+		                <a href="/img/hairstyle/img_29.jpg" class="swipebox">
+			                <div>
+				                <figure>
+									<img src="/img/hairstyle/img_29_thumb.jpg" alt="SALON HAIR STYLE 29">
+									<figcaption><p>VIEW STYLE</p></figcaption>
+								</figure>
+			                </div>
+		                </a>
+		            </div>
+		            <div class="hairBox">
+		                <a href="/img/hairstyle/img_07.jpg" class="swipebox">
+			                <div>
+				                <figure>
+									<img src="/img/hairstyle/img_07_thumb.jpg" alt="SALON HAIR STYLE 07">
+									<figcaption><p>VIEW STYLE</p></figcaption>
+								</figure>
+			                </div>
+		                </a>
+		            </div>
+		            			            
+		        </div>
+		        
+		        <a href="/hairstyle/" class="button">VIEW MORE</a>
+        	</div> 
+        </div>
+    </div>
+    
+		<div id="mapCanvas"></div>
+
+    </div>
+    
+		
+	<div class="breadCrumbArea">
+        <ul class="breadcrumb clearFix">
+            <li><a href="/"><i class="fa fa-home" aria-hidden="true"></i>　TOP</a></li>
+    	</ul>
+	</div>
+	
+	    
+	
+        
+        <footer>
+	        
+	     	
+       		<a href="#modal-whatsup" id="whats-app" class="modal-btn"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+       		
+       		
+	     	<a href="#" id="page-top"><i class="fa fa-chevron-up"></i></a>
+        
+            <div class="footInner" class="clearfix">
+	            
+               
+	            <img src="/common/img/logo_foot.png" class="logo" alt="AUBE BEAUTY SALON"/>
+	                
+                <div class="footInnerBox clearFix">
+	                <!-- 1号店 -->
+	                <div class="addressBox">
+		                <h6>AUBE BEAUTY SALON<br class="sp"> / Wheelock Place</h6>
+	                    <p>501 ORCHARD RD. WHEELOCK PLACE,<br>#05-09A Singapore 238880</p>
+	                    <p>TEL <a href="tel:6235-3845">6235-3845</a> / SMS <a href="sms:8838-2418">8838-2418</a></p>
+	                    <dl>
+	                        <dt><i class="fa fa-clock-o" aria-hidden="true"></i> 10:00 -20:00 / 7days open</dt>
+	                        <dd>(Final receptionist 19:00)</dd>
+	                    </dl>
+	                    <ul class="socialLinks clearFix">
+		                    <li class="mail"><a href="mailto:aubehairsg@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+		                    <li class="facebook"><a href="https://www.facebook.com/aubesg/" target="_blank" rel="noopener"><i class="fa fa-facebook"></i></a></li>
+		                    <li class="insta"><a href="https://www.instagram.com/aubesingapore/" target="_blank" rel="noopener"><i class="fa fa-instagram"></i></a></li>
+		                    <li class="whatsapp"><a href="https://wa.me/6588382418" target="_blank" rel="noopener"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+	                	</ul>
+	                </div>
+	                
+	                <!-- 2号店 -->
+	                <div class="addressBox">
+		                <h6>AUBE BEAUTY SALON<br class="sp"> / Marina Square</h6>
+	                    <p>6 Raffles Boulevard, B1-13/14<br>Marina Square, Singapore 039594</p>
+	                    <p>TEL <a href="tel:6252-8186">6252-8186</a> / SMS <a href="sms:8823-7918">8823-7918</a>
+	                    <dl>
+	                        <dt><i class="fa fa-clock-o" aria-hidden="true"></i> 10:00 -20:00 / 7days open</dt>
+	                        <dd> (Final receptionist 19:00)</dd>
+	                    </dl>
+	                    <ul class="socialLinks clearFix">
+		                    <li class="mail"><a href="mailto:aubehairsg2@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+		                    <li class="facebook"><a href="https://www.facebook.com/aubesgmarina/" target="_blank" rel="noopener"><i class="fa fa-facebook"></i></a></li>
+		                    <li class="insta"><a href="https://www.instagram.com/aubesingapore_marina" target="_blank" rel="noopener"><i class="fa fa-instagram"></i></a></li>
+		                    <li class="insta"><a href="https://www.instagram.com/aube_nail_sg/" target="_blank" rel="noopener"><i class="fa fa-instagram"></i></a></li>
+		                    <li class="whatsapp"><a href="https://wa.me/6588237918" target="_blank" rel="noopener"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+	                	</ul>
+	                </div>
+	                
+	                
+	                <!-- Somerset -->
+	                <div class="addressBox">
+		                <h6>AUBE BEAUTY SALON<br class="sp"> / Somerset</h6>
+	                    <p>8 grange road, Cineleisure<br>#03-06,Singapore 239695</p>
+	                    <p>TEL <a href="tel:6463-8066">6463-8066</a> / SMS <a href="sms:9696-5046">9696-5046</a></p>
+	                    <dl>
+	                        <dt><i class="fa fa-clock-o" aria-hidden="true"></i> 10:00-20:00 / 7days open</dt>
+	                        <dd> (Final receptionist 19:00)</dd>
+	                    </dl>
+	                    <ul class="socialLinks clearFix">
+		                    <li class="mail"><a href="mailto:aubehairsg4@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+		                    <li class="facebook"><a href="https://www.facebook.com/Aube-Hair-Somerset-105772380788033/" target="_blank" rel="noopener"><i class="fa fa-facebook"></i></a></li>
+		                    <li class="insta"><a href="https://www.instagram.com/aube_somerset/" target="_blank" rel="noopener"><i class="fa fa-instagram"></i></a></li>
+		                    <li class="whatsapp"><a href="https://wa.me/6596965046" target="_blank" rel="noopener"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+
+	                	</ul>
+	                </div>
+	                
+	                
+	                <!-- Clarke Quay Central -->
+	                <div class="addressBox">
+		                <h6>AUBE BEAUTY SALON<br class="sp"> / Clarke Quay Central</h6>
+	                    <p>6 Eu Tong Sen St, Clarke Quay Central <br>#03-69,Singapore 059817</p>
+	                    <p>TEL <a href="tel:6226-0166">6226-0166</a> / SMS <a href="sms:9230-7741">9230-7741</a></p>
+	                    <dl>
+	                        <dt><i class="fa fa-clock-o" aria-hidden="true"></i> 10:00-20:00 / 7days open</dt>
+	                        <dd> (Final receptionist 19:00)</dd>
+	                    </dl>
+	                    <ul class="socialLinks clearFix">
+		                    <li class="mail"><a href="mailto:aubehairsg5@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+		                    <li class="facebook"><a href="https://www.facebook.com/profile.php?id=100091586890261" target="_blank" rel="noopener"><i class="fa fa-facebook"></i></a></li>
+		                    <li class="insta"><a href="https://www.instagram.com/aube_hair_clarke_quay/" target="_blank" rel="noopener"><i class="fa fa-instagram"></i></a></li>
+		                    <li class="whatsapp"><a href="https://wa.me/6592307741" target="_blank" rel="noopener"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+
+	                	</ul>
+	                </div>
+	                
+                </div>
+                
+                <address>© Aube Beauty Salon Singapore</address>
+                
+            </div>
+            
+            
+            
+        </footer>
+    
+    </div><!-- / #wrapper -->
+    
+
+    
+</body>
+</html>

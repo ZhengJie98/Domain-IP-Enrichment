@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <title>Hua Koon Club| Home Page</title>
+      <!-- Bootstrap core CSS -->
+      <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <!-- Custom styles for this template -->
+      <link href="css/modern-business.css" rel="stylesheet">
+      <link rel="stylesheet" href="css/icons.css">
+      <link rel="stylesheet" href="css/owl.carousel.min.css">
+      <link rel="stylesheet" href="css/owl.theme.default.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+   </head>
+   <body>
+      <!-- Navigation -->
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white fixed-top">
+   <div class="container">
+      <a class="navbar-brand" href="index.php"><img src="images/logo1.png" height="90"></a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarResponsive">
+         <ul class="navbar-nav">
+            <li class="nav-item">
+               <a class="nav-link" href="index.php"><i class="fa fa-home"></i> Home</a>
+            </li>
+           
+            <li class="nav-item">
+               <a class="nav-link" href="index.php"><i class="fa-newspaper-o fa"></i> News</a>
+            </li>
+			<li class="nav-item">
+               <a class="nav-link" href="image.php"><i class="fa fa-info-circle"></i> Gallery</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="vmgo.php"><i class="fa fa-info-circle"></i> Mission, Vision & Goal</a>
+            </li> 
+            <li class="nav-item">
+               <a class="nav-link" href="contact-us.php"><i class="fa fa-phone"></i> Contact us</a>
+            </li>
+			
+         </ul>
+      </div>
+      <div>
+         <div id="google_translate_element"></div>
+      </div>
+   </div>
+</nav>      <!-- Page Content -->
+      <div class="container-fluid">
+         <div class="row" style="margin-top: 4%">
+            <!-- Blog Entries Column -->
+            <div class="col-md-2 mt-4">
+               <!-- Categories Widget -->
+               
+            </div>
+            <div class="col-md-7">
+               <h4 class="widget-title mb-4">Today <span>Highlight</span></h4>
+               <!-- Blog Post -->
+               <div class="row">
+                  
+                  					 
+					 <div class="owl-carousel owl-theme" id="slider">
+                     
+                    <div class="card mb-4 border-0">
+                        <img class="card-img-top" src="admin/postimages/e6aadad3ecb09764c26f3e3b34a5cd93.jpg" alt="Charity Gala of Geylang East Home for the Elderly" height="100%">
+                        <div class="card-body">
+                           <p class="m-0">
+                              <!--category-->
+                              <a class="badge bg-success text-decoration-none link-light" href="category.php?catid=8" style="color:#fff">Sports</a>
+                              <!--Subcategory--->
+                              <a class="badge bg-warning text-decoration-none link-light"  style="color:#fff">Basketball</a>
+                           </p>
+                           <p class="m-0"><small> Posted on 2023-05-23 22:49:14</small></p>
+                           <a href="news-details.php?nid=7" class="card-title text-decoration-none text-dark">
+                              <h5 class="card-title">Charity Gala of Geylang East Home for the Elderly</h5>
+                           </a>
+                           <!-- <a href="news-details.php?nid=7" class="">Read More &rarr;</a> -->
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="col-md-6">
+                     <div class="card mb-4 border-0">
+                        <img class="card-img-top" src="admin/postimages/e6aadad3ecb09764c26f3e3b34a5cd93.jpg" alt="Charity Gala of Geylang East Home for the Elderly" height="200px">
+                        <div class="card-body">
+                           <p class="m-0">
+                              <!--category-->
+                              <a class="badge bg-success text-decoration-none link-light" href="category.php?catid=8" style="color:#fff">Sports</a>
+                              <!--Subcategory--->
+                              <a class="badge bg-warning text-decoration-none link-light"  style="color:#fff">Basketball</a>
+                           </p>
+                           <p class="m-0"><small> Posted on 2023-05-23 22:49:14</small></p>
+                           <a href="news-details.php?nid=7" class="card-title text-decoration-none text-dark">
+                              <h5 class="card-title">Charity Gala of Geylang East Home for the Elderly</h5>
+                           </a>
+                           <!-- <a href="news-details.php?nid=7" class="">Read More &rarr;</a> -->
+                        </div>
+                     </div>
+                  </div>
+                                   
+                 
+               </div> </div>
+            <!-- Sidebar Widgets Column -->
+            <div class="col-md-3 mt-5">
+   <!-- Search Widget -->
+<!-- <h4 class="widget-title mb-5">Don't <span>Miss</span></h4> -->
+
+   <div class="card mb-4 border-0">
+      <h5 class="card-header border-0 bg-white">Search</h5>
+      <div class="card-body">
+         <form name="search" action="search.php" method="post">
+            <div class="input-group">
+               <input type="text" name="searchtitle" class="form-control rounded-0" placeholder="Search for..." required>
+               <span class="input-group-btn">
+               <button class="btn btn-secondary rounded-0" type="submit"><i class="fa fa-search"></i></button>
+               </span>
+         </form>
+         </div>
+      </div>
+   </div>
+   
+   
+  
+   
+   
+   <div class="card my-4 border-0">
+      <h5 class="card-header border-0 bg-white">Recent News Upload</h5>
+      <div class="card-body">
+         <ul class="mb-0 list-unstyled">
+                        <li class="d-flex mb-2 align-items-center">
+               <img class="mr-2 rounded-circle" src="admin/postimages/e6aadad3ecb09764c26f3e3b34a5cd93.jpg" alt="Charity Gala of Geylang East Home for the Elderly" width="50px" height="50px">
+               <a href="news-details.php?nid=7" class="text-dark font-weight-bold">Charity Gala of Geylang East Home for the Elderly</a>
+            </li>
+                     </ul>
+      </div>
+   </div>
+   <!-- Side Widget -->
+   <div class="card my-4 border-0">
+      <h5 class="card-header border-0 bg-white">Popular  News Upload</h5>
+      <div class="card-body">
+         <ul class="list-unstyled">
+                        <li class="mb-2">
+               <a href="news-details.php?nid=7" class="text-dark font-weight-bold">Charity Gala of Geylang East Home for the Elderly</a>
+            </li>
+                     </ul>
+      </div>
+   </div>
+   <!-- Side Widget -->
+  
+   
+   
+</div>         </div>
+         
+      </div>
+      <!-- /.row -->
+      </div>
+      <!-- /.container -->
+      <!-- Footer -->
+      <div class="footer-area pt-3 bg-white mb-5">
+                <div class="container-fluid">
+                    <div class="row">
+                       
+                    </div>
+                </div>
+            </div>
+             <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+        }
+        </script>
+        <style>
+            .goog-logo-link {
+                display:none !important;
+            } 
+                
+            .goog-te-gadget{
+                color: transparent;
+            }
+            .goog-te-gadget .goog-te-combo {
+                margin: 0px 0;
+                padding: 8px;
+                color: #000;
+                background: #eeee;
+            }
+            #google_translate_element{
+                padding-top: 13px;
+                position: absolute;
+                top: 7px;
+                right:100px;
+            }
+        </style>  
+      <script src="js/foot.js"></script>
+      <!-- Bootstrap core JavaScript -->
+      <script src="vendor/jquery/jquery.min.js"></script>
+      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="js/owl.carousel.min.js"></script>
+      <script>
+         $('#slider').owlCarousel({
+           loop:true,
+           margin:10,
+           nav:false,
+           dots:false,
+           autoplay:true,
+           animateOut: 'fadeOut',
+           responsive:{
+               0:{
+                   items:1
+               },
+               600:{
+                   items:1
+               },
+               1000:{
+                   items:1
+               }
+           }
+         });
+         $('#slider2').owlCarousel({
+           loop:true,
+           margin:10,
+           nav:false,
+           dots:false,
+           autoplay:true,
+           animateOut: 'fadeOut',
+           responsive:{
+               0:{
+                   items:1
+               },
+               600:{
+                   items:1
+               },
+               1000:{
+                   items:4
+               }
+           }
+         });
+      </script>
+   </body>
+</html>

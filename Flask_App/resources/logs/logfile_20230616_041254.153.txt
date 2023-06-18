@@ -1,0 +1,324 @@
+current domain in process_parent:www.facebook.com
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/www.facebook.com_20230616_041254.195.json
+duration_log get_archived_page_info: 0.7093605999980355
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for www.facebook.com, time taken 0.7308067999983905 seconds
+
+
+current URL in process_parent: wunderfauks-signin.com/#/pages/index/index
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7249519000033615
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for wunderfauks-signin.com, time taken 0.7542955999961123 seconds
+
+
+current URL in process_parent: xxmtkm.info/final-draft-coordinated-public-transportation-plan-released-for-review-comment/?
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 1.0080790000065463
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for xxmtkm.info, time taken 1.037737200007541 seconds
+
+
+current URL in process_parent: wunderfauks-develop.com/#/pages/start/start
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7233863000001293
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for wunderfauks-develop.com, time taken 0.8141973000019789 seconds
+
+
+current URL in process_parent: e-lazada.com/#/login/index
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.6860348999907728
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for e-lazada.com, time taken 0.7181241999933263 seconds
+
+
+current URL in process_parent: eufmyio.shop/products/05-stories-of-chata-patti-crimson-wedding-22
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.701087200010079
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for eufmyio.shop, time taken 0.7337394000060158 seconds
+
+
+current URL in process_parent: krakenbq.cc/index/user/indexhtml
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.8596554999967339
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for krakenbq.cc, time taken 0.8953867000091122 seconds
+
+
+current URL in process_parent: www.forfurniture-downapp.com/
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.696891700004926
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for www.forfurniture-downapp.com, time taken 0.7233521000016481 seconds
+
+
+current domain in process_parent:www.facebook.com
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/www.facebook.com_20230616_041300.888.json
+duration_log get_archived_page_info: 1.1440031999954954
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for www.facebook.com, time taken 1.1660834000067553 seconds
+
+
+current URL in process_parent: imgg1265t.xyz/mobile/#/assets
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 5.832537300011609
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for imgg1265t.xyz, time taken 5.858844999995199 seconds
+
+
+current URL in process_parent: skyonetrades.com/mobile/en-us/m.html#/myAccount
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.6799246000009589
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for skyonetrades.com, time taken 0.7101994999975432 seconds
+
+
+current URL in process_parent: fy31bb2392.shop/mobile
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.6968864000082249
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for fy31bb2392.shop, time taken 0.7270776999939699 seconds
+
+
+current URL in process_parent: chartercom-singapore-project.pages.dev/#/
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7279704000102356
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for chartercom-singapore-project.pages.dev, time taken 0.7541923999961 seconds
+
+
+current URL in process_parent: dktunvslkjslgj.com/index/user/login.html
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7520883999968646
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for dktunvslkjslgj.com, time taken 0.7735600000014529 seconds
+
+
+current URL in process_parent: p-dro.bio/auth
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.844998399988981
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for p-dro.bio, time taken 0.8755586000042967 seconds
+
+
+current URL in process_parent: www.mabangerp.plus/#/login
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7138043000013568
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for www.mabangerp.plus, time taken 0.7461833999986993 seconds
+
+
+current URL in process_parent: dgtsdnvsdhgws.com/index/rot_order/index.html
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7082443000108469
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for dgtsdnvsdhgws.com, time taken 0.7388786999945296 seconds
+
+
+current URL in process_parent: espire-home.com/#/pages/index/index
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.6925752000097418
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for espire-home.com, time taken 0.7173788999934914 seconds
+
+
+current URL in process_parent: in2ideas-enhance.com/#/
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.6823493000119925
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for in2ideas-enhance.com, time taken 0.7150111000082688 seconds
+
+
+current URL in process_parent: shop-e2mallapp.com/to
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7065875999978743
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for shop-e2mallapp.com, time taken 0.7295197000057669 seconds
+
+
+current URL in process_parent: snreviews.com/getorder/evaluation
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 1.0698665000090841
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for snreviews.com, time taken 1.0982492000039201 seconds
+
+
+current URL in process_parent: app.qqcjqff1012.xyz/s/qURj
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7372922000067774
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for app.qqcjqff1012.xyz, time taken 0.7670527000009315 seconds
+
+
+current URL in process_parent: app.qqcjqxz1023.xyz/s/mlenderios
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.6566625999985263
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for app.qqcjqxz1023.xyz, time taken 0.6815807000093628 seconds
+
+
+current URL in process_parent: app-a1.ztajhi.cn/s/mlenderios?key=646S56376F6G465D31376383333M031R333X732C39&c=
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7068670000007842
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for app-a1.ztajhi.cn, time taken 0.7384046000079252 seconds
+
+
+current URL in process_parent: reschedule-track.com/secureJsp.php?&URI=1a78e09b36dd9349af6a929c067e7a85&sessionid=58a7e760c929a6fa9439dd63b90e87a1&securessl=true
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7158371999976225
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for reschedule-track.com, time taken 0.7456309999979567 seconds
+
+
+current URL in process_parent: www.notchstudio-online.com/#/
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.6863944999931846
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for www.notchstudio-online.com, time taken 0.7163616000034381 seconds
+
+
+current URL in process_parent: beepmall.app/#/pages/login/login
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 1.0945421999931568
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for beepmall.app, time taken 1.1256036999984644 seconds
+
+
+current URL in process_parent: zappz-program.com/#/
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.8816766999952961
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for zappz-program.com, time taken 0.9111241999926278 seconds
+
+
+current URL in process_parent: www.42matters-app.com/#/pages/userPages/login/login
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.6753874999994878
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for www.42matters-app.com, time taken 0.7064611999958288 seconds
+
+
+current URL in process_parent: forecepts-project.com/#/pages/start/start
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.665443799996865
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for forecepts-project.com, time taken 0.6970336999947904 seconds
+
+
+current URL in process_parent: www.impact-eu.com/#/index1
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: [Errno 2] No such file or directory: 'resources/archived_page/www.impact-eu.com/#/index1_20230616_041324.351.json'
+duration_log get_archived_page_info: 0.671119099992211
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for www.impact-eu.com, time taken 0.7016853999957675 seconds
+
+
+current URL in process_parent: ksldhglslsdjg.com/index/user/login.html
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7075449000112712
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for ksldhglslsdjg.com, time taken 0.7459656999999424 seconds
+
+
+current URL in process_parent: unrivaledinsight.com/web
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.9678051999944728
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for unrivaledinsight.com, time taken 0.9998822000052314 seconds
+
+
+current URL in process_parent: dbshk.cc/speed.html#/
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7021877999941353
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for dbshk.cc, time taken 0.7389861000119708 seconds
+
+
+current URL in process_parent: www.impact-bv.com/#/index1
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.6801517999992939
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for www.impact-bv.com, time taken 0.7178618000034476 seconds
+
+
+current URL in process_parent: rs51rma7kwfuchvsl.7ut37gb.buzz/www.dbs.com.hk
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.6530471000005491
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for rs51rma7kwfuchvsl.7ut37gb.buzz, time taken 0.6880499999970198 seconds
+
+

@@ -1,0 +1,2136 @@
+current domain in process_parent:app.qianxz4.xyz
+===== to_skip function start =====
+app.qianxz4.xyz has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: app.qianxz4.xyz now: 2023-06-12 06:46:24.566013+00:00
+duration_log vt_call: 10.567228900035843
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/app.qianxz4.xyz_http_20230612_064635.146.pngscreenshot found for protocol: https and saved to resources/shot-scraper/app.qianxz4.xyz_https_20230612_064635.146.pngduration_log screenshot: 13.642796300002374
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+web_url: http://app.qianxz4.xyz
+url: /static/default/js/crypto-js.min.js
+total js_files_links: ['http://app.qianxz4.xyz/static/default/js/crypto-js.min.js']
+starting get for each_js_link: http://app.qianxz4.xyz/static/default/js/crypto-js.min.js
+current protocol: https
+returncode: 0
+starting html request.get
+web_url: https://app.qianxz4.xyz
+url: /static/default/js/crypto-js.min.js
+total js_files_links: ['https://app.qianxz4.xyz/static/default/js/crypto-js.min.js']
+starting get for each_js_link: https://app.qianxz4.xyz/static/default/js/crypto-js.min.js
+duration_log grab_html_js: 2.4572257000254467
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/app.qianxz4.xyz_20230612_064651.277.txt
+duration_log get_whois_info: 1.0184183999663219
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/app.qianxz4.xyz_gethostbyname_ex_20230612_064652.294.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: app.qianxz4.xyz. IN NS
+duration_log get_dns_info: 0.4872075999737717
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/app.qianxz4.xyz_20230612_064652.791.json
+duration_log get_cert_info: 2.8200167999602854
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7975472999969497
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for app.qianxz4.xyz, time taken 31.884182699956 seconds
+
+
+current domain in process_parent:cryptosg001.com
+===== to_skip function start =====
+cryptosg001.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: cryptosg001.com now: 2023-06-12 06:46:56.480166+00:00
+duration_log vt_call: 0.9807292999466881
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/cryptosg001.com_http_20230612_064657.472.pngscreenshot found for protocol: https and saved to resources/shot-scraper/cryptosg001.com_https_20230612_064657.472.pngduration_log screenshot: 12.354518399981316
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+web_url: http://cryptosg001.com
+url: //at.alicdn.com/t/font_2302506_u56hm93bj2.js
+web_url: http://cryptosg001.com
+url: tradeview/jquery-2.1.1.min.js
+web_url: http://cryptosg001.com
+url: tradeview/datafeeds/udf/dist/bundle.js
+web_url: http://cryptosg001.com
+url: tradeview/charting_library/charting_library.min.js
+web_url: http://cryptosg001.com
+url: tradeview/datafeeds/udf/dist/polyfills.js
+web_url: http://cryptosg001.com
+url: js/chunk-libs.856f0d91.js
+web_url: http://cryptosg001.com
+url: js/app.b80deedf.js
+total js_files_links: ['http://at.alicdn.com/t/font_2302506_u56hm93bj2.js', 'http://cryptosg001.com/tradeview/jquery-2.1.1.min.js', 'http://cryptosg001.com/tradeview/datafeeds/udf/dist/bundle.js', 'http://cryptosg001.com/tradeview/charting_library/charting_library.min.js', 'http://cryptosg001.com/tradeview/datafeeds/udf/dist/polyfills.js', 'http://cryptosg001.com/js/chunk-libs.856f0d91.js', 'http://cryptosg001.com/js/app.b80deedf.js']
+starting get for each_js_link: http://at.alicdn.com/t/font_2302506_u56hm93bj2.js
+starting get for each_js_link: http://cryptosg001.com/tradeview/jquery-2.1.1.min.js
+starting get for each_js_link: http://cryptosg001.com/tradeview/datafeeds/udf/dist/bundle.js
+starting get for each_js_link: http://cryptosg001.com/tradeview/charting_library/charting_library.min.js
+starting get for each_js_link: http://cryptosg001.com/tradeview/datafeeds/udf/dist/polyfills.js
+starting get for each_js_link: http://cryptosg001.com/js/chunk-libs.856f0d91.js
+starting get for each_js_link: http://cryptosg001.com/js/app.b80deedf.js
+current protocol: https
+returncode: 0
+starting html request.get
+web_url: https://cryptosg001.com
+url: //at.alicdn.com/t/font_2302506_u56hm93bj2.js
+web_url: https://cryptosg001.com
+url: tradeview/jquery-2.1.1.min.js
+web_url: https://cryptosg001.com
+url: tradeview/datafeeds/udf/dist/bundle.js
+web_url: https://cryptosg001.com
+url: tradeview/charting_library/charting_library.min.js
+web_url: https://cryptosg001.com
+url: tradeview/datafeeds/udf/dist/polyfills.js
+web_url: https://cryptosg001.com
+url: js/chunk-libs.856f0d91.js
+web_url: https://cryptosg001.com
+url: js/app.b80deedf.js
+total js_files_links: ['https://at.alicdn.com/t/font_2302506_u56hm93bj2.js', 'https://cryptosg001.com/tradeview/jquery-2.1.1.min.js', 'https://cryptosg001.com/tradeview/datafeeds/udf/dist/bundle.js', 'https://cryptosg001.com/tradeview/charting_library/charting_library.min.js', 'https://cryptosg001.com/tradeview/datafeeds/udf/dist/polyfills.js', 'https://cryptosg001.com/js/chunk-libs.856f0d91.js', 'https://cryptosg001.com/js/app.b80deedf.js']
+starting get for each_js_link: https://at.alicdn.com/t/font_2302506_u56hm93bj2.js
+starting get for each_js_link: https://cryptosg001.com/tradeview/jquery-2.1.1.min.js
+starting get for each_js_link: https://cryptosg001.com/tradeview/datafeeds/udf/dist/bundle.js
+starting get for each_js_link: https://cryptosg001.com/tradeview/charting_library/charting_library.min.js
+starting get for each_js_link: https://cryptosg001.com/tradeview/datafeeds/udf/dist/polyfills.js
+starting get for each_js_link: https://cryptosg001.com/js/chunk-libs.856f0d91.js
+starting get for each_js_link: https://cryptosg001.com/js/app.b80deedf.js
+duration_log grab_html_js: 7.893650499987416
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/cryptosg001.com_20230612_064717.752.txt
+duration_log get_whois_info: 0.9694953000289388
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/cryptosg001.com_gethostbyname_ex_20230612_064718.721.txt
+nameservers_filepath file written to resources/dns/cryptosg001.com_nameservers_20230612_064718.721.txt
+duration_log get_dns_info: 0.04912829998647794
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 0.7654311000369489
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7334505000035278
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for cryptosg001.com, time taken 23.8546314999694 seconds
+
+
+current domain in process_parent:ebay111.xyz
+===== to_skip function start =====
+ebay111.xyz has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: ebay111.xyz now: 2023-06-12 06:47:20.371026+00:00
+duration_log vt_call: 1.0326372000272386
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/ebay111.xyz_http_20230612_064721.415.pngscreenshot found for protocol: https and saved to resources/shot-scraper/ebay111.xyz_https_20230612_064721.415.pngduration_log screenshot: 15.286002099979669
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+web_url: http://ebay111.xyz
+url: /red/jquery-3.3.1.min.js
+web_url: http://ebay111.xyz
+url: /red/popper.min.js
+web_url: http://ebay111.xyz
+url: /red/bootstrap/js/bootstrap.min.js
+web_url: http://ebay111.xyz
+url: /red/swiper/swiper-bundle.min.js
+web_url: http://ebay111.xyz
+url: /red/jquery.cookie.js
+web_url: http://ebay111.xyz
+url: /static_new/js/dialog.min.js
+web_url: http://ebay111.xyz
+url: /public/js/layer_mobile/layer.js
+web_url: http://ebay111.xyz
+url: /static_new/js/jquery.progressBarTimer.js
+web_url: http://ebay111.xyz
+url: /static_new/js/common.js
+web_url: http://ebay111.xyz
+url: /red/main.js?v=V1.24
+total js_files_links: ['http://ebay111.xyz/red/jquery-3.3.1.min.js', 'http://ebay111.xyz/red/popper.min.js', 'http://ebay111.xyz/red/bootstrap/js/bootstrap.min.js', 'http://ebay111.xyz/red/swiper/swiper-bundle.min.js', 'http://ebay111.xyz/red/jquery.cookie.js', 'http://ebay111.xyz/static_new/js/dialog.min.js', 'http://ebay111.xyz/public/js/layer_mobile/layer.js', 'http://ebay111.xyz/static_new/js/jquery.progressBarTimer.js', 'http://ebay111.xyz/static_new/js/common.js', 'http://ebay111.xyz/red/main.js?v=V1.24']
+starting get for each_js_link: http://ebay111.xyz/red/jquery-3.3.1.min.js
+starting get for each_js_link: http://ebay111.xyz/red/popper.min.js
+starting get for each_js_link: http://ebay111.xyz/red/bootstrap/js/bootstrap.min.js
+starting get for each_js_link: http://ebay111.xyz/red/swiper/swiper-bundle.min.js
+starting get for each_js_link: http://ebay111.xyz/red/jquery.cookie.js
+starting get for each_js_link: http://ebay111.xyz/static_new/js/dialog.min.js
+starting get for each_js_link: http://ebay111.xyz/public/js/layer_mobile/layer.js
+starting get for each_js_link: http://ebay111.xyz/static_new/js/jquery.progressBarTimer.js
+starting get for each_js_link: http://ebay111.xyz/static_new/js/common.js
+starting get for each_js_link: http://ebay111.xyz/red/main.js?v=V1.24
+current protocol: https
+returncode: 0
+starting html request.get
+web_url: https://ebay111.xyz
+url: /red/jquery-3.3.1.min.js
+web_url: https://ebay111.xyz
+url: /red/popper.min.js
+web_url: https://ebay111.xyz
+url: /red/bootstrap/js/bootstrap.min.js
+web_url: https://ebay111.xyz
+url: /red/swiper/swiper-bundle.min.js
+web_url: https://ebay111.xyz
+url: /red/jquery.cookie.js
+web_url: https://ebay111.xyz
+url: /static_new/js/dialog.min.js
+web_url: https://ebay111.xyz
+url: /public/js/layer_mobile/layer.js
+web_url: https://ebay111.xyz
+url: /static_new/js/jquery.progressBarTimer.js
+web_url: https://ebay111.xyz
+url: /static_new/js/common.js
+web_url: https://ebay111.xyz
+url: /red/main.js?v=V1.24
+total js_files_links: ['https://ebay111.xyz/red/jquery-3.3.1.min.js', 'https://ebay111.xyz/red/popper.min.js', 'https://ebay111.xyz/red/bootstrap/js/bootstrap.min.js', 'https://ebay111.xyz/red/swiper/swiper-bundle.min.js', 'https://ebay111.xyz/red/jquery.cookie.js', 'https://ebay111.xyz/static_new/js/dialog.min.js', 'https://ebay111.xyz/public/js/layer_mobile/layer.js', 'https://ebay111.xyz/static_new/js/jquery.progressBarTimer.js', 'https://ebay111.xyz/static_new/js/common.js', 'https://ebay111.xyz/red/main.js?v=V1.24']
+starting get for each_js_link: https://ebay111.xyz/red/jquery-3.3.1.min.js
+starting get for each_js_link: https://ebay111.xyz/red/popper.min.js
+starting get for each_js_link: https://ebay111.xyz/red/bootstrap/js/bootstrap.min.js
+starting get for each_js_link: https://ebay111.xyz/red/swiper/swiper-bundle.min.js
+starting get for each_js_link: https://ebay111.xyz/red/jquery.cookie.js
+starting get for each_js_link: https://ebay111.xyz/static_new/js/dialog.min.js
+starting get for each_js_link: https://ebay111.xyz/public/js/layer_mobile/layer.js
+starting get for each_js_link: https://ebay111.xyz/static_new/js/jquery.progressBarTimer.js
+starting get for each_js_link: https://ebay111.xyz/static_new/js/common.js
+starting get for each_js_link: https://ebay111.xyz/red/main.js?v=V1.24
+duration_log grab_html_js: 6.966171900043264
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/ebay111.xyz_20230612_064743.699.txt
+duration_log get_whois_info: 1.0496604000218213
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/ebay111.xyz_gethostbyname_ex_20230612_064744.755.txt
+nameservers_filepath file written to resources/dns/ebay111.xyz_nameservers_20230612_064744.755.txt
+duration_log get_dns_info: 0.06637459999183193
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 0.7470497000031173
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/ebay111.xyz_20230612_064745.584.json
+duration_log get_archived_page_info: 0.750491000013426
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for ebay111.xyz, time taken 26.004072299983818 seconds
+
+
+current domain in process_parent:singpost.diaform.shop
+===== to_skip function start =====
+singpost.diaform.shop has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: singpost.diaform.shop now: 2023-06-12 06:47:46.409100+00:00
+duration_log vt_call: 1.4642104999511503
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 3.0041953999898396
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 6
+current protocol: https
+returncode: 6
+duration_log grab_html_js: 0.06894299999112263
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/singpost.diaform.shop_20230612_064750.991.txt
+duration_log get_whois_info: 0.6046356000006199
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+socket.gethostbyname_ex() exception triggered: [Errno 11001] getaddrinfo failed
+dns.resolver.query() exception triggered: The DNS query name does not exist: singpost.diaform.shop.
+duration_log get_dns_info: 0.03114480001386255
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 0.7750112999929115
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 1.0207046999712475
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for singpost.diaform.shop, time taken 15.001226600026712 seconds
+
+
+current domain in process_parent:singpost.form1275.cloud
+===== to_skip function start =====
+singpost.form1275.cloud has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: singpost.form1275.cloud now: 2023-06-12 06:48:01.457231+00:00
+call_status_code: 404, continuing to next ip_or_domain
+current domain in process_parent:www.factset-jobs.com
+===== to_skip function start =====
+www.factset-jobs.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: www.factset-jobs.com now: 2023-06-12 06:48:02.163111+00:00
+duration_log vt_call: 0.8666921999538317
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/www.factset-jobs.com_http_20230612_064803.043.pngscreenshot found for protocol: https and saved to resources/shot-scraper/www.factset-jobs.com_https_20230612_064803.043.pngduration_log screenshot: 11.10140499996487
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 0
+starting html request.get
+total js_files_links: []
+duration_log grab_html_js: 3.2009460999979638
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/www.factset-jobs.com_20230612_064817.385.txt
+duration_log get_whois_info: 1.0955537000554614
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/www.factset-jobs.com_gethostbyname_ex_20230612_064818.484.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: www.factset-jobs.com. IN NS
+duration_log get_dns_info: 0.04321579996030778
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/www.factset-jobs.com_20230612_064818.530.json
+duration_log get_cert_info: 1.3751569999731146
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.716273199999705
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for www.factset-jobs.com, time taken 18.503784599946812 seconds
+
+
+current domain in process_parent:smartone7.cc
+===== to_skip function start =====
+smartone7.cc has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: smartone7.cc now: 2023-06-12 06:48:20.700282+00:00
+duration_log vt_call: 0.8313431999995373
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 3.3350594000075944
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 6
+current protocol: https
+returncode: 6
+duration_log grab_html_js: 0.06378139997832477
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/smartone7.cc_20230612_064824.977.txt
+duration_log get_whois_info: 1.1690597999840975
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+socket.gethostbyname_ex() exception triggered: [Errno 11001] getaddrinfo failed
+dns.resolver.query() exception triggered: The DNS query name does not exist: smartone7.cc.
+duration_log get_dns_info: 0.21605450002243742
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/smartone7.cc_20230612_064826.378.json
+duration_log get_cert_info: 2.5747413999633864
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 1.1751824999810196
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for smartone7.cc, time taken 15.001088500022888 seconds
+
+
+current domain in process_parent:firebelly-senna.com
+===== to_skip function start =====
+firebelly-senna.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: firebelly-senna.com now: 2023-06-12 06:48:35.736765+00:00
+duration_log vt_call: 0.8919348000199534
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/firebelly-senna.com_http_20230612_064836.644.pngduration_log screenshot: 8.472131200018339
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+web_url: http://firebelly-senna.com
+url: /_guard/auto.js
+total js_files_links: ['http://firebelly-senna.com/_guard/auto.js']
+starting get for each_js_link: http://firebelly-senna.com/_guard/auto.js
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 2.4599162999656983
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/firebelly-senna.com_20230612_064847.614.txt
+duration_log get_whois_info: 0.7838510999572463
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/firebelly-senna.com_gethostbyname_ex_20230612_064848.399.txt
+nameservers_filepath file written to resources/dns/firebelly-senna.com_nameservers_20230612_064848.399.txt
+duration_log get_dns_info: 0.4032790999626741
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/firebelly-senna.com_20230612_064848.808.json
+duration_log get_cert_info: 6.579524700006004
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7233821000554599
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for firebelly-senna.com, time taken 20.407136800000444 seconds
+
+
+current domain in process_parent:instrument-reviews.com
+===== to_skip function start =====
+instrument-reviews.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: instrument-reviews.com now: 2023-06-12 06:48:56.180242+00:00
+duration_log vt_call: 0.9151521999738179
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/instrument-reviews.com_http_20230612_064857.109.pngscreenshot found for protocol: https and saved to resources/shot-scraper/instrument-reviews.com_https_20230612_064857.109.pngduration_log screenshot: 17.212414500012528
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+web_url: http://instrument-reviews.com
+url: /static/js/chunk-vendors.5e4eeb8c.js
+web_url: http://instrument-reviews.com
+url: /static/js/index.2f3de3b8.js
+total js_files_links: ['http://instrument-reviews.com/static/js/chunk-vendors.5e4eeb8c.js', 'http://instrument-reviews.com/static/js/index.2f3de3b8.js']
+starting get for each_js_link: http://instrument-reviews.com/static/js/chunk-vendors.5e4eeb8c.js
+starting get for each_js_link: http://instrument-reviews.com/static/js/index.2f3de3b8.js
+current protocol: https
+returncode: 0
+starting html request.get
+web_url: https://instrument-reviews.com
+url: /static/js/chunk-vendors.5e4eeb8c.js
+web_url: https://instrument-reviews.com
+url: /static/js/index.2f3de3b8.js
+total js_files_links: ['https://instrument-reviews.com/static/js/chunk-vendors.5e4eeb8c.js', 'https://instrument-reviews.com/static/js/index.2f3de3b8.js']
+starting get for each_js_link: https://instrument-reviews.com/static/js/chunk-vendors.5e4eeb8c.js
+starting get for each_js_link: https://instrument-reviews.com/static/js/index.2f3de3b8.js
+duration_log grab_html_js: 19.030577900004573
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/instrument-reviews.com_20230612_064933.399.txt
+duration_log get_whois_info: 0.901961499999743
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/instrument-reviews.com_gethostbyname_ex_20230612_064934.308.txt
+nameservers_filepath file written to resources/dns/instrument-reviews.com_nameservers_20230612_064934.308.txt
+duration_log get_dns_info: 0.6214687000028789
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/instrument-reviews.com_20230612_064934.940.json
+duration_log get_cert_info: 11.897915199981071
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/instrument-reviews.com_20230612_064946.835.json
+duration_log get_archived_page_info: 1.4104721000185236
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for instrument-reviews.com, time taken 52.11323930002982 seconds
+
+
+current domain in process_parent:ocbc.vip
+===== to_skip function start =====
+ocbc.vip has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: ocbc.vip now: 2023-06-12 06:49:48.319736+00:00
+duration_log vt_call: 0.8923699000151828
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 46.098663999990094
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 28
+current protocol: https
+returncode: 28
+duration_log grab_html_js: 42.619770299992524
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/ocbc.vip_20230612_065117.988.txt
+duration_log get_whois_info: 0.040128800028469414
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/ocbc.vip_gethostbyname_ex_20230612_065118.030.txt
+nameservers_filepath file written to resources/dns/ocbc.vip_nameservers_20230612_065118.030.txt
+duration_log get_dns_info: 0.26373369997600093
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/ocbc.vip_20230612_065118.296.json
+duration_log get_cert_info: 4.15870609995909
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/ocbc.vip_20230612_065122.460.json
+duration_log get_archived_page_info: 1.4506370999733917
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for ocbc.vip, time taken 95.64387960004387 seconds
+
+
+current domain in process_parent:app.qianqian-c25.xyz
+===== to_skip function start =====
+app.qianqian-c25.xyz has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: app.qianqian-c25.xyz now: 2023-06-12 06:51:24.025979+00:00
+duration_log vt_call: 0.9641604000353254
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/app.qianqian-c25.xyz_http_20230612_065125.007.pngscreenshot found for protocol: https and saved to resources/shot-scraper/app.qianqian-c25.xyz_https_20230612_065125.007.pngduration_log screenshot: 13.279447899956722
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+web_url: http://app.qianqian-c25.xyz
+url: /static/default/js/crypto-js.min.js
+total js_files_links: ['http://app.qianqian-c25.xyz/static/default/js/crypto-js.min.js']
+starting get for each_js_link: http://app.qianqian-c25.xyz/static/default/js/crypto-js.min.js
+current protocol: https
+returncode: 0
+starting html request.get
+web_url: https://app.qianqian-c25.xyz
+url: /static/default/js/crypto-js.min.js
+total js_files_links: ['https://app.qianqian-c25.xyz/static/default/js/crypto-js.min.js']
+starting get for each_js_link: https://app.qianqian-c25.xyz/static/default/js/crypto-js.min.js
+duration_log grab_html_js: 2.7314708000048995
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/app.qianqian-c25.xyz_20230612_065141.057.txt
+duration_log get_whois_info: 1.135165300045628
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/app.qianqian-c25.xyz_gethostbyname_ex_20230612_065142.199.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: app.qianqian-c25.xyz. IN NS
+duration_log get_dns_info: 0.3029276999877766
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/app.qianqian-c25.xyz_20230612_065142.517.json
+duration_log get_cert_info: 4.135918900021352
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 1.2807942999643274
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for app.qianqian-c25.xyz, time taken 23.987797699985094 seconds
+
+
+current domain in process_parent:carousell.cellarin.shop
+===== to_skip function start =====
+carousell.cellarin.shop has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: carousell.cellarin.shop now: 2023-06-12 06:51:48.014242+00:00
+duration_log vt_call: 0.8754890999989584
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/carousell.cellarin.shop_http_20230612_065148.902.pngscreenshot found for protocol: https and saved to resources/shot-scraper/carousell.cellarin.shop_https_20230612_065148.902.pngduration_log screenshot: 10.030084600031842
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 0
+starting html request.get
+total js_files_links: []
+duration_log grab_html_js: 0.3581287999986671
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/carousell.cellarin.shop_20230612_065159.324.txt
+duration_log get_whois_info: 1.8115511999931186
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/carousell.cellarin.shop_gethostbyname_ex_20230612_065201.142.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: carousell.cellarin.shop. IN NS
+duration_log get_dns_info: 0.042304800008423626
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 0.8036048000212759
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 1.5813405999797396
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for carousell.cellarin.shop, time taken 15.625301900028717 seconds
+
+
+current domain in process_parent:carousell.jpweb.shop
+===== to_skip function start =====
+carousell.jpweb.shop has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: carousell.jpweb.shop now: 2023-06-12 06:52:03.676835+00:00
+duration_log vt_call: 0.8837623999570496
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/carousell.jpweb.shop_http_20230612_065204.570.pngscreenshot found for protocol: https and saved to resources/shot-scraper/carousell.jpweb.shop_https_20230612_065204.570.pngduration_log screenshot: 9.98873540002387
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 0
+starting html request.get
+total js_files_links: []
+duration_log grab_html_js: 0.4208333000424318
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/carousell.jpweb.shop_20230612_065215.021.txt
+duration_log get_whois_info: 1.3126169000170194
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/carousell.jpweb.shop_gethostbyname_ex_20230612_065216.333.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: carousell.jpweb.shop. IN NS
+duration_log get_dns_info: 0.047733499959576875
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 41.57989200000884
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7771086000138894
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for carousell.jpweb.shop, time taken 55.12060380005278 seconds
+
+
+current domain in process_parent:lumiew.com
+===== to_skip function start =====
+lumiew.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: lumiew.com now: 2023-06-12 06:52:58.842379+00:00
+duration_log vt_call: 0.9269501999951899
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/lumiew.com_http_20230612_065259.779.pngduration_log screenshot: 7.36662330001127
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 1.771170699968934
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/lumiew.com_20230612_065308.980.txt
+duration_log get_whois_info: 1.5650141999940388
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/lumiew.com_gethostbyname_ex_20230612_065310.542.txt
+nameservers_filepath file written to resources/dns/lumiew.com_nameservers_20230612_065310.542.txt
+duration_log get_dns_info: 0.04525269998703152
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 38.67769580002641
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7001066000084393
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for lumiew.com, time taken 51.19755470001837 seconds
+
+
+current domain in process_parent:mdt.glt-tpog3699.online
+===== to_skip function start =====
+mdt.glt-tpog3699.online has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: mdt.glt-tpog3699.online now: 2023-06-12 06:53:50.063333+00:00
+call_status_code: 404, continuing to next ip_or_domain
+current domain in process_parent:carousell.purchasell.shop
+===== to_skip function start =====
+carousell.purchasell.shop has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: carousell.purchasell.shop now: 2023-06-12 06:53:50.815715+00:00
+duration_log vt_call: 1.3560012999805622
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/carousell.purchasell.shop_http_20230612_065352.182.pngscreenshot found for protocol: https and saved to resources/shot-scraper/carousell.purchasell.shop_https_20230612_065352.182.pngduration_log screenshot: 9.931737999955658
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 0
+starting html request.get
+total js_files_links: []
+duration_log grab_html_js: 0.3958213999867439
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/carousell.purchasell.shop_20230612_065402.545.txt
+duration_log get_whois_info: 0.22203650005394593
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/carousell.purchasell.shop_gethostbyname_ex_20230612_065402.776.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: carousell.purchasell.shop. IN NS
+duration_log get_dns_info: 0.04526280000573024
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 37.277310500037856
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7260623999754898
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for carousell.purchasell.shop, time taken 50.072176499990746 seconds
+
+
+current domain in process_parent:h5.weshop959.com
+===== to_skip function start =====
+h5.weshop959.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: h5.weshop959.com now: 2023-06-12 06:54:40.919580+00:00
+duration_log vt_call: 0.9732544000144117
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 4.314766200026497
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 6
+current protocol: https
+returncode: 6
+duration_log grab_html_js: 0.8638510000309907
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/h5.weshop959.com_20230612_065447.126.txt
+duration_log get_whois_info: 2.072288200026378
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+socket.gethostbyname_ex() exception triggered: [Errno 11002] getaddrinfo failed
+dns.resolver.query() exception triggered: All nameservers failed to answer the query h5.weshop959.com. IN NS: Server 1.1.1.1 UDP port 53 answered SERVFAIL
+duration_log get_dns_info: 2.1527179999975488
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 1.5076703000231646
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7244157000095583
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for h5.weshop959.com, time taken 15.001204499974847 seconds
+
+
+current domain in process_parent:seatop.work
+===== to_skip function start =====
+seatop.work has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: seatop.work now: 2023-06-12 06:54:55.963254+00:00
+duration_log vt_call: 0.9758046999922954
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 45.629165399994235
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 28
+current protocol: https
+returncode: 28
+duration_log grab_html_js: 42.971432799997274
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/seatop.work_20230612_065625.610.txt
+duration_log get_whois_info: 0.04382540000369772
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/seatop.work_gethostbyname_ex_20230612_065625.653.txt
+nameservers_filepath file written to resources/dns/seatop.work_nameservers_20230612_065625.653.txt
+duration_log get_dns_info: 0.5727441000053659
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/seatop.work_20230612_065626.227.json
+duration_log get_cert_info: 0.9913940000114962
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 1.2079658000147901
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for seatop.work, time taken 92.52547190000769 seconds
+
+
+current domain in process_parent:user.thegradiantgroup.online
+===== to_skip function start =====
+user.thegradiantgroup.online has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: user.thegradiantgroup.online now: 2023-06-12 06:56:28.524376+00:00
+duration_log vt_call: 1.0558810000075027
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/user.thegradiantgroup.online_http_20230612_065629.597.pngscreenshot found for protocol: https and saved to resources/shot-scraper/user.thegradiantgroup.online_https_20230612_065629.597.pngduration_log screenshot: 27.30512049997924
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+web_url: http://user.thegradiantgroup.online
+url: /settings/config.js?version=2.21.1.0
+web_url: http://user.thegradiantgroup.online
+url: /assets/vendors.js?6fdc78450f5a56c14a31
+web_url: http://user.thegradiantgroup.online
+url: /assets/extensions.js?6fdc78450f5a56c14a31
+web_url: http://user.thegradiantgroup.online
+url: /assets/index.js?6fdc78450f5a56c14a31
+total js_files_links: ['http://user.thegradiantgroup.online/settings/config.js?version=2.21.1.0', 'http://user.thegradiantgroup.online/assets/vendors.js?6fdc78450f5a56c14a31', 'http://user.thegradiantgroup.online/assets/extensions.js?6fdc78450f5a56c14a31', 'http://user.thegradiantgroup.online/assets/index.js?6fdc78450f5a56c14a31']
+starting get for each_js_link: http://user.thegradiantgroup.online/settings/config.js?version=2.21.1.0
+starting get for each_js_link: http://user.thegradiantgroup.online/assets/vendors.js?6fdc78450f5a56c14a31
+starting get for each_js_link: http://user.thegradiantgroup.online/assets/extensions.js?6fdc78450f5a56c14a31
+starting get for each_js_link: http://user.thegradiantgroup.online/assets/index.js?6fdc78450f5a56c14a31
+current protocol: https
+returncode: 0
+starting html request.get
+web_url: https://user.thegradiantgroup.online
+url: /settings/config.js?version=2.21.1.0
+web_url: https://user.thegradiantgroup.online
+url: /assets/vendors.js?6fdc78450f5a56c14a31
+web_url: https://user.thegradiantgroup.online
+url: /assets/extensions.js?6fdc78450f5a56c14a31
+web_url: https://user.thegradiantgroup.online
+url: /assets/index.js?6fdc78450f5a56c14a31
+total js_files_links: ['https://user.thegradiantgroup.online/settings/config.js?version=2.21.1.0', 'https://user.thegradiantgroup.online/assets/vendors.js?6fdc78450f5a56c14a31', 'https://user.thegradiantgroup.online/assets/extensions.js?6fdc78450f5a56c14a31', 'https://user.thegradiantgroup.online/assets/index.js?6fdc78450f5a56c14a31']
+starting get for each_js_link: https://user.thegradiantgroup.online/settings/config.js?version=2.21.1.0
+starting get for each_js_link: https://user.thegradiantgroup.online/assets/vendors.js?6fdc78450f5a56c14a31
+starting get for each_js_link: https://user.thegradiantgroup.online/assets/extensions.js?6fdc78450f5a56c14a31
+starting get for each_js_link: https://user.thegradiantgroup.online/assets/index.js?6fdc78450f5a56c14a31
+duration_log grab_html_js: 17.90807159995893
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/user.thegradiantgroup.online_20230612_065714.848.txt
+duration_log get_whois_info: 10.892553700017743
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/user.thegradiantgroup.online_gethostbyname_ex_20230612_065725.745.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: user.thegradiantgroup.online. IN NS
+duration_log get_dns_info: 0.05827139999018982
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 2.1090465000015683
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7178993999841623
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for user.thegradiantgroup.online, time taken 60.186930800031405 seconds
+
+
+current domain in process_parent:9100ydnt.blackstovip.top
+===== to_skip function start =====
+9100ydnt.blackstovip.top has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: 9100ydnt.blackstovip.top now: 2023-06-12 06:57:28.746334+00:00
+duration_log vt_call: 0.902225699974224
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/9100ydnt.blackstovip.top_http_20230612_065729.666.pngscreenshot found for protocol: https and saved to resources/shot-scraper/9100ydnt.blackstovip.top_https_20230612_065729.666.pngduration_log screenshot: 9.756487700040452
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+web_url: http://9100ydnt.blackstovip.top
+url: /assets/index-28a22c59.js
+total js_files_links: ['http://9100ydnt.blackstovip.top/assets/index-28a22c59.js']
+starting get for each_js_link: http://9100ydnt.blackstovip.top/assets/index-28a22c59.js
+current protocol: https
+returncode: 0
+starting html request.get
+web_url: https://9100ydnt.blackstovip.top
+url: /assets/index-28a22c59.js
+total js_files_links: ['https://9100ydnt.blackstovip.top/assets/index-28a22c59.js']
+starting get for each_js_link: https://9100ydnt.blackstovip.top/assets/index-28a22c59.js
+duration_log grab_html_js: 1.633778200019151
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/9100ydnt.blackstovip.top_20230612_065741.097.txt
+duration_log get_whois_info: 12.074125099985395
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/9100ydnt.blackstovip.top_gethostbyname_ex_20230612_065753.178.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: 9100ydnt.blackstovip.top. IN NS
+duration_log get_dns_info: 0.3279274000087753
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 0.8446314000175335
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.765206300013233
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for 9100ydnt.blackstovip.top, time taken 26.453425600018818 seconds
+
+
+current domain in process_parent:onemotoring.sg.domreaper.com
+===== to_skip function start =====
+onemotoring.sg.domreaper.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: onemotoring.sg.domreaper.com now: 2023-06-12 06:57:55.218384+00:00
+duration_log vt_call: 0.8808452999801375
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/onemotoring.sg.domreaper.com_http_20230612_065756.120.pngduration_log screenshot: 9.62885430001188
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+web_url: http://onemotoring.sg.domreaper.com
+url: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6429753936838548
+web_url: http://onemotoring.sg.domreaper.com
+url: //pagead2.googlesyndication.com/pagead/js/adsbygoogle.js
+web_url: http://onemotoring.sg.domreaper.com
+url: //pagead2.googlesyndication.com/pagead/js/adsbygoogle.js
+web_url: http://onemotoring.sg.domreaper.com
+url: //pagead2.googlesyndication.com/pagead/js/adsbygoogle.js
+web_url: http://onemotoring.sg.domreaper.com
+url: http://domreaper.com/js/all-asset.js
+web_url: http://onemotoring.sg.domreaper.com
+url: https://use.fontawesome.com/d9d1191511.js
+web_url: http://onemotoring.sg.domreaper.com
+url: https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js
+total js_files_links: ['https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6429753936838548', 'http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js', 'http://domreaper.com/js/all-asset.js', 'https://use.fontawesome.com/d9d1191511.js', 'https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js']
+starting get for each_js_link: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6429753936838548
+starting get for each_js_link: http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js
+starting get for each_js_link: http://domreaper.com/js/all-asset.js
+starting get for each_js_link: https://use.fontawesome.com/d9d1191511.js
+starting get for each_js_link: https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 4.453282999980729
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/onemotoring.sg.domreaper.com_20230612_065810.240.txt
+duration_log get_whois_info: 0.8041407000273466
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/onemotoring.sg.domreaper.com_gethostbyname_ex_20230612_065811.042.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: onemotoring.sg.domreaper.com. IN NS
+duration_log get_dns_info: 0.5905785000068136
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 3.3406325000105426
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7370107000460848
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for onemotoring.sg.domreaper.com, time taken 20.57426739996299 seconds
+
+
+current domain in process_parent:9888971.lazada88.com
+===== to_skip function start =====
+9888971.lazada88.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: 9888971.lazada88.com now: 2023-06-12 06:58:15.827860+00:00
+duration_log vt_call: 0.9123072000220418
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/9888971.lazada88.com_http_20230612_065816.754.pngduration_log screenshot: 8.652162400016095
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 7
+duration_log grab_html_js: 2.861811399983708
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/9888971.lazada88.com_20230612_065828.305.txt
+duration_log get_whois_info: 0.8867104999953881
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/9888971.lazada88.com_gethostbyname_ex_20230612_065829.193.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: 9888971.lazada88.com. IN NS
+duration_log get_dns_info: 0.4049094000365585
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 1.9794855000218377
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 1.2492205000016838
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for 9888971.lazada88.com, time taken 17.07773520000046 seconds
+
+
+current domain in process_parent:www.yellow-web.com
+===== to_skip function start =====
+www.yellow-web.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: www.yellow-web.com now: 2023-06-12 06:58:32.942296+00:00
+duration_log vt_call: 0.9925427000271156
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/www.yellow-web.com_http_20230612_065833.948.pngscreenshot found for protocol: https and saved to resources/shot-scraper/www.yellow-web.com_https_20230612_065833.948.pngduration_log screenshot: 13.998644299979787
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 0
+starting html request.get
+web_url: https://www.yellow-web.com
+url: //www.google.com/adsense/domains/caf.js?abp=1
+web_url: https://www.yellow-web.com
+url: http://c.parkingcrew.net/scripts/sale_form.js
+total js_files_links: ['https://www.google.com/adsense/domains/caf.js?abp=1', 'http://c.parkingcrew.net/scripts/sale_form.js']
+starting get for each_js_link: https://www.google.com/adsense/domains/caf.js?abp=1
+starting get for each_js_link: http://c.parkingcrew.net/scripts/sale_form.js
+duration_log grab_html_js: 65.06588050001301
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/www.yellow-web.com_20230612_065953.047.txt
+duration_log get_whois_info: 1.4025359000079334
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/www.yellow-web.com_gethostbyname_ex_20230612_065954.452.txt
+nameservers_filepath file written to resources/dns/www.yellow-web.com_nameservers_20230612_065954.452.txt
+duration_log get_dns_info: 0.40426419995492324
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 0.7660850000102073
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/www.yellow-web.com_20230612_065955.644.json
+duration_log get_archived_page_info: 0.6862332000164315
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for www.yellow-web.com, time taken 83.43128630000865 seconds
+
+
+current domain in process_parent:www-starliving-com-sg.cdn.ampproject.org
+===== to_skip function start =====
+www-starliving-com-sg.cdn.ampproject.org has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: www-starliving-com-sg.cdn.ampproject.org now: 2023-06-12 06:59:56.411217+00:00
+duration_log vt_call: 0.9928237000131048
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/www-starliving-com-sg.cdn.ampproject.org_http_20230612_065957.418.pngscreenshot found for protocol: https and saved to resources/shot-scraper/www-starliving-com-sg.cdn.ampproject.org_https_20230612_065957.418.pngduration_log screenshot: 9.610768999962602
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 0
+starting html request.get
+total js_files_links: []
+duration_log grab_html_js: 0.29017860000021756
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/www-starliving-com-sg.cdn.ampproject.org_20230612_070007.352.txt
+duration_log get_whois_info: 1.1532732999767177
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/www-starliving-com-sg.cdn.ampproject.org_gethostbyname_ex_20230612_070008.513.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: www-starliving-com-sg.cdn.ampproject.org. IN NS
+duration_log get_dns_info: 0.03687419998459518
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 2.937659299990628
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.6905150000238791
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for www-starliving-com-sg.cdn.ampproject.org, time taken 15.836936100036837 seconds
+
+
+current domain in process_parent:unitedconstruction-sg.com
+===== to_skip function start =====
+unitedconstruction-sg.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: unitedconstruction-sg.com now: 2023-06-12 07:00:12.282782+00:00
+duration_log vt_call: 0.8957690999959596
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/unitedconstruction-sg.com_http_20230612_070013.190.pngduration_log screenshot: 12.192941099987365
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 7
+duration_log grab_html_js: 6.791403199953493
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/unitedconstruction-sg.com_20230612_070032.222.txt
+duration_log get_whois_info: 0.722189599997364
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/unitedconstruction-sg.com_gethostbyname_ex_20230612_070032.945.txt
+nameservers_filepath file written to resources/dns/unitedconstruction-sg.com_nameservers_20230612_070032.945.txt
+duration_log get_dns_info: 0.7463639000197873
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 0.7864373000338674
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7507219999679364
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for unitedconstruction-sg.com, time taken 23.02973909996217 seconds
+
+
+current domain in process_parent:pinetreehill-official-sg.com
+===== to_skip function start =====
+pinetreehill-official-sg.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: pinetreehill-official-sg.com now: 2023-06-12 07:00:35.349041+00:00
+duration_log vt_call: 1.2470186999998987
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/pinetreehill-official-sg.com_http_20230612_070036.610.pngscreenshot found for protocol: https and saved to resources/shot-scraper/pinetreehill-official-sg.com_https_20230612_070036.610.pngduration_log screenshot: 15.402784800040536
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 0
+starting html request.get
+total js_files_links: []
+duration_log grab_html_js: 0.5282006000052206
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/pinetreehill-official-sg.com_20230612_070052.573.txt
+duration_log get_whois_info: 3.992348800005857
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/pinetreehill-official-sg.com_gethostbyname_ex_20230612_070056.568.txt
+nameservers_filepath file written to resources/dns/pinetreehill-official-sg.com_nameservers_20230612_070056.568.txt
+duration_log get_dns_info: 0.04702130000805482
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/pinetreehill-official-sg.com_20230612_070056.618.json
+duration_log get_cert_info: 1.189784399990458
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/pinetreehill-official-sg.com_20230612_070057.814.json
+duration_log get_archived_page_info: 2.200118700042367
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for pinetreehill-official-sg.com, time taken 24.721896999981254 seconds
+
+
+current domain in process_parent:www.bodik-sg.com
+===== to_skip function start =====
+www.bodik-sg.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: www.bodik-sg.com now: 2023-06-12 07:01:00.143167+00:00
+duration_log vt_call: 1.0632693000370637
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/www.bodik-sg.com_http_20230612_070101.224.pngscreenshot found for protocol: https and saved to resources/shot-scraper/www.bodik-sg.com_https_20230612_070101.224.pngduration_log screenshot: 18.30550979997497
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+web_url: http://www.bodik-sg.com
+url: https://polyfill.io/v3/polyfill.min.js?features=Element.prototype.animate%2CNumber.isNaN%2CString.prototype.repeat%2CNodeList.prototype.forEach%2CArray.prototype.forEach%2CIntersectionObserver%2CIntersectionObserverEntry%2Csmoothscroll
+web_url: http://www.bodik-sg.com
+url: dist/init.bundle.min.js
+web_url: http://www.bodik-sg.com
+url: dist/late.bundle.min.js
+web_url: http://www.bodik-sg.com
+url: photoswipe/photoswipe.min.js
+web_url: http://www.bodik-sg.com
+url: photoswipe/photoswipe-ui-default.min.js
+web_url: http://www.bodik-sg.com
+url: photoswipe/photoswipe-simplify.js
+web_url: http://www.bodik-sg.com
+url: https://cdn.jsdelivr.net/npm/bubbly-bg@1.0.0/dist/bubbly-bg.min.js
+total js_files_links: ['https://polyfill.io/v3/polyfill.min.js?features=Element.prototype.animate%2CNumber.isNaN%2CString.prototype.repeat%2CNodeList.prototype.forEach%2CArray.prototype.forEach%2CIntersectionObserver%2CIntersectionObserverEntry%2Csmoothscroll', 'http://www.bodik-sg.com/dist/init.bundle.min.js', 'http://www.bodik-sg.com/dist/late.bundle.min.js', 'http://www.bodik-sg.com/photoswipe/photoswipe.min.js', 'http://www.bodik-sg.com/photoswipe/photoswipe-ui-default.min.js', 'http://www.bodik-sg.com/photoswipe/photoswipe-simplify.js', 'https://cdn.jsdelivr.net/npm/bubbly-bg@1.0.0/dist/bubbly-bg.min.js']
+starting get for each_js_link: https://polyfill.io/v3/polyfill.min.js?features=Element.prototype.animate%2CNumber.isNaN%2CString.prototype.repeat%2CNodeList.prototype.forEach%2CArray.prototype.forEach%2CIntersectionObserver%2CIntersectionObserverEntry%2Csmoothscroll
+starting get for each_js_link: http://www.bodik-sg.com/dist/init.bundle.min.js
+starting get for each_js_link: http://www.bodik-sg.com/dist/late.bundle.min.js
+starting get for each_js_link: http://www.bodik-sg.com/photoswipe/photoswipe.min.js
+starting get for each_js_link: http://www.bodik-sg.com/photoswipe/photoswipe-ui-default.min.js
+starting get for each_js_link: http://www.bodik-sg.com/photoswipe/photoswipe-simplify.js
+starting get for each_js_link: https://cdn.jsdelivr.net/npm/bubbly-bg@1.0.0/dist/bubbly-bg.min.js
+current protocol: https
+returncode: 0
+starting html request.get
+web_url: https://www.bodik-sg.com
+url: https://polyfill.io/v3/polyfill.min.js?features=Element.prototype.animate%2CNumber.isNaN%2CString.prototype.repeat%2CNodeList.prototype.forEach%2CArray.prototype.forEach%2CIntersectionObserver%2CIntersectionObserverEntry%2Csmoothscroll
+web_url: https://www.bodik-sg.com
+url: dist/init.bundle.min.js
+web_url: https://www.bodik-sg.com
+url: dist/late.bundle.min.js
+web_url: https://www.bodik-sg.com
+url: photoswipe/photoswipe.min.js
+web_url: https://www.bodik-sg.com
+url: photoswipe/photoswipe-ui-default.min.js
+web_url: https://www.bodik-sg.com
+url: photoswipe/photoswipe-simplify.js
+web_url: https://www.bodik-sg.com
+url: https://cdn.jsdelivr.net/npm/bubbly-bg@1.0.0/dist/bubbly-bg.min.js
+total js_files_links: ['https://polyfill.io/v3/polyfill.min.js?features=Element.prototype.animate%2CNumber.isNaN%2CString.prototype.repeat%2CNodeList.prototype.forEach%2CArray.prototype.forEach%2CIntersectionObserver%2CIntersectionObserverEntry%2Csmoothscroll', 'https://www.bodik-sg.com/dist/init.bundle.min.js', 'https://www.bodik-sg.com/dist/late.bundle.min.js', 'https://www.bodik-sg.com/photoswipe/photoswipe.min.js', 'https://www.bodik-sg.com/photoswipe/photoswipe-ui-default.min.js', 'https://www.bodik-sg.com/photoswipe/photoswipe-simplify.js', 'https://cdn.jsdelivr.net/npm/bubbly-bg@1.0.0/dist/bubbly-bg.min.js']
+starting get for each_js_link: https://polyfill.io/v3/polyfill.min.js?features=Element.prototype.animate%2CNumber.isNaN%2CString.prototype.repeat%2CNodeList.prototype.forEach%2CArray.prototype.forEach%2CIntersectionObserver%2CIntersectionObserverEntry%2Csmoothscroll
+starting get for each_js_link: https://www.bodik-sg.com/dist/init.bundle.min.js
+starting get for each_js_link: https://www.bodik-sg.com/dist/late.bundle.min.js
+starting get for each_js_link: https://www.bodik-sg.com/photoswipe/photoswipe.min.js
+starting get for each_js_link: https://www.bodik-sg.com/photoswipe/photoswipe-ui-default.min.js
+starting get for each_js_link: https://www.bodik-sg.com/photoswipe/photoswipe-simplify.js
+starting get for each_js_link: https://cdn.jsdelivr.net/npm/bubbly-bg@1.0.0/dist/bubbly-bg.min.js
+duration_log grab_html_js: 8.944597599969711
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/www.bodik-sg.com_20230612_070128.510.txt
+duration_log get_whois_info: 1.187109499995131
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/www.bodik-sg.com_gethostbyname_ex_20230612_070129.707.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: www.bodik-sg.com. IN NS
+duration_log get_dns_info: 0.37130190001334995
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/www.bodik-sg.com_20230612_070130.090.json
+duration_log get_cert_info: 31.085583899985068
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/www.bodik-sg.com_20230612_070201.183.json
+duration_log get_archived_page_info: 0.7358833999605849
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for www.bodik-sg.com, time taken 61.81986270000925 seconds
+
+
+current domain in process_parent:www.rfelectronics-sg.com
+===== to_skip function start =====
+www.rfelectronics-sg.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: www.rfelectronics-sg.com now: 2023-06-12 07:02:01.995615+00:00
+duration_log vt_call: 1.1302788999746554
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/www.rfelectronics-sg.com_http_20230612_070203.142.pngscreenshot found for protocol: https and saved to resources/shot-scraper/www.rfelectronics-sg.com_https_20230612_070203.142.pngduration_log screenshot: 16.920385900011752
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 0
+starting html request.get
+total js_files_links: []
+duration_log grab_html_js: 3.6155990000115708
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/www.rfelectronics-sg.com_20230612_070223.723.txt
+duration_log get_whois_info: 1.02277330000652
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/www.rfelectronics-sg.com_gethostbyname_ex_20230612_070224.749.txt
+nameservers_filepath file written to resources/dns/www.rfelectronics-sg.com_nameservers_20230612_070224.749.txt
+duration_log get_dns_info: 0.242616800009273
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/www.rfelectronics-sg.com_20230612_070225.000.json
+duration_log get_cert_info: 38.928731099993456
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/www.rfelectronics-sg.com_20230612_070303.931.json
+duration_log get_archived_page_info: 0.7496668000239879
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for www.rfelectronics-sg.com, time taken 62.73364990000846 seconds
+
+
+current domain in process_parent:wattenestateresidence-sg.com
+===== to_skip function start =====
+wattenestateresidence-sg.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: wattenestateresidence-sg.com now: 2023-06-12 07:03:04.761588+00:00
+duration_log vt_call: 1.0817091999924742
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/wattenestateresidence-sg.com_http_20230612_070305.863.pngduration_log screenshot: 36.99493510002503
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 28
+duration_log grab_html_js: 44.133918999985326
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/wattenestateresidence-sg.com_20230612_070427.040.txt
+duration_log get_whois_info: 0.9390442000003532
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/wattenestateresidence-sg.com_gethostbyname_ex_20230612_070427.982.txt
+nameservers_filepath file written to resources/dns/wattenestateresidence-sg.com_nameservers_20230612_070427.982.txt
+duration_log get_dns_info: 0.401353899971582
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/wattenestateresidence-sg.com_20230612_070428.386.json
+duration_log get_cert_info: 5.434264299983624
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7234120000503026
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for wattenestateresidence-sg.com, time taken 89.83057019999251 seconds
+
+
+current domain in process_parent:www.whatsapp-web.com
+===== to_skip function start =====
+www.whatsapp-web.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: www.whatsapp-web.com now: 2023-06-12 07:04:34.632381+00:00
+duration_log vt_call: 0.9776375999790616
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/www.whatsapp-web.com_http_20230612_070435.622.pngscreenshot found for protocol: https and saved to resources/shot-scraper/www.whatsapp-web.com_https_20230612_070435.622.pngduration_log screenshot: 14.61939380003605
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+web_url: http://www.whatsapp-web.com
+url: /js/parking.2.105.5.js
+total js_files_links: ['http://www.whatsapp-web.com/js/parking.2.105.5.js']
+starting get for each_js_link: http://www.whatsapp-web.com/js/parking.2.105.5.js
+current protocol: https
+returncode: 0
+starting html request.get
+===== grab_html_js function exception occured
+exception: HTTPSConnectionPool(host='www.whatsapp-web.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1002)')))
+===== grab_html_js function exception end =====
+duration_log grab_html_js: 4.958018800010905
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/www.whatsapp-web.com_20230612_070455.234.txt
+duration_log get_whois_info: 1.9419745999621227
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/www.whatsapp-web.com_gethostbyname_ex_20230612_070457.181.txt
+nameservers_filepath file written to resources/dns/www.whatsapp-web.com_nameservers_20230612_070457.181.txt
+duration_log get_dns_info: 0.28584199998294935
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 0.7531245999853127
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/www.whatsapp-web.com_20230612_070458.241.json
+duration_log get_archived_page_info: 0.7277538999915123
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for www.whatsapp-web.com, time taken 24.381603799993172 seconds
+
+
+current domain in process_parent:choicefurniture-com-sg.cdn.ampproject.org
+===== to_skip function start =====
+choicefurniture-com-sg.cdn.ampproject.org has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: choicefurniture-com-sg.cdn.ampproject.org now: 2023-06-12 07:04:59.051655+00:00
+call_status_code: 404, continuing to next ip_or_domain
+current domain in process_parent:www.equation-sg.com
+===== to_skip function start =====
+www.equation-sg.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: www.equation-sg.com now: 2023-06-12 07:04:59.945321+00:00
+duration_log vt_call: 1.1939272999879904
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: https and saved to resources/shot-scraper/www.equation-sg.com_https_20230612_070501.153.pngduration_log screenshot: 49.22308650001651
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+web_url: http://www.equation-sg.com
+url: https://equation-sg.com/wp-includes/js/jquery/jquery.js?ver=1.12.4
+web_url: http://www.equation-sg.com
+url: https://equation-sg.com/wp-content/plugins/google-analytics-for-wordpress/assets/js/frontend.min.js?ver=7.10.0
+web_url: http://www.equation-sg.com
+url: https://equation-sg.com/wp-content/themes/enfold/js/avia-compat.js?ver=4.5.1
+web_url: http://www.equation-sg.com
+url: https://equation-sg.com/wp-includes/js/mediaelement/mediaelement-and-player.min.js?ver=4.2.6-78496d1
+web_url: http://www.equation-sg.com
+url: https://equation-sg.com/wp-includes/js/mediaelement/mediaelement-migrate.min.js?ver=5.0.18
+web_url: http://www.equation-sg.com
+url: https://equation-sg.com/wp-content/themes/enfold/js/avia.js?ver=4.5.1
+web_url: http://www.equation-sg.com
+url: https://equation-sg.com/wp-content/themes/enfold/js/shortcodes.js?ver=4.5.1
+web_url: http://www.equation-sg.com
+url: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/audio-player/audio-player.js?ver=5.0.18
+web_url: http://www.equation-sg.com
+url: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/contact/contact.js?ver=5.0.18
+web_url: http://www.equation-sg.com
+url: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/slideshow/slideshow.js?ver=5.0.18
+web_url: http://www.equation-sg.com
+url: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/countdown/countdown.js?ver=5.0.18
+web_url: http://www.equation-sg.com
+url: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/gallery/gallery.js?ver=5.0.18
+web_url: http://www.equation-sg.com
+url: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/gallery_horizontal/gallery_horizontal.js?ver=5.0.18
+web_url: http://www.equation-sg.com
+url: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/headline_rotator/headline_rotator.js?ver=5.0.18
+web_url: http://www.equation-sg.com
+url: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/icongrid/icongrid.js?ver=5.0.18
+web_url: http://www.equation-sg.com
+url: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/iconlist/iconlist.js?ver=5.0.18
+web_url: http://www.equation-sg.com
+url: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/image_hotspots/image_hotspots.js?ver=5.0.18
+web_url: http://www.equation-sg.com
+url: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/magazine/magazine.js?ver=5.0.18
+web_url: http://www.equation-sg.com
+url: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/portfolio/isotope.js?ver=5.0.18
+web_url: http://www.equation-sg.com
+url: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/masonry_entries/masonry_entries.js?ver=5.0.18
+web_url: http://www.equation-sg.com
+url: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/menu/menu.js?ver=5.0.18
+web_url: http://www.equation-sg.com
+url: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/notification/notification.js?ver=5.0.18
+web_url: http://www.equation-sg.com
+url: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/numbers/numbers.js?ver=5.0.18
+web_url: http://www.equation-sg.com
+url: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/portfolio/portfolio.js?ver=5.0.18
+web_url: http://www.equation-sg.com
+url: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/progressbar/progressbar.js?ver=5.0.18
+web_url: http://www.equation-sg.com
+url: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/slideshow/slideshow-video.js?ver=5.0.18
+web_url: http://www.equation-sg.com
+url: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/slideshow_accordion/slideshow_accordion.js?ver=5.0.18
+web_url: http://www.equation-sg.com
+url: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/slideshow_fullscreen/slideshow_fullscreen.js?ver=5.0.18
+web_url: http://www.equation-sg.com
+url: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/slideshow_layerslider/slideshow_layerslider.js?ver=5.0.18
+web_url: http://www.equation-sg.com
+url: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/tab_section/tab_section.js?ver=5.0.18
+web_url: http://www.equation-sg.com
+url: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/tabs/tabs.js?ver=5.0.18
+web_url: http://www.equation-sg.com
+url: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/testimonials/testimonials.js?ver=5.0.18
+web_url: http://www.equation-sg.com
+url: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/timeline/timeline.js?ver=5.0.18
+web_url: http://www.equation-sg.com
+url: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/toggles/toggles.js?ver=5.0.18
+web_url: http://www.equation-sg.com
+url: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/video/video.js?ver=5.0.18
+web_url: http://www.equation-sg.com
+url: https://equation-sg.com/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.1
+web_url: http://www.equation-sg.com
+url: https://equation-sg.com/wp-content/plugins/wpcf7-redirect/js/wpcf7-redirect-script.js
+web_url: http://www.equation-sg.com
+url: https://www.google.com/recaptcha/api.js?render=6LdHSRUUAAAAAGh-yGw5G1RbsDFgdkwXy-3le0iT&ver=3.0
+web_url: http://www.equation-sg.com
+url: https://equation-sg.com/wp-content/themes/enfold/js/aviapopup/jquery.magnific-popup.min.js?ver=4.5.1
+web_url: http://www.equation-sg.com
+url: https://equation-sg.com/wp-content/themes/enfold/js/avia-snippet-lightbox.js?ver=4.5.1
+web_url: http://www.equation-sg.com
+url: https://equation-sg.com/wp-content/themes/enfold/js/avia-snippet-megamenu.js?ver=4.5.1
+web_url: http://www.equation-sg.com
+url: https://equation-sg.com/wp-content/themes/enfold/js/avia-snippet-widget.js?ver=4.5.1
+web_url: http://www.equation-sg.com
+url: https://equation-sg.com/wp-includes/js/mediaelement/wp-mediaelement.min.js?ver=5.0.18
+web_url: http://www.equation-sg.com
+url: https://equation-sg.com/wp-content/themes/enfold/framework/js/conditional_load/avia_google_maps_front.js?ver=4.5.1
+web_url: http://www.equation-sg.com
+url: https://equation-sg.com/wp-includes/js/wp-embed.min.js?ver=5.0.18
+web_url: http://www.equation-sg.com
+url: https://equation-sg.com/wp-content/plugins/facebook-pagelike-widget/fb.js?ver=1.0
+total js_files_links: ['https://equation-sg.com/wp-includes/js/jquery/jquery.js?ver=1.12.4', 'https://equation-sg.com/wp-content/plugins/google-analytics-for-wordpress/assets/js/frontend.min.js?ver=7.10.0', 'https://equation-sg.com/wp-content/themes/enfold/js/avia-compat.js?ver=4.5.1', 'https://equation-sg.com/wp-includes/js/mediaelement/mediaelement-and-player.min.js?ver=4.2.6-78496d1', 'https://equation-sg.com/wp-includes/js/mediaelement/mediaelement-migrate.min.js?ver=5.0.18', 'https://equation-sg.com/wp-content/themes/enfold/js/avia.js?ver=4.5.1', 'https://equation-sg.com/wp-content/themes/enfold/js/shortcodes.js?ver=4.5.1', 'https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/audio-player/audio-player.js?ver=5.0.18', 'https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/contact/contact.js?ver=5.0.18', 'https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/slideshow/slideshow.js?ver=5.0.18', 'https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/countdown/countdown.js?ver=5.0.18', 'https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/gallery/gallery.js?ver=5.0.18', 'https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/gallery_horizontal/gallery_horizontal.js?ver=5.0.18', 'https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/headline_rotator/headline_rotator.js?ver=5.0.18', 'https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/icongrid/icongrid.js?ver=5.0.18', 'https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/iconlist/iconlist.js?ver=5.0.18', 'https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/image_hotspots/image_hotspots.js?ver=5.0.18', 'https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/magazine/magazine.js?ver=5.0.18', 'https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/portfolio/isotope.js?ver=5.0.18', 'https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/masonry_entries/masonry_entries.js?ver=5.0.18', 'https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/menu/menu.js?ver=5.0.18', 'https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/notification/notification.js?ver=5.0.18', 'https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/numbers/numbers.js?ver=5.0.18', 'https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/portfolio/portfolio.js?ver=5.0.18', 'https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/progressbar/progressbar.js?ver=5.0.18', 'https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/slideshow/slideshow-video.js?ver=5.0.18', 'https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/slideshow_accordion/slideshow_accordion.js?ver=5.0.18', 'https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/slideshow_fullscreen/slideshow_fullscreen.js?ver=5.0.18', 'https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/slideshow_layerslider/slideshow_layerslider.js?ver=5.0.18', 'https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/tab_section/tab_section.js?ver=5.0.18', 'https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/tabs/tabs.js?ver=5.0.18', 'https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/testimonials/testimonials.js?ver=5.0.18', 'https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/timeline/timeline.js?ver=5.0.18', 'https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/toggles/toggles.js?ver=5.0.18', 'https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/video/video.js?ver=5.0.18', 'https://equation-sg.com/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.1', 'https://equation-sg.com/wp-content/plugins/wpcf7-redirect/js/wpcf7-redirect-script.js', 'https://www.google.com/recaptcha/api.js?render=6LdHSRUUAAAAAGh-yGw5G1RbsDFgdkwXy-3le0iT&ver=3.0', 'https://equation-sg.com/wp-content/themes/enfold/js/aviapopup/jquery.magnific-popup.min.js?ver=4.5.1', 'https://equation-sg.com/wp-content/themes/enfold/js/avia-snippet-lightbox.js?ver=4.5.1', 'https://equation-sg.com/wp-content/themes/enfold/js/avia-snippet-megamenu.js?ver=4.5.1', 'https://equation-sg.com/wp-content/themes/enfold/js/avia-snippet-widget.js?ver=4.5.1', 'https://equation-sg.com/wp-includes/js/mediaelement/wp-mediaelement.min.js?ver=5.0.18', 'https://equation-sg.com/wp-content/themes/enfold/framework/js/conditional_load/avia_google_maps_front.js?ver=4.5.1', 'https://equation-sg.com/wp-includes/js/wp-embed.min.js?ver=5.0.18', 'https://equation-sg.com/wp-content/plugins/facebook-pagelike-widget/fb.js?ver=1.0']
+starting get for each_js_link: https://equation-sg.com/wp-includes/js/jquery/jquery.js?ver=1.12.4
+starting get for each_js_link: https://equation-sg.com/wp-content/plugins/google-analytics-for-wordpress/assets/js/frontend.min.js?ver=7.10.0
+starting get for each_js_link: https://equation-sg.com/wp-content/themes/enfold/js/avia-compat.js?ver=4.5.1
+starting get for each_js_link: https://equation-sg.com/wp-includes/js/mediaelement/mediaelement-and-player.min.js?ver=4.2.6-78496d1
+starting get for each_js_link: https://equation-sg.com/wp-includes/js/mediaelement/mediaelement-migrate.min.js?ver=5.0.18
+starting get for each_js_link: https://equation-sg.com/wp-content/themes/enfold/js/avia.js?ver=4.5.1
+starting get for each_js_link: https://equation-sg.com/wp-content/themes/enfold/js/shortcodes.js?ver=4.5.1
+starting get for each_js_link: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/audio-player/audio-player.js?ver=5.0.18
+starting get for each_js_link: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/contact/contact.js?ver=5.0.18
+starting get for each_js_link: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/slideshow/slideshow.js?ver=5.0.18
+starting get for each_js_link: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/countdown/countdown.js?ver=5.0.18
+starting get for each_js_link: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/gallery/gallery.js?ver=5.0.18
+starting get for each_js_link: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/gallery_horizontal/gallery_horizontal.js?ver=5.0.18
+starting get for each_js_link: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/headline_rotator/headline_rotator.js?ver=5.0.18
+starting get for each_js_link: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/icongrid/icongrid.js?ver=5.0.18
+starting get for each_js_link: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/iconlist/iconlist.js?ver=5.0.18
+starting get for each_js_link: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/image_hotspots/image_hotspots.js?ver=5.0.18
+starting get for each_js_link: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/magazine/magazine.js?ver=5.0.18
+starting get for each_js_link: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/portfolio/isotope.js?ver=5.0.18
+starting get for each_js_link: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/masonry_entries/masonry_entries.js?ver=5.0.18
+starting get for each_js_link: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/menu/menu.js?ver=5.0.18
+starting get for each_js_link: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/notification/notification.js?ver=5.0.18
+starting get for each_js_link: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/numbers/numbers.js?ver=5.0.18
+starting get for each_js_link: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/portfolio/portfolio.js?ver=5.0.18
+starting get for each_js_link: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/progressbar/progressbar.js?ver=5.0.18
+starting get for each_js_link: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/slideshow/slideshow-video.js?ver=5.0.18
+starting get for each_js_link: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/slideshow_accordion/slideshow_accordion.js?ver=5.0.18
+starting get for each_js_link: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/slideshow_fullscreen/slideshow_fullscreen.js?ver=5.0.18
+starting get for each_js_link: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/slideshow_layerslider/slideshow_layerslider.js?ver=5.0.18
+starting get for each_js_link: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/tab_section/tab_section.js?ver=5.0.18
+starting get for each_js_link: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/tabs/tabs.js?ver=5.0.18
+starting get for each_js_link: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/testimonials/testimonials.js?ver=5.0.18
+starting get for each_js_link: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/timeline/timeline.js?ver=5.0.18
+starting get for each_js_link: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/toggles/toggles.js?ver=5.0.18
+starting get for each_js_link: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/video/video.js?ver=5.0.18
+starting get for each_js_link: https://equation-sg.com/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.1
+starting get for each_js_link: https://equation-sg.com/wp-content/plugins/wpcf7-redirect/js/wpcf7-redirect-script.js
+starting get for each_js_link: https://www.google.com/recaptcha/api.js?render=6LdHSRUUAAAAAGh-yGw5G1RbsDFgdkwXy-3le0iT&ver=3.0
+starting get for each_js_link: https://equation-sg.com/wp-content/themes/enfold/js/aviapopup/jquery.magnific-popup.min.js?ver=4.5.1
+starting get for each_js_link: https://equation-sg.com/wp-content/themes/enfold/js/avia-snippet-lightbox.js?ver=4.5.1
+starting get for each_js_link: https://equation-sg.com/wp-content/themes/enfold/js/avia-snippet-megamenu.js?ver=4.5.1
+starting get for each_js_link: https://equation-sg.com/wp-content/themes/enfold/js/avia-snippet-widget.js?ver=4.5.1
+starting get for each_js_link: https://equation-sg.com/wp-includes/js/mediaelement/wp-mediaelement.min.js?ver=5.0.18
+starting get for each_js_link: https://equation-sg.com/wp-content/themes/enfold/framework/js/conditional_load/avia_google_maps_front.js?ver=4.5.1
+starting get for each_js_link: https://equation-sg.com/wp-includes/js/wp-embed.min.js?ver=5.0.18
+starting get for each_js_link: https://equation-sg.com/wp-content/plugins/facebook-pagelike-widget/fb.js?ver=1.0
+current protocol: https
+returncode: 0
+starting html request.get
+web_url: https://www.equation-sg.com
+url: https://equation-sg.com/wp-includes/js/jquery/jquery.js?ver=1.12.4
+web_url: https://www.equation-sg.com
+url: https://equation-sg.com/wp-content/plugins/google-analytics-for-wordpress/assets/js/frontend.min.js?ver=7.10.0
+web_url: https://www.equation-sg.com
+url: https://equation-sg.com/wp-content/themes/enfold/js/avia-compat.js?ver=4.5.1
+web_url: https://www.equation-sg.com
+url: https://equation-sg.com/wp-includes/js/mediaelement/mediaelement-and-player.min.js?ver=4.2.6-78496d1
+web_url: https://www.equation-sg.com
+url: https://equation-sg.com/wp-includes/js/mediaelement/mediaelement-migrate.min.js?ver=5.0.18
+web_url: https://www.equation-sg.com
+url: https://equation-sg.com/wp-content/themes/enfold/js/avia.js?ver=4.5.1
+web_url: https://www.equation-sg.com
+url: https://equation-sg.com/wp-content/themes/enfold/js/shortcodes.js?ver=4.5.1
+web_url: https://www.equation-sg.com
+url: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/audio-player/audio-player.js?ver=5.0.18
+web_url: https://www.equation-sg.com
+url: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/contact/contact.js?ver=5.0.18
+web_url: https://www.equation-sg.com
+url: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/slideshow/slideshow.js?ver=5.0.18
+web_url: https://www.equation-sg.com
+url: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/countdown/countdown.js?ver=5.0.18
+web_url: https://www.equation-sg.com
+url: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/gallery/gallery.js?ver=5.0.18
+web_url: https://www.equation-sg.com
+url: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/gallery_horizontal/gallery_horizontal.js?ver=5.0.18
+web_url: https://www.equation-sg.com
+url: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/headline_rotator/headline_rotator.js?ver=5.0.18
+web_url: https://www.equation-sg.com
+url: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/icongrid/icongrid.js?ver=5.0.18
+web_url: https://www.equation-sg.com
+url: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/iconlist/iconlist.js?ver=5.0.18
+web_url: https://www.equation-sg.com
+url: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/image_hotspots/image_hotspots.js?ver=5.0.18
+web_url: https://www.equation-sg.com
+url: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/magazine/magazine.js?ver=5.0.18
+web_url: https://www.equation-sg.com
+url: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/portfolio/isotope.js?ver=5.0.18
+web_url: https://www.equation-sg.com
+url: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/masonry_entries/masonry_entries.js?ver=5.0.18
+web_url: https://www.equation-sg.com
+url: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/menu/menu.js?ver=5.0.18
+web_url: https://www.equation-sg.com
+url: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/notification/notification.js?ver=5.0.18
+web_url: https://www.equation-sg.com
+url: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/numbers/numbers.js?ver=5.0.18
+web_url: https://www.equation-sg.com
+url: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/portfolio/portfolio.js?ver=5.0.18
+web_url: https://www.equation-sg.com
+url: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/progressbar/progressbar.js?ver=5.0.18
+web_url: https://www.equation-sg.com
+url: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/slideshow/slideshow-video.js?ver=5.0.18
+web_url: https://www.equation-sg.com
+url: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/slideshow_accordion/slideshow_accordion.js?ver=5.0.18
+web_url: https://www.equation-sg.com
+url: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/slideshow_fullscreen/slideshow_fullscreen.js?ver=5.0.18
+web_url: https://www.equation-sg.com
+url: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/slideshow_layerslider/slideshow_layerslider.js?ver=5.0.18
+web_url: https://www.equation-sg.com
+url: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/tab_section/tab_section.js?ver=5.0.18
+web_url: https://www.equation-sg.com
+url: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/tabs/tabs.js?ver=5.0.18
+web_url: https://www.equation-sg.com
+url: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/testimonials/testimonials.js?ver=5.0.18
+web_url: https://www.equation-sg.com
+url: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/timeline/timeline.js?ver=5.0.18
+web_url: https://www.equation-sg.com
+url: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/toggles/toggles.js?ver=5.0.18
+web_url: https://www.equation-sg.com
+url: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/video/video.js?ver=5.0.18
+web_url: https://www.equation-sg.com
+url: https://equation-sg.com/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.1
+web_url: https://www.equation-sg.com
+url: https://equation-sg.com/wp-content/plugins/wpcf7-redirect/js/wpcf7-redirect-script.js
+web_url: https://www.equation-sg.com
+url: https://www.google.com/recaptcha/api.js?render=6LdHSRUUAAAAAGh-yGw5G1RbsDFgdkwXy-3le0iT&ver=3.0
+web_url: https://www.equation-sg.com
+url: https://equation-sg.com/wp-content/themes/enfold/js/aviapopup/jquery.magnific-popup.min.js?ver=4.5.1
+web_url: https://www.equation-sg.com
+url: https://equation-sg.com/wp-content/themes/enfold/js/avia-snippet-lightbox.js?ver=4.5.1
+web_url: https://www.equation-sg.com
+url: https://equation-sg.com/wp-content/themes/enfold/js/avia-snippet-megamenu.js?ver=4.5.1
+web_url: https://www.equation-sg.com
+url: https://equation-sg.com/wp-content/themes/enfold/js/avia-snippet-widget.js?ver=4.5.1
+web_url: https://www.equation-sg.com
+url: https://equation-sg.com/wp-includes/js/mediaelement/wp-mediaelement.min.js?ver=5.0.18
+web_url: https://www.equation-sg.com
+url: https://equation-sg.com/wp-content/themes/enfold/framework/js/conditional_load/avia_google_maps_front.js?ver=4.5.1
+web_url: https://www.equation-sg.com
+url: https://equation-sg.com/wp-includes/js/wp-embed.min.js?ver=5.0.18
+web_url: https://www.equation-sg.com
+url: https://equation-sg.com/wp-content/plugins/facebook-pagelike-widget/fb.js?ver=1.0
+total js_files_links: ['https://equation-sg.com/wp-includes/js/jquery/jquery.js?ver=1.12.4', 'https://equation-sg.com/wp-content/plugins/google-analytics-for-wordpress/assets/js/frontend.min.js?ver=7.10.0', 'https://equation-sg.com/wp-content/themes/enfold/js/avia-compat.js?ver=4.5.1', 'https://equation-sg.com/wp-includes/js/mediaelement/mediaelement-and-player.min.js?ver=4.2.6-78496d1', 'https://equation-sg.com/wp-includes/js/mediaelement/mediaelement-migrate.min.js?ver=5.0.18', 'https://equation-sg.com/wp-content/themes/enfold/js/avia.js?ver=4.5.1', 'https://equation-sg.com/wp-content/themes/enfold/js/shortcodes.js?ver=4.5.1', 'https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/audio-player/audio-player.js?ver=5.0.18', 'https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/contact/contact.js?ver=5.0.18', 'https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/slideshow/slideshow.js?ver=5.0.18', 'https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/countdown/countdown.js?ver=5.0.18', 'https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/gallery/gallery.js?ver=5.0.18', 'https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/gallery_horizontal/gallery_horizontal.js?ver=5.0.18', 'https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/headline_rotator/headline_rotator.js?ver=5.0.18', 'https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/icongrid/icongrid.js?ver=5.0.18', 'https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/iconlist/iconlist.js?ver=5.0.18', 'https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/image_hotspots/image_hotspots.js?ver=5.0.18', 'https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/magazine/magazine.js?ver=5.0.18', 'https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/portfolio/isotope.js?ver=5.0.18', 'https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/masonry_entries/masonry_entries.js?ver=5.0.18', 'https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/menu/menu.js?ver=5.0.18', 'https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/notification/notification.js?ver=5.0.18', 'https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/numbers/numbers.js?ver=5.0.18', 'https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/portfolio/portfolio.js?ver=5.0.18', 'https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/progressbar/progressbar.js?ver=5.0.18', 'https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/slideshow/slideshow-video.js?ver=5.0.18', 'https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/slideshow_accordion/slideshow_accordion.js?ver=5.0.18', 'https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/slideshow_fullscreen/slideshow_fullscreen.js?ver=5.0.18', 'https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/slideshow_layerslider/slideshow_layerslider.js?ver=5.0.18', 'https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/tab_section/tab_section.js?ver=5.0.18', 'https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/tabs/tabs.js?ver=5.0.18', 'https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/testimonials/testimonials.js?ver=5.0.18', 'https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/timeline/timeline.js?ver=5.0.18', 'https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/toggles/toggles.js?ver=5.0.18', 'https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/video/video.js?ver=5.0.18', 'https://equation-sg.com/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.1', 'https://equation-sg.com/wp-content/plugins/wpcf7-redirect/js/wpcf7-redirect-script.js', 'https://www.google.com/recaptcha/api.js?render=6LdHSRUUAAAAAGh-yGw5G1RbsDFgdkwXy-3le0iT&ver=3.0', 'https://equation-sg.com/wp-content/themes/enfold/js/aviapopup/jquery.magnific-popup.min.js?ver=4.5.1', 'https://equation-sg.com/wp-content/themes/enfold/js/avia-snippet-lightbox.js?ver=4.5.1', 'https://equation-sg.com/wp-content/themes/enfold/js/avia-snippet-megamenu.js?ver=4.5.1', 'https://equation-sg.com/wp-content/themes/enfold/js/avia-snippet-widget.js?ver=4.5.1', 'https://equation-sg.com/wp-includes/js/mediaelement/wp-mediaelement.min.js?ver=5.0.18', 'https://equation-sg.com/wp-content/themes/enfold/framework/js/conditional_load/avia_google_maps_front.js?ver=4.5.1', 'https://equation-sg.com/wp-includes/js/wp-embed.min.js?ver=5.0.18', 'https://equation-sg.com/wp-content/plugins/facebook-pagelike-widget/fb.js?ver=1.0']
+starting get for each_js_link: https://equation-sg.com/wp-includes/js/jquery/jquery.js?ver=1.12.4
+starting get for each_js_link: https://equation-sg.com/wp-content/plugins/google-analytics-for-wordpress/assets/js/frontend.min.js?ver=7.10.0
+starting get for each_js_link: https://equation-sg.com/wp-content/themes/enfold/js/avia-compat.js?ver=4.5.1
+starting get for each_js_link: https://equation-sg.com/wp-includes/js/mediaelement/mediaelement-and-player.min.js?ver=4.2.6-78496d1
+starting get for each_js_link: https://equation-sg.com/wp-includes/js/mediaelement/mediaelement-migrate.min.js?ver=5.0.18
+starting get for each_js_link: https://equation-sg.com/wp-content/themes/enfold/js/avia.js?ver=4.5.1
+starting get for each_js_link: https://equation-sg.com/wp-content/themes/enfold/js/shortcodes.js?ver=4.5.1
+starting get for each_js_link: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/audio-player/audio-player.js?ver=5.0.18
+starting get for each_js_link: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/contact/contact.js?ver=5.0.18
+starting get for each_js_link: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/slideshow/slideshow.js?ver=5.0.18
+starting get for each_js_link: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/countdown/countdown.js?ver=5.0.18
+starting get for each_js_link: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/gallery/gallery.js?ver=5.0.18
+starting get for each_js_link: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/gallery_horizontal/gallery_horizontal.js?ver=5.0.18
+starting get for each_js_link: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/headline_rotator/headline_rotator.js?ver=5.0.18
+starting get for each_js_link: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/icongrid/icongrid.js?ver=5.0.18
+starting get for each_js_link: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/iconlist/iconlist.js?ver=5.0.18
+starting get for each_js_link: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/image_hotspots/image_hotspots.js?ver=5.0.18
+starting get for each_js_link: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/magazine/magazine.js?ver=5.0.18
+starting get for each_js_link: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/portfolio/isotope.js?ver=5.0.18
+starting get for each_js_link: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/masonry_entries/masonry_entries.js?ver=5.0.18
+starting get for each_js_link: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/menu/menu.js?ver=5.0.18
+starting get for each_js_link: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/notification/notification.js?ver=5.0.18
+starting get for each_js_link: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/numbers/numbers.js?ver=5.0.18
+starting get for each_js_link: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/portfolio/portfolio.js?ver=5.0.18
+starting get for each_js_link: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/progressbar/progressbar.js?ver=5.0.18
+starting get for each_js_link: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/slideshow/slideshow-video.js?ver=5.0.18
+starting get for each_js_link: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/slideshow_accordion/slideshow_accordion.js?ver=5.0.18
+starting get for each_js_link: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/slideshow_fullscreen/slideshow_fullscreen.js?ver=5.0.18
+starting get for each_js_link: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/slideshow_layerslider/slideshow_layerslider.js?ver=5.0.18
+starting get for each_js_link: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/tab_section/tab_section.js?ver=5.0.18
+starting get for each_js_link: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/tabs/tabs.js?ver=5.0.18
+starting get for each_js_link: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/testimonials/testimonials.js?ver=5.0.18
+starting get for each_js_link: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/timeline/timeline.js?ver=5.0.18
+starting get for each_js_link: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/toggles/toggles.js?ver=5.0.18
+starting get for each_js_link: https://equation-sg.com/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/video/video.js?ver=5.0.18
+starting get for each_js_link: https://equation-sg.com/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.1
+starting get for each_js_link: https://equation-sg.com/wp-content/plugins/wpcf7-redirect/js/wpcf7-redirect-script.js
+starting get for each_js_link: https://www.google.com/recaptcha/api.js?render=6LdHSRUUAAAAAGh-yGw5G1RbsDFgdkwXy-3le0iT&ver=3.0
+starting get for each_js_link: https://equation-sg.com/wp-content/themes/enfold/js/aviapopup/jquery.magnific-popup.min.js?ver=4.5.1
+starting get for each_js_link: https://equation-sg.com/wp-content/themes/enfold/js/avia-snippet-lightbox.js?ver=4.5.1
+starting get for each_js_link: https://equation-sg.com/wp-content/themes/enfold/js/avia-snippet-megamenu.js?ver=4.5.1
+starting get for each_js_link: https://equation-sg.com/wp-content/themes/enfold/js/avia-snippet-widget.js?ver=4.5.1
+starting get for each_js_link: https://equation-sg.com/wp-includes/js/mediaelement/wp-mediaelement.min.js?ver=5.0.18
+starting get for each_js_link: https://equation-sg.com/wp-content/themes/enfold/framework/js/conditional_load/avia_google_maps_front.js?ver=4.5.1
+starting get for each_js_link: https://equation-sg.com/wp-includes/js/wp-embed.min.js?ver=5.0.18
+starting get for each_js_link: https://equation-sg.com/wp-content/plugins/facebook-pagelike-widget/fb.js?ver=1.0
+duration_log grab_html_js: 377.7482583000092
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/www.equation-sg.com_20230612_071208.162.txt
+duration_log get_whois_info: 3.568660299992189
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/www.equation-sg.com_gethostbyname_ex_20230612_071211.730.txt
+nameservers_filepath file written to resources/dns/www.equation-sg.com_nameservers_20230612_071211.730.txt
+duration_log get_dns_info: 0.041682699986267835
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/www.equation-sg.com_20230612_071211.774.json
+duration_log get_cert_info: 26.493583799980115
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/www.equation-sg.com_20230612_071238.287.json
+duration_log get_archived_page_info: 0.9304620999610052
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for www.equation-sg.com, time taken 459.2981967999949 seconds
+
+
+current domain in process_parent:leedon-green-mcl-sg.com
+===== to_skip function start =====
+leedon-green-mcl-sg.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: leedon-green-mcl-sg.com now: 2023-06-12 07:12:39.296708+00:00
+duration_log vt_call: 0.9394194999476895
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/leedon-green-mcl-sg.com_http_20230612_071240.253.pngscreenshot found for protocol: https and saved to resources/shot-scraper/leedon-green-mcl-sg.com_https_20230612_071240.253.pngduration_log screenshot: 19.133389999973588
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+web_url: http://leedon-green-mcl-sg.com
+url: /single_7/js/modernizr-2.8.0.min.js
+web_url: http://leedon-green-mcl-sg.com
+url: /single_7/js/jquery-1.12.4.min.js
+web_url: http://leedon-green-mcl-sg.com
+url: /single_2/js/bootstrap-datepicker.min.js
+web_url: http://leedon-green-mcl-sg.com
+url: /single_2/js/bootstrap-timepicker.js
+web_url: http://leedon-green-mcl-sg.com
+url: /countries_code/js/intlTelInput.js
+web_url: http://leedon-green-mcl-sg.com
+url: /js/jquery.validate.min.js
+web_url: http://leedon-green-mcl-sg.com
+url: /js/select2/js/select2.min.js
+web_url: http://leedon-green-mcl-sg.com
+url: /single_7/js/propertysite/contact.js
+web_url: http://leedon-green-mcl-sg.com
+url: /js/simplelightbox/simple-lightbox.js
+web_url: http://leedon-green-mcl-sg.com
+url: /single_7/js/bootstrap.min.js
+web_url: http://leedon-green-mcl-sg.com
+url: /single_7/js/slick.min.js
+web_url: http://leedon-green-mcl-sg.com
+url: /single_7/js/bootstrap-select.min.js
+web_url: http://leedon-green-mcl-sg.com
+url: /single_7/js/waypoints.min.js
+web_url: http://leedon-green-mcl-sg.com
+url: /single_7/js/jquery.counterup.min.js
+web_url: http://leedon-green-mcl-sg.com
+url: /single_7/js/custom.js
+total js_files_links: ['http://leedon-green-mcl-sg.com/single_7/js/modernizr-2.8.0.min.js', 'http://leedon-green-mcl-sg.com/single_7/js/jquery-1.12.4.min.js', 'http://leedon-green-mcl-sg.com/single_2/js/bootstrap-datepicker.min.js', 'http://leedon-green-mcl-sg.com/single_2/js/bootstrap-timepicker.js', 'http://leedon-green-mcl-sg.com/countries_code/js/intlTelInput.js', 'http://leedon-green-mcl-sg.com/js/jquery.validate.min.js', 'http://leedon-green-mcl-sg.com/js/select2/js/select2.min.js', 'http://leedon-green-mcl-sg.com/single_7/js/propertysite/contact.js', 'http://leedon-green-mcl-sg.com/js/simplelightbox/simple-lightbox.js', 'http://leedon-green-mcl-sg.com/single_7/js/bootstrap.min.js', 'http://leedon-green-mcl-sg.com/single_7/js/slick.min.js', 'http://leedon-green-mcl-sg.com/single_7/js/bootstrap-select.min.js', 'http://leedon-green-mcl-sg.com/single_7/js/waypoints.min.js', 'http://leedon-green-mcl-sg.com/single_7/js/jquery.counterup.min.js', 'http://leedon-green-mcl-sg.com/single_7/js/custom.js']
+starting get for each_js_link: http://leedon-green-mcl-sg.com/single_7/js/modernizr-2.8.0.min.js
+starting get for each_js_link: http://leedon-green-mcl-sg.com/single_7/js/jquery-1.12.4.min.js
+starting get for each_js_link: http://leedon-green-mcl-sg.com/single_2/js/bootstrap-datepicker.min.js
+starting get for each_js_link: http://leedon-green-mcl-sg.com/single_2/js/bootstrap-timepicker.js
+starting get for each_js_link: http://leedon-green-mcl-sg.com/countries_code/js/intlTelInput.js
+starting get for each_js_link: http://leedon-green-mcl-sg.com/js/jquery.validate.min.js
+starting get for each_js_link: http://leedon-green-mcl-sg.com/js/select2/js/select2.min.js
+starting get for each_js_link: http://leedon-green-mcl-sg.com/single_7/js/propertysite/contact.js
+starting get for each_js_link: http://leedon-green-mcl-sg.com/js/simplelightbox/simple-lightbox.js
+starting get for each_js_link: http://leedon-green-mcl-sg.com/single_7/js/bootstrap.min.js
+starting get for each_js_link: http://leedon-green-mcl-sg.com/single_7/js/slick.min.js
+starting get for each_js_link: http://leedon-green-mcl-sg.com/single_7/js/bootstrap-select.min.js
+starting get for each_js_link: http://leedon-green-mcl-sg.com/single_7/js/waypoints.min.js
+starting get for each_js_link: http://leedon-green-mcl-sg.com/single_7/js/jquery.counterup.min.js
+starting get for each_js_link: http://leedon-green-mcl-sg.com/single_7/js/custom.js
+current protocol: https
+returncode: 0
+starting html request.get
+web_url: https://leedon-green-mcl-sg.com
+url: /single_7/js/modernizr-2.8.0.min.js
+web_url: https://leedon-green-mcl-sg.com
+url: /single_7/js/jquery-1.12.4.min.js
+web_url: https://leedon-green-mcl-sg.com
+url: /single_2/js/bootstrap-datepicker.min.js
+web_url: https://leedon-green-mcl-sg.com
+url: /single_2/js/bootstrap-timepicker.js
+web_url: https://leedon-green-mcl-sg.com
+url: /countries_code/js/intlTelInput.js
+web_url: https://leedon-green-mcl-sg.com
+url: /js/jquery.validate.min.js
+web_url: https://leedon-green-mcl-sg.com
+url: /js/select2/js/select2.min.js
+web_url: https://leedon-green-mcl-sg.com
+url: /single_7/js/propertysite/contact.js
+web_url: https://leedon-green-mcl-sg.com
+url: /js/simplelightbox/simple-lightbox.js
+web_url: https://leedon-green-mcl-sg.com
+url: /single_7/js/bootstrap.min.js
+web_url: https://leedon-green-mcl-sg.com
+url: /single_7/js/slick.min.js
+web_url: https://leedon-green-mcl-sg.com
+url: /single_7/js/bootstrap-select.min.js
+web_url: https://leedon-green-mcl-sg.com
+url: /single_7/js/waypoints.min.js
+web_url: https://leedon-green-mcl-sg.com
+url: /single_7/js/jquery.counterup.min.js
+web_url: https://leedon-green-mcl-sg.com
+url: /single_7/js/custom.js
+total js_files_links: ['https://leedon-green-mcl-sg.com/single_7/js/modernizr-2.8.0.min.js', 'https://leedon-green-mcl-sg.com/single_7/js/jquery-1.12.4.min.js', 'https://leedon-green-mcl-sg.com/single_2/js/bootstrap-datepicker.min.js', 'https://leedon-green-mcl-sg.com/single_2/js/bootstrap-timepicker.js', 'https://leedon-green-mcl-sg.com/countries_code/js/intlTelInput.js', 'https://leedon-green-mcl-sg.com/js/jquery.validate.min.js', 'https://leedon-green-mcl-sg.com/js/select2/js/select2.min.js', 'https://leedon-green-mcl-sg.com/single_7/js/propertysite/contact.js', 'https://leedon-green-mcl-sg.com/js/simplelightbox/simple-lightbox.js', 'https://leedon-green-mcl-sg.com/single_7/js/bootstrap.min.js', 'https://leedon-green-mcl-sg.com/single_7/js/slick.min.js', 'https://leedon-green-mcl-sg.com/single_7/js/bootstrap-select.min.js', 'https://leedon-green-mcl-sg.com/single_7/js/waypoints.min.js', 'https://leedon-green-mcl-sg.com/single_7/js/jquery.counterup.min.js', 'https://leedon-green-mcl-sg.com/single_7/js/custom.js']
+starting get for each_js_link: https://leedon-green-mcl-sg.com/single_7/js/modernizr-2.8.0.min.js
+starting get for each_js_link: https://leedon-green-mcl-sg.com/single_7/js/jquery-1.12.4.min.js
+starting get for each_js_link: https://leedon-green-mcl-sg.com/single_2/js/bootstrap-datepicker.min.js
+starting get for each_js_link: https://leedon-green-mcl-sg.com/single_2/js/bootstrap-timepicker.js
+starting get for each_js_link: https://leedon-green-mcl-sg.com/countries_code/js/intlTelInput.js
+starting get for each_js_link: https://leedon-green-mcl-sg.com/js/jquery.validate.min.js
+starting get for each_js_link: https://leedon-green-mcl-sg.com/js/select2/js/select2.min.js
+starting get for each_js_link: https://leedon-green-mcl-sg.com/single_7/js/propertysite/contact.js
+starting get for each_js_link: https://leedon-green-mcl-sg.com/js/simplelightbox/simple-lightbox.js
+starting get for each_js_link: https://leedon-green-mcl-sg.com/single_7/js/bootstrap.min.js
+starting get for each_js_link: https://leedon-green-mcl-sg.com/single_7/js/slick.min.js
+starting get for each_js_link: https://leedon-green-mcl-sg.com/single_7/js/bootstrap-select.min.js
+starting get for each_js_link: https://leedon-green-mcl-sg.com/single_7/js/waypoints.min.js
+starting get for each_js_link: https://leedon-green-mcl-sg.com/single_7/js/jquery.counterup.min.js
+starting get for each_js_link: https://leedon-green-mcl-sg.com/single_7/js/custom.js
+duration_log grab_html_js: 5.509291199967265
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/leedon-green-mcl-sg.com_20230612_071304.931.txt
+duration_log get_whois_info: 0.9272014999878593
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/leedon-green-mcl-sg.com_gethostbyname_ex_20230612_071305.863.txt
+nameservers_filepath file written to resources/dns/leedon-green-mcl-sg.com_nameservers_20230612_071305.863.txt
+duration_log get_dns_info: 0.2172182000358589
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/leedon-green-mcl-sg.com_20230612_071306.091.json
+duration_log get_cert_info: 2.284753300016746
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7745420000283048
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for leedon-green-mcl-sg.com, time taken 29.919435299991164 seconds
+
+
+current domain in process_parent:onalytica-web.com
+===== to_skip function start =====
+onalytica-web.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: onalytica-web.com now: 2023-06-12 07:13:09.255083+00:00
+duration_log vt_call: 0.9273778999922797
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 3.2759993000072427
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 6
+current protocol: https
+returncode: 6
+duration_log grab_html_js: 0.055279300024267286
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/onalytica-web.com_20230612_071313.560.txt
+duration_log get_whois_info: 0.992185499984771
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+socket.gethostbyname_ex() exception triggered: [Errno 11001] getaddrinfo failed
+dns.resolver.query() exception triggered: The DNS query name does not exist: onalytica-web.com.
+duration_log get_dns_info: 0.03226509998785332
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/onalytica-web.com_20230612_071314.605.json
+duration_log get_cert_info: 0.9359124000184238
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7230751999886706
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for onalytica-web.com, time taken 15.001638900022954 seconds
+
+
+current domain in process_parent:slack-gov.com
+===== to_skip function start =====
+slack-gov.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: slack-gov.com now: 2023-06-12 07:13:24.293118+00:00
+duration_log vt_call: 0.9130557000171393
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/slack-gov.com_http_20230612_071325.220.pngscreenshot found for protocol: https and saved to resources/shot-scraper/slack-gov.com_https_20230612_071325.220.pngduration_log screenshot: 14.095929700008128
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+web_url: http://slack-gov.com
+url: https://a.slack-edge-gov.com/bv1-10/manifest.15276b23b0b38e514947.marketing.min.js
+web_url: http://slack-gov.com
+url: https://a.slack-edge-gov.com/bv1-10/rollup-marketing.aa6aa1f9a26ee7d9435f.marketing.min.js
+web_url: http://slack-gov.com
+url: https://a.slack-edge-gov.com/bv1-10/marketing-core.a9654fd82b60e7e21af6.marketing.min.js
+web_url: http://slack-gov.com
+url: https://a.slack-edge-gov.com/bv1-10/marketing-page-navigation.5ea867a113a32bca3b56.marketing.min.js
+total js_files_links: ['https://a.slack-edge-gov.com/bv1-10/manifest.15276b23b0b38e514947.marketing.min.js', 'https://a.slack-edge-gov.com/bv1-10/rollup-marketing.aa6aa1f9a26ee7d9435f.marketing.min.js', 'https://a.slack-edge-gov.com/bv1-10/marketing-core.a9654fd82b60e7e21af6.marketing.min.js', 'https://a.slack-edge-gov.com/bv1-10/marketing-page-navigation.5ea867a113a32bca3b56.marketing.min.js']
+starting get for each_js_link: https://a.slack-edge-gov.com/bv1-10/manifest.15276b23b0b38e514947.marketing.min.js
+starting get for each_js_link: https://a.slack-edge-gov.com/bv1-10/rollup-marketing.aa6aa1f9a26ee7d9435f.marketing.min.js
+starting get for each_js_link: https://a.slack-edge-gov.com/bv1-10/marketing-core.a9654fd82b60e7e21af6.marketing.min.js
+starting get for each_js_link: https://a.slack-edge-gov.com/bv1-10/marketing-page-navigation.5ea867a113a32bca3b56.marketing.min.js
+current protocol: https
+returncode: 0
+starting html request.get
+web_url: https://slack-gov.com
+url: https://a.slack-edge-gov.com/bv1-10/manifest.15276b23b0b38e514947.marketing.min.js
+web_url: https://slack-gov.com
+url: https://a.slack-edge-gov.com/bv1-10/rollup-marketing.aa6aa1f9a26ee7d9435f.marketing.min.js
+web_url: https://slack-gov.com
+url: https://a.slack-edge-gov.com/bv1-10/marketing-core.a9654fd82b60e7e21af6.marketing.min.js
+web_url: https://slack-gov.com
+url: https://a.slack-edge-gov.com/bv1-10/marketing-page-navigation.5ea867a113a32bca3b56.marketing.min.js
+total js_files_links: ['https://a.slack-edge-gov.com/bv1-10/manifest.15276b23b0b38e514947.marketing.min.js', 'https://a.slack-edge-gov.com/bv1-10/rollup-marketing.aa6aa1f9a26ee7d9435f.marketing.min.js', 'https://a.slack-edge-gov.com/bv1-10/marketing-core.a9654fd82b60e7e21af6.marketing.min.js', 'https://a.slack-edge-gov.com/bv1-10/marketing-page-navigation.5ea867a113a32bca3b56.marketing.min.js']
+starting get for each_js_link: https://a.slack-edge-gov.com/bv1-10/manifest.15276b23b0b38e514947.marketing.min.js
+starting get for each_js_link: https://a.slack-edge-gov.com/bv1-10/rollup-marketing.aa6aa1f9a26ee7d9435f.marketing.min.js
+starting get for each_js_link: https://a.slack-edge-gov.com/bv1-10/marketing-core.a9654fd82b60e7e21af6.marketing.min.js
+starting get for each_js_link: https://a.slack-edge-gov.com/bv1-10/marketing-page-navigation.5ea867a113a32bca3b56.marketing.min.js
+duration_log grab_html_js: 7.708000499987975
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/slack-gov.com_20230612_071347.059.txt
+duration_log get_whois_info: 1.106679999968037
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/slack-gov.com_gethostbyname_ex_20230612_071348.173.txt
+nameservers_filepath file written to resources/dns/slack-gov.com_nameservers_20230612_071348.173.txt
+duration_log get_dns_info: 0.11804080003639683
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/slack-gov.com_20230612_071348.294.json
+duration_log get_cert_info: 11.478383700014092
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/slack-gov.com_20230612_071359.775.json
+duration_log get_archived_page_info: 0.717902900010813
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for slack-gov.com, time taken 36.261459000001196 seconds
+
+
+current domain in process_parent:www.bfg-sg.com
+===== to_skip function start =====
+www.bfg-sg.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: www.bfg-sg.com now: 2023-06-12 07:14:00.598756+00:00
+duration_log vt_call: 1.2987936999998055
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/www.bfg-sg.com_http_20230612_071401.916.pngscreenshot found for protocol: https and saved to resources/shot-scraper/www.bfg-sg.com_https_20230612_071401.916.pngduration_log screenshot: 16.287410099990666
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+web_url: http://www.bfg-sg.com
+url: //assets.squarespace.com/@sqs/polyfiller/1.6/legacy.js
+web_url: http://www.bfg-sg.com
+url: //assets.squarespace.com/@sqs/polyfiller/1.6/modern.js
+web_url: http://www.bfg-sg.com
+url: //assets.squarespace.com/universal/scripts-compressed/extract-css-runtime-16e10ff795773041024a7-min.en-US.js
+web_url: http://www.bfg-sg.com
+url: //assets.squarespace.com/universal/scripts-compressed/extract-css-moment-js-vendor-5082e2dab696b020ac83a-min.en-US.js
+web_url: http://www.bfg-sg.com
+url: //assets.squarespace.com/universal/scripts-compressed/cldr-resource-pack-7aeb77f4112df811f0852-min.en-US.js
+web_url: http://www.bfg-sg.com
+url: //assets.squarespace.com/universal/scripts-compressed/common-vendors-stable-ded59447778e1491d87fa-min.en-US.js
+web_url: http://www.bfg-sg.com
+url: //assets.squarespace.com/universal/scripts-compressed/common-vendors-582ad58c986de724342ed-min.en-US.js
+web_url: http://www.bfg-sg.com
+url: //assets.squarespace.com/universal/scripts-compressed/common-a55130e211eea021da3d0-min.en-US.js
+web_url: http://www.bfg-sg.com
+url: //assets.squarespace.com/universal/scripts-compressed/performance-d6a258e440b43e3fd74c6-min.en-US.js
+web_url: http://www.bfg-sg.com
+url: https://www.googletagmanager.com/gtag/js?id=UA-169401721-1
+web_url: http://www.bfg-sg.com
+url: https://static1.squarespace.com/static/vta/5c5a519771c10ba3470d8101/scripts/site-bundle.c699e60aa86800e4d8f6ddd4286d2a0c.js
+total js_files_links: ['http://assets.squarespace.com/@sqs/polyfiller/1.6/legacy.js', 'http://assets.squarespace.com/@sqs/polyfiller/1.6/modern.js', 'http://assets.squarespace.com/universal/scripts-compressed/extract-css-runtime-16e10ff795773041024a7-min.en-US.js', 'http://assets.squarespace.com/universal/scripts-compressed/extract-css-moment-js-vendor-5082e2dab696b020ac83a-min.en-US.js', 'http://assets.squarespace.com/universal/scripts-compressed/cldr-resource-pack-7aeb77f4112df811f0852-min.en-US.js', 'http://assets.squarespace.com/universal/scripts-compressed/common-vendors-stable-ded59447778e1491d87fa-min.en-US.js', 'http://assets.squarespace.com/universal/scripts-compressed/common-vendors-582ad58c986de724342ed-min.en-US.js', 'http://assets.squarespace.com/universal/scripts-compressed/common-a55130e211eea021da3d0-min.en-US.js', 'http://assets.squarespace.com/universal/scripts-compressed/performance-d6a258e440b43e3fd74c6-min.en-US.js', 'https://www.googletagmanager.com/gtag/js?id=UA-169401721-1', 'https://static1.squarespace.com/static/vta/5c5a519771c10ba3470d8101/scripts/site-bundle.c699e60aa86800e4d8f6ddd4286d2a0c.js']
+starting get for each_js_link: http://assets.squarespace.com/@sqs/polyfiller/1.6/legacy.js
+starting get for each_js_link: http://assets.squarespace.com/@sqs/polyfiller/1.6/modern.js
+starting get for each_js_link: http://assets.squarespace.com/universal/scripts-compressed/extract-css-runtime-16e10ff795773041024a7-min.en-US.js
+starting get for each_js_link: http://assets.squarespace.com/universal/scripts-compressed/extract-css-moment-js-vendor-5082e2dab696b020ac83a-min.en-US.js
+starting get for each_js_link: http://assets.squarespace.com/universal/scripts-compressed/cldr-resource-pack-7aeb77f4112df811f0852-min.en-US.js
+starting get for each_js_link: http://assets.squarespace.com/universal/scripts-compressed/common-vendors-stable-ded59447778e1491d87fa-min.en-US.js
+starting get for each_js_link: http://assets.squarespace.com/universal/scripts-compressed/common-vendors-582ad58c986de724342ed-min.en-US.js
+starting get for each_js_link: http://assets.squarespace.com/universal/scripts-compressed/common-a55130e211eea021da3d0-min.en-US.js
+starting get for each_js_link: http://assets.squarespace.com/universal/scripts-compressed/performance-d6a258e440b43e3fd74c6-min.en-US.js
+starting get for each_js_link: https://www.googletagmanager.com/gtag/js?id=UA-169401721-1
+starting get for each_js_link: https://static1.squarespace.com/static/vta/5c5a519771c10ba3470d8101/scripts/site-bundle.c699e60aa86800e4d8f6ddd4286d2a0c.js
+current protocol: https
+returncode: 0
+starting html request.get
+web_url: https://www.bfg-sg.com
+url: //assets.squarespace.com/@sqs/polyfiller/1.6/legacy.js
+web_url: https://www.bfg-sg.com
+url: //assets.squarespace.com/@sqs/polyfiller/1.6/modern.js
+web_url: https://www.bfg-sg.com
+url: //assets.squarespace.com/universal/scripts-compressed/extract-css-runtime-8068b51490135a7142207-min.en-US.js
+web_url: https://www.bfg-sg.com
+url: //assets.squarespace.com/universal/scripts-compressed/extract-css-moment-js-vendor-5082e2dab696b020ac83a-min.en-US.js
+web_url: https://www.bfg-sg.com
+url: //assets.squarespace.com/universal/scripts-compressed/cldr-resource-pack-7aeb77f4112df811f0852-min.en-US.js
+web_url: https://www.bfg-sg.com
+url: //assets.squarespace.com/universal/scripts-compressed/common-vendors-stable-ded59447778e1491d87fa-min.en-US.js
+web_url: https://www.bfg-sg.com
+url: //assets.squarespace.com/universal/scripts-compressed/common-vendors-582ad58c986de724342ed-min.en-US.js
+web_url: https://www.bfg-sg.com
+url: //assets.squarespace.com/universal/scripts-compressed/common-fe3d72fcdbb7f87a0d1cf-min.en-US.js
+web_url: https://www.bfg-sg.com
+url: //assets.squarespace.com/universal/scripts-compressed/performance-d6a258e440b43e3fd74c6-min.en-US.js
+web_url: https://www.bfg-sg.com
+url: https://www.googletagmanager.com/gtag/js?id=UA-169401721-1
+web_url: https://www.bfg-sg.com
+url: https://static1.squarespace.com/static/vta/5c5a519771c10ba3470d8101/scripts/site-bundle.51f1e29e8b64d83633f61934b3ddedab.js
+total js_files_links: ['https://assets.squarespace.com/@sqs/polyfiller/1.6/legacy.js', 'https://assets.squarespace.com/@sqs/polyfiller/1.6/modern.js', 'https://assets.squarespace.com/universal/scripts-compressed/extract-css-runtime-8068b51490135a7142207-min.en-US.js', 'https://assets.squarespace.com/universal/scripts-compressed/extract-css-moment-js-vendor-5082e2dab696b020ac83a-min.en-US.js', 'https://assets.squarespace.com/universal/scripts-compressed/cldr-resource-pack-7aeb77f4112df811f0852-min.en-US.js', 'https://assets.squarespace.com/universal/scripts-compressed/common-vendors-stable-ded59447778e1491d87fa-min.en-US.js', 'https://assets.squarespace.com/universal/scripts-compressed/common-vendors-582ad58c986de724342ed-min.en-US.js', 'https://assets.squarespace.com/universal/scripts-compressed/common-fe3d72fcdbb7f87a0d1cf-min.en-US.js', 'https://assets.squarespace.com/universal/scripts-compressed/performance-d6a258e440b43e3fd74c6-min.en-US.js', 'https://www.googletagmanager.com/gtag/js?id=UA-169401721-1', 'https://static1.squarespace.com/static/vta/5c5a519771c10ba3470d8101/scripts/site-bundle.51f1e29e8b64d83633f61934b3ddedab.js']
+starting get for each_js_link: https://assets.squarespace.com/@sqs/polyfiller/1.6/legacy.js
+starting get for each_js_link: https://assets.squarespace.com/@sqs/polyfiller/1.6/modern.js
+starting get for each_js_link: https://assets.squarespace.com/universal/scripts-compressed/extract-css-runtime-8068b51490135a7142207-min.en-US.js
+starting get for each_js_link: https://assets.squarespace.com/universal/scripts-compressed/extract-css-moment-js-vendor-5082e2dab696b020ac83a-min.en-US.js
+starting get for each_js_link: https://assets.squarespace.com/universal/scripts-compressed/cldr-resource-pack-7aeb77f4112df811f0852-min.en-US.js
+starting get for each_js_link: https://assets.squarespace.com/universal/scripts-compressed/common-vendors-stable-ded59447778e1491d87fa-min.en-US.js
+starting get for each_js_link: https://assets.squarespace.com/universal/scripts-compressed/common-vendors-582ad58c986de724342ed-min.en-US.js
+starting get for each_js_link: https://assets.squarespace.com/universal/scripts-compressed/common-fe3d72fcdbb7f87a0d1cf-min.en-US.js
+starting get for each_js_link: https://assets.squarespace.com/universal/scripts-compressed/performance-d6a258e440b43e3fd74c6-min.en-US.js
+starting get for each_js_link: https://www.googletagmanager.com/gtag/js?id=UA-169401721-1
+starting get for each_js_link: https://static1.squarespace.com/static/vta/5c5a519771c10ba3470d8101/scripts/site-bundle.51f1e29e8b64d83633f61934b3ddedab.js
+duration_log grab_html_js: 22.00063299998874
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/www.bfg-sg.com_20230612_071440.248.txt
+duration_log get_whois_info: 2.2050624000257812
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/www.bfg-sg.com_gethostbyname_ex_20230612_071442.460.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: www.bfg-sg.com. IN NS
+duration_log get_dns_info: 0.15026490000309423
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 0.8002621000050567
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/www.bfg-sg.com_20230612_071443.432.json
+duration_log get_archived_page_info: 1.9420978999696672
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for www.bfg-sg.com, time taken 44.835181700007524 seconds
+
+
+current domain in process_parent:www.lumine-sg.com
+===== to_skip function start =====
+www.lumine-sg.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: www.lumine-sg.com now: 2023-06-12 07:14:45.513610+00:00
+duration_log vt_call: 0.9218233000137843
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 54.49791739997454
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 6
+current protocol: https
+returncode: 6
+duration_log grab_html_js: 0.0559971000184305
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/www.lumine-sg.com_20230612_071541.044.txt
+duration_log get_whois_info: 0.017966800020076334
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/www.lumine-sg.com_gethostbyname_ex_20230612_071541.070.txt
+dns.resolver.query() exception triggered: The resolution lifetime expired after 5.401 seconds: Server 1.1.1.1 UDP port 53 answered The DNS operation timed out.; Server 1.1.1.1 UDP port 53 answered The DNS operation timed out.; Server 1.1.1.1 UDP port 53 answered The DNS operation timed out.
+duration_log get_dns_info: 5.423521500022616
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info()  exception triggered: HTTPSConnectionPool(host='crt.sh', port=443): Max retries exceeded with url: /?q=%25.www.lumine-sg.com&output=json (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002259BE889D0>, 'Connection to crt.sh timed out. (connect timeout=None)'))
+duration_log get_cert_info: 21.053914599993732
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/www.lumine-sg.com_20230612_071607.574.json
+duration_log get_archived_page_info: 8.102664599951822
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for www.lumine-sg.com, time taken 90.21439269999973 seconds
+
+
+current domain in process_parent:www.gvcredit-sg.com
+===== to_skip function start =====
+www.gvcredit-sg.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: www.gvcredit-sg.com now: 2023-06-12 07:16:15.750948+00:00

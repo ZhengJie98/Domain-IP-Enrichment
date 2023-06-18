@@ -1,0 +1,1 @@
+[{"issuer_ca_id": 1479, "issuer_name": "C=BE, O=GlobalSign nv-sa, CN=AlphaSSL CA - SHA256 - G2", "common_name": "*.dsm-densay-sg.com", "name_value": "*.dsm-densay-sg.com\ndsm-densay-sg.com", "id": 7194435529, "entry_timestamp": "2022-07-25T05:14:27.97", "not_before": "2022-07-25T05:14:26", "not_after": "2023-08-26T05:14:25", "serial_number": "4e6aa9f9f52cebe0b5921f86"}]

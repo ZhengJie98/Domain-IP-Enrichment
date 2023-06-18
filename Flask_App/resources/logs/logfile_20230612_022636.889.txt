@@ -1,0 +1,47 @@
+current domain in process_parent:help.mk-com.com
+===== to_skip function start =====
+help.mk-com.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: help.mk-com.com now: 2023-06-12 02:26:36.925552+00:00
+duration_log vt_call: 0.93811479996657
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/help.mk-com.com_http_20230612_022637.887.pngscreenshot found for protocol: https and saved to resources/shot-scraper/help.mk-com.com_https_20230612_022637.887.pngduration_log screenshot: 19.377304400026333
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 0
+starting html request.get
+total js_files_links: []
+duration_log grab_html_js: 1.2367358999908902
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/help.mk-com.com_20230612_022658.528.txt
+duration_log get_whois_info: 0.7489777999580838
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/help.mk-com.com_gethostbyname_ex_20230612_022659.281.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: help.mk-com.com. IN NS
+duration_log get_dns_info: 0.04412969999248162
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 0.7966658999794163
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 1.0915370000293478
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for help.mk-com.com, time taken 24.34151340002427 seconds
+
+
+current domain in process_parent:www.thehappyplace-sg.com
+===== to_skip function start =====
+www.thehappyplace-sg.com has NOT been processed in past X days
+===== to_skip function end =====

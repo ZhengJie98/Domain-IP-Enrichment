@@ -1,0 +1,188 @@
+HTTP/1.1 200 OK
+Date: Mon, 12 Jun 2023 04:59:15 GMT
+Server: Apache
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Set-Cookie: PHPSESSID=747dc6b4cf337a9e2ab8e5c2fc534a61; path=/
+Upgrade: h2,h2c
+Connection: Upgrade
+Vary: Accept-Encoding
+host-header: c2hhcmVkLmJsdWVob3N0LmNvbQ==
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+<!doctype html>
+<html lang="en">
+<head>
+    <!--login header-->
+    <meta charset="UTF-8">
+    <title>Emperor Logistics</title>
+    <base href="https://emperor-sg.com/"/>
+    <link href="lib/css/bootstrap.min.css" rel="stylesheet">
+    <link href="lib/css/datepicker3.css" rel="stylesheet">
+    <link href="lib/css/styles.css" rel="stylesheet">
+
+    <link href="lib/css/icon.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+
+    <script src="lib/js/jQuery-2.2.0.min.js"></script>
+    <script src="lib/js/bootstrap.min.js"></script>
+    <script src="lib/js/moment.js"></script>
+    <script src="lib/js/chart.min.js"></script>
+    <script src="lib/js/Chart.Line.js"></script>
+    <script src="lib/js/bootstrap.datetime.js"></script>
+    <script src="lib/js/basic.js"></script>
+</head>
+<body style="background-color:#FBFBFB">
+<div class="container"><script type="text/javascript">
+    $(document).ready(function () {
+        $('form').on('submit', function () {
+            var form = $(this);
+            var button = $(':submit', form);
+
+            button.button('loading');
+
+
+            $.post(form.attr('action'), form.serialize(), function (notify) {
+
+                form.find('.error').remove();
+                form.find('.has-error').removeClass('has-error');
+
+                if (notify.form && !$.isEmptyObject(notify.form)) {
+                    // Display errors
+                    for (var name in notify.form) {
+                        if (notify.form.hasOwnProperty(name)) {
+                            form.find('[name=username]').focus().parent().addClass('has-error')
+                                .after('<div class="alert alert-danger"><strong>Alert! </strong>&nbsp; ' + notify.form[name] + '</div>');
+                        }
+                    }
+
+                    // Re-Enables the button
+                    button.button('reset');
+                }
+                else {
+                    // Success
+                    button.replaceWith('<div class="alert alert-success">' + notify.confirm + '</div>');
+
+                    if (form.data('success')) {
+                        setTimeout(function () {
+                            window.location = form.data('success');
+                        }, 1500);
+                    }
+
+
+                    //form.find('fieldset').attr('disabled','disabled');
+                }
+            }, 'json');
+
+            return false;
+        }).on('change', 'input', function () {
+
+            // Clears the error status
+
+            var group = $(this).parents('.form-group:first');
+
+            group.find('.error').remove();
+            group.removeClass('has-error');
+        })
+    });
+
+</script>
+<div id="my-tab-content" class="tab-content">
+
+
+    <div class="tab-pane active" id="login">
+
+<!-- Begin Added Custom link by Rio Nilar   -->
+
+ <center><strong><span style="color:#0000CD;"><a style="color:#0000CD;" href="emperor logistics guide.pptx"><img border="0" alt="Guide" title="Download" src="images/green-icon-document.png" width="50" height="50"> Web User guide</a></span> 
+
+  <span style="color:#00FF00;"><a style="color:#00FF00;" href="EMPEROR_LOGISTIC_MOBILE_APP.pptx"><img border="0" alt="Mobile App User Gude" title="Play" src="images/mobileUserGuide.png" width="50" height="50">Mobile App User Guide</a></span>
+
+
+<span style="color:#0000CD;"><a style="color:#0000CD;" href="EMP_LOGISTICS.apk"><img border="0" alt="Download App" title="Download" src="images/download.jpg" width="50" height="50">Mobile App Download</a></span>
+</strong></center>
+<!--Ending Added Custom link by Rio Nilar -->
+
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+
+<!--  Just for reference
+  <span style="color: #333333;"><a style="color: #333333;" href="https://www.hrm.tzinwood.com/wp-content/uploads/2016/11/toPrint_GTPHRM_Admin-Guide.zip">Download HRM admin-guide</a></span>
+    by Rio Nilar -->
+
+                    <img class="text-center profile-img" src="images/logo.jpg"
+                         alt="">
+                </div>
+                <div class="modal-body">
+                    
+                    <form class="form col-md-12 center-block" method="post" action="request/employee.php?op=login"
+                          data-success="index.php?rdp=home" accept-charset="UTF-8" role="form"><input type="hidden"
+                                                                                                      name="action"
+                                                                                                      value="login">
+
+                        <div class="form-group">
+                            <input type="text" class="form-control input-lg" placeholder="Email" name="username">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control input-lg" placeholder="Password" name="password">
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-primary btn-lg btn-block" type="submit">Sign In</button>
+                            <a href="#forget" data-toggle="tab">Forgot password?</a></span>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <div class="col-md-12">
+                        &nbsp;
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tab-pane" id="forget">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <img class="text-center profile-img" src="images/logo.jpg"
+                         alt="">
+                </div>
+                <div class="modal-body">
+                    <form class="form col-md-12 center-block" method="post" action="request/reset_password.php">
+                        <div class="form-group">
+                            <input name="email" type="text" required autofocus class="form-control"
+                                   placeholder="Email Address">
+                        </div>
+
+                        <div class="form-group">
+                            <button class="btn btn-warning btn-lg btn-block" type="submit">Reset</button>
+                            <span class="pull-right"><a href="">Back to login?</a></span>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <div class="col-md-12">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div></section></div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        setTimeout(function () {
+            $('body').addClass('loaded');
+            $('h1').css('color', '#222222');
+        }, 200);
+
+    });
+</script>
+</body>
+</html>

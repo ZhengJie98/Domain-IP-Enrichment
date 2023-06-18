@@ -1,0 +1,2 @@
+$(document).ready((function(){console.log($("#slides-length").val()),$("#slides-length").val()<2&&$(".slick-dot").hide()}));
+//# sourceURL=https://cdn2.hubspot.net/hub/5937210/hub_generated/template_assets/54936744623/1631246139576/FMC_Mini_Site_Theme/js/slides.js

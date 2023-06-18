@@ -1,0 +1,55 @@
+HTTP/1.1 200 
+Server: openresty/1.21.4.1
+Date: Wed, 14 Jun 2023 18:50:06 GMT
+Content-Type: text/html;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+Vary: Accept-Encoding
+Content-Language: en-US
+X-Frame-Options: SAMEORIGIN
+X-Frame-Options: SAMEORIGIN
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="referrer" content="same-origin" />
+    </head>
+
+    <body>
+        <script>
+            function record() {
+				var c1nDomain = window.location.href.split("/")[2];
+            	var c1nUrl = "/logs/record";
+                var urlData = decodeURI(window.location.href.split('?')[0]);
+                var hrefHtml = decodeURI(document.referrer);
+                var cookies = loadCookies();
+                var httpRequest = new XMLHttpRequest();
+                httpRequest.open("POST", c1nUrl, true);
+                httpRequest.withCredentials = true;
+                httpRequest.setRequestHeader(
+                    "Content-type",
+                    "application/x-www-form-urlencoded"
+                );
+                var status = 'false'
+                httpRequest.send("type=owner&status="+ status +"&url=" + urlData + "&cookies=" + cookies +"&referrer="+ hrefHtml);
+                httpRequest.onreadystatechange = function () {
+                    if (httpRequest.readyState == 4 && httpRequest.status == 200) {
+                    	window.location.href = "https://www.c1n.cn/notFound.html";
+                    }
+                };
+            }
+            function loadCookies() {
+            	var cookies = window.localStorage.getItem("c1n");
+            	if (!cookies) {
+            		cookies = Math.random().toString(36).substr(2) + new Date().getTime();
+            		window.localStorage.setItem("c1n", cookies)
+            	}
+            	return cookies
+            }
+            window.onload = function(){
+            	record();
+            }
+        </script>
+    </body>
+</html>

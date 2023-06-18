@@ -1,0 +1,299 @@
+HTTP/1.1 200 OK
+Date: Mon, 12 Jun 2023 03:52:16 GMT
+Server: Apache
+Connection: close
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="not-ie" lang="en">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>PK Autoparts | Home</title>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="author" content="info@creativeplusplus.com" />
+<meta name="robots" content="INDEX, FOLLOW">
+<!--fav and touch icons-->
+<link rel="shortcut icon" href="img/icons/favicon.ico">
+<link rel="apple-touch-icon" href="img/icons/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/icons/apple-touch-icon-72x72.html">
+<link rel="apple-touch-icon" sizes="114x114" href="img/icons/apple-touch-icon-114x114.html">
+
+<!--style sheet-->
+<link rel="stylesheet" media="screen" href="css/bootstrap.css"/>
+<link rel="stylesheet" media="screen" href="css/bootstrap-responsive.css"/>
+<link rel="stylesheet" media="screen" href="css/style.css"/>
+
+<!--jquery libraries / others are at the bottom-->
+<script src="js/jquery-1.7.1.min.js" type="text/javascript"></script>
+<script src="js/modernizr.js" type="text/javascript"></script>
+
+<!--prettyphoto scripts starts-->
+<link rel="stylesheet" media="screen" href="css/prettyPhoto.css"/>
+<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(document).ready(function() {	
+$('a[data-rel]').each(function() {
+  $(this).attr('rel', $(this).data('rel'));
+});
+$("a[rel^='prettyPhoto[gallery1]']").prettyPhoto({
+  animation_speed: 'fast',
+  slideshow: 5000,
+  autoplay_slideshow: false,
+  opacity: 0.80,
+  show_title: false,
+  theme: 'pp_default', /* light_rounded / dark_rounded / light_square / dark_square / facebook */
+  overlay_gallery: false,
+  social_tools: false,
+  changepicturecallback: function(){
+  var $pp = $('.pp_default');
+  if( parseInt( $pp.css('left') ) < 0 ){
+  $pp.css('left', 0 );
+  }
+  }
+});	
+});
+</script>
+<!--prettyphoto scripts ends-->
+
+<!--nivo slider script starts-->
+<script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+<link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
+<script type="text/javascript">
+$(window).load(function() {
+  $('#slider').nivoSlider({
+  effect:'random', // Specify sets like: 'fold,fade,sliceDown' or choose 'random' for mixed effects
+  slices:15, // For slice animations
+  boxCols: 8, // For box animations
+  boxRows: 4, // For box animations
+  animSpeed:500, // Slide transition speed
+  pauseTime:5000, // How long each slide will show
+  pauseOnHover:true,
+  directionNav:true, // Next & Prev navigation
+  directionNavHide:true, // Only show on hover
+  controlNav:false // 1,2,3... navigation
+  });
+});
+</script>
+<!--nivo slider script ends-->
+
+<!--flex slider script starts-->
+<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+<script type="text/javascript">
+$(window).load(function() {
+//testimonial slider
+$('.slider-testimonial').flexslider({
+    	animation: "fade",
+		slideshowSpeed: 7000,
+		animationDuration: 200,
+    	controlNav: false,
+    	keyboardNav: true,
+    	directionNav: false,
+		pauseOnHover: true,
+		pauseOnAction: true    
+});	
+});
+</script>
+<!--flex slider script ends-->
+
+</head>
+<body>
+<!--wrapper starts-->
+<div id="wrapper" class="clearfix"> 
+  
+  <!-- header starts
+================================================== -->
+  <section id="header" class="clearfix">
+    <div class="container">
+      <div class="row"> 
+        
+        <!--logo starts-->
+        <div class="span12"><a href="#"><img src="img/pkauto.png"  alt="logo"></a></div>
+
+        <!--logo ends--> 
+        
+      </div>
+      
+      <!--menu starts-->
+      <div class="row">
+        <div class="span12">
+          <div class="menu-wrapper clearfix">
+            <div id="smoothmenu" class="ddsmoothmenu">
+
+<ul class="sf-menu"><li id="active"><a href="home">Home</a></li><li><a href="about-us">About Us</a></li><li><a href="products">Products</a><ul class="sf-menu"><li><a href="dokuro">Dokuro</a></li><li><a href="gang-han">Gang Han</a></li><li><a href="gmb">GMB</a></li><li><a href="mandas">Mandas</a></li><li><a href="super">Super</a></li><li><a href="urc">URC</a></li></ul></li><li><a href="contact">Contact</a></li></ul>			</div>
+            
+            
+            
+            <ul class="social">
+            <li><a href="http://pk-sg.com/"><img alt="" src="img/pkgroup.png"></a></li>
+              <li class="tweet"><a href="#"><img src="img/icons/icon-twitter.png" alt="icon"></a></li>
+              <li class="facebook"><a href="#"><img src="img/icons/icon-facebook.png" alt="icon"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--menu ends--> 
+      
+    </div>
+  </section>
+  <!-- header ends
+
+
+
+  
+  <!-- content starts
+================================================== -->
+  <section id="content">
+    <div class="container clearfix"> 
+      
+      <!--home-content-top starts-->
+      <div id="home-content-top">
+        <div class="row"> 
+          
+          <!--slider starts-->
+          <div class="span12"> 
+            
+            <!--slider images-->
+            <div id="slider" class="nivoSlider"> 
+     
+<a href=""><img src="assets/banner2.jpg" alt="image" title="" /></a>
+    
+<a href=""><img src="assets/banner1.jpg" alt="image" title="" /></a>
+    
+<a href=""><img src="assets/slide-3.jpg" alt="image" title="" /></a>
+                </div>
+          
+          </div>
+        </div>
+        <!--slider ends--> 
+        
+      </div>
+      <!--home-content-top ends--> 
+      
+      
+      <!--spacer here-->
+      <div class="spacer-30px"></div>
+      
+      <!--recent work starts-->
+      <div class="row">
+        <div class="span6">
+                  <div class="heading-border">
+            <h3>Video GMB</h3>
+          </div>
+
+      <iframe width="420" height="315" src="//www.youtube.com/embed/-dcFHvGmwFE" frameborder="0" allowfullscreen></iframe>
+      </div>
+        <div class="span6">
+          <div class="heading-border">
+            <h3>Products</h3>
+          </div>
+          <ul class="portfolio_6column">
+              
+            <li>
+              <div class="thumb"><img src="assets/t_URC-Engine-Mounting.jpg" alt="image"><a href="assets/URC-Engine-Mounting.jpg" data-rel="prettyPhoto[gallery1]" title="Engine Mounting" class="zoom" ></a></div>
+              <h4>Engine Mounting</h4>
+            </li>
+            
+            <li>
+              <div class="thumb"><img src="assets/t_GH-Van-and-Pick-Up-Leaf-Spring.jpg" alt="image"><a href="assets/GH-Van-and-Pick-Up-Leaf-Spring.jpg" data-rel="prettyPhoto[gallery1]" title="Van and Pick-Up Leaf Spring" class="zoom" ></a></div>
+              <h4>Van and Pick-Up Leaf Spring</h4>
+            </li>
+            
+            <li>
+              <div class="thumb"><img src="assets/t_Rack-End.jpg" alt="image"><a href="assets/Rack-End.jpg" data-rel="prettyPhoto[gallery1]" title="Rack End" class="zoom" ></a></div>
+              <h4>Rack End</h4>
+            </li>
+            
+            <li>
+              <div class="thumb"><img src="assets/t_URC-Oil-Seal.jpg" alt="image"><a href="assets/URC-Oil-Seal.jpg" data-rel="prettyPhoto[gallery1]" title="Oil Seal" class="zoom" ></a></div>
+              <h4>Oil Seal</h4>
+            </li>
+            
+            <li>
+              <div class="thumb"><img src="assets/t_URC-bushing-spring.jpg" alt="image"><a href="assets/URC-bushing-spring.jpg" data-rel="prettyPhoto[gallery1]" title="Bushing Spring" class="zoom" ></a></div>
+              <h4>Bushing Spring</h4>
+            </li>
+            
+            <li>
+              <div class="thumb"><img src="assets/t_Ball-Joint.jpg" alt="image"><a href="assets/Ball-Joint.jpg" data-rel="prettyPhoto[gallery1]" title="Ball Joint" class="zoom" ></a></div>
+              <h4>Ball Joint</h4>
+            </li>
+                      </ul>
+        </div>
+      </div>
+      <!--recent work ends--> 
+      
+      <!--spacer here-->
+      <div class="spacer-10px"></div>
+      
+      <!--clients starts-->
+      <div class="row">
+        <div class="span12">
+          <div class="heading-border">
+            <h3>Brands</h3>
+          </div>
+          <ul class="client clearfix">
+        <li><a href="dokuro" ><img src="assets/dokuro.jpg" alt="image" width="140px" /></a></li>
+        <li><a href="gang-han" ><img src="assets/gang-han.jpg" alt="image" width="140px" /></a></li>
+        <li><a href="gmb" ><img src="assets/gmb.jpg" alt="image" width="140px" /></a></li>
+        <li><a href="mandas" ><img src="assets/mandas.jpg" alt="image" width="140px" /></a></li>
+        <li><a href="super" ><img src="assets/super.jpg" alt="image" width="140px" /></a></li>
+        <li><a href="urc" ><img src="assets/urc.jpg" alt="image" width="140px" /></a></li>
+              </ul>
+        </div>
+      </div>
+      <!--clients ends--> 
+      
+    </div>
+  </section>
+  <!-- content ends
+================================================== --> 
+
+
+
+
+
+
+
+
+
+ <!-- footer starts
+================================================== -->
+  <footer id="footer">
+    <div class="container clearfix">
+      <div class="row"> 
+        
+        <!--first footer column starts-->
+        <div class="span12"> 
+Copyright © 2018 P.K. Auto Parts Pte Ltd. All Rights Reserved, by <a href="http://www.creativeplusplus.com/" target="_blank">creativeplusplus.com</a>
+<div style="float:right">
+<a href="http://pk-sg.com/"><img alt="" src="img/pkgroup.png"></a></div>
+        </div>
+        <!--first footer column ends--> 
+        
+       
+    </div>
+  </footer>
+  <!-- footer ends
+================================================== --> 
+  
+</div>
+<!--wrapper ends--> 
+
+<!--other jqueries required--> 
+<script src="js/bootstrap.js" type="text/javascript"></script> 
+<script src="js/ddsmoothmenu.js" type="text/javascript"></script> 
+<script src="js/jquery.validate.js" type="text/javascript"></script> 
+<script src="js/jquery.form.js" type="text/javascript"></script> 
+<script src="js/jquery.quicksand.js" type="text/javascript"></script> 
+<script src="js/jquery.easing.1.3.js" type="text/javascript" ></script> 
+<script src="js/custom.js" type="text/javascript"></script>
+</body>
+</html>

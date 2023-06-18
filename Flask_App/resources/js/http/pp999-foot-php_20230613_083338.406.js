@@ -1,0 +1,1 @@
+document.write('<iframe src="/pp999/foot.html" width="100%" height="220" frameborder="no" border="0" id="ifm" marginwidth="0" marginheight="0" scrolling="no"></iframe>');

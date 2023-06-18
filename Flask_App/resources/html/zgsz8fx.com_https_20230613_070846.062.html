@@ -1,0 +1,888 @@
+HTTP/1.1 200 OK
+Date: Tue, 13 Jun 2023 07:08:56 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+Vary: Accept-Encoding
+Set-Cookie: PHPSESSID=fcfdfbf54aff4cd20918cf6bcb2090b2; path=/
+Server: IIS7.0
+X-Cache-Status: MISS
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>
+    <link rel="stylesheet" href="/static/index/css/index.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">  
+    <link type="text/css" rel="stylesheet" href="/static/index/css/hsycmsAlert.css">
+    <link rel="stylesheet" href="/static/nindex/css/style.css">
+    <script src="/static/index/js/swiper-bundle.min.js"> </script>
+    <style>
+    html,body{
+        
+        background-color: white !important;
+    }
+    .hsycms-model .hsycms-model-btn button{
+        font-size: 14px;
+    }
+      .navigations {
+        height: 0.87rem;
+        display: flex;
+        align-items: center;
+        background: #FFFFFF;
+        box-shadow: 0px 2px 6px 0px rgb(0 0 0 / 20%);
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .introduce {
+        background: #FFFFFF;
+        box-shadow: 0px 2px 6px 0px rgb(0 0 0 / 20%);
+        border-radius: 0.05rem;
+        padding: 0.12rem;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 0.1rem;
+    }
+    .introduce-title {
+        font-size: 0.18rem;
+        font-family: SourceHanSansCN;
+        font-weight: bold;
+        color: #333333;
+    }
+    .introduce-item {
+        /*display: flex;*/
+        /*flex-grow: 1;*/
+        justify-content: space-between;
+        margin-top: 5px;
+    }
+    .tp-header{
+        /*height: .5rem;*/
+     background: #0d2c79;
+        width: 100%;
+        display: flex;
+    }
+    .tp-header>div{
+        height: 100%;
+    padding: 5px 0px;
+    }
+    .notice{
+        background: linear-gradient(to right, rgba(249, 249, 249, 0), rgb(200, 220, 229));
+        height: auto;
+        width: 96%;
+        margin: 5px auto 5px;
+    border-radius: 5px 20px 20px 5px;
+padding: 0 0.07rem;
+    }
+    .gg{
+        width: 15%;
+    background: white;
+    border-radius: 5px;
+    color: red;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .intro{
+        width:96%;
+        /*border: 1px solid #884947;*/
+        margin: 0 auto;
+        padding: 0px 10px;
+       padding-top: 20px;
+      
+      
+    }
+    .content{
+        background: none ;
+    }
+    .features{
+        padding-bottom: 7px;
+        margin-top: 15px;
+    }
+    
+    .container2{
+        margin: 0 auto;
+    max-width: 1280px;
+    width: 96%;
+    }
+    .container2 .row{
+        /* margin-left: -0.75rem;
+    margin-right: -0.75rem;
+    margin-bottom: 20px; */
+     display: flex; 
+    width: 100%;
+  
+     justify-content: space-between; 
+    }
+    .row .col.s4{
+        width: 30%;
+    box-sizing: border-box;
+    /* padding: 0 0.75rem; */
+    min-height: 1px;
+    }
+    .features .f-left{
+        /* padding-right: 5px; */
+    }
+    .features .entry.e-left{
+        background-image: linear-gradient(to right top, #ec75b1, #f083ba, #f591c3, #f99fcb, #fdacd4);
+    }
+    .features .entry.e-center{
+        background-image: linear-gradient(to right top, #4a94e1, #569ce5, #62a4ea, #6dacee, #78b4f2);
+    }
+    .features .entry.e-right{
+        background-image: linear-gradient(to right top, #a181c7, #a98acd, #b092d4, #b89bda, #c0a4e1);
+    }
+    .features .entry{
+        background: orange;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 25%);
+    padding: 10px;
+    }
+    
+    .features .entry i{
+        font-size: 26px;
+    color: #fff;
+    }
+    .features .entry h5{
+        font-size: 16px;
+    margin-top: 4px;
+    color: #fff;
+    }
+    .entry span{
+        color: #fff;
+        font-size: 20px;
+    }
+    .note{
+        background: white;
+    box-shadow: 0 2px 13px 2px rgb(0 0 0 / 6%);
+    height: 100px;
+    width: 96%;
+    margin: 10px auto;
+    border-radius: 5px;position: absolute;
+    left: -420px;
+    transition: all .5s;
+    
+    }
+    .note h5{
+        color: #5f6e7b !important;
+    }
+    .note .container{
+        margin: 0 auto;
+    max-width: 1280px;
+    width: 90%;
+    position: relative;
+    }
+    .note h5{
+        font-size: 20px;
+   
+    font-weight: 500;
+    }
+    .note p{
+        color: #eee;
+    margin-top: 8px;
+    }
+    .note img{
+        width: 15px;
+   
+
+    }
+   
+    .home{
+        overflow: auto !important;
+     
+          background: linear-gradient(180deg,#0d2c79 0,#6da0ca 20%);
+    background-size: 100% 100%;
+    }
+    .content{
+        overflow: unset;
+    }
+    .layui-m-layerbtn{
+        background: linear-gradient(to right,#27dbb5, #0ba0dd) !important;
+    }
+    .e-center{
+width: 120px;
+    }
+.e-right{
+  
+width: 120px;
+
+}
+.layui-m-layerbtn{
+    background:#0d2c79 !important;
+}
+.counter-area{
+    
+    background-image: url(/static/index/images/bg_counter.jpg);
+    padding: 60px 0 30px 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 96%;
+    margin: 0 auto;
+       border-radius: 10px;
+}
+.bg-overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(249,48, 105, .84) , rgba(252, 87, 42, .84));
+    border-radius: 10px;
+}
+.container2{
+    
+    width: 100%;
+    
+    margin-right: auto;
+    margin-left: auto;
+}
+.row2{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+   
+   
+}
+.row2 >.nb{
+    width: 32%;
+    height: 90px;
+    /*background: pink;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nb-box{
+   width: 70px;
+    height: 70px;
+ background-color: rgba(255,255,255,.25);
+    border-radius: 45px;
+    color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+ .jihuocontainer {width:96%; min-height:100px;
+          margin: 10px auto; 
+          border-radius:10px;
+       
+          background: #fff !important;
+          color: black;
+          box-shadow: 0 2px 13px 2px rgb(0 0 0 / 6%);
+         display: flex;
+    }
+    .jihuoone{
+        width: 30%;
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .jihuotwo{
+        width: 70%;
+    }
+    .wl{
+        
+      
+    width: 64px;
+    height: 64px;
+    background: linear-gradient(to bottom, rgb(252, 87, 42) 0%, rgb(249,48, 105) 100%);
+  
+    border-radius: 50%;
+    padding: 18px;
+    text-align: center;
+ 
+ 
+    box-shadow: 0 0 20px 0 rgb(252 87 42 / 30%);
+
+    }
+    .jihuotwo h3{
+        letter-spacing: .6px;
+    font-weight: 600;
+    color: #37434d;
+    line-height: 1.2;
+    margin-top: 20px;
+    }
+    .jihuotwo p{
+        margin-bottom: 0;
+    margin-top: 14px;
+    font-size: 15px;
+    letter-spacing: .3px;
+    line-height: 1.8;
+    color: #5f6e7b;
+    }
+    .total-ratings{
+    margin: 5px 0px;
+    }
+    .container p{
+            font-size: 17px;
+    letter-spacing: .3px;
+    line-height: 1.8;
+
+    }
+    .container h4{
+        font-size: 18px;
+    letter-spacing: .6px;
+    font-weight: 600;
+    color: #37434d;
+    line-height: 1.2;
+    }
+    .intro{
+        color: white;
+        margin-top: 15px;
+        border-radius: 10px;
+        background: linear-gradient(to right,#174FD9, #1ECEEA);
+    }
+    .intro span{
+        color: white !important;
+    }
+    .home-head{
+        height: auto;
+        /*background: black;*/
+    }
+   .layui-m-layercont span{
+       white-space: normal !important;
+   }
+   	.remark{
+				font-size: 26px;
+				color: red;
+				font-weight: bold;
+				display: none;
+			}
+			#imgBox img{
+				display: block;
+				width: 80%;
+				margin: 30px auto;
+			}
+			#fullPage{
+				display: none;
+				background: black;
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				z-index: 19930428;
+			}
+			#fullPage img{
+				display: block;
+				width: 100%;
+			}
+			#canvas{
+				width: 100%;
+				height: 100%;
+				background: none;
+				display: block;
+			}
+   
+   
+   .ewm,.ewm2{
+       display: flex;
+   }
+   .ewm2{
+     margin-top: 5px;
+   }
+   .ewm >div{
+       width: 50%;
+   }
+   .ewm2 >div{
+       width: 34%;
+   }
+   .border-000000{
+    border: 0;    
+   }
+      .nut-video{
+            width: 100%;
+            /*height: 215px;*/
+            margin: 0 auto;
+            /*margin-top: 20px;*/
+        }
+        .nut-video video{
+            height: 100%;
+    /*border-radius: 10px;*/
+    object-fit:fill; 
+        }
+        .record{
+                color: white;
+    border-color: #1976d2;
+    padding: 0px 10px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    margin: 15px 0px;
+        }
+        .record:before{
+            content: "";
+            display: block;
+            height: 1px;
+            margin-right: 20px;
+            width: 37px;
+            background: #1976d2;
+        }
+        .record:after{
+             content: "";
+            display: block;
+            height: 1px;
+            margin-left: 20px;
+            width: 55%;
+              background: #1976d2;
+        }
+        .news-box{
+         /*height: 100px;*/
+    border-top: 1px solid rgba(0,0,0,.12);
+    width: 96%;
+    margin: 0 auto;
+    display: flex;
+        padding: 10px 0px;
+        }
+        .dibu{
+               color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+        }
+        .dibu:before{
+           content: "";
+    display: block;
+    height: 1px;
+    margin-right: 20px;
+    width: 20%;
+    background: white;
+        }
+        .dibu:after{
+           content: "";
+    display: block;
+    height: 1px;
+    margin-left: 20px;
+    width: 20%;
+    background: white;
+        }
+        .centers{
+                width: 96%;
+            height: 60vh;
+            overflow: auto;
+            color: darkblue;
+            margin: auto;
+            background: wheat;
+            padding: 10px;
+            border-radius: 15px;
+            padding-bottom: 10px;
+        }
+        .centers a{
+            color:  #08acee !important; 
+        }
+        
+        .centers img{
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+  <div class="container home">
+        <div class="tp-header">
+        <div>
+             <img style="width: 180px;height: 50px;margin-left:20px" src="/static/index/images/logoss.png" alt=""></div>
+        </div>
+        <div class="home-head">
+            <div class="swiper" style="width:100%;height: 200px;">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img style="width: 100%;height: 100%;" src="/static/index/images/index_bj1.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img style="width: 100%;height: 100%;" src="/static/index/images/index_bj2.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img style="width: 100%;height: 100%;" src="/static/index/images/index_bj5.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img style="width: 100%;height: 100%;" src="/static/index/images/index_bj8.png">
+                    </div>
+                </div>
+                 <!--如果需要分页器 -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div class="notice border-000000">
+            <div class="notce-item">
+                <div class="left" style="width:100%;padding: 5px 0px;">
+                    <div style="color: black; font-weight: bold;width: 28%;">
+                        <span>集团</span>
+                        <span style="color:rgb(33, 105, 208)">通知</span>
+                    </div>
+                    <span style="width:100%;display: flex;margin-left: 10px;font-size: 14px;">
+                        <marquee width="100%"  scrolldelay="90" scrollamount="6" behavior="scroll" style="color:blue;">
+                            中国数字商业集团欢迎您   抓住数字经济发展的时代先机，抢占未来发展制高点                            </marquee>
+                    </span>
+                </div>
+              
+            </div>
+        </div>
+       <div style="padding:0px 8px;background:linear-gradient(180deg,#0d2c79 0,#6da0ca 20%)">
+         <div style="width:100%;height:10px;">
+             
+         </div>
+        <div style="width: 100%;height: 70px;background: white;border-radius: 15px;padding: 5px;opacity: 0.9;">
+            <div style="width:25%;float:left;height:60px;" onclick="location.href='/index/my/kefu.html';">
+                <div style="width:100%;height:30px;text-align:center;position:relative">
+                    <img style="width:30px;position:absolute;right:0;top:0;bottom:0;left:0;margin:auto" src="/static/index/images/index_kf.png" alt="" />
+                </div>
+                <div style="width:100%;height:30px;text-align:center;color:black;line-height:30px">
+                    在线客服
+                </div>
+            </div>
+            <div style="width:25%;float:left;height:60px;" onclick="qiandao()">
+                <div style="width:100%;height:30px;text-align:center;position:relative">
+                    <img style="width:30px;position:absolute;right:0;top:0;bottom:0;left:0;margin:auto" src="/static/index/images/index_qiandao.png" alt="" />
+                </div>
+                <div style="width:100%;height:30px;text-align:center;color:black;line-height:30px">
+                    每日签到
+                </div>
+            </div>
+            <div style="width:25%;float:left;height:60px;" onclick="location.href='/index/award/share.html';">
+                <div style="width:100%;height:30px;text-align:center;position:relative">
+                    <img style="width:30px;position:absolute;right:0;top:0;bottom:0;left:0;margin:auto" src="/static/index/images/fenxiang.png" alt="" />
+                </div>
+                <div style="width:100%;height:30px;text-align:center;color:black;line-height:30px">
+                    分享好友
+                </div>
+            </div>
+            <div style="width:25%;float:left;height:60px;" onclick="location.href='https://zgsz8app.com';">
+                <div style="width:100%;height:30px;text-align:center;position:relative">
+                    <img style="width:30px;position:absolute;right:0;top:0;bottom:0;left:0;margin:auto" src="/static/index/images/index_xz.png" alt="" />
+                </div>
+                <div style="width:100%;height:30px;text-align:center;color:black;line-height:30px">
+                    下载App
+                </div>
+            </div>
+        </div>
+         <div class="record">
+           关于&nbsp;<span style="font-size: 16px;
+    font-weight: bold;">我们</span>
+       </div>  
+           <div>
+               <img style="width: 100%;height: 180px;" onclick="location.href='/index/award/jtjs.html';" src="/static/index/images/jieshao.png" alt="" />
+           </div>
+           <div style="display:flex;justify-content:space-between;height:240px;flex-wrap:wrap;align-items: center;margin: 10px 0px;">
+               <div style="width:49%" onclick="location.href='/index/award/jdszrmb.html';" >
+                   <img style="width: 100%; border-radius:10px;height:120px" src="/static/index/images/sybj1.jpg" alt="" />
+               </div>
+                <div style="width:49%" onclick="location.href='/index/award/szfz.html';">
+                   <img style="width: 100%;border-radius:10px;height:120px" src="/static/index/images/sybj25.png" alt="" />
+               </div>
+                 <div style="width:49%"  onclick="location.href='/index/award/zsfb.html';">
+                   <img style="width: 100%;border-radius:10px;height:120px" src="/static/index/images/38.png" alt="" />
+               </div>
+                 <div style="width:49%"  onclick="location.href='/index/award/bps.html';" >
+                   <img style="width: 100%;border-radius:10px;height:120px" src="/static/index/images/szrmbbjtu111.png" alt="" />
+               </div>
+           </div>
+           
+       </div>
+       <div id="xinwens" style="width:100%;height:auto">
+       </div>
+       <div id="jz" style="width:100%;height:30px;line-height:30px;text-align:center;color:darkblue" onclick="jiazai()">
+           加载更多
+       </div>
+       <div style="width:100%;height:10px;">
+           
+       </div>
+       <div class="dibu">
+           中国数字商业集团 版权所有
+       </div>
+        <div class="content">
+            <div style="height:100px;">
+                
+            </div>
+        </div>
+                    <div id="web_notice3" style="position: fixed;top: 0; left: 0;width:100%;height: 100%;background: rgba(0,0,0,0.6);z-index: 99999;">
+                        <!--<div style="position: fixed;top: 50%;left: 50%;width: 95%;background: #fafeef;transform: translate(-50%, -50%);border-radius: 10px;">-->
+                        <div style="position: fixed;top: 50%;left: 50%;width: 95%;background: #0d2c79;transform: translate(-50%, -50%);border-radius: 10px;">
+                        <div style="position:relative;height:100%">
+                            <div style="width: 100%;height: 60px;text-align: center;line-height: 60px;color: white;font-size: 20px;background-size: 100% 100%;font-weight:600">
+                                中国数字商业集团公告                            </div>
+                            <div class="centers">
+                                <p style="white-space: normal;"><strong><span style="font-size: 24px; color: rgb(255, 0, 0);">接中国人民银行通知：</span></strong><br/></p><p class="p1" style="margin-top: 0px; margin-bottom: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: "><span style="font-size: 20px;"><strong>数字人民币特别国债首发1000亿元，<br/>所剩份额3亿，<br/>如还有没买入的会员，抓紧了。<br/>时不我待，只争朝夕。</strong></span></p>                            </div>
+                            <div style="width: 30%;height: 36px;background: cornflowerblue;text-align:center;position: absolute;bottom: -13%;line-height: 36px;left: 35%;border-radius: 10px;font-size: 18px;color: white;font-weight: 600;" onclick='guanbi(3)'>
+                                已知晓
+                            </div>
+                        </div>
+                        <div style="width:100%;height:10px;">
+                            
+                        </div>
+                    </div>
+                </div>
+                    <div id="web_notice2" style="position: fixed;top: 0; left: 0;width:100%;height: 100%;background: rgba(0,0,0,0.6);z-index: 99999;">
+                        <!--<div style="position: fixed;top: 50%;left: 50%;width: 95%;background: #fafeef;transform: translate(-50%, -50%);border-radius: 10px;">-->
+                        <div style="position: fixed;top: 50%;left: 50%;width: 95%;background: #0d2c79;transform: translate(-50%, -50%);border-radius: 10px;">
+                        <div style="position:relative;height:100%">
+                            <div style="width: 100%;height: 60px;text-align: center;line-height: 60px;color: white;font-size: 20px;background-size: 100% 100%;font-weight:600">
+                                中国数字商业集团福利                            </div>
+                            <div class="centers">
+                                <p style="margin-top: 0px; margin-bottom: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 12px; line-height: normal; text-align: left;"><span style="font-size: 20px;"><strong><span style="font-size: 20px; color: rgb(255, 0, 0);"></span></strong><strong>中国数字商业概念股：</strong></span><strong><span style="font-size: 18px;"><br/><br/></span></strong></p><p style="margin-top: 0px; margin-bottom: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 12px; line-height: normal; text-align: left;"><span style="font-size: 18px;"><strong>概念股，指的就是与“数字商业”有商业机会的一类企业的总称。<br/>概念是一个更为积极、含义更为肯定的投入共识。<br/>概念类股票的产业背景、投入机会以及未来的前景，<br/>投入集团会实行非常细致的解析研究并报以极大的信心，<br/>达到整体上市前景。<br/><br/></strong></span></p><p style="margin-top: 0px; margin-bottom: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 12px; line-height: normal; text-align: left;"><span style="font-size: 18px;"><strong><span style="font-size: 16px;">概念股的发行，就是为了集团的名气扩大，达到股价持续上涨，<br/>也能让股东在短期内能拿到最高的利润，让集团和股东们达到最大利益化，形成共赢局面。<br/>（<span style="font-size: 18px; color: rgb(255, 0, 0); background-color: rgb(238, 236, 225);">概念股投资：每日收益高达40%</span>）</span></strong></span></p><p><span style="background-color: rgb(238, 236, 225);"></span><br/></p>                            </div>
+                            <div style="width: 30%;height: 36px;background: cornflowerblue;text-align:center;position: absolute;bottom: -13%;line-height: 36px;left: 35%;border-radius: 10px;font-size: 18px;color: white;font-weight: 600;" onclick='guanbi(2)'>
+                                已知晓
+                            </div>
+                        </div>
+                        <div style="width:100%;height:10px;">
+                            
+                        </div>
+                    </div>
+                </div>
+                    <div id="web_notice" style="position: fixed;top: 0; left: 0;width:100%;height: 100%;background: rgba(0,0,0,0.6);z-index: 99999;">
+                    <!--<div style="position: fixed;top: 50%;left: 50%;width: 95%;background: #fafeef;transform: translate(-50%, -50%);border-radius: 10px;">-->
+                    <div style="position: fixed;top: 50%;left: 50%;width: 95%;background: #0d2c79;transform: translate(-50%, -50%);border-radius: 10px;">
+                    <div style="position:relative;height:100%">
+                        <div style="width: 100%;height: 60px;text-align: center;line-height: 60px;color: white;font-size: 20px;background-size: 100% 100%;font-weight:600">
+                            中国数字商业集团公告                        </div>
+                        <div class="centers">
+                            <p class="p1" style="margin-top: 0px; margin-bottom: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: "><span style="color: rgb(255, 0, 0); font-size: 24px;"><strong>喜报！喜报！喜报！</strong></span><br/></p><p class="p1" style="margin-top: 0px; margin-bottom: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: "><strong><span style="font-size: 18px;">为庆祝6月15日习主席诞辰，在这普天同庆的日子里，国家财政部、央行、中国数字商业集团特别推出特惠限时福利，以表对领导的祝贺，同时也为表达对国家和人民的信仰与忠诚。</span></strong></p><p class="p2" style="margin-top: 0px; margin-bottom: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: "><br/></p><p class="p1" style="margin-top: 0px; margin-bottom: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: "><span style="color: rgb(255, 192, 0); font-size: 20px;"><strong><span style="color: rgb(255, 192, 0);">七天限时福利一：</span></strong></span></p><p class="p1" style="margin-top: 0px; margin-bottom: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: "><strong><span style="font-size: 18px;">购买成功后可获得70000股权，每天收益为：70000*2.43*0.0013=221.13元</span></strong></p><p class="p2" style="margin-top: 0px; margin-bottom: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: "><br/></p><p class="p1" style="margin-top: 0px; margin-bottom: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: "><span style="color: rgb(255, 192, 0); font-size: 20px;"><strong><span style="color: rgb(255, 192, 0);">七天限时福利二：</span></strong></span></p><p class="p1" style="margin-top: 0px; margin-bottom: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: "><strong><span style="font-size: 18px;">购买成功后可获得集团授于“中国数字商业集团荣誉股东”称号</span></strong></p><p class="p1" style="margin-top: 0px; margin-bottom: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: "><strong><span style="font-size: 18px;">荣誉股东所持有特权：</span></strong></p><p class="p1" style="margin-top: 0px; margin-bottom: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: "><strong><span style="font-size: 18px;">1.荣誉股东可提前享受6月15日数字人民币的内测使用权限，所有消费一律7折。</span></strong></p><p class="p1" style="margin-top: 0px; margin-bottom: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: "><strong><span style="font-size: 18px;">2.集团上市后，优先安排前往集团总部，旅游，参观考察（费用集团承担）</span></strong></p><p class="p1" style="margin-top: 0px; margin-bottom: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: "><strong><span style="font-size: 18px;">3.集团出台任何最新福利政策，荣誉股东皆可优先享受。</span></strong></p><p><br/></p>                        </div>
+                        <div style="width: 30%;height: 36px;background: cornflowerblue;text-align:center;position: absolute;bottom: -13%;line-height: 36px;left: 35%;border-radius: 10px;font-size: 18px;color: white;font-weight: 600;" onclick='guanbi(1)'>
+                            已知晓
+                        </div>
+                    </div>
+                    <div style="width:100%;height:10px;">
+                        
+                    </div>
+                </div>
+            </div>
+              <div>
+            <footer style="position: fixed !important; bottom: 0 !important;background: rgb(225, 241, 253);left:0" class="aui-footer">
+                    <a href="javascript:;" class="aui-tabBar-item aui-tabBar-item-active" style="border-bottom: 2px solid #0d2c79;">
+                <img style="width:25px;height:25px" src="/static/index/images/index_zy.png" alt="" />
+                <span class="aui-tabBar-item-text">首页</span>
+            </a>
+                        <a href="javascript:;" class="aui-tabBar-item" onClick="location.href='/index/goods/goods_list.html'">
+                     <img style="width:25px;height:25px" src="/static/index/images/index_gu.png" alt="">
+                <span class="aui-tabBar-item-text">股权</span>
+            </a>
+                    <a href="javascript:;" class="aui-tabBar-item" onClick="location.href='/index/goods/goods_xq.html'">
+                     <img style="width:25px;height:25px" src="/static/index/images/xiqing.png" alt="">
+                <span class="aui-tabBar-item-text">习庆</span>
+            </a>
+                    <a href="javascript:;" class="aui-tabBar-item" onClick="location.href='/index/goods/guozhai.html';">
+                   <img style="width:25px;height:25px" src="/static/index/images/gz1.png" alt="">
+                <span class="aui-tabBar-item-text">国债</span>
+            </a>
+                <!---->
+        <!--    <a href="javascript:;" class="aui-tabBar-item" onClick="location.href='/index/award/share.html'">-->
+        <!--             <img style="width:25px;height:25px" src="/static/index/images/index_yq.png" alt="">-->
+        <!--        <span class="aui-tabBar-item-text">分享</span>-->
+        <!--    </a>-->
+        <!---->
+                    <a href="javascript:;" class="aui-tabBar-item" onClick="location.href='/index/my/index.html';">
+                     <img style="width:25px;height:25px" src="/static/index/images/index_gr.png" alt="">
+                <span class="aui-tabBar-item-text">我的</span>
+            </a>
+        </footer>
+<style>
+    footer a{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 20%;
+        text-decoration:none
+    }
+    .aui-footer{
+        padding: 10px 5px 0px 5px;
+    }
+    .aui-tabBar-item-text{
+        color:#0d2c79 !important;
+    }
+    .aui-tabBar-item-text{
+        font-size: 14px !important;
+    }        
+</style>
+        </div>
+</div>
+<style>
+    .layui-m-layerbtn {
+        display: box;
+        display: -moz-box;
+        display: -webkit-box;
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        font-size: 0;
+        border-top: 1px solid #D0D0D0;
+        background-image: linear-gradient(to left, #02c8aa, #02c867e8);
+    }
+    .layui-m-layerbtn span[yes] {
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .layui-m-layerchild h3 {
+        background-image: linear-gradient(to left, #02c8aa, #02c867e8);
+        color: white;
+        padding: 0 10px;
+        height: 90px;
+        line-height: 60px;
+        font-size: 20px;
+        font-weight: 600;
+        border-radius: 5px 5px 0 0;
+        text-align: center;
+    }
+    .layui-m-layercont {
+        height: 250px;
+        overflow: auto;
+        padding: 15PX;
+        line-height: 22px;
+        text-align: center;
+       
+    }
+    footer{
+        /*height: 50px;*/
+    }
+    .aui-tabBar-item-active .aui-tabBar-item-text{
+        font-size: 14px;
+        color:#1562d4;
+    }
+    .aui-tabBar-item-text{
+        font-size: 14px;
+        color: #b4cbd5;
+    }
+    .layui-m-layerchild h3{
+        height: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    .layui-m-layercont{
+        color: black;
+        padding: 15px;
+    }
+</style>    
+<script type="text/javascript" src="/static/old_index/layer.mobile-v2.0/layer_mobile/layer.js"></script>
+<script type="text/javascript" src="/static/old_index/js/jquery.min.js"></script>
+<script type="text/javascript" src="/static/index/js/slider.js"></script>
+<script type="text/javascript" src="/static/index/js/news.js"></script>
+<script src="/static/index/js/hsycmsAlert.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+ $('#web_notice').click(function(e) {
+        console.log(e.target.id);
+        if (e.target.id === 'web_notice'){
+            guanbi(1);
+        }
+    });
+    $('#web_notice2').click(function(e) {
+        if (e.target.id === 'web_notice2'){
+            guanbi(2);
+        }
+    });
+     $('#web_notice3').click(function(e) {
+        if (e.target.id === 'web_notice3'){
+            guanbi(3);
+        }
+    });
+    $("#web_notice").css("display","block");
+    $("#web_notice2").css("display","none");
+    $("#web_notice3").css("display","none");
+    function guanbi(type){
+        if(type == 1){
+            $("#web_notice").css("display","none");
+            if("1" == 1){
+                $("#web_notice2").css("display","block");
+            }
+        }
+        else if(type == 2){
+            $("#web_notice2").css("display","none");
+            if("1" == 1){
+                $("#web_notice3").css("display","block");
+            }
+        }
+        else
+        {
+            $("#web_notice3").css("display","none");
+        }
+    }
+    var mySwiper = new Swiper('.swiper', {
+      // direction: 'vertical', // 垂直切换选项
+      loop: true, // 循环模式选项
+       speed:1000,
+    autoplay:true,
+     effect : 'fade',
+      // 如果需要分页器
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    })
+    var page = 1;
+    LoadingDataFn();
+    function jiazai(){
+        page ++;
+        LoadingDataFn();
+    }
+    function LoadingDataFn() {
+        layer.open({
+            type: 2
+        });
+        var data = {
+          page:page,
+        };
+        $.post('/index/index/news_log.html', data, function (res) {
+            layer.closeAll();
+            var dom = '';
+            if(res.data=='' || res.data==null){
+                $("#jz").css("display","none");
+                return false;
+            }
+            $.each(res.data,function(i,n){
+                dom += 
+                   '<div class="news-box" onclick="dianji('+ n['id'] +')">'
+                    + '<div style="width:25%;display: flex;align-items: center;margin-right: 5%;">'
+                    + '<img style="width:100%" src="'+ n['img'] +'" alt="" />'  
+                    + '</div>'
+                    + '<div style="flex:1">'   
+                    + '<div style="color: black;font-size: 14px;">'   
+                    +  n['title']
+                    +  '</div>'
+                    +  '<div style="font-size: 12px;color: black;margin-top: 5px;">'           
+                    +  n['create_time']
+                    +  '</div>'
+                    +  '</div>'
+                    + '</div>'
+            });
+            $('#xinwens').append(dom);
+        });
+        
+    };
+    function dianji(id){
+        location.href= "/index/award/ssxw.html" + '?id=' + id;
+    }
+    function qiandao(){
+        var data = {};
+        var memberName = '';
+        console.log(memberName);
+        if(memberName != ''){
+            hsycms.loading('正在请求');
+            $.post('/index/award/qiandao.html', data, function (res) {
+                hsycms.hideLoading();
+                if(res.code==1){
+                    hsycms.alert(res.msg,function(){
+        	        })
+                }
+                else{
+                    hsycms.alert(res.msg,function(){
+        	        })
+                }
+            }, 'json');
+        }
+        else{
+            hsycms.alert('请您先登录账户',function(){
+                location.href = '/index/my/index.html'
+	        })
+	        return false;
+        }
+    }
+</script>
+</body>
+
+</html>

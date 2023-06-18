@@ -1,0 +1,4 @@
+document.writeln("<div style=\'position:fixed;bottom:0;left:0;right:0;width:100%;height:60px;padding:15px 0;background: rgba(0,0,0,.7); z-index:9999\'>");
+document.writeln("	<a style=\'width:46.5%;margin-left:2%;float:left;display:inline-block;height:40px; line-height:40px;border:1px #fff solid; text-align:center; color:#FFF;border-radius:5px;text-decoration: none;\' href=\'#\' target=\'_blank\'>Login</a>");
+document.writeln("	<a style=\'width:46.5%;margin-right:2%;float:right;display:inline-block;height:40px; line-height:40px;border:1px #186AF2 solid; background:#186AF2;text-align:center; color:#FFF;border-radius:5px;text-decoration: none;\' href=\'#\' target=\'_blank\'>Sign Up</a>");
+document.writeln("</div>");

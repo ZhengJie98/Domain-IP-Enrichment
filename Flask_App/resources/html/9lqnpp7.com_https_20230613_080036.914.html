@@ -1,0 +1,122 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Tue, 13 Jun 2023 08:00:44 GMT
+Content-Type: text/html; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Cache-Control: no-store, no-cache, must-revalidate
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Pragma: no-cache
+Set-Cookie: PHPSESSID=62ea1bb0dba7d535ac4fae4cd430f861; path=/
+X-Frame-Options: SAMEORIGIN
+X-Powered-By: PHP/8.2.5
+
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title> URL shortener</title> <!-- Site title defined in theme settings -->
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="//fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="https://9lqnpp7.com/public/style.css" /><!-- Theme CSS -->
+					<link rel="stylesheet" href="https://9lqnpp7.com/public/custom.css" /><!-- Custom CSS -->
+		
+		<!-- App icons generated using http://realfavicongenerator.net -->
+		<link rel="apple-touch-icon" sizes="57x57" href="public/images/app-icons/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="public/images/app-icons/apple-touch-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="public/images/app-icons/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="public/images/app-icons/apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="public/images/app-icons/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="public/images/app-icons/apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="public/images/app-icons/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="public/images/app-icons/apple-touch-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="public/images/app-icons/apple-touch-icon-180x180.png">
+		<link rel="icon" type="image/png" href="public/images/app-icons/favicon-32x32.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="public/images/app-icons/android-chrome-192x192.png" sizes="192x192">
+		<link rel="icon" type="image/png" href="public/images/app-icons/favicon-96x96.png" sizes="96x96">
+		<link rel="icon" type="image/png" href="public/images/app-icons/favicon-16x16.png" sizes="16x16">
+		<link rel="manifest" href="public/images/app-icons/manifest.json">
+		<link rel="shortcut icon" href="public/images/app-icons/favicon.ico">
+		<meta name="msapplication-TileColor" content="#2b5797">
+		<meta name="msapplication-TileImage" content="public/images/app-icons/mstile-144x144.png">
+		<meta name="msapplication-config" content="public/images/app-icons/browserconfig.xml">
+		<meta name="theme-color" content="#013f6d">
+	</head>
+
+	<body class="load">
+
+		<div class="wrapper">
+
+			<header class="content site-header">
+				<a href="https://9lqnpp7.com" class="site-title">
+					<h1>9lqnpp7.com <!-- URL shortener--></h1>
+				</a>
+				<!--<nav class="menu">
+					<a href="https://9lqnpp7.com"> URL shortener</a>				</nav>-->
+			</header>
+
+<div class="content index">
+	<h2>Enter a new URL to shorten</h2>
+	<form method="post" action="result.php" class="newurl" novalidate>
+		<div class="form-item full-width">
+			<p><label for="url" class="primary">Long URL</label></p>
+			<p><label for="url" class="secondary">Paste the long URL here. This is required.</label></p>
+			<input type="url" id="url" name="url" value="" autofocus>
+		</div>
+
+		<div class="halves">
+
+			<div class="form-item half-width right">
+				<p><label for="title" class="primary">Custom title</label></p>
+				<p><label for="title" class="secondary">Optional title used when sharing a link using social sharers.</label></p>
+				<input type="text" id="title" name="title" value="">
+			</div>
+		</div>
+
+							<div class="form-item recaptcha-container">
+					<p><label class="primary" title="">Verification</label></p>
+					<p><label class="secondary">CAPTCHA verification used to ensure you are not a bot.</label></p>
+					<input type="hidden" name="verify" value="1" class="hidden">
+					<input type="hidden" name="antispam_method" value="basic" class="hidden">
+					<input type="hidden" name="basic_antispam" class="hidden">
+					<div class="g-recaptcha"><img src="public/captcha.php" /></div>
+					<br />
+					<br />
+					<div class="form-item half-width right">
+					<input type="text" name="captcha" />
+					</div>
+					</div>
+				
+		<div class="form-item submit-container">
+			<input type="submit" class="button" value="Shorten">
+		</div>
+	</form>
+</div>
+
+<!--
+<div class="content">
+	<h2>The bookmarklet</h2>
+
+		<p>Add this to your bookmarks or drag it to your bookmarks bar to quickly access shortening functions. </p>
+	<p class="bookmarklet-container"><a href="javascript:(function()%7Bvar%20d=document,w=window,enc=encodeURIComponent,e=w.getSelection,k=d.getSelection,x=d.selection,s=(e?e():(k)?k():(x?x.createRange().text:0)),s2=((s.toString()=='')?s:enc(s)),f='https://9lqnpp7.com/index.php',l=d.location,p='?url='+enc(l.href)+'&title='+enc(d.title)+'&keyword='+s2,u=f+p;try%7Bthrow('ozhismygod');%7Dcatch(z)%7Ba=function()%7Bif(!w.open(u))l.href=u;%7D;if(/Firefox/.test(navigator.userAgent))setTimeout(a,0);else%20a();%7Dvoid(0);%7D)();" onClick="alert('Save this as a bookmark.'); return false;" class="bookmarklet button"><span class="icon-move"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+  <g>
+    <path d="M64 32c0 0.6-0.2 1.2-0.7 1.6l-9.1 9.1c-0.5 0.5-1 0.7-1.6 0.7s-1.2-0.2-1.6-0.7c-0.5-0.5-0.7-1-0.7-1.6v-4.6H36.6v13.7h4.6c0.6 0 1.2 0.2 1.6 0.7 0.5 0.5 0.7 1 0.7 1.6s-0.2 1.2-0.7 1.6l-9.1 9.1c-0.5 0.5-1 0.7-1.6 0.7s-1.2-0.2-1.6-0.7l-9.1-9.1c-0.5-0.5-0.7-1-0.7-1.6s0.2-1.2 0.7-1.6c0.5-0.5 1-0.7 1.6-0.7h4.6V36.6H13.7v4.6c0 0.6-0.2 1.2-0.7 1.6 -0.5 0.5-1 0.7-1.6 0.7s-1.2-0.2-1.6-0.7l-9.1-9.1C0.2 33.2 0 32.6 0 32s0.2-1.2 0.7-1.6l9.1-9.1c0.5-0.5 1-0.7 1.6-0.7s1.2 0.2 1.6 0.7c0.5 0.5 0.7 1 0.7 1.6v4.6h13.7V13.7h-4.6c-0.6 0-1.2-0.2-1.6-0.7 -0.5-0.5-0.7-1-0.7-1.6s0.2-1.2 0.7-1.6l9.1-9.1C30.8 0.2 31.4 0 32 0c0.6 0 1.2 0.2 1.6 0.7l9.1 9.1c0.5 0.5 0.7 1 0.7 1.6s-0.2 1.2-0.7 1.6c-0.5 0.5-1 0.7-1.6 0.7h-4.6v13.7h13.7v-4.6c0-0.6 0.2-1.2 0.7-1.6 0.5-0.5 1-0.7 1.6-0.7s1.2 0.2 1.6 0.7l9.1 9.1C63.8 30.8 64 31.4 64 32z"/>
+  </g>
+</svg>
+</span>Shorten</a></p>
+	<p>This bookmarklet takes the page URL and title and opens a new tab, where you can fill out a CAPTCHA. If you have selected text before using the bookmarklet, that will be used as the keyword.</p>
+	<p>Support for bookmarklets on mobile varies. For example, they work on Chrome for Android but you have to add and sync them from your desktop.</p>
+</div>
+-->
+<footer class="content site-footer">
+	</div>
+</div>
+</div>
+
+
+
+
+
+</body>
+</html>

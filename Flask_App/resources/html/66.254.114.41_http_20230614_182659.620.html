@@ -1,0 +1,129 @@
+HTTP/1.0 403 Forbidden
+cache-control: no-cache
+content-type: text/html
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<title>Down for Maintenance 403</title>
+	<meta name="viewport" content="initial-scale=1.0, width=device-width, maximum-scale=1.0, user-scalable=no" />
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="//ds.phncdn.com/www-static/css/maintenance.css?cache=2020110504" />
+
+    <script type="text/javascript">
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-2623535-1', 'pornhub.com');
+        ga('require', 'displayfeatures');
+        ga('set', 'anonymizeIp', true);
+        ga('send', 'pageview');
+    </script>
+</head>
+<body>
+	<div id="js-networkBar"></div>
+	<div id="maintenancePageResponsive">
+		<div class="titleMaintenance clearfix">
+			<div class="topContainer clearfix">
+				<div class="phImage"></div>
+				<div class="textMaintenance"><h1>Is undergoing maintenance</h1></div>
+			</div>
+		</div>
+		<div class="lineText"></div>
+		<div class="textMaintenanceMobile"><h1>Pornhub is undergoing maintenance</h1></div>
+		<div class="robotPicContainer"></div>
+		<div id="search-container">
+			<div class="searchWrapper clearfix">
+				<p class="titl">Search the entire Pornhub Network: </p>
+				<div class="pmdsearchbar">
+					<pmd:search width="300px" height="40px" orientation="straight" button="5" color="f90" exclude="pornhub" campaign="pornhub-maintenance"></pmd:search>
+				</div>
+			</div>
+		</div>
+		<div class="textMaintenanceMobile"><h1>When's the last time you jacked off or jilled off to one of our other fine tube sites?</h1></div>
+		<div id="logoWrapper">
+			<div class="logoTitle">When's the last time you jacked off or jilled off to one of our other fine tube sites?</div>
+			<div id="logoSpriteContainer">
+				<ul class="clearfix">
+					<li class="tubes" id="youporn"><a href="http://www.youporn.com/?utm_source=pornhub&amp;utm_medium=maintenance&amp;utm_campaign=pornhub-maintenance"></a></li>
+					<li class="tubes" id="redtube"><a href="http://www.redtube.com/?utm_source=pornhub&utm_medium=maintenance&utm_campaign=pornhub-maintenance"></a></li>
+					<li class="tubes" id="tube8"><a href="http://www.tube8.com/?utm_source=pornhub&amp;utm_medium=maintenance&amp;utm_campaign=pornhub-maintenance"></a></li>
+					<li class="tubes" id="pornmd"><a href="http://www.pornmd.com/?utm_source=pornhub&amp;utm_medium=maintenance&amp;utm_campaign=pornhub-maintenance"></a></li>
+					<li class="tubes" id="gaytube"><a href="http://www.gaytube.com/?utm_source=pornhub&amp;utm_medium=maintenance&amp;utm_campaign=pornhub-maintenance"></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script src="//ds.phncdn.com/www-static/select/js/pc/cookie.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		if (typeof page_params == 'undefined') {
+			var page_params = {};
+		}
+
+		page_params.networkBar = {
+		   	'container' : '#js-networkBar',
+		   	'sitename' : 'pornhub',
+		   	'straightActions': {
+				'remove': [4, 5, 9]
+            },
+            'extraCSS': '.networkBar { width: 1323px; margin: 0 auto; }'+ '@media screen and (max-width: 1349px) { .networkBar { width: 991px; }}'
+		};
+
+		if (typeof NETWORKBAR_IMAGES == 'undefined') {
+			var NETWORKBAR_IMAGES = {};
+		}
+
+		NETWORKBAR_IMAGES.url = '//ds.phncdn.com/www-static/images/networkbar/';
+	</script>
+	<script type="text/javascript">
+		var pmdTag = {
+			element: document.getElementsByTagName('pmd:search')[0],
+			width: '425px',
+			height: '33px',
+			orientation: 'straight',
+			source: '',
+			button: 1,
+			color: 'c80602',
+			campaign: ''
+		};
+
+		for(var i=0, j=pmdTag.element.attributes.length;i<j;i++) {
+			attribute = pmdTag.element.attributes[i];
+			attributeName = String(attribute.name);
+			attributeValue = String(attribute.value);
+
+			pmdTag[attributeName] = attributeValue;
+		}
+
+		(function() {
+			//Set a 21px minimum height
+			if(parseInt(pmdTag.height) < 21) pmdTag.height = '21px';
+
+			//Set a 250px minimum width
+			if(parseInt(pmdTag.width) < 250) pmdTag.width = '250px';
+
+			var newEl = document.createElement('div');
+			newEl.style.width = pmdTag.width;
+			newEl.style.height = pmdTag.height;
+			newEl.style.position = 'relative';
+
+			pmdTag.element.parentNode.replaceChild(newEl, pmdTag.element);
+			newEl.innerHTML = '<iframe id="pornmd" frameborder="0" allowtransparency="true" hspace="0" scrolling="no" src="//www.pornmd.com/iframesearch?width=' + pmdTag.width + (pmdTag.element.attributes.exclude?'&exclude=' + pmdTag.element.attributes.exclude.value:'') + '&height=' + pmdTag.height + '&orientation=' + pmdTag.orientation + '&button=' + pmdTag.button + '&color=' + pmdTag.color + '&campaign=' + pmdTag.campaign + '" style="width:' + pmdTag.width+ ';height:' + pmdTag.height + ';position:absolute;z-index:5000;"></iframe>';
+		})();
+	</script>
+	<script type="text/javascript">
+		var script = document.createElement('script');
+		script.src = '//ds.phncdn.com/www-static/js/lib/networkbar-5.0.0.js?cache=2020110504';
+		document.body.appendChild(script);
+	</script>
+	<script>
+        setTimeout(function() {
+            var lazyImages = document.querySelectorAll('.lazy');
+            [].forEach.call(lazyImages, function(image) {
+                image.src = image.getAttribute('data-src');
+            });
+        }, 1000);
+	</script>
+</body>
+</html>

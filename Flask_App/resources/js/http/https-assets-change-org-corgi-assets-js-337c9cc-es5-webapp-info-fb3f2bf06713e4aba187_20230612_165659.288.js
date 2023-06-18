@@ -1,0 +1,2 @@
+"use strict";(self.__LOADABLE_LOADED_CHUNKS__=self.__LOADABLE_LOADED_CHUNKS__||[]).push([[709],{50887:function(_,e){e.Z={name:"corgi",version:"3.863.0",versionNormalized:"0003.0863.0000",buildTsUtc:"2023-06-09T17:38:06.767Z",commit:"5531ecb2b898da91865cf03a1ddf9101f06c6e7d",env:"production"}}}]);
+//# sourceMappingURL=webapp-info.fb3f2bf06713e4aba187.js.map

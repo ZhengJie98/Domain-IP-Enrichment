@@ -1,0 +1,67 @@
+current URL in process_parent: wunderfauks-signin.com/#/pages/index/index
+===== to_skip function start =====
+ has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for:  now: 2023-06-15 09:56:53.000098+00:00
+call_status_code: 404, continuing to next ip_or_domain
+current domain in process_parent:www.facebook.com
+===== to_skip function start =====
+www.facebook.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: www.facebook.com now: 2023-06-15 09:56:53.602509+00:00
+duration_log vt_call: 1.397051100000681
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/www.facebook.com_http_20230615_095655.007.pngscreenshot found for protocol: https and saved to resources/shot-scraper/www.facebook.com_https_20230615_095655.007.pngduration_log screenshot: 11.13694480000413
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+web_url: http://www.facebook.com
+url: https://static.xx.fbcdn.net/rsrc.php/v3/y_/r/iZLPC5dPauh.js?_nc_x=Ij3Wp8lg5Kz
+total js_files_links: ['https://static.xx.fbcdn.net/rsrc.php/v3/y_/r/iZLPC5dPauh.js?_nc_x=Ij3Wp8lg5Kz']
+starting get for each_js_link: https://static.xx.fbcdn.net/rsrc.php/v3/y_/r/iZLPC5dPauh.js?_nc_x=Ij3Wp8lg5Kz
+current protocol: https
+returncode: 0
+starting html request.get
+web_url: https://www.facebook.com
+url: https://static.xx.fbcdn.net/rsrc.php/v3/y_/r/iZLPC5dPauh.js?_nc_x=Ij3Wp8lg5Kz
+total js_files_links: ['https://static.xx.fbcdn.net/rsrc.php/v3/y_/r/iZLPC5dPauh.js?_nc_x=Ij3Wp8lg5Kz']
+starting get for each_js_link: https://static.xx.fbcdn.net/rsrc.php/v3/y_/r/iZLPC5dPauh.js?_nc_x=Ij3Wp8lg5Kz
+duration_log grab_html_js: 1.6648720000011963
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/www.facebook.com_20230615_095707.838.txt
+duration_log get_whois_info: 0.9136414999957196
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/www.facebook.com_gethostbyname_ex_20230615_095708.752.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: www.facebook.com. IN NS
+duration_log get_dns_info: 0.07413939999969443
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 2.7224991000039154
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/www.facebook.com_20230615_095711.560.json
+duration_log get_archived_page_info: 8.324698199998238
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for www.facebook.com, time taken 26.322642899998755 seconds
+
+
+current URL in process_parent: wunderfauks-signin.com/#/pages/index/index
+===== to_skip function start =====
+ has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for:  now: 2023-06-15 09:57:19.949839+00:00
+call_status_code: 404, continuing to next ip_or_domain
+current domain in process_parent:www.facebook.com
+===== to_skip function start =====
+len_cursor > 0 , www.facebook.com has been processed in past X days
+===== to_skip function end =====

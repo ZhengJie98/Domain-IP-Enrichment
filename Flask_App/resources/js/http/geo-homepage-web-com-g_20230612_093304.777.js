@@ -1,0 +1,1 @@
+function geoip_country_code(){return "SG"}function geoip_city(){return "?"}function geoip_region(){return "?"}

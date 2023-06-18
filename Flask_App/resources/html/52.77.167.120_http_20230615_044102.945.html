@@ -1,0 +1,55 @@
+HTTP/1.1 200 OK
+Date: Thu, 15 Jun 2023 04:41:02 GMT
+Content-Type: text/html; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: close
+Server: Apache/2.4.57 () OpenSSL/1.0.2k-fips
+Cache-Control: no-cache, private
+
+<!DOCTYPE html>
+
+<title>POC</title>
+<head>
+<script src="/js/jquery-3.2.1.js"></script>
+</head>
+<body>
+
+
+<div class="example-wrapper">
+    My visitor ID : <input type="text" readonly id="visitorId" >
+    <hr />
+
+    <input type="text" id="visitorIdInput" /><button id="submit">Submit</button>
+    <label for="history">View history</label>
+    <div class="history"></div>
+</div>
+    <script>
+        // Initialize the agent at application startup.
+        const fpPromise = import('https://fpjscdn.net/v3/9Tzph679NGmjfb7tbsIu')
+            .then(FingerprintJS => FingerprintJS.load({
+                region: "ap",
+                endpoint: "https://t1.poc-gdmzhb28q7.com"
+            }))
+
+        // Get the visitor identifier when you need it.
+        fpPromise
+            .then(fp => fp.get())
+            .then(result => {
+                // This is the visitor identifier:
+                const visitorId = result.visitorId
+                console.log(visitorId)
+                $('#visitorId').val(visitorId)
+            })
+
+        const myButton = document.querySelector('#submit');
+
+        myButton.addEventListener('click', () => {
+            // Add your code here to execute when the button is clicked
+            console.log('Button clicked!');
+            fetch('/history/' + $('#visitorIdInput').val())
+                .then(response => response.text())
+                .then(data => $('.history').html(data))
+        });
+    </script>
+</body>
+</html>

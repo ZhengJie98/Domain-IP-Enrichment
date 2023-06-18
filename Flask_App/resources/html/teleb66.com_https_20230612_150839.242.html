@@ -1,0 +1,970 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Mon, 12 Jun 2023 15:08:45 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+Strict-Transport-Security: max-age=31536000
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="renderer" content="webkit"/>
+    <meta name="force-rendering" content="webkit"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="referrer" content="never"/>
+    <meta charSet="utf-8"/>
+    <title>테레비</title>
+    <meta name="keywords" content="테레비,영화,드라마,인기영상" />
+    <meta name="description" content="테레비,영화,드라마,인기영상" />
+    <link rel="shortcut icon" href="/template/xiaozhuti/img/ioc.png" type="image/x-icon" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+
+<link rel="stylesheet" type="text/css" href="/template/xiaozhuti/css/style.css"/>
+
+<link id="cssFile" href="/template/xiaozhuti/css/ye.css" rel='stylesheet' type='text/css'/>
+
+<link rel="stylesheet" type="text/css" href="https://at.alicdn.com/t/font_2754545_cewm7q3twql.css"/>
+
+<!--link rel="stylesheet" type="text/css" href="https://cdn.bootcdn.net/ajax/libs/Swiper/5.4.5/css/swiper.min.css"/-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css">
+<!--jQuery-->
+<script src="/template/xiaozhuti/js/jquery-3.6.0.min.js"></script>
+
+<script src="/template/xiaozhuti/js/whole.js?v=2"></script>
+
+<!--script src="https://cdn.bootcdn.net/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.min.css"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="/template/xiaozhuti/css/art.css"/>
+<link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet">
+<style type="css/text">
+
+</style>
+<script src="/template/xiaozhuti/js/toast.script.js"></script>
+<script>var maccms={"path":"","mid":"","aid":"1","url":"테레비","wapurl":"테레비","mob_status":"2"};</script>
+</head>
+<body>
+
+<div class="bm-burger-button" style="z-index:1000">
+    <button id="react-burger-menu-btn" style="position:absolute;left:0;top:0;z-index:1;width:100%;height:100%;margin:0;padding:0;border:none;font-size:0;background:transparent;cursor:pointer">Open Menu</button>
+    <span>
+        <span class="bm-burger-bars" style="position: absolute; height: 20%; left: 0px; right: 0px; top: 0%; opacity: 1;"></span>
+        <span class="bm-burger-bars" style="position: absolute; height: 20%; left: 0px; right: 0px; top: 40%; opacity: 1;"></span>
+        <span class="bm-burger-bars" style="position: absolute; height: 20%; left: 0px; right: 0px; top: 80%; opacity: 1;"></span>
+    </span>
+</div>
+
+
+<div id="index">
+    <style>
+ .newhead-small-nav {
+    width: 590px;
+    height: 74px;
+    float: left;
+    display: block;
+    margin: 0px 40px 0;
+}
+.newhead-small-nav li {
+    float: left;
+    position: relative;
+	list-style: none;
+}
+.newhead-small-nav li a {
+    display: block;
+    padding: 0 20px;
+    font-size: 20px;
+    line-height: 72px;
+    text-decoration: none;
+    zoom: 1;
+    position: relative;
+    color: black;
+}
+@media (max-width:767px){
+.newhead-small-nav{display:none;}
+
+
+}
+</style>
+<div class="header bj header-top">
+    <div class="header-box flex">
+        <div class="logo-wrapper"><a href="/" class="logo"><img style="height: 45px;" class="logo2" src="/template/xiaozhuti/img/logo2.png" /><img style="height: 45px;" class="logo1" src="/template/xiaozhuti/img/logo.png" /></a></div>
+
+        <form class="search-box flex" id="search" name="search" method="get" action="/index.php/vod/search.html">
+            <input type="text" autocomplete="off" name="wd" placeholder="검색어를 입력해주세요" value="" class="bj search-field"/>
+            <div class="suggestions bj">
+                <div class="history"></div>
+
+            </div>
+            <button class="search-button bj" id="searchbutton" ><span class="iconfont icon-sousuo cr1"></span></button>
+        </form>		
+
+		<div class="newhead-small-nav">
+							
+												<li id="nav-dianying"><a href="/index.php/vod/type/id/1.html" target="_self">영화</a></li>
+												<li id="nav-lianxuju"><a href="/index.php/vod/type/id/2.html" target="_self">드라마</a></li>
+												<li id="nav-zongyi"><a href="/index.php/vod/type/id/3.html" target="_self">예능</a></li>
+												<li id="nav-dongman"><a href="/index.php/vod/show2/by/hits/id/100.html" target="_self">인기영상</a></li>
+												<li id="nav-dongman"><a href="/index.php/map/index.html" target="_self">동맹링크</a></li>
+								
+						</div>
+		
+		
+
+        <ul class="navs flex">
+
+            <li>
+                <div class="nav history-box">
+                    <div class="nav-b flex"><img src="https://static.hitv.com/pc/img/a49d610.png" width="25" height="25"></div>
+                    <div class="bj bf br shadow history_box animated fadeInUp"></div>
+                </div>
+            </li>
+
+<!-- Inizio Codice ShinyStat -->
+<script src="//codice.shinystat.com/cgi-bin/getcod.cgi?USER=SS-44211037-03476"></script>
+<noscript>
+<a href="https://www.shinystat.com/it/" target="_top">
+<img src="//www.shinystat.com/cgi-bin/shinystat.cgi?USER=SS-44211037-03476" alt="Statistiche web" style="border:0px" /></a>
+</noscript>
+<!-- Fine Codice ShinyStat -->
+
+        </ul>
+    </div>
+</div>
+    <div class="container flex">
+		
+        <div class="mobile-main">
+             <style type="text/css">
+.yk-container {width:100%;margin-top: 5px;margin-bottom:-15px;}
+.left_ban{width:49.5%;float: left;margin-left: 0px;margin-right:1%}
+.right_ban{width:49.5%;float:left;}
+.bannerimg{width:676px;}
+@media (max-width:1024px){
+.left_ban{width:100%;margin-right:0px;}
+.right_ban{width:100%;}
+.bannerimg{width:100%;}
+.banner_num1{margin-top:5px;}
+}
+</style>
+
+
+
+<div class="bj br card border-shadow" style="padding: 5px 10px 0px;">
+<div style="margin-top: 10px;text-align:center;margin-bottom: 5px;">  
+
+
+			 
+		  <div class="left_ban" ><a href="https://t.me/tereb11" target="_blank" ><img src="https://images2.imgbox.com/f5/23/jgHtgerl_o.png"  style="width:100%"></a></div>
+					 
+		  <div class="right_ban banner_num1" ><a href="http://www.gms-67.com/#/" target="_blank" ><img src="https://images2.imgbox.com/cd/61/U4Nh40Zs_o.gif"  style="width:100%"></a></div>
+					 
+		  <div class="left_ban" style="margin-top:5px;"><a href="https://uba49.com/" target="_blank" ><img src="https://images2.imgbox.com/56/06/5plxYlAJ_o.gif"  style="width:100%"></a></div>
+					 
+		  <div class="right_ban" style="margin-top:5px;"><a href="https://tslot3.com/" target="_blank" ><img src="https://images2.imgbox.com/65/61/sHolyzui_o.gif"  style="width:100%"></a></div>
+					 
+		  <div class="left_ban" style="margin-top:5px;"><a href="https://t.me/tereb11" target="_blank" ><img src="https://images2.imgbox.com/f5/23/jgHtgerl_o.png"  style="width:100%"></a></div>
+					 
+		  <div class="right_ban" style="margin-top:5px;"><a href="http://hcmv9.xyz/" target="_blank" ><img src="https://images2.imgbox.com/38/30/Mkr8aer9_o.gif"  style="width:100%"></a></div>
+					 
+		  <div class="left_ban" style="margin-top:5px;"><a href="http://xx-pp.com/" target="_blank" ><img src="https://images2.imgbox.com/b5/f9/js1IuSN2_o.gif"  style="width:100%"></a></div>
+					 
+		  <div class="right_ban" style="margin-top:5px;"><a href="https://xn--v52b27uoc.com/bbs/board.php?bo_table=adult" target="_blank" ><img src="https://images2.imgbox.com/2e/8c/7NLKjsWj_o.gif"  style="width:100%"></a></div>
+				&nbsp;
+</div>
+</div>
+            <div class="bj br card border-shadow">
+
+
+
+                <div id="listId7">
+                    <div class="movie-list-header">
+                       
+                        <span class="movie-list-title">최신리스트</span>
+                    </div>
+                    <div class="movie-list-body flex">
+                                                 <div class="movie-list-item">
+    <a target="_top" href='/index.php/vod/detail/id/58429.html'>
+    <div class="movie-post-wrapper">
+                <div class="movie-post-lazyload Lazy br" data-original="https://images2.imgbox.com/d7/f0/WIAMq6gN_o.jpg" style="background-image: url('/template/xiaozhuti/img/img-bj-k.png')"></div>
+            </div>
+    <div class="movie-info">
+        <div class="movie-title txtHide" title="더 트롯쇼">더 트롯쇼</div>
+     
+</div>
+</a>
+</div>
+                                                <div class="movie-list-item">
+    <a target="_top" href='/index.php/vod/detail/id/163735.html'>
+    <div class="movie-post-wrapper">
+                <div class="movie-post-lazyload Lazy br" data-original="https://images2.imgbox.com/e6/fc/3yLBNNc0_o.jpg" style="background-image: url('/template/xiaozhuti/img/img-bj-k.png')"></div>
+            </div>
+    <div class="movie-info">
+        <div class="movie-title txtHide" title="걸스 나잇 아웃">걸스 나잇 아웃</div>
+     
+</div>
+</a>
+</div>
+                                                <div class="movie-list-item">
+    <a target="_top" href='/index.php/vod/detail/id/164490.html'>
+    <div class="movie-post-wrapper">
+                <div class="movie-post-lazyload Lazy br" data-original="https://images2.imgbox.com/36/2c/rqwCJMUm_o.jpg" style="background-image: url('/template/xiaozhuti/img/img-bj-k.png')"></div>
+            </div>
+    <div class="movie-info">
+        <div class="movie-title txtHide" title="어쩌다 마주친, 그대">어쩌다 마주친, 그대</div>
+     
+</div>
+</a>
+</div>
+                                                <div class="movie-list-item">
+    <a target="_top" href='/index.php/vod/detail/id/11662.html'>
+    <div class="movie-post-wrapper">
+                <div class="movie-post-lazyload Lazy br" data-original="https://images2.imgbox.com/3a/25/SDsorr5o_o.jpg" style="background-image: url('/template/xiaozhuti/img/img-bj-k.png')"></div>
+            </div>
+    <div class="movie-info">
+        <div class="movie-title txtHide" title="가요무대">가요무대</div>
+     
+</div>
+</a>
+</div>
+                                                <div class="movie-list-item">
+    <a target="_top" href='/index.php/vod/detail/id/10144.html'>
+    <div class="movie-post-wrapper">
+                <div class="movie-post-lazyload Lazy br" data-original="https://images2.imgbox.com/16/c8/uxF9egeb_o.jpg" style="background-image: url('/template/xiaozhuti/img/img-bj-k.png')"></div>
+            </div>
+    <div class="movie-info">
+        <div class="movie-title txtHide" title="프리한19">프리한19</div>
+     
+</div>
+</a>
+</div>
+                                                <div class="movie-list-item">
+    <a target="_top" href='/index.php/vod/detail/id/11660.html'>
+    <div class="movie-post-wrapper">
+                <div class="movie-post-lazyload Lazy br" data-original="https://images2.imgbox.com/b7/d2/osgEM52c_o.jpg" style="background-image: url('/template/xiaozhuti/img/img-bj-k.png')"></div>
+            </div>
+    <div class="movie-info">
+        <div class="movie-title txtHide" title="판도라">판도라</div>
+     
+</div>
+</a>
+</div>
+                                                <div class="movie-list-item">
+    <a target="_top" href='/index.php/vod/detail/id/53127.html'>
+    <div class="movie-post-wrapper">
+                <div class="movie-post-lazyload Lazy br" data-original="https://images2.imgbox.com/b7/d2/osgEM52c_o.jpg" style="background-image: url('/template/xiaozhuti/img/img-bj-k.png')"></div>
+            </div>
+    <div class="movie-info">
+        <div class="movie-title txtHide" title="안싸우면 다행이야">안싸우면 다행이야</div>
+     
+</div>
+</a>
+</div>
+                                                <div class="movie-list-item">
+    <a target="_top" href='/index.php/vod/detail/id/164498.html'>
+    <div class="movie-post-wrapper">
+                <div class="movie-post-lazyload Lazy br" data-original="https://images2.imgbox.com/59/f4/vWir18Bg_o.jpg" style="background-image: url('/template/xiaozhuti/img/img-bj-k.png')"></div>
+            </div>
+    <div class="movie-info">
+        <div class="movie-title txtHide" title="효자촌2">효자촌2</div>
+     
+</div>
+</a>
+</div>
+                                                <div class="movie-list-item">
+    <a target="_top" href='/index.php/vod/detail/id/10019.html'>
+    <div class="movie-post-wrapper">
+                <div class="movie-post-lazyload Lazy br" data-original="https://images2.imgbox.com/68/d0/jrTSm2ef_o.jpg" style="background-image: url('/template/xiaozhuti/img/img-bj-k.png')"></div>
+            </div>
+    <div class="movie-info">
+        <div class="movie-title txtHide" title="생활의 달인">생활의 달인</div>
+     
+</div>
+</a>
+</div>
+                                                <div class="movie-list-item">
+    <a target="_top" href='/index.php/vod/detail/id/116411.html'>
+    <div class="movie-post-wrapper">
+                <div class="movie-post-lazyload Lazy br" data-original="https://images2.imgbox.com/ae/63/Ouj7yUmS_o.jpg" style="background-image: url('/template/xiaozhuti/img/img-bj-k.png')"></div>
+            </div>
+    <div class="movie-info">
+        <div class="movie-title txtHide" title="세계테마기행">세계테마기행</div>
+     
+</div>
+</a>
+</div>
+                                                <div class="movie-list-item">
+    <a target="_top" href='/index.php/vod/detail/id/164812.html'>
+    <div class="movie-post-wrapper">
+                <div class="movie-post-lazyload Lazy br" data-original="https://images2.imgbox.com/cc/a9/weKrRXex_o.jpg" style="background-image: url('/template/xiaozhuti/img/img-bj-k.png')"></div>
+            </div>
+    <div class="movie-info">
+        <div class="movie-title txtHide" title="이로운 사기">이로운 사기</div>
+     
+</div>
+</a>
+</div>
+                                                <div class="movie-list-item">
+    <a target="_top" href='/index.php/vod/detail/id/118066.html'>
+    <div class="movie-post-wrapper">
+                <div class="movie-post-lazyload Lazy br" data-original="https://images2.imgbox.com/af/ae/3yTrlwlq_o.jpg" style="background-image: url('/template/xiaozhuti/img/img-bj-k.png')"></div>
+            </div>
+    <div class="movie-info">
+        <div class="movie-title txtHide" title="회장님네 사람들">회장님네 사람들</div>
+     
+</div>
+</a>
+</div>
+                                            </div>
+                </div>
+                <div style="height:15px"></div>
+               
+
+
+                
+                <div id="listId1">
+                    <div class="movie-list-header">
+                        <a href="/index.php/vod/show/id/1.html" class="movie-list-more">전체보기<span class="iconfont icon-right-line"></span></a>
+                        <span class="movie-list-title">영화</span>
+                        <div class="movie-list-subject-block" data-id="listId1">
+                                                    </div>
+                    </div>
+                    <div class="movie-list-body flex">
+                                                <div class="movie-list-item">
+    <a target="_top" href='/index.php/vod/detail/id/164989.html'>
+    <div class="movie-post-wrapper">
+                <div class="movie-post-lazyload Lazy br" data-original="https://youku.youkuphoto.com/upload/vod/20230611-1/158fafbdac2321216d9574465c69d3dc.jpg" style="background-image: url('/template/xiaozhuti/img/img-bj-k.png')"></div>
+            </div>
+    <div class="movie-info">
+        <div class="movie-title txtHide" title="新琼森帮">新琼森帮</div>
+     
+</div>
+</a>
+</div>
+                                                <div class="movie-list-item">
+    <a target="_top" href='/index.php/vod/detail/id/164988.html'>
+    <div class="movie-post-wrapper">
+                <div class="movie-post-lazyload Lazy br" data-original="https://youku.youkuphoto.com/upload/vod/20230611-1/c31ce24c3a667e9aae98f22cb2ab6099.jpg" style="background-image: url('/template/xiaozhuti/img/img-bj-k.png')"></div>
+            </div>
+    <div class="movie-info">
+        <div class="movie-title txtHide" title="出来战斗">出来战斗</div>
+     
+</div>
+</a>
+</div>
+                                                <div class="movie-list-item">
+    <a target="_top" href='/index.php/vod/detail/id/164976.html'>
+    <div class="movie-post-wrapper">
+                <div class="movie-post-lazyload Lazy br" data-original="https://www.imgikzy.com/upload/vod/20230610-1/5908a3ec9b7ead7e99b256a07b3c9f18.jpg" style="background-image: url('/template/xiaozhuti/img/img-bj-k.png')"></div>
+            </div>
+    <div class="movie-info">
+        <div class="movie-title txtHide" title="热辣奇多的诞生">热辣奇多的诞生</div>
+     
+</div>
+</a>
+</div>
+                                                <div class="movie-list-item">
+    <a target="_top" href='/index.php/vod/detail/id/163260.html'>
+    <div class="movie-post-wrapper">
+                <div class="movie-post-lazyload Lazy br" data-original="https://www.imgikzy.com/upload/vod/20230221-5/1a8938e7d088f72229b867c52e7f0f71.jpg" style="background-image: url('/template/xiaozhuti/img/img-bj-k.png')"></div>
+            </div>
+    <div class="movie-info">
+        <div class="movie-title txtHide" title="兴风作浪3">兴风作浪3</div>
+     
+</div>
+</a>
+</div>
+                                                <div class="movie-list-item">
+    <a target="_top" href='/index.php/vod/detail/id/119128.html'>
+    <div class="movie-post-wrapper">
+                <div class="movie-post-lazyload Lazy br" data-original="https://youku.youkuphoto.com/upload/vod/20221117-1/14384b19b3c6663352d569cb27e87fbe.jpg" style="background-image: url('/template/xiaozhuti/img/img-bj-k.png')"></div>
+            </div>
+    <div class="movie-info">
+        <div class="movie-title txtHide" title="中世纪">中世纪</div>
+     
+</div>
+</a>
+</div>
+                                                <div class="movie-list-item">
+    <a target="_top" href='/index.php/vod/detail/id/164986.html'>
+    <div class="movie-post-wrapper">
+                <div class="movie-post-lazyload Lazy br" data-original="https://youku.youkuphoto.com/upload/vod/20230611-1/0bd50da1f647dcf49003deaa2b29f478.jpg" style="background-image: url('/template/xiaozhuti/img/img-bj-k.png')"></div>
+            </div>
+    <div class="movie-info">
+        <div class="movie-title txtHide" title="兴风作浪2">兴风作浪2</div>
+     
+</div>
+</a>
+</div>
+                                                <div class="movie-list-item">
+    <a target="_top" href='/index.php/vod/detail/id/164984.html'>
+    <div class="movie-post-wrapper">
+                <div class="movie-post-lazyload Lazy br" data-original="https://www.imgikzy.com/upload/vod/20230610-6/397f5fc23d9af2ac62de454e772bebdd.jpg" style="background-image: url('/template/xiaozhuti/img/img-bj-k.png')"></div>
+            </div>
+    <div class="movie-info">
+        <div class="movie-title txtHide" title="去往更高处。">去往更高处。</div>
+     
+</div>
+</a>
+</div>
+                                                <div class="movie-list-item">
+    <a target="_top" href='/index.php/vod/detail/id/164983.html'>
+    <div class="movie-post-wrapper">
+                <div class="movie-post-lazyload Lazy br" data-original="https://youku.youkuphoto.com/upload/vod/20230610-1/725baf23790280698b2bc86a5372dde5.jpg" style="background-image: url('/template/xiaozhuti/img/img-bj-k.png')"></div>
+            </div>
+    <div class="movie-info">
+        <div class="movie-title txtHide" title="这不是葬礼，这是复活">这不是葬礼，这是复活</div>
+     
+</div>
+</a>
+</div>
+                                                <div class="movie-list-item">
+    <a target="_top" href='/index.php/vod/detail/id/164967.html'>
+    <div class="movie-post-wrapper">
+                <div class="movie-post-lazyload Lazy br" data-original="https://www.imgikzy.com/upload/vod/20230609-6/434d2156bcf68154f68a8de3c6dbbba7.webp" style="background-image: url('/template/xiaozhuti/img/img-bj-k.png')"></div>
+            </div>
+    <div class="movie-info">
+        <div class="movie-title txtHide" title="甜水">甜水</div>
+     
+</div>
+</a>
+</div>
+                                                <div class="movie-list-item">
+    <a target="_top" href='/index.php/vod/detail/id/164968.html'>
+    <div class="movie-post-wrapper">
+                <div class="movie-post-lazyload Lazy br" data-original="https://www.imgikzy.com/upload/vod/20230609-5/911b5934eda39ad9057357354cc016f9.jpg" style="background-image: url('/template/xiaozhuti/img/img-bj-k.png')"></div>
+            </div>
+    <div class="movie-info">
+        <div class="movie-title txtHide" title="我的错误">我的错误</div>
+     
+</div>
+</a>
+</div>
+                                                <div class="movie-list-item">
+    <a target="_top" href='/index.php/vod/detail/id/145415.html'>
+    <div class="movie-post-wrapper">
+                <div class="movie-post-lazyload Lazy br" data-original="https://www.imgikzy.com/upload/vod/20221109-27/b83ee28d1d20d683b6d1ed582d694533.jpg" style="background-image: url('/template/xiaozhuti/img/img-bj-k.png')"></div>
+            </div>
+    <div class="movie-info">
+        <div class="movie-title txtHide" title="一元换命">一元换命</div>
+     
+</div>
+</a>
+</div>
+                                                <div class="movie-list-item">
+    <a target="_top" href='/index.php/vod/detail/id/164982.html'>
+    <div class="movie-post-wrapper">
+                <div class="movie-post-lazyload Lazy br" data-original="https://youku.youkuphoto.com/upload/vod/20230610-1/e294540093cd9ae5fb319c9784eb6cb6.jpg" style="background-image: url('/template/xiaozhuti/img/img-bj-k.png')"></div>
+            </div>
+    <div class="movie-info">
+        <div class="movie-title txtHide" title="昆仑境">昆仑境</div>
+     
+</div>
+</a>
+</div>
+                                            </div>
+                </div>
+                <div style="height:15px"></div>
+                
+                <div id="listId2">
+                    <div class="movie-list-header">
+                        <a href="/index.php/vod/show/id/2.html" class="movie-list-more">전체보기<span class="iconfont icon-right-line"></span></a>
+                        <span class="movie-list-title">드라마</span>
+                        <div class="movie-list-subject-block" data-id="listId2">
+                                                        <a href="javascript:" data-id="2" class="cr2 active movie-list-subject listTypeClick">최신</a>
+                                                        <a href="javascript:" data-id="13" class="cr2 movie-list-subject listTypeClick">월화</a>
+                                                        <a href="javascript:" data-id="14" class="cr2 movie-list-subject listTypeClick">수목</a>
+                                                        <a href="javascript:" data-id="15" class="cr2 movie-list-subject listTypeClick">금요/주말</a>
+                                                        <a href="javascript:" data-id="21" class="cr2 movie-list-subject listTypeClick">일일</a>
+                                                        <a href="javascript:" data-id="22" class="cr2 movie-list-subject listTypeClick">다시보기</a>
+                                                    </div>
+                    </div>
+                    <div class="movie-list-body flex">
+                                                <div class="movie-list-item">
+    <a target="_top" href='/index.php/vod/detail/id/164490.html'>
+    <div class="movie-post-wrapper">
+                <div class="movie-post-lazyload Lazy br" data-original="https://images2.imgbox.com/36/2c/rqwCJMUm_o.jpg" style="background-image: url('/template/xiaozhuti/img/img-bj-k.png')"></div>
+            </div>
+    <div class="movie-info">
+        <div class="movie-title txtHide" title="어쩌다 마주친, 그대">어쩌다 마주친, 그대</div>
+     
+</div>
+</a>
+</div>
+                                                <div class="movie-list-item">
+    <a target="_top" href='/index.php/vod/detail/id/164812.html'>
+    <div class="movie-post-wrapper">
+                <div class="movie-post-lazyload Lazy br" data-original="https://images2.imgbox.com/cc/a9/weKrRXex_o.jpg" style="background-image: url('/template/xiaozhuti/img/img-bj-k.png')"></div>
+            </div>
+    <div class="movie-info">
+        <div class="movie-title txtHide" title="이로운 사기">이로운 사기</div>
+     
+</div>
+</a>
+</div>
+                                                <div class="movie-list-item">
+    <a target="_top" href='/index.php/vod/detail/id/163734.html'>
+    <div class="movie-post-wrapper">
+                <div class="movie-post-lazyload Lazy br" data-original="https://images2.imgbox.com/c8/ab/LmfQd4Ej_o.jpg" style="background-image: url('/template/xiaozhuti/img/img-bj-k.png')"></div>
+            </div>
+    <div class="movie-info">
+        <div class="movie-title txtHide" title="금이야 옥이야">금이야 옥이야</div>
+     
+</div>
+</a>
+</div>
+                                                <div class="movie-list-item">
+    <a target="_top" href='/index.php/vod/detail/id/163600.html'>
+    <div class="movie-post-wrapper">
+                <div class="movie-post-lazyload Lazy br" data-original="https://images2.imgbox.com/4f/7c/995ro1XZ_o.jpg" style="background-image: url('/template/xiaozhuti/img/img-bj-k.png')"></div>
+            </div>
+    <div class="movie-info">
+        <div class="movie-title txtHide" title="비밀의 여자">비밀의 여자</div>
+     
+</div>
+</a>
+</div>
+                                                <div class="movie-list-item">
+    <a target="_top" href='/index.php/vod/detail/id/164034.html'>
+    <div class="movie-post-wrapper">
+                <div class="movie-post-lazyload Lazy br" data-original="https://images2.imgbox.com/f6/62/Mkms1DEF_o.jpg" style="background-image: url('/template/xiaozhuti/img/img-bj-k.png')"></div>
+            </div>
+    <div class="movie-info">
+        <div class="movie-title txtHide" title="하늘의 인연">하늘의 인연</div>
+     
+</div>
+</a>
+</div>
+                                                <div class="movie-list-item">
+    <a target="_top" href='/index.php/vod/detail/id/164027.html'>
+    <div class="movie-post-wrapper">
+                <div class="movie-post-lazyload Lazy br" data-original="https://images2.imgbox.com/4e/70/J8nR6ccY_o.jpg" style="background-image: url('/template/xiaozhuti/img/img-bj-k.png')"></div>
+            </div>
+    <div class="movie-info">
+        <div class="movie-title txtHide" title="닥터 차정숙">닥터 차정숙</div>
+     
+</div>
+</a>
+</div>
+                                                <div class="movie-list-item">
+    <a target="_top" href='/index.php/vod/detail/id/164530.html'>
+    <div class="movie-post-wrapper">
+                <div class="movie-post-lazyload Lazy br" data-original="https://images2.imgbox.com/f9/d6/yefbwyXI_o.jpg" style="background-image: url('/template/xiaozhuti/img/img-bj-k.png')"></div>
+            </div>
+    <div class="movie-info">
+        <div class="movie-title txtHide" title="구미호뎐1938">구미호뎐1938</div>
+     
+</div>
+</a>
+</div>
+                                                <div class="movie-list-item">
+    <a target="_top" href='/index.php/vod/detail/id/163719.html'>
+    <div class="movie-post-wrapper">
+                <div class="movie-post-lazyload Lazy br" data-original="https://images2.imgbox.com/23/56/e4Okph62_o.jpg" style="background-image: url('/template/xiaozhuti/img/img-bj-k.png')"></div>
+            </div>
+    <div class="movie-info">
+        <div class="movie-title txtHide" title="진짜가 나타났다!">진짜가 나타났다!</div>
+     
+</div>
+</a>
+</div>
+                                                <div class="movie-list-item">
+    <a target="_top" href='/index.php/vod/detail/id/164452.html'>
+    <div class="movie-post-wrapper">
+                <div class="movie-post-lazyload Lazy br" data-original="https://images2.imgbox.com/2f/ff/gjMQJ0Um_o.jpg" style="background-image: url('/template/xiaozhuti/img/img-bj-k.png')"></div>
+            </div>
+    <div class="movie-info">
+        <div class="movie-title txtHide" title="낭만닥터 김사부 3">낭만닥터 김사부 3</div>
+     
+</div>
+</a>
+</div>
+                                                <div class="movie-list-item">
+    <a target="_top" href='/index.php/vod/detail/id/164867.html'>
+    <div class="movie-post-wrapper">
+                <div class="movie-post-lazyload Lazy br" data-original="https://images2.imgbox.com/c4/0c/2H2DOSiK_o.jpg" style="background-image: url('/template/xiaozhuti/img/img-bj-k.png')"></div>
+            </div>
+    <div class="movie-info">
+        <div class="movie-title txtHide" title="응답하라 1997">응답하라 1997</div>
+     
+</div>
+</a>
+</div>
+                                                <div class="movie-list-item">
+    <a target="_top" href='/index.php/vod/detail/id/164966.html'>
+    <div class="movie-post-wrapper">
+                <div class="movie-post-lazyload Lazy br" data-original="https://images2.imgbox.com/04/f2/3Z9XrJS4_o.jpg" style="background-image: url('/template/xiaozhuti/img/img-bj-k.png')"></div>
+            </div>
+    <div class="movie-info">
+        <div class="movie-title txtHide" title="사냥개들">사냥개들</div>
+     
+</div>
+</a>
+</div>
+                                                <div class="movie-list-item">
+    <a target="_top" href='/index.php/vod/detail/id/164721.html'>
+    <div class="movie-post-wrapper">
+                <div class="movie-post-lazyload Lazy br" data-original="https://images2.imgbox.com/b7/7e/lmUXo2t6_o.jpg" style="background-image: url('/template/xiaozhuti/img/img-bj-k.png')"></div>
+            </div>
+    <div class="movie-info">
+        <div class="movie-title txtHide" title="스타스트럭">스타스트럭</div>
+     
+</div>
+</a>
+</div>
+                                            </div>
+                </div>
+                <div style="height:15px"></div>
+                
+                <div id="listId3">
+                    <div class="movie-list-header">
+                        <a href="/index.php/vod/show/id/3.html" class="movie-list-more">전체보기<span class="iconfont icon-right-line"></span></a>
+                        <span class="movie-list-title">예능</span>
+                        <div class="movie-list-subject-block" data-id="listId3">
+                                                        <a href="javascript:" data-id="3" class="cr2 active movie-list-subject listTypeClick">최신</a>
+                                                        <a href="javascript:" data-id="23" class="cr2 movie-list-subject listTypeClick">월요일</a>
+                                                        <a href="javascript:" data-id="24" class="cr2 movie-list-subject listTypeClick">화요일</a>
+                                                        <a href="javascript:" data-id="25" class="cr2 movie-list-subject listTypeClick">수요일</a>
+                                                        <a href="javascript:" data-id="26" class="cr2 movie-list-subject listTypeClick">목요일</a>
+                                                        <a href="javascript:" data-id="27" class="cr2 movie-list-subject listTypeClick">금요일</a>
+                                                        <a href="javascript:" data-id="28" class="cr2 movie-list-subject listTypeClick">토요일</a>
+                                                        <a href="javascript:" data-id="29" class="cr2 movie-list-subject listTypeClick">일요일</a>
+                                                    </div>
+                    </div>
+                    <div class="movie-list-body flex">
+                                                <div class="movie-list-item">
+    <a target="_top" href='/index.php/vod/detail/id/58429.html'>
+    <div class="movie-post-wrapper">
+                <div class="movie-post-lazyload Lazy br" data-original="https://images2.imgbox.com/d7/f0/WIAMq6gN_o.jpg" style="background-image: url('/template/xiaozhuti/img/img-bj-k.png')"></div>
+            </div>
+    <div class="movie-info">
+        <div class="movie-title txtHide" title="더 트롯쇼">더 트롯쇼</div>
+     
+</div>
+</a>
+</div>
+                                                <div class="movie-list-item">
+    <a target="_top" href='/index.php/vod/detail/id/163735.html'>
+    <div class="movie-post-wrapper">
+                <div class="movie-post-lazyload Lazy br" data-original="https://images2.imgbox.com/e6/fc/3yLBNNc0_o.jpg" style="background-image: url('/template/xiaozhuti/img/img-bj-k.png')"></div>
+            </div>
+    <div class="movie-info">
+        <div class="movie-title txtHide" title="걸스 나잇 아웃">걸스 나잇 아웃</div>
+     
+</div>
+</a>
+</div>
+                                                <div class="movie-list-item">
+    <a target="_top" href='/index.php/vod/detail/id/11662.html'>
+    <div class="movie-post-wrapper">
+                <div class="movie-post-lazyload Lazy br" data-original="https://images2.imgbox.com/3a/25/SDsorr5o_o.jpg" style="background-image: url('/template/xiaozhuti/img/img-bj-k.png')"></div>
+            </div>
+    <div class="movie-info">
+        <div class="movie-title txtHide" title="가요무대">가요무대</div>
+     
+</div>
+</a>
+</div>
+                                                <div class="movie-list-item">
+    <a target="_top" href='/index.php/vod/detail/id/10144.html'>
+    <div class="movie-post-wrapper">
+                <div class="movie-post-lazyload Lazy br" data-original="https://images2.imgbox.com/16/c8/uxF9egeb_o.jpg" style="background-image: url('/template/xiaozhuti/img/img-bj-k.png')"></div>
+            </div>
+    <div class="movie-info">
+        <div class="movie-title txtHide" title="프리한19">프리한19</div>
+     
+</div>
+</a>
+</div>
+                                                <div class="movie-list-item">
+    <a target="_top" href='/index.php/vod/detail/id/11660.html'>
+    <div class="movie-post-wrapper">
+                <div class="movie-post-lazyload Lazy br" data-original="https://images2.imgbox.com/b7/d2/osgEM52c_o.jpg" style="background-image: url('/template/xiaozhuti/img/img-bj-k.png')"></div>
+            </div>
+    <div class="movie-info">
+        <div class="movie-title txtHide" title="판도라">판도라</div>
+     
+</div>
+</a>
+</div>
+                                                <div class="movie-list-item">
+    <a target="_top" href='/index.php/vod/detail/id/53127.html'>
+    <div class="movie-post-wrapper">
+                <div class="movie-post-lazyload Lazy br" data-original="https://images2.imgbox.com/b7/d2/osgEM52c_o.jpg" style="background-image: url('/template/xiaozhuti/img/img-bj-k.png')"></div>
+            </div>
+    <div class="movie-info">
+        <div class="movie-title txtHide" title="안싸우면 다행이야">안싸우면 다행이야</div>
+     
+</div>
+</a>
+</div>
+                                                <div class="movie-list-item">
+    <a target="_top" href='/index.php/vod/detail/id/164498.html'>
+    <div class="movie-post-wrapper">
+                <div class="movie-post-lazyload Lazy br" data-original="https://images2.imgbox.com/59/f4/vWir18Bg_o.jpg" style="background-image: url('/template/xiaozhuti/img/img-bj-k.png')"></div>
+            </div>
+    <div class="movie-info">
+        <div class="movie-title txtHide" title="효자촌2">효자촌2</div>
+     
+</div>
+</a>
+</div>
+                                                <div class="movie-list-item">
+    <a target="_top" href='/index.php/vod/detail/id/10019.html'>
+    <div class="movie-post-wrapper">
+                <div class="movie-post-lazyload Lazy br" data-original="https://images2.imgbox.com/68/d0/jrTSm2ef_o.jpg" style="background-image: url('/template/xiaozhuti/img/img-bj-k.png')"></div>
+            </div>
+    <div class="movie-info">
+        <div class="movie-title txtHide" title="생활의 달인">생활의 달인</div>
+     
+</div>
+</a>
+</div>
+                                                <div class="movie-list-item">
+    <a target="_top" href='/index.php/vod/detail/id/116411.html'>
+    <div class="movie-post-wrapper">
+                <div class="movie-post-lazyload Lazy br" data-original="https://images2.imgbox.com/ae/63/Ouj7yUmS_o.jpg" style="background-image: url('/template/xiaozhuti/img/img-bj-k.png')"></div>
+            </div>
+    <div class="movie-info">
+        <div class="movie-title txtHide" title="세계테마기행">세계테마기행</div>
+     
+</div>
+</a>
+</div>
+                                                <div class="movie-list-item">
+    <a target="_top" href='/index.php/vod/detail/id/118066.html'>
+    <div class="movie-post-wrapper">
+                <div class="movie-post-lazyload Lazy br" data-original="https://images2.imgbox.com/af/ae/3yTrlwlq_o.jpg" style="background-image: url('/template/xiaozhuti/img/img-bj-k.png')"></div>
+            </div>
+    <div class="movie-info">
+        <div class="movie-title txtHide" title="회장님네 사람들">회장님네 사람들</div>
+     
+</div>
+</a>
+</div>
+                                                <div class="movie-list-item">
+    <a target="_top" href='/index.php/vod/detail/id/25390.html'>
+    <div class="movie-post-wrapper">
+                <div class="movie-post-lazyload Lazy br" data-original="https://images2.imgbox.com/8a/bc/jRpY6Rs0_o.jpg" style="background-image: url('/template/xiaozhuti/img/img-bj-k.png')"></div>
+            </div>
+    <div class="movie-info">
+        <div class="movie-title txtHide" title="무엇이든 물어보살">무엇이든 물어보살</div>
+     
+</div>
+</a>
+</div>
+                                                <div class="movie-list-item">
+    <a target="_top" href='/index.php/vod/detail/id/164159.html'>
+    <div class="movie-post-wrapper">
+                <div class="movie-post-lazyload Lazy br" data-original="https://images2.imgbox.com/6c/32/j71QXF8O_o.jpg" style="background-image: url('/template/xiaozhuti/img/img-bj-k.png')"></div>
+            </div>
+    <div class="movie-info">
+        <div class="movie-title txtHide" title="시골경찰 리턴즈">시골경찰 리턴즈</div>
+     
+</div>
+</a>
+</div>
+                                            </div>
+                </div>
+                <div style="height:15px"></div>
+                            </div>
+
+
+
+<div class="bj br card border-shadow">
+<div style="margin-top: 20px;text-align:center;margin-bottom: 10px;">  
+고객센터 텔레그램:<a href="https://t.me/tereb11" style="color: #00a6ff;">@tereb11</a><br><br>
+Copyright © 2020-2022 테레비</div>
+</div>
+<br>
+<br>
+<br>
+        </div>
+    </div>
+    <div class="mobile-nav-box">
+    <div class="mobile-nav flex bj">
+
+        <div class="nav  flex"><a href="/"><i style="   color: white;" class="fa fa-home"></i><div class="nav-title">메인</div></a></div>
+
+		
+       		
+        <div class="nav flex"><a href="/index.php/vod/type/id/1.html"><i style="  width:18px;height:16px; margin-left:2px;color: white;" class="fa fa-film-alt"></i><div class="nav-title">영화</div></a></div>
+		
+		 		
+        <div class="nav flex"><a href="/index.php/vod/type/id/2.html"><i style="  width:18px;height:16px; margin-left:2px;color: white;" class="fa fa-tv"></i><div class="nav-title">드라마</div></a></div>
+		
+		 		
+        <div class="nav flex"><a href="/index.php/vod/type/id/3.html"><i style="  width:18px;height:16px; margin-left:2px;color: white;" class="fa fa-tv-retro"></i><div class="nav-title">예능</div></a></div>
+		
+		 		
+        <div class="nav flex"><a href="/index.php/vod/show2/by/hits/id/100.html"><i style="  width:18px;height:16px; margin-left:2px;color: white;" class="fa fa-star"></i><div class="nav-title">인기</div></a></div>
+		
+		 		
+        <div class="nav flex"><a href="/index.php/map/index.html"><i style="  width:18px;height:16px; margin-left:2px;color: white;" class="fa fa-link"></i><div class="nav-title">등맹</div></a></div>
+		
+		     </div>
+</div>
+
+<script type="text/javascript" src="/template/xiaozhuti/js/jquery.cookie.js"></script>
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+<style type="text/css">
+.popup_left{ display:none;position:fixed; z-index:550; bottom:0; left:0; width:200px;}
+.popup_left a{ display:block; overflow:hidden;}
+.popup_left a img{ display:block; width:100%; height:auto;}
+.popup_left .bottom{ overflow:hidden; padding:10px; background:rgba(0,0,0,1);}
+.popup_left .bottom .check{ float:left; cursor:pointer;}
+.popup_left .bottom .check span{ display:block; float:left; margin:0 5px 0 0; width:20px; height:20px; background:#FFF;}
+.popup_left .bottom .check span i{ display:block; text-align:center; line-height:20px; font-size:12px; color:#333;}
+.popup_left .bottom .check p{ float:left; line-height:20px; font-size:12px; color:#FFF;}
+.popup_left .bottom .check.on span{ background:#00cd3c; color:#FFF;}
+.popup_left .bottom .check.on p{ color:#00cd3c;}
+.popup_left .bottom .xi-close{ display:block; float:right; line-height:20px; font-size:20px; color:#FFF; cursor:pointer;}
+@media(max-width:767px){
+	.popup_left{ width:100px;}
+}
+.popup_left2{ display:none;position:fixed; z-index:550; bottom:0; left:0; width:200px;margin-left:210px;}
+.popup_left2 a{ display:block; overflow:hidden;}
+.popup_left2 a img{ display:block; width:100%; height:auto;}
+.popup_left2 .bottom{ overflow:hidden; padding:10px; background:rgba(0,0,0,1);}
+.popup_left2 .bottom .check{ float:left; cursor:pointer;}
+.popup_left2 .bottom .check span{ display:block; float:left; margin:0 5px 0 0; width:20px; height:20px; background:#FFF;}
+.popup_left2 .bottom .check span i{ display:block; text-align:center; line-height:20px; font-size:12px; color:#333;}
+.popup_left2 .bottom .check p{ float:left; line-height:20px; font-size:12px; color:#FFF;}
+.popup_left2 .bottom .check.on span{ background:#00cd3c; color:#FFF;}
+.popup_left2 .bottom .check.on p{ color:#00cd3c;}
+.popup_left2 .bottom .xi-close{ display:block; float:right; line-height:20px; font-size:20px; color:#FFF; cursor:pointer;}
+@media(max-width:767px){
+	.popup_left2{ width:100px;margin-left:110px;}
+}
+
+
+.popup_right{ display:none;position:fixed; z-index:550; bottom:0; right:0; width:200px;}
+.popup_right a{ display:block; overflow:hidden;}
+.popup_right a img{ display:block; width:100%; height:auto;}
+.popup_right .bottom{ overflow:hidden; padding:10px; background:rgba(0,0,0,1);}
+.popup_right .bottom .check{ float:left; cursor:pointer;}
+.popup_right .bottom .check span{ display:block; float:left; margin:0 5px 0 0; width:20px; height:20px; background:#FFF;}
+.popup_right .bottom .check span i{ display:block; text-align:center; line-height:20px; font-size:12px; color:#333;}
+.popup_right .bottom .check p{ float:left; line-height:20px; font-size:12px; color:#FFF;}
+.popup_right .bottom .check.on span{ background:#00cd3c; color:#FFF;}
+.popup_right .bottom .check.on p{ color:#00cd3c;}
+.popup_right .bottom .xi-close{ display:block; float:right; line-height:20px; font-size:20px; color:#FFF; cursor:pointer;}
+@media(max-width:767px){
+	.popup_right{ width:100px;}
+}
+
+</style>
+<script language="javascript">
+function closePopupNotice(className){
+	var date = new Date();
+	date.setTime(date.getTime() + 12*60*60*1000);
+	$.cookie(className, 'done', {expires: date});
+	return closePopup(className);
+}
+function closePopup(className){
+	$('.'+className).hide(); 
+}
+
+
+$(function () {
+	if( $.cookie('popup_left') != 'done' ){
+		$('.popup_left').show();	
+	} 
+
+	var click01 = false;
+	$(".popup_left .check").click(function(){
+		$(this).addClass("on")
+		click01 = true;
+	})
+	$(".popup_left .xi-close").click(function(){
+		$(".popup_left").addClass("dn")
+		if(click01){
+			closePopupNotice('popup_left');
+		}
+		
+		closePopup('popup_left');
+	})
+
+
+	if( $.cookie('popup_left2') != 'done' ){
+		$('.popup_left2').show();	
+	} 
+
+	var click01 = false;
+	$(".popup_left2 .check").click(function(){
+		$(this).addClass("on")
+		click01 = true;
+	})
+	$(".popup_left2 .xi-close").click(function(){
+		$(".popup_left2").addClass("dn")
+		if(click01){
+			closePopupNotice('popup_left2');
+		}
+		
+		closePopup('popup_left2');
+	})
+
+
+
+	if( $.cookie('popup_right') != 'done' ){
+		$('.popup_right').show();	
+	} 
+	var click02 = false;
+	$(".popup_right .check").click(function(){
+		$(this).addClass("on");
+		click02 = true;
+	})
+	$(".popup_right .xi-close").click(function(){
+		$(".popup_right").addClass("dn");
+		if(click02){
+			closePopupNotice('popup_right');
+		}
+		closePopup('popup_right');
+	})
+
+});
+</script>
+
+	<div class="popup_left">
+<a href="https://nbtv70.com/"  target="_blank"><img src="https://images2.imgbox.com/49/9d/rvcjlz1j_o.gif" style="width:100%">
+</a><div class="bottom"><div class="check"><span><i class="xi-check"></i></span><p>오늘 그만보기</p></div><i class="xi-close"></i></div></div>
+
+
+
+			<div class="popup_right">
+<a href="https://grtv08.com/"  target="_blank"><img src="https://images2.imgbox.com/f7/59/VRamvhec_o.gif" style="width:100%">
+</a><div class="bottom"><div class="check"><span><i class="xi-check"></i></span><p>오늘 그만보기</p></div><i class="xi-close"></i></div></div>
+
+
+
+			<div class="popup_left2">
+<a href="http://hcmv9.xyz/"  target="_blank"><img src="https://images2.imgbox.com/8b/4c/TTdAxzGL_o.png" style="width:100%">
+</a><div class="bottom"><div class="check"><span><i class="xi-check"></i></span><p>오늘 그만보기</p></div><i class="xi-close"></i></div></div>
+
+
+
+			<!-- 양쪽 팝업 end -->
+
+<!--div class="ec-footer_scroll">
+    <div class="ec-lrmenu" id="switch">
+        <a href="javascript:" class="ecTop" data-id="6"><i class="iconfont icon-shouqi"></i></a>
+
+        <a href="javascript:" ><i class="iconfont icon-yueliang" data-id="ye"></i><i class="iconfont icon-bairi" data-id="bai"></i></a>
+    </div>
+    <a href="javascript:" title="" class="ec-lrmenukey active"><i class="iconfont icon-yingyong"></i></a>
+</div-->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-M9732K6EE4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-M9732K6EE4');
+</script>
+</div>
+</body>
+</html>

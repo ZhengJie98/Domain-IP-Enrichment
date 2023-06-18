@@ -1,0 +1,7 @@
+current domain in process_parent:www-houze-com-sg%2fpages%2fonline--shopping--the--houze--way.cdn.ampproject.org
+===== to_skip function start =====
+www-houze-com-sg%2fpages%2fonline--shopping--the--houze--way.cdn.ampproject.org has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: www-houze-com-sg%2fpages%2fonline--shopping--the--houze--way.cdn.ampproject.org now: 2023-06-12 10:01:45.080421+00:00
+call_status_code: 404, continuing to next ip_or_domain

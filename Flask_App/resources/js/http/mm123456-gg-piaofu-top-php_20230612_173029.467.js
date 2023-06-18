@@ -1,0 +1,1 @@
+document.write('<iframe src="/mm123456/gg_piaofu_top.html" width="100%" height="100%" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>'); 

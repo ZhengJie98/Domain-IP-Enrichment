@@ -1,0 +1,30 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Mon, 12 Jun 2023 03:45:04 GMT
+Content-Type: text/html
+Content-Length: 600
+Last-Modified: Thu, 18 May 2023 19:30:44 GMT
+Connection: keep-alive
+ETag: "64667ce4-258"
+Strict-Transport-Security: max-age=31536000
+Accept-Ranges: bytes
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LMI</title>
+    <link rel="icon" href="favicon.ico" />
+    <script>
+      var now = new Date().getTime();
+      document.write('<script src="/config.js?t=' + now + '"><\/script\>'); //加时间戳防止浏览器缓存
+    </script>
+    <script type="module" crossorigin src="/assets/index.79c23ca6.js"></script>
+    <link rel="stylesheet" href="/assets/index.308739df.css">
+  </head>
+  <body>
+    <div id="app"></div>
+    
+  </body>
+</html>

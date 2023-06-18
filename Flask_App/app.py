@@ -35,12 +35,12 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 # CORS(app, support_credentials=True)
 # cors = CORS(app, origins='http://localhost:3000')
 CORS(app)
-cors = CORS(app, resources={
-    r"/*":{
-        "origins":"*"
-    }
-})
-app.config['CORS_HEADERS'] = 'Content-Type'
+# cors = CORS(app, resources={
+#     r"/*":{
+#         "origins":"*"
+#     }
+# })
+# app.config['CORS_HEADERS'] = 'Content-Type'
 
 
 @app.route('/')
@@ -120,6 +120,7 @@ def test():
 
 @app.route('/upload', methods=['POST', 'GET'])
 # @cross_origin(supports_credentials=True)
+@cross_origin(origin='*')
 def upload_csv():
     # return jsonify({'success': 'ok'})
     print("currently in upload_csv")
@@ -135,15 +136,15 @@ def upload_csv():
         return "Invalid file. Only CSV files are allowed."
 
 # Custom CORS headers
-@app.after_request
-def add_cors_headers(response):
-    # response.headers['Access-Control-Allow-Origin'] = 'http://localhost:3000'
-    response.headers['Access-Control-Allow-Origin'] = '*'
-    # response.headers['Access-Control-Allow-Methods'] = 'PUT,GET,POST,DELETE'
-    response.headers['Access-Control-Allow-Headers'] = '*'
-    # response.headers['Access-Control-Allow-Headers'] = 'Content-Type,Authorization'
+# @app.after_request
+# def add_cors_headers(response):
+#     # response.headers['Access-Control-Allow-Origin'] = 'http://localhost:3000'
+#     response.headers['Access-Control-Allow-Origin'] = '*'
+#     # response.headers['Access-Control-Allow-Methods'] = 'PUT,GET,POST,DELETE'
+#     response.headers['Access-Control-Allow-Headers'] = '*'
+#     # response.headers['Access-Control-Allow-Headers'] = 'Content-Type,Authorization'
 
-    return response
+#     return response
 
 @app.route('/todos', methods=['GET'])
 def get_todos():
@@ -183,5 +184,5 @@ def get_todos():
 
 
 if __name__ == "__main__":
-   app.run(debug=True)
-    # app.run(debug=True, use_reloader=False)
+#    app.run(debug=True, port=5000)
+    app.run(debug=True, use_reloader=False, port=5000)

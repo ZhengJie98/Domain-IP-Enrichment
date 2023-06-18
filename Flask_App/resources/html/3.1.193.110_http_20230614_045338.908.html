@@ -1,0 +1,35 @@
+HTTP/1.1 200 OK
+Date: Wed, 14 Jun 2023 04:53:39 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 687
+Connection: keep-alive
+X-Powered-By: Express
+ETag: W/"2af-jR9XZuvL7hIT8ynlmXdqUDJkOr0"
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Cloud Wallet</title>
+		<link rel="stylesheet" href="/walletbackend/css/base.css">
+		<link rel="stylesheet" href="/walletbackend/css/index.css">
+		<link rel="stylesheet" href="/walletbackend/css/home.css">
+	</head>
+	<body>
+		<section class="todohome">
+			<header>
+				<h1>Cloud Wallet</h1>
+			</header>
+			<section>
+				<button class="button" onclick="goto()">Main Page</button>
+			</section>
+		</section>
+		<script>
+			function goto() {
+				const url= 'https://juno.loop.markets';
+				window.location = url
+			}
+		</script>
+	</body>
+</html>

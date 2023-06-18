@@ -1,0 +1,805 @@
+HTTP/1.1 200 OK
+Date: Wed, 14 Jun 2023 06:23:15 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: Kestrel
+Cache-Control: no-cache, no-store
+Pragma: no-cache
+Set-Cookie: .AspNetCore.Antiforgery.9TtSrW0hzOs=CfDJ8CCGo0JRRGRLmFLLJPwADP-jkwa2xe7DP1wVx5gWACfVa3ESd4gTsotQ8lJB5Ga-rLd1imgnlYdDpvcDQx6-xDedxDzDGkwJFsn31HXr0LcbDs2Lk1A0TW9QfL71ne7mJCB5qRjkvrRpZfnJHF7MmIs; path=/; samesite=strict; httponly
+X-Frame-Options: SAMEORIGIN
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Home Page - Observability PetAdoptions</title>
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/site.css" />
+    <link rel="stylesheet" href="/css/petstyles.css" />
+</head>
+<body>
+<div class="pet-wrapper">
+    <header class="pet-header">
+
+        <div class="container">
+            <article class="row">
+
+                <section class="col-lg-7 col-md-6 col-xs-12">
+                    <a href="/">
+                        <img src="/images/brand.png" alt="Petadoption" />
+                    </a>
+                </section>
+                <section class="col-md-2" >
+                    <a id="seeadoptionlist" style="color: #7abaff" href="/PetListAdoptions">
+                        See Adoption List
+                    </a>
+                </section>
+
+                <section class="col-md-3">
+                    <a id="performhousekeeping" style="color: #7abaff" href="/housekeeping">
+                        Perform Housekeeping
+                    </a>
+                </section>
+            </article>
+
+        </div>
+    </header>
+    
+
+<section class="pet-hero">
+    <div class="container">
+        <img class="pet-hero-title" src="/images/main_banner_text.png" />
+    </div>
+</section>
+
+<section class="pet-filters">
+    <div class="container">
+        <form method="get">
+            <label class="pet-label" data-title="Type">
+                <select name="selectedPetType" class="pet-filter" id="Varieties_SelectedPetType"><option value="all">All</option>
+<option value="puppy">Puppy</option>
+<option value="kitten">Kitten</option>
+<option value="bunny">Bunny</option>
+</select>
+            </label>
+            <label class="pet-label" data-title="Color">
+                <select name="selectedPetColor" class="pet-filter" id="Varieties_SelectedPetColor"><option value="all">All</option>
+<option value="brown">Brown</option>
+<option value="black">Black</option>
+<option value="white">White</option>
+</select>
+            </label>
+            <input id="searchpets" type="submit" value="Search" class="rounded-lg"/>
+
+        </form>
+    </div>
+</section>
+
+
+<div class="container">
+        <div class="pet-items row">
+                <div class="pet-item col-md-4">
+                    
+    <form method="post" action="/adoption/takemehome">
+        <img class="pet-thumbnail" src="https://services-s3bucketpetadoptioncb20dce5-o33mvyupp12n.s3.ap-southeast-1.amazonaws.com/puppies/p9.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjELT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLXNvdXRoZWFzdC0xIkYwRAIgV5tBEmchqtab9aRsY2PJ7vmkiOxU8ZSsT%2BmcHOlbA%2F0CIA3zYNApcLblzPh48K5vFFGGUhXX3FGJbl2BGz1mnL0JKrMECP3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMOTgzMzA0Njg2NjUyIgwgahrBX8wQd8Dvu2UqhwT%2FpLE7LucQkk8uvhFHAE7W7STL9B5VacD%2BZ%2BDwYJbTnQma%2Bzqq1uucrzRn6LAmR372QxCnq0eFzJnU%2F36pkXBug1huTvTlPkiEzojdXwGDjEBaAetQ5jWDJexThJ58FHH0rMARr%2BXtIZtNr39LZIDltO19EAgf7sZU7tCm7VopbOXvyuqE74z8LT9w2J8Izra%2Bip6B5pWy482wm%2FeY6tjFE6g9B9%2BkQlfPiAED6xNLZgvin0gxZ4nRaVA7WPE60K4g461aoIgaEkWnrsUGIMU%2BozOKE5dR5vxtSy7L9KQCM9PYDbUCW%2FlaWlSloPA7pwh76V%2B%2FcpmdsDQMGPrb4CWQiHJ%2BaKnlPDbBhURQhabnx0Kpz2UClINwQNNGrFC1o5E1WnC9n0PujxIaXOooGEKherhx2P9Ykxlg37tN%2F7yXzM%2F0ogVdK2bajwL2jKPcxH%2B5916nigRYfdw0RtRweDlKwLwq2OyRPIYbPGX%2B36b5%2F2rvHKaxEnhdW6qRinT4HgnQ140PSirgW317HjfvzBqBz37irb6GHC9F56iMGYCxJUbjM42QZk%2FtEgtdGhHLLvjZnHtswO1u7FYJDDWVC2ZQNdB2ZcIsHE%2FCwHV8lKm7c381QR54Kgr5Ns5WGykhGeTi3P3%2BqbfT09ZnXTNa1sIUmoCbgkLtqQ%2BibrjnQiyruKQEfyPeaV8w7fGkpAY6pwGzMjtdgJ5Jre%2FQkBJYyqPpsj3PrDNXXEl9KJCFSqh66UrxobN%2BdDg1OH6m9UY66H5oNmscHfo9T6SVkChKreVNOz4zbDQ1cpWzTK4IBFbAmvULpla9vpVS8SxdLH9XbNpapp%2Fvh5eiKG1f%2Fg2rt50OZ3MsFPofeObxr910%2FR%2BV1WD5AGb4Rl%2Fy1rmrTaFcHXgiKT%2FoISDb0BxIH%2BPqqPsgBnKlhe5DRQ%3D%3D&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20230614T062314Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=300&amp;X-Amz-Credential=ASIA6J4MGZQ6GTML5FHL%2F20230614%2Fap-southeast-1%2Fs3%2Faws4_request&amp;X-Amz-Signature=25f09b50e1cf750dfdeaad8730b2e53287daa90b7b0728684f9d0ff69e0d9358" />
+            <input class="pet-button" type="submit" value="Take me home"/>
+        
+        <div class="pet-name">
+            <span>puppy-black</span>
+        </div>
+        <div class="pet-price">
+            <span>89</span>
+        </div>
+
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+
+        <input type="hidden" name="petcolor" id="pet_petcolor" value="black" />
+        <input type="hidden" name="petid" id="pet_petid" value="001" />
+        <input type="hidden" name="pettype" id="pet_pettype" value="puppy" />
+        <input type="hidden" name="peturl" id="pet_peturl" value="https://services-s3bucketpetadoptioncb20dce5-o33mvyupp12n.s3.ap-southeast-1.amazonaws.com/puppies/p9.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjELT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLXNvdXRoZWFzdC0xIkYwRAIgV5tBEmchqtab9aRsY2PJ7vmkiOxU8ZSsT%2BmcHOlbA%2F0CIA3zYNApcLblzPh48K5vFFGGUhXX3FGJbl2BGz1mnL0JKrMECP3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMOTgzMzA0Njg2NjUyIgwgahrBX8wQd8Dvu2UqhwT%2FpLE7LucQkk8uvhFHAE7W7STL9B5VacD%2BZ%2BDwYJbTnQma%2Bzqq1uucrzRn6LAmR372QxCnq0eFzJnU%2F36pkXBug1huTvTlPkiEzojdXwGDjEBaAetQ5jWDJexThJ58FHH0rMARr%2BXtIZtNr39LZIDltO19EAgf7sZU7tCm7VopbOXvyuqE74z8LT9w2J8Izra%2Bip6B5pWy482wm%2FeY6tjFE6g9B9%2BkQlfPiAED6xNLZgvin0gxZ4nRaVA7WPE60K4g461aoIgaEkWnrsUGIMU%2BozOKE5dR5vxtSy7L9KQCM9PYDbUCW%2FlaWlSloPA7pwh76V%2B%2FcpmdsDQMGPrb4CWQiHJ%2BaKnlPDbBhURQhabnx0Kpz2UClINwQNNGrFC1o5E1WnC9n0PujxIaXOooGEKherhx2P9Ykxlg37tN%2F7yXzM%2F0ogVdK2bajwL2jKPcxH%2B5916nigRYfdw0RtRweDlKwLwq2OyRPIYbPGX%2B36b5%2F2rvHKaxEnhdW6qRinT4HgnQ140PSirgW317HjfvzBqBz37irb6GHC9F56iMGYCxJUbjM42QZk%2FtEgtdGhHLLvjZnHtswO1u7FYJDDWVC2ZQNdB2ZcIsHE%2FCwHV8lKm7c381QR54Kgr5Ns5WGykhGeTi3P3%2BqbfT09ZnXTNa1sIUmoCbgkLtqQ%2BibrjnQiyruKQEfyPeaV8w7fGkpAY6pwGzMjtdgJ5Jre%2FQkBJYyqPpsj3PrDNXXEl9KJCFSqh66UrxobN%2BdDg1OH6m9UY66H5oNmscHfo9T6SVkChKreVNOz4zbDQ1cpWzTK4IBFbAmvULpla9vpVS8SxdLH9XbNpapp%2Fvh5eiKG1f%2Fg2rt50OZ3MsFPofeObxr910%2FR%2BV1WD5AGb4Rl%2Fy1rmrTaFcHXgiKT%2FoISDb0BxIH%2BPqqPsgBnKlhe5DRQ%3D%3D&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20230614T062314Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=300&amp;X-Amz-Credential=ASIA6J4MGZQ6GTML5FHL%2F20230614%2Fap-southeast-1%2Fs3%2Faws4_request&amp;X-Amz-Signature=25f09b50e1cf750dfdeaad8730b2e53287daa90b7b0728684f9d0ff69e0d9358" />
+        <input type="hidden" name="price" id="pet_price" value="89" />
+        <input type="hidden" name="cuteness_rate" id="pet_cuteness_rate" value="5" />
+    <input name="__RequestVerificationToken" type="hidden" value="CfDJ8CCGo0JRRGRLmFLLJPwADP_ZdnehqevN6wm66UG4IB1PS-VwPsjn2WgsxlcfIIWpQM7ikORuenswKfQKLUd9beqBBKngrfeORNN-0KMd0pEIOXd6T5BccNB6Q9YJzTF2-H7KjnxbuW8nZYTOV9FGSuA" /></form>
+
+                </div>
+                <div class="pet-item col-md-4">
+                    
+    <form method="post" action="/adoption/takemehome">
+        <img class="pet-thumbnail" src="" />
+            <input class="pet-button" type="submit" value="Take me home"/>
+        
+        <div class="pet-name">
+            <span>puppy-black</span>
+        </div>
+        <div class="pet-price">
+            <span>99</span>
+        </div>
+
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+
+        <input type="hidden" name="petcolor" id="pet_petcolor" value="black" />
+        <input type="hidden" name="petid" id="pet_petid" value="002" />
+        <input type="hidden" name="pettype" id="pet_pettype" value="puppy" />
+        <input type="hidden" name="peturl" id="pet_peturl" value="" />
+        <input type="hidden" name="price" id="pet_price" value="99" />
+        <input type="hidden" name="cuteness_rate" id="pet_cuteness_rate" value="5" />
+    <input name="__RequestVerificationToken" type="hidden" value="CfDJ8CCGo0JRRGRLmFLLJPwADP_ZdnehqevN6wm66UG4IB1PS-VwPsjn2WgsxlcfIIWpQM7ikORuenswKfQKLUd9beqBBKngrfeORNN-0KMd0pEIOXd6T5BccNB6Q9YJzTF2-H7KjnxbuW8nZYTOV9FGSuA" /></form>
+
+                </div>
+                <div class="pet-item col-md-4">
+                    
+    <form method="post" action="/adoption/takemehome">
+        <img class="pet-thumbnail" src="https://services-s3bucketpetadoptioncb20dce5-o33mvyupp12n.s3.ap-southeast-1.amazonaws.com/puppies/p1.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjELT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLXNvdXRoZWFzdC0xIkYwRAIgV5tBEmchqtab9aRsY2PJ7vmkiOxU8ZSsT%2BmcHOlbA%2F0CIA3zYNApcLblzPh48K5vFFGGUhXX3FGJbl2BGz1mnL0JKrMECP3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMOTgzMzA0Njg2NjUyIgwgahrBX8wQd8Dvu2UqhwT%2FpLE7LucQkk8uvhFHAE7W7STL9B5VacD%2BZ%2BDwYJbTnQma%2Bzqq1uucrzRn6LAmR372QxCnq0eFzJnU%2F36pkXBug1huTvTlPkiEzojdXwGDjEBaAetQ5jWDJexThJ58FHH0rMARr%2BXtIZtNr39LZIDltO19EAgf7sZU7tCm7VopbOXvyuqE74z8LT9w2J8Izra%2Bip6B5pWy482wm%2FeY6tjFE6g9B9%2BkQlfPiAED6xNLZgvin0gxZ4nRaVA7WPE60K4g461aoIgaEkWnrsUGIMU%2BozOKE5dR5vxtSy7L9KQCM9PYDbUCW%2FlaWlSloPA7pwh76V%2B%2FcpmdsDQMGPrb4CWQiHJ%2BaKnlPDbBhURQhabnx0Kpz2UClINwQNNGrFC1o5E1WnC9n0PujxIaXOooGEKherhx2P9Ykxlg37tN%2F7yXzM%2F0ogVdK2bajwL2jKPcxH%2B5916nigRYfdw0RtRweDlKwLwq2OyRPIYbPGX%2B36b5%2F2rvHKaxEnhdW6qRinT4HgnQ140PSirgW317HjfvzBqBz37irb6GHC9F56iMGYCxJUbjM42QZk%2FtEgtdGhHLLvjZnHtswO1u7FYJDDWVC2ZQNdB2ZcIsHE%2FCwHV8lKm7c381QR54Kgr5Ns5WGykhGeTi3P3%2BqbfT09ZnXTNa1sIUmoCbgkLtqQ%2BibrjnQiyruKQEfyPeaV8w7fGkpAY6pwGzMjtdgJ5Jre%2FQkBJYyqPpsj3PrDNXXEl9KJCFSqh66UrxobN%2BdDg1OH6m9UY66H5oNmscHfo9T6SVkChKreVNOz4zbDQ1cpWzTK4IBFbAmvULpla9vpVS8SxdLH9XbNpapp%2Fvh5eiKG1f%2Fg2rt50OZ3MsFPofeObxr910%2FR%2BV1WD5AGb4Rl%2Fy1rmrTaFcHXgiKT%2FoISDb0BxIH%2BPqqPsgBnKlhe5DRQ%3D%3D&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20230614T062315Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=300&amp;X-Amz-Credential=ASIA6J4MGZQ6GTML5FHL%2F20230614%2Fap-southeast-1%2Fs3%2Faws4_request&amp;X-Amz-Signature=9fc5f0a90533d08b4ec5348a49291950e2295289238e7ad86105225b965a82a8" />
+            <input class="pet-button" type="submit" value="Take me home"/>
+        
+        <div class="pet-name">
+            <span>puppy-brown</span>
+        </div>
+        <div class="pet-price">
+            <span>99</span>
+        </div>
+
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+
+        <input type="hidden" name="petcolor" id="pet_petcolor" value="brown" />
+        <input type="hidden" name="petid" id="pet_petid" value="003" />
+        <input type="hidden" name="pettype" id="pet_pettype" value="puppy" />
+        <input type="hidden" name="peturl" id="pet_peturl" value="https://services-s3bucketpetadoptioncb20dce5-o33mvyupp12n.s3.ap-southeast-1.amazonaws.com/puppies/p1.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjELT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLXNvdXRoZWFzdC0xIkYwRAIgV5tBEmchqtab9aRsY2PJ7vmkiOxU8ZSsT%2BmcHOlbA%2F0CIA3zYNApcLblzPh48K5vFFGGUhXX3FGJbl2BGz1mnL0JKrMECP3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMOTgzMzA0Njg2NjUyIgwgahrBX8wQd8Dvu2UqhwT%2FpLE7LucQkk8uvhFHAE7W7STL9B5VacD%2BZ%2BDwYJbTnQma%2Bzqq1uucrzRn6LAmR372QxCnq0eFzJnU%2F36pkXBug1huTvTlPkiEzojdXwGDjEBaAetQ5jWDJexThJ58FHH0rMARr%2BXtIZtNr39LZIDltO19EAgf7sZU7tCm7VopbOXvyuqE74z8LT9w2J8Izra%2Bip6B5pWy482wm%2FeY6tjFE6g9B9%2BkQlfPiAED6xNLZgvin0gxZ4nRaVA7WPE60K4g461aoIgaEkWnrsUGIMU%2BozOKE5dR5vxtSy7L9KQCM9PYDbUCW%2FlaWlSloPA7pwh76V%2B%2FcpmdsDQMGPrb4CWQiHJ%2BaKnlPDbBhURQhabnx0Kpz2UClINwQNNGrFC1o5E1WnC9n0PujxIaXOooGEKherhx2P9Ykxlg37tN%2F7yXzM%2F0ogVdK2bajwL2jKPcxH%2B5916nigRYfdw0RtRweDlKwLwq2OyRPIYbPGX%2B36b5%2F2rvHKaxEnhdW6qRinT4HgnQ140PSirgW317HjfvzBqBz37irb6GHC9F56iMGYCxJUbjM42QZk%2FtEgtdGhHLLvjZnHtswO1u7FYJDDWVC2ZQNdB2ZcIsHE%2FCwHV8lKm7c381QR54Kgr5Ns5WGykhGeTi3P3%2BqbfT09ZnXTNa1sIUmoCbgkLtqQ%2BibrjnQiyruKQEfyPeaV8w7fGkpAY6pwGzMjtdgJ5Jre%2FQkBJYyqPpsj3PrDNXXEl9KJCFSqh66UrxobN%2BdDg1OH6m9UY66H5oNmscHfo9T6SVkChKreVNOz4zbDQ1cpWzTK4IBFbAmvULpla9vpVS8SxdLH9XbNpapp%2Fvh5eiKG1f%2Fg2rt50OZ3MsFPofeObxr910%2FR%2BV1WD5AGb4Rl%2Fy1rmrTaFcHXgiKT%2FoISDb0BxIH%2BPqqPsgBnKlhe5DRQ%3D%3D&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20230614T062315Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=300&amp;X-Amz-Credential=ASIA6J4MGZQ6GTML5FHL%2F20230614%2Fap-southeast-1%2Fs3%2Faws4_request&amp;X-Amz-Signature=9fc5f0a90533d08b4ec5348a49291950e2295289238e7ad86105225b965a82a8" />
+        <input type="hidden" name="price" id="pet_price" value="99" />
+        <input type="hidden" name="cuteness_rate" id="pet_cuteness_rate" value="5" />
+    <input name="__RequestVerificationToken" type="hidden" value="CfDJ8CCGo0JRRGRLmFLLJPwADP_ZdnehqevN6wm66UG4IB1PS-VwPsjn2WgsxlcfIIWpQM7ikORuenswKfQKLUd9beqBBKngrfeORNN-0KMd0pEIOXd6T5BccNB6Q9YJzTF2-H7KjnxbuW8nZYTOV9FGSuA" /></form>
+
+                </div>
+                <div class="pet-item col-md-4">
+                    
+    <form method="post" action="/adoption/takemehome">
+        <img class="pet-thumbnail" src="https://services-s3bucketpetadoptioncb20dce5-o33mvyupp12n.s3.ap-southeast-1.amazonaws.com/puppies/p11.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjELT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLXNvdXRoZWFzdC0xIkYwRAIgV5tBEmchqtab9aRsY2PJ7vmkiOxU8ZSsT%2BmcHOlbA%2F0CIA3zYNApcLblzPh48K5vFFGGUhXX3FGJbl2BGz1mnL0JKrMECP3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMOTgzMzA0Njg2NjUyIgwgahrBX8wQd8Dvu2UqhwT%2FpLE7LucQkk8uvhFHAE7W7STL9B5VacD%2BZ%2BDwYJbTnQma%2Bzqq1uucrzRn6LAmR372QxCnq0eFzJnU%2F36pkXBug1huTvTlPkiEzojdXwGDjEBaAetQ5jWDJexThJ58FHH0rMARr%2BXtIZtNr39LZIDltO19EAgf7sZU7tCm7VopbOXvyuqE74z8LT9w2J8Izra%2Bip6B5pWy482wm%2FeY6tjFE6g9B9%2BkQlfPiAED6xNLZgvin0gxZ4nRaVA7WPE60K4g461aoIgaEkWnrsUGIMU%2BozOKE5dR5vxtSy7L9KQCM9PYDbUCW%2FlaWlSloPA7pwh76V%2B%2FcpmdsDQMGPrb4CWQiHJ%2BaKnlPDbBhURQhabnx0Kpz2UClINwQNNGrFC1o5E1WnC9n0PujxIaXOooGEKherhx2P9Ykxlg37tN%2F7yXzM%2F0ogVdK2bajwL2jKPcxH%2B5916nigRYfdw0RtRweDlKwLwq2OyRPIYbPGX%2B36b5%2F2rvHKaxEnhdW6qRinT4HgnQ140PSirgW317HjfvzBqBz37irb6GHC9F56iMGYCxJUbjM42QZk%2FtEgtdGhHLLvjZnHtswO1u7FYJDDWVC2ZQNdB2ZcIsHE%2FCwHV8lKm7c381QR54Kgr5Ns5WGykhGeTi3P3%2BqbfT09ZnXTNa1sIUmoCbgkLtqQ%2BibrjnQiyruKQEfyPeaV8w7fGkpAY6pwGzMjtdgJ5Jre%2FQkBJYyqPpsj3PrDNXXEl9KJCFSqh66UrxobN%2BdDg1OH6m9UY66H5oNmscHfo9T6SVkChKreVNOz4zbDQ1cpWzTK4IBFbAmvULpla9vpVS8SxdLH9XbNpapp%2Fvh5eiKG1f%2Fg2rt50OZ3MsFPofeObxr910%2FR%2BV1WD5AGb4Rl%2Fy1rmrTaFcHXgiKT%2FoISDb0BxIH%2BPqqPsgBnKlhe5DRQ%3D%3D&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20230614T062315Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=300&amp;X-Amz-Credential=ASIA6J4MGZQ6GTML5FHL%2F20230614%2Fap-southeast-1%2Fs3%2Faws4_request&amp;X-Amz-Signature=4a3495afb5e7a38f69b58456eba0247879f67457c99262434aa3117aa315620a" />
+            <span class="alert-danger">Not available</span>
+        
+        <div class="pet-name">
+            <span>puppy-black</span>
+        </div>
+        <div class="pet-price">
+            <span>89</span>
+        </div>
+
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+
+        <input type="hidden" name="petcolor" id="pet_petcolor" value="black" />
+        <input type="hidden" name="petid" id="pet_petid" value="004" />
+        <input type="hidden" name="pettype" id="pet_pettype" value="puppy" />
+        <input type="hidden" name="peturl" id="pet_peturl" value="https://services-s3bucketpetadoptioncb20dce5-o33mvyupp12n.s3.ap-southeast-1.amazonaws.com/puppies/p11.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjELT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLXNvdXRoZWFzdC0xIkYwRAIgV5tBEmchqtab9aRsY2PJ7vmkiOxU8ZSsT%2BmcHOlbA%2F0CIA3zYNApcLblzPh48K5vFFGGUhXX3FGJbl2BGz1mnL0JKrMECP3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMOTgzMzA0Njg2NjUyIgwgahrBX8wQd8Dvu2UqhwT%2FpLE7LucQkk8uvhFHAE7W7STL9B5VacD%2BZ%2BDwYJbTnQma%2Bzqq1uucrzRn6LAmR372QxCnq0eFzJnU%2F36pkXBug1huTvTlPkiEzojdXwGDjEBaAetQ5jWDJexThJ58FHH0rMARr%2BXtIZtNr39LZIDltO19EAgf7sZU7tCm7VopbOXvyuqE74z8LT9w2J8Izra%2Bip6B5pWy482wm%2FeY6tjFE6g9B9%2BkQlfPiAED6xNLZgvin0gxZ4nRaVA7WPE60K4g461aoIgaEkWnrsUGIMU%2BozOKE5dR5vxtSy7L9KQCM9PYDbUCW%2FlaWlSloPA7pwh76V%2B%2FcpmdsDQMGPrb4CWQiHJ%2BaKnlPDbBhURQhabnx0Kpz2UClINwQNNGrFC1o5E1WnC9n0PujxIaXOooGEKherhx2P9Ykxlg37tN%2F7yXzM%2F0ogVdK2bajwL2jKPcxH%2B5916nigRYfdw0RtRweDlKwLwq2OyRPIYbPGX%2B36b5%2F2rvHKaxEnhdW6qRinT4HgnQ140PSirgW317HjfvzBqBz37irb6GHC9F56iMGYCxJUbjM42QZk%2FtEgtdGhHLLvjZnHtswO1u7FYJDDWVC2ZQNdB2ZcIsHE%2FCwHV8lKm7c381QR54Kgr5Ns5WGykhGeTi3P3%2BqbfT09ZnXTNa1sIUmoCbgkLtqQ%2BibrjnQiyruKQEfyPeaV8w7fGkpAY6pwGzMjtdgJ5Jre%2FQkBJYyqPpsj3PrDNXXEl9KJCFSqh66UrxobN%2BdDg1OH6m9UY66H5oNmscHfo9T6SVkChKreVNOz4zbDQ1cpWzTK4IBFbAmvULpla9vpVS8SxdLH9XbNpapp%2Fvh5eiKG1f%2Fg2rt50OZ3MsFPofeObxr910%2FR%2BV1WD5AGb4Rl%2Fy1rmrTaFcHXgiKT%2FoISDb0BxIH%2BPqqPsgBnKlhe5DRQ%3D%3D&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20230614T062315Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=300&amp;X-Amz-Credential=ASIA6J4MGZQ6GTML5FHL%2F20230614%2Fap-southeast-1%2Fs3%2Faws4_request&amp;X-Amz-Signature=4a3495afb5e7a38f69b58456eba0247879f67457c99262434aa3117aa315620a" />
+        <input type="hidden" name="price" id="pet_price" value="89" />
+        <input type="hidden" name="cuteness_rate" id="pet_cuteness_rate" value="5" />
+    <input name="__RequestVerificationToken" type="hidden" value="CfDJ8CCGo0JRRGRLmFLLJPwADP_ZdnehqevN6wm66UG4IB1PS-VwPsjn2WgsxlcfIIWpQM7ikORuenswKfQKLUd9beqBBKngrfeORNN-0KMd0pEIOXd6T5BccNB6Q9YJzTF2-H7KjnxbuW8nZYTOV9FGSuA" /></form>
+
+                </div>
+                <div class="pet-item col-md-4">
+                    
+    <form method="post" action="/adoption/takemehome">
+        <img class="pet-thumbnail" src="https://services-s3bucketpetadoptioncb20dce5-o33mvyupp12n.s3.ap-southeast-1.amazonaws.com/puppies/p3.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjELT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLXNvdXRoZWFzdC0xIkYwRAIgV5tBEmchqtab9aRsY2PJ7vmkiOxU8ZSsT%2BmcHOlbA%2F0CIA3zYNApcLblzPh48K5vFFGGUhXX3FGJbl2BGz1mnL0JKrMECP3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMOTgzMzA0Njg2NjUyIgwgahrBX8wQd8Dvu2UqhwT%2FpLE7LucQkk8uvhFHAE7W7STL9B5VacD%2BZ%2BDwYJbTnQma%2Bzqq1uucrzRn6LAmR372QxCnq0eFzJnU%2F36pkXBug1huTvTlPkiEzojdXwGDjEBaAetQ5jWDJexThJ58FHH0rMARr%2BXtIZtNr39LZIDltO19EAgf7sZU7tCm7VopbOXvyuqE74z8LT9w2J8Izra%2Bip6B5pWy482wm%2FeY6tjFE6g9B9%2BkQlfPiAED6xNLZgvin0gxZ4nRaVA7WPE60K4g461aoIgaEkWnrsUGIMU%2BozOKE5dR5vxtSy7L9KQCM9PYDbUCW%2FlaWlSloPA7pwh76V%2B%2FcpmdsDQMGPrb4CWQiHJ%2BaKnlPDbBhURQhabnx0Kpz2UClINwQNNGrFC1o5E1WnC9n0PujxIaXOooGEKherhx2P9Ykxlg37tN%2F7yXzM%2F0ogVdK2bajwL2jKPcxH%2B5916nigRYfdw0RtRweDlKwLwq2OyRPIYbPGX%2B36b5%2F2rvHKaxEnhdW6qRinT4HgnQ140PSirgW317HjfvzBqBz37irb6GHC9F56iMGYCxJUbjM42QZk%2FtEgtdGhHLLvjZnHtswO1u7FYJDDWVC2ZQNdB2ZcIsHE%2FCwHV8lKm7c381QR54Kgr5Ns5WGykhGeTi3P3%2BqbfT09ZnXTNa1sIUmoCbgkLtqQ%2BibrjnQiyruKQEfyPeaV8w7fGkpAY6pwGzMjtdgJ5Jre%2FQkBJYyqPpsj3PrDNXXEl9KJCFSqh66UrxobN%2BdDg1OH6m9UY66H5oNmscHfo9T6SVkChKreVNOz4zbDQ1cpWzTK4IBFbAmvULpla9vpVS8SxdLH9XbNpapp%2Fvh5eiKG1f%2Fg2rt50OZ3MsFPofeObxr910%2FR%2BV1WD5AGb4Rl%2Fy1rmrTaFcHXgiKT%2FoISDb0BxIH%2BPqqPsgBnKlhe5DRQ%3D%3D&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20230614T062315Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=300&amp;X-Amz-Credential=ASIA6J4MGZQ6GTML5FHL%2F20230614%2Fap-southeast-1%2Fs3%2Faws4_request&amp;X-Amz-Signature=36e37a04fa9f20f6978a2bb3c3bdcd5a74b2455b6d72979c3e87fad3948b73d9" />
+            <input class="pet-button" type="submit" value="Take me home"/>
+        
+        <div class="pet-name">
+            <span>puppy-brown</span>
+        </div>
+        <div class="pet-price">
+            <span>59</span>
+        </div>
+
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+
+        <input type="hidden" name="petcolor" id="pet_petcolor" value="brown" />
+        <input type="hidden" name="petid" id="pet_petid" value="005" />
+        <input type="hidden" name="pettype" id="pet_pettype" value="puppy" />
+        <input type="hidden" name="peturl" id="pet_peturl" value="https://services-s3bucketpetadoptioncb20dce5-o33mvyupp12n.s3.ap-southeast-1.amazonaws.com/puppies/p3.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjELT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLXNvdXRoZWFzdC0xIkYwRAIgV5tBEmchqtab9aRsY2PJ7vmkiOxU8ZSsT%2BmcHOlbA%2F0CIA3zYNApcLblzPh48K5vFFGGUhXX3FGJbl2BGz1mnL0JKrMECP3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMOTgzMzA0Njg2NjUyIgwgahrBX8wQd8Dvu2UqhwT%2FpLE7LucQkk8uvhFHAE7W7STL9B5VacD%2BZ%2BDwYJbTnQma%2Bzqq1uucrzRn6LAmR372QxCnq0eFzJnU%2F36pkXBug1huTvTlPkiEzojdXwGDjEBaAetQ5jWDJexThJ58FHH0rMARr%2BXtIZtNr39LZIDltO19EAgf7sZU7tCm7VopbOXvyuqE74z8LT9w2J8Izra%2Bip6B5pWy482wm%2FeY6tjFE6g9B9%2BkQlfPiAED6xNLZgvin0gxZ4nRaVA7WPE60K4g461aoIgaEkWnrsUGIMU%2BozOKE5dR5vxtSy7L9KQCM9PYDbUCW%2FlaWlSloPA7pwh76V%2B%2FcpmdsDQMGPrb4CWQiHJ%2BaKnlPDbBhURQhabnx0Kpz2UClINwQNNGrFC1o5E1WnC9n0PujxIaXOooGEKherhx2P9Ykxlg37tN%2F7yXzM%2F0ogVdK2bajwL2jKPcxH%2B5916nigRYfdw0RtRweDlKwLwq2OyRPIYbPGX%2B36b5%2F2rvHKaxEnhdW6qRinT4HgnQ140PSirgW317HjfvzBqBz37irb6GHC9F56iMGYCxJUbjM42QZk%2FtEgtdGhHLLvjZnHtswO1u7FYJDDWVC2ZQNdB2ZcIsHE%2FCwHV8lKm7c381QR54Kgr5Ns5WGykhGeTi3P3%2BqbfT09ZnXTNa1sIUmoCbgkLtqQ%2BibrjnQiyruKQEfyPeaV8w7fGkpAY6pwGzMjtdgJ5Jre%2FQkBJYyqPpsj3PrDNXXEl9KJCFSqh66UrxobN%2BdDg1OH6m9UY66H5oNmscHfo9T6SVkChKreVNOz4zbDQ1cpWzTK4IBFbAmvULpla9vpVS8SxdLH9XbNpapp%2Fvh5eiKG1f%2Fg2rt50OZ3MsFPofeObxr910%2FR%2BV1WD5AGb4Rl%2Fy1rmrTaFcHXgiKT%2FoISDb0BxIH%2BPqqPsgBnKlhe5DRQ%3D%3D&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20230614T062315Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=300&amp;X-Amz-Credential=ASIA6J4MGZQ6GTML5FHL%2F20230614%2Fap-southeast-1%2Fs3%2Faws4_request&amp;X-Amz-Signature=36e37a04fa9f20f6978a2bb3c3bdcd5a74b2455b6d72979c3e87fad3948b73d9" />
+        <input type="hidden" name="price" id="pet_price" value="59" />
+        <input type="hidden" name="cuteness_rate" id="pet_cuteness_rate" value="3" />
+    <input name="__RequestVerificationToken" type="hidden" value="CfDJ8CCGo0JRRGRLmFLLJPwADP_ZdnehqevN6wm66UG4IB1PS-VwPsjn2WgsxlcfIIWpQM7ikORuenswKfQKLUd9beqBBKngrfeORNN-0KMd0pEIOXd6T5BccNB6Q9YJzTF2-H7KjnxbuW8nZYTOV9FGSuA" /></form>
+
+                </div>
+                <div class="pet-item col-md-4">
+                    
+    <form method="post" action="/adoption/takemehome">
+        <img class="pet-thumbnail" src="https://services-s3bucketpetadoptioncb20dce5-o33mvyupp12n.s3.ap-southeast-1.amazonaws.com/puppies/p6.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjELT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLXNvdXRoZWFzdC0xIkYwRAIgV5tBEmchqtab9aRsY2PJ7vmkiOxU8ZSsT%2BmcHOlbA%2F0CIA3zYNApcLblzPh48K5vFFGGUhXX3FGJbl2BGz1mnL0JKrMECP3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMOTgzMzA0Njg2NjUyIgwgahrBX8wQd8Dvu2UqhwT%2FpLE7LucQkk8uvhFHAE7W7STL9B5VacD%2BZ%2BDwYJbTnQma%2Bzqq1uucrzRn6LAmR372QxCnq0eFzJnU%2F36pkXBug1huTvTlPkiEzojdXwGDjEBaAetQ5jWDJexThJ58FHH0rMARr%2BXtIZtNr39LZIDltO19EAgf7sZU7tCm7VopbOXvyuqE74z8LT9w2J8Izra%2Bip6B5pWy482wm%2FeY6tjFE6g9B9%2BkQlfPiAED6xNLZgvin0gxZ4nRaVA7WPE60K4g461aoIgaEkWnrsUGIMU%2BozOKE5dR5vxtSy7L9KQCM9PYDbUCW%2FlaWlSloPA7pwh76V%2B%2FcpmdsDQMGPrb4CWQiHJ%2BaKnlPDbBhURQhabnx0Kpz2UClINwQNNGrFC1o5E1WnC9n0PujxIaXOooGEKherhx2P9Ykxlg37tN%2F7yXzM%2F0ogVdK2bajwL2jKPcxH%2B5916nigRYfdw0RtRweDlKwLwq2OyRPIYbPGX%2B36b5%2F2rvHKaxEnhdW6qRinT4HgnQ140PSirgW317HjfvzBqBz37irb6GHC9F56iMGYCxJUbjM42QZk%2FtEgtdGhHLLvjZnHtswO1u7FYJDDWVC2ZQNdB2ZcIsHE%2FCwHV8lKm7c381QR54Kgr5Ns5WGykhGeTi3P3%2BqbfT09ZnXTNa1sIUmoCbgkLtqQ%2BibrjnQiyruKQEfyPeaV8w7fGkpAY6pwGzMjtdgJ5Jre%2FQkBJYyqPpsj3PrDNXXEl9KJCFSqh66UrxobN%2BdDg1OH6m9UY66H5oNmscHfo9T6SVkChKreVNOz4zbDQ1cpWzTK4IBFbAmvULpla9vpVS8SxdLH9XbNpapp%2Fvh5eiKG1f%2Fg2rt50OZ3MsFPofeObxr910%2FR%2BV1WD5AGb4Rl%2Fy1rmrTaFcHXgiKT%2FoISDb0BxIH%2BPqqPsgBnKlhe5DRQ%3D%3D&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20230614T062315Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=300&amp;X-Amz-Credential=ASIA6J4MGZQ6GTML5FHL%2F20230614%2Fap-southeast-1%2Fs3%2Faws4_request&amp;X-Amz-Signature=20d1974e58505bc8e9cb79a4fb610716cbcb73e90a328d8a99d503e6caba186c" />
+            <span class="alert-danger">Not available</span>
+        
+        <div class="pet-name">
+            <span>puppy-brown</span>
+        </div>
+        <div class="pet-price">
+            <span>100</span>
+        </div>
+
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+
+        <input type="hidden" name="petcolor" id="pet_petcolor" value="brown" />
+        <input type="hidden" name="petid" id="pet_petid" value="006" />
+        <input type="hidden" name="pettype" id="pet_pettype" value="puppy" />
+        <input type="hidden" name="peturl" id="pet_peturl" value="https://services-s3bucketpetadoptioncb20dce5-o33mvyupp12n.s3.ap-southeast-1.amazonaws.com/puppies/p6.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjELT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLXNvdXRoZWFzdC0xIkYwRAIgV5tBEmchqtab9aRsY2PJ7vmkiOxU8ZSsT%2BmcHOlbA%2F0CIA3zYNApcLblzPh48K5vFFGGUhXX3FGJbl2BGz1mnL0JKrMECP3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMOTgzMzA0Njg2NjUyIgwgahrBX8wQd8Dvu2UqhwT%2FpLE7LucQkk8uvhFHAE7W7STL9B5VacD%2BZ%2BDwYJbTnQma%2Bzqq1uucrzRn6LAmR372QxCnq0eFzJnU%2F36pkXBug1huTvTlPkiEzojdXwGDjEBaAetQ5jWDJexThJ58FHH0rMARr%2BXtIZtNr39LZIDltO19EAgf7sZU7tCm7VopbOXvyuqE74z8LT9w2J8Izra%2Bip6B5pWy482wm%2FeY6tjFE6g9B9%2BkQlfPiAED6xNLZgvin0gxZ4nRaVA7WPE60K4g461aoIgaEkWnrsUGIMU%2BozOKE5dR5vxtSy7L9KQCM9PYDbUCW%2FlaWlSloPA7pwh76V%2B%2FcpmdsDQMGPrb4CWQiHJ%2BaKnlPDbBhURQhabnx0Kpz2UClINwQNNGrFC1o5E1WnC9n0PujxIaXOooGEKherhx2P9Ykxlg37tN%2F7yXzM%2F0ogVdK2bajwL2jKPcxH%2B5916nigRYfdw0RtRweDlKwLwq2OyRPIYbPGX%2B36b5%2F2rvHKaxEnhdW6qRinT4HgnQ140PSirgW317HjfvzBqBz37irb6GHC9F56iMGYCxJUbjM42QZk%2FtEgtdGhHLLvjZnHtswO1u7FYJDDWVC2ZQNdB2ZcIsHE%2FCwHV8lKm7c381QR54Kgr5Ns5WGykhGeTi3P3%2BqbfT09ZnXTNa1sIUmoCbgkLtqQ%2BibrjnQiyruKQEfyPeaV8w7fGkpAY6pwGzMjtdgJ5Jre%2FQkBJYyqPpsj3PrDNXXEl9KJCFSqh66UrxobN%2BdDg1OH6m9UY66H5oNmscHfo9T6SVkChKreVNOz4zbDQ1cpWzTK4IBFbAmvULpla9vpVS8SxdLH9XbNpapp%2Fvh5eiKG1f%2Fg2rt50OZ3MsFPofeObxr910%2FR%2BV1WD5AGb4Rl%2Fy1rmrTaFcHXgiKT%2FoISDb0BxIH%2BPqqPsgBnKlhe5DRQ%3D%3D&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20230614T062315Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=300&amp;X-Amz-Credential=ASIA6J4MGZQ6GTML5FHL%2F20230614%2Fap-southeast-1%2Fs3%2Faws4_request&amp;X-Amz-Signature=20d1974e58505bc8e9cb79a4fb610716cbcb73e90a328d8a99d503e6caba186c" />
+        <input type="hidden" name="price" id="pet_price" value="100" />
+        <input type="hidden" name="cuteness_rate" id="pet_cuteness_rate" value="3" />
+    <input name="__RequestVerificationToken" type="hidden" value="CfDJ8CCGo0JRRGRLmFLLJPwADP_ZdnehqevN6wm66UG4IB1PS-VwPsjn2WgsxlcfIIWpQM7ikORuenswKfQKLUd9beqBBKngrfeORNN-0KMd0pEIOXd6T5BccNB6Q9YJzTF2-H7KjnxbuW8nZYTOV9FGSuA" /></form>
+
+                </div>
+                <div class="pet-item col-md-4">
+                    
+    <form method="post" action="/adoption/takemehome">
+        <img class="pet-thumbnail" src="https://services-s3bucketpetadoptioncb20dce5-o33mvyupp12n.s3.ap-southeast-1.amazonaws.com/puppies/p4.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjELT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLXNvdXRoZWFzdC0xIkYwRAIgV5tBEmchqtab9aRsY2PJ7vmkiOxU8ZSsT%2BmcHOlbA%2F0CIA3zYNApcLblzPh48K5vFFGGUhXX3FGJbl2BGz1mnL0JKrMECP3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMOTgzMzA0Njg2NjUyIgwgahrBX8wQd8Dvu2UqhwT%2FpLE7LucQkk8uvhFHAE7W7STL9B5VacD%2BZ%2BDwYJbTnQma%2Bzqq1uucrzRn6LAmR372QxCnq0eFzJnU%2F36pkXBug1huTvTlPkiEzojdXwGDjEBaAetQ5jWDJexThJ58FHH0rMARr%2BXtIZtNr39LZIDltO19EAgf7sZU7tCm7VopbOXvyuqE74z8LT9w2J8Izra%2Bip6B5pWy482wm%2FeY6tjFE6g9B9%2BkQlfPiAED6xNLZgvin0gxZ4nRaVA7WPE60K4g461aoIgaEkWnrsUGIMU%2BozOKE5dR5vxtSy7L9KQCM9PYDbUCW%2FlaWlSloPA7pwh76V%2B%2FcpmdsDQMGPrb4CWQiHJ%2BaKnlPDbBhURQhabnx0Kpz2UClINwQNNGrFC1o5E1WnC9n0PujxIaXOooGEKherhx2P9Ykxlg37tN%2F7yXzM%2F0ogVdK2bajwL2jKPcxH%2B5916nigRYfdw0RtRweDlKwLwq2OyRPIYbPGX%2B36b5%2F2rvHKaxEnhdW6qRinT4HgnQ140PSirgW317HjfvzBqBz37irb6GHC9F56iMGYCxJUbjM42QZk%2FtEgtdGhHLLvjZnHtswO1u7FYJDDWVC2ZQNdB2ZcIsHE%2FCwHV8lKm7c381QR54Kgr5Ns5WGykhGeTi3P3%2BqbfT09ZnXTNa1sIUmoCbgkLtqQ%2BibrjnQiyruKQEfyPeaV8w7fGkpAY6pwGzMjtdgJ5Jre%2FQkBJYyqPpsj3PrDNXXEl9KJCFSqh66UrxobN%2BdDg1OH6m9UY66H5oNmscHfo9T6SVkChKreVNOz4zbDQ1cpWzTK4IBFbAmvULpla9vpVS8SxdLH9XbNpapp%2Fvh5eiKG1f%2Fg2rt50OZ3MsFPofeObxr910%2FR%2BV1WD5AGb4Rl%2Fy1rmrTaFcHXgiKT%2FoISDb0BxIH%2BPqqPsgBnKlhe5DRQ%3D%3D&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20230614T062315Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=300&amp;X-Amz-Credential=ASIA6J4MGZQ6GTML5FHL%2F20230614%2Fap-southeast-1%2Fs3%2Faws4_request&amp;X-Amz-Signature=83e8422b7abc59fb0e695d7df754b81010dba48efc24c3aaa87df6e514c44836" />
+            <input class="pet-button" type="submit" value="Take me home"/>
+        
+        <div class="pet-name">
+            <span>puppy-brown</span>
+        </div>
+        <div class="pet-price">
+            <span>70</span>
+        </div>
+
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+
+        <input type="hidden" name="petcolor" id="pet_petcolor" value="brown" />
+        <input type="hidden" name="petid" id="pet_petid" value="007" />
+        <input type="hidden" name="pettype" id="pet_pettype" value="puppy" />
+        <input type="hidden" name="peturl" id="pet_peturl" value="https://services-s3bucketpetadoptioncb20dce5-o33mvyupp12n.s3.ap-southeast-1.amazonaws.com/puppies/p4.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjELT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLXNvdXRoZWFzdC0xIkYwRAIgV5tBEmchqtab9aRsY2PJ7vmkiOxU8ZSsT%2BmcHOlbA%2F0CIA3zYNApcLblzPh48K5vFFGGUhXX3FGJbl2BGz1mnL0JKrMECP3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMOTgzMzA0Njg2NjUyIgwgahrBX8wQd8Dvu2UqhwT%2FpLE7LucQkk8uvhFHAE7W7STL9B5VacD%2BZ%2BDwYJbTnQma%2Bzqq1uucrzRn6LAmR372QxCnq0eFzJnU%2F36pkXBug1huTvTlPkiEzojdXwGDjEBaAetQ5jWDJexThJ58FHH0rMARr%2BXtIZtNr39LZIDltO19EAgf7sZU7tCm7VopbOXvyuqE74z8LT9w2J8Izra%2Bip6B5pWy482wm%2FeY6tjFE6g9B9%2BkQlfPiAED6xNLZgvin0gxZ4nRaVA7WPE60K4g461aoIgaEkWnrsUGIMU%2BozOKE5dR5vxtSy7L9KQCM9PYDbUCW%2FlaWlSloPA7pwh76V%2B%2FcpmdsDQMGPrb4CWQiHJ%2BaKnlPDbBhURQhabnx0Kpz2UClINwQNNGrFC1o5E1WnC9n0PujxIaXOooGEKherhx2P9Ykxlg37tN%2F7yXzM%2F0ogVdK2bajwL2jKPcxH%2B5916nigRYfdw0RtRweDlKwLwq2OyRPIYbPGX%2B36b5%2F2rvHKaxEnhdW6qRinT4HgnQ140PSirgW317HjfvzBqBz37irb6GHC9F56iMGYCxJUbjM42QZk%2FtEgtdGhHLLvjZnHtswO1u7FYJDDWVC2ZQNdB2ZcIsHE%2FCwHV8lKm7c381QR54Kgr5Ns5WGykhGeTi3P3%2BqbfT09ZnXTNa1sIUmoCbgkLtqQ%2BibrjnQiyruKQEfyPeaV8w7fGkpAY6pwGzMjtdgJ5Jre%2FQkBJYyqPpsj3PrDNXXEl9KJCFSqh66UrxobN%2BdDg1OH6m9UY66H5oNmscHfo9T6SVkChKreVNOz4zbDQ1cpWzTK4IBFbAmvULpla9vpVS8SxdLH9XbNpapp%2Fvh5eiKG1f%2Fg2rt50OZ3MsFPofeObxr910%2FR%2BV1WD5AGb4Rl%2Fy1rmrTaFcHXgiKT%2FoISDb0BxIH%2BPqqPsgBnKlhe5DRQ%3D%3D&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20230614T062315Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=300&amp;X-Amz-Credential=ASIA6J4MGZQ6GTML5FHL%2F20230614%2Fap-southeast-1%2Fs3%2Faws4_request&amp;X-Amz-Signature=83e8422b7abc59fb0e695d7df754b81010dba48efc24c3aaa87df6e514c44836" />
+        <input type="hidden" name="price" id="pet_price" value="70" />
+        <input type="hidden" name="cuteness_rate" id="pet_cuteness_rate" value="4" />
+    <input name="__RequestVerificationToken" type="hidden" value="CfDJ8CCGo0JRRGRLmFLLJPwADP_ZdnehqevN6wm66UG4IB1PS-VwPsjn2WgsxlcfIIWpQM7ikORuenswKfQKLUd9beqBBKngrfeORNN-0KMd0pEIOXd6T5BccNB6Q9YJzTF2-H7KjnxbuW8nZYTOV9FGSuA" /></form>
+
+                </div>
+                <div class="pet-item col-md-4">
+                    
+    <form method="post" action="/adoption/takemehome">
+        <img class="pet-thumbnail" src="https://services-s3bucketpetadoptioncb20dce5-o33mvyupp12n.s3.ap-southeast-1.amazonaws.com/puppies/p7.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjELT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLXNvdXRoZWFzdC0xIkYwRAIgV5tBEmchqtab9aRsY2PJ7vmkiOxU8ZSsT%2BmcHOlbA%2F0CIA3zYNApcLblzPh48K5vFFGGUhXX3FGJbl2BGz1mnL0JKrMECP3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMOTgzMzA0Njg2NjUyIgwgahrBX8wQd8Dvu2UqhwT%2FpLE7LucQkk8uvhFHAE7W7STL9B5VacD%2BZ%2BDwYJbTnQma%2Bzqq1uucrzRn6LAmR372QxCnq0eFzJnU%2F36pkXBug1huTvTlPkiEzojdXwGDjEBaAetQ5jWDJexThJ58FHH0rMARr%2BXtIZtNr39LZIDltO19EAgf7sZU7tCm7VopbOXvyuqE74z8LT9w2J8Izra%2Bip6B5pWy482wm%2FeY6tjFE6g9B9%2BkQlfPiAED6xNLZgvin0gxZ4nRaVA7WPE60K4g461aoIgaEkWnrsUGIMU%2BozOKE5dR5vxtSy7L9KQCM9PYDbUCW%2FlaWlSloPA7pwh76V%2B%2FcpmdsDQMGPrb4CWQiHJ%2BaKnlPDbBhURQhabnx0Kpz2UClINwQNNGrFC1o5E1WnC9n0PujxIaXOooGEKherhx2P9Ykxlg37tN%2F7yXzM%2F0ogVdK2bajwL2jKPcxH%2B5916nigRYfdw0RtRweDlKwLwq2OyRPIYbPGX%2B36b5%2F2rvHKaxEnhdW6qRinT4HgnQ140PSirgW317HjfvzBqBz37irb6GHC9F56iMGYCxJUbjM42QZk%2FtEgtdGhHLLvjZnHtswO1u7FYJDDWVC2ZQNdB2ZcIsHE%2FCwHV8lKm7c381QR54Kgr5Ns5WGykhGeTi3P3%2BqbfT09ZnXTNa1sIUmoCbgkLtqQ%2BibrjnQiyruKQEfyPeaV8w7fGkpAY6pwGzMjtdgJ5Jre%2FQkBJYyqPpsj3PrDNXXEl9KJCFSqh66UrxobN%2BdDg1OH6m9UY66H5oNmscHfo9T6SVkChKreVNOz4zbDQ1cpWzTK4IBFbAmvULpla9vpVS8SxdLH9XbNpapp%2Fvh5eiKG1f%2Fg2rt50OZ3MsFPofeObxr910%2FR%2BV1WD5AGb4Rl%2Fy1rmrTaFcHXgiKT%2FoISDb0BxIH%2BPqqPsgBnKlhe5DRQ%3D%3D&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20230614T062315Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=300&amp;X-Amz-Credential=ASIA6J4MGZQ6GTML5FHL%2F20230614%2Fap-southeast-1%2Fs3%2Faws4_request&amp;X-Amz-Signature=f4d9ad4f0d2ceaf6fe11a9958b5887e51596127d4c572fffe8cb1486f86884d6" />
+            <span class="alert-danger">Not available</span>
+        
+        <div class="pet-name">
+            <span>puppy-brown</span>
+        </div>
+        <div class="pet-price">
+            <span>600</span>
+        </div>
+
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+
+        <input type="hidden" name="petcolor" id="pet_petcolor" value="brown" />
+        <input type="hidden" name="petid" id="pet_petid" value="008" />
+        <input type="hidden" name="pettype" id="pet_pettype" value="puppy" />
+        <input type="hidden" name="peturl" id="pet_peturl" value="https://services-s3bucketpetadoptioncb20dce5-o33mvyupp12n.s3.ap-southeast-1.amazonaws.com/puppies/p7.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjELT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLXNvdXRoZWFzdC0xIkYwRAIgV5tBEmchqtab9aRsY2PJ7vmkiOxU8ZSsT%2BmcHOlbA%2F0CIA3zYNApcLblzPh48K5vFFGGUhXX3FGJbl2BGz1mnL0JKrMECP3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMOTgzMzA0Njg2NjUyIgwgahrBX8wQd8Dvu2UqhwT%2FpLE7LucQkk8uvhFHAE7W7STL9B5VacD%2BZ%2BDwYJbTnQma%2Bzqq1uucrzRn6LAmR372QxCnq0eFzJnU%2F36pkXBug1huTvTlPkiEzojdXwGDjEBaAetQ5jWDJexThJ58FHH0rMARr%2BXtIZtNr39LZIDltO19EAgf7sZU7tCm7VopbOXvyuqE74z8LT9w2J8Izra%2Bip6B5pWy482wm%2FeY6tjFE6g9B9%2BkQlfPiAED6xNLZgvin0gxZ4nRaVA7WPE60K4g461aoIgaEkWnrsUGIMU%2BozOKE5dR5vxtSy7L9KQCM9PYDbUCW%2FlaWlSloPA7pwh76V%2B%2FcpmdsDQMGPrb4CWQiHJ%2BaKnlPDbBhURQhabnx0Kpz2UClINwQNNGrFC1o5E1WnC9n0PujxIaXOooGEKherhx2P9Ykxlg37tN%2F7yXzM%2F0ogVdK2bajwL2jKPcxH%2B5916nigRYfdw0RtRweDlKwLwq2OyRPIYbPGX%2B36b5%2F2rvHKaxEnhdW6qRinT4HgnQ140PSirgW317HjfvzBqBz37irb6GHC9F56iMGYCxJUbjM42QZk%2FtEgtdGhHLLvjZnHtswO1u7FYJDDWVC2ZQNdB2ZcIsHE%2FCwHV8lKm7c381QR54Kgr5Ns5WGykhGeTi3P3%2BqbfT09ZnXTNa1sIUmoCbgkLtqQ%2BibrjnQiyruKQEfyPeaV8w7fGkpAY6pwGzMjtdgJ5Jre%2FQkBJYyqPpsj3PrDNXXEl9KJCFSqh66UrxobN%2BdDg1OH6m9UY66H5oNmscHfo9T6SVkChKreVNOz4zbDQ1cpWzTK4IBFbAmvULpla9vpVS8SxdLH9XbNpapp%2Fvh5eiKG1f%2Fg2rt50OZ3MsFPofeObxr910%2FR%2BV1WD5AGb4Rl%2Fy1rmrTaFcHXgiKT%2FoISDb0BxIH%2BPqqPsgBnKlhe5DRQ%3D%3D&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20230614T062315Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=300&amp;X-Amz-Credential=ASIA6J4MGZQ6GTML5FHL%2F20230614%2Fap-southeast-1%2Fs3%2Faws4_request&amp;X-Amz-Signature=f4d9ad4f0d2ceaf6fe11a9958b5887e51596127d4c572fffe8cb1486f86884d6" />
+        <input type="hidden" name="price" id="pet_price" value="600" />
+        <input type="hidden" name="cuteness_rate" id="pet_cuteness_rate" value="5" />
+    <input name="__RequestVerificationToken" type="hidden" value="CfDJ8CCGo0JRRGRLmFLLJPwADP_ZdnehqevN6wm66UG4IB1PS-VwPsjn2WgsxlcfIIWpQM7ikORuenswKfQKLUd9beqBBKngrfeORNN-0KMd0pEIOXd6T5BccNB6Q9YJzTF2-H7KjnxbuW8nZYTOV9FGSuA" /></form>
+
+                </div>
+                <div class="pet-item col-md-4">
+                    
+    <form method="post" action="/adoption/takemehome">
+        <img class="pet-thumbnail" src="https://services-s3bucketpetadoptioncb20dce5-o33mvyupp12n.s3.ap-southeast-1.amazonaws.com/puppies/p12.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjELT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLXNvdXRoZWFzdC0xIkYwRAIgV5tBEmchqtab9aRsY2PJ7vmkiOxU8ZSsT%2BmcHOlbA%2F0CIA3zYNApcLblzPh48K5vFFGGUhXX3FGJbl2BGz1mnL0JKrMECP3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMOTgzMzA0Njg2NjUyIgwgahrBX8wQd8Dvu2UqhwT%2FpLE7LucQkk8uvhFHAE7W7STL9B5VacD%2BZ%2BDwYJbTnQma%2Bzqq1uucrzRn6LAmR372QxCnq0eFzJnU%2F36pkXBug1huTvTlPkiEzojdXwGDjEBaAetQ5jWDJexThJ58FHH0rMARr%2BXtIZtNr39LZIDltO19EAgf7sZU7tCm7VopbOXvyuqE74z8LT9w2J8Izra%2Bip6B5pWy482wm%2FeY6tjFE6g9B9%2BkQlfPiAED6xNLZgvin0gxZ4nRaVA7WPE60K4g461aoIgaEkWnrsUGIMU%2BozOKE5dR5vxtSy7L9KQCM9PYDbUCW%2FlaWlSloPA7pwh76V%2B%2FcpmdsDQMGPrb4CWQiHJ%2BaKnlPDbBhURQhabnx0Kpz2UClINwQNNGrFC1o5E1WnC9n0PujxIaXOooGEKherhx2P9Ykxlg37tN%2F7yXzM%2F0ogVdK2bajwL2jKPcxH%2B5916nigRYfdw0RtRweDlKwLwq2OyRPIYbPGX%2B36b5%2F2rvHKaxEnhdW6qRinT4HgnQ140PSirgW317HjfvzBqBz37irb6GHC9F56iMGYCxJUbjM42QZk%2FtEgtdGhHLLvjZnHtswO1u7FYJDDWVC2ZQNdB2ZcIsHE%2FCwHV8lKm7c381QR54Kgr5Ns5WGykhGeTi3P3%2BqbfT09ZnXTNa1sIUmoCbgkLtqQ%2BibrjnQiyruKQEfyPeaV8w7fGkpAY6pwGzMjtdgJ5Jre%2FQkBJYyqPpsj3PrDNXXEl9KJCFSqh66UrxobN%2BdDg1OH6m9UY66H5oNmscHfo9T6SVkChKreVNOz4zbDQ1cpWzTK4IBFbAmvULpla9vpVS8SxdLH9XbNpapp%2Fvh5eiKG1f%2Fg2rt50OZ3MsFPofeObxr910%2FR%2BV1WD5AGb4Rl%2Fy1rmrTaFcHXgiKT%2FoISDb0BxIH%2BPqqPsgBnKlhe5DRQ%3D%3D&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20230614T062315Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=300&amp;X-Amz-Credential=ASIA6J4MGZQ6GTML5FHL%2F20230614%2Fap-southeast-1%2Fs3%2Faws4_request&amp;X-Amz-Signature=296d738ff1f9ece806d1a754ceeb6615c4d5f20a69d2c273a278467ae0696aaf" />
+            <span class="alert-danger">Not available</span>
+        
+        <div class="pet-name">
+            <span>puppy-black</span>
+        </div>
+        <div class="pet-price">
+            <span>60</span>
+        </div>
+
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+
+        <input type="hidden" name="petcolor" id="pet_petcolor" value="black" />
+        <input type="hidden" name="petid" id="pet_petid" value="009" />
+        <input type="hidden" name="pettype" id="pet_pettype" value="puppy" />
+        <input type="hidden" name="peturl" id="pet_peturl" value="https://services-s3bucketpetadoptioncb20dce5-o33mvyupp12n.s3.ap-southeast-1.amazonaws.com/puppies/p12.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjELT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLXNvdXRoZWFzdC0xIkYwRAIgV5tBEmchqtab9aRsY2PJ7vmkiOxU8ZSsT%2BmcHOlbA%2F0CIA3zYNApcLblzPh48K5vFFGGUhXX3FGJbl2BGz1mnL0JKrMECP3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMOTgzMzA0Njg2NjUyIgwgahrBX8wQd8Dvu2UqhwT%2FpLE7LucQkk8uvhFHAE7W7STL9B5VacD%2BZ%2BDwYJbTnQma%2Bzqq1uucrzRn6LAmR372QxCnq0eFzJnU%2F36pkXBug1huTvTlPkiEzojdXwGDjEBaAetQ5jWDJexThJ58FHH0rMARr%2BXtIZtNr39LZIDltO19EAgf7sZU7tCm7VopbOXvyuqE74z8LT9w2J8Izra%2Bip6B5pWy482wm%2FeY6tjFE6g9B9%2BkQlfPiAED6xNLZgvin0gxZ4nRaVA7WPE60K4g461aoIgaEkWnrsUGIMU%2BozOKE5dR5vxtSy7L9KQCM9PYDbUCW%2FlaWlSloPA7pwh76V%2B%2FcpmdsDQMGPrb4CWQiHJ%2BaKnlPDbBhURQhabnx0Kpz2UClINwQNNGrFC1o5E1WnC9n0PujxIaXOooGEKherhx2P9Ykxlg37tN%2F7yXzM%2F0ogVdK2bajwL2jKPcxH%2B5916nigRYfdw0RtRweDlKwLwq2OyRPIYbPGX%2B36b5%2F2rvHKaxEnhdW6qRinT4HgnQ140PSirgW317HjfvzBqBz37irb6GHC9F56iMGYCxJUbjM42QZk%2FtEgtdGhHLLvjZnHtswO1u7FYJDDWVC2ZQNdB2ZcIsHE%2FCwHV8lKm7c381QR54Kgr5Ns5WGykhGeTi3P3%2BqbfT09ZnXTNa1sIUmoCbgkLtqQ%2BibrjnQiyruKQEfyPeaV8w7fGkpAY6pwGzMjtdgJ5Jre%2FQkBJYyqPpsj3PrDNXXEl9KJCFSqh66UrxobN%2BdDg1OH6m9UY66H5oNmscHfo9T6SVkChKreVNOz4zbDQ1cpWzTK4IBFbAmvULpla9vpVS8SxdLH9XbNpapp%2Fvh5eiKG1f%2Fg2rt50OZ3MsFPofeObxr910%2FR%2BV1WD5AGb4Rl%2Fy1rmrTaFcHXgiKT%2FoISDb0BxIH%2BPqqPsgBnKlhe5DRQ%3D%3D&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20230614T062315Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=300&amp;X-Amz-Credential=ASIA6J4MGZQ6GTML5FHL%2F20230614%2Fap-southeast-1%2Fs3%2Faws4_request&amp;X-Amz-Signature=296d738ff1f9ece806d1a754ceeb6615c4d5f20a69d2c273a278467ae0696aaf" />
+        <input type="hidden" name="price" id="pet_price" value="60" />
+        <input type="hidden" name="cuteness_rate" id="pet_cuteness_rate" value="5" />
+    <input name="__RequestVerificationToken" type="hidden" value="CfDJ8CCGo0JRRGRLmFLLJPwADP_ZdnehqevN6wm66UG4IB1PS-VwPsjn2WgsxlcfIIWpQM7ikORuenswKfQKLUd9beqBBKngrfeORNN-0KMd0pEIOXd6T5BccNB6Q9YJzTF2-H7KjnxbuW8nZYTOV9FGSuA" /></form>
+
+                </div>
+                <div class="pet-item col-md-4">
+                    
+    <form method="post" action="/adoption/takemehome">
+        <img class="pet-thumbnail" src="https://services-s3bucketpetadoptioncb20dce5-o33mvyupp12n.s3.ap-southeast-1.amazonaws.com/puppies/p8.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjELT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLXNvdXRoZWFzdC0xIkYwRAIgV5tBEmchqtab9aRsY2PJ7vmkiOxU8ZSsT%2BmcHOlbA%2F0CIA3zYNApcLblzPh48K5vFFGGUhXX3FGJbl2BGz1mnL0JKrMECP3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMOTgzMzA0Njg2NjUyIgwgahrBX8wQd8Dvu2UqhwT%2FpLE7LucQkk8uvhFHAE7W7STL9B5VacD%2BZ%2BDwYJbTnQma%2Bzqq1uucrzRn6LAmR372QxCnq0eFzJnU%2F36pkXBug1huTvTlPkiEzojdXwGDjEBaAetQ5jWDJexThJ58FHH0rMARr%2BXtIZtNr39LZIDltO19EAgf7sZU7tCm7VopbOXvyuqE74z8LT9w2J8Izra%2Bip6B5pWy482wm%2FeY6tjFE6g9B9%2BkQlfPiAED6xNLZgvin0gxZ4nRaVA7WPE60K4g461aoIgaEkWnrsUGIMU%2BozOKE5dR5vxtSy7L9KQCM9PYDbUCW%2FlaWlSloPA7pwh76V%2B%2FcpmdsDQMGPrb4CWQiHJ%2BaKnlPDbBhURQhabnx0Kpz2UClINwQNNGrFC1o5E1WnC9n0PujxIaXOooGEKherhx2P9Ykxlg37tN%2F7yXzM%2F0ogVdK2bajwL2jKPcxH%2B5916nigRYfdw0RtRweDlKwLwq2OyRPIYbPGX%2B36b5%2F2rvHKaxEnhdW6qRinT4HgnQ140PSirgW317HjfvzBqBz37irb6GHC9F56iMGYCxJUbjM42QZk%2FtEgtdGhHLLvjZnHtswO1u7FYJDDWVC2ZQNdB2ZcIsHE%2FCwHV8lKm7c381QR54Kgr5Ns5WGykhGeTi3P3%2BqbfT09ZnXTNa1sIUmoCbgkLtqQ%2BibrjnQiyruKQEfyPeaV8w7fGkpAY6pwGzMjtdgJ5Jre%2FQkBJYyqPpsj3PrDNXXEl9KJCFSqh66UrxobN%2BdDg1OH6m9UY66H5oNmscHfo9T6SVkChKreVNOz4zbDQ1cpWzTK4IBFbAmvULpla9vpVS8SxdLH9XbNpapp%2Fvh5eiKG1f%2Fg2rt50OZ3MsFPofeObxr910%2FR%2BV1WD5AGb4Rl%2Fy1rmrTaFcHXgiKT%2FoISDb0BxIH%2BPqqPsgBnKlhe5DRQ%3D%3D&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20230614T062315Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=300&amp;X-Amz-Credential=ASIA6J4MGZQ6GTML5FHL%2F20230614%2Fap-southeast-1%2Fs3%2Faws4_request&amp;X-Amz-Signature=ba8e30e697bf1ace3058602f3ac3c283c7d763b94cdcf954183689c61842c853" />
+            <input class="pet-button" type="submit" value="Take me home"/>
+        
+        <div class="pet-name">
+            <span>puppy-brown</span>
+        </div>
+        <div class="pet-price">
+            <span>80</span>
+        </div>
+
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+
+        <input type="hidden" name="petcolor" id="pet_petcolor" value="brown" />
+        <input type="hidden" name="petid" id="pet_petid" value="010" />
+        <input type="hidden" name="pettype" id="pet_pettype" value="puppy" />
+        <input type="hidden" name="peturl" id="pet_peturl" value="https://services-s3bucketpetadoptioncb20dce5-o33mvyupp12n.s3.ap-southeast-1.amazonaws.com/puppies/p8.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjELT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLXNvdXRoZWFzdC0xIkYwRAIgV5tBEmchqtab9aRsY2PJ7vmkiOxU8ZSsT%2BmcHOlbA%2F0CIA3zYNApcLblzPh48K5vFFGGUhXX3FGJbl2BGz1mnL0JKrMECP3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMOTgzMzA0Njg2NjUyIgwgahrBX8wQd8Dvu2UqhwT%2FpLE7LucQkk8uvhFHAE7W7STL9B5VacD%2BZ%2BDwYJbTnQma%2Bzqq1uucrzRn6LAmR372QxCnq0eFzJnU%2F36pkXBug1huTvTlPkiEzojdXwGDjEBaAetQ5jWDJexThJ58FHH0rMARr%2BXtIZtNr39LZIDltO19EAgf7sZU7tCm7VopbOXvyuqE74z8LT9w2J8Izra%2Bip6B5pWy482wm%2FeY6tjFE6g9B9%2BkQlfPiAED6xNLZgvin0gxZ4nRaVA7WPE60K4g461aoIgaEkWnrsUGIMU%2BozOKE5dR5vxtSy7L9KQCM9PYDbUCW%2FlaWlSloPA7pwh76V%2B%2FcpmdsDQMGPrb4CWQiHJ%2BaKnlPDbBhURQhabnx0Kpz2UClINwQNNGrFC1o5E1WnC9n0PujxIaXOooGEKherhx2P9Ykxlg37tN%2F7yXzM%2F0ogVdK2bajwL2jKPcxH%2B5916nigRYfdw0RtRweDlKwLwq2OyRPIYbPGX%2B36b5%2F2rvHKaxEnhdW6qRinT4HgnQ140PSirgW317HjfvzBqBz37irb6GHC9F56iMGYCxJUbjM42QZk%2FtEgtdGhHLLvjZnHtswO1u7FYJDDWVC2ZQNdB2ZcIsHE%2FCwHV8lKm7c381QR54Kgr5Ns5WGykhGeTi3P3%2BqbfT09ZnXTNa1sIUmoCbgkLtqQ%2BibrjnQiyruKQEfyPeaV8w7fGkpAY6pwGzMjtdgJ5Jre%2FQkBJYyqPpsj3PrDNXXEl9KJCFSqh66UrxobN%2BdDg1OH6m9UY66H5oNmscHfo9T6SVkChKreVNOz4zbDQ1cpWzTK4IBFbAmvULpla9vpVS8SxdLH9XbNpapp%2Fvh5eiKG1f%2Fg2rt50OZ3MsFPofeObxr910%2FR%2BV1WD5AGb4Rl%2Fy1rmrTaFcHXgiKT%2FoISDb0BxIH%2BPqqPsgBnKlhe5DRQ%3D%3D&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20230614T062315Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=300&amp;X-Amz-Credential=ASIA6J4MGZQ6GTML5FHL%2F20230614%2Fap-southeast-1%2Fs3%2Faws4_request&amp;X-Amz-Signature=ba8e30e697bf1ace3058602f3ac3c283c7d763b94cdcf954183689c61842c853" />
+        <input type="hidden" name="price" id="pet_price" value="80" />
+        <input type="hidden" name="cuteness_rate" id="pet_cuteness_rate" value="3" />
+    <input name="__RequestVerificationToken" type="hidden" value="CfDJ8CCGo0JRRGRLmFLLJPwADP_ZdnehqevN6wm66UG4IB1PS-VwPsjn2WgsxlcfIIWpQM7ikORuenswKfQKLUd9beqBBKngrfeORNN-0KMd0pEIOXd6T5BccNB6Q9YJzTF2-H7KjnxbuW8nZYTOV9FGSuA" /></form>
+
+                </div>
+                <div class="pet-item col-md-4">
+                    
+    <form method="post" action="/adoption/takemehome">
+        <img class="pet-thumbnail" src="https://services-s3bucketpetadoptioncb20dce5-o33mvyupp12n.s3.ap-southeast-1.amazonaws.com/puppies/p14.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjELT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLXNvdXRoZWFzdC0xIkYwRAIgV5tBEmchqtab9aRsY2PJ7vmkiOxU8ZSsT%2BmcHOlbA%2F0CIA3zYNApcLblzPh48K5vFFGGUhXX3FGJbl2BGz1mnL0JKrMECP3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMOTgzMzA0Njg2NjUyIgwgahrBX8wQd8Dvu2UqhwT%2FpLE7LucQkk8uvhFHAE7W7STL9B5VacD%2BZ%2BDwYJbTnQma%2Bzqq1uucrzRn6LAmR372QxCnq0eFzJnU%2F36pkXBug1huTvTlPkiEzojdXwGDjEBaAetQ5jWDJexThJ58FHH0rMARr%2BXtIZtNr39LZIDltO19EAgf7sZU7tCm7VopbOXvyuqE74z8LT9w2J8Izra%2Bip6B5pWy482wm%2FeY6tjFE6g9B9%2BkQlfPiAED6xNLZgvin0gxZ4nRaVA7WPE60K4g461aoIgaEkWnrsUGIMU%2BozOKE5dR5vxtSy7L9KQCM9PYDbUCW%2FlaWlSloPA7pwh76V%2B%2FcpmdsDQMGPrb4CWQiHJ%2BaKnlPDbBhURQhabnx0Kpz2UClINwQNNGrFC1o5E1WnC9n0PujxIaXOooGEKherhx2P9Ykxlg37tN%2F7yXzM%2F0ogVdK2bajwL2jKPcxH%2B5916nigRYfdw0RtRweDlKwLwq2OyRPIYbPGX%2B36b5%2F2rvHKaxEnhdW6qRinT4HgnQ140PSirgW317HjfvzBqBz37irb6GHC9F56iMGYCxJUbjM42QZk%2FtEgtdGhHLLvjZnHtswO1u7FYJDDWVC2ZQNdB2ZcIsHE%2FCwHV8lKm7c381QR54Kgr5Ns5WGykhGeTi3P3%2BqbfT09ZnXTNa1sIUmoCbgkLtqQ%2BibrjnQiyruKQEfyPeaV8w7fGkpAY6pwGzMjtdgJ5Jre%2FQkBJYyqPpsj3PrDNXXEl9KJCFSqh66UrxobN%2BdDg1OH6m9UY66H5oNmscHfo9T6SVkChKreVNOz4zbDQ1cpWzTK4IBFbAmvULpla9vpVS8SxdLH9XbNpapp%2Fvh5eiKG1f%2Fg2rt50OZ3MsFPofeObxr910%2FR%2BV1WD5AGb4Rl%2Fy1rmrTaFcHXgiKT%2FoISDb0BxIH%2BPqqPsgBnKlhe5DRQ%3D%3D&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20230614T062315Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=300&amp;X-Amz-Credential=ASIA6J4MGZQ6GTML5FHL%2F20230614%2Fap-southeast-1%2Fs3%2Faws4_request&amp;X-Amz-Signature=90341ab7ec831a991c65f73c9ac5ae1b92d36caafe046d0dfbd5edcf55fc2bdb" />
+            <span class="alert-danger">Not available</span>
+        
+        <div class="pet-name">
+            <span>puppy-white</span>
+        </div>
+        <div class="pet-price">
+            <span>59</span>
+        </div>
+
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+
+        <input type="hidden" name="petcolor" id="pet_petcolor" value="white" />
+        <input type="hidden" name="petid" id="pet_petid" value="011" />
+        <input type="hidden" name="pettype" id="pet_pettype" value="puppy" />
+        <input type="hidden" name="peturl" id="pet_peturl" value="https://services-s3bucketpetadoptioncb20dce5-o33mvyupp12n.s3.ap-southeast-1.amazonaws.com/puppies/p14.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjELT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLXNvdXRoZWFzdC0xIkYwRAIgV5tBEmchqtab9aRsY2PJ7vmkiOxU8ZSsT%2BmcHOlbA%2F0CIA3zYNApcLblzPh48K5vFFGGUhXX3FGJbl2BGz1mnL0JKrMECP3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMOTgzMzA0Njg2NjUyIgwgahrBX8wQd8Dvu2UqhwT%2FpLE7LucQkk8uvhFHAE7W7STL9B5VacD%2BZ%2BDwYJbTnQma%2Bzqq1uucrzRn6LAmR372QxCnq0eFzJnU%2F36pkXBug1huTvTlPkiEzojdXwGDjEBaAetQ5jWDJexThJ58FHH0rMARr%2BXtIZtNr39LZIDltO19EAgf7sZU7tCm7VopbOXvyuqE74z8LT9w2J8Izra%2Bip6B5pWy482wm%2FeY6tjFE6g9B9%2BkQlfPiAED6xNLZgvin0gxZ4nRaVA7WPE60K4g461aoIgaEkWnrsUGIMU%2BozOKE5dR5vxtSy7L9KQCM9PYDbUCW%2FlaWlSloPA7pwh76V%2B%2FcpmdsDQMGPrb4CWQiHJ%2BaKnlPDbBhURQhabnx0Kpz2UClINwQNNGrFC1o5E1WnC9n0PujxIaXOooGEKherhx2P9Ykxlg37tN%2F7yXzM%2F0ogVdK2bajwL2jKPcxH%2B5916nigRYfdw0RtRweDlKwLwq2OyRPIYbPGX%2B36b5%2F2rvHKaxEnhdW6qRinT4HgnQ140PSirgW317HjfvzBqBz37irb6GHC9F56iMGYCxJUbjM42QZk%2FtEgtdGhHLLvjZnHtswO1u7FYJDDWVC2ZQNdB2ZcIsHE%2FCwHV8lKm7c381QR54Kgr5Ns5WGykhGeTi3P3%2BqbfT09ZnXTNa1sIUmoCbgkLtqQ%2BibrjnQiyruKQEfyPeaV8w7fGkpAY6pwGzMjtdgJ5Jre%2FQkBJYyqPpsj3PrDNXXEl9KJCFSqh66UrxobN%2BdDg1OH6m9UY66H5oNmscHfo9T6SVkChKreVNOz4zbDQ1cpWzTK4IBFbAmvULpla9vpVS8SxdLH9XbNpapp%2Fvh5eiKG1f%2Fg2rt50OZ3MsFPofeObxr910%2FR%2BV1WD5AGb4Rl%2Fy1rmrTaFcHXgiKT%2FoISDb0BxIH%2BPqqPsgBnKlhe5DRQ%3D%3D&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20230614T062315Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=300&amp;X-Amz-Credential=ASIA6J4MGZQ6GTML5FHL%2F20230614%2Fap-southeast-1%2Fs3%2Faws4_request&amp;X-Amz-Signature=90341ab7ec831a991c65f73c9ac5ae1b92d36caafe046d0dfbd5edcf55fc2bdb" />
+        <input type="hidden" name="price" id="pet_price" value="59" />
+        <input type="hidden" name="cuteness_rate" id="pet_cuteness_rate" value="4" />
+    <input name="__RequestVerificationToken" type="hidden" value="CfDJ8CCGo0JRRGRLmFLLJPwADP_ZdnehqevN6wm66UG4IB1PS-VwPsjn2WgsxlcfIIWpQM7ikORuenswKfQKLUd9beqBBKngrfeORNN-0KMd0pEIOXd6T5BccNB6Q9YJzTF2-H7KjnxbuW8nZYTOV9FGSuA" /></form>
+
+                </div>
+                <div class="pet-item col-md-4">
+                    
+    <form method="post" action="/adoption/takemehome">
+        <img class="pet-thumbnail" src="https://services-s3bucketpetadoptioncb20dce5-o33mvyupp12n.s3.ap-southeast-1.amazonaws.com/puppies/p15.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjELT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLXNvdXRoZWFzdC0xIkYwRAIgV5tBEmchqtab9aRsY2PJ7vmkiOxU8ZSsT%2BmcHOlbA%2F0CIA3zYNApcLblzPh48K5vFFGGUhXX3FGJbl2BGz1mnL0JKrMECP3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMOTgzMzA0Njg2NjUyIgwgahrBX8wQd8Dvu2UqhwT%2FpLE7LucQkk8uvhFHAE7W7STL9B5VacD%2BZ%2BDwYJbTnQma%2Bzqq1uucrzRn6LAmR372QxCnq0eFzJnU%2F36pkXBug1huTvTlPkiEzojdXwGDjEBaAetQ5jWDJexThJ58FHH0rMARr%2BXtIZtNr39LZIDltO19EAgf7sZU7tCm7VopbOXvyuqE74z8LT9w2J8Izra%2Bip6B5pWy482wm%2FeY6tjFE6g9B9%2BkQlfPiAED6xNLZgvin0gxZ4nRaVA7WPE60K4g461aoIgaEkWnrsUGIMU%2BozOKE5dR5vxtSy7L9KQCM9PYDbUCW%2FlaWlSloPA7pwh76V%2B%2FcpmdsDQMGPrb4CWQiHJ%2BaKnlPDbBhURQhabnx0Kpz2UClINwQNNGrFC1o5E1WnC9n0PujxIaXOooGEKherhx2P9Ykxlg37tN%2F7yXzM%2F0ogVdK2bajwL2jKPcxH%2B5916nigRYfdw0RtRweDlKwLwq2OyRPIYbPGX%2B36b5%2F2rvHKaxEnhdW6qRinT4HgnQ140PSirgW317HjfvzBqBz37irb6GHC9F56iMGYCxJUbjM42QZk%2FtEgtdGhHLLvjZnHtswO1u7FYJDDWVC2ZQNdB2ZcIsHE%2FCwHV8lKm7c381QR54Kgr5Ns5WGykhGeTi3P3%2BqbfT09ZnXTNa1sIUmoCbgkLtqQ%2BibrjnQiyruKQEfyPeaV8w7fGkpAY6pwGzMjtdgJ5Jre%2FQkBJYyqPpsj3PrDNXXEl9KJCFSqh66UrxobN%2BdDg1OH6m9UY66H5oNmscHfo9T6SVkChKreVNOz4zbDQ1cpWzTK4IBFbAmvULpla9vpVS8SxdLH9XbNpapp%2Fvh5eiKG1f%2Fg2rt50OZ3MsFPofeObxr910%2FR%2BV1WD5AGb4Rl%2Fy1rmrTaFcHXgiKT%2FoISDb0BxIH%2BPqqPsgBnKlhe5DRQ%3D%3D&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20230614T062315Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=300&amp;X-Amz-Credential=ASIA6J4MGZQ6GTML5FHL%2F20230614%2Fap-southeast-1%2Fs3%2Faws4_request&amp;X-Amz-Signature=9b6aaae1d8ab5ddf5d3935169b025c8c35ff78ae0f502240568d591a5c47547a" />
+            <input class="pet-button" type="submit" value="Take me home"/>
+        
+        <div class="pet-name">
+            <span>puppy-white</span>
+        </div>
+        <div class="pet-price">
+            <span>79</span>
+        </div>
+
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+
+        <input type="hidden" name="petcolor" id="pet_petcolor" value="white" />
+        <input type="hidden" name="petid" id="pet_petid" value="012" />
+        <input type="hidden" name="pettype" id="pet_pettype" value="puppy" />
+        <input type="hidden" name="peturl" id="pet_peturl" value="https://services-s3bucketpetadoptioncb20dce5-o33mvyupp12n.s3.ap-southeast-1.amazonaws.com/puppies/p15.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjELT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLXNvdXRoZWFzdC0xIkYwRAIgV5tBEmchqtab9aRsY2PJ7vmkiOxU8ZSsT%2BmcHOlbA%2F0CIA3zYNApcLblzPh48K5vFFGGUhXX3FGJbl2BGz1mnL0JKrMECP3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMOTgzMzA0Njg2NjUyIgwgahrBX8wQd8Dvu2UqhwT%2FpLE7LucQkk8uvhFHAE7W7STL9B5VacD%2BZ%2BDwYJbTnQma%2Bzqq1uucrzRn6LAmR372QxCnq0eFzJnU%2F36pkXBug1huTvTlPkiEzojdXwGDjEBaAetQ5jWDJexThJ58FHH0rMARr%2BXtIZtNr39LZIDltO19EAgf7sZU7tCm7VopbOXvyuqE74z8LT9w2J8Izra%2Bip6B5pWy482wm%2FeY6tjFE6g9B9%2BkQlfPiAED6xNLZgvin0gxZ4nRaVA7WPE60K4g461aoIgaEkWnrsUGIMU%2BozOKE5dR5vxtSy7L9KQCM9PYDbUCW%2FlaWlSloPA7pwh76V%2B%2FcpmdsDQMGPrb4CWQiHJ%2BaKnlPDbBhURQhabnx0Kpz2UClINwQNNGrFC1o5E1WnC9n0PujxIaXOooGEKherhx2P9Ykxlg37tN%2F7yXzM%2F0ogVdK2bajwL2jKPcxH%2B5916nigRYfdw0RtRweDlKwLwq2OyRPIYbPGX%2B36b5%2F2rvHKaxEnhdW6qRinT4HgnQ140PSirgW317HjfvzBqBz37irb6GHC9F56iMGYCxJUbjM42QZk%2FtEgtdGhHLLvjZnHtswO1u7FYJDDWVC2ZQNdB2ZcIsHE%2FCwHV8lKm7c381QR54Kgr5Ns5WGykhGeTi3P3%2BqbfT09ZnXTNa1sIUmoCbgkLtqQ%2BibrjnQiyruKQEfyPeaV8w7fGkpAY6pwGzMjtdgJ5Jre%2FQkBJYyqPpsj3PrDNXXEl9KJCFSqh66UrxobN%2BdDg1OH6m9UY66H5oNmscHfo9T6SVkChKreVNOz4zbDQ1cpWzTK4IBFbAmvULpla9vpVS8SxdLH9XbNpapp%2Fvh5eiKG1f%2Fg2rt50OZ3MsFPofeObxr910%2FR%2BV1WD5AGb4Rl%2Fy1rmrTaFcHXgiKT%2FoISDb0BxIH%2BPqqPsgBnKlhe5DRQ%3D%3D&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20230614T062315Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=300&amp;X-Amz-Credential=ASIA6J4MGZQ6GTML5FHL%2F20230614%2Fap-southeast-1%2Fs3%2Faws4_request&amp;X-Amz-Signature=9b6aaae1d8ab5ddf5d3935169b025c8c35ff78ae0f502240568d591a5c47547a" />
+        <input type="hidden" name="price" id="pet_price" value="79" />
+        <input type="hidden" name="cuteness_rate" id="pet_cuteness_rate" value="5" />
+    <input name="__RequestVerificationToken" type="hidden" value="CfDJ8CCGo0JRRGRLmFLLJPwADP_ZdnehqevN6wm66UG4IB1PS-VwPsjn2WgsxlcfIIWpQM7ikORuenswKfQKLUd9beqBBKngrfeORNN-0KMd0pEIOXd6T5BccNB6Q9YJzTF2-H7KjnxbuW8nZYTOV9FGSuA" /></form>
+
+                </div>
+                <div class="pet-item col-md-4">
+                    
+    <form method="post" action="/adoption/takemehome">
+        <img class="pet-thumbnail" src="https://services-s3bucketpetadoptioncb20dce5-o33mvyupp12n.s3.ap-southeast-1.amazonaws.com/puppies/p2.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjELT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLXNvdXRoZWFzdC0xIkYwRAIgV5tBEmchqtab9aRsY2PJ7vmkiOxU8ZSsT%2BmcHOlbA%2F0CIA3zYNApcLblzPh48K5vFFGGUhXX3FGJbl2BGz1mnL0JKrMECP3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMOTgzMzA0Njg2NjUyIgwgahrBX8wQd8Dvu2UqhwT%2FpLE7LucQkk8uvhFHAE7W7STL9B5VacD%2BZ%2BDwYJbTnQma%2Bzqq1uucrzRn6LAmR372QxCnq0eFzJnU%2F36pkXBug1huTvTlPkiEzojdXwGDjEBaAetQ5jWDJexThJ58FHH0rMARr%2BXtIZtNr39LZIDltO19EAgf7sZU7tCm7VopbOXvyuqE74z8LT9w2J8Izra%2Bip6B5pWy482wm%2FeY6tjFE6g9B9%2BkQlfPiAED6xNLZgvin0gxZ4nRaVA7WPE60K4g461aoIgaEkWnrsUGIMU%2BozOKE5dR5vxtSy7L9KQCM9PYDbUCW%2FlaWlSloPA7pwh76V%2B%2FcpmdsDQMGPrb4CWQiHJ%2BaKnlPDbBhURQhabnx0Kpz2UClINwQNNGrFC1o5E1WnC9n0PujxIaXOooGEKherhx2P9Ykxlg37tN%2F7yXzM%2F0ogVdK2bajwL2jKPcxH%2B5916nigRYfdw0RtRweDlKwLwq2OyRPIYbPGX%2B36b5%2F2rvHKaxEnhdW6qRinT4HgnQ140PSirgW317HjfvzBqBz37irb6GHC9F56iMGYCxJUbjM42QZk%2FtEgtdGhHLLvjZnHtswO1u7FYJDDWVC2ZQNdB2ZcIsHE%2FCwHV8lKm7c381QR54Kgr5Ns5WGykhGeTi3P3%2BqbfT09ZnXTNa1sIUmoCbgkLtqQ%2BibrjnQiyruKQEfyPeaV8w7fGkpAY6pwGzMjtdgJ5Jre%2FQkBJYyqPpsj3PrDNXXEl9KJCFSqh66UrxobN%2BdDg1OH6m9UY66H5oNmscHfo9T6SVkChKreVNOz4zbDQ1cpWzTK4IBFbAmvULpla9vpVS8SxdLH9XbNpapp%2Fvh5eiKG1f%2Fg2rt50OZ3MsFPofeObxr910%2FR%2BV1WD5AGb4Rl%2Fy1rmrTaFcHXgiKT%2FoISDb0BxIH%2BPqqPsgBnKlhe5DRQ%3D%3D&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20230614T062315Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=300&amp;X-Amz-Credential=ASIA6J4MGZQ6GTML5FHL%2F20230614%2Fap-southeast-1%2Fs3%2Faws4_request&amp;X-Amz-Signature=9b40175aa9b5ae9d12c9c54ba7ff51844be884bb0d582e726c3a6ddfcc54981d" />
+            <input class="pet-button" type="submit" value="Take me home"/>
+        
+        <div class="pet-name">
+            <span>puppy-white</span>
+        </div>
+        <div class="pet-price">
+            <span>99</span>
+        </div>
+
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+
+        <input type="hidden" name="petcolor" id="pet_petcolor" value="white" />
+        <input type="hidden" name="petid" id="pet_petid" value="013" />
+        <input type="hidden" name="pettype" id="pet_pettype" value="puppy" />
+        <input type="hidden" name="peturl" id="pet_peturl" value="https://services-s3bucketpetadoptioncb20dce5-o33mvyupp12n.s3.ap-southeast-1.amazonaws.com/puppies/p2.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjELT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLXNvdXRoZWFzdC0xIkYwRAIgV5tBEmchqtab9aRsY2PJ7vmkiOxU8ZSsT%2BmcHOlbA%2F0CIA3zYNApcLblzPh48K5vFFGGUhXX3FGJbl2BGz1mnL0JKrMECP3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMOTgzMzA0Njg2NjUyIgwgahrBX8wQd8Dvu2UqhwT%2FpLE7LucQkk8uvhFHAE7W7STL9B5VacD%2BZ%2BDwYJbTnQma%2Bzqq1uucrzRn6LAmR372QxCnq0eFzJnU%2F36pkXBug1huTvTlPkiEzojdXwGDjEBaAetQ5jWDJexThJ58FHH0rMARr%2BXtIZtNr39LZIDltO19EAgf7sZU7tCm7VopbOXvyuqE74z8LT9w2J8Izra%2Bip6B5pWy482wm%2FeY6tjFE6g9B9%2BkQlfPiAED6xNLZgvin0gxZ4nRaVA7WPE60K4g461aoIgaEkWnrsUGIMU%2BozOKE5dR5vxtSy7L9KQCM9PYDbUCW%2FlaWlSloPA7pwh76V%2B%2FcpmdsDQMGPrb4CWQiHJ%2BaKnlPDbBhURQhabnx0Kpz2UClINwQNNGrFC1o5E1WnC9n0PujxIaXOooGEKherhx2P9Ykxlg37tN%2F7yXzM%2F0ogVdK2bajwL2jKPcxH%2B5916nigRYfdw0RtRweDlKwLwq2OyRPIYbPGX%2B36b5%2F2rvHKaxEnhdW6qRinT4HgnQ140PSirgW317HjfvzBqBz37irb6GHC9F56iMGYCxJUbjM42QZk%2FtEgtdGhHLLvjZnHtswO1u7FYJDDWVC2ZQNdB2ZcIsHE%2FCwHV8lKm7c381QR54Kgr5Ns5WGykhGeTi3P3%2BqbfT09ZnXTNa1sIUmoCbgkLtqQ%2BibrjnQiyruKQEfyPeaV8w7fGkpAY6pwGzMjtdgJ5Jre%2FQkBJYyqPpsj3PrDNXXEl9KJCFSqh66UrxobN%2BdDg1OH6m9UY66H5oNmscHfo9T6SVkChKreVNOz4zbDQ1cpWzTK4IBFbAmvULpla9vpVS8SxdLH9XbNpapp%2Fvh5eiKG1f%2Fg2rt50OZ3MsFPofeObxr910%2FR%2BV1WD5AGb4Rl%2Fy1rmrTaFcHXgiKT%2FoISDb0BxIH%2BPqqPsgBnKlhe5DRQ%3D%3D&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20230614T062315Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=300&amp;X-Amz-Credential=ASIA6J4MGZQ6GTML5FHL%2F20230614%2Fap-southeast-1%2Fs3%2Faws4_request&amp;X-Amz-Signature=9b40175aa9b5ae9d12c9c54ba7ff51844be884bb0d582e726c3a6ddfcc54981d" />
+        <input type="hidden" name="price" id="pet_price" value="99" />
+        <input type="hidden" name="cuteness_rate" id="pet_cuteness_rate" value="4" />
+    <input name="__RequestVerificationToken" type="hidden" value="CfDJ8CCGo0JRRGRLmFLLJPwADP_ZdnehqevN6wm66UG4IB1PS-VwPsjn2WgsxlcfIIWpQM7ikORuenswKfQKLUd9beqBBKngrfeORNN-0KMd0pEIOXd6T5BccNB6Q9YJzTF2-H7KjnxbuW8nZYTOV9FGSuA" /></form>
+
+                </div>
+                <div class="pet-item col-md-4">
+                    
+    <form method="post" action="/adoption/takemehome">
+        <img class="pet-thumbnail" src="https://services-s3bucketpetadoptioncb20dce5-o33mvyupp12n.s3.ap-southeast-1.amazonaws.com/puppies/p13.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjELT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLXNvdXRoZWFzdC0xIkYwRAIgV5tBEmchqtab9aRsY2PJ7vmkiOxU8ZSsT%2BmcHOlbA%2F0CIA3zYNApcLblzPh48K5vFFGGUhXX3FGJbl2BGz1mnL0JKrMECP3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMOTgzMzA0Njg2NjUyIgwgahrBX8wQd8Dvu2UqhwT%2FpLE7LucQkk8uvhFHAE7W7STL9B5VacD%2BZ%2BDwYJbTnQma%2Bzqq1uucrzRn6LAmR372QxCnq0eFzJnU%2F36pkXBug1huTvTlPkiEzojdXwGDjEBaAetQ5jWDJexThJ58FHH0rMARr%2BXtIZtNr39LZIDltO19EAgf7sZU7tCm7VopbOXvyuqE74z8LT9w2J8Izra%2Bip6B5pWy482wm%2FeY6tjFE6g9B9%2BkQlfPiAED6xNLZgvin0gxZ4nRaVA7WPE60K4g461aoIgaEkWnrsUGIMU%2BozOKE5dR5vxtSy7L9KQCM9PYDbUCW%2FlaWlSloPA7pwh76V%2B%2FcpmdsDQMGPrb4CWQiHJ%2BaKnlPDbBhURQhabnx0Kpz2UClINwQNNGrFC1o5E1WnC9n0PujxIaXOooGEKherhx2P9Ykxlg37tN%2F7yXzM%2F0ogVdK2bajwL2jKPcxH%2B5916nigRYfdw0RtRweDlKwLwq2OyRPIYbPGX%2B36b5%2F2rvHKaxEnhdW6qRinT4HgnQ140PSirgW317HjfvzBqBz37irb6GHC9F56iMGYCxJUbjM42QZk%2FtEgtdGhHLLvjZnHtswO1u7FYJDDWVC2ZQNdB2ZcIsHE%2FCwHV8lKm7c381QR54Kgr5Ns5WGykhGeTi3P3%2BqbfT09ZnXTNa1sIUmoCbgkLtqQ%2BibrjnQiyruKQEfyPeaV8w7fGkpAY6pwGzMjtdgJ5Jre%2FQkBJYyqPpsj3PrDNXXEl9KJCFSqh66UrxobN%2BdDg1OH6m9UY66H5oNmscHfo9T6SVkChKreVNOz4zbDQ1cpWzTK4IBFbAmvULpla9vpVS8SxdLH9XbNpapp%2Fvh5eiKG1f%2Fg2rt50OZ3MsFPofeObxr910%2FR%2BV1WD5AGb4Rl%2Fy1rmrTaFcHXgiKT%2FoISDb0BxIH%2BPqqPsgBnKlhe5DRQ%3D%3D&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20230614T062315Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=300&amp;X-Amz-Credential=ASIA6J4MGZQ6GTML5FHL%2F20230614%2Fap-southeast-1%2Fs3%2Faws4_request&amp;X-Amz-Signature=d0b81552832fce81901cf4089192aa9ada2655c57f6e585db3fa5947cf2dd782" />
+            <input class="pet-button" type="submit" value="Take me home"/>
+        
+        <div class="pet-name">
+            <span>puppy-black</span>
+        </div>
+        <div class="pet-price">
+            <span>79</span>
+        </div>
+
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+
+        <input type="hidden" name="petcolor" id="pet_petcolor" value="black" />
+        <input type="hidden" name="petid" id="pet_petid" value="014" />
+        <input type="hidden" name="pettype" id="pet_pettype" value="puppy" />
+        <input type="hidden" name="peturl" id="pet_peturl" value="https://services-s3bucketpetadoptioncb20dce5-o33mvyupp12n.s3.ap-southeast-1.amazonaws.com/puppies/p13.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjELT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLXNvdXRoZWFzdC0xIkYwRAIgV5tBEmchqtab9aRsY2PJ7vmkiOxU8ZSsT%2BmcHOlbA%2F0CIA3zYNApcLblzPh48K5vFFGGUhXX3FGJbl2BGz1mnL0JKrMECP3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMOTgzMzA0Njg2NjUyIgwgahrBX8wQd8Dvu2UqhwT%2FpLE7LucQkk8uvhFHAE7W7STL9B5VacD%2BZ%2BDwYJbTnQma%2Bzqq1uucrzRn6LAmR372QxCnq0eFzJnU%2F36pkXBug1huTvTlPkiEzojdXwGDjEBaAetQ5jWDJexThJ58FHH0rMARr%2BXtIZtNr39LZIDltO19EAgf7sZU7tCm7VopbOXvyuqE74z8LT9w2J8Izra%2Bip6B5pWy482wm%2FeY6tjFE6g9B9%2BkQlfPiAED6xNLZgvin0gxZ4nRaVA7WPE60K4g461aoIgaEkWnrsUGIMU%2BozOKE5dR5vxtSy7L9KQCM9PYDbUCW%2FlaWlSloPA7pwh76V%2B%2FcpmdsDQMGPrb4CWQiHJ%2BaKnlPDbBhURQhabnx0Kpz2UClINwQNNGrFC1o5E1WnC9n0PujxIaXOooGEKherhx2P9Ykxlg37tN%2F7yXzM%2F0ogVdK2bajwL2jKPcxH%2B5916nigRYfdw0RtRweDlKwLwq2OyRPIYbPGX%2B36b5%2F2rvHKaxEnhdW6qRinT4HgnQ140PSirgW317HjfvzBqBz37irb6GHC9F56iMGYCxJUbjM42QZk%2FtEgtdGhHLLvjZnHtswO1u7FYJDDWVC2ZQNdB2ZcIsHE%2FCwHV8lKm7c381QR54Kgr5Ns5WGykhGeTi3P3%2BqbfT09ZnXTNa1sIUmoCbgkLtqQ%2BibrjnQiyruKQEfyPeaV8w7fGkpAY6pwGzMjtdgJ5Jre%2FQkBJYyqPpsj3PrDNXXEl9KJCFSqh66UrxobN%2BdDg1OH6m9UY66H5oNmscHfo9T6SVkChKreVNOz4zbDQ1cpWzTK4IBFbAmvULpla9vpVS8SxdLH9XbNpapp%2Fvh5eiKG1f%2Fg2rt50OZ3MsFPofeObxr910%2FR%2BV1WD5AGb4Rl%2Fy1rmrTaFcHXgiKT%2FoISDb0BxIH%2BPqqPsgBnKlhe5DRQ%3D%3D&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20230614T062315Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=300&amp;X-Amz-Credential=ASIA6J4MGZQ6GTML5FHL%2F20230614%2Fap-southeast-1%2Fs3%2Faws4_request&amp;X-Amz-Signature=d0b81552832fce81901cf4089192aa9ada2655c57f6e585db3fa5947cf2dd782" />
+        <input type="hidden" name="price" id="pet_price" value="79" />
+        <input type="hidden" name="cuteness_rate" id="pet_cuteness_rate" value="5" />
+    <input name="__RequestVerificationToken" type="hidden" value="CfDJ8CCGo0JRRGRLmFLLJPwADP_ZdnehqevN6wm66UG4IB1PS-VwPsjn2WgsxlcfIIWpQM7ikORuenswKfQKLUd9beqBBKngrfeORNN-0KMd0pEIOXd6T5BccNB6Q9YJzTF2-H7KjnxbuW8nZYTOV9FGSuA" /></form>
+
+                </div>
+                <div class="pet-item col-md-4">
+                    
+    <form method="post" action="/adoption/takemehome">
+        <img class="pet-thumbnail" src="" />
+            <span class="alert-danger">Not available</span>
+        
+        <div class="pet-name">
+            <span>puppy-white</span>
+        </div>
+        <div class="pet-price">
+            <span>79</span>
+        </div>
+
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+
+        <input type="hidden" name="petcolor" id="pet_petcolor" value="white" />
+        <input type="hidden" name="petid" id="pet_petid" value="015" />
+        <input type="hidden" name="pettype" id="pet_pettype" value="puppy" />
+        <input type="hidden" name="peturl" id="pet_peturl" value="" />
+        <input type="hidden" name="price" id="pet_price" value="79" />
+        <input type="hidden" name="cuteness_rate" id="pet_cuteness_rate" value="4" />
+    <input name="__RequestVerificationToken" type="hidden" value="CfDJ8CCGo0JRRGRLmFLLJPwADP_ZdnehqevN6wm66UG4IB1PS-VwPsjn2WgsxlcfIIWpQM7ikORuenswKfQKLUd9beqBBKngrfeORNN-0KMd0pEIOXd6T5BccNB6Q9YJzTF2-H7KjnxbuW8nZYTOV9FGSuA" /></form>
+
+                </div>
+                <div class="pet-item col-md-4">
+                    
+    <form method="post" action="/adoption/takemehome">
+        <img class="pet-thumbnail" src="https://services-s3bucketpetadoptioncb20dce5-o33mvyupp12n.s3.ap-southeast-1.amazonaws.com/kitten/k1.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjELT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLXNvdXRoZWFzdC0xIkYwRAIgV5tBEmchqtab9aRsY2PJ7vmkiOxU8ZSsT%2BmcHOlbA%2F0CIA3zYNApcLblzPh48K5vFFGGUhXX3FGJbl2BGz1mnL0JKrMECP3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMOTgzMzA0Njg2NjUyIgwgahrBX8wQd8Dvu2UqhwT%2FpLE7LucQkk8uvhFHAE7W7STL9B5VacD%2BZ%2BDwYJbTnQma%2Bzqq1uucrzRn6LAmR372QxCnq0eFzJnU%2F36pkXBug1huTvTlPkiEzojdXwGDjEBaAetQ5jWDJexThJ58FHH0rMARr%2BXtIZtNr39LZIDltO19EAgf7sZU7tCm7VopbOXvyuqE74z8LT9w2J8Izra%2Bip6B5pWy482wm%2FeY6tjFE6g9B9%2BkQlfPiAED6xNLZgvin0gxZ4nRaVA7WPE60K4g461aoIgaEkWnrsUGIMU%2BozOKE5dR5vxtSy7L9KQCM9PYDbUCW%2FlaWlSloPA7pwh76V%2B%2FcpmdsDQMGPrb4CWQiHJ%2BaKnlPDbBhURQhabnx0Kpz2UClINwQNNGrFC1o5E1WnC9n0PujxIaXOooGEKherhx2P9Ykxlg37tN%2F7yXzM%2F0ogVdK2bajwL2jKPcxH%2B5916nigRYfdw0RtRweDlKwLwq2OyRPIYbPGX%2B36b5%2F2rvHKaxEnhdW6qRinT4HgnQ140PSirgW317HjfvzBqBz37irb6GHC9F56iMGYCxJUbjM42QZk%2FtEgtdGhHLLvjZnHtswO1u7FYJDDWVC2ZQNdB2ZcIsHE%2FCwHV8lKm7c381QR54Kgr5Ns5WGykhGeTi3P3%2BqbfT09ZnXTNa1sIUmoCbgkLtqQ%2BibrjnQiyruKQEfyPeaV8w7fGkpAY6pwGzMjtdgJ5Jre%2FQkBJYyqPpsj3PrDNXXEl9KJCFSqh66UrxobN%2BdDg1OH6m9UY66H5oNmscHfo9T6SVkChKreVNOz4zbDQ1cpWzTK4IBFbAmvULpla9vpVS8SxdLH9XbNpapp%2Fvh5eiKG1f%2Fg2rt50OZ3MsFPofeObxr910%2FR%2BV1WD5AGb4Rl%2Fy1rmrTaFcHXgiKT%2FoISDb0BxIH%2BPqqPsgBnKlhe5DRQ%3D%3D&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20230614T062315Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=300&amp;X-Amz-Credential=ASIA6J4MGZQ6GTML5FHL%2F20230614%2Fap-southeast-1%2Fs3%2Faws4_request&amp;X-Amz-Signature=4d31718ef9ba1659715ed1836ecfbcad4e409cc3273426b50671941dfec6c039" />
+            <input class="pet-button" type="submit" value="Take me home"/>
+        
+        <div class="pet-name">
+            <span>kitten-white</span>
+        </div>
+        <div class="pet-price">
+            <span>79</span>
+        </div>
+
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+
+        <input type="hidden" name="petcolor" id="pet_petcolor" value="white" />
+        <input type="hidden" name="petid" id="pet_petid" value="016" />
+        <input type="hidden" name="pettype" id="pet_pettype" value="kitten" />
+        <input type="hidden" name="peturl" id="pet_peturl" value="https://services-s3bucketpetadoptioncb20dce5-o33mvyupp12n.s3.ap-southeast-1.amazonaws.com/kitten/k1.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjELT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLXNvdXRoZWFzdC0xIkYwRAIgV5tBEmchqtab9aRsY2PJ7vmkiOxU8ZSsT%2BmcHOlbA%2F0CIA3zYNApcLblzPh48K5vFFGGUhXX3FGJbl2BGz1mnL0JKrMECP3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMOTgzMzA0Njg2NjUyIgwgahrBX8wQd8Dvu2UqhwT%2FpLE7LucQkk8uvhFHAE7W7STL9B5VacD%2BZ%2BDwYJbTnQma%2Bzqq1uucrzRn6LAmR372QxCnq0eFzJnU%2F36pkXBug1huTvTlPkiEzojdXwGDjEBaAetQ5jWDJexThJ58FHH0rMARr%2BXtIZtNr39LZIDltO19EAgf7sZU7tCm7VopbOXvyuqE74z8LT9w2J8Izra%2Bip6B5pWy482wm%2FeY6tjFE6g9B9%2BkQlfPiAED6xNLZgvin0gxZ4nRaVA7WPE60K4g461aoIgaEkWnrsUGIMU%2BozOKE5dR5vxtSy7L9KQCM9PYDbUCW%2FlaWlSloPA7pwh76V%2B%2FcpmdsDQMGPrb4CWQiHJ%2BaKnlPDbBhURQhabnx0Kpz2UClINwQNNGrFC1o5E1WnC9n0PujxIaXOooGEKherhx2P9Ykxlg37tN%2F7yXzM%2F0ogVdK2bajwL2jKPcxH%2B5916nigRYfdw0RtRweDlKwLwq2OyRPIYbPGX%2B36b5%2F2rvHKaxEnhdW6qRinT4HgnQ140PSirgW317HjfvzBqBz37irb6GHC9F56iMGYCxJUbjM42QZk%2FtEgtdGhHLLvjZnHtswO1u7FYJDDWVC2ZQNdB2ZcIsHE%2FCwHV8lKm7c381QR54Kgr5Ns5WGykhGeTi3P3%2BqbfT09ZnXTNa1sIUmoCbgkLtqQ%2BibrjnQiyruKQEfyPeaV8w7fGkpAY6pwGzMjtdgJ5Jre%2FQkBJYyqPpsj3PrDNXXEl9KJCFSqh66UrxobN%2BdDg1OH6m9UY66H5oNmscHfo9T6SVkChKreVNOz4zbDQ1cpWzTK4IBFbAmvULpla9vpVS8SxdLH9XbNpapp%2Fvh5eiKG1f%2Fg2rt50OZ3MsFPofeObxr910%2FR%2BV1WD5AGb4Rl%2Fy1rmrTaFcHXgiKT%2FoISDb0BxIH%2BPqqPsgBnKlhe5DRQ%3D%3D&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20230614T062315Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=300&amp;X-Amz-Credential=ASIA6J4MGZQ6GTML5FHL%2F20230614%2Fap-southeast-1%2Fs3%2Faws4_request&amp;X-Amz-Signature=4d31718ef9ba1659715ed1836ecfbcad4e409cc3273426b50671941dfec6c039" />
+        <input type="hidden" name="price" id="pet_price" value="79" />
+        <input type="hidden" name="cuteness_rate" id="pet_cuteness_rate" value="4" />
+    <input name="__RequestVerificationToken" type="hidden" value="CfDJ8CCGo0JRRGRLmFLLJPwADP_ZdnehqevN6wm66UG4IB1PS-VwPsjn2WgsxlcfIIWpQM7ikORuenswKfQKLUd9beqBBKngrfeORNN-0KMd0pEIOXd6T5BccNB6Q9YJzTF2-H7KjnxbuW8nZYTOV9FGSuA" /></form>
+
+                </div>
+                <div class="pet-item col-md-4">
+                    
+    <form method="post" action="/adoption/takemehome">
+        <img class="pet-thumbnail" src="https://services-s3bucketpetadoptioncb20dce5-o33mvyupp12n.s3.ap-southeast-1.amazonaws.com/kitten/k3.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjELT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLXNvdXRoZWFzdC0xIkYwRAIgV5tBEmchqtab9aRsY2PJ7vmkiOxU8ZSsT%2BmcHOlbA%2F0CIA3zYNApcLblzPh48K5vFFGGUhXX3FGJbl2BGz1mnL0JKrMECP3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMOTgzMzA0Njg2NjUyIgwgahrBX8wQd8Dvu2UqhwT%2FpLE7LucQkk8uvhFHAE7W7STL9B5VacD%2BZ%2BDwYJbTnQma%2Bzqq1uucrzRn6LAmR372QxCnq0eFzJnU%2F36pkXBug1huTvTlPkiEzojdXwGDjEBaAetQ5jWDJexThJ58FHH0rMARr%2BXtIZtNr39LZIDltO19EAgf7sZU7tCm7VopbOXvyuqE74z8LT9w2J8Izra%2Bip6B5pWy482wm%2FeY6tjFE6g9B9%2BkQlfPiAED6xNLZgvin0gxZ4nRaVA7WPE60K4g461aoIgaEkWnrsUGIMU%2BozOKE5dR5vxtSy7L9KQCM9PYDbUCW%2FlaWlSloPA7pwh76V%2B%2FcpmdsDQMGPrb4CWQiHJ%2BaKnlPDbBhURQhabnx0Kpz2UClINwQNNGrFC1o5E1WnC9n0PujxIaXOooGEKherhx2P9Ykxlg37tN%2F7yXzM%2F0ogVdK2bajwL2jKPcxH%2B5916nigRYfdw0RtRweDlKwLwq2OyRPIYbPGX%2B36b5%2F2rvHKaxEnhdW6qRinT4HgnQ140PSirgW317HjfvzBqBz37irb6GHC9F56iMGYCxJUbjM42QZk%2FtEgtdGhHLLvjZnHtswO1u7FYJDDWVC2ZQNdB2ZcIsHE%2FCwHV8lKm7c381QR54Kgr5Ns5WGykhGeTi3P3%2BqbfT09ZnXTNa1sIUmoCbgkLtqQ%2BibrjnQiyruKQEfyPeaV8w7fGkpAY6pwGzMjtdgJ5Jre%2FQkBJYyqPpsj3PrDNXXEl9KJCFSqh66UrxobN%2BdDg1OH6m9UY66H5oNmscHfo9T6SVkChKreVNOz4zbDQ1cpWzTK4IBFbAmvULpla9vpVS8SxdLH9XbNpapp%2Fvh5eiKG1f%2Fg2rt50OZ3MsFPofeObxr910%2FR%2BV1WD5AGb4Rl%2Fy1rmrTaFcHXgiKT%2FoISDb0BxIH%2BPqqPsgBnKlhe5DRQ%3D%3D&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20230614T062315Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=300&amp;X-Amz-Credential=ASIA6J4MGZQ6GTML5FHL%2F20230614%2Fap-southeast-1%2Fs3%2Faws4_request&amp;X-Amz-Signature=c55abc0615efbd4603a49726a912e66331790e6e924b4a4ba67cfa4c29b553c4" />
+            <input class="pet-button" type="submit" value="Take me home"/>
+        
+        <div class="pet-name">
+            <span>kitten-white</span>
+        </div>
+        <div class="pet-price">
+            <span>89</span>
+        </div>
+
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+
+        <input type="hidden" name="petcolor" id="pet_petcolor" value="white" />
+        <input type="hidden" name="petid" id="pet_petid" value="017" />
+        <input type="hidden" name="pettype" id="pet_pettype" value="kitten" />
+        <input type="hidden" name="peturl" id="pet_peturl" value="https://services-s3bucketpetadoptioncb20dce5-o33mvyupp12n.s3.ap-southeast-1.amazonaws.com/kitten/k3.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjELT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLXNvdXRoZWFzdC0xIkYwRAIgV5tBEmchqtab9aRsY2PJ7vmkiOxU8ZSsT%2BmcHOlbA%2F0CIA3zYNApcLblzPh48K5vFFGGUhXX3FGJbl2BGz1mnL0JKrMECP3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMOTgzMzA0Njg2NjUyIgwgahrBX8wQd8Dvu2UqhwT%2FpLE7LucQkk8uvhFHAE7W7STL9B5VacD%2BZ%2BDwYJbTnQma%2Bzqq1uucrzRn6LAmR372QxCnq0eFzJnU%2F36pkXBug1huTvTlPkiEzojdXwGDjEBaAetQ5jWDJexThJ58FHH0rMARr%2BXtIZtNr39LZIDltO19EAgf7sZU7tCm7VopbOXvyuqE74z8LT9w2J8Izra%2Bip6B5pWy482wm%2FeY6tjFE6g9B9%2BkQlfPiAED6xNLZgvin0gxZ4nRaVA7WPE60K4g461aoIgaEkWnrsUGIMU%2BozOKE5dR5vxtSy7L9KQCM9PYDbUCW%2FlaWlSloPA7pwh76V%2B%2FcpmdsDQMGPrb4CWQiHJ%2BaKnlPDbBhURQhabnx0Kpz2UClINwQNNGrFC1o5E1WnC9n0PujxIaXOooGEKherhx2P9Ykxlg37tN%2F7yXzM%2F0ogVdK2bajwL2jKPcxH%2B5916nigRYfdw0RtRweDlKwLwq2OyRPIYbPGX%2B36b5%2F2rvHKaxEnhdW6qRinT4HgnQ140PSirgW317HjfvzBqBz37irb6GHC9F56iMGYCxJUbjM42QZk%2FtEgtdGhHLLvjZnHtswO1u7FYJDDWVC2ZQNdB2ZcIsHE%2FCwHV8lKm7c381QR54Kgr5Ns5WGykhGeTi3P3%2BqbfT09ZnXTNa1sIUmoCbgkLtqQ%2BibrjnQiyruKQEfyPeaV8w7fGkpAY6pwGzMjtdgJ5Jre%2FQkBJYyqPpsj3PrDNXXEl9KJCFSqh66UrxobN%2BdDg1OH6m9UY66H5oNmscHfo9T6SVkChKreVNOz4zbDQ1cpWzTK4IBFbAmvULpla9vpVS8SxdLH9XbNpapp%2Fvh5eiKG1f%2Fg2rt50OZ3MsFPofeObxr910%2FR%2BV1WD5AGb4Rl%2Fy1rmrTaFcHXgiKT%2FoISDb0BxIH%2BPqqPsgBnKlhe5DRQ%3D%3D&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20230614T062315Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=300&amp;X-Amz-Credential=ASIA6J4MGZQ6GTML5FHL%2F20230614%2Fap-southeast-1%2Fs3%2Faws4_request&amp;X-Amz-Signature=c55abc0615efbd4603a49726a912e66331790e6e924b4a4ba67cfa4c29b553c4" />
+        <input type="hidden" name="price" id="pet_price" value="89" />
+        <input type="hidden" name="cuteness_rate" id="pet_cuteness_rate" value="5" />
+    <input name="__RequestVerificationToken" type="hidden" value="CfDJ8CCGo0JRRGRLmFLLJPwADP_ZdnehqevN6wm66UG4IB1PS-VwPsjn2WgsxlcfIIWpQM7ikORuenswKfQKLUd9beqBBKngrfeORNN-0KMd0pEIOXd6T5BccNB6Q9YJzTF2-H7KjnxbuW8nZYTOV9FGSuA" /></form>
+
+                </div>
+                <div class="pet-item col-md-4">
+                    
+    <form method="post" action="/adoption/takemehome">
+        <img class="pet-thumbnail" src="https://services-s3bucketpetadoptioncb20dce5-o33mvyupp12n.s3.ap-southeast-1.amazonaws.com/kitten/k6.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjELT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLXNvdXRoZWFzdC0xIkYwRAIgV5tBEmchqtab9aRsY2PJ7vmkiOxU8ZSsT%2BmcHOlbA%2F0CIA3zYNApcLblzPh48K5vFFGGUhXX3FGJbl2BGz1mnL0JKrMECP3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMOTgzMzA0Njg2NjUyIgwgahrBX8wQd8Dvu2UqhwT%2FpLE7LucQkk8uvhFHAE7W7STL9B5VacD%2BZ%2BDwYJbTnQma%2Bzqq1uucrzRn6LAmR372QxCnq0eFzJnU%2F36pkXBug1huTvTlPkiEzojdXwGDjEBaAetQ5jWDJexThJ58FHH0rMARr%2BXtIZtNr39LZIDltO19EAgf7sZU7tCm7VopbOXvyuqE74z8LT9w2J8Izra%2Bip6B5pWy482wm%2FeY6tjFE6g9B9%2BkQlfPiAED6xNLZgvin0gxZ4nRaVA7WPE60K4g461aoIgaEkWnrsUGIMU%2BozOKE5dR5vxtSy7L9KQCM9PYDbUCW%2FlaWlSloPA7pwh76V%2B%2FcpmdsDQMGPrb4CWQiHJ%2BaKnlPDbBhURQhabnx0Kpz2UClINwQNNGrFC1o5E1WnC9n0PujxIaXOooGEKherhx2P9Ykxlg37tN%2F7yXzM%2F0ogVdK2bajwL2jKPcxH%2B5916nigRYfdw0RtRweDlKwLwq2OyRPIYbPGX%2B36b5%2F2rvHKaxEnhdW6qRinT4HgnQ140PSirgW317HjfvzBqBz37irb6GHC9F56iMGYCxJUbjM42QZk%2FtEgtdGhHLLvjZnHtswO1u7FYJDDWVC2ZQNdB2ZcIsHE%2FCwHV8lKm7c381QR54Kgr5Ns5WGykhGeTi3P3%2BqbfT09ZnXTNa1sIUmoCbgkLtqQ%2BibrjnQiyruKQEfyPeaV8w7fGkpAY6pwGzMjtdgJ5Jre%2FQkBJYyqPpsj3PrDNXXEl9KJCFSqh66UrxobN%2BdDg1OH6m9UY66H5oNmscHfo9T6SVkChKreVNOz4zbDQ1cpWzTK4IBFbAmvULpla9vpVS8SxdLH9XbNpapp%2Fvh5eiKG1f%2Fg2rt50OZ3MsFPofeObxr910%2FR%2BV1WD5AGb4Rl%2Fy1rmrTaFcHXgiKT%2FoISDb0BxIH%2BPqqPsgBnKlhe5DRQ%3D%3D&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20230614T062315Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=300&amp;X-Amz-Credential=ASIA6J4MGZQ6GTML5FHL%2F20230614%2Fap-southeast-1%2Fs3%2Faws4_request&amp;X-Amz-Signature=e96935525a3b3429b30db73c3d541e471de0e86a59281358b0ed595f9bde4577" />
+            <span class="alert-danger">Not available</span>
+        
+        <div class="pet-name">
+            <span>kitten-black</span>
+        </div>
+        <div class="pet-price">
+            <span>99</span>
+        </div>
+
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+
+        <input type="hidden" name="petcolor" id="pet_petcolor" value="black" />
+        <input type="hidden" name="petid" id="pet_petid" value="018" />
+        <input type="hidden" name="pettype" id="pet_pettype" value="kitten" />
+        <input type="hidden" name="peturl" id="pet_peturl" value="https://services-s3bucketpetadoptioncb20dce5-o33mvyupp12n.s3.ap-southeast-1.amazonaws.com/kitten/k6.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjELT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLXNvdXRoZWFzdC0xIkYwRAIgV5tBEmchqtab9aRsY2PJ7vmkiOxU8ZSsT%2BmcHOlbA%2F0CIA3zYNApcLblzPh48K5vFFGGUhXX3FGJbl2BGz1mnL0JKrMECP3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMOTgzMzA0Njg2NjUyIgwgahrBX8wQd8Dvu2UqhwT%2FpLE7LucQkk8uvhFHAE7W7STL9B5VacD%2BZ%2BDwYJbTnQma%2Bzqq1uucrzRn6LAmR372QxCnq0eFzJnU%2F36pkXBug1huTvTlPkiEzojdXwGDjEBaAetQ5jWDJexThJ58FHH0rMARr%2BXtIZtNr39LZIDltO19EAgf7sZU7tCm7VopbOXvyuqE74z8LT9w2J8Izra%2Bip6B5pWy482wm%2FeY6tjFE6g9B9%2BkQlfPiAED6xNLZgvin0gxZ4nRaVA7WPE60K4g461aoIgaEkWnrsUGIMU%2BozOKE5dR5vxtSy7L9KQCM9PYDbUCW%2FlaWlSloPA7pwh76V%2B%2FcpmdsDQMGPrb4CWQiHJ%2BaKnlPDbBhURQhabnx0Kpz2UClINwQNNGrFC1o5E1WnC9n0PujxIaXOooGEKherhx2P9Ykxlg37tN%2F7yXzM%2F0ogVdK2bajwL2jKPcxH%2B5916nigRYfdw0RtRweDlKwLwq2OyRPIYbPGX%2B36b5%2F2rvHKaxEnhdW6qRinT4HgnQ140PSirgW317HjfvzBqBz37irb6GHC9F56iMGYCxJUbjM42QZk%2FtEgtdGhHLLvjZnHtswO1u7FYJDDWVC2ZQNdB2ZcIsHE%2FCwHV8lKm7c381QR54Kgr5Ns5WGykhGeTi3P3%2BqbfT09ZnXTNa1sIUmoCbgkLtqQ%2BibrjnQiyruKQEfyPeaV8w7fGkpAY6pwGzMjtdgJ5Jre%2FQkBJYyqPpsj3PrDNXXEl9KJCFSqh66UrxobN%2BdDg1OH6m9UY66H5oNmscHfo9T6SVkChKreVNOz4zbDQ1cpWzTK4IBFbAmvULpla9vpVS8SxdLH9XbNpapp%2Fvh5eiKG1f%2Fg2rt50OZ3MsFPofeObxr910%2FR%2BV1WD5AGb4Rl%2Fy1rmrTaFcHXgiKT%2FoISDb0BxIH%2BPqqPsgBnKlhe5DRQ%3D%3D&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20230614T062315Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=300&amp;X-Amz-Credential=ASIA6J4MGZQ6GTML5FHL%2F20230614%2Fap-southeast-1%2Fs3%2Faws4_request&amp;X-Amz-Signature=e96935525a3b3429b30db73c3d541e471de0e86a59281358b0ed595f9bde4577" />
+        <input type="hidden" name="price" id="pet_price" value="99" />
+        <input type="hidden" name="cuteness_rate" id="pet_cuteness_rate" value="4" />
+    <input name="__RequestVerificationToken" type="hidden" value="CfDJ8CCGo0JRRGRLmFLLJPwADP_ZdnehqevN6wm66UG4IB1PS-VwPsjn2WgsxlcfIIWpQM7ikORuenswKfQKLUd9beqBBKngrfeORNN-0KMd0pEIOXd6T5BccNB6Q9YJzTF2-H7KjnxbuW8nZYTOV9FGSuA" /></form>
+
+                </div>
+                <div class="pet-item col-md-4">
+                    
+    <form method="post" action="/adoption/takemehome">
+        <img class="pet-thumbnail" src="https://services-s3bucketpetadoptioncb20dce5-o33mvyupp12n.s3.ap-southeast-1.amazonaws.com/kitten/k2.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjELT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLXNvdXRoZWFzdC0xIkYwRAIgV5tBEmchqtab9aRsY2PJ7vmkiOxU8ZSsT%2BmcHOlbA%2F0CIA3zYNApcLblzPh48K5vFFGGUhXX3FGJbl2BGz1mnL0JKrMECP3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMOTgzMzA0Njg2NjUyIgwgahrBX8wQd8Dvu2UqhwT%2FpLE7LucQkk8uvhFHAE7W7STL9B5VacD%2BZ%2BDwYJbTnQma%2Bzqq1uucrzRn6LAmR372QxCnq0eFzJnU%2F36pkXBug1huTvTlPkiEzojdXwGDjEBaAetQ5jWDJexThJ58FHH0rMARr%2BXtIZtNr39LZIDltO19EAgf7sZU7tCm7VopbOXvyuqE74z8LT9w2J8Izra%2Bip6B5pWy482wm%2FeY6tjFE6g9B9%2BkQlfPiAED6xNLZgvin0gxZ4nRaVA7WPE60K4g461aoIgaEkWnrsUGIMU%2BozOKE5dR5vxtSy7L9KQCM9PYDbUCW%2FlaWlSloPA7pwh76V%2B%2FcpmdsDQMGPrb4CWQiHJ%2BaKnlPDbBhURQhabnx0Kpz2UClINwQNNGrFC1o5E1WnC9n0PujxIaXOooGEKherhx2P9Ykxlg37tN%2F7yXzM%2F0ogVdK2bajwL2jKPcxH%2B5916nigRYfdw0RtRweDlKwLwq2OyRPIYbPGX%2B36b5%2F2rvHKaxEnhdW6qRinT4HgnQ140PSirgW317HjfvzBqBz37irb6GHC9F56iMGYCxJUbjM42QZk%2FtEgtdGhHLLvjZnHtswO1u7FYJDDWVC2ZQNdB2ZcIsHE%2FCwHV8lKm7c381QR54Kgr5Ns5WGykhGeTi3P3%2BqbfT09ZnXTNa1sIUmoCbgkLtqQ%2BibrjnQiyruKQEfyPeaV8w7fGkpAY6pwGzMjtdgJ5Jre%2FQkBJYyqPpsj3PrDNXXEl9KJCFSqh66UrxobN%2BdDg1OH6m9UY66H5oNmscHfo9T6SVkChKreVNOz4zbDQ1cpWzTK4IBFbAmvULpla9vpVS8SxdLH9XbNpapp%2Fvh5eiKG1f%2Fg2rt50OZ3MsFPofeObxr910%2FR%2BV1WD5AGb4Rl%2Fy1rmrTaFcHXgiKT%2FoISDb0BxIH%2BPqqPsgBnKlhe5DRQ%3D%3D&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20230614T062315Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=300&amp;X-Amz-Credential=ASIA6J4MGZQ6GTML5FHL%2F20230614%2Fap-southeast-1%2Fs3%2Faws4_request&amp;X-Amz-Signature=9d514d208935c744d57159edcb6ee7b451363b1a4dea9307e83aea41c650cc5a" />
+            <input class="pet-button" type="submit" value="Take me home"/>
+        
+        <div class="pet-name">
+            <span>kitten-grey</span>
+        </div>
+        <div class="pet-price">
+            <span>99</span>
+        </div>
+
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+
+        <input type="hidden" name="petcolor" id="pet_petcolor" value="grey" />
+        <input type="hidden" name="petid" id="pet_petid" value="019" />
+        <input type="hidden" name="pettype" id="pet_pettype" value="kitten" />
+        <input type="hidden" name="peturl" id="pet_peturl" value="https://services-s3bucketpetadoptioncb20dce5-o33mvyupp12n.s3.ap-southeast-1.amazonaws.com/kitten/k2.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjELT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLXNvdXRoZWFzdC0xIkYwRAIgV5tBEmchqtab9aRsY2PJ7vmkiOxU8ZSsT%2BmcHOlbA%2F0CIA3zYNApcLblzPh48K5vFFGGUhXX3FGJbl2BGz1mnL0JKrMECP3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMOTgzMzA0Njg2NjUyIgwgahrBX8wQd8Dvu2UqhwT%2FpLE7LucQkk8uvhFHAE7W7STL9B5VacD%2BZ%2BDwYJbTnQma%2Bzqq1uucrzRn6LAmR372QxCnq0eFzJnU%2F36pkXBug1huTvTlPkiEzojdXwGDjEBaAetQ5jWDJexThJ58FHH0rMARr%2BXtIZtNr39LZIDltO19EAgf7sZU7tCm7VopbOXvyuqE74z8LT9w2J8Izra%2Bip6B5pWy482wm%2FeY6tjFE6g9B9%2BkQlfPiAED6xNLZgvin0gxZ4nRaVA7WPE60K4g461aoIgaEkWnrsUGIMU%2BozOKE5dR5vxtSy7L9KQCM9PYDbUCW%2FlaWlSloPA7pwh76V%2B%2FcpmdsDQMGPrb4CWQiHJ%2BaKnlPDbBhURQhabnx0Kpz2UClINwQNNGrFC1o5E1WnC9n0PujxIaXOooGEKherhx2P9Ykxlg37tN%2F7yXzM%2F0ogVdK2bajwL2jKPcxH%2B5916nigRYfdw0RtRweDlKwLwq2OyRPIYbPGX%2B36b5%2F2rvHKaxEnhdW6qRinT4HgnQ140PSirgW317HjfvzBqBz37irb6GHC9F56iMGYCxJUbjM42QZk%2FtEgtdGhHLLvjZnHtswO1u7FYJDDWVC2ZQNdB2ZcIsHE%2FCwHV8lKm7c381QR54Kgr5Ns5WGykhGeTi3P3%2BqbfT09ZnXTNa1sIUmoCbgkLtqQ%2BibrjnQiyruKQEfyPeaV8w7fGkpAY6pwGzMjtdgJ5Jre%2FQkBJYyqPpsj3PrDNXXEl9KJCFSqh66UrxobN%2BdDg1OH6m9UY66H5oNmscHfo9T6SVkChKreVNOz4zbDQ1cpWzTK4IBFbAmvULpla9vpVS8SxdLH9XbNpapp%2Fvh5eiKG1f%2Fg2rt50OZ3MsFPofeObxr910%2FR%2BV1WD5AGb4Rl%2Fy1rmrTaFcHXgiKT%2FoISDb0BxIH%2BPqqPsgBnKlhe5DRQ%3D%3D&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20230614T062315Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=300&amp;X-Amz-Credential=ASIA6J4MGZQ6GTML5FHL%2F20230614%2Fap-southeast-1%2Fs3%2Faws4_request&amp;X-Amz-Signature=9d514d208935c744d57159edcb6ee7b451363b1a4dea9307e83aea41c650cc5a" />
+        <input type="hidden" name="price" id="pet_price" value="99" />
+        <input type="hidden" name="cuteness_rate" id="pet_cuteness_rate" value="4" />
+    <input name="__RequestVerificationToken" type="hidden" value="CfDJ8CCGo0JRRGRLmFLLJPwADP_ZdnehqevN6wm66UG4IB1PS-VwPsjn2WgsxlcfIIWpQM7ikORuenswKfQKLUd9beqBBKngrfeORNN-0KMd0pEIOXd6T5BccNB6Q9YJzTF2-H7KjnxbuW8nZYTOV9FGSuA" /></form>
+
+                </div>
+                <div class="pet-item col-md-4">
+                    
+    <form method="post" action="/adoption/takemehome">
+        <img class="pet-thumbnail" src="https://services-s3bucketpetadoptioncb20dce5-o33mvyupp12n.s3.ap-southeast-1.amazonaws.com/kitten/k5.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjELT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLXNvdXRoZWFzdC0xIkYwRAIgV5tBEmchqtab9aRsY2PJ7vmkiOxU8ZSsT%2BmcHOlbA%2F0CIA3zYNApcLblzPh48K5vFFGGUhXX3FGJbl2BGz1mnL0JKrMECP3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMOTgzMzA0Njg2NjUyIgwgahrBX8wQd8Dvu2UqhwT%2FpLE7LucQkk8uvhFHAE7W7STL9B5VacD%2BZ%2BDwYJbTnQma%2Bzqq1uucrzRn6LAmR372QxCnq0eFzJnU%2F36pkXBug1huTvTlPkiEzojdXwGDjEBaAetQ5jWDJexThJ58FHH0rMARr%2BXtIZtNr39LZIDltO19EAgf7sZU7tCm7VopbOXvyuqE74z8LT9w2J8Izra%2Bip6B5pWy482wm%2FeY6tjFE6g9B9%2BkQlfPiAED6xNLZgvin0gxZ4nRaVA7WPE60K4g461aoIgaEkWnrsUGIMU%2BozOKE5dR5vxtSy7L9KQCM9PYDbUCW%2FlaWlSloPA7pwh76V%2B%2FcpmdsDQMGPrb4CWQiHJ%2BaKnlPDbBhURQhabnx0Kpz2UClINwQNNGrFC1o5E1WnC9n0PujxIaXOooGEKherhx2P9Ykxlg37tN%2F7yXzM%2F0ogVdK2bajwL2jKPcxH%2B5916nigRYfdw0RtRweDlKwLwq2OyRPIYbPGX%2B36b5%2F2rvHKaxEnhdW6qRinT4HgnQ140PSirgW317HjfvzBqBz37irb6GHC9F56iMGYCxJUbjM42QZk%2FtEgtdGhHLLvjZnHtswO1u7FYJDDWVC2ZQNdB2ZcIsHE%2FCwHV8lKm7c381QR54Kgr5Ns5WGykhGeTi3P3%2BqbfT09ZnXTNa1sIUmoCbgkLtqQ%2BibrjnQiyruKQEfyPeaV8w7fGkpAY6pwGzMjtdgJ5Jre%2FQkBJYyqPpsj3PrDNXXEl9KJCFSqh66UrxobN%2BdDg1OH6m9UY66H5oNmscHfo9T6SVkChKreVNOz4zbDQ1cpWzTK4IBFbAmvULpla9vpVS8SxdLH9XbNpapp%2Fvh5eiKG1f%2Fg2rt50OZ3MsFPofeObxr910%2FR%2BV1WD5AGb4Rl%2Fy1rmrTaFcHXgiKT%2FoISDb0BxIH%2BPqqPsgBnKlhe5DRQ%3D%3D&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20230614T062315Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=300&amp;X-Amz-Credential=ASIA6J4MGZQ6GTML5FHL%2F20230614%2Fap-southeast-1%2Fs3%2Faws4_request&amp;X-Amz-Signature=857144f7617234c438f36b90c1f4b12074e2aa39b72de626b706719c8bd3c786" />
+            <input class="pet-button" type="submit" value="Take me home"/>
+        
+        <div class="pet-name">
+            <span>kitten-brown</span>
+        </div>
+        <div class="pet-price">
+            <span>89</span>
+        </div>
+
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+
+        <input type="hidden" name="petcolor" id="pet_petcolor" value="brown" />
+        <input type="hidden" name="petid" id="pet_petid" value="020" />
+        <input type="hidden" name="pettype" id="pet_pettype" value="kitten" />
+        <input type="hidden" name="peturl" id="pet_peturl" value="https://services-s3bucketpetadoptioncb20dce5-o33mvyupp12n.s3.ap-southeast-1.amazonaws.com/kitten/k5.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjELT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLXNvdXRoZWFzdC0xIkYwRAIgV5tBEmchqtab9aRsY2PJ7vmkiOxU8ZSsT%2BmcHOlbA%2F0CIA3zYNApcLblzPh48K5vFFGGUhXX3FGJbl2BGz1mnL0JKrMECP3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMOTgzMzA0Njg2NjUyIgwgahrBX8wQd8Dvu2UqhwT%2FpLE7LucQkk8uvhFHAE7W7STL9B5VacD%2BZ%2BDwYJbTnQma%2Bzqq1uucrzRn6LAmR372QxCnq0eFzJnU%2F36pkXBug1huTvTlPkiEzojdXwGDjEBaAetQ5jWDJexThJ58FHH0rMARr%2BXtIZtNr39LZIDltO19EAgf7sZU7tCm7VopbOXvyuqE74z8LT9w2J8Izra%2Bip6B5pWy482wm%2FeY6tjFE6g9B9%2BkQlfPiAED6xNLZgvin0gxZ4nRaVA7WPE60K4g461aoIgaEkWnrsUGIMU%2BozOKE5dR5vxtSy7L9KQCM9PYDbUCW%2FlaWlSloPA7pwh76V%2B%2FcpmdsDQMGPrb4CWQiHJ%2BaKnlPDbBhURQhabnx0Kpz2UClINwQNNGrFC1o5E1WnC9n0PujxIaXOooGEKherhx2P9Ykxlg37tN%2F7yXzM%2F0ogVdK2bajwL2jKPcxH%2B5916nigRYfdw0RtRweDlKwLwq2OyRPIYbPGX%2B36b5%2F2rvHKaxEnhdW6qRinT4HgnQ140PSirgW317HjfvzBqBz37irb6GHC9F56iMGYCxJUbjM42QZk%2FtEgtdGhHLLvjZnHtswO1u7FYJDDWVC2ZQNdB2ZcIsHE%2FCwHV8lKm7c381QR54Kgr5Ns5WGykhGeTi3P3%2BqbfT09ZnXTNa1sIUmoCbgkLtqQ%2BibrjnQiyruKQEfyPeaV8w7fGkpAY6pwGzMjtdgJ5Jre%2FQkBJYyqPpsj3PrDNXXEl9KJCFSqh66UrxobN%2BdDg1OH6m9UY66H5oNmscHfo9T6SVkChKreVNOz4zbDQ1cpWzTK4IBFbAmvULpla9vpVS8SxdLH9XbNpapp%2Fvh5eiKG1f%2Fg2rt50OZ3MsFPofeObxr910%2FR%2BV1WD5AGb4Rl%2Fy1rmrTaFcHXgiKT%2FoISDb0BxIH%2BPqqPsgBnKlhe5DRQ%3D%3D&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20230614T062315Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=300&amp;X-Amz-Credential=ASIA6J4MGZQ6GTML5FHL%2F20230614%2Fap-southeast-1%2Fs3%2Faws4_request&amp;X-Amz-Signature=857144f7617234c438f36b90c1f4b12074e2aa39b72de626b706719c8bd3c786" />
+        <input type="hidden" name="price" id="pet_price" value="89" />
+        <input type="hidden" name="cuteness_rate" id="pet_cuteness_rate" value="5" />
+    <input name="__RequestVerificationToken" type="hidden" value="CfDJ8CCGo0JRRGRLmFLLJPwADP_ZdnehqevN6wm66UG4IB1PS-VwPsjn2WgsxlcfIIWpQM7ikORuenswKfQKLUd9beqBBKngrfeORNN-0KMd0pEIOXd6T5BccNB6Q9YJzTF2-H7KjnxbuW8nZYTOV9FGSuA" /></form>
+
+                </div>
+                <div class="pet-item col-md-4">
+                    
+    <form method="post" action="/adoption/takemehome">
+        <img class="pet-thumbnail" src="https://services-s3bucketpetadoptioncb20dce5-o33mvyupp12n.s3.ap-southeast-1.amazonaws.com/kitten/k4.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjELT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLXNvdXRoZWFzdC0xIkYwRAIgV5tBEmchqtab9aRsY2PJ7vmkiOxU8ZSsT%2BmcHOlbA%2F0CIA3zYNApcLblzPh48K5vFFGGUhXX3FGJbl2BGz1mnL0JKrMECP3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMOTgzMzA0Njg2NjUyIgwgahrBX8wQd8Dvu2UqhwT%2FpLE7LucQkk8uvhFHAE7W7STL9B5VacD%2BZ%2BDwYJbTnQma%2Bzqq1uucrzRn6LAmR372QxCnq0eFzJnU%2F36pkXBug1huTvTlPkiEzojdXwGDjEBaAetQ5jWDJexThJ58FHH0rMARr%2BXtIZtNr39LZIDltO19EAgf7sZU7tCm7VopbOXvyuqE74z8LT9w2J8Izra%2Bip6B5pWy482wm%2FeY6tjFE6g9B9%2BkQlfPiAED6xNLZgvin0gxZ4nRaVA7WPE60K4g461aoIgaEkWnrsUGIMU%2BozOKE5dR5vxtSy7L9KQCM9PYDbUCW%2FlaWlSloPA7pwh76V%2B%2FcpmdsDQMGPrb4CWQiHJ%2BaKnlPDbBhURQhabnx0Kpz2UClINwQNNGrFC1o5E1WnC9n0PujxIaXOooGEKherhx2P9Ykxlg37tN%2F7yXzM%2F0ogVdK2bajwL2jKPcxH%2B5916nigRYfdw0RtRweDlKwLwq2OyRPIYbPGX%2B36b5%2F2rvHKaxEnhdW6qRinT4HgnQ140PSirgW317HjfvzBqBz37irb6GHC9F56iMGYCxJUbjM42QZk%2FtEgtdGhHLLvjZnHtswO1u7FYJDDWVC2ZQNdB2ZcIsHE%2FCwHV8lKm7c381QR54Kgr5Ns5WGykhGeTi3P3%2BqbfT09ZnXTNa1sIUmoCbgkLtqQ%2BibrjnQiyruKQEfyPeaV8w7fGkpAY6pwGzMjtdgJ5Jre%2FQkBJYyqPpsj3PrDNXXEl9KJCFSqh66UrxobN%2BdDg1OH6m9UY66H5oNmscHfo9T6SVkChKreVNOz4zbDQ1cpWzTK4IBFbAmvULpla9vpVS8SxdLH9XbNpapp%2Fvh5eiKG1f%2Fg2rt50OZ3MsFPofeObxr910%2FR%2BV1WD5AGb4Rl%2Fy1rmrTaFcHXgiKT%2FoISDb0BxIH%2BPqqPsgBnKlhe5DRQ%3D%3D&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20230614T062315Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=300&amp;X-Amz-Credential=ASIA6J4MGZQ6GTML5FHL%2F20230614%2Fap-southeast-1%2Fs3%2Faws4_request&amp;X-Amz-Signature=7722a78565db47d473963feeab88ead03ab288240c192eea05a7ee3b3a6a459a" />
+            <span class="alert-danger">Not available</span>
+        
+        <div class="pet-name">
+            <span>kitten-brown</span>
+        </div>
+        <div class="pet-price">
+            <span>65</span>
+        </div>
+
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+
+        <input type="hidden" name="petcolor" id="pet_petcolor" value="brown" />
+        <input type="hidden" name="petid" id="pet_petid" value="021" />
+        <input type="hidden" name="pettype" id="pet_pettype" value="kitten" />
+        <input type="hidden" name="peturl" id="pet_peturl" value="https://services-s3bucketpetadoptioncb20dce5-o33mvyupp12n.s3.ap-southeast-1.amazonaws.com/kitten/k4.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjELT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLXNvdXRoZWFzdC0xIkYwRAIgV5tBEmchqtab9aRsY2PJ7vmkiOxU8ZSsT%2BmcHOlbA%2F0CIA3zYNApcLblzPh48K5vFFGGUhXX3FGJbl2BGz1mnL0JKrMECP3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMOTgzMzA0Njg2NjUyIgwgahrBX8wQd8Dvu2UqhwT%2FpLE7LucQkk8uvhFHAE7W7STL9B5VacD%2BZ%2BDwYJbTnQma%2Bzqq1uucrzRn6LAmR372QxCnq0eFzJnU%2F36pkXBug1huTvTlPkiEzojdXwGDjEBaAetQ5jWDJexThJ58FHH0rMARr%2BXtIZtNr39LZIDltO19EAgf7sZU7tCm7VopbOXvyuqE74z8LT9w2J8Izra%2Bip6B5pWy482wm%2FeY6tjFE6g9B9%2BkQlfPiAED6xNLZgvin0gxZ4nRaVA7WPE60K4g461aoIgaEkWnrsUGIMU%2BozOKE5dR5vxtSy7L9KQCM9PYDbUCW%2FlaWlSloPA7pwh76V%2B%2FcpmdsDQMGPrb4CWQiHJ%2BaKnlPDbBhURQhabnx0Kpz2UClINwQNNGrFC1o5E1WnC9n0PujxIaXOooGEKherhx2P9Ykxlg37tN%2F7yXzM%2F0ogVdK2bajwL2jKPcxH%2B5916nigRYfdw0RtRweDlKwLwq2OyRPIYbPGX%2B36b5%2F2rvHKaxEnhdW6qRinT4HgnQ140PSirgW317HjfvzBqBz37irb6GHC9F56iMGYCxJUbjM42QZk%2FtEgtdGhHLLvjZnHtswO1u7FYJDDWVC2ZQNdB2ZcIsHE%2FCwHV8lKm7c381QR54Kgr5Ns5WGykhGeTi3P3%2BqbfT09ZnXTNa1sIUmoCbgkLtqQ%2BibrjnQiyruKQEfyPeaV8w7fGkpAY6pwGzMjtdgJ5Jre%2FQkBJYyqPpsj3PrDNXXEl9KJCFSqh66UrxobN%2BdDg1OH6m9UY66H5oNmscHfo9T6SVkChKreVNOz4zbDQ1cpWzTK4IBFbAmvULpla9vpVS8SxdLH9XbNpapp%2Fvh5eiKG1f%2Fg2rt50OZ3MsFPofeObxr910%2FR%2BV1WD5AGb4Rl%2Fy1rmrTaFcHXgiKT%2FoISDb0BxIH%2BPqqPsgBnKlhe5DRQ%3D%3D&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20230614T062315Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=300&amp;X-Amz-Credential=ASIA6J4MGZQ6GTML5FHL%2F20230614%2Fap-southeast-1%2Fs3%2Faws4_request&amp;X-Amz-Signature=7722a78565db47d473963feeab88ead03ab288240c192eea05a7ee3b3a6a459a" />
+        <input type="hidden" name="price" id="pet_price" value="65" />
+        <input type="hidden" name="cuteness_rate" id="pet_cuteness_rate" value="4" />
+    <input name="__RequestVerificationToken" type="hidden" value="CfDJ8CCGo0JRRGRLmFLLJPwADP_ZdnehqevN6wm66UG4IB1PS-VwPsjn2WgsxlcfIIWpQM7ikORuenswKfQKLUd9beqBBKngrfeORNN-0KMd0pEIOXd6T5BccNB6Q9YJzTF2-H7KjnxbuW8nZYTOV9FGSuA" /></form>
+
+                </div>
+                <div class="pet-item col-md-4">
+                    
+    <form method="post" action="/adoption/takemehome">
+        <img class="pet-thumbnail" src="https://services-s3bucketpetadoptioncb20dce5-o33mvyupp12n.s3.ap-southeast-1.amazonaws.com/kitten/k7.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjELT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLXNvdXRoZWFzdC0xIkYwRAIgV5tBEmchqtab9aRsY2PJ7vmkiOxU8ZSsT%2BmcHOlbA%2F0CIA3zYNApcLblzPh48K5vFFGGUhXX3FGJbl2BGz1mnL0JKrMECP3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMOTgzMzA0Njg2NjUyIgwgahrBX8wQd8Dvu2UqhwT%2FpLE7LucQkk8uvhFHAE7W7STL9B5VacD%2BZ%2BDwYJbTnQma%2Bzqq1uucrzRn6LAmR372QxCnq0eFzJnU%2F36pkXBug1huTvTlPkiEzojdXwGDjEBaAetQ5jWDJexThJ58FHH0rMARr%2BXtIZtNr39LZIDltO19EAgf7sZU7tCm7VopbOXvyuqE74z8LT9w2J8Izra%2Bip6B5pWy482wm%2FeY6tjFE6g9B9%2BkQlfPiAED6xNLZgvin0gxZ4nRaVA7WPE60K4g461aoIgaEkWnrsUGIMU%2BozOKE5dR5vxtSy7L9KQCM9PYDbUCW%2FlaWlSloPA7pwh76V%2B%2FcpmdsDQMGPrb4CWQiHJ%2BaKnlPDbBhURQhabnx0Kpz2UClINwQNNGrFC1o5E1WnC9n0PujxIaXOooGEKherhx2P9Ykxlg37tN%2F7yXzM%2F0ogVdK2bajwL2jKPcxH%2B5916nigRYfdw0RtRweDlKwLwq2OyRPIYbPGX%2B36b5%2F2rvHKaxEnhdW6qRinT4HgnQ140PSirgW317HjfvzBqBz37irb6GHC9F56iMGYCxJUbjM42QZk%2FtEgtdGhHLLvjZnHtswO1u7FYJDDWVC2ZQNdB2ZcIsHE%2FCwHV8lKm7c381QR54Kgr5Ns5WGykhGeTi3P3%2BqbfT09ZnXTNa1sIUmoCbgkLtqQ%2BibrjnQiyruKQEfyPeaV8w7fGkpAY6pwGzMjtdgJ5Jre%2FQkBJYyqPpsj3PrDNXXEl9KJCFSqh66UrxobN%2BdDg1OH6m9UY66H5oNmscHfo9T6SVkChKreVNOz4zbDQ1cpWzTK4IBFbAmvULpla9vpVS8SxdLH9XbNpapp%2Fvh5eiKG1f%2Fg2rt50OZ3MsFPofeObxr910%2FR%2BV1WD5AGb4Rl%2Fy1rmrTaFcHXgiKT%2FoISDb0BxIH%2BPqqPsgBnKlhe5DRQ%3D%3D&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20230614T062315Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=300&amp;X-Amz-Credential=ASIA6J4MGZQ6GTML5FHL%2F20230614%2Fap-southeast-1%2Fs3%2Faws4_request&amp;X-Amz-Signature=3e95509b664d3024c2d0d62229a90bb0934760e0ad425ca10f697585454fc2e2" />
+            <input class="pet-button" type="submit" value="Take me home"/>
+        
+        <div class="pet-name">
+            <span>kitten-black</span>
+        </div>
+        <div class="pet-price">
+            <span>75</span>
+        </div>
+
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+
+        <input type="hidden" name="petcolor" id="pet_petcolor" value="black" />
+        <input type="hidden" name="petid" id="pet_petid" value="022" />
+        <input type="hidden" name="pettype" id="pet_pettype" value="kitten" />
+        <input type="hidden" name="peturl" id="pet_peturl" value="https://services-s3bucketpetadoptioncb20dce5-o33mvyupp12n.s3.ap-southeast-1.amazonaws.com/kitten/k7.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjELT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLXNvdXRoZWFzdC0xIkYwRAIgV5tBEmchqtab9aRsY2PJ7vmkiOxU8ZSsT%2BmcHOlbA%2F0CIA3zYNApcLblzPh48K5vFFGGUhXX3FGJbl2BGz1mnL0JKrMECP3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMOTgzMzA0Njg2NjUyIgwgahrBX8wQd8Dvu2UqhwT%2FpLE7LucQkk8uvhFHAE7W7STL9B5VacD%2BZ%2BDwYJbTnQma%2Bzqq1uucrzRn6LAmR372QxCnq0eFzJnU%2F36pkXBug1huTvTlPkiEzojdXwGDjEBaAetQ5jWDJexThJ58FHH0rMARr%2BXtIZtNr39LZIDltO19EAgf7sZU7tCm7VopbOXvyuqE74z8LT9w2J8Izra%2Bip6B5pWy482wm%2FeY6tjFE6g9B9%2BkQlfPiAED6xNLZgvin0gxZ4nRaVA7WPE60K4g461aoIgaEkWnrsUGIMU%2BozOKE5dR5vxtSy7L9KQCM9PYDbUCW%2FlaWlSloPA7pwh76V%2B%2FcpmdsDQMGPrb4CWQiHJ%2BaKnlPDbBhURQhabnx0Kpz2UClINwQNNGrFC1o5E1WnC9n0PujxIaXOooGEKherhx2P9Ykxlg37tN%2F7yXzM%2F0ogVdK2bajwL2jKPcxH%2B5916nigRYfdw0RtRweDlKwLwq2OyRPIYbPGX%2B36b5%2F2rvHKaxEnhdW6qRinT4HgnQ140PSirgW317HjfvzBqBz37irb6GHC9F56iMGYCxJUbjM42QZk%2FtEgtdGhHLLvjZnHtswO1u7FYJDDWVC2ZQNdB2ZcIsHE%2FCwHV8lKm7c381QR54Kgr5Ns5WGykhGeTi3P3%2BqbfT09ZnXTNa1sIUmoCbgkLtqQ%2BibrjnQiyruKQEfyPeaV8w7fGkpAY6pwGzMjtdgJ5Jre%2FQkBJYyqPpsj3PrDNXXEl9KJCFSqh66UrxobN%2BdDg1OH6m9UY66H5oNmscHfo9T6SVkChKreVNOz4zbDQ1cpWzTK4IBFbAmvULpla9vpVS8SxdLH9XbNpapp%2Fvh5eiKG1f%2Fg2rt50OZ3MsFPofeObxr910%2FR%2BV1WD5AGb4Rl%2Fy1rmrTaFcHXgiKT%2FoISDb0BxIH%2BPqqPsgBnKlhe5DRQ%3D%3D&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20230614T062315Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=300&amp;X-Amz-Credential=ASIA6J4MGZQ6GTML5FHL%2F20230614%2Fap-southeast-1%2Fs3%2Faws4_request&amp;X-Amz-Signature=3e95509b664d3024c2d0d62229a90bb0934760e0ad425ca10f697585454fc2e2" />
+        <input type="hidden" name="price" id="pet_price" value="75" />
+        <input type="hidden" name="cuteness_rate" id="pet_cuteness_rate" value="5" />
+    <input name="__RequestVerificationToken" type="hidden" value="CfDJ8CCGo0JRRGRLmFLLJPwADP_ZdnehqevN6wm66UG4IB1PS-VwPsjn2WgsxlcfIIWpQM7ikORuenswKfQKLUd9beqBBKngrfeORNN-0KMd0pEIOXd6T5BccNB6Q9YJzTF2-H7KjnxbuW8nZYTOV9FGSuA" /></form>
+
+                </div>
+                <div class="pet-item col-md-4">
+                    
+    <form method="post" action="/adoption/takemehome">
+        <img class="pet-thumbnail" src="https://services-s3bucketpetadoptioncb20dce5-o33mvyupp12n.s3.ap-southeast-1.amazonaws.com/bunnies/b4.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjELT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLXNvdXRoZWFzdC0xIkYwRAIgV5tBEmchqtab9aRsY2PJ7vmkiOxU8ZSsT%2BmcHOlbA%2F0CIA3zYNApcLblzPh48K5vFFGGUhXX3FGJbl2BGz1mnL0JKrMECP3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMOTgzMzA0Njg2NjUyIgwgahrBX8wQd8Dvu2UqhwT%2FpLE7LucQkk8uvhFHAE7W7STL9B5VacD%2BZ%2BDwYJbTnQma%2Bzqq1uucrzRn6LAmR372QxCnq0eFzJnU%2F36pkXBug1huTvTlPkiEzojdXwGDjEBaAetQ5jWDJexThJ58FHH0rMARr%2BXtIZtNr39LZIDltO19EAgf7sZU7tCm7VopbOXvyuqE74z8LT9w2J8Izra%2Bip6B5pWy482wm%2FeY6tjFE6g9B9%2BkQlfPiAED6xNLZgvin0gxZ4nRaVA7WPE60K4g461aoIgaEkWnrsUGIMU%2BozOKE5dR5vxtSy7L9KQCM9PYDbUCW%2FlaWlSloPA7pwh76V%2B%2FcpmdsDQMGPrb4CWQiHJ%2BaKnlPDbBhURQhabnx0Kpz2UClINwQNNGrFC1o5E1WnC9n0PujxIaXOooGEKherhx2P9Ykxlg37tN%2F7yXzM%2F0ogVdK2bajwL2jKPcxH%2B5916nigRYfdw0RtRweDlKwLwq2OyRPIYbPGX%2B36b5%2F2rvHKaxEnhdW6qRinT4HgnQ140PSirgW317HjfvzBqBz37irb6GHC9F56iMGYCxJUbjM42QZk%2FtEgtdGhHLLvjZnHtswO1u7FYJDDWVC2ZQNdB2ZcIsHE%2FCwHV8lKm7c381QR54Kgr5Ns5WGykhGeTi3P3%2BqbfT09ZnXTNa1sIUmoCbgkLtqQ%2BibrjnQiyruKQEfyPeaV8w7fGkpAY6pwGzMjtdgJ5Jre%2FQkBJYyqPpsj3PrDNXXEl9KJCFSqh66UrxobN%2BdDg1OH6m9UY66H5oNmscHfo9T6SVkChKreVNOz4zbDQ1cpWzTK4IBFbAmvULpla9vpVS8SxdLH9XbNpapp%2Fvh5eiKG1f%2Fg2rt50OZ3MsFPofeObxr910%2FR%2BV1WD5AGb4Rl%2Fy1rmrTaFcHXgiKT%2FoISDb0BxIH%2BPqqPsgBnKlhe5DRQ%3D%3D&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20230614T062315Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=300&amp;X-Amz-Credential=ASIA6J4MGZQ6GTML5FHL%2F20230614%2Fap-southeast-1%2Fs3%2Faws4_request&amp;X-Amz-Signature=bbe7f092f0897174133ef65f7f42a3165b3e62a53bad0cd775114b1ba6651843" />
+            <input class="pet-button" type="submit" value="Take me home"/>
+        
+        <div class="pet-name">
+            <span>bunny-white</span>
+        </div>
+        <div class="pet-price">
+            <span>75</span>
+        </div>
+
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+
+        <input type="hidden" name="petcolor" id="pet_petcolor" value="white" />
+        <input type="hidden" name="petid" id="pet_petid" value="023" />
+        <input type="hidden" name="pettype" id="pet_pettype" value="bunny" />
+        <input type="hidden" name="peturl" id="pet_peturl" value="https://services-s3bucketpetadoptioncb20dce5-o33mvyupp12n.s3.ap-southeast-1.amazonaws.com/bunnies/b4.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjELT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLXNvdXRoZWFzdC0xIkYwRAIgV5tBEmchqtab9aRsY2PJ7vmkiOxU8ZSsT%2BmcHOlbA%2F0CIA3zYNApcLblzPh48K5vFFGGUhXX3FGJbl2BGz1mnL0JKrMECP3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMOTgzMzA0Njg2NjUyIgwgahrBX8wQd8Dvu2UqhwT%2FpLE7LucQkk8uvhFHAE7W7STL9B5VacD%2BZ%2BDwYJbTnQma%2Bzqq1uucrzRn6LAmR372QxCnq0eFzJnU%2F36pkXBug1huTvTlPkiEzojdXwGDjEBaAetQ5jWDJexThJ58FHH0rMARr%2BXtIZtNr39LZIDltO19EAgf7sZU7tCm7VopbOXvyuqE74z8LT9w2J8Izra%2Bip6B5pWy482wm%2FeY6tjFE6g9B9%2BkQlfPiAED6xNLZgvin0gxZ4nRaVA7WPE60K4g461aoIgaEkWnrsUGIMU%2BozOKE5dR5vxtSy7L9KQCM9PYDbUCW%2FlaWlSloPA7pwh76V%2B%2FcpmdsDQMGPrb4CWQiHJ%2BaKnlPDbBhURQhabnx0Kpz2UClINwQNNGrFC1o5E1WnC9n0PujxIaXOooGEKherhx2P9Ykxlg37tN%2F7yXzM%2F0ogVdK2bajwL2jKPcxH%2B5916nigRYfdw0RtRweDlKwLwq2OyRPIYbPGX%2B36b5%2F2rvHKaxEnhdW6qRinT4HgnQ140PSirgW317HjfvzBqBz37irb6GHC9F56iMGYCxJUbjM42QZk%2FtEgtdGhHLLvjZnHtswO1u7FYJDDWVC2ZQNdB2ZcIsHE%2FCwHV8lKm7c381QR54Kgr5Ns5WGykhGeTi3P3%2BqbfT09ZnXTNa1sIUmoCbgkLtqQ%2BibrjnQiyruKQEfyPeaV8w7fGkpAY6pwGzMjtdgJ5Jre%2FQkBJYyqPpsj3PrDNXXEl9KJCFSqh66UrxobN%2BdDg1OH6m9UY66H5oNmscHfo9T6SVkChKreVNOz4zbDQ1cpWzTK4IBFbAmvULpla9vpVS8SxdLH9XbNpapp%2Fvh5eiKG1f%2Fg2rt50OZ3MsFPofeObxr910%2FR%2BV1WD5AGb4Rl%2Fy1rmrTaFcHXgiKT%2FoISDb0BxIH%2BPqqPsgBnKlhe5DRQ%3D%3D&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20230614T062315Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=300&amp;X-Amz-Credential=ASIA6J4MGZQ6GTML5FHL%2F20230614%2Fap-southeast-1%2Fs3%2Faws4_request&amp;X-Amz-Signature=bbe7f092f0897174133ef65f7f42a3165b3e62a53bad0cd775114b1ba6651843" />
+        <input type="hidden" name="price" id="pet_price" value="75" />
+        <input type="hidden" name="cuteness_rate" id="pet_cuteness_rate" value="5" />
+    <input name="__RequestVerificationToken" type="hidden" value="CfDJ8CCGo0JRRGRLmFLLJPwADP_ZdnehqevN6wm66UG4IB1PS-VwPsjn2WgsxlcfIIWpQM7ikORuenswKfQKLUd9beqBBKngrfeORNN-0KMd0pEIOXd6T5BccNB6Q9YJzTF2-H7KjnxbuW8nZYTOV9FGSuA" /></form>
+
+                </div>
+                <div class="pet-item col-md-4">
+                    
+    <form method="post" action="/adoption/takemehome">
+        <img class="pet-thumbnail" src="https://services-s3bucketpetadoptioncb20dce5-o33mvyupp12n.s3.ap-southeast-1.amazonaws.com/bunnies/b3.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjELT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLXNvdXRoZWFzdC0xIkYwRAIgV5tBEmchqtab9aRsY2PJ7vmkiOxU8ZSsT%2BmcHOlbA%2F0CIA3zYNApcLblzPh48K5vFFGGUhXX3FGJbl2BGz1mnL0JKrMECP3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMOTgzMzA0Njg2NjUyIgwgahrBX8wQd8Dvu2UqhwT%2FpLE7LucQkk8uvhFHAE7W7STL9B5VacD%2BZ%2BDwYJbTnQma%2Bzqq1uucrzRn6LAmR372QxCnq0eFzJnU%2F36pkXBug1huTvTlPkiEzojdXwGDjEBaAetQ5jWDJexThJ58FHH0rMARr%2BXtIZtNr39LZIDltO19EAgf7sZU7tCm7VopbOXvyuqE74z8LT9w2J8Izra%2Bip6B5pWy482wm%2FeY6tjFE6g9B9%2BkQlfPiAED6xNLZgvin0gxZ4nRaVA7WPE60K4g461aoIgaEkWnrsUGIMU%2BozOKE5dR5vxtSy7L9KQCM9PYDbUCW%2FlaWlSloPA7pwh76V%2B%2FcpmdsDQMGPrb4CWQiHJ%2BaKnlPDbBhURQhabnx0Kpz2UClINwQNNGrFC1o5E1WnC9n0PujxIaXOooGEKherhx2P9Ykxlg37tN%2F7yXzM%2F0ogVdK2bajwL2jKPcxH%2B5916nigRYfdw0RtRweDlKwLwq2OyRPIYbPGX%2B36b5%2F2rvHKaxEnhdW6qRinT4HgnQ140PSirgW317HjfvzBqBz37irb6GHC9F56iMGYCxJUbjM42QZk%2FtEgtdGhHLLvjZnHtswO1u7FYJDDWVC2ZQNdB2ZcIsHE%2FCwHV8lKm7c381QR54Kgr5Ns5WGykhGeTi3P3%2BqbfT09ZnXTNa1sIUmoCbgkLtqQ%2BibrjnQiyruKQEfyPeaV8w7fGkpAY6pwGzMjtdgJ5Jre%2FQkBJYyqPpsj3PrDNXXEl9KJCFSqh66UrxobN%2BdDg1OH6m9UY66H5oNmscHfo9T6SVkChKreVNOz4zbDQ1cpWzTK4IBFbAmvULpla9vpVS8SxdLH9XbNpapp%2Fvh5eiKG1f%2Fg2rt50OZ3MsFPofeObxr910%2FR%2BV1WD5AGb4Rl%2Fy1rmrTaFcHXgiKT%2FoISDb0BxIH%2BPqqPsgBnKlhe5DRQ%3D%3D&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20230614T062315Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=300&amp;X-Amz-Credential=ASIA6J4MGZQ6GTML5FHL%2F20230614%2Fap-southeast-1%2Fs3%2Faws4_request&amp;X-Amz-Signature=1d9ba36976e868dc94cd0ccdac2941ac4dc350ff652176095c6de11b8d07bccb" />
+            <input class="pet-button" type="submit" value="Take me home"/>
+        
+        <div class="pet-name">
+            <span>bunny-brown</span>
+        </div>
+        <div class="pet-price">
+            <span>45</span>
+        </div>
+
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+
+        <input type="hidden" name="petcolor" id="pet_petcolor" value="brown" />
+        <input type="hidden" name="petid" id="pet_petid" value="024" />
+        <input type="hidden" name="pettype" id="pet_pettype" value="bunny" />
+        <input type="hidden" name="peturl" id="pet_peturl" value="https://services-s3bucketpetadoptioncb20dce5-o33mvyupp12n.s3.ap-southeast-1.amazonaws.com/bunnies/b3.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjELT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLXNvdXRoZWFzdC0xIkYwRAIgV5tBEmchqtab9aRsY2PJ7vmkiOxU8ZSsT%2BmcHOlbA%2F0CIA3zYNApcLblzPh48K5vFFGGUhXX3FGJbl2BGz1mnL0JKrMECP3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMOTgzMzA0Njg2NjUyIgwgahrBX8wQd8Dvu2UqhwT%2FpLE7LucQkk8uvhFHAE7W7STL9B5VacD%2BZ%2BDwYJbTnQma%2Bzqq1uucrzRn6LAmR372QxCnq0eFzJnU%2F36pkXBug1huTvTlPkiEzojdXwGDjEBaAetQ5jWDJexThJ58FHH0rMARr%2BXtIZtNr39LZIDltO19EAgf7sZU7tCm7VopbOXvyuqE74z8LT9w2J8Izra%2Bip6B5pWy482wm%2FeY6tjFE6g9B9%2BkQlfPiAED6xNLZgvin0gxZ4nRaVA7WPE60K4g461aoIgaEkWnrsUGIMU%2BozOKE5dR5vxtSy7L9KQCM9PYDbUCW%2FlaWlSloPA7pwh76V%2B%2FcpmdsDQMGPrb4CWQiHJ%2BaKnlPDbBhURQhabnx0Kpz2UClINwQNNGrFC1o5E1WnC9n0PujxIaXOooGEKherhx2P9Ykxlg37tN%2F7yXzM%2F0ogVdK2bajwL2jKPcxH%2B5916nigRYfdw0RtRweDlKwLwq2OyRPIYbPGX%2B36b5%2F2rvHKaxEnhdW6qRinT4HgnQ140PSirgW317HjfvzBqBz37irb6GHC9F56iMGYCxJUbjM42QZk%2FtEgtdGhHLLvjZnHtswO1u7FYJDDWVC2ZQNdB2ZcIsHE%2FCwHV8lKm7c381QR54Kgr5Ns5WGykhGeTi3P3%2BqbfT09ZnXTNa1sIUmoCbgkLtqQ%2BibrjnQiyruKQEfyPeaV8w7fGkpAY6pwGzMjtdgJ5Jre%2FQkBJYyqPpsj3PrDNXXEl9KJCFSqh66UrxobN%2BdDg1OH6m9UY66H5oNmscHfo9T6SVkChKreVNOz4zbDQ1cpWzTK4IBFbAmvULpla9vpVS8SxdLH9XbNpapp%2Fvh5eiKG1f%2Fg2rt50OZ3MsFPofeObxr910%2FR%2BV1WD5AGb4Rl%2Fy1rmrTaFcHXgiKT%2FoISDb0BxIH%2BPqqPsgBnKlhe5DRQ%3D%3D&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20230614T062315Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=300&amp;X-Amz-Credential=ASIA6J4MGZQ6GTML5FHL%2F20230614%2Fap-southeast-1%2Fs3%2Faws4_request&amp;X-Amz-Signature=1d9ba36976e868dc94cd0ccdac2941ac4dc350ff652176095c6de11b8d07bccb" />
+        <input type="hidden" name="price" id="pet_price" value="45" />
+        <input type="hidden" name="cuteness_rate" id="pet_cuteness_rate" value="4" />
+    <input name="__RequestVerificationToken" type="hidden" value="CfDJ8CCGo0JRRGRLmFLLJPwADP_ZdnehqevN6wm66UG4IB1PS-VwPsjn2WgsxlcfIIWpQM7ikORuenswKfQKLUd9beqBBKngrfeORNN-0KMd0pEIOXd6T5BccNB6Q9YJzTF2-H7KjnxbuW8nZYTOV9FGSuA" /></form>
+
+                </div>
+                <div class="pet-item col-md-4">
+                    
+    <form method="post" action="/adoption/takemehome">
+        <img class="pet-thumbnail" src="https://services-s3bucketpetadoptioncb20dce5-o33mvyupp12n.s3.ap-southeast-1.amazonaws.com/bunnies/b2.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjELT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLXNvdXRoZWFzdC0xIkYwRAIgV5tBEmchqtab9aRsY2PJ7vmkiOxU8ZSsT%2BmcHOlbA%2F0CIA3zYNApcLblzPh48K5vFFGGUhXX3FGJbl2BGz1mnL0JKrMECP3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMOTgzMzA0Njg2NjUyIgwgahrBX8wQd8Dvu2UqhwT%2FpLE7LucQkk8uvhFHAE7W7STL9B5VacD%2BZ%2BDwYJbTnQma%2Bzqq1uucrzRn6LAmR372QxCnq0eFzJnU%2F36pkXBug1huTvTlPkiEzojdXwGDjEBaAetQ5jWDJexThJ58FHH0rMARr%2BXtIZtNr39LZIDltO19EAgf7sZU7tCm7VopbOXvyuqE74z8LT9w2J8Izra%2Bip6B5pWy482wm%2FeY6tjFE6g9B9%2BkQlfPiAED6xNLZgvin0gxZ4nRaVA7WPE60K4g461aoIgaEkWnrsUGIMU%2BozOKE5dR5vxtSy7L9KQCM9PYDbUCW%2FlaWlSloPA7pwh76V%2B%2FcpmdsDQMGPrb4CWQiHJ%2BaKnlPDbBhURQhabnx0Kpz2UClINwQNNGrFC1o5E1WnC9n0PujxIaXOooGEKherhx2P9Ykxlg37tN%2F7yXzM%2F0ogVdK2bajwL2jKPcxH%2B5916nigRYfdw0RtRweDlKwLwq2OyRPIYbPGX%2B36b5%2F2rvHKaxEnhdW6qRinT4HgnQ140PSirgW317HjfvzBqBz37irb6GHC9F56iMGYCxJUbjM42QZk%2FtEgtdGhHLLvjZnHtswO1u7FYJDDWVC2ZQNdB2ZcIsHE%2FCwHV8lKm7c381QR54Kgr5Ns5WGykhGeTi3P3%2BqbfT09ZnXTNa1sIUmoCbgkLtqQ%2BibrjnQiyruKQEfyPeaV8w7fGkpAY6pwGzMjtdgJ5Jre%2FQkBJYyqPpsj3PrDNXXEl9KJCFSqh66UrxobN%2BdDg1OH6m9UY66H5oNmscHfo9T6SVkChKreVNOz4zbDQ1cpWzTK4IBFbAmvULpla9vpVS8SxdLH9XbNpapp%2Fvh5eiKG1f%2Fg2rt50OZ3MsFPofeObxr910%2FR%2BV1WD5AGb4Rl%2Fy1rmrTaFcHXgiKT%2FoISDb0BxIH%2BPqqPsgBnKlhe5DRQ%3D%3D&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20230614T062315Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=300&amp;X-Amz-Credential=ASIA6J4MGZQ6GTML5FHL%2F20230614%2Fap-southeast-1%2Fs3%2Faws4_request&amp;X-Amz-Signature=6db36ba3a848a0b661248c5cd3f3954629819016c58734b79f19ee7de48ed14a" />
+            <input class="pet-button" type="submit" value="Take me home"/>
+        
+        <div class="pet-name">
+            <span>bunny-brown</span>
+        </div>
+        <div class="pet-price">
+            <span>55</span>
+        </div>
+
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+
+        <input type="hidden" name="petcolor" id="pet_petcolor" value="brown" />
+        <input type="hidden" name="petid" id="pet_petid" value="025" />
+        <input type="hidden" name="pettype" id="pet_pettype" value="bunny" />
+        <input type="hidden" name="peturl" id="pet_peturl" value="https://services-s3bucketpetadoptioncb20dce5-o33mvyupp12n.s3.ap-southeast-1.amazonaws.com/bunnies/b2.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjELT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLXNvdXRoZWFzdC0xIkYwRAIgV5tBEmchqtab9aRsY2PJ7vmkiOxU8ZSsT%2BmcHOlbA%2F0CIA3zYNApcLblzPh48K5vFFGGUhXX3FGJbl2BGz1mnL0JKrMECP3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMOTgzMzA0Njg2NjUyIgwgahrBX8wQd8Dvu2UqhwT%2FpLE7LucQkk8uvhFHAE7W7STL9B5VacD%2BZ%2BDwYJbTnQma%2Bzqq1uucrzRn6LAmR372QxCnq0eFzJnU%2F36pkXBug1huTvTlPkiEzojdXwGDjEBaAetQ5jWDJexThJ58FHH0rMARr%2BXtIZtNr39LZIDltO19EAgf7sZU7tCm7VopbOXvyuqE74z8LT9w2J8Izra%2Bip6B5pWy482wm%2FeY6tjFE6g9B9%2BkQlfPiAED6xNLZgvin0gxZ4nRaVA7WPE60K4g461aoIgaEkWnrsUGIMU%2BozOKE5dR5vxtSy7L9KQCM9PYDbUCW%2FlaWlSloPA7pwh76V%2B%2FcpmdsDQMGPrb4CWQiHJ%2BaKnlPDbBhURQhabnx0Kpz2UClINwQNNGrFC1o5E1WnC9n0PujxIaXOooGEKherhx2P9Ykxlg37tN%2F7yXzM%2F0ogVdK2bajwL2jKPcxH%2B5916nigRYfdw0RtRweDlKwLwq2OyRPIYbPGX%2B36b5%2F2rvHKaxEnhdW6qRinT4HgnQ140PSirgW317HjfvzBqBz37irb6GHC9F56iMGYCxJUbjM42QZk%2FtEgtdGhHLLvjZnHtswO1u7FYJDDWVC2ZQNdB2ZcIsHE%2FCwHV8lKm7c381QR54Kgr5Ns5WGykhGeTi3P3%2BqbfT09ZnXTNa1sIUmoCbgkLtqQ%2BibrjnQiyruKQEfyPeaV8w7fGkpAY6pwGzMjtdgJ5Jre%2FQkBJYyqPpsj3PrDNXXEl9KJCFSqh66UrxobN%2BdDg1OH6m9UY66H5oNmscHfo9T6SVkChKreVNOz4zbDQ1cpWzTK4IBFbAmvULpla9vpVS8SxdLH9XbNpapp%2Fvh5eiKG1f%2Fg2rt50OZ3MsFPofeObxr910%2FR%2BV1WD5AGb4Rl%2Fy1rmrTaFcHXgiKT%2FoISDb0BxIH%2BPqqPsgBnKlhe5DRQ%3D%3D&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20230614T062315Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=300&amp;X-Amz-Credential=ASIA6J4MGZQ6GTML5FHL%2F20230614%2Fap-southeast-1%2Fs3%2Faws4_request&amp;X-Amz-Signature=6db36ba3a848a0b661248c5cd3f3954629819016c58734b79f19ee7de48ed14a" />
+        <input type="hidden" name="price" id="pet_price" value="55" />
+        <input type="hidden" name="cuteness_rate" id="pet_cuteness_rate" value="5" />
+    <input name="__RequestVerificationToken" type="hidden" value="CfDJ8CCGo0JRRGRLmFLLJPwADP_ZdnehqevN6wm66UG4IB1PS-VwPsjn2WgsxlcfIIWpQM7ikORuenswKfQKLUd9beqBBKngrfeORNN-0KMd0pEIOXd6T5BccNB6Q9YJzTF2-H7KjnxbuW8nZYTOV9FGSuA" /></form>
+
+                </div>
+                <div class="pet-item col-md-4">
+                    
+    <form method="post" action="/adoption/takemehome">
+        <img class="pet-thumbnail" src="https://services-s3bucketpetadoptioncb20dce5-o33mvyupp12n.s3.ap-southeast-1.amazonaws.com/bunnies/b1.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjELT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLXNvdXRoZWFzdC0xIkYwRAIgV5tBEmchqtab9aRsY2PJ7vmkiOxU8ZSsT%2BmcHOlbA%2F0CIA3zYNApcLblzPh48K5vFFGGUhXX3FGJbl2BGz1mnL0JKrMECP3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMOTgzMzA0Njg2NjUyIgwgahrBX8wQd8Dvu2UqhwT%2FpLE7LucQkk8uvhFHAE7W7STL9B5VacD%2BZ%2BDwYJbTnQma%2Bzqq1uucrzRn6LAmR372QxCnq0eFzJnU%2F36pkXBug1huTvTlPkiEzojdXwGDjEBaAetQ5jWDJexThJ58FHH0rMARr%2BXtIZtNr39LZIDltO19EAgf7sZU7tCm7VopbOXvyuqE74z8LT9w2J8Izra%2Bip6B5pWy482wm%2FeY6tjFE6g9B9%2BkQlfPiAED6xNLZgvin0gxZ4nRaVA7WPE60K4g461aoIgaEkWnrsUGIMU%2BozOKE5dR5vxtSy7L9KQCM9PYDbUCW%2FlaWlSloPA7pwh76V%2B%2FcpmdsDQMGPrb4CWQiHJ%2BaKnlPDbBhURQhabnx0Kpz2UClINwQNNGrFC1o5E1WnC9n0PujxIaXOooGEKherhx2P9Ykxlg37tN%2F7yXzM%2F0ogVdK2bajwL2jKPcxH%2B5916nigRYfdw0RtRweDlKwLwq2OyRPIYbPGX%2B36b5%2F2rvHKaxEnhdW6qRinT4HgnQ140PSirgW317HjfvzBqBz37irb6GHC9F56iMGYCxJUbjM42QZk%2FtEgtdGhHLLvjZnHtswO1u7FYJDDWVC2ZQNdB2ZcIsHE%2FCwHV8lKm7c381QR54Kgr5Ns5WGykhGeTi3P3%2BqbfT09ZnXTNa1sIUmoCbgkLtqQ%2BibrjnQiyruKQEfyPeaV8w7fGkpAY6pwGzMjtdgJ5Jre%2FQkBJYyqPpsj3PrDNXXEl9KJCFSqh66UrxobN%2BdDg1OH6m9UY66H5oNmscHfo9T6SVkChKreVNOz4zbDQ1cpWzTK4IBFbAmvULpla9vpVS8SxdLH9XbNpapp%2Fvh5eiKG1f%2Fg2rt50OZ3MsFPofeObxr910%2FR%2BV1WD5AGb4Rl%2Fy1rmrTaFcHXgiKT%2FoISDb0BxIH%2BPqqPsgBnKlhe5DRQ%3D%3D&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20230614T062315Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=300&amp;X-Amz-Credential=ASIA6J4MGZQ6GTML5FHL%2F20230614%2Fap-southeast-1%2Fs3%2Faws4_request&amp;X-Amz-Signature=31a66ad22dedcf79f1e6634b5c3bc4b910399d49dc91834304e23124d333eeed" />
+            <input class="pet-button" type="submit" value="Take me home"/>
+        
+        <div class="pet-name">
+            <span>bunny-brown</span>
+        </div>
+        <div class="pet-price">
+            <span>95</span>
+        </div>
+
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+            <span style="color: red">❤</span>
+
+        <input type="hidden" name="petcolor" id="pet_petcolor" value="brown" />
+        <input type="hidden" name="petid" id="pet_petid" value="026" />
+        <input type="hidden" name="pettype" id="pet_pettype" value="bunny" />
+        <input type="hidden" name="peturl" id="pet_peturl" value="https://services-s3bucketpetadoptioncb20dce5-o33mvyupp12n.s3.ap-southeast-1.amazonaws.com/bunnies/b1.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjELT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLXNvdXRoZWFzdC0xIkYwRAIgV5tBEmchqtab9aRsY2PJ7vmkiOxU8ZSsT%2BmcHOlbA%2F0CIA3zYNApcLblzPh48K5vFFGGUhXX3FGJbl2BGz1mnL0JKrMECP3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMOTgzMzA0Njg2NjUyIgwgahrBX8wQd8Dvu2UqhwT%2FpLE7LucQkk8uvhFHAE7W7STL9B5VacD%2BZ%2BDwYJbTnQma%2Bzqq1uucrzRn6LAmR372QxCnq0eFzJnU%2F36pkXBug1huTvTlPkiEzojdXwGDjEBaAetQ5jWDJexThJ58FHH0rMARr%2BXtIZtNr39LZIDltO19EAgf7sZU7tCm7VopbOXvyuqE74z8LT9w2J8Izra%2Bip6B5pWy482wm%2FeY6tjFE6g9B9%2BkQlfPiAED6xNLZgvin0gxZ4nRaVA7WPE60K4g461aoIgaEkWnrsUGIMU%2BozOKE5dR5vxtSy7L9KQCM9PYDbUCW%2FlaWlSloPA7pwh76V%2B%2FcpmdsDQMGPrb4CWQiHJ%2BaKnlPDbBhURQhabnx0Kpz2UClINwQNNGrFC1o5E1WnC9n0PujxIaXOooGEKherhx2P9Ykxlg37tN%2F7yXzM%2F0ogVdK2bajwL2jKPcxH%2B5916nigRYfdw0RtRweDlKwLwq2OyRPIYbPGX%2B36b5%2F2rvHKaxEnhdW6qRinT4HgnQ140PSirgW317HjfvzBqBz37irb6GHC9F56iMGYCxJUbjM42QZk%2FtEgtdGhHLLvjZnHtswO1u7FYJDDWVC2ZQNdB2ZcIsHE%2FCwHV8lKm7c381QR54Kgr5Ns5WGykhGeTi3P3%2BqbfT09ZnXTNa1sIUmoCbgkLtqQ%2BibrjnQiyruKQEfyPeaV8w7fGkpAY6pwGzMjtdgJ5Jre%2FQkBJYyqPpsj3PrDNXXEl9KJCFSqh66UrxobN%2BdDg1OH6m9UY66H5oNmscHfo9T6SVkChKreVNOz4zbDQ1cpWzTK4IBFbAmvULpla9vpVS8SxdLH9XbNpapp%2Fvh5eiKG1f%2Fg2rt50OZ3MsFPofeObxr910%2FR%2BV1WD5AGb4Rl%2Fy1rmrTaFcHXgiKT%2FoISDb0BxIH%2BPqqPsgBnKlhe5DRQ%3D%3D&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20230614T062315Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=300&amp;X-Amz-Credential=ASIA6J4MGZQ6GTML5FHL%2F20230614%2Fap-southeast-1%2Fs3%2Faws4_request&amp;X-Amz-Signature=31a66ad22dedcf79f1e6634b5c3bc4b910399d49dc91834304e23124d333eeed" />
+        <input type="hidden" name="price" id="pet_price" value="95" />
+        <input type="hidden" name="cuteness_rate" id="pet_cuteness_rate" value="4" />
+    <input name="__RequestVerificationToken" type="hidden" value="CfDJ8CCGo0JRRGRLmFLLJPwADP_ZdnehqevN6wm66UG4IB1PS-VwPsjn2WgsxlcfIIWpQM7ikORuenswKfQKLUd9beqBBKngrfeORNN-0KMd0pEIOXd6T5BccNB6Q9YJzTF2-H7KjnxbuW8nZYTOV9FGSuA" /></form>
+
+                </div>
+        </div>
+</div>
+
+
+</div>
+<script src="/lib/jquery/dist/jquery.min.js"></script>
+<script src="/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/js/site.js?v=BxFAw9RUJ1E4NycpKEjCNDeoSvr4RPHixdBq5wDnkeY"></script>
+
+</body>
+</html>

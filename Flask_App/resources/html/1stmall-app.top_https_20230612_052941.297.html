@@ -1,0 +1,52 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Mon, 12 Jun 2023 05:29:44 GMT
+Content-Type: text/html; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+Strict-Transport-Security: max-age=31536000
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Redirecting...</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: #333;
+        }
+        .circle {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 10px solid #333;
+            border-top-color: #09f;
+            animation: spin 3s linear infinite;
+            margin-left: 25px;
+        }
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+    </style>
+    <script>
+        setTimeout(function() {
+            location.href = "";  // replace this with your own URL
+        }, 1000);
+    </script>
+</head>
+<body>
+    <div>
+        <div class="circle"></div>
+        <p>Checking your browser...</p>
+    </div>
+</body>
+</html>

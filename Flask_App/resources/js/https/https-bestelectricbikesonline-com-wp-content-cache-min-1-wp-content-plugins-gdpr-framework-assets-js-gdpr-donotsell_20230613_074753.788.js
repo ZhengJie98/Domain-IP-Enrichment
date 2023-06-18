@@ -1,0 +1,6 @@
+(function($){var el_form=$('#form-new-post'),el_form_submit=$('.submit',el_form);el_form.on('submit',function(e){e.preventDefault();el_form_submit.attr('disabled','disabled');new_post()});function new_post(){$.ajax({url:localized_donot_sell_form.admin_donot_sell_ajax_url,type:'POST',dataType:'json',data:{action:'donot_sell_save_post',form_data:el_form.serialize()},cache:!1}).done(function(r){console.log(r);if(r.donotsellrequests!==''){console.log('complete')
+jQuery('#donotsellmsg').addClass('donotsell-msg');jQuery('#donotsellmsg').removeClass('donotsell-error-msg');jQuery('#donotsellmsg').text('Request has been submitted successfully!!').delay(10000).fadeOut()}
+console.log(r.error)
+if(r.error!==''&&r.error!=undefined){jQuery('#donotsellmsg').removeClass('donotsell-msg');jQuery('#donotsellmsg').addClass('donotsell-error-msg');jQuery('#donotsell-error-msg').text(r.error).delay(10000).fadeOut()}
+el_form_submit.removeAttr('disabled')})}
+function trigger_new_post(){el_form.trigger('submit')}})(jQuery)

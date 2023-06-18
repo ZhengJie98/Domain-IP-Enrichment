@@ -1,0 +1,1 @@
+var module_52553765299=function(){var __hs_messages={};i18n_getmessage=function(){return hs_i18n_getMessage(__hs_messages,hsVars.language,arguments)},i18n_getlanguage=function(){return hsVars.language},$("#info-lang").on("change",(function(){window.open(this.value)}))}();

@@ -1,0 +1,1983 @@
+current domain in process_parent:help.mk-com.com
+===== to_skip function start =====
+help.mk-com.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: help.mk-com.com now: 2023-06-12 01:50:55.887210+00:00
+call_status_code: 404, continuing to next ip_or_domain
+current domain in process_parent:www.thehappyplace-sg.com
+===== to_skip function start =====
+www.thehappyplace-sg.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: www.thehappyplace-sg.com now: 2023-06-12 01:50:56.909158+00:00
+duration_log vt_call: 1.0080540999770164
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/www.thehappyplace-sg.com_http_20230612_015057.927.pngscreenshot found for protocol: https and saved to resources/shot-scraper/www.thehappyplace-sg.com_https_20230612_015057.927.pngduration_log screenshot: 27.282184800016694
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+web_url: http://www.thehappyplace-sg.com
+url: https://static.parastorage.com/unpkg/core-js-bundle@3.2.1/minified.js
+web_url: http://www.thehappyplace-sg.com
+url: https://static.parastorage.com/unpkg/focus-within-polyfill@5.0.9/dist/focus-within-polyfill.js
+web_url: http://www.thehappyplace-sg.com
+url: https://polyfill.io/v3/polyfill.min.js?features=fetch
+web_url: http://www.thehappyplace-sg.com
+url: https://static.parastorage.com/services/wix-thunderbolt/dist/7043.55b593b6.bundle.min.js
+web_url: http://www.thehappyplace-sg.com
+url: https://static.parastorage.com/services/tag-manager-client/1.705.0/siteTags.bundle.min.js
+web_url: http://www.thehappyplace-sg.com
+url: https://static.parastorage.com/services/wix-perf-measure/1.1058.0/wix-perf-measure.umd.min.js
+web_url: http://www.thehappyplace-sg.com
+url: https://static.parastorage.com/services/wix-thunderbolt/dist/thunderbolt-commons.9d1683e5.bundle.min.js
+web_url: http://www.thehappyplace-sg.com
+url: https://static.parastorage.com/services/wix-thunderbolt/dist/main.5a7a1f12.bundle.min.js
+web_url: http://www.thehappyplace-sg.com
+url: https://static.parastorage.com/unpkg/lodash@4.17.21/lodash.min.js
+web_url: http://www.thehappyplace-sg.com
+url: https://static.parastorage.com/unpkg/react@16.14.0/umd/react.production.min.js
+web_url: http://www.thehappyplace-sg.com
+url: https://static.parastorage.com/unpkg/react-dom@16.14.0/umd/react-dom.production.min.js
+total js_files_links: ['https://static.parastorage.com/unpkg/core-js-bundle@3.2.1/minified.js', 'https://static.parastorage.com/unpkg/focus-within-polyfill@5.0.9/dist/focus-within-polyfill.js', 'https://polyfill.io/v3/polyfill.min.js?features=fetch', 'https://static.parastorage.com/services/wix-thunderbolt/dist/7043.55b593b6.bundle.min.js', 'https://static.parastorage.com/services/tag-manager-client/1.705.0/siteTags.bundle.min.js', 'https://static.parastorage.com/services/wix-perf-measure/1.1058.0/wix-perf-measure.umd.min.js', 'https://static.parastorage.com/services/wix-thunderbolt/dist/thunderbolt-commons.9d1683e5.bundle.min.js', 'https://static.parastorage.com/services/wix-thunderbolt/dist/main.5a7a1f12.bundle.min.js', 'https://static.parastorage.com/unpkg/lodash@4.17.21/lodash.min.js', 'https://static.parastorage.com/unpkg/react@16.14.0/umd/react.production.min.js', 'https://static.parastorage.com/unpkg/react-dom@16.14.0/umd/react-dom.production.min.js']
+starting get for each_js_link: https://static.parastorage.com/unpkg/core-js-bundle@3.2.1/minified.js
+starting get for each_js_link: https://static.parastorage.com/unpkg/focus-within-polyfill@5.0.9/dist/focus-within-polyfill.js
+starting get for each_js_link: https://polyfill.io/v3/polyfill.min.js?features=fetch
+starting get for each_js_link: https://static.parastorage.com/services/wix-thunderbolt/dist/7043.55b593b6.bundle.min.js
+starting get for each_js_link: https://static.parastorage.com/services/tag-manager-client/1.705.0/siteTags.bundle.min.js
+starting get for each_js_link: https://static.parastorage.com/services/wix-perf-measure/1.1058.0/wix-perf-measure.umd.min.js
+starting get for each_js_link: https://static.parastorage.com/services/wix-thunderbolt/dist/thunderbolt-commons.9d1683e5.bundle.min.js
+starting get for each_js_link: https://static.parastorage.com/services/wix-thunderbolt/dist/main.5a7a1f12.bundle.min.js
+starting get for each_js_link: https://static.parastorage.com/unpkg/lodash@4.17.21/lodash.min.js
+starting get for each_js_link: https://static.parastorage.com/unpkg/react@16.14.0/umd/react.production.min.js
+starting get for each_js_link: https://static.parastorage.com/unpkg/react-dom@16.14.0/umd/react-dom.production.min.js
+current protocol: https
+returncode: 0
+starting html request.get
+web_url: https://www.thehappyplace-sg.com
+url: https://static.parastorage.com/unpkg/core-js-bundle@3.2.1/minified.js
+web_url: https://www.thehappyplace-sg.com
+url: https://static.parastorage.com/unpkg/focus-within-polyfill@5.0.9/dist/focus-within-polyfill.js
+web_url: https://www.thehappyplace-sg.com
+url: https://polyfill.io/v3/polyfill.min.js?features=fetch
+web_url: https://www.thehappyplace-sg.com
+url: https://static.parastorage.com/services/wix-thunderbolt/dist/7043.55b593b6.bundle.min.js
+web_url: https://www.thehappyplace-sg.com
+url: https://static.parastorage.com/services/tag-manager-client/1.705.0/siteTags.bundle.min.js
+web_url: https://www.thehappyplace-sg.com
+url: https://static.parastorage.com/services/wix-perf-measure/1.1058.0/wix-perf-measure.umd.min.js
+web_url: https://www.thehappyplace-sg.com
+url: https://static.parastorage.com/services/wix-thunderbolt/dist/thunderbolt-commons.9d1683e5.bundle.min.js
+web_url: https://www.thehappyplace-sg.com
+url: https://static.parastorage.com/services/wix-thunderbolt/dist/main.5a7a1f12.bundle.min.js
+web_url: https://www.thehappyplace-sg.com
+url: https://static.parastorage.com/unpkg/lodash@4.17.21/lodash.min.js
+web_url: https://www.thehappyplace-sg.com
+url: https://static.parastorage.com/unpkg/react@16.14.0/umd/react.production.min.js
+web_url: https://www.thehappyplace-sg.com
+url: https://static.parastorage.com/unpkg/react-dom@16.14.0/umd/react-dom.production.min.js
+total js_files_links: ['https://static.parastorage.com/unpkg/core-js-bundle@3.2.1/minified.js', 'https://static.parastorage.com/unpkg/focus-within-polyfill@5.0.9/dist/focus-within-polyfill.js', 'https://polyfill.io/v3/polyfill.min.js?features=fetch', 'https://static.parastorage.com/services/wix-thunderbolt/dist/7043.55b593b6.bundle.min.js', 'https://static.parastorage.com/services/tag-manager-client/1.705.0/siteTags.bundle.min.js', 'https://static.parastorage.com/services/wix-perf-measure/1.1058.0/wix-perf-measure.umd.min.js', 'https://static.parastorage.com/services/wix-thunderbolt/dist/thunderbolt-commons.9d1683e5.bundle.min.js', 'https://static.parastorage.com/services/wix-thunderbolt/dist/main.5a7a1f12.bundle.min.js', 'https://static.parastorage.com/unpkg/lodash@4.17.21/lodash.min.js', 'https://static.parastorage.com/unpkg/react@16.14.0/umd/react.production.min.js', 'https://static.parastorage.com/unpkg/react-dom@16.14.0/umd/react-dom.production.min.js']
+starting get for each_js_link: https://static.parastorage.com/unpkg/core-js-bundle@3.2.1/minified.js
+starting get for each_js_link: https://static.parastorage.com/unpkg/focus-within-polyfill@5.0.9/dist/focus-within-polyfill.js
+starting get for each_js_link: https://polyfill.io/v3/polyfill.min.js?features=fetch
+starting get for each_js_link: https://static.parastorage.com/services/wix-thunderbolt/dist/7043.55b593b6.bundle.min.js
+starting get for each_js_link: https://static.parastorage.com/services/tag-manager-client/1.705.0/siteTags.bundle.min.js
+starting get for each_js_link: https://static.parastorage.com/services/wix-perf-measure/1.1058.0/wix-perf-measure.umd.min.js
+starting get for each_js_link: https://static.parastorage.com/services/wix-thunderbolt/dist/thunderbolt-commons.9d1683e5.bundle.min.js
+starting get for each_js_link: https://static.parastorage.com/services/wix-thunderbolt/dist/main.5a7a1f12.bundle.min.js
+starting get for each_js_link: https://static.parastorage.com/unpkg/lodash@4.17.21/lodash.min.js
+starting get for each_js_link: https://static.parastorage.com/unpkg/react@16.14.0/umd/react.production.min.js
+starting get for each_js_link: https://static.parastorage.com/unpkg/react-dom@16.14.0/umd/react-dom.production.min.js
+duration_log grab_html_js: 2.7633978000376374
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/www.thehappyplace-sg.com_20230612_015127.999.txt
+duration_log get_whois_info: 1.2488669999875128
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/www.thehappyplace-sg.com_gethostbyname_ex_20230612_015129.250.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: www.thehappyplace-sg.com. IN NS
+duration_log get_dns_info: 0.04318450001301244
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 1.3256163999903947
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/www.thehappyplace-sg.com_20230612_015130.638.json
+duration_log get_archived_page_info: 0.6749049000209197
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for www.thehappyplace-sg.com, time taken 34.43395809998037 seconds
+
+
+current domain in process_parent:vpn-sg-sg.haimer.com
+===== to_skip function start =====
+vpn-sg-sg.haimer.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: vpn-sg-sg.haimer.com now: 2023-06-12 01:51:31.374201+00:00
+call_status_code: 404, continuing to next ip_or_domain
+current domain in process_parent:the-landmark.site-sg.com
+===== to_skip function start =====
+the-landmark.site-sg.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: the-landmark.site-sg.com now: 2023-06-12 01:51:32.130004+00:00
+call_status_code: 404, continuing to next ip_or_domain
+current domain in process_parent:www1.ayalaland-sg.com
+===== to_skip function start =====
+www1.ayalaland-sg.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: www1.ayalaland-sg.com now: 2023-06-12 01:51:32.848574+00:00
+call_status_code: 404, continuing to next ip_or_domain
+current domain in process_parent:r-centralmall.bio
+===== to_skip function start =====
+r-centralmall.bio has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: r-centralmall.bio now: 2023-06-12 01:51:33.624443+00:00
+duration_log vt_call: 1.056298199982848
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 3.515815199993085
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 6
+current protocol: https
+returncode: 6
+duration_log grab_html_js: 0.6147213000222109
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/r-centralmall.bio_20230612_015138.855.txt
+duration_log get_whois_info: 0.024565199972130358
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+socket.gethostbyname_ex() exception triggered: [Errno 11001] getaddrinfo failed
+dns.resolver.query() exception triggered: 'NoneType' object has no attribute 'sort'
+duration_log get_dns_info: 0.06976849999045953
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/r-centralmall.bio_20230612_015138.961.json
+duration_log get_cert_info: 1.124320600007195
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.8207764999824576
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for r-centralmall.bio, time taken 15.001187199959531 seconds
+
+
+current domain in process_parent:installation.rakuya-com.com
+===== to_skip function start =====
+installation.rakuya-com.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: installation.rakuya-com.com now: 2023-06-12 01:51:48.663197+00:00
+duration_log vt_call: 1.058543799968902
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/installation.rakuya-com.com_http_20230612_015149.733.pngduration_log screenshot: 9.093747699982487
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 7
+duration_log grab_html_js: 3.0805145999765955
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/installation.rakuya-com.com_20230612_015201.943.txt
+duration_log get_whois_info: 0.9692876000190154
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/installation.rakuya-com.com_gethostbyname_ex_20230612_015202.913.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: installation.rakuya-com.com. IN NS
+duration_log get_dns_info: 0.21020019997376949
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 2.122683199995663
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/installation.rakuya-com.com_20230612_015205.265.json
+duration_log get_archived_page_info: 0.676831700024195
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for installation.rakuya-com.com, time taken 17.326236599998083 seconds
+
+
+current domain in process_parent:creativeformore-software-workplatforms.com
+===== to_skip function start =====
+creativeformore-software-workplatforms.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: creativeformore-software-workplatforms.com now: 2023-06-12 01:52:06.012156+00:00
+duration_log vt_call: 0.9541848999797367
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/creativeformore-software-workplatforms.com_http_20230612_015206.979.pngscreenshot found for protocol: https and saved to resources/shot-scraper/creativeformore-software-workplatforms.com_https_20230612_015206.979.pngduration_log screenshot: 13.145449100004043
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+web_url: http://creativeformore-software-workplatforms.com
+url: /main.js
+web_url: http://creativeformore-software-workplatforms.com
+url: /static/js/chunk-vendors.7370f625.js
+web_url: http://creativeformore-software-workplatforms.com
+url: /static/js/index.77b141ae.js
+total js_files_links: ['http://creativeformore-software-workplatforms.com/main.js', 'http://creativeformore-software-workplatforms.com/static/js/chunk-vendors.7370f625.js', 'http://creativeformore-software-workplatforms.com/static/js/index.77b141ae.js']
+starting get for each_js_link: http://creativeformore-software-workplatforms.com/main.js
+starting get for each_js_link: http://creativeformore-software-workplatforms.com/static/js/chunk-vendors.7370f625.js
+starting get for each_js_link: http://creativeformore-software-workplatforms.com/static/js/index.77b141ae.js
+current protocol: https
+returncode: 0
+starting html request.get
+web_url: https://creativeformore-software-workplatforms.com
+url: /main.js
+web_url: https://creativeformore-software-workplatforms.com
+url: /static/js/chunk-vendors.7370f625.js
+web_url: https://creativeformore-software-workplatforms.com
+url: /static/js/index.77b141ae.js
+total js_files_links: ['https://creativeformore-software-workplatforms.com/main.js', 'https://creativeformore-software-workplatforms.com/static/js/chunk-vendors.7370f625.js', 'https://creativeformore-software-workplatforms.com/static/js/index.77b141ae.js']
+starting get for each_js_link: https://creativeformore-software-workplatforms.com/main.js
+starting get for each_js_link: https://creativeformore-software-workplatforms.com/static/js/chunk-vendors.7370f625.js
+starting get for each_js_link: https://creativeformore-software-workplatforms.com/static/js/index.77b141ae.js
+duration_log grab_html_js: 4.739455299975816
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/creativeformore-software-workplatforms.com_20230612_015224.903.txt
+duration_log get_whois_info: 0.8791250999784097
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/creativeformore-software-workplatforms.com_gethostbyname_ex_20230612_015225.779.txt
+dns.resolver.query() exception triggered: 'NoneType' object has no attribute 'sort'
+duration_log get_dns_info: 0.6631108000292443
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/creativeformore-software-workplatforms.com_20230612_015226.450.json
+duration_log get_cert_info: 0.8339146999642253
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 1.2080815000226721
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for creativeformore-software-workplatforms.com, time taken 22.526241799991112 seconds
+
+
+current domain in process_parent:pullmanresidences.site-sg.com
+===== to_skip function start =====
+pullmanresidences.site-sg.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: pullmanresidences.site-sg.com now: 2023-06-12 01:52:28.566950+00:00
+duration_log vt_call: 0.8899606000049971
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/pullmanresidences.site-sg.com_http_20230612_015229.468.pngscreenshot found for protocol: https and saved to resources/shot-scraper/pullmanresidences.site-sg.com_https_20230612_015229.468.pngduration_log screenshot: 15.663156100024935
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+web_url: http://pullmanresidences.site-sg.com
+url: https://www.clickcease.com/monitor/stat.js
+web_url: http://pullmanresidences.site-sg.com
+url: https://pullmanresidences.site-sg.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.4
+web_url: http://pullmanresidences.site-sg.com
+url: https://pullmanresidences.site-sg.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.0
+web_url: http://pullmanresidences.site-sg.com
+url: https://pullmanresidences.site-sg.com/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js?ver=5.4.7.2
+web_url: http://pullmanresidences.site-sg.com
+url: https://pullmanresidences.site-sg.com/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js?ver=5.4.7.2
+web_url: http://pullmanresidences.site-sg.com
+url: https://pullmanresidences.site-sg.com/wp-content/plugins/pixelyoursite/dist/scripts/jquery.bind-first-0.2.3.min.js?ver=6.2.2
+web_url: http://pullmanresidences.site-sg.com
+url: https://pullmanresidences.site-sg.com/wp-content/plugins/pixelyoursite/dist/scripts/js.cookie-2.1.3.min.js?ver=2.1.3
+web_url: http://pullmanresidences.site-sg.com
+url: https://pullmanresidences.site-sg.com/wp-content/plugins/pixelyoursite/dist/scripts/public.js?ver=9.2.0
+web_url: http://pullmanresidences.site-sg.com
+url: https://pullmanresidences.site-sg.com/wp-content/plugins/gravityforms/js/jquery.json.min.js?ver=2.4.16
+web_url: http://pullmanresidences.site-sg.com
+url: https://pullmanresidences.site-sg.com/wp-content/plugins/gravityforms/js/gravityforms.min.js?ver=2.4.16
+web_url: http://pullmanresidences.site-sg.com
+url: https://pullmanresidences.site-sg.com/wp-content/plugins/Ultimate_VC_Addons/assets/min-js/ultimate-params.min.js?ver=3.16.21
+web_url: http://pullmanresidences.site-sg.com
+url: https://pullmanresidences.site-sg.com/wp-content/plugins/Ultimate_VC_Addons/assets/min-js/custom.min.js?ver=3.16.21
+web_url: http://pullmanresidences.site-sg.com
+url: https://pullmanresidences.site-sg.com/wp-content/plugins/Ultimate_VC_Addons/assets/min-js/headings.min.js?ver=3.16.21
+web_url: http://pullmanresidences.site-sg.com
+url: https://pullmanresidences.site-sg.com/wp-content/themes/developer_child/js/jquery.fancybox.js?ver=1.0.0
+web_url: http://pullmanresidences.site-sg.com
+url: https://pullmanresidences.site-sg.com/wp-includes/js/jquery/ui/effect.min.js?ver=1.13.2
+web_url: http://pullmanresidences.site-sg.com
+url: https://pullmanresidences.site-sg.com/wp-content/themes/developer/framework/js/aos.js?ver=6.2.2
+web_url: http://pullmanresidences.site-sg.com
+url: https://pullmanresidences.site-sg.com/wp-content/themes/developer/framework/js/perfect-scrollbar.jquery.min.js?ver=6.2.2
+web_url: http://pullmanresidences.site-sg.com
+url: https://pullmanresidences.site-sg.com/wp-content/themes/developer/framework/js/custom.js?ver=6.2.2
+web_url: http://pullmanresidences.site-sg.com
+url: https://pullmanresidences.site-sg.com/wp-content/themes/developer/framework/js/popper.min.js?ver=6.2.2
+web_url: http://pullmanresidences.site-sg.com
+url: https://pullmanresidences.site-sg.com/wp-content/themes/developer/framework/js/bootstrap.min.js?ver=6.2.2
+web_url: http://pullmanresidences.site-sg.com
+url: https://pullmanresidences.site-sg.com/wp-content/themes/developer/framework/js/prism.js?ver=6.2.2
+web_url: http://pullmanresidences.site-sg.com
+url: https://pullmanresidences.site-sg.com/wp-content/plugins/dflip/assets/js/dflip.min.js?ver=1.5.18
+web_url: http://pullmanresidences.site-sg.com
+url: https://pullmanresidences.site-sg.com/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js?ver=5.4.7
+web_url: http://pullmanresidences.site-sg.com
+url: https://pullmanresidences.site-sg.com/wp-includes/js/mediaelement/mediaelement-and-player.min.js?ver=4.2.17
+web_url: http://pullmanresidences.site-sg.com
+url: https://pullmanresidences.site-sg.com/wp-includes/js/mediaelement/mediaelement-migrate.min.js?ver=6.2.2
+web_url: http://pullmanresidences.site-sg.com
+url: https://pullmanresidences.site-sg.com/wp-includes/js/mediaelement/wp-mediaelement.min.js?ver=6.2.2
+web_url: http://pullmanresidences.site-sg.com
+url: https://pullmanresidences.site-sg.com/wp-includes/js/mediaelement/renderers/vimeo.min.js?ver=4.2.17
+web_url: http://pullmanresidences.site-sg.com
+url: https://pullmanresidences.site-sg.com/wp-content/plugins/Ultimate_VC_Addons/assets/min-js/jquery-appear.min.js?ver=3.16.21
+web_url: http://pullmanresidences.site-sg.com
+url: https://pullmanresidences.site-sg.com/wp-content/plugins/Ultimate_VC_Addons/assets/min-js/ultimate_bg.min.js?ver=6.2.2
+web_url: http://pullmanresidences.site-sg.com
+url: https://www.google.com/recaptcha/api.js?hl=en&render=explicit&ver=6.2.2
+web_url: http://pullmanresidences.site-sg.com
+url: https://pullmanresidences.site-sg.com/wp-content/plugins/elfsight-whatsapp-chat/assets/elfsight-whatsapp-chat.js?ver=1.2.0
+total js_files_links: ['https://www.clickcease.com/monitor/stat.js', 'https://pullmanresidences.site-sg.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.4', 'https://pullmanresidences.site-sg.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.0', 'https://pullmanresidences.site-sg.com/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js?ver=5.4.7.2', 'https://pullmanresidences.site-sg.com/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js?ver=5.4.7.2', 'https://pullmanresidences.site-sg.com/wp-content/plugins/pixelyoursite/dist/scripts/jquery.bind-first-0.2.3.min.js?ver=6.2.2', 'https://pullmanresidences.site-sg.com/wp-content/plugins/pixelyoursite/dist/scripts/js.cookie-2.1.3.min.js?ver=2.1.3', 'https://pullmanresidences.site-sg.com/wp-content/plugins/pixelyoursite/dist/scripts/public.js?ver=9.2.0', 'https://pullmanresidences.site-sg.com/wp-content/plugins/gravityforms/js/jquery.json.min.js?ver=2.4.16', 'https://pullmanresidences.site-sg.com/wp-content/plugins/gravityforms/js/gravityforms.min.js?ver=2.4.16', 'https://pullmanresidences.site-sg.com/wp-content/plugins/Ultimate_VC_Addons/assets/min-js/ultimate-params.min.js?ver=3.16.21', 'https://pullmanresidences.site-sg.com/wp-content/plugins/Ultimate_VC_Addons/assets/min-js/custom.min.js?ver=3.16.21', 'https://pullmanresidences.site-sg.com/wp-content/plugins/Ultimate_VC_Addons/assets/min-js/headings.min.js?ver=3.16.21', 'https://pullmanresidences.site-sg.com/wp-content/themes/developer_child/js/jquery.fancybox.js?ver=1.0.0', 'https://pullmanresidences.site-sg.com/wp-includes/js/jquery/ui/effect.min.js?ver=1.13.2', 'https://pullmanresidences.site-sg.com/wp-content/themes/developer/framework/js/aos.js?ver=6.2.2', 'https://pullmanresidences.site-sg.com/wp-content/themes/developer/framework/js/perfect-scrollbar.jquery.min.js?ver=6.2.2', 'https://pullmanresidences.site-sg.com/wp-content/themes/developer/framework/js/custom.js?ver=6.2.2', 'https://pullmanresidences.site-sg.com/wp-content/themes/developer/framework/js/popper.min.js?ver=6.2.2', 'https://pullmanresidences.site-sg.com/wp-content/themes/developer/framework/js/bootstrap.min.js?ver=6.2.2', 'https://pullmanresidences.site-sg.com/wp-content/themes/developer/framework/js/prism.js?ver=6.2.2', 'https://pullmanresidences.site-sg.com/wp-content/plugins/dflip/assets/js/dflip.min.js?ver=1.5.18', 'https://pullmanresidences.site-sg.com/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js?ver=5.4.7', 'https://pullmanresidences.site-sg.com/wp-includes/js/mediaelement/mediaelement-and-player.min.js?ver=4.2.17', 'https://pullmanresidences.site-sg.com/wp-includes/js/mediaelement/mediaelement-migrate.min.js?ver=6.2.2', 'https://pullmanresidences.site-sg.com/wp-includes/js/mediaelement/wp-mediaelement.min.js?ver=6.2.2', 'https://pullmanresidences.site-sg.com/wp-includes/js/mediaelement/renderers/vimeo.min.js?ver=4.2.17', 'https://pullmanresidences.site-sg.com/wp-content/plugins/Ultimate_VC_Addons/assets/min-js/jquery-appear.min.js?ver=3.16.21', 'https://pullmanresidences.site-sg.com/wp-content/plugins/Ultimate_VC_Addons/assets/min-js/ultimate_bg.min.js?ver=6.2.2', 'https://www.google.com/recaptcha/api.js?hl=en&render=explicit&ver=6.2.2', 'https://pullmanresidences.site-sg.com/wp-content/plugins/elfsight-whatsapp-chat/assets/elfsight-whatsapp-chat.js?ver=1.2.0']
+starting get for each_js_link: https://www.clickcease.com/monitor/stat.js
+starting get for each_js_link: https://pullmanresidences.site-sg.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.4
+starting get for each_js_link: https://pullmanresidences.site-sg.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.0
+starting get for each_js_link: https://pullmanresidences.site-sg.com/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js?ver=5.4.7.2
+starting get for each_js_link: https://pullmanresidences.site-sg.com/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js?ver=5.4.7.2
+starting get for each_js_link: https://pullmanresidences.site-sg.com/wp-content/plugins/pixelyoursite/dist/scripts/jquery.bind-first-0.2.3.min.js?ver=6.2.2
+starting get for each_js_link: https://pullmanresidences.site-sg.com/wp-content/plugins/pixelyoursite/dist/scripts/js.cookie-2.1.3.min.js?ver=2.1.3
+starting get for each_js_link: https://pullmanresidences.site-sg.com/wp-content/plugins/pixelyoursite/dist/scripts/public.js?ver=9.2.0
+starting get for each_js_link: https://pullmanresidences.site-sg.com/wp-content/plugins/gravityforms/js/jquery.json.min.js?ver=2.4.16
+starting get for each_js_link: https://pullmanresidences.site-sg.com/wp-content/plugins/gravityforms/js/gravityforms.min.js?ver=2.4.16
+starting get for each_js_link: https://pullmanresidences.site-sg.com/wp-content/plugins/Ultimate_VC_Addons/assets/min-js/ultimate-params.min.js?ver=3.16.21
+starting get for each_js_link: https://pullmanresidences.site-sg.com/wp-content/plugins/Ultimate_VC_Addons/assets/min-js/custom.min.js?ver=3.16.21
+starting get for each_js_link: https://pullmanresidences.site-sg.com/wp-content/plugins/Ultimate_VC_Addons/assets/min-js/headings.min.js?ver=3.16.21
+starting get for each_js_link: https://pullmanresidences.site-sg.com/wp-content/themes/developer_child/js/jquery.fancybox.js?ver=1.0.0
+starting get for each_js_link: https://pullmanresidences.site-sg.com/wp-includes/js/jquery/ui/effect.min.js?ver=1.13.2
+starting get for each_js_link: https://pullmanresidences.site-sg.com/wp-content/themes/developer/framework/js/aos.js?ver=6.2.2
+starting get for each_js_link: https://pullmanresidences.site-sg.com/wp-content/themes/developer/framework/js/perfect-scrollbar.jquery.min.js?ver=6.2.2
+starting get for each_js_link: https://pullmanresidences.site-sg.com/wp-content/themes/developer/framework/js/custom.js?ver=6.2.2
+starting get for each_js_link: https://pullmanresidences.site-sg.com/wp-content/themes/developer/framework/js/popper.min.js?ver=6.2.2
+starting get for each_js_link: https://pullmanresidences.site-sg.com/wp-content/themes/developer/framework/js/bootstrap.min.js?ver=6.2.2
+starting get for each_js_link: https://pullmanresidences.site-sg.com/wp-content/themes/developer/framework/js/prism.js?ver=6.2.2
+starting get for each_js_link: https://pullmanresidences.site-sg.com/wp-content/plugins/dflip/assets/js/dflip.min.js?ver=1.5.18
+starting get for each_js_link: https://pullmanresidences.site-sg.com/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js?ver=5.4.7
+starting get for each_js_link: https://pullmanresidences.site-sg.com/wp-includes/js/mediaelement/mediaelement-and-player.min.js?ver=4.2.17
+starting get for each_js_link: https://pullmanresidences.site-sg.com/wp-includes/js/mediaelement/mediaelement-migrate.min.js?ver=6.2.2
+starting get for each_js_link: https://pullmanresidences.site-sg.com/wp-includes/js/mediaelement/wp-mediaelement.min.js?ver=6.2.2
+starting get for each_js_link: https://pullmanresidences.site-sg.com/wp-includes/js/mediaelement/renderers/vimeo.min.js?ver=4.2.17
+starting get for each_js_link: https://pullmanresidences.site-sg.com/wp-content/plugins/Ultimate_VC_Addons/assets/min-js/jquery-appear.min.js?ver=3.16.21
+starting get for each_js_link: https://pullmanresidences.site-sg.com/wp-content/plugins/Ultimate_VC_Addons/assets/min-js/ultimate_bg.min.js?ver=6.2.2
+starting get for each_js_link: https://www.google.com/recaptcha/api.js?hl=en&render=explicit&ver=6.2.2
+starting get for each_js_link: https://pullmanresidences.site-sg.com/wp-content/plugins/elfsight-whatsapp-chat/assets/elfsight-whatsapp-chat.js?ver=1.2.0
+current protocol: https
+returncode: 0
+starting html request.get
+web_url: https://pullmanresidences.site-sg.com
+url: https://www.clickcease.com/monitor/stat.js
+web_url: https://pullmanresidences.site-sg.com
+url: https://pullmanresidences.site-sg.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.4
+web_url: https://pullmanresidences.site-sg.com
+url: https://pullmanresidences.site-sg.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.0
+web_url: https://pullmanresidences.site-sg.com
+url: https://pullmanresidences.site-sg.com/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js?ver=5.4.7.2
+web_url: https://pullmanresidences.site-sg.com
+url: https://pullmanresidences.site-sg.com/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js?ver=5.4.7.2
+web_url: https://pullmanresidences.site-sg.com
+url: https://pullmanresidences.site-sg.com/wp-content/plugins/pixelyoursite/dist/scripts/jquery.bind-first-0.2.3.min.js?ver=6.2.2
+web_url: https://pullmanresidences.site-sg.com
+url: https://pullmanresidences.site-sg.com/wp-content/plugins/pixelyoursite/dist/scripts/js.cookie-2.1.3.min.js?ver=2.1.3
+web_url: https://pullmanresidences.site-sg.com
+url: https://pullmanresidences.site-sg.com/wp-content/plugins/pixelyoursite/dist/scripts/public.js?ver=9.2.0
+web_url: https://pullmanresidences.site-sg.com
+url: https://pullmanresidences.site-sg.com/wp-content/plugins/gravityforms/js/jquery.json.min.js?ver=2.4.16
+web_url: https://pullmanresidences.site-sg.com
+url: https://pullmanresidences.site-sg.com/wp-content/plugins/gravityforms/js/gravityforms.min.js?ver=2.4.16
+web_url: https://pullmanresidences.site-sg.com
+url: https://pullmanresidences.site-sg.com/wp-content/plugins/Ultimate_VC_Addons/assets/min-js/ultimate-params.min.js?ver=3.16.21
+web_url: https://pullmanresidences.site-sg.com
+url: https://pullmanresidences.site-sg.com/wp-content/plugins/Ultimate_VC_Addons/assets/min-js/custom.min.js?ver=3.16.21
+web_url: https://pullmanresidences.site-sg.com
+url: https://pullmanresidences.site-sg.com/wp-content/plugins/Ultimate_VC_Addons/assets/min-js/headings.min.js?ver=3.16.21
+web_url: https://pullmanresidences.site-sg.com
+url: https://pullmanresidences.site-sg.com/wp-content/themes/developer_child/js/jquery.fancybox.js?ver=1.0.0
+web_url: https://pullmanresidences.site-sg.com
+url: https://pullmanresidences.site-sg.com/wp-includes/js/jquery/ui/effect.min.js?ver=1.13.2
+web_url: https://pullmanresidences.site-sg.com
+url: https://pullmanresidences.site-sg.com/wp-content/themes/developer/framework/js/aos.js?ver=6.2.2
+web_url: https://pullmanresidences.site-sg.com
+url: https://pullmanresidences.site-sg.com/wp-content/themes/developer/framework/js/perfect-scrollbar.jquery.min.js?ver=6.2.2
+web_url: https://pullmanresidences.site-sg.com
+url: https://pullmanresidences.site-sg.com/wp-content/themes/developer/framework/js/custom.js?ver=6.2.2
+web_url: https://pullmanresidences.site-sg.com
+url: https://pullmanresidences.site-sg.com/wp-content/themes/developer/framework/js/popper.min.js?ver=6.2.2
+web_url: https://pullmanresidences.site-sg.com
+url: https://pullmanresidences.site-sg.com/wp-content/themes/developer/framework/js/bootstrap.min.js?ver=6.2.2
+web_url: https://pullmanresidences.site-sg.com
+url: https://pullmanresidences.site-sg.com/wp-content/themes/developer/framework/js/prism.js?ver=6.2.2
+web_url: https://pullmanresidences.site-sg.com
+url: https://pullmanresidences.site-sg.com/wp-content/plugins/dflip/assets/js/dflip.min.js?ver=1.5.18
+web_url: https://pullmanresidences.site-sg.com
+url: https://pullmanresidences.site-sg.com/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js?ver=5.4.7
+web_url: https://pullmanresidences.site-sg.com
+url: https://pullmanresidences.site-sg.com/wp-includes/js/mediaelement/mediaelement-and-player.min.js?ver=4.2.17
+web_url: https://pullmanresidences.site-sg.com
+url: https://pullmanresidences.site-sg.com/wp-includes/js/mediaelement/mediaelement-migrate.min.js?ver=6.2.2
+web_url: https://pullmanresidences.site-sg.com
+url: https://pullmanresidences.site-sg.com/wp-includes/js/mediaelement/wp-mediaelement.min.js?ver=6.2.2
+web_url: https://pullmanresidences.site-sg.com
+url: https://pullmanresidences.site-sg.com/wp-includes/js/mediaelement/renderers/vimeo.min.js?ver=4.2.17
+web_url: https://pullmanresidences.site-sg.com
+url: https://pullmanresidences.site-sg.com/wp-content/plugins/Ultimate_VC_Addons/assets/min-js/jquery-appear.min.js?ver=3.16.21
+web_url: https://pullmanresidences.site-sg.com
+url: https://pullmanresidences.site-sg.com/wp-content/plugins/Ultimate_VC_Addons/assets/min-js/ultimate_bg.min.js?ver=6.2.2
+web_url: https://pullmanresidences.site-sg.com
+url: https://www.google.com/recaptcha/api.js?hl=en&render=explicit&ver=6.2.2
+web_url: https://pullmanresidences.site-sg.com
+url: https://pullmanresidences.site-sg.com/wp-content/plugins/elfsight-whatsapp-chat/assets/elfsight-whatsapp-chat.js?ver=1.2.0
+total js_files_links: ['https://www.clickcease.com/monitor/stat.js', 'https://pullmanresidences.site-sg.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.4', 'https://pullmanresidences.site-sg.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.0', 'https://pullmanresidences.site-sg.com/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js?ver=5.4.7.2', 'https://pullmanresidences.site-sg.com/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js?ver=5.4.7.2', 'https://pullmanresidences.site-sg.com/wp-content/plugins/pixelyoursite/dist/scripts/jquery.bind-first-0.2.3.min.js?ver=6.2.2', 'https://pullmanresidences.site-sg.com/wp-content/plugins/pixelyoursite/dist/scripts/js.cookie-2.1.3.min.js?ver=2.1.3', 'https://pullmanresidences.site-sg.com/wp-content/plugins/pixelyoursite/dist/scripts/public.js?ver=9.2.0', 'https://pullmanresidences.site-sg.com/wp-content/plugins/gravityforms/js/jquery.json.min.js?ver=2.4.16', 'https://pullmanresidences.site-sg.com/wp-content/plugins/gravityforms/js/gravityforms.min.js?ver=2.4.16', 'https://pullmanresidences.site-sg.com/wp-content/plugins/Ultimate_VC_Addons/assets/min-js/ultimate-params.min.js?ver=3.16.21', 'https://pullmanresidences.site-sg.com/wp-content/plugins/Ultimate_VC_Addons/assets/min-js/custom.min.js?ver=3.16.21', 'https://pullmanresidences.site-sg.com/wp-content/plugins/Ultimate_VC_Addons/assets/min-js/headings.min.js?ver=3.16.21', 'https://pullmanresidences.site-sg.com/wp-content/themes/developer_child/js/jquery.fancybox.js?ver=1.0.0', 'https://pullmanresidences.site-sg.com/wp-includes/js/jquery/ui/effect.min.js?ver=1.13.2', 'https://pullmanresidences.site-sg.com/wp-content/themes/developer/framework/js/aos.js?ver=6.2.2', 'https://pullmanresidences.site-sg.com/wp-content/themes/developer/framework/js/perfect-scrollbar.jquery.min.js?ver=6.2.2', 'https://pullmanresidences.site-sg.com/wp-content/themes/developer/framework/js/custom.js?ver=6.2.2', 'https://pullmanresidences.site-sg.com/wp-content/themes/developer/framework/js/popper.min.js?ver=6.2.2', 'https://pullmanresidences.site-sg.com/wp-content/themes/developer/framework/js/bootstrap.min.js?ver=6.2.2', 'https://pullmanresidences.site-sg.com/wp-content/themes/developer/framework/js/prism.js?ver=6.2.2', 'https://pullmanresidences.site-sg.com/wp-content/plugins/dflip/assets/js/dflip.min.js?ver=1.5.18', 'https://pullmanresidences.site-sg.com/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js?ver=5.4.7', 'https://pullmanresidences.site-sg.com/wp-includes/js/mediaelement/mediaelement-and-player.min.js?ver=4.2.17', 'https://pullmanresidences.site-sg.com/wp-includes/js/mediaelement/mediaelement-migrate.min.js?ver=6.2.2', 'https://pullmanresidences.site-sg.com/wp-includes/js/mediaelement/wp-mediaelement.min.js?ver=6.2.2', 'https://pullmanresidences.site-sg.com/wp-includes/js/mediaelement/renderers/vimeo.min.js?ver=4.2.17', 'https://pullmanresidences.site-sg.com/wp-content/plugins/Ultimate_VC_Addons/assets/min-js/jquery-appear.min.js?ver=3.16.21', 'https://pullmanresidences.site-sg.com/wp-content/plugins/Ultimate_VC_Addons/assets/min-js/ultimate_bg.min.js?ver=6.2.2', 'https://www.google.com/recaptcha/api.js?hl=en&render=explicit&ver=6.2.2', 'https://pullmanresidences.site-sg.com/wp-content/plugins/elfsight-whatsapp-chat/assets/elfsight-whatsapp-chat.js?ver=1.2.0']
+starting get for each_js_link: https://www.clickcease.com/monitor/stat.js
+starting get for each_js_link: https://pullmanresidences.site-sg.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.4
+starting get for each_js_link: https://pullmanresidences.site-sg.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.0
+starting get for each_js_link: https://pullmanresidences.site-sg.com/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js?ver=5.4.7.2
+starting get for each_js_link: https://pullmanresidences.site-sg.com/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js?ver=5.4.7.2
+starting get for each_js_link: https://pullmanresidences.site-sg.com/wp-content/plugins/pixelyoursite/dist/scripts/jquery.bind-first-0.2.3.min.js?ver=6.2.2
+starting get for each_js_link: https://pullmanresidences.site-sg.com/wp-content/plugins/pixelyoursite/dist/scripts/js.cookie-2.1.3.min.js?ver=2.1.3
+starting get for each_js_link: https://pullmanresidences.site-sg.com/wp-content/plugins/pixelyoursite/dist/scripts/public.js?ver=9.2.0
+starting get for each_js_link: https://pullmanresidences.site-sg.com/wp-content/plugins/gravityforms/js/jquery.json.min.js?ver=2.4.16
+starting get for each_js_link: https://pullmanresidences.site-sg.com/wp-content/plugins/gravityforms/js/gravityforms.min.js?ver=2.4.16
+starting get for each_js_link: https://pullmanresidences.site-sg.com/wp-content/plugins/Ultimate_VC_Addons/assets/min-js/ultimate-params.min.js?ver=3.16.21
+starting get for each_js_link: https://pullmanresidences.site-sg.com/wp-content/plugins/Ultimate_VC_Addons/assets/min-js/custom.min.js?ver=3.16.21
+starting get for each_js_link: https://pullmanresidences.site-sg.com/wp-content/plugins/Ultimate_VC_Addons/assets/min-js/headings.min.js?ver=3.16.21
+starting get for each_js_link: https://pullmanresidences.site-sg.com/wp-content/themes/developer_child/js/jquery.fancybox.js?ver=1.0.0
+starting get for each_js_link: https://pullmanresidences.site-sg.com/wp-includes/js/jquery/ui/effect.min.js?ver=1.13.2
+starting get for each_js_link: https://pullmanresidences.site-sg.com/wp-content/themes/developer/framework/js/aos.js?ver=6.2.2
+starting get for each_js_link: https://pullmanresidences.site-sg.com/wp-content/themes/developer/framework/js/perfect-scrollbar.jquery.min.js?ver=6.2.2
+starting get for each_js_link: https://pullmanresidences.site-sg.com/wp-content/themes/developer/framework/js/custom.js?ver=6.2.2
+starting get for each_js_link: https://pullmanresidences.site-sg.com/wp-content/themes/developer/framework/js/popper.min.js?ver=6.2.2
+starting get for each_js_link: https://pullmanresidences.site-sg.com/wp-content/themes/developer/framework/js/bootstrap.min.js?ver=6.2.2
+starting get for each_js_link: https://pullmanresidences.site-sg.com/wp-content/themes/developer/framework/js/prism.js?ver=6.2.2
+starting get for each_js_link: https://pullmanresidences.site-sg.com/wp-content/plugins/dflip/assets/js/dflip.min.js?ver=1.5.18
+starting get for each_js_link: https://pullmanresidences.site-sg.com/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js?ver=5.4.7
+starting get for each_js_link: https://pullmanresidences.site-sg.com/wp-includes/js/mediaelement/mediaelement-and-player.min.js?ver=4.2.17
+starting get for each_js_link: https://pullmanresidences.site-sg.com/wp-includes/js/mediaelement/mediaelement-migrate.min.js?ver=6.2.2
+starting get for each_js_link: https://pullmanresidences.site-sg.com/wp-includes/js/mediaelement/wp-mediaelement.min.js?ver=6.2.2
+starting get for each_js_link: https://pullmanresidences.site-sg.com/wp-includes/js/mediaelement/renderers/vimeo.min.js?ver=4.2.17
+starting get for each_js_link: https://pullmanresidences.site-sg.com/wp-content/plugins/Ultimate_VC_Addons/assets/min-js/jquery-appear.min.js?ver=3.16.21
+starting get for each_js_link: https://pullmanresidences.site-sg.com/wp-content/plugins/Ultimate_VC_Addons/assets/min-js/ultimate_bg.min.js?ver=6.2.2
+starting get for each_js_link: https://www.google.com/recaptcha/api.js?hl=en&render=explicit&ver=6.2.2
+starting get for each_js_link: https://pullmanresidences.site-sg.com/wp-content/plugins/elfsight-whatsapp-chat/assets/elfsight-whatsapp-chat.js?ver=1.2.0
+duration_log grab_html_js: 18.09186210000189
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/pullmanresidences.site-sg.com_20230612_015303.262.txt
+duration_log get_whois_info: 0.9053420000127517
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/pullmanresidences.site-sg.com_gethostbyname_ex_20230612_015304.169.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: pullmanresidences.site-sg.com. IN NS
+duration_log get_dns_info: 0.03232609998667613
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/pullmanresidences.site-sg.com_20230612_015304.206.json
+duration_log get_cert_info: 2.371408600010909
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/pullmanresidences.site-sg.com_20230612_015306.578.json
+duration_log get_archived_page_info: 0.6776344000245444
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for pullmanresidences.site-sg.com, time taken 38.72892939997837 seconds
+
+
+current domain in process_parent:www.hand-sg.com
+===== to_skip function start =====
+www.hand-sg.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: www.hand-sg.com now: 2023-06-12 01:53:07.323651+00:00
+duration_log vt_call: 1.028775599959772
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/www.hand-sg.com_http_20230612_015308.364.pngduration_log screenshot: 11.971702500013635
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+web_url: http://www.hand-sg.com
+url: https://www.googletagmanager.com/gtag/js?id=G-JKLS0QQ1G1
+web_url: http://www.hand-sg.com
+url: /static/js/manifest.c57cb1e26385c70190ea.js
+web_url: http://www.hand-sg.com
+url: /static/js/vendor.51aa01b98318fe3ee83c.js
+web_url: http://www.hand-sg.com
+url: /static/js/app.d877c6cc0129df440cfe.js
+total js_files_links: ['https://www.googletagmanager.com/gtag/js?id=G-JKLS0QQ1G1', 'http://www.hand-sg.com/static/js/manifest.c57cb1e26385c70190ea.js', 'http://www.hand-sg.com/static/js/vendor.51aa01b98318fe3ee83c.js', 'http://www.hand-sg.com/static/js/app.d877c6cc0129df440cfe.js']
+starting get for each_js_link: https://www.googletagmanager.com/gtag/js?id=G-JKLS0QQ1G1
+starting get for each_js_link: http://www.hand-sg.com/static/js/manifest.c57cb1e26385c70190ea.js
+exception in getting js_file: HTTPSConnectionPool(host='www.hand-sg.com', port=443): Max retries exceeded with url: /static/js/manifest.c57cb1e26385c70190ea.js (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1002)')))
+starting get for each_js_link: http://www.hand-sg.com/static/js/vendor.51aa01b98318fe3ee83c.js
+exception in getting js_file: HTTPSConnectionPool(host='www.hand-sg.com', port=443): Max retries exceeded with url: /static/js/vendor.51aa01b98318fe3ee83c.js (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1002)')))
+starting get for each_js_link: http://www.hand-sg.com/static/js/app.d877c6cc0129df440cfe.js
+exception in getting js_file: HTTPSConnectionPool(host='www.hand-sg.com', port=443): Max retries exceeded with url: /static/js/app.d877c6cc0129df440cfe.js (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1002)')))
+current protocol: https
+returncode: 35
+duration_log grab_html_js: 5.5318459999980405
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/www.hand-sg.com_20230612_015325.906.txt
+duration_log get_whois_info: 0.6534401000244543
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/www.hand-sg.com_gethostbyname_ex_20230612_015326.565.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: www.hand-sg.com. IN NS
+duration_log get_dns_info: 0.27923839999129996
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/www.hand-sg.com_20230612_015326.855.json
+duration_log get_cert_info: 6.115538700018078
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/www.hand-sg.com_20230612_015332.973.json
+duration_log get_archived_page_info: 0.7596552000031807
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for www.hand-sg.com, time taken 26.45081609999761 seconds
+
+
+current domain in process_parent:www.echo-web.com
+===== to_skip function start =====
+www.echo-web.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: www.echo-web.com now: 2023-06-12 01:53:33.805514+00:00
+duration_log vt_call: 1.0457900000037625
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/www.echo-web.com_http_20230612_015334.870.pngduration_log screenshot: 15.416995400039013
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+web_url: http://www.echo-web.com
+url: http://echo-web.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.0
+web_url: http://www.echo-web.com
+url: http://echo-web.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2
+web_url: http://www.echo-web.com
+url: http://echo-web.com/wp-content/themes/Divi/js/scripts.min.js?ver=4.21.0
+web_url: http://www.echo-web.com
+url: http://echo-web.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.fitvids.js?ver=4.21.0
+web_url: http://www.echo-web.com
+url: http://echo-web.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/easypiechart.js?ver=4.21.0
+web_url: http://www.echo-web.com
+url: http://echo-web.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/salvattore.js?ver=4.21.0
+web_url: http://www.echo-web.com
+url: http://echo-web.com/wp-content/plugins/litespeed-cache/assets/js/instant_click.min.js?ver=5.4
+web_url: http://www.echo-web.com
+url: http://echo-web.com/wp-content/themes/Divi/core/admin/js/common.js?ver=4.21.0
+web_url: http://www.echo-web.com
+url: http://echo-web.com/wp-includes/js/mediaelement/mediaelement-and-player.min.js?ver=4.2.16
+web_url: http://www.echo-web.com
+url: http://echo-web.com/wp-includes/js/mediaelement/mediaelement-migrate.min.js?ver=6.0.5
+web_url: http://www.echo-web.com
+url: http://echo-web.com/wp-includes/js/mediaelement/wp-mediaelement.min.js?ver=6.0.5
+total js_files_links: ['http://echo-web.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.0', 'http://echo-web.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2', 'http://echo-web.com/wp-content/themes/Divi/js/scripts.min.js?ver=4.21.0', 'http://echo-web.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.fitvids.js?ver=4.21.0', 'http://echo-web.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/easypiechart.js?ver=4.21.0', 'http://echo-web.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/salvattore.js?ver=4.21.0', 'http://echo-web.com/wp-content/plugins/litespeed-cache/assets/js/instant_click.min.js?ver=5.4', 'http://echo-web.com/wp-content/themes/Divi/core/admin/js/common.js?ver=4.21.0', 'http://echo-web.com/wp-includes/js/mediaelement/mediaelement-and-player.min.js?ver=4.2.16', 'http://echo-web.com/wp-includes/js/mediaelement/mediaelement-migrate.min.js?ver=6.0.5', 'http://echo-web.com/wp-includes/js/mediaelement/wp-mediaelement.min.js?ver=6.0.5']
+starting get for each_js_link: http://echo-web.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.0
+starting get for each_js_link: http://echo-web.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2
+starting get for each_js_link: http://echo-web.com/wp-content/themes/Divi/js/scripts.min.js?ver=4.21.0
+starting get for each_js_link: http://echo-web.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.fitvids.js?ver=4.21.0
+starting get for each_js_link: http://echo-web.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/easypiechart.js?ver=4.21.0
+starting get for each_js_link: http://echo-web.com/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/salvattore.js?ver=4.21.0
+starting get for each_js_link: http://echo-web.com/wp-content/plugins/litespeed-cache/assets/js/instant_click.min.js?ver=5.4
+starting get for each_js_link: http://echo-web.com/wp-content/themes/Divi/core/admin/js/common.js?ver=4.21.0
+starting get for each_js_link: http://echo-web.com/wp-includes/js/mediaelement/mediaelement-and-player.min.js?ver=4.2.16
+starting get for each_js_link: http://echo-web.com/wp-includes/js/mediaelement/mediaelement-migrate.min.js?ver=6.0.5
+starting get for each_js_link: http://echo-web.com/wp-includes/js/mediaelement/wp-mediaelement.min.js?ver=6.0.5
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 11.208886899985373
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/www.echo-web.com_20230612_015401.550.txt
+duration_log get_whois_info: 6.916460100037511
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/www.echo-web.com_gethostbyname_ex_20230612_015408.469.txt
+dns.resolver.query() exception triggered: 'NoneType' object has no attribute 'sort'
+duration_log get_dns_info: 0.5417908999952488
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 0.7561377999954857
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/www.echo-web.com_20230612_015409.791.json
+duration_log get_archived_page_info: 0.7135928000207059
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for www.echo-web.com, time taken 36.74225379998097 seconds
+
+
+current domain in process_parent:jden-residences-sg.com
+===== to_skip function start =====
+jden-residences-sg.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: jden-residences-sg.com now: 2023-06-12 01:54:10.581967+00:00
+duration_log vt_call: 0.9877243000082672
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/jden-residences-sg.com_http_20230612_015411.583.pngscreenshot found for protocol: https and saved to resources/shot-scraper/jden-residences-sg.com_https_20230612_015411.583.pngduration_log screenshot: 19.76042750000488
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+web_url: http://jden-residences-sg.com
+url: /single_mahatan/libs/jquery/core.min.js
+web_url: http://jden-residences-sg.com
+url: /single_2/js/bootstrap-timepicker.js
+web_url: http://jden-residences-sg.com
+url: /single_2/js/bootstrap-datepicker.min.js
+web_url: http://jden-residences-sg.com
+url: /countries_code/js/intlTelInput.js
+web_url: http://jden-residences-sg.com
+url: /js/jquery.validate.min.js
+web_url: http://jden-residences-sg.com
+url: /single_mahatan/js/contact_footer.js
+web_url: http://jden-residences-sg.com
+url: /js/select2/js/select2.min.js
+web_url: http://jden-residences-sg.com
+url: /asset/libs/swiper/js/swiper.min.js
+web_url: http://jden-residences-sg.com
+url: /single_mahatan/libs/bootstrap/js/bootstrap.min.js
+web_url: http://jden-residences-sg.com
+url: /single_mahatan/js/script.js
+web_url: http://jden-residences-sg.com
+url: /js/simplelightbox/simple-lightbox.js
+web_url: http://jden-residences-sg.com
+url: /single_mahatan/js/active-menu.js
+total js_files_links: ['http://jden-residences-sg.com/single_mahatan/libs/jquery/core.min.js', 'http://jden-residences-sg.com/single_2/js/bootstrap-timepicker.js', 'http://jden-residences-sg.com/single_2/js/bootstrap-datepicker.min.js', 'http://jden-residences-sg.com/countries_code/js/intlTelInput.js', 'http://jden-residences-sg.com/js/jquery.validate.min.js', 'http://jden-residences-sg.com/single_mahatan/js/contact_footer.js', 'http://jden-residences-sg.com/js/select2/js/select2.min.js', 'http://jden-residences-sg.com/asset/libs/swiper/js/swiper.min.js', 'http://jden-residences-sg.com/single_mahatan/libs/bootstrap/js/bootstrap.min.js', 'http://jden-residences-sg.com/single_mahatan/js/script.js', 'http://jden-residences-sg.com/js/simplelightbox/simple-lightbox.js', 'http://jden-residences-sg.com/single_mahatan/js/active-menu.js']
+starting get for each_js_link: http://jden-residences-sg.com/single_mahatan/libs/jquery/core.min.js
+starting get for each_js_link: http://jden-residences-sg.com/single_2/js/bootstrap-timepicker.js
+starting get for each_js_link: http://jden-residences-sg.com/single_2/js/bootstrap-datepicker.min.js
+starting get for each_js_link: http://jden-residences-sg.com/countries_code/js/intlTelInput.js
+starting get for each_js_link: http://jden-residences-sg.com/js/jquery.validate.min.js
+starting get for each_js_link: http://jden-residences-sg.com/single_mahatan/js/contact_footer.js
+starting get for each_js_link: http://jden-residences-sg.com/js/select2/js/select2.min.js
+starting get for each_js_link: http://jden-residences-sg.com/asset/libs/swiper/js/swiper.min.js
+starting get for each_js_link: http://jden-residences-sg.com/single_mahatan/libs/bootstrap/js/bootstrap.min.js
+starting get for each_js_link: http://jden-residences-sg.com/single_mahatan/js/script.js
+starting get for each_js_link: http://jden-residences-sg.com/js/simplelightbox/simple-lightbox.js
+starting get for each_js_link: http://jden-residences-sg.com/single_mahatan/js/active-menu.js
+current protocol: https
+returncode: 0
+starting html request.get
+web_url: https://jden-residences-sg.com
+url: /single_mahatan/libs/jquery/core.min.js
+web_url: https://jden-residences-sg.com
+url: /single_2/js/bootstrap-timepicker.js
+web_url: https://jden-residences-sg.com
+url: /single_2/js/bootstrap-datepicker.min.js
+web_url: https://jden-residences-sg.com
+url: /countries_code/js/intlTelInput.js
+web_url: https://jden-residences-sg.com
+url: /js/jquery.validate.min.js
+web_url: https://jden-residences-sg.com
+url: /single_mahatan/js/contact_footer.js
+web_url: https://jden-residences-sg.com
+url: /js/select2/js/select2.min.js
+web_url: https://jden-residences-sg.com
+url: /asset/libs/swiper/js/swiper.min.js
+web_url: https://jden-residences-sg.com
+url: /single_mahatan/libs/bootstrap/js/bootstrap.min.js
+web_url: https://jden-residences-sg.com
+url: /single_mahatan/js/script.js
+web_url: https://jden-residences-sg.com
+url: /js/simplelightbox/simple-lightbox.js
+web_url: https://jden-residences-sg.com
+url: /single_mahatan/js/active-menu.js
+total js_files_links: ['https://jden-residences-sg.com/single_mahatan/libs/jquery/core.min.js', 'https://jden-residences-sg.com/single_2/js/bootstrap-timepicker.js', 'https://jden-residences-sg.com/single_2/js/bootstrap-datepicker.min.js', 'https://jden-residences-sg.com/countries_code/js/intlTelInput.js', 'https://jden-residences-sg.com/js/jquery.validate.min.js', 'https://jden-residences-sg.com/single_mahatan/js/contact_footer.js', 'https://jden-residences-sg.com/js/select2/js/select2.min.js', 'https://jden-residences-sg.com/asset/libs/swiper/js/swiper.min.js', 'https://jden-residences-sg.com/single_mahatan/libs/bootstrap/js/bootstrap.min.js', 'https://jden-residences-sg.com/single_mahatan/js/script.js', 'https://jden-residences-sg.com/js/simplelightbox/simple-lightbox.js', 'https://jden-residences-sg.com/single_mahatan/js/active-menu.js']
+starting get for each_js_link: https://jden-residences-sg.com/single_mahatan/libs/jquery/core.min.js
+starting get for each_js_link: https://jden-residences-sg.com/single_2/js/bootstrap-timepicker.js
+starting get for each_js_link: https://jden-residences-sg.com/single_2/js/bootstrap-datepicker.min.js
+starting get for each_js_link: https://jden-residences-sg.com/countries_code/js/intlTelInput.js
+starting get for each_js_link: https://jden-residences-sg.com/js/jquery.validate.min.js
+starting get for each_js_link: https://jden-residences-sg.com/single_mahatan/js/contact_footer.js
+starting get for each_js_link: https://jden-residences-sg.com/js/select2/js/select2.min.js
+starting get for each_js_link: https://jden-residences-sg.com/asset/libs/swiper/js/swiper.min.js
+starting get for each_js_link: https://jden-residences-sg.com/single_mahatan/libs/bootstrap/js/bootstrap.min.js
+starting get for each_js_link: https://jden-residences-sg.com/single_mahatan/js/script.js
+starting get for each_js_link: https://jden-residences-sg.com/js/simplelightbox/simple-lightbox.js
+starting get for each_js_link: https://jden-residences-sg.com/single_mahatan/js/active-menu.js
+duration_log grab_html_js: 5.117024700040929
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/jden-residences-sg.com_20230612_015436.501.txt
+duration_log get_whois_info: 0.6736823000246659
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/jden-residences-sg.com_gethostbyname_ex_20230612_015437.179.txt
+dns.resolver.query() exception triggered: 'NoneType' object has no attribute 'sort'
+duration_log get_dns_info: 0.2331973999971524
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/jden-residences-sg.com_20230612_015437.420.json
+duration_log get_cert_info: 0.9723759000189602
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7068520999746397
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for jden-residences-sg.com, time taken 28.564544900029432 seconds
+
+
+current domain in process_parent:r-mall.pics
+===== to_skip function start =====
+r-mall.pics has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: r-mall.pics now: 2023-06-12 01:54:39.212651+00:00
+duration_log vt_call: 0.9295297999633476
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 4.476830500003416
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 6
+current protocol: https
+returncode: 6
+duration_log grab_html_js: 0.16012259997660294
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/r-mall.pics_20230612_015444.855.txt
+duration_log get_whois_info: 8.760666899965145
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+socket.gethostbyname_ex() exception triggered: [Errno 11001] getaddrinfo failed
+dns.resolver.query() exception triggered: 'NoneType' object has no attribute 'sort'
+duration_log get_dns_info: 0.40619690000312403
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/r-mall.pics_20230612_015454.030.json
+duration_log get_cert_info: 0.9665895000216551
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7629567999974824
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for r-mall.pics, time taken 16.616302900016308 seconds
+
+
+current domain in process_parent:ww25.407.travel-web.com.tw
+===== to_skip function start =====
+ww25.407.travel-web.com.tw has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: ww25.407.travel-web.com.tw now: 2023-06-12 01:54:55.843595+00:00
+call_status_code: 404, continuing to next ip_or_domain
+current domain in process_parent:lemonade-alex.com
+===== to_skip function start =====
+lemonade-alex.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: lemonade-alex.com now: 2023-06-12 01:54:56.646909+00:00
+duration_log vt_call: 0.9052193000097759
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/lemonade-alex.com_http_20230612_015457.564.pngscreenshot found for protocol: https and saved to resources/shot-scraper/lemonade-alex.com_https_20230612_015457.564.pngduration_log screenshot: 11.515971900022123
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+web_url: http://lemonade-alex.com
+url: /static/js/chunk-vendors.fc740683.js
+web_url: http://lemonade-alex.com
+url: /static/js/index.acf35ed0.js
+total js_files_links: ['http://lemonade-alex.com/static/js/chunk-vendors.fc740683.js', 'http://lemonade-alex.com/static/js/index.acf35ed0.js']
+starting get for each_js_link: http://lemonade-alex.com/static/js/chunk-vendors.fc740683.js
+starting get for each_js_link: http://lemonade-alex.com/static/js/index.acf35ed0.js
+current protocol: https
+returncode: 0
+starting html request.get
+web_url: https://lemonade-alex.com
+url: /static/js/chunk-vendors.fc740683.js
+web_url: https://lemonade-alex.com
+url: /static/js/index.acf35ed0.js
+total js_files_links: ['https://lemonade-alex.com/static/js/chunk-vendors.fc740683.js', 'https://lemonade-alex.com/static/js/index.acf35ed0.js']
+starting get for each_js_link: https://lemonade-alex.com/static/js/chunk-vendors.fc740683.js
+starting get for each_js_link: https://lemonade-alex.com/static/js/index.acf35ed0.js
+duration_log grab_html_js: 22.04984400002286
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/lemonade-alex.com_20230612_015531.167.txt
+duration_log get_whois_info: 1.0182511999737471
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/lemonade-alex.com_gethostbyname_ex_20230612_015532.183.txt
+dns.resolver.query() exception triggered: 'NoneType' object has no attribute 'sort'
+duration_log get_dns_info: 0.46415229997364804
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/lemonade-alex.com_20230612_015532.657.json
+duration_log get_cert_info: 0.9462163000134751
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7306034999783151
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for lemonade-alex.com, time taken 37.72958500002278 seconds
+
+
+current domain in process_parent:kk.mk-com.com
+===== to_skip function start =====
+kk.mk-com.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: kk.mk-com.com now: 2023-06-12 01:55:34.427218+00:00
+call_status_code: 404, continuing to next ip_or_domain
+current domain in process_parent:onemotoring.gov.sg
+===== to_skip function start =====
+onemotoring.gov.sg has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: onemotoring.gov.sg now: 2023-06-12 01:55:35.295227+00:00
+duration_log vt_call: 1.039434899983462
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 9.180500200018287
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 6
+current protocol: https
+returncode: 6
+duration_log grab_html_js: 6.044269900012296
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/onemotoring.gov.sg_20230612_015551.616.txt
+duration_log get_whois_info: 0.03959900001063943
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+socket.gethostbyname_ex() exception triggered: [Errno 11002] getaddrinfo failed
+dns.resolver.query() exception triggered: The resolution lifetime expired after 5.411 seconds: Server 1.1.1.1 UDP port 53 answered The DNS operation timed out.; Server 1.1.1.1 UDP port 53 answered The DNS operation timed out.; Server 1.1.1.1 UDP port 53 answered The DNS operation timed out.
+duration_log get_dns_info: 11.527175299997907
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 3.132969400030561
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7875186000019312
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for onemotoring.gov.sg, time taken 31.901308999978937 seconds
+
+
+current domain in process_parent:the-botany.site-sg.com
+===== to_skip function start =====
+the-botany.site-sg.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: the-botany.site-sg.com now: 2023-06-12 01:56:07.220026+00:00
+call_status_code: 404, continuing to next ip_or_domain
+current domain in process_parent:xshopee.cn
+===== to_skip function start =====
+xshopee.cn has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: xshopee.cn now: 2023-06-12 01:56:08.155476+00:00
+duration_log vt_call: 1.2063249999773689
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 3.097360400017351
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 6
+current protocol: https
+returncode: 6
+duration_log grab_html_js: 0.5848141000024043
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/xshopee.cn_20230612_015613.101.txt
+duration_log get_whois_info: 0.21890159999020398
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+socket.gethostbyname_ex() exception triggered: [Errno 11001] getaddrinfo failed
+dns.resolver.query() exception triggered: 'NoneType' object has no attribute 'sort'
+duration_log get_dns_info: 0.3994286999804899
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/xshopee.cn_20230612_015613.723.json
+duration_log get_cert_info: 9.0600033000228
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 1.0259209999931045
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for xshopee.cn, time taken 15.705449900007807 seconds
+
+
+current domain in process_parent:www.benduo-web.com
+===== to_skip function start =====
+www.benduo-web.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: www.benduo-web.com now: 2023-06-12 01:56:23.902845+00:00
+duration_log vt_call: 1.1200153000536375
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 3.3612015999970026
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 6
+current protocol: https
+returncode: 6
+duration_log grab_html_js: 0.26725819997955114
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_domain_whois_info()  exception triggered: No match for "BENDUO-WEB.COM".
+>>> Last update of whois database: 2023-06-12T01:56:17Z <<<
+
+NOTICE: The expiration date displayed in this record is the date the
+registrar's sponsorship of the domain name registration in the registry is
+currently set to expire. This date does not necessarily reflect the expiration
+date of the domain name registrant's agreement with the sponsoring
+registrar.  Users may consult the sponsoring registrar's Whois database to
+view the registrar's reported date of expiration for this registration.
+
+TERMS OF USE: You are not authorized to access or query our Whois
+database through the use of electronic processes that are high-volume and
+automated except as reasonably necessary to register domain names or
+modify existing registrations; the Data in VeriSign Global Registry
+Services' ("VeriSign") Whois database is provided by VeriSign for
+information purposes only, and to assist persons in obtaining information
+about or related to a domain name registration record. VeriSign does not
+guarantee its accuracy. By submitting a Whois query, you agree to abide
+by the following terms of use: You agree that you may use this Data only
+for lawful purposes and that under no circumstances will you use this Data
+to: (1) allow, enable, or otherwise support the transmission of mass
+unsolicited, commercial advertising or solicitations via e-mail, telephone,
+or facsimile; or (2) enable high volume, automated, electronic processes
+that apply to VeriSign (or its computer systems). The compilation,
+repackaging, dissemination or other use of this Data is expressly
+prohibited without the prior written consent of VeriSign. You agree not to
+use electronic processes that are automated and high-volume to access or
+query the Whois database except as reasonably necessary to register
+domain names or modify existing registrations. VeriSign reserves the right
+to restrict your access to the Whois database in its sole discretion to ensure
+operational stability.  VeriSign may restrict or terminate your access to the
+Whois database for failure to abide by these terms of use. VeriSign
+reserves the right to modify these terms at any time.
+
+The Registry database contains ONLY .COM, .NET, .EDU domains and
+Registrars.
+
+duration_log get_whois_info: 0.3935092999599874
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+socket.gethostbyname_ex() exception triggered: [Errno 11001] getaddrinfo failed
+dns.resolver.query() exception triggered: The DNS query name does not exist: www.benduo-web.com.
+duration_log get_dns_info: 0.026869599998462945
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 1.0206648000166751
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/www.benduo-web.com_20230612_015630.185.json
+duration_log get_archived_page_info: 0.7508645000052638
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for www.benduo-web.com, time taken 15.000809599994682 seconds
+
+
+current domain in process_parent:www.bb-lab-sg.com
+===== to_skip function start =====
+www.bb-lab-sg.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: www.bb-lab-sg.com now: 2023-06-12 01:56:38.945308+00:00
+duration_log vt_call: 0.972391199960839
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 46.10136909998255
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 28
+current protocol: https
+returncode: 28
+duration_log grab_html_js: 43.430416600022
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/www.bb-lab-sg.com_20230612_015809.511.txt
+duration_log get_whois_info: 0.6579447999829426
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/www.bb-lab-sg.com_gethostbyname_ex_20230612_015810.172.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: www.bb-lab-sg.com. IN NS
+duration_log get_dns_info: 1.0218484999495558
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 3.05098319996614
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/www.bb-lab-sg.com_20230612_015814.282.json
+duration_log get_archived_page_info: 0.7923865999910049
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for www.bb-lab-sg.com, time taken 96.17415739997523 seconds
+
+
+current domain in process_parent:lp.musee-sg.com
+===== to_skip function start =====
+lp.musee-sg.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: lp.musee-sg.com now: 2023-06-12 01:58:15.146182+00:00
+duration_log vt_call: 0.9672500000451691
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/lp.musee-sg.com_http_20230612_015816.133.pngscreenshot found for protocol: https and saved to resources/shot-scraper/lp.musee-sg.com_https_20230612_015816.133.pngduration_log screenshot: 16.918002200021874
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+web_url: http://lp.musee-sg.com
+url: js/jquery.min.js
+web_url: http://lp.musee-sg.com
+url: js/owl.carousel.min.js
+web_url: http://lp.musee-sg.com
+url: js/jquery.validate.js
+web_url: http://lp.musee-sg.com
+url: js/custom.js?
+total js_files_links: ['http://lp.musee-sg.com/js/jquery.min.js', 'http://lp.musee-sg.com/js/owl.carousel.min.js', 'http://lp.musee-sg.com/js/jquery.validate.js', 'http://lp.musee-sg.com/js/custom.js?']
+starting get for each_js_link: http://lp.musee-sg.com/js/jquery.min.js
+starting get for each_js_link: http://lp.musee-sg.com/js/owl.carousel.min.js
+starting get for each_js_link: http://lp.musee-sg.com/js/jquery.validate.js
+starting get for each_js_link: http://lp.musee-sg.com/js/custom.js?
+current protocol: https
+returncode: 0
+starting html request.get
+web_url: https://lp.musee-sg.com
+url: js/jquery.min.js
+web_url: https://lp.musee-sg.com
+url: js/owl.carousel.min.js
+web_url: https://lp.musee-sg.com
+url: js/jquery.validate.js
+web_url: https://lp.musee-sg.com
+url: js/custom.js?
+total js_files_links: ['https://lp.musee-sg.com/js/jquery.min.js', 'https://lp.musee-sg.com/js/owl.carousel.min.js', 'https://lp.musee-sg.com/js/jquery.validate.js', 'https://lp.musee-sg.com/js/custom.js?']
+starting get for each_js_link: https://lp.musee-sg.com/js/jquery.min.js
+starting get for each_js_link: https://lp.musee-sg.com/js/owl.carousel.min.js
+starting get for each_js_link: https://lp.musee-sg.com/js/jquery.validate.js
+starting get for each_js_link: https://lp.musee-sg.com/js/custom.js?
+duration_log grab_html_js: 2.847552400024142
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/lp.musee-sg.com_20230612_015835.934.txt
+duration_log get_whois_info: 1.235014800040517
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/lp.musee-sg.com_gethostbyname_ex_20230612_015837.172.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: lp.musee-sg.com. IN NS
+duration_log get_dns_info: 0.20582430000649765
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/lp.musee-sg.com_20230612_015837.395.json
+duration_log get_cert_info: 3.291522499988787
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/lp.musee-sg.com_20230612_015840.690.json
+duration_log get_archived_page_info: 0.72609160002321
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for lp.musee-sg.com, time taken 26.309855800005607 seconds
+
+
+current domain in process_parent:laspalmasnow99012.in
+===== to_skip function start =====
+laspalmasnow99012.in has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: laspalmasnow99012.in now: 2023-06-12 01:58:41.484973+00:00
+duration_log vt_call: 1.076775399968028
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 6.3059522999683395
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 7
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 3.4291089000180364
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/laspalmasnow99012.in_20230612_015852.349.txt
+duration_log get_whois_info: 0.24034650000976399
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/laspalmasnow99012.in_gethostbyname_ex_20230612_015852.594.txt
+dns.resolver.query() exception triggered: 'NoneType' object has no attribute 'sort'
+duration_log get_dns_info: 0.303462199983187
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 0.8717541999649256
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 3.6823049999657087
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for laspalmasnow99012.in, time taken 16.04213510005502 seconds
+
+
+current domain in process_parent:groceries-umamill-sg.com
+===== to_skip function start =====
+groceries-umamill-sg.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: groceries-umamill-sg.com now: 2023-06-12 01:58:57.569970+00:00
+duration_log vt_call: 1.1287201999803074
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/groceries-umamill-sg.com_http_20230612_015858.715.pngscreenshot found for protocol: https and saved to resources/shot-scraper/groceries-umamill-sg.com_https_20230612_015858.715.pngduration_log screenshot: 18.50165749998996
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+web_url: http://groceries-umamill-sg.com
+url: //cdn.shopify.com/shopifycloud/shopify/assets/storefront/load_feature-3f13ad638dda6342084642726e80965205d5b82d761805d0f0b2850313bc1fdf.js
+web_url: http://groceries-umamill-sg.com
+url: //cdn.shopify.com/shopifycloud/shopify/assets/shopify_pay/storefront-c31d2fa4962d2ef90b673e945ee33f4f87302b97d0882cd8e83a629b84b30dab.js?v=20220906
+web_url: http://groceries-umamill-sg.com
+url: //cdn.shopify.com/shopifycloud/shopify/assets/storefront/features-87e8399988880142f2c62771b9d8f2ff6c290b3ff745dd426eb0dfe0db9d1dae.js
+web_url: http://groceries-umamill-sg.com
+url: //cdn.shopify.com/s/files/1/0570/0596/5490/t/36/assets/vendor-scripts-v9.js
+web_url: http://groceries-umamill-sg.com
+url: //cdn.shopify.com/s/files/1/0570/0596/5490/t/36/assets/theme.min.js?v=39339811917495584771668666891
+web_url: http://groceries-umamill-sg.com
+url: https://www.googletagmanager.com/gtag/js?id=AW-10848194498
+web_url: http://groceries-umamill-sg.com
+url: https://odd.identixweb.com/order-delivery-date/assets/js/odd_preview.min.js
+web_url: http://groceries-umamill-sg.com
+url: https://zooomyapps.com/age/ZooomyAgeVerify.js
+web_url: http://groceries-umamill-sg.com
+url: //cdn.shopify.com/s/files/1/0570/0596/5490/t/36/assets/boost-pfs-core-instant-search.js?v=69716822259507602361668666891
+web_url: http://groceries-umamill-sg.com
+url: //cdn.shopify.com/s/files/1/0570/0596/5490/t/36/assets/boost-pfs-instant-search.js?v=81494777122567760641668666891
+web_url: http://groceries-umamill-sg.com
+url: //cdn.shopify.com/s/files/1/0570/0596/5490/t/36/assets/boost-pfs-init.js?v=183214864752606735241668666891
+web_url: http://groceries-umamill-sg.com
+url: //reginapps.com/limitsify/javascripts/limitsify.min.js?1
+total js_files_links: ['http://cdn.shopify.com/shopifycloud/shopify/assets/storefront/load_feature-3f13ad638dda6342084642726e80965205d5b82d761805d0f0b2850313bc1fdf.js', 'http://cdn.shopify.com/shopifycloud/shopify/assets/shopify_pay/storefront-c31d2fa4962d2ef90b673e945ee33f4f87302b97d0882cd8e83a629b84b30dab.js?v=20220906', 'http://cdn.shopify.com/shopifycloud/shopify/assets/storefront/features-87e8399988880142f2c62771b9d8f2ff6c290b3ff745dd426eb0dfe0db9d1dae.js', 'http://cdn.shopify.com/s/files/1/0570/0596/5490/t/36/assets/vendor-scripts-v9.js', 'http://cdn.shopify.com/s/files/1/0570/0596/5490/t/36/assets/theme.min.js?v=39339811917495584771668666891', 'https://www.googletagmanager.com/gtag/js?id=AW-10848194498', 'https://odd.identixweb.com/order-delivery-date/assets/js/odd_preview.min.js', 'https://zooomyapps.com/age/ZooomyAgeVerify.js', 'http://cdn.shopify.com/s/files/1/0570/0596/5490/t/36/assets/boost-pfs-core-instant-search.js?v=69716822259507602361668666891', 'http://cdn.shopify.com/s/files/1/0570/0596/5490/t/36/assets/boost-pfs-instant-search.js?v=81494777122567760641668666891', 'http://cdn.shopify.com/s/files/1/0570/0596/5490/t/36/assets/boost-pfs-init.js?v=183214864752606735241668666891', 'http://reginapps.com/limitsify/javascripts/limitsify.min.js?1']
+starting get for each_js_link: http://cdn.shopify.com/shopifycloud/shopify/assets/storefront/load_feature-3f13ad638dda6342084642726e80965205d5b82d761805d0f0b2850313bc1fdf.js
+starting get for each_js_link: http://cdn.shopify.com/shopifycloud/shopify/assets/shopify_pay/storefront-c31d2fa4962d2ef90b673e945ee33f4f87302b97d0882cd8e83a629b84b30dab.js?v=20220906
+starting get for each_js_link: http://cdn.shopify.com/shopifycloud/shopify/assets/storefront/features-87e8399988880142f2c62771b9d8f2ff6c290b3ff745dd426eb0dfe0db9d1dae.js
+starting get for each_js_link: http://cdn.shopify.com/s/files/1/0570/0596/5490/t/36/assets/vendor-scripts-v9.js
+starting get for each_js_link: http://cdn.shopify.com/s/files/1/0570/0596/5490/t/36/assets/theme.min.js?v=39339811917495584771668666891
+starting get for each_js_link: https://www.googletagmanager.com/gtag/js?id=AW-10848194498
+starting get for each_js_link: https://odd.identixweb.com/order-delivery-date/assets/js/odd_preview.min.js
+starting get for each_js_link: https://zooomyapps.com/age/ZooomyAgeVerify.js
+starting get for each_js_link: http://cdn.shopify.com/s/files/1/0570/0596/5490/t/36/assets/boost-pfs-core-instant-search.js?v=69716822259507602361668666891
+starting get for each_js_link: http://cdn.shopify.com/s/files/1/0570/0596/5490/t/36/assets/boost-pfs-instant-search.js?v=81494777122567760641668666891
+starting get for each_js_link: http://cdn.shopify.com/s/files/1/0570/0596/5490/t/36/assets/boost-pfs-init.js?v=183214864752606735241668666891
+starting get for each_js_link: http://reginapps.com/limitsify/javascripts/limitsify.min.js?1
+current protocol: https
+returncode: 0
+starting html request.get
+web_url: https://groceries-umamill-sg.com
+url: //cdn.shopify.com/shopifycloud/shopify/assets/storefront/load_feature-3f13ad638dda6342084642726e80965205d5b82d761805d0f0b2850313bc1fdf.js
+web_url: https://groceries-umamill-sg.com
+url: //cdn.shopify.com/shopifycloud/shopify/assets/shopify_pay/storefront-c31d2fa4962d2ef90b673e945ee33f4f87302b97d0882cd8e83a629b84b30dab.js?v=20220906
+web_url: https://groceries-umamill-sg.com
+url: //cdn.shopify.com/shopifycloud/shopify/assets/storefront/features-87e8399988880142f2c62771b9d8f2ff6c290b3ff745dd426eb0dfe0db9d1dae.js
+web_url: https://groceries-umamill-sg.com
+url: //cdn.shopify.com/s/files/1/0570/0596/5490/t/36/assets/vendor-scripts-v9.js
+web_url: https://groceries-umamill-sg.com
+url: //cdn.shopify.com/s/files/1/0570/0596/5490/t/36/assets/theme.min.js?v=39339811917495584771668666891
+web_url: https://groceries-umamill-sg.com
+url: https://www.googletagmanager.com/gtag/js?id=AW-10848194498
+web_url: https://groceries-umamill-sg.com
+url: https://odd.identixweb.com/order-delivery-date/assets/js/odd_preview.min.js
+web_url: https://groceries-umamill-sg.com
+url: https://zooomyapps.com/age/ZooomyAgeVerify.js
+web_url: https://groceries-umamill-sg.com
+url: //cdn.shopify.com/s/files/1/0570/0596/5490/t/36/assets/boost-pfs-core-instant-search.js?v=69716822259507602361668666891
+web_url: https://groceries-umamill-sg.com
+url: //cdn.shopify.com/s/files/1/0570/0596/5490/t/36/assets/boost-pfs-instant-search.js?v=81494777122567760641668666891
+web_url: https://groceries-umamill-sg.com
+url: //cdn.shopify.com/s/files/1/0570/0596/5490/t/36/assets/boost-pfs-init.js?v=183214864752606735241668666891
+web_url: https://groceries-umamill-sg.com
+url: //reginapps.com/limitsify/javascripts/limitsify.min.js?1
+total js_files_links: ['https://cdn.shopify.com/shopifycloud/shopify/assets/storefront/load_feature-3f13ad638dda6342084642726e80965205d5b82d761805d0f0b2850313bc1fdf.js', 'https://cdn.shopify.com/shopifycloud/shopify/assets/shopify_pay/storefront-c31d2fa4962d2ef90b673e945ee33f4f87302b97d0882cd8e83a629b84b30dab.js?v=20220906', 'https://cdn.shopify.com/shopifycloud/shopify/assets/storefront/features-87e8399988880142f2c62771b9d8f2ff6c290b3ff745dd426eb0dfe0db9d1dae.js', 'https://cdn.shopify.com/s/files/1/0570/0596/5490/t/36/assets/vendor-scripts-v9.js', 'https://cdn.shopify.com/s/files/1/0570/0596/5490/t/36/assets/theme.min.js?v=39339811917495584771668666891', 'https://www.googletagmanager.com/gtag/js?id=AW-10848194498', 'https://odd.identixweb.com/order-delivery-date/assets/js/odd_preview.min.js', 'https://zooomyapps.com/age/ZooomyAgeVerify.js', 'https://cdn.shopify.com/s/files/1/0570/0596/5490/t/36/assets/boost-pfs-core-instant-search.js?v=69716822259507602361668666891', 'https://cdn.shopify.com/s/files/1/0570/0596/5490/t/36/assets/boost-pfs-instant-search.js?v=81494777122567760641668666891', 'https://cdn.shopify.com/s/files/1/0570/0596/5490/t/36/assets/boost-pfs-init.js?v=183214864752606735241668666891', 'https://reginapps.com/limitsify/javascripts/limitsify.min.js?1']
+starting get for each_js_link: https://cdn.shopify.com/shopifycloud/shopify/assets/storefront/load_feature-3f13ad638dda6342084642726e80965205d5b82d761805d0f0b2850313bc1fdf.js
+starting get for each_js_link: https://cdn.shopify.com/shopifycloud/shopify/assets/shopify_pay/storefront-c31d2fa4962d2ef90b673e945ee33f4f87302b97d0882cd8e83a629b84b30dab.js?v=20220906
+starting get for each_js_link: https://cdn.shopify.com/shopifycloud/shopify/assets/storefront/features-87e8399988880142f2c62771b9d8f2ff6c290b3ff745dd426eb0dfe0db9d1dae.js
+starting get for each_js_link: https://cdn.shopify.com/s/files/1/0570/0596/5490/t/36/assets/vendor-scripts-v9.js
+starting get for each_js_link: https://cdn.shopify.com/s/files/1/0570/0596/5490/t/36/assets/theme.min.js?v=39339811917495584771668666891
+starting get for each_js_link: https://www.googletagmanager.com/gtag/js?id=AW-10848194498
+starting get for each_js_link: https://odd.identixweb.com/order-delivery-date/assets/js/odd_preview.min.js
+starting get for each_js_link: https://zooomyapps.com/age/ZooomyAgeVerify.js
+starting get for each_js_link: https://cdn.shopify.com/s/files/1/0570/0596/5490/t/36/assets/boost-pfs-core-instant-search.js?v=69716822259507602361668666891
+starting get for each_js_link: https://cdn.shopify.com/s/files/1/0570/0596/5490/t/36/assets/boost-pfs-instant-search.js?v=81494777122567760641668666891
+starting get for each_js_link: https://cdn.shopify.com/s/files/1/0570/0596/5490/t/36/assets/boost-pfs-init.js?v=183214864752606735241668666891
+starting get for each_js_link: https://reginapps.com/limitsify/javascripts/limitsify.min.js?1
+duration_log grab_html_js: 14.36980789998779
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/groceries-umamill-sg.com_20230612_015931.626.txt
+duration_log get_whois_info: 1.4382244999869727
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/groceries-umamill-sg.com_gethostbyname_ex_20230612_015933.066.txt
+dns.resolver.query() exception triggered: 'NoneType' object has no attribute 'sort'
+duration_log get_dns_info: 0.20166570000583306
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 1.9296216999646276
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/groceries-umamill-sg.com_20230612_015935.214.json
+duration_log get_archived_page_info: 1.728660700027831
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for groceries-umamill-sg.com, time taken 39.42643210000824 seconds
+
+
+current domain in process_parent:www.face-sg.com
+===== to_skip function start =====
+www.face-sg.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: www.face-sg.com now: 2023-06-12 01:59:37.025344+00:00
+duration_log vt_call: 1.158287999976892
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/www.face-sg.com_http_20230612_015938.196.pngduration_log screenshot: 6.886092800006736
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.4256180999800563
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/www.face-sg.com_20230612_015945.546.txt
+duration_log get_whois_info: 1.6304227999644354
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/www.face-sg.com_gethostbyname_ex_20230612_015947.182.txt
+dns.resolver.query() exception triggered: 'NoneType' object has no attribute 'sort'
+duration_log get_dns_info: 0.05128300003707409
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/www.face-sg.com_20230612_015947.234.json
+duration_log get_cert_info: 25.766516599978786
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/www.face-sg.com_20230612_020013.009.json
+duration_log get_archived_page_info: 0.7794963999767788
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for www.face-sg.com, time taken 36.79789609997533 seconds
+
+
+current domain in process_parent:hawkins-web.com
+===== to_skip function start =====
+hawkins-web.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: hawkins-web.com now: 2023-06-12 02:00:13.887435+00:00
+duration_log vt_call: 1.10424710001098
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/hawkins-web.com_http_20230612_020015.006.pngscreenshot found for protocol: https and saved to resources/shot-scraper/hawkins-web.com_https_20230612_020015.006.pngduration_log screenshot: 15.538801099988632
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 0
+starting html request.get
+total js_files_links: []
+duration_log grab_html_js: 6.78400819998933
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/hawkins-web.com_20230612_020037.372.txt
+duration_log get_whois_info: 6.921476099989377
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/hawkins-web.com_gethostbyname_ex_20230612_020044.298.txt
+dns.resolver.query() exception triggered: 'NoneType' object has no attribute 'sort'
+duration_log get_dns_info: 0.48474639997584745
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 0.7467925999662839
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/hawkins-web.com_20230612_020045.555.json
+duration_log get_archived_page_info: 0.7612673999974504
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for hawkins-web.com, time taken 32.48770999995759 seconds
+
+
+current domain in process_parent:www.tiger-sg.com
+===== to_skip function start =====
+www.tiger-sg.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: www.tiger-sg.com now: 2023-06-12 02:00:46.383778+00:00
+duration_log vt_call: 1.5923018000321463
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/www.tiger-sg.com_http_20230612_020047.989.pngscreenshot found for protocol: https and saved to resources/shot-scraper/www.tiger-sg.com_https_20230612_020047.989.pngduration_log screenshot: 21.37131129996851
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+web_url: http://www.tiger-sg.com
+url: https://www.google.com/recaptcha/api.js
+web_url: http://www.tiger-sg.com
+url: https://www.googletagmanager.com/gtag/js?id=G-8W6ZMMV9LP
+web_url: http://www.tiger-sg.com
+url: https://tiger-sg.com/assets/js/jquery-1.12.4.min.js?1497416727
+web_url: http://www.tiger-sg.com
+url: https://tiger-sg.com/assets/js/bootstrap.min.js?1497416724
+web_url: http://www.tiger-sg.com
+url: https://tiger-sg.com/assets/js/scrollup.js?1497416730
+web_url: http://www.tiger-sg.com
+url: https://tiger-sg.com/assets/js/bootstrap-datepicker.min.js?1497416723
+web_url: http://www.tiger-sg.com
+url: //cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js
+total js_files_links: ['https://www.google.com/recaptcha/api.js', 'https://www.googletagmanager.com/gtag/js?id=G-8W6ZMMV9LP', 'https://tiger-sg.com/assets/js/jquery-1.12.4.min.js?1497416727', 'https://tiger-sg.com/assets/js/bootstrap.min.js?1497416724', 'https://tiger-sg.com/assets/js/scrollup.js?1497416730', 'https://tiger-sg.com/assets/js/bootstrap-datepicker.min.js?1497416723', 'http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js']
+starting get for each_js_link: https://www.google.com/recaptcha/api.js
+starting get for each_js_link: https://www.googletagmanager.com/gtag/js?id=G-8W6ZMMV9LP
+starting get for each_js_link: https://tiger-sg.com/assets/js/jquery-1.12.4.min.js?1497416727
+starting get for each_js_link: https://tiger-sg.com/assets/js/bootstrap.min.js?1497416724
+starting get for each_js_link: https://tiger-sg.com/assets/js/scrollup.js?1497416730
+starting get for each_js_link: https://tiger-sg.com/assets/js/bootstrap-datepicker.min.js?1497416723
+starting get for each_js_link: http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js
+current protocol: https
+returncode: 0
+starting html request.get
+web_url: https://www.tiger-sg.com
+url: https://www.google.com/recaptcha/api.js
+web_url: https://www.tiger-sg.com
+url: https://www.googletagmanager.com/gtag/js?id=G-8W6ZMMV9LP
+web_url: https://www.tiger-sg.com
+url: https://www.tiger-sg.com/assets/js/jquery-1.12.4.min.js?1497416727
+web_url: https://www.tiger-sg.com
+url: https://www.tiger-sg.com/assets/js/bootstrap.min.js?1497416724
+web_url: https://www.tiger-sg.com
+url: https://www.tiger-sg.com/assets/js/scrollup.js?1497416730
+web_url: https://www.tiger-sg.com
+url: https://www.tiger-sg.com/assets/js/bootstrap-datepicker.min.js?1497416723
+web_url: https://www.tiger-sg.com
+url: //cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js
+total js_files_links: ['https://www.google.com/recaptcha/api.js', 'https://www.googletagmanager.com/gtag/js?id=G-8W6ZMMV9LP', 'https://www.tiger-sg.com/assets/js/jquery-1.12.4.min.js?1497416727', 'https://www.tiger-sg.com/assets/js/bootstrap.min.js?1497416724', 'https://www.tiger-sg.com/assets/js/scrollup.js?1497416730', 'https://www.tiger-sg.com/assets/js/bootstrap-datepicker.min.js?1497416723', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js']
+starting get for each_js_link: https://www.google.com/recaptcha/api.js
+starting get for each_js_link: https://www.googletagmanager.com/gtag/js?id=G-8W6ZMMV9LP
+starting get for each_js_link: https://www.tiger-sg.com/assets/js/jquery-1.12.4.min.js?1497416727
+starting get for each_js_link: https://www.tiger-sg.com/assets/js/bootstrap.min.js?1497416724
+starting get for each_js_link: https://www.tiger-sg.com/assets/js/scrollup.js?1497416730
+starting get for each_js_link: https://www.tiger-sg.com/assets/js/bootstrap-datepicker.min.js?1497416723
+starting get for each_js_link: https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js
+duration_log grab_html_js: 14.871945600025356
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/www.tiger-sg.com_20230612_020124.269.txt
+duration_log get_whois_info: 1.2408744000131264
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/www.tiger-sg.com_gethostbyname_ex_20230612_020125.513.txt
+dns.resolver.query() exception triggered: 'NoneType' object has no attribute 'sort'
+duration_log get_dns_info: 0.04431150003802031
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/www.tiger-sg.com_20230612_020125.561.json
+duration_log get_cert_info: 58.554944499977864
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/www.tiger-sg.com_20230612_020224.121.json
+duration_log get_archived_page_info: 1.7439983999938704
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for www.tiger-sg.com, time taken 99.52619830000913 seconds
+
+
+current domain in process_parent:50fdghhoo11.com
+===== to_skip function start =====
+50fdghhoo11.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: 50fdghhoo11.com now: 2023-06-12 02:02:25.935362+00:00
+duration_log vt_call: 0.9297864999971353
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 3.242092899978161
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 6
+current protocol: https
+returncode: 6
+duration_log grab_html_js: 0.05137629999080673
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_domain_whois_info()  exception triggered: No match for "50FDGHHOO11.COM".
+>>> Last update of whois database: 2023-06-12T02:02:18Z <<<
+
+NOTICE: The expiration date displayed in this record is the date the
+registrar's sponsorship of the domain name registration in the registry is
+currently set to expire. This date does not necessarily reflect the expiration
+date of the domain name registrant's agreement with the sponsoring
+registrar.  Users may consult the sponsoring registrar's Whois database to
+view the registrar's reported date of expiration for this registration.
+
+TERMS OF USE: You are not authorized to access or query our Whois
+database through the use of electronic processes that are high-volume and
+automated except as reasonably necessary to register domain names or
+modify existing registrations; the Data in VeriSign Global Registry
+Services' ("VeriSign") Whois database is provided by VeriSign for
+information purposes only, and to assist persons in obtaining information
+about or related to a domain name registration record. VeriSign does not
+guarantee its accuracy. By submitting a Whois query, you agree to abide
+by the following terms of use: You agree that you may use this Data only
+for lawful purposes and that under no circumstances will you use this Data
+to: (1) allow, enable, or otherwise support the transmission of mass
+unsolicited, commercial advertising or solicitations via e-mail, telephone,
+or facsimile; or (2) enable high volume, automated, electronic processes
+that apply to VeriSign (or its computer systems). The compilation,
+repackaging, dissemination or other use of this Data is expressly
+prohibited without the prior written consent of VeriSign. You agree not to
+use electronic processes that are automated and high-volume to access or
+query the Whois database except as reasonably necessary to register
+domain names or modify existing registrations. VeriSign reserves the right
+to restrict your access to the Whois database in its sole discretion to ensure
+operational stability.  VeriSign may restrict or terminate your access to the
+Whois database for failure to abide by these terms of use. VeriSign
+reserves the right to modify these terms at any time.
+
+The Registry database contains ONLY .COM, .NET, .EDU domains and
+Registrars.
+
+duration_log get_whois_info: 0.35647250001784414
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+socket.gethostbyname_ex() exception triggered: [Errno 11001] getaddrinfo failed
+dns.resolver.query() exception triggered: The DNS query name does not exist: 50fdghhoo11.com.
+duration_log get_dns_info: 0.02699189999839291
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 1.7444728999980725
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 1.8535374000202864
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for 50fdghhoo11.com, time taken 15.00125129998196 seconds
+
+
+current domain in process_parent:www-maddspace-com-sg.filesusr.com
+===== to_skip function start =====
+www-maddspace-com-sg.filesusr.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: www-maddspace-com-sg.filesusr.com now: 2023-06-12 02:02:40.980582+00:00
+duration_log vt_call: 0.9305729000479914
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/www-maddspace-com-sg.filesusr.com_http_20230612_020241.923.pngscreenshot found for protocol: https and saved to resources/shot-scraper/www-maddspace-com-sg.filesusr.com_https_20230612_020241.923.pngduration_log screenshot: 10.033648799988441
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 0
+starting html request.get
+total js_files_links: []
+duration_log grab_html_js: 1.4797406999859959
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/www-maddspace-com-sg.filesusr.com_20230612_020253.475.txt
+duration_log get_whois_info: 0.7528798999846913
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/www-maddspace-com-sg.filesusr.com_gethostbyname_ex_20230612_020254.230.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: www-maddspace-com-sg.filesusr.com. IN NS
+duration_log get_dns_info: 0.03286899998784065
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 0.9413721999735571
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.9282371999579482
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for www-maddspace-com-sg.filesusr.com, time taken 15.223100500006694 seconds
+
+
+current domain in process_parent:cre8tech-analyse.com
+===== to_skip function start =====
+cre8tech-analyse.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: cre8tech-analyse.com now: 2023-06-12 02:02:56.236716+00:00
+duration_log vt_call: 0.9991790000349283
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/cre8tech-analyse.com_http_20230612_020257.248.pngscreenshot found for protocol: https and saved to resources/shot-scraper/cre8tech-analyse.com_https_20230612_020257.248.pngduration_log screenshot: 13.107123000023421
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 0
+starting html request.get
+total js_files_links: []
+duration_log grab_html_js: 1.7311020999914035
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/cre8tech-analyse.com_20230612_020312.120.txt
+duration_log get_whois_info: 0.9955843999632634
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/cre8tech-analyse.com_gethostbyname_ex_20230612_020313.120.txt
+dns.resolver.query() exception triggered: 'NoneType' object has no attribute 'sort'
+duration_log get_dns_info: 0.48170900001423433
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/cre8tech-analyse.com_20230612_020313.613.json
+duration_log get_cert_info: 1.8981660000281408
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7310990000260063
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for cre8tech-analyse.com, time taken 20.060681099945214 seconds
+
+
+current domain in process_parent:almeria-an.spain-web.com
+===== to_skip function start =====
+almeria-an.spain-web.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: almeria-an.spain-web.com now: 2023-06-12 02:03:16.323140+00:00
+duration_log vt_call: 1.0067449999623932
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/almeria-an.spain-web.com_http_20230612_020317.341.pngscreenshot found for protocol: https and saved to resources/shot-scraper/almeria-an.spain-web.com_https_20230612_020317.341.pngduration_log screenshot: 15.082091599993873
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+web_url: http://almeria-an.spain-web.com
+url: /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js
+total js_files_links: ['http://almeria-an.spain-web.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js']
+starting get for each_js_link: http://almeria-an.spain-web.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js
+current protocol: https
+returncode: 0
+starting html request.get
+web_url: https://almeria-an.spain-web.com
+url: /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js
+total js_files_links: ['https://almeria-an.spain-web.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js']
+starting get for each_js_link: https://almeria-an.spain-web.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js
+duration_log grab_html_js: 0.9596564000239596
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/almeria-an.spain-web.com_20230612_020333.419.txt
+duration_log get_whois_info: 0.8203997000236996
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/almeria-an.spain-web.com_gethostbyname_ex_20230612_020334.245.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: almeria-an.spain-web.com. IN NS
+duration_log get_dns_info: 0.040336000034585595
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 24.0839703999809
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/almeria-an.spain-web.com_20230612_020358.392.json
+duration_log get_archived_page_info: 0.7656367999734357
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for almeria-an.spain-web.com, time taken 42.873291500029154 seconds
+
+
+current domain in process_parent:www.cre8tech-elevate.com
+===== to_skip function start =====
+www.cre8tech-elevate.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: www.cre8tech-elevate.com now: 2023-06-12 02:03:59.230179+00:00
+duration_log vt_call: 1.2137252999818884
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/www.cre8tech-elevate.com_http_20230612_020400.458.pngscreenshot found for protocol: https and saved to resources/shot-scraper/www.cre8tech-elevate.com_https_20230612_020400.458.pngduration_log screenshot: 11.960915700008627
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+web_url: http://www.cre8tech-elevate.com
+url: /main.js
+web_url: http://www.cre8tech-elevate.com
+url: /static/js/chunk-vendors.a12be133.js
+web_url: http://www.cre8tech-elevate.com
+url: /static/js/index.438b3d9c.js
+total js_files_links: ['http://www.cre8tech-elevate.com/main.js', 'http://www.cre8tech-elevate.com/static/js/chunk-vendors.a12be133.js', 'http://www.cre8tech-elevate.com/static/js/index.438b3d9c.js']
+starting get for each_js_link: http://www.cre8tech-elevate.com/main.js
+starting get for each_js_link: http://www.cre8tech-elevate.com/static/js/chunk-vendors.a12be133.js
+starting get for each_js_link: http://www.cre8tech-elevate.com/static/js/index.438b3d9c.js
+current protocol: https
+returncode: 0
+starting html request.get
+web_url: https://www.cre8tech-elevate.com
+url: /main.js
+web_url: https://www.cre8tech-elevate.com
+url: /static/js/chunk-vendors.a12be133.js
+web_url: https://www.cre8tech-elevate.com
+url: /static/js/index.438b3d9c.js
+total js_files_links: ['https://www.cre8tech-elevate.com/main.js', 'https://www.cre8tech-elevate.com/static/js/chunk-vendors.a12be133.js', 'https://www.cre8tech-elevate.com/static/js/index.438b3d9c.js']
+starting get for each_js_link: https://www.cre8tech-elevate.com/main.js
+starting get for each_js_link: https://www.cre8tech-elevate.com/static/js/chunk-vendors.a12be133.js
+starting get for each_js_link: https://www.cre8tech-elevate.com/static/js/index.438b3d9c.js
+duration_log grab_html_js: 24.464302700012922
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/www.cre8tech-elevate.com_20230612_020436.929.txt
+duration_log get_whois_info: 0.8081081000273116
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/www.cre8tech-elevate.com_gethostbyname_ex_20230612_020437.734.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: www.cre8tech-elevate.com. IN NS
+duration_log get_dns_info: 0.45349570002872497
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/www.cre8tech-elevate.com_20230612_020438.191.json
+duration_log get_cert_info: 12.230766299995594
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.6956279000150971
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for www.cre8tech-elevate.com, time taken 51.933613699977286 seconds
+
+
+current domain in process_parent:prof.mk-com.com
+===== to_skip function start =====
+prof.mk-com.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: prof.mk-com.com now: 2023-06-12 02:04:51.203138+00:00
+call_status_code: 404, continuing to next ip_or_domain
+current domain in process_parent:ggg.glw-wpxx1233w.online
+===== to_skip function start =====
+ggg.glw-wpxx1233w.online has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: ggg.glw-wpxx1233w.online now: 2023-06-12 02:04:51.968154+00:00
+duration_log vt_call: 1.002952600014396
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/ggg.glw-wpxx1233w.online_http_20230612_020452.985.pngscreenshot found for protocol: https and saved to resources/shot-scraper/ggg.glw-wpxx1233w.online_https_20230612_020452.985.pngduration_log screenshot: 13.24543279997306
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 0
+starting html request.get
+web_url: https://ggg.glw-wpxx1233w.online
+url: //at.alicdn.com/t/font_2302506_dgub43s9y0e.js
+web_url: https://ggg.glw-wpxx1233w.online
+url: //libs.baidu.com/jquery/2.0.0/jquery.min.js
+web_url: https://ggg.glw-wpxx1233w.online
+url: tradeview/datafeeds/udf/dist/bundle.js
+web_url: https://ggg.glw-wpxx1233w.online
+url: tradeview/charting_library/charting_library.min.js
+web_url: https://ggg.glw-wpxx1233w.online
+url: tradeview/datafeeds/udf/dist/polyfills.js
+web_url: https://ggg.glw-wpxx1233w.online
+url: js/chunk-vendors.ff76f9ab.js
+web_url: https://ggg.glw-wpxx1233w.online
+url: js/app.53b7655d.js
+total js_files_links: ['https://at.alicdn.com/t/font_2302506_dgub43s9y0e.js', 'https://libs.baidu.com/jquery/2.0.0/jquery.min.js', 'https://ggg.glw-wpxx1233w.online/tradeview/datafeeds/udf/dist/bundle.js', 'https://ggg.glw-wpxx1233w.online/tradeview/charting_library/charting_library.min.js', 'https://ggg.glw-wpxx1233w.online/tradeview/datafeeds/udf/dist/polyfills.js', 'https://ggg.glw-wpxx1233w.online/js/chunk-vendors.ff76f9ab.js', 'https://ggg.glw-wpxx1233w.online/js/app.53b7655d.js']
+starting get for each_js_link: https://at.alicdn.com/t/font_2302506_dgub43s9y0e.js
+starting get for each_js_link: https://libs.baidu.com/jquery/2.0.0/jquery.min.js
+starting get for each_js_link: https://ggg.glw-wpxx1233w.online/tradeview/datafeeds/udf/dist/bundle.js
+starting get for each_js_link: https://ggg.glw-wpxx1233w.online/tradeview/charting_library/charting_library.min.js
+starting get for each_js_link: https://ggg.glw-wpxx1233w.online/tradeview/datafeeds/udf/dist/polyfills.js
+starting get for each_js_link: https://ggg.glw-wpxx1233w.online/js/chunk-vendors.ff76f9ab.js
+starting get for each_js_link: https://ggg.glw-wpxx1233w.online/js/app.53b7655d.js
+duration_log grab_html_js: 8.315618099994026
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/ggg.glw-wpxx1233w.online_20230612_020514.583.txt
+duration_log get_whois_info: 1.0046958000166342
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/ggg.glw-wpxx1233w.online_gethostbyname_ex_20230612_020515.589.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: ggg.glw-wpxx1233w.online. IN NS
+duration_log get_dns_info: 0.23402390000410378
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/ggg.glw-wpxx1233w.online_20230612_020515.835.json
+duration_log get_cert_info: 1.5285173000302166
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.8939423999981955
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for ggg.glw-wpxx1233w.online, time taken 26.33914910000749 seconds
+
+
+current domain in process_parent:www5c.mk-com.com
+===== to_skip function start =====
+www5c.mk-com.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: www5c.mk-com.com now: 2023-06-12 02:05:18.339365+00:00
+call_status_code: 404, continuing to next ip_or_domain
+current domain in process_parent:www.onemotoring.com
+===== to_skip function start =====
+www.onemotoring.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: www.onemotoring.com now: 2023-06-12 02:05:19.206737+00:00
+duration_log vt_call: 1.0011074000503868
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/www.onemotoring.com_http_20230612_020520.222.pngduration_log screenshot: 8.118392600037623
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+web_url: http://www.onemotoring.com
+url: //www.google.com/adsense/domains/caf.js?abp=1
+total js_files_links: ['http://www.google.com/adsense/domains/caf.js?abp=1']
+starting get for each_js_link: http://www.google.com/adsense/domains/caf.js?abp=1
+current protocol: https
+returncode: 35
+duration_log grab_html_js: 2.7781402000109665
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/www.onemotoring.com_20230612_020531.157.txt
+duration_log get_whois_info: 0.8764310000115074
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/www.onemotoring.com_gethostbyname_ex_20230612_020532.037.txt
+dns.resolver.query() exception triggered: 'NoneType' object has no attribute 'sort'
+duration_log get_dns_info: 0.04636229999596253
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/www.onemotoring.com_20230612_020532.085.json
+duration_log get_cert_info: 0.9611432999954559
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/www.onemotoring.com_20230612_020533.052.json
+duration_log get_archived_page_info: 3.7044995999895036
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for www.onemotoring.com, time taken 17.601921499997843 seconds
+
+
+current domain in process_parent:the-reserve-residences-official-sg.com
+===== to_skip function start =====
+the-reserve-residences-official-sg.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: the-reserve-residences-official-sg.com now: 2023-06-12 02:05:36.833163+00:00
+duration_log vt_call: 0.9179203999810852
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/the-reserve-residences-official-sg.com_http_20230612_020537.765.pngscreenshot found for protocol: https and saved to resources/shot-scraper/the-reserve-residences-official-sg.com_https_20230612_020537.765.pngduration_log screenshot: 17.302617400011513
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+web_url: http://the-reserve-residences-official-sg.com
+url: https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js
+web_url: http://the-reserve-residences-official-sg.com
+url: https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js
+web_url: http://the-reserve-residences-official-sg.com
+url: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js
+web_url: http://the-reserve-residences-official-sg.com
+url: https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js
+web_url: http://the-reserve-residences-official-sg.com
+url: https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/js/select2.min.js
+web_url: http://the-reserve-residences-official-sg.com
+url: https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/js/animsition.min.js
+web_url: http://the-reserve-residences-official-sg.com
+url: //cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js
+web_url: http://the-reserve-residences-official-sg.com
+url: https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js
+web_url: http://the-reserve-residences-official-sg.com
+url: /newsingle12/js/lib/simple-lightbox.js
+web_url: http://the-reserve-residences-official-sg.com
+url: /js/select2/js/select2.min.js
+web_url: http://the-reserve-residences-official-sg.com
+url: /countries_code/js/intlTelInput.js
+web_url: http://the-reserve-residences-official-sg.com
+url: /js/jquery.validate.min.js
+web_url: http://the-reserve-residences-official-sg.com
+url: /new-single-8/js/contact/contact.js
+web_url: http://the-reserve-residences-official-sg.com
+url: https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js
+web_url: http://the-reserve-residences-official-sg.com
+url: /newsingle12/js/single12.js
+total js_files_links: ['https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js', 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js', 'https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js', 'https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/js/select2.min.js', 'https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/js/animsition.min.js', 'http://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js', 'https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js', 'http://the-reserve-residences-official-sg.com/newsingle12/js/lib/simple-lightbox.js', 'http://the-reserve-residences-official-sg.com/js/select2/js/select2.min.js', 'http://the-reserve-residences-official-sg.com/countries_code/js/intlTelInput.js', 'http://the-reserve-residences-official-sg.com/js/jquery.validate.min.js', 'http://the-reserve-residences-official-sg.com/new-single-8/js/contact/contact.js', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js', 'http://the-reserve-residences-official-sg.com/newsingle12/js/single12.js']
+starting get for each_js_link: https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js
+starting get for each_js_link: https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js
+starting get for each_js_link: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js
+starting get for each_js_link: https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js
+starting get for each_js_link: https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/js/select2.min.js
+starting get for each_js_link: https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/js/animsition.min.js
+starting get for each_js_link: http://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js
+starting get for each_js_link: https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js
+starting get for each_js_link: http://the-reserve-residences-official-sg.com/newsingle12/js/lib/simple-lightbox.js
+starting get for each_js_link: http://the-reserve-residences-official-sg.com/js/select2/js/select2.min.js
+starting get for each_js_link: http://the-reserve-residences-official-sg.com/countries_code/js/intlTelInput.js
+starting get for each_js_link: http://the-reserve-residences-official-sg.com/js/jquery.validate.min.js
+starting get for each_js_link: http://the-reserve-residences-official-sg.com/new-single-8/js/contact/contact.js
+starting get for each_js_link: https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js
+starting get for each_js_link: http://the-reserve-residences-official-sg.com/newsingle12/js/single12.js
+current protocol: https
+returncode: 0
+starting html request.get
+web_url: https://the-reserve-residences-official-sg.com
+url: https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js
+web_url: https://the-reserve-residences-official-sg.com
+url: https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js
+web_url: https://the-reserve-residences-official-sg.com
+url: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js
+web_url: https://the-reserve-residences-official-sg.com
+url: https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js
+web_url: https://the-reserve-residences-official-sg.com
+url: https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/js/select2.min.js
+web_url: https://the-reserve-residences-official-sg.com
+url: https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/js/animsition.min.js
+web_url: https://the-reserve-residences-official-sg.com
+url: //cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js
+web_url: https://the-reserve-residences-official-sg.com
+url: https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js
+web_url: https://the-reserve-residences-official-sg.com
+url: /newsingle12/js/lib/simple-lightbox.js
+web_url: https://the-reserve-residences-official-sg.com
+url: /js/select2/js/select2.min.js
+web_url: https://the-reserve-residences-official-sg.com
+url: /countries_code/js/intlTelInput.js
+web_url: https://the-reserve-residences-official-sg.com
+url: /js/jquery.validate.min.js
+web_url: https://the-reserve-residences-official-sg.com
+url: /new-single-8/js/contact/contact.js
+web_url: https://the-reserve-residences-official-sg.com
+url: https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js
+web_url: https://the-reserve-residences-official-sg.com
+url: /newsingle12/js/single12.js
+total js_files_links: ['https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js', 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js', 'https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js', 'https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/js/select2.min.js', 'https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/js/animsition.min.js', 'https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js', 'https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js', 'https://the-reserve-residences-official-sg.com/newsingle12/js/lib/simple-lightbox.js', 'https://the-reserve-residences-official-sg.com/js/select2/js/select2.min.js', 'https://the-reserve-residences-official-sg.com/countries_code/js/intlTelInput.js', 'https://the-reserve-residences-official-sg.com/js/jquery.validate.min.js', 'https://the-reserve-residences-official-sg.com/new-single-8/js/contact/contact.js', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js', 'https://the-reserve-residences-official-sg.com/newsingle12/js/single12.js']
+starting get for each_js_link: https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js
+starting get for each_js_link: https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js
+starting get for each_js_link: https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js
+starting get for each_js_link: https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js
+starting get for each_js_link: https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/js/select2.min.js
+starting get for each_js_link: https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/js/animsition.min.js
+starting get for each_js_link: https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js
+starting get for each_js_link: https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js
+starting get for each_js_link: https://the-reserve-residences-official-sg.com/newsingle12/js/lib/simple-lightbox.js
+starting get for each_js_link: https://the-reserve-residences-official-sg.com/js/select2/js/select2.min.js
+starting get for each_js_link: https://the-reserve-residences-official-sg.com/countries_code/js/intlTelInput.js
+starting get for each_js_link: https://the-reserve-residences-official-sg.com/js/jquery.validate.min.js
+starting get for each_js_link: https://the-reserve-residences-official-sg.com/new-single-8/js/contact/contact.js
+starting get for each_js_link: https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js
+starting get for each_js_link: https://the-reserve-residences-official-sg.com/newsingle12/js/single12.js
+duration_log grab_html_js: 6.955864300020039
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/the-reserve-residences-official-sg.com_20230612_020602.065.txt
+duration_log get_whois_info: 0.9832508999970742
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/the-reserve-residences-official-sg.com_gethostbyname_ex_20230612_020603.053.txt
+dns.resolver.query() exception triggered: 'NoneType' object has no attribute 'sort'
+duration_log get_dns_info: 0.04233639995800331
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/the-reserve-residences-official-sg.com_20230612_020603.104.json
+duration_log get_cert_info: 30.968647600035183
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/the-reserve-residences-official-sg.com_20230612_020634.077.json
+duration_log get_archived_page_info: 0.7174589000060223
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for the-reserve-residences-official-sg.com, time taken 58.003145100024994 seconds
+
+
+current domain in process_parent:weaveasia-senna.com
+===== to_skip function start =====
+weaveasia-senna.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: weaveasia-senna.com now: 2023-06-12 02:06:34.868740+00:00
+duration_log vt_call: 1.0884225000045262
+===== call_ip_or_domain function end =====

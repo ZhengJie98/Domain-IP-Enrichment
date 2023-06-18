@@ -1,0 +1,1 @@
+app.config(["$stateProvider","$locationProvider",function(n,t){t.hashPrefix("");n.state("FinancialDeposit",{url:"/Finance/Deposit",page:"financial"}).state("FinancialWithdraw",{url:"/Finance/Withdraw",page:"financial"}).state("None",{url:"/",template:""})}])

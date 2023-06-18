@@ -1,0 +1,490 @@
+current domain in process_parent:singpost.form1275.cloud
+===== to_skip function start =====
+singpost.form1275.cloud has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: singpost.form1275.cloud now: 2023-06-12 07:44:26.611133+00:00
+duration_log vt_call: 0.9591339000035077
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 11.370265099976677
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 6
+current protocol: https
+returncode: 6
+duration_log grab_html_js: 0.08301100000971928
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_domain_whois_info()  exception triggered: module 'whois' has no attribute 'whois'
+duration_log get_whois_info: 0.01681640004971996
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+socket.gethostbyname_ex() exception triggered: [Errno 11001] getaddrinfo failed
+dns.resolver.query() exception triggered: The DNS query name does not exist: singpost.form1275.cloud.
+duration_log get_dns_info: 0.03409610001835972
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 2.623304200009443
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 1.0275532999658026
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for singpost.form1275.cloud, time taken 16.215430399985053 seconds
+
+
+current domain in process_parent:mdt.glt-tpog3699.online
+===== to_skip function start =====
+mdt.glt-tpog3699.online has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: mdt.glt-tpog3699.online now: 2023-06-12 07:44:42.882375+00:00
+duration_log vt_call: 0.8442183000151999
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/mdt.glt-tpog3699.online_http_20230612_074443.737.pngduration_log screenshot: 8.393253700050991
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 2.29011330002686
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_domain_whois_info()  exception triggered: module 'whois' has no attribute 'whois'
+duration_log get_whois_info: 0.012193900009151548
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/mdt.glt-tpog3699.online_gethostbyname_ex_20230612_074454.470.txt
+dns.resolver.query() exception triggered: All nameservers failed to answer the query mdt.glt-tpog3699.online. IN NS: Server 1.1.1.1 UDP port 53 answered SERVFAIL
+duration_log get_dns_info: 0.7340292000444606
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 0.9788424000144005
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7365843000006862
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for mdt.glt-tpog3699.online, time taken 15.001291699998546 seconds
+
+
+current domain in process_parent:choicefurniture-com-sg.cdn.ampproject.org
+===== to_skip function start =====
+choicefurniture-com-sg.cdn.ampproject.org has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: choicefurniture-com-sg.cdn.ampproject.org now: 2023-06-12 07:44:57.936175+00:00
+duration_log vt_call: 0.9967447000090033
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/choicefurniture-com-sg.cdn.ampproject.org_http_20230612_074458.945.pngscreenshot found for protocol: https and saved to resources/shot-scraper/choicefurniture-com-sg.cdn.ampproject.org_https_20230612_074458.945.pngduration_log screenshot: 10.056530400004704
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 0
+starting html request.get
+total js_files_links: []
+duration_log grab_html_js: 0.3296106999623589
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_domain_whois_info()  exception triggered: module 'whois' has no attribute 'whois'
+duration_log get_whois_info: 0.013846300018485636
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/choicefurniture-com-sg.cdn.ampproject.org_gethostbyname_ex_20230612_074509.400.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: choicefurniture-com-sg.cdn.ampproject.org. IN NS
+duration_log get_dns_info: 0.04605230002198368
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 1.7603797999909148
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 1.1237903999863192
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for choicefurniture-com-sg.cdn.ampproject.org, time taken 15.001614700013306 seconds
+
+
+current domain in process_parent:www.gvcredit-sg.com
+===== to_skip function start =====
+www.gvcredit-sg.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: www.gvcredit-sg.com now: 2023-06-12 07:45:12.972520+00:00
+duration_log vt_call: 0.9993816000060178
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/www.gvcredit-sg.com_http_20230612_074513.981.pngscreenshot found for protocol: https and saved to resources/shot-scraper/www.gvcredit-sg.com_https_20230612_074513.981.pngduration_log screenshot: 12.01798860001145
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+web_url: http://www.gvcredit-sg.com
+url: js/jquery-3.3.1.min.js
+web_url: http://www.gvcredit-sg.com
+url: js/bootstrap.min.js
+web_url: http://www.gvcredit-sg.com
+url: js/jquery.magnific-popup.min.js
+web_url: http://www.gvcredit-sg.com
+url: js/mixitup.min.js
+web_url: http://www.gvcredit-sg.com
+url: js/masonry.pkgd.min.js
+web_url: http://www.gvcredit-sg.com
+url: js/jquery.slicknav.js
+web_url: http://www.gvcredit-sg.com
+url: js/owl.carousel.min.js
+web_url: http://www.gvcredit-sg.com
+url: js/main.js
+total js_files_links: ['http://www.gvcredit-sg.com/js/jquery-3.3.1.min.js', 'http://www.gvcredit-sg.com/js/bootstrap.min.js', 'http://www.gvcredit-sg.com/js/jquery.magnific-popup.min.js', 'http://www.gvcredit-sg.com/js/mixitup.min.js', 'http://www.gvcredit-sg.com/js/masonry.pkgd.min.js', 'http://www.gvcredit-sg.com/js/jquery.slicknav.js', 'http://www.gvcredit-sg.com/js/owl.carousel.min.js', 'http://www.gvcredit-sg.com/js/main.js']
+starting get for each_js_link: http://www.gvcredit-sg.com/js/jquery-3.3.1.min.js
+starting get for each_js_link: http://www.gvcredit-sg.com/js/bootstrap.min.js
+starting get for each_js_link: http://www.gvcredit-sg.com/js/jquery.magnific-popup.min.js
+starting get for each_js_link: http://www.gvcredit-sg.com/js/mixitup.min.js
+starting get for each_js_link: http://www.gvcredit-sg.com/js/masonry.pkgd.min.js
+starting get for each_js_link: http://www.gvcredit-sg.com/js/jquery.slicknav.js
+starting get for each_js_link: http://www.gvcredit-sg.com/js/owl.carousel.min.js
+starting get for each_js_link: http://www.gvcredit-sg.com/js/main.js
+current protocol: https
+returncode: 0
+starting html request.get
+web_url: https://www.gvcredit-sg.com
+url: js/jquery-3.3.1.min.js
+web_url: https://www.gvcredit-sg.com
+url: js/bootstrap.min.js
+web_url: https://www.gvcredit-sg.com
+url: js/jquery.magnific-popup.min.js
+web_url: https://www.gvcredit-sg.com
+url: js/mixitup.min.js
+web_url: https://www.gvcredit-sg.com
+url: js/masonry.pkgd.min.js
+web_url: https://www.gvcredit-sg.com
+url: js/jquery.slicknav.js
+web_url: https://www.gvcredit-sg.com
+url: js/owl.carousel.min.js
+web_url: https://www.gvcredit-sg.com
+url: js/main.js
+total js_files_links: ['https://www.gvcredit-sg.com/js/jquery-3.3.1.min.js', 'https://www.gvcredit-sg.com/js/bootstrap.min.js', 'https://www.gvcredit-sg.com/js/jquery.magnific-popup.min.js', 'https://www.gvcredit-sg.com/js/mixitup.min.js', 'https://www.gvcredit-sg.com/js/masonry.pkgd.min.js', 'https://www.gvcredit-sg.com/js/jquery.slicknav.js', 'https://www.gvcredit-sg.com/js/owl.carousel.min.js', 'https://www.gvcredit-sg.com/js/main.js']
+starting get for each_js_link: https://www.gvcredit-sg.com/js/jquery-3.3.1.min.js
+starting get for each_js_link: https://www.gvcredit-sg.com/js/bootstrap.min.js
+starting get for each_js_link: https://www.gvcredit-sg.com/js/jquery.magnific-popup.min.js
+starting get for each_js_link: https://www.gvcredit-sg.com/js/mixitup.min.js
+starting get for each_js_link: https://www.gvcredit-sg.com/js/masonry.pkgd.min.js
+starting get for each_js_link: https://www.gvcredit-sg.com/js/jquery.slicknav.js
+starting get for each_js_link: https://www.gvcredit-sg.com/js/owl.carousel.min.js
+starting get for each_js_link: https://www.gvcredit-sg.com/js/main.js
+duration_log grab_html_js: 2.7204279000288807
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_domain_whois_info()  exception triggered: module 'whois' has no attribute 'whois'
+duration_log get_whois_info: 0.012643499998375773
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/www.gvcredit-sg.com_gethostbyname_ex_20230612_074528.779.txt
+nameservers_filepath file written to resources/dns/www.gvcredit-sg.com_nameservers_20230612_074528.779.txt
+duration_log get_dns_info: 0.2379361999919638
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 0.9343492000480182
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/www.gvcredit-sg.com_20230612_074529.961.json
+duration_log get_archived_page_info: 0.7948391000390984
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for www.gvcredit-sg.com, time taken 17.837625099986326 seconds
+
+
+current domain in process_parent:www.chengqi-sg.com
+===== to_skip function start =====
+www.chengqi-sg.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: www.chengqi-sg.com now: 2023-06-12 07:45:30.830336+00:00
+duration_log vt_call: 1.0316399000003003
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/www.chengqi-sg.com_http_20230612_074531.875.pngduration_log screenshot: 15.597043300047517
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 1.6579451000434346
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_domain_whois_info()  exception triggered: module 'whois' has no attribute 'whois'
+duration_log get_whois_info: 0.01282159995753318
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/www.chengqi-sg.com_gethostbyname_ex_20230612_074549.186.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: www.chengqi-sg.com. IN NS
+duration_log get_dns_info: 0.6911116000264883
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 1.0060769999981858
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 15.876160899992101
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for www.chengqi-sg.com, time taken 36.014370499993674 seconds
+
+
+current domain in process_parent:pinto-md.spain-web.com
+===== to_skip function start =====
+pinto-md.spain-web.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: pinto-md.spain-web.com now: 2023-06-12 07:46:06.877748+00:00
+duration_log vt_call: 1.1682890999945812
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/pinto-md.spain-web.com_http_20230612_074608.058.pngscreenshot found for protocol: https and saved to resources/shot-scraper/pinto-md.spain-web.com_https_20230612_074608.058.pngduration_log screenshot: 15.98889550002059
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+web_url: http://pinto-md.spain-web.com
+url: /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js
+total js_files_links: ['http://pinto-md.spain-web.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js']
+starting get for each_js_link: http://pinto-md.spain-web.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js
+current protocol: https
+returncode: 0
+starting html request.get
+web_url: https://pinto-md.spain-web.com
+url: /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js
+total js_files_links: ['https://pinto-md.spain-web.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js']
+starting get for each_js_link: https://pinto-md.spain-web.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js
+duration_log grab_html_js: 1.9613356000045314
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_domain_whois_info()  exception triggered: module 'whois' has no attribute 'whois'
+duration_log get_whois_info: 0.008978800033219159
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/pinto-md.spain-web.com_gethostbyname_ex_20230612_074626.058.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: pinto-md.spain-web.com. IN NS
+duration_log get_dns_info: 0.23354969994397834
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 0.7928426999715157
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/pinto-md.spain-web.com_20230612_074627.102.json
+duration_log get_archived_page_info: 1.6493187000160106
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for pinto-md.spain-web.com, time taken 21.92059920000611 seconds
+
+
+current domain in process_parent:las-gabias-an.spain-web.com
+===== to_skip function start =====
+las-gabias-an.spain-web.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: las-gabias-an.spain-web.com now: 2023-06-12 07:46:28.827646+00:00
+duration_log vt_call: 1.1973074999987148
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/las-gabias-an.spain-web.com_http_20230612_074630.038.pngscreenshot found for protocol: https and saved to resources/shot-scraper/las-gabias-an.spain-web.com_https_20230612_074630.038.pngduration_log screenshot: 16.15234640002018
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+web_url: http://las-gabias-an.spain-web.com
+url: /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js
+total js_files_links: ['http://las-gabias-an.spain-web.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js']
+starting get for each_js_link: http://las-gabias-an.spain-web.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js
+current protocol: https
+returncode: 0
+starting html request.get
+web_url: https://las-gabias-an.spain-web.com
+url: /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js
+total js_files_links: ['https://las-gabias-an.spain-web.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js']
+starting get for each_js_link: https://las-gabias-an.spain-web.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js
+duration_log grab_html_js: 1.202643700002227
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_domain_whois_info()  exception triggered: module 'whois' has no attribute 'whois'
+duration_log get_whois_info: 0.011586899985559285
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/las-gabias-an.spain-web.com_gethostbyname_ex_20230612_074647.448.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: las-gabias-an.spain-web.com. IN NS
+duration_log get_dns_info: 0.0375851999851875
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 1.7017742000170983
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.923955800011754
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for las-gabias-an.spain-web.com, time taken 21.357823900005314 seconds
+
+
+current domain in process_parent:www4b.mk-com.com
+===== to_skip function start =====
+www4b.mk-com.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: www4b.mk-com.com now: 2023-06-12 07:46:50.226395+00:00
+duration_log vt_call: 1.0677924000192434
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/www4b.mk-com.com_http_20230612_074651.306.pngscreenshot found for protocol: https and saved to resources/shot-scraper/www4b.mk-com.com_https_20230612_074651.306.pngduration_log screenshot: 12.134612100024242
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 0
+starting html request.get
+total js_files_links: []
+duration_log grab_html_js: 1.2232017000205815
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_domain_whois_info()  exception triggered: module 'whois' has no attribute 'whois'
+duration_log get_whois_info: 0.01150620001135394
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/www4b.mk-com.com_gethostbyname_ex_20230612_074704.716.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: www4b.mk-com.com. IN NS
+duration_log get_dns_info: 0.05270499998005107
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 1.0462017999961972
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.6430371999740601
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for www4b.mk-com.com, time taken 16.304813400027342 seconds
+
+
+current domain in process_parent:corp.mk-com.com
+===== to_skip function start =====
+corp.mk-com.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: corp.mk-com.com now: 2023-06-12 07:47:06.565821+00:00
+duration_log vt_call: 0.8482382000074722
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/corp.mk-com.com_http_20230612_074707.427.pngscreenshot found for protocol: https and saved to resources/shot-scraper/corp.mk-com.com_https_20230612_074707.427.pngduration_log screenshot: 12.083485700015444
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 0
+starting html request.get
+total js_files_links: []
+duration_log grab_html_js: 1.338556900038384
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_domain_whois_info()  exception triggered: module 'whois' has no attribute 'whois'
+duration_log get_whois_info: 0.009568199981004
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/corp.mk-com.com_gethostbyname_ex_20230612_074720.909.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: corp.mk-com.com. IN NS
+duration_log get_dns_info: 0.047769199998583645
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 1.0109556999523193
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7743797000148334
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for corp.mk-com.com, time taken 16.25118309998652 seconds
+
+
+current domain in process_parent:cs.mk-com.com
+===== to_skip function start =====
+cs.mk-com.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: cs.mk-com.com now: 2023-06-12 07:47:22.859603+00:00
+duration_log vt_call: 0.8974834000109695
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/cs.mk-com.com_http_20230612_074723.765.pngscreenshot found for protocol: https and saved to resources/shot-scraper/cs.mk-com.com_https_20230612_074723.765.pngduration_log screenshot: 12.39580900000874
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 0
+starting html request.get
+total js_files_links: []
+duration_log grab_html_js: 1.2562599999946542
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_domain_whois_info()  exception triggered: module 'whois' has no attribute 'whois'
+duration_log get_whois_info: 0.010994200012646616
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/cs.mk-com.com_gethostbyname_ex_20230612_074737.473.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: cs.mk-com.com. IN NS
+duration_log get_dns_info: 0.039885399979539216
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 2.2286104999948293
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.6690423999680206
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for cs.mk-com.com, time taken 17.6189056999865 seconds
+
+
+current domain in process_parent:bookmarks.mk-com.com
+===== to_skip function start =====
+bookmarks.mk-com.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: bookmarks.mk-com.com now: 2023-06-12 07:47:40.497858+00:00
+duration_log vt_call: 1.101631900004577
+===== call_ip_or_domain function end =====

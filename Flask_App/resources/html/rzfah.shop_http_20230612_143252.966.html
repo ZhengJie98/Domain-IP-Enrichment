@@ -1,0 +1,112 @@
+HTTP/1.1 200 OK
+Server: Tengine
+Content-Type: text/html; charset=UTF-8
+Content-Length: 4037
+Connection: keep-alive
+Vary: Accept-Encoding
+Date: Mon, 12 Jun 2023 14:32:53 GMT
+Set-Cookie: mc_uniqv_=1; expires=Mon, 19-Jun-2023 14:32:54 GMT; Max-Age=604800; path=/
+Set-Cookie: mc_freq_a5c43478-42b2-463a-93b3-ba17b3ff3f65=60%253D1.1686580374..21600%253D1.1686580374..43200%253D1.1686580374..86400%253D1.1686580374..259200%253D1.1686580374..604800%253D1.1686580374..2592000%253D1.1686580374..7776000%253D1.1686580374..15552000%253D1.1686580374; expires=Sat, 09-Dec-2023 14:33:04 GMT; Max-Age=15552010; path=/
+Set-Cookie: mc_freq=60%253D1.1686580374..21600%253D1.1686580374..43200%253D1.1686580374..86400%253D1.1686580374..259200%253D1.1686580374..604800%253D1.1686580374..2592000%253D1.1686580374..7776000%253D1.1686580374..15552000%253D1.1686580374; expires=Sat, 09-Dec-2023 14:33:04 GMT; Max-Age=15552010; path=/
+Upgrade: h2
+Vary: Accept-Encoding
+Ali-Swift-Global-Savetime: 1686580374
+Via: cache4.l2sg2[140,139,200-0,M], cache22.l2sg2[141,0], cache12.sg12[145,145,200-0,M], cache20.sg12[148,0]
+X-Cache: MISS TCP_MISS dirn:-2:-2
+X-Swift-SaveTime: Mon, 12 Jun 2023 14:32:54 GMT
+X-Swift-CacheTime: 0
+Timing-Allow-Origin: *
+EagleId: a3b551a816865803739391145e
+
+
+
+    <!DOCTYPE html>
+    <html >
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>商品展示</title>
+    <style>
+    .zwy img{float: left; width:100%}
+    </style>
+    <link rel="stylesheet" href="./layui/css/layui.css">
+    <script src="./layui/layui.js"></script>
+
+    <script>
+    function color16(){
+      const r = Math.floor(Math.random()*256);
+      const g = Math.floor(Math.random()*256);
+      const b = Math.floor(Math.random()*256);
+      const color = `#${r.toString(16)}${g.toString(16)}${b.toString(16)}`;
+      return color;
+    }
+  </script>
+
+
+
+    </head>
+    <body style="width: 100%;">
+    <div class="zwy" style="max-width: 640px;padding:0; margin:0px auto;">
+    <img alt="" loading="lazy" src="./0002.jpg">
+    </div>
+
+
+    <div class="layui-row" id="adback" style="position: fixed;bottom:0rem;text-align: center;width:100%;height: 5rem;opacity:0.8;">
+      <div class="layui-col-xs12">
+        <p style="color:white;"><span style="text-decoration:line-through;line-height: 2rem;">200USD</span><span>160USD</span>立即订购优惠20%</p>
+      </div>
+      <div class="layui-col-xs12" style="padding-bottom:1rem">
+        <button data-method="notice" id="layerDemo" class="layui-btn" >立即订购/Buy Now</button>
+      </div>
+    </div>
+
+
+    <script>
+      var box1 = document.getElementById("adback");
+      var box2 = document.getElementById("layerDemo");
+      var colora = color16();
+      var colorb = color16();
+      box1.style.backgroundColor = colora;
+      box2.style.backgroundColor = colorb;
+    </script>
+
+
+    <script>
+        layui.use('layer', function(){ 
+          var $ = layui.jquery, layer = layui.layer; 
+          
+          
+          var active = {
+    notice: function(){
+      
+      layer.open({
+        type: 1
+        ,title: '请输入您的订购信息/Please enter your order information' 
+        ,closeBtn: false
+        ,area: '100%'
+        ,shade: 0.8
+        ,id: 'LAY_layuipro' 
+        ,btn: ['立即提交/Submit', '拒绝订购/Cancel']
+        ,btnAlign: 'c'
+        ,moveType: 1 
+        ,content: '<form class="layui-form"action=""><div class="layui-form-item"><label class="layui-form-label">价格/Price</label><div class="layui-input-block"><input type="text"name="title"readonly="readonly"required lay-verify="required"placeholder="160USD"autocomplete="off"class="layui-input"></div></div><div class="layui-form-item"><label class="layui-form-label">姓名(Your Name)</label><div class="layui-input-block"><input type="text"name="title"required lay-verify="required"placeholder="请输入姓名/Please enter your name"autocomplete="off"class="layui-input"></div></div><div class="layui-form-item"><label class="layui-form-label">地址(Address)</label><div class="layui-input-block"><input type="text"name="title"required lay-verify="required"placeholder="请输入地址/Please enter your address"autocomplete="off"class="layui-input"></div></div><div class="layui-form-item"><label class="layui-form-label">电话(Your Call)</label><div class="layui-input-block"><input type="text"name="title"required lay-verify="required"placeholder="请输入姓名/Please enter your phone number"autocomplete="off"class="layui-input"></div></div></form>'
+        ,success: function(layero){
+          var btn = layero.find('.layui-layer-btn');
+          btn.find('.layui-layer-btn0').attr({
+            href: "javascript:layer.msg('感谢，我们已收到您的订单/Thanks!We have received your order');layer.close();"
+          });
+        }
+      });
+    }
+  };
+
+          $('#layerDemo').on('click', function(){
+            var othis = $(this), method = othis.data('method');
+            active[method] ? active[method].call(this, othis) : '';
+          });
+
+        
+        });
+        </script>
+
+    </body></html>

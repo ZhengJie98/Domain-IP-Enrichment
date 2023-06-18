@@ -1,0 +1,41 @@
+$(function(){var doc=document.documentElement;var w=window;var curScroll;var prevScroll=w.scrollY||doc.scrollTop;var curDirection=0;var prevDirection=0;var header=document.getElementById('site-header');var toggled;var threshold=200;var checkScroll=function(){curScroll=w.scrollY||doc.scrollTop;if(curScroll>prevScroll){curDirection=2;}
+else{curDirection=1;}
+if(curDirection!==prevDirection){toggled=toggleHeader();}
+prevScroll=curScroll;if(toggled){prevDirection=curDirection;}};var toggleHeader=function(){toggled=true;if(curDirection===2&&curScroll>threshold){header.classList.add('scrolled-down');}
+else if(curDirection===1){header.classList.remove('scrolled-down');}
+else{toggled=false;}
+return toggled;};window.addEventListener('scroll',checkScroll);$('#OneregisterModal').on('hide.bs.modal',function(e){$('.slide-left').addClass('hide');$('.modal-dialog').removeClass('modal-big');$('.slide-left .wrapper-left').removeClass('wow fadeInUp animated');$(".slide-left .wrapper-left").removeAttr("style");});$('#showRight,#showRight1,#customer-balance').click(function(){$('.menu-right').toggleClass('right-open');});$('#showLeft').click(function(){$('.menu-left').toggleClass('left-open');$('.fade-bg-sidebar').removeClass('d-none');$('.provider-balance').css({"z-index":"500"});});$('.backBtn').click(function(){$('.menu').removeClass('top-open bottom-open right-open left-open pushleft-open pushright-open');$('body').removeClass('push-toleft push-toright');$('.fade-bg-sidebar').addClass('d-none');});$('.fade-bg-sidebar').click(function(){$('.fade-bg-sidebar').addClass('d-none');$('.menu').removeClass('top-open bottom-open right-open left-open pushleft-open pushright-open');$('body').removeClass('push-toleft push-toright');})
+$('body').addClass('push');$('.menu .navbar-nav a').click(function(){$('.menu').removeClass('top-open bottom-open right-open left-open pushleft-open pushright-open');$('body').removeClass('push-toleft push-toright');});$('#showRightPush').click(function(){$('body').toggleClass('push-toright');$('.push-right').toggleClass('pushright-open');});});function getBalance(){$.ajax({url:"/api/get_balance",type:"GET",datatype:"call_credit",}).done(function(data){var current_balance=new Intl.NumberFormat('en-US',{minimumFractionDigits:2,}).format(data['current_balance'].toFixed(2)).toString();$('#user_credits').html(current_balance);$('.balance').html(current_balance);$('.box-balance').html("<span>"+current_balance+" บาท</span>");balance=current_balance;}).fail(function(error){console.log(error);});}
+function Fx_forgotpassword(){$("#forgotpassSubmit").attr('disabled','');$("#forgotpassSubmit").html(`<div class="lds-ring">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>`);var request_phone_number=$('#request_phoneNumber').val();$.ajax({url:"api/reset_password_request_otp",type:"POST",data:{request_phone_number:request_phone_number}}).done(function(data){if(data['status']=='non_member'){Swal.fire({html:'<div class="f-5">เบอร์สมาชิกไม่ถูกต้อง</div>',confirmButtonText:"ตกลง",customClass:{container:"custom-modal",popup:"modal-content-alert",content:"swal-text-content",title:"title-class",confirmButton:"btn-confirm",},}).then((result)=>{$("#forgotpassSubmit").removeAttr('disabled');$("#forgotpassSubmit").html('ถัดไป');});}else if(data['status']=='wrong_number'){Swal.fire({icon:"error",html:'<div class="f-5">เบอร์โทรศัพท์ต้องเป็นตัวเลข และมีความยาว 10 ตัวเท่านั้น</div>',customClass:{container:"custom-modal",popup:"modal-content-alert",content:"swal-text-content",title:"title-class",confirmButton:"btn-confirm",},}).then((result)=>{$("#forgotpassSubmit").removeAttr('disabled');$("#forgotpassSubmit").html('ถัดไป');});}else{$('#forgotModal').modal('hide');$("#forgotpassSubmit").removeAttr('disabled');$("#forgotpassSubmit").html('ถัดไป');Swal.fire({html:'<div class="f-5"><i class="fas fa-check mr-2" style="color:#88E5DF"></i>รหัสได้ถูกส่งไปยังเบอร์มือถือของคุณแล้ว</div>',showConfirmButton:false,customClass:{container:"custom-modal",popup:"modal-content-alert",content:"swal-text-content",title:"title-class",confirmButton:"btn-confirm",},timer:2000}).then(setTimeout(()=>{$("#resetpassword").modal();showModal();},2000));}}).fail(function(error){$("#forgotpassSubmit").removeAttr('disabled');$("#forgotpassSubmit").html('ยืนยัน');});}
+function error_alert(message){Swal.fire({html:'<div class="f-5">'+message+'</div>',confirmButtonText:"ตกลง",customClass:{container:"custom-modal",popup:"modal-content-alert",content:"swal-text-content",},onBeforeOpen:function(ele){$(ele).find('button.swal2-confirm.swal2-styled').toggleClass('swal2-confirm swal2-styled btn btn-primary col-4')}})}
+function confirm_alert(message){Swal.fire({html:'<div class="f-5">'+message+'</div>',showCancelButton:true,confirmButtonColor:'#e7ac5a',cancelButtonColor:'#f5150',confirmButtonText:'ตกลง',cancelButtonText:'ยกเลิก',customClass:{container:"custom-modal",popup:"modal-content-alert",content:"swal-text-content",confirmButton:'btn btn-success',cancelButton:'btn btn-danger'},}).then((result)=>{if(result.value){cancel_deposit();}})}
+function success_alert(message,icon_code){var icon='error';if(icon_code){icon='success';}
+Swal.fire({html:'<div class="f-5">'+message+'</d>',icon:icon,confirmButtonText:'ตกลง',customClass:{container:"custom-modal",popup:"modal-content-alert",content:"swal-text-content",},})}
+function bonus_alert(bonus){Swal.fire({html:`<p class="f-5 bonus-header">ท่านได้รับโบนัสเงินคืนเป็นจำนวน</p><p class="f-5 bonus-message">${bonus}.00 บาท</p>`,showConfirmButton:false,showCloseButton:true,customClass:{container:"bonus-modal-container",popup:"bonus-modal-popup",content:"bonus-modal-content"}})}
+Object.filter=function(obj,predicate){let result={},key;for(key in obj){if(obj.hasOwnProperty(key)&&!predicate(obj[key])){result[key]=obj[key];}}
+return result;};Object.size=function(obj){var size=0,key;for(key in obj){if(obj.hasOwnProperty(key))size++;}
+return size;};function Fx_refresh_credit(){$('#imgrefresh').addClass('rotateIn');setTimeout(()=>{$('#imgrefresh').removeClass('rotateIn');},1000);$.ajax({url:"/api/get_balance",type:"GET",datatype:"call_credit",}).done(function(data){var current_balance=new Intl.NumberFormat('en-US',{minimumFractionDigits:2,}).format(data['current_balance'].toFixed(2)).toString();$('#user_credits').html(current_balance);$('.balance').html(current_balance);$('.box-balance').html("<span>"+current_balance+" บาท</span>");balance=current_balance;}).fail(function(error){console.log(error);});}
+function Fx_refresh_credit2(){$('#imgrefresh2').addClass('rotateIn');setTimeout(()=>{$('#imgrefresh2').removeClass('rotateIn');},1000);$.ajax({url:"/api/get_balance",type:"GET",datatype:"call_credit",}).done(function(data){var current_balance=new Intl.NumberFormat('en-US',{minimumFractionDigits:2,}).format(data['current_balance'].toFixed(2)).toString();$('#user_credits').html(current_balance);$('.balance').html(current_balance);$('.box-balance').html("<span>"+current_balance+" บาท</span>");balance=current_balance;}).fail(function(error){console.log(error);});}
+$("#tab-index,#tab-promotion,#tab-manual,#tab-event").click(function(){$('html,body').animate({scrollTop:$(".section-two").offset().top},'slow');});function activeTabGame(){var valueTab=parseInt(localStorage.getItem("storageValue"))
+switch(valueTab){case 1:$('#tab-index .nav-link').tab('show')
+$('#tab-game-casino').tab('show')
+break;case 2:$('#tab-promotion .nav-link').tab('show')
+$('#tab-game-slot').tab('show')
+break;case 3:$('#tab-manual .nav-link').tab('show')
+$('#tab-game-sport').tab('show')
+break;case 4:$('#tab-event .nav-link').tab('show')
+$('#tab-game-Esport').tab('show')
+break;default:}}
+activeTabGame()
+$('.balance-depWit').click(function(){$('.provider-balance').css({"z-index":"1200"});$('.fade-bg-sidebar-2').toggleClass('d-none')
+$('.b-dep').toggleClass('addScale')
+setTimeout(function(){$('.b-with').toggleClass('addScale')},100);})
+$('#nav-btn-dps,#nav-btn-wd').click(function(){$('#nav-btn-dps').removeClass('addScale')
+$('#nav-btn-wd').removeClass('addScale')
+$('.fade-bg-sidebar-2').addClass('d-none')});$('.fade-bg-sidebar-2').click(function(){$('.b-dep').removeClass('addScale')
+setTimeout(function(){$('.b-with').removeClass('addScale')},100);$(this).toggleClass('d-none')})

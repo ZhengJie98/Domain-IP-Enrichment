@@ -107,18 +107,18 @@ API_KEY = '207349263f9c5edd176cc079fa8000a5ab912df7d9e91154842c08031658675d'  #@
 
 
 client = MongoClient('localhost',27017)
-# db = client['filtered_sg_ip_list']
-# db = client['jons_list']
+# db = client['jon_list']
 db = client['michelle_list']
 # db = client['test_list']
 # col = db["ip"]
-# db = client['jon_list']
 # collection = "domain_older"
 # collection = "domain_v2"
 # collection = "imda_test"
 # collection = "testing_environ"
+# collection = "testing_environ_archived_pages_url"
 # collection = "may12_ips"
 collection = "mirai_aurora_deimos"
+# collection = "20230612_yd_nonyd"
 # col = db["domain"]
 # col = db["domain_new"]
 # col = db["famous_domains"]
@@ -233,7 +233,7 @@ def process_parent():
             cursor = retrieve_docs_to_process(config.REMAINING_LIMIT)
             ## replicate to prevent closing
             cursor = [x for x in cursor]
-            # print(cursor)
+            print(len(cursor))
 
             
             # for ip_doc in cursor:
@@ -252,21 +252,24 @@ def process_parent():
                     is_ip = 0 #if its domain
                     ip_or_domain = str(doc["domain"])
 
-                    # if is_url(ip_or_domain): ## if its url, then add a field
-                    #     print("current URL in process_parent " + ip_or_domain)
-                    #     with open(config.CURR_LOGFILE,'a+') as logfile:
-                    #        logfile.write("current URL in process_parent: " + ip_or_domain + '\n')
-                    #     doc['url'] = ip_or_domain
-                    #     ip_or_domain = retrieve_domain(ip_or_domain)
-                    #     doc['domain'] = ip_or_domain
+                    if is_url(ip_or_domain): ## if its url, then add a field
+                        print("current URL in process_parent " + ip_or_domain)
+                        with open(config.CURR_LOGFILE,'a+') as logfile:
+                           logfile.write("current URL in process_parent: " + ip_or_domain + '\n')
+                        doc['url'] = ip_or_domain
+                        print("doc['url']", doc['url'])
+                        ip_or_domain = retrieve_domain(ip_or_domain)
+                        doc['domain'] = ip_or_domain
+                        print("doc['domain']",doc['domain'])
                     
                     # else:
                     #     print("current domain in process_parent:", ip_or_domain)
                     #     with open(config.CURR_LOGFILE,'a+') as logfile:
                     #         logfile.write("current domain in process_parent:" + ip_or_domain + '\n')
-                    print("current domain in process_parent:", ip_or_domain)
-                    with open(config.CURR_LOGFILE,'a+') as logfile:
-                        logfile.write("current domain in process_parent:" + ip_or_domain + '\n')
+                    else:
+                        print("current domain in process_parent:", ip_or_domain)
+                        with open(config.CURR_LOGFILE,'a+') as logfile:
+                            logfile.write("current domain in process_parent:" + ip_or_domain + '\n')
  
                 tic = time.perf_counter()
 
@@ -297,6 +300,7 @@ def process_parent():
                     print("call_status_code:", call_status_code, "continuing to next ip_or_domain")
                     with open(config.CURR_LOGFILE,'a+') as logfile:
                         logfile.write("call_status_code: {call_status_code}, continuing to next ip_or_domain\n".format(call_status_code=call_status_code))
+                    col.replace_one({"_id" : db_id}, updated_doc)
                     continue
 
                 ## screenshot and extract html js functions here
@@ -352,9 +356,14 @@ def retrieve_docs_to_process(how_many_docs):
     # print("===== retrieve_docs_to_process() START =====")
 
     # # auto closes after 10 minutes
+    # cursor = col.find(
+    #     {"$and" : [{"processed_timestamp" : ""}, {"to_skip" : ""}, {"is_priority" : 0}]}
+    # ).sort("added_timestamp", pymongo.ASCENDING).limit(how_many_docs)
+    
+    ## changing here because alot of docs get skipped
     cursor = col.find(
         {"$and" : [{"processed_timestamp" : ""}, {"to_skip" : ""}, {"is_priority" : 0}]}
-    ).sort("added_timestamp", pymongo.ASCENDING).limit(how_many_docs)
+    ).sort("added_timestamp", pymongo.ASCENDING)
 
 
     return cursor
@@ -638,6 +647,7 @@ def screenshot(doc):
         
         elif "domain" in doc:
             # is_domain = 1 #if its domain
+            ## For file storage, rename all the / with _? 
             if "url" in doc: ## If domain is URL 
                 ip_or_domain = str(doc["url"])
             else:
@@ -716,8 +726,11 @@ def grab_html_js(doc):
         
         elif "domain" in doc:
             # is_domain = 1 #if its domain
-            ip_or_domain = str(doc["domain"])  
-        # ip_address = str(ip_doc["ip_address"])
+            ip_or_domain = str(doc["domain"])
+            if "url" in doc: ## If domain is URL 
+                ip_or_domain = str(doc["url"])
+            else:
+                ip_or_domain = str(doc["domain"])  
         db_id = doc['_id']  
 
 
@@ -1004,8 +1017,8 @@ def get_dns_info(doc):
             # return [dns_info[1], dns_info[2], nameserver_list]
             # print("[dns_info[1], dns_info[2], nameserver_list]:", [dns_info[1], dns_info[2], gethostbyname_ex_filepath])
             # doc['dns_info'] = {'alias': dns_info[1], 'other_ip_address': dns_info[2], 'nameserver_list': nameserver_list, 'gethostbyname_ex_filepath': gethostbyname_ex_filepath, 'nameservers_filepath' :nameservers_filepath }
-            doc['dns_info']['gethostbyname_ex'] =   {'alias': dns_info[1].sort(), 
-                                                    'other_ip_address': dns_info[2].sort(),
+            doc['dns_info']['gethostbyname_ex'] =   {'alias': sorted(dns_info[1]), 
+                                                    'other_ip_address': sorted(dns_info[2]),
                                                     'gethostbyname_ex_filepath' : gethostbyname_ex_filepath
                                                     }
 
@@ -1022,7 +1035,7 @@ def get_dns_info(doc):
             resolver = resolver.Resolver()
             resolver.nameservers = ['1.1.1.1']
             nameservers = resolver.query(domain, 'NS') ## e.g. www.amazon.com
-            nameserver_list = [i.to_text() for i in nameservers].sort()
+            nameserver_list = sorted([i.to_text() for i in nameservers])
             nameservers_filepath = "resources/dns/" + domain + '_' + "nameservers" + '_' + dt_string + ".txt"
 
             with open(nameservers_filepath, "w") as outfile:
@@ -1033,7 +1046,7 @@ def get_dns_info(doc):
             # doc['dns_info']['nameserver_list'] = nameserver_list
             # doc['dns_info']['gethostbyname_ex_filepath'] = gethostbyname_ex_filepath
             # doc['dns_info']['nameservers_filepath']: nameservers_filepath
-            doc['dns_info']['dns_resolver_query'] = {'nameserver_list': nameserver_list.sort(),
+            doc['dns_info']['dns_resolver_query'] = {'nameserver_list': nameserver_list,
                                                     'nameservers_filepath': nameservers_filepath
                                                     }
 
@@ -1184,6 +1197,13 @@ def get_archived_page_info(doc):
         logfile.write("===== get_archived_page_info function start =====\n")
 
         domain = str(doc["domain"])
+        ## currently using url for testing jon's request
+        # if "url" in doc: ## If domain is URL 
+        #     domain = str(doc["url"])
+        # else:
+        #     domain = str(doc["domain"])
+
+        print("using domain:", domain)
 
         now = datetime.datetime.now(timezone('UTC'))
         dt_string = now.strftime("%Y%m%d_%H%M%S.%f")[:-3]   
@@ -1234,16 +1254,26 @@ def get_archived_page_info(doc):
 
 def is_url(domain_or_url):
     result = True
-    o = urlparse(domain_or_url)
-    # print(o)
-    domain = o.path
-    if (domain == domain_or_url):
-        result = False        
+    if domain_or_url[0] != '/':
+        modified_url = "//" + domain_or_url
+    
+    parsed_url = urlparse(modified_url)
+
+    if domain_or_url == parsed_url.netloc:
+        result = False
+    
     return result
 
 def retrieve_domain(domain_or_url):
-    o = urlparse(domain_or_url)
-    domain = o.path
+    
+    if domain_or_url[0] != '/':
+        modified_url = "//" + domain_or_url
+    
+    parsed_url = urlparse(modified_url)
+    
+    # o = urlparse(domain_or_url)
+    
+    domain = parsed_url.netloc
     return domain
 
 def process_parent_without_vtcall():
@@ -1259,7 +1289,8 @@ def process_parent_without_vtcall():
             # cursor = col.find({"has_html" : ""})
             # cursor = col.find()
             # cursor = col.find({"domain":"zshhks.top"})
-            cursor = col.find({"processed_timestamp" : ""})
+            # cursor = col.find({"processed_timestamp" : ""})
+            cursor = col.find({"$and" : [{"processed_timestamp" : ""}, {"to_skip" : ""}]})
             # cursor = col.find({"processed_timestamp" : {"$ne": ""}})            ## replicate to prevent closing
             cursor = [x for x in cursor]
             # print(cursor)
@@ -1276,12 +1307,35 @@ def process_parent_without_vtcall():
                     with open(config.CURR_LOGFILE,'a+') as logfile:
                         logfile.write("current ip in process_parent:" + ip_or_domain + '\n')
 
+                # elif "domain" in doc:
+                #     is_ip = 0 #if its domain
+                #     ip_or_domain = str(doc["domain"])
+                #     print("current domain in process_parent:", ip_or_domain)
+                #     with open(config.CURR_LOGFILE,'a+') as logfile:
+                #         logfile.write("current domain in process_parent:" + ip_or_domain + '\n')
+
                 elif "domain" in doc:
                     is_ip = 0 #if its domain
                     ip_or_domain = str(doc["domain"])
-                    print("current domain in process_parent:", ip_or_domain)
-                    with open(config.CURR_LOGFILE,'a+') as logfile:
-                        logfile.write("current domain in process_parent:" + ip_or_domain + '\n')
+
+                    if is_url(ip_or_domain): ## if its url, then add a field
+                        print("current URL in process_parent " + ip_or_domain)
+                        with open(config.CURR_LOGFILE,'a+') as logfile:
+                           logfile.write("current URL in process_parent: " + ip_or_domain + '\n')
+                        doc['url'] = ip_or_domain
+                        print("doc['url']", doc['url'])
+                        ip_or_domain = retrieve_domain(ip_or_domain)
+                        doc['domain'] = ip_or_domain
+                        print("doc['domain']",doc['domain'])
+                    
+                    # else:
+                    #     print("current domain in process_parent:", ip_or_domain)
+                    #     with open(config.CURR_LOGFILE,'a+') as logfile:
+                    #         logfile.write("current domain in process_parent:" + ip_or_domain + '\n')
+                    else:
+                        print("current domain in process_parent:", ip_or_domain)
+                        with open(config.CURR_LOGFILE,'a+') as logfile:
+                            logfile.write("current domain in process_parent:" + ip_or_domain + '\n')
  
                 tic = time.perf_counter()
 
@@ -1316,14 +1370,16 @@ def process_parent_without_vtcall():
                 updated_doc = doc 
                 ## screenshot and extract html js functions here
                 #Continue Here Later!!
-
-                updated_doc = screenshot(updated_doc)
-                updated_doc = grab_html_js(updated_doc) 
+                updated_doc['duration_log']={}
+                ## uncomment after testing
+                # updated_doc = screenshot(updated_doc)
+                # updated_doc = grab_html_js(updated_doc) 
                 
                 if (is_ip == 0): #means doc is domain
-                    updated_doc = get_whois_info(updated_doc)
-                    updated_doc = get_dns_info(updated_doc)
-                    updated_doc = get_cert_info(updated_doc)
+                    ## uncomment after testing
+                    # updated_doc = get_whois_info(updated_doc)
+                    # updated_doc = get_dns_info(updated_doc)
+                    # updated_doc = get_cert_info(updated_doc)
                     updated_doc = get_archived_page_info(doc)
 
                 updated_doc['log_file'] = config.CURR_LOGFILE

@@ -1,0 +1,1 @@
+[{"issuer_ca_id": 250892, "issuer_name": "C=BE, O=GlobalSign nv-sa, CN=AlphaSSL CA - SHA256 - G4", "common_name": "*.love-messaging.com", "name_value": "*.love-messaging.com\nlove-messaging.com", "id": 9550882497, "entry_timestamp": "2023-06-02T12:22:09.281", "not_before": "2023-06-02T12:22:05", "not_after": "2024-07-03T12:22:04", "serial_number": "2f4c94ec00c498ee5d51e18f"}]

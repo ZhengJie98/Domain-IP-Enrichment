@@ -1,0 +1,1700 @@
+current domain in process_parent:singpost.form1275.cloud
+===== to_skip function start =====
+singpost.form1275.cloud has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: singpost.form1275.cloud now: 2023-06-12 08:11:28.752033+00:00
+duration_log vt_call: 0.9971492000040598
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 11.291340700001456
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 6
+current protocol: https
+returncode: 6
+duration_log grab_html_js: 0.06360599998151883
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/singpost.form1275.cloud_20230612_081141.138.txt
+duration_log get_whois_info: 1.1423086000140756
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+socket.gethostbyname_ex() exception triggered: [Errno 11001] getaddrinfo failed
+dns.resolver.query() exception triggered: The DNS query name does not exist: singpost.form1275.cloud.
+duration_log get_dns_info: 0.06283449998591095
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 0.8455866999574937
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7063219000119716
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for singpost.form1275.cloud, time taken 15.197066500026267 seconds
+
+
+current domain in process_parent:choicefurniture-com-sg.cdn.ampproject.org
+===== to_skip function start =====
+choicefurniture-com-sg.cdn.ampproject.org has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: choicefurniture-com-sg.cdn.ampproject.org now: 2023-06-12 08:11:43.973605+00:00
+duration_log vt_call: 1.0164908000151627
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/choicefurniture-com-sg.cdn.ampproject.org_http_20230612_081145.001.pngscreenshot found for protocol: https and saved to resources/shot-scraper/choicefurniture-com-sg.cdn.ampproject.org_https_20230612_081145.001.pngduration_log screenshot: 9.411181500006933
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 0
+starting html request.get
+total js_files_links: []
+duration_log grab_html_js: 0.2609908999875188
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/choicefurniture-com-sg.cdn.ampproject.org_20230612_081154.710.txt
+duration_log get_whois_info: 1.3229246999835595
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/choicefurniture-com-sg.cdn.ampproject.org_gethostbyname_ex_20230612_081156.033.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: choicefurniture-com-sg.cdn.ampproject.org. IN NS
+duration_log get_dns_info: 0.03909189999103546
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 0.7510956000187434
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 1.0908919999492355
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for choicefurniture-com-sg.cdn.ampproject.org, time taken 15.000655799987726 seconds
+
+
+current domain in process_parent:www.gvcredit-sg.com
+===== to_skip function start =====
+www.gvcredit-sg.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: www.gvcredit-sg.com now: 2023-06-12 08:11:59.021107+00:00
+duration_log vt_call: 0.9789482999476604
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/www.gvcredit-sg.com_http_20230612_081200.018.pngscreenshot found for protocol: https and saved to resources/shot-scraper/www.gvcredit-sg.com_https_20230612_081200.018.pngduration_log screenshot: 11.985072100011166
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+web_url: http://www.gvcredit-sg.com
+url: js/jquery-3.3.1.min.js
+web_url: http://www.gvcredit-sg.com
+url: js/bootstrap.min.js
+web_url: http://www.gvcredit-sg.com
+url: js/jquery.magnific-popup.min.js
+web_url: http://www.gvcredit-sg.com
+url: js/mixitup.min.js
+web_url: http://www.gvcredit-sg.com
+url: js/masonry.pkgd.min.js
+web_url: http://www.gvcredit-sg.com
+url: js/jquery.slicknav.js
+web_url: http://www.gvcredit-sg.com
+url: js/owl.carousel.min.js
+web_url: http://www.gvcredit-sg.com
+url: js/main.js
+total js_files_links: ['http://www.gvcredit-sg.com/js/jquery-3.3.1.min.js', 'http://www.gvcredit-sg.com/js/bootstrap.min.js', 'http://www.gvcredit-sg.com/js/jquery.magnific-popup.min.js', 'http://www.gvcredit-sg.com/js/mixitup.min.js', 'http://www.gvcredit-sg.com/js/masonry.pkgd.min.js', 'http://www.gvcredit-sg.com/js/jquery.slicknav.js', 'http://www.gvcredit-sg.com/js/owl.carousel.min.js', 'http://www.gvcredit-sg.com/js/main.js']
+starting get for each_js_link: http://www.gvcredit-sg.com/js/jquery-3.3.1.min.js
+starting get for each_js_link: http://www.gvcredit-sg.com/js/bootstrap.min.js
+starting get for each_js_link: http://www.gvcredit-sg.com/js/jquery.magnific-popup.min.js
+starting get for each_js_link: http://www.gvcredit-sg.com/js/mixitup.min.js
+starting get for each_js_link: http://www.gvcredit-sg.com/js/masonry.pkgd.min.js
+starting get for each_js_link: http://www.gvcredit-sg.com/js/jquery.slicknav.js
+starting get for each_js_link: http://www.gvcredit-sg.com/js/owl.carousel.min.js
+starting get for each_js_link: http://www.gvcredit-sg.com/js/main.js
+current protocol: https
+returncode: 0
+starting html request.get
+web_url: https://www.gvcredit-sg.com
+url: js/jquery-3.3.1.min.js
+web_url: https://www.gvcredit-sg.com
+url: js/bootstrap.min.js
+web_url: https://www.gvcredit-sg.com
+url: js/jquery.magnific-popup.min.js
+web_url: https://www.gvcredit-sg.com
+url: js/mixitup.min.js
+web_url: https://www.gvcredit-sg.com
+url: js/masonry.pkgd.min.js
+web_url: https://www.gvcredit-sg.com
+url: js/jquery.slicknav.js
+web_url: https://www.gvcredit-sg.com
+url: js/owl.carousel.min.js
+web_url: https://www.gvcredit-sg.com
+url: js/main.js
+total js_files_links: ['https://www.gvcredit-sg.com/js/jquery-3.3.1.min.js', 'https://www.gvcredit-sg.com/js/bootstrap.min.js', 'https://www.gvcredit-sg.com/js/jquery.magnific-popup.min.js', 'https://www.gvcredit-sg.com/js/mixitup.min.js', 'https://www.gvcredit-sg.com/js/masonry.pkgd.min.js', 'https://www.gvcredit-sg.com/js/jquery.slicknav.js', 'https://www.gvcredit-sg.com/js/owl.carousel.min.js', 'https://www.gvcredit-sg.com/js/main.js']
+starting get for each_js_link: https://www.gvcredit-sg.com/js/jquery-3.3.1.min.js
+starting get for each_js_link: https://www.gvcredit-sg.com/js/bootstrap.min.js
+starting get for each_js_link: https://www.gvcredit-sg.com/js/jquery.magnific-popup.min.js
+starting get for each_js_link: https://www.gvcredit-sg.com/js/mixitup.min.js
+starting get for each_js_link: https://www.gvcredit-sg.com/js/masonry.pkgd.min.js
+starting get for each_js_link: https://www.gvcredit-sg.com/js/jquery.slicknav.js
+starting get for each_js_link: https://www.gvcredit-sg.com/js/owl.carousel.min.js
+starting get for each_js_link: https://www.gvcredit-sg.com/js/main.js
+duration_log grab_html_js: 1.7408193000010215
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/www.gvcredit-sg.com_20230612_081213.781.txt
+duration_log get_whois_info: 2.100488599971868
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/www.gvcredit-sg.com_gethostbyname_ex_20230612_081215.889.txt
+nameservers_filepath file written to resources/dns/www.gvcredit-sg.com_nameservers_20230612_081215.889.txt
+duration_log get_dns_info: 0.08474199997726828
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 60.78348550002556
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/www.gvcredit-sg.com_20230612_081316.764.json
+duration_log get_archived_page_info: 1.476063999987673
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for www.gvcredit-sg.com, time taken 79.26794970000628 seconds
+
+
+current domain in process_parent:pinto-md.spain-web.com
+===== to_skip function start =====
+pinto-md.spain-web.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: pinto-md.spain-web.com now: 2023-06-12 08:13:18.322812+00:00
+duration_log vt_call: 1.1547759999521077
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/pinto-md.spain-web.com_http_20230612_081319.493.pngscreenshot found for protocol: https and saved to resources/shot-scraper/pinto-md.spain-web.com_https_20230612_081319.493.pngduration_log screenshot: 14.858185199962463
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+web_url: http://pinto-md.spain-web.com
+url: /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js
+total js_files_links: ['http://pinto-md.spain-web.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js']
+starting get for each_js_link: http://pinto-md.spain-web.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js
+current protocol: https
+returncode: 0
+starting html request.get
+web_url: https://pinto-md.spain-web.com
+url: /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js
+total js_files_links: ['https://pinto-md.spain-web.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js']
+starting get for each_js_link: https://pinto-md.spain-web.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js
+duration_log grab_html_js: 1.2125798999913968
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/pinto-md.spain-web.com_20230612_081335.593.txt
+duration_log get_whois_info: 0.8456490999669768
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/pinto-md.spain-web.com_gethostbyname_ex_20230612_081336.445.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: pinto-md.spain-web.com. IN NS
+duration_log get_dns_info: 0.034331000002566725
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 1.4469638000009581
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/pinto-md.spain-web.com_20230612_081337.947.json
+duration_log get_archived_page_info: 0.7582880000118166
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for pinto-md.spain-web.com, time taken 20.434613800025545 seconds
+
+
+current domain in process_parent:las-gabias-an.spain-web.com
+===== to_skip function start =====
+las-gabias-an.spain-web.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: las-gabias-an.spain-web.com now: 2023-06-12 08:13:38.784521+00:00
+duration_log vt_call: 1.3860882999724708
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/las-gabias-an.spain-web.com_http_20230612_081340.183.pngscreenshot found for protocol: https and saved to resources/shot-scraper/las-gabias-an.spain-web.com_https_20230612_081340.183.pngduration_log screenshot: 14.881397699995432
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+web_url: http://las-gabias-an.spain-web.com
+url: /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js
+total js_files_links: ['http://las-gabias-an.spain-web.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js']
+starting get for each_js_link: http://las-gabias-an.spain-web.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js
+current protocol: https
+returncode: 0
+starting html request.get
+web_url: https://las-gabias-an.spain-web.com
+url: /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js
+total js_files_links: ['https://las-gabias-an.spain-web.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js']
+starting get for each_js_link: https://las-gabias-an.spain-web.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js
+duration_log grab_html_js: 1.1772559999953955
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/las-gabias-an.spain-web.com_20230612_081356.271.txt
+duration_log get_whois_info: 0.7745794000220485
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/las-gabias-an.spain-web.com_gethostbyname_ex_20230612_081357.045.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: las-gabias-an.spain-web.com. IN NS
+duration_log get_dns_info: 0.24693419999675825
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 1.1321883000200614
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.6957816000212915
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for las-gabias-an.spain-web.com, time taken 20.389426200010348 seconds
+
+
+current domain in process_parent:www4b.mk-com.com
+===== to_skip function start =====
+www4b.mk-com.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: www4b.mk-com.com now: 2023-06-12 08:13:59.192053+00:00
+duration_log vt_call: 1.4117778000072576
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/www4b.mk-com.com_http_20230612_081400.613.pngscreenshot found for protocol: https and saved to resources/shot-scraper/www4b.mk-com.com_https_20230612_081400.613.pngduration_log screenshot: 13.670241199957673
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 0
+starting html request.get
+total js_files_links: []
+duration_log grab_html_js: 1.2288295999751426
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/www4b.mk-com.com_20230612_081415.587.txt
+duration_log get_whois_info: 0.7853246000013314
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/www4b.mk-com.com_gethostbyname_ex_20230612_081416.343.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: www4b.mk-com.com. IN NS
+duration_log get_dns_info: 0.03729070001281798
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 0.9333608000306413
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.9503284000093117
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for www4b.mk-com.com, time taken 19.11499279999407 seconds
+
+
+current domain in process_parent:corp.mk-com.com
+===== to_skip function start =====
+corp.mk-com.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: corp.mk-com.com now: 2023-06-12 08:14:18.353147+00:00
+duration_log vt_call: 0.9087356000090949
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/corp.mk-com.com_http_20230612_081419.278.pngscreenshot found for protocol: https and saved to resources/shot-scraper/corp.mk-com.com_https_20230612_081419.278.pngduration_log screenshot: 15.527472400048282
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 0
+starting html request.get
+total js_files_links: []
+duration_log grab_html_js: 1.2331102000316605
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/corp.mk-com.com_20230612_081436.072.txt
+duration_log get_whois_info: 0.7587032000301406
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/corp.mk-com.com_gethostbyname_ex_20230612_081436.829.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: corp.mk-com.com. IN NS
+duration_log get_dns_info: 0.03099659999134019
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 5.349064700014424
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 7.6850972000393085
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for corp.mk-com.com, time taken 31.61961389996577 seconds
+
+
+current domain in process_parent:cs.mk-com.com
+===== to_skip function start =====
+cs.mk-com.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: cs.mk-com.com now: 2023-06-12 08:14:49.976472+00:00
+duration_log vt_call: 0.9216098000179045
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/cs.mk-com.com_http_20230612_081450.907.pngscreenshot found for protocol: https and saved to resources/shot-scraper/cs.mk-com.com_https_20230612_081450.907.pngduration_log screenshot: 12.33691459998954
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 0
+starting html request.get
+total js_files_links: []
+duration_log grab_html_js: 0.9629591000266373
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/cs.mk-com.com_20230612_081504.236.txt
+duration_log get_whois_info: 1.1223678999813274
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/cs.mk-com.com_gethostbyname_ex_20230612_081505.361.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: cs.mk-com.com. IN NS
+duration_log get_dns_info: 0.04207029996905476
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 16.391901800001506
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 2.631791500025429
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for cs.mk-com.com, time taken 34.504422699974384 seconds
+
+
+current domain in process_parent:bookmarks.mk-com.com
+===== to_skip function start =====
+bookmarks.mk-com.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: bookmarks.mk-com.com now: 2023-06-12 08:15:24.506030+00:00
+duration_log vt_call: 0.9424413999659009
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/bookmarks.mk-com.com_http_20230612_081525.462.pngscreenshot found for protocol: https and saved to resources/shot-scraper/bookmarks.mk-com.com_https_20230612_081525.462.pngduration_log screenshot: 12.659859900013544
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 0
+starting html request.get
+total js_files_links: []
+duration_log grab_html_js: 1.2241747999796644
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/bookmarks.mk-com.com_20230612_081539.375.txt
+duration_log get_whois_info: 0.7368313000188209
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/bookmarks.mk-com.com_gethostbyname_ex_20230612_081540.110.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: bookmarks.mk-com.com. IN NS
+duration_log get_dns_info: 0.02516210003523156
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 9.290943200001493
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.8200259999721311
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for bookmarks.mk-com.com, time taken 25.7937086999882 seconds
+
+
+current domain in process_parent:ww5.mk-com.com
+===== to_skip function start =====
+ww5.mk-com.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: ww5.mk-com.com now: 2023-06-12 08:15:50.317861+00:00
+duration_log vt_call: 0.8492635000147857
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/ww5.mk-com.com_http_20230612_081551.175.pngscreenshot found for protocol: https and saved to resources/shot-scraper/ww5.mk-com.com_https_20230612_081551.175.pngduration_log screenshot: 12.886400400020648
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 0
+starting html request.get
+total js_files_links: []
+duration_log grab_html_js: 1.1930730000021867
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/ww5.mk-com.com_20230612_081605.287.txt
+duration_log get_whois_info: 0.7685674999956973
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/ww5.mk-com.com_gethostbyname_ex_20230612_081606.061.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: ww5.mk-com.com. IN NS
+duration_log get_dns_info: 0.029022799979429692
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 22.91363399999682
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.6930323999840766
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for ww5.mk-com.com, time taken 39.42243790003704 seconds
+
+
+current domain in process_parent:regione.mk-com.com
+===== to_skip function start =====
+regione.mk-com.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: regione.mk-com.com now: 2023-06-12 08:16:29.762721+00:00
+duration_log vt_call: 0.9336263999575749
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/regione.mk-com.com_http_20230612_081630.705.pngscreenshot found for protocol: https and saved to resources/shot-scraper/regione.mk-com.com_https_20230612_081630.705.pngduration_log screenshot: 10.988914800051134
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 0
+starting html request.get
+total js_files_links: []
+duration_log grab_html_js: 1.2038335999823175
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/regione.mk-com.com_20230612_081642.926.txt
+duration_log get_whois_info: 0.9358567000017501
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/regione.mk-com.com_gethostbyname_ex_20230612_081643.862.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: regione.mk-com.com. IN NS
+duration_log get_dns_info: 0.030613899987656623
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 18.00553460000083
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 1.0581428000004962
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for regione.mk-com.com, time taken 33.23622090002755 seconds
+
+
+current domain in process_parent:maven.mk-com.com
+===== to_skip function start =====
+maven.mk-com.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: maven.mk-com.com now: 2023-06-12 08:17:03.036876+00:00
+duration_log vt_call: 1.3175717000267468
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/maven.mk-com.com_http_20230612_081704.363.pngscreenshot found for protocol: https and saved to resources/shot-scraper/maven.mk-com.com_https_20230612_081704.363.pngduration_log screenshot: 11.556841900048312
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 0
+starting html request.get
+total js_files_links: []
+duration_log grab_html_js: 1.250568299961742
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/maven.mk-com.com_20230612_081717.198.txt
+duration_log get_whois_info: 0.9072587999980897
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/maven.mk-com.com_gethostbyname_ex_20230612_081718.106.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: maven.mk-com.com. IN NS
+duration_log get_dns_info: 0.03433649998623878
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 0.7856130999862216
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7050840000156313
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for maven.mk-com.com, time taken 16.65427289996296 seconds
+
+
+current domain in process_parent:1www.mk-com.com
+===== to_skip function start =====
+1www.mk-com.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: 1www.mk-com.com now: 2023-06-12 08:17:19.700671+00:00
+duration_log vt_call: 0.8489101000013761
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/1www.mk-com.com_http_20230612_081720.561.pngscreenshot found for protocol: https and saved to resources/shot-scraper/1www.mk-com.com_https_20230612_081720.561.pngduration_log screenshot: 12.967083299998194
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 0
+starting html request.get
+total js_files_links: []
+duration_log grab_html_js: 1.2476995999459177
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/1www.mk-com.com_20230612_081734.810.txt
+duration_log get_whois_info: 0.7554419999942183
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/1www.mk-com.com_gethostbyname_ex_20230612_081735.573.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: 1www.mk-com.com. IN NS
+duration_log get_dns_info: 0.026730000041425228
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 0.7644748000311665
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.6433247999520972
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for 1www.mk-com.com, time taken 17.357930199999828 seconds
+
+
+current domain in process_parent:user.mk-com.com
+===== to_skip function start =====
+user.mk-com.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: user.mk-com.com now: 2023-06-12 08:17:37.082830+00:00
+duration_log vt_call: 0.9702311999863014
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/user.mk-com.com_http_20230612_081738.063.pngscreenshot found for protocol: https and saved to resources/shot-scraper/user.mk-com.com_https_20230612_081738.063.pngduration_log screenshot: 12.1372172999545
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 0
+starting html request.get
+total js_files_links: []
+duration_log grab_html_js: 1.0410396000370383
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/user.mk-com.com_20230612_081751.274.txt
+duration_log get_whois_info: 0.7534282000269741
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/user.mk-com.com_gethostbyname_ex_20230612_081752.037.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: user.mk-com.com. IN NS
+duration_log get_dns_info: 0.043443000002298504
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 1.3727091000182554
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.648389300040435
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for user.mk-com.com, time taken 17.05967220000457 seconds
+
+
+current domain in process_parent:com.mk-com.com
+===== to_skip function start =====
+com.mk-com.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: com.mk-com.com now: 2023-06-12 08:17:54.180715+00:00
+duration_log vt_call: 0.8631001999601722
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/com.mk-com.com_http_20230612_081755.125.pngscreenshot found for protocol: https and saved to resources/shot-scraper/com.mk-com.com_https_20230612_081755.125.pngduration_log screenshot: 14.289184299996123
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 0
+starting html request.get
+total js_files_links: []
+duration_log grab_html_js: 1.3192306000273675
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/com.mk-com.com_20230612_081810.766.txt
+duration_log get_whois_info: 0.764182900020387
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/com.mk-com.com_gethostbyname_ex_20230612_081811.533.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: com.mk-com.com. IN NS
+duration_log get_dns_info: 0.02922339999349788
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 0.8488952000043355
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 6.421755599963944
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for com.mk-com.com, time taken 24.718937700032257 seconds
+
+
+current domain in process_parent:k5.mk-com.com
+===== to_skip function start =====
+k5.mk-com.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: k5.mk-com.com now: 2023-06-12 08:18:18.921465+00:00
+duration_log vt_call: 0.8683656000066549
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/k5.mk-com.com_http_20230612_081819.799.pngscreenshot found for protocol: https and saved to resources/shot-scraper/k5.mk-com.com_https_20230612_081819.799.pngduration_log screenshot: 11.912294399982784
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 0
+starting html request.get
+total js_files_links: []
+duration_log grab_html_js: 1.2288385000429116
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/k5.mk-com.com_20230612_081832.967.txt
+duration_log get_whois_info: 0.7575205999892205
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/k5.mk-com.com_gethostbyname_ex_20230612_081833.726.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: k5.mk-com.com. IN NS
+duration_log get_dns_info: 0.027462499972898513
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 0.8665592999896035
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.6441851999843493
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for k5.mk-com.com, time taken 16.389224499987904 seconds
+
+
+current domain in process_parent:ru.diplomik-web.com
+===== to_skip function start =====
+ru.diplomik-web.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: ru.diplomik-web.com now: 2023-06-12 08:18:35.332420+00:00
+duration_log vt_call: 1.0938772999797948
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 45.340646800003015
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 28
+current protocol: https
+returncode: 28
+duration_log grab_html_js: 43.38908640004229
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/ru.diplomik-web.com_20230612_082005.198.txt
+duration_log get_whois_info: 8.028427399985958
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/ru.diplomik-web.com_gethostbyname_ex_20230612_082013.228.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: ru.diplomik-web.com. IN NS
+duration_log get_dns_info: 0.223409200028982
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 5.90570000000298
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/ru.diplomik-web.com_20230612_082019.381.json
+duration_log get_archived_page_info: 1.8055245999712497
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for ru.diplomik-web.com, time taken 105.88994209998054 seconds
+
+
+current domain in process_parent:wpad.realtek-sg.com
+===== to_skip function start =====
+wpad.realtek-sg.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: wpad.realtek-sg.com now: 2023-06-12 08:20:21.248647+00:00
+duration_log vt_call: 0.8704999000183307
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 3.22533879999537
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 6
+current protocol: https
+returncode: 6
+duration_log grab_html_js: 0.4945541999768466
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/wpad.realtek-sg.com_20230612_082025.878.txt
+duration_log get_whois_info: 0.755389700003434
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+socket.gethostbyname_ex() exception triggered: [Errno 11001] getaddrinfo failed
+dns.resolver.query() exception triggered: The DNS query name does not exist: wpad.realtek-sg.com.
+duration_log get_dns_info: 0.34708719997433946
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 0.8163392000133172
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.8277493999921717
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for wpad.realtek-sg.com, time taken 15.000791099970229 seconds
+
+
+current domain in process_parent:christensen9136gb.envision-web.com
+===== to_skip function start =====
+christensen9136gb.envision-web.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: christensen9136gb.envision-web.com now: 2023-06-12 08:20:36.289697+00:00
+duration_log vt_call: 1.4487565999734215
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/christensen9136gb.envision-web.com_http_20230612_082037.749.pngduration_log screenshot: 7.140885200002231
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 1.2970768999657594
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/christensen9136gb.envision-web.com_20230612_082046.219.txt
+duration_log get_whois_info: 3.3164262999780476
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/christensen9136gb.envision-web.com_gethostbyname_ex_20230612_082049.538.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: christensen9136gb.envision-web.com. IN NS
+duration_log get_dns_info: 0.06314220000058413
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 1.065750100009609
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7497840000432916
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for christensen9136gb.envision-web.com, time taken 15.175153699994553 seconds
+
+
+current domain in process_parent:www.myfaceworkshop-sg.com
+===== to_skip function start =====
+www.myfaceworkshop-sg.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: www.myfaceworkshop-sg.com now: 2023-06-12 08:20:51.523917+00:00
+duration_log vt_call: 0.993640000000596
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/www.myfaceworkshop-sg.com_http_20230612_082052.527.pngscreenshot found for protocol: https and saved to resources/shot-scraper/www.myfaceworkshop-sg.com_https_20230612_082052.527.pngduration_log screenshot: 12.646050999988802
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+web_url: http://www.myfaceworkshop-sg.com
+url: https://static.parastorage.com/unpkg/core-js-bundle@3.2.1/minified.js
+web_url: http://www.myfaceworkshop-sg.com
+url: https://static.parastorage.com/unpkg/focus-within-polyfill@5.0.9/dist/focus-within-polyfill.js
+web_url: http://www.myfaceworkshop-sg.com
+url: https://polyfill.io/v3/polyfill.min.js?features=fetch
+web_url: http://www.myfaceworkshop-sg.com
+url: https://static.parastorage.com/services/wix-thunderbolt/dist/483.562a106e.bundle.min.js
+web_url: http://www.myfaceworkshop-sg.com
+url: https://static.parastorage.com/services/tag-manager-client/1.705.0/siteTags.bundle.min.js
+web_url: http://www.myfaceworkshop-sg.com
+url: https://static.parastorage.com/services/wix-perf-measure/1.1058.0/wix-perf-measure.umd.min.js
+web_url: http://www.myfaceworkshop-sg.com
+url: https://static.parastorage.com/services/wix-thunderbolt/dist/thunderbolt-commons.2c8a56b1.bundle.min.js
+web_url: http://www.myfaceworkshop-sg.com
+url: https://static.parastorage.com/services/wix-thunderbolt/dist/main.5a7a1f12.bundle.min.js
+web_url: http://www.myfaceworkshop-sg.com
+url: https://static.parastorage.com/unpkg/lodash@4.17.21/lodash.min.js
+web_url: http://www.myfaceworkshop-sg.com
+url: https://static.parastorage.com/unpkg/react@16.14.0/umd/react.production.min.js
+web_url: http://www.myfaceworkshop-sg.com
+url: https://static.parastorage.com/unpkg/react-dom@16.14.0/umd/react-dom.production.min.js
+total js_files_links: ['https://static.parastorage.com/unpkg/core-js-bundle@3.2.1/minified.js', 'https://static.parastorage.com/unpkg/focus-within-polyfill@5.0.9/dist/focus-within-polyfill.js', 'https://polyfill.io/v3/polyfill.min.js?features=fetch', 'https://static.parastorage.com/services/wix-thunderbolt/dist/483.562a106e.bundle.min.js', 'https://static.parastorage.com/services/tag-manager-client/1.705.0/siteTags.bundle.min.js', 'https://static.parastorage.com/services/wix-perf-measure/1.1058.0/wix-perf-measure.umd.min.js', 'https://static.parastorage.com/services/wix-thunderbolt/dist/thunderbolt-commons.2c8a56b1.bundle.min.js', 'https://static.parastorage.com/services/wix-thunderbolt/dist/main.5a7a1f12.bundle.min.js', 'https://static.parastorage.com/unpkg/lodash@4.17.21/lodash.min.js', 'https://static.parastorage.com/unpkg/react@16.14.0/umd/react.production.min.js', 'https://static.parastorage.com/unpkg/react-dom@16.14.0/umd/react-dom.production.min.js']
+starting get for each_js_link: https://static.parastorage.com/unpkg/core-js-bundle@3.2.1/minified.js
+starting get for each_js_link: https://static.parastorage.com/unpkg/focus-within-polyfill@5.0.9/dist/focus-within-polyfill.js
+starting get for each_js_link: https://polyfill.io/v3/polyfill.min.js?features=fetch
+starting get for each_js_link: https://static.parastorage.com/services/wix-thunderbolt/dist/483.562a106e.bundle.min.js
+starting get for each_js_link: https://static.parastorage.com/services/tag-manager-client/1.705.0/siteTags.bundle.min.js
+starting get for each_js_link: https://static.parastorage.com/services/wix-perf-measure/1.1058.0/wix-perf-measure.umd.min.js
+starting get for each_js_link: https://static.parastorage.com/services/wix-thunderbolt/dist/thunderbolt-commons.2c8a56b1.bundle.min.js
+starting get for each_js_link: https://static.parastorage.com/services/wix-thunderbolt/dist/main.5a7a1f12.bundle.min.js
+starting get for each_js_link: https://static.parastorage.com/unpkg/lodash@4.17.21/lodash.min.js
+starting get for each_js_link: https://static.parastorage.com/unpkg/react@16.14.0/umd/react.production.min.js
+starting get for each_js_link: https://static.parastorage.com/unpkg/react-dom@16.14.0/umd/react-dom.production.min.js
+current protocol: https
+returncode: 0
+starting html request.get
+web_url: https://www.myfaceworkshop-sg.com
+url: https://static.parastorage.com/unpkg/core-js-bundle@3.2.1/minified.js
+web_url: https://www.myfaceworkshop-sg.com
+url: https://static.parastorage.com/unpkg/focus-within-polyfill@5.0.9/dist/focus-within-polyfill.js
+web_url: https://www.myfaceworkshop-sg.com
+url: https://polyfill.io/v3/polyfill.min.js?features=fetch
+web_url: https://www.myfaceworkshop-sg.com
+url: https://static.parastorage.com/services/wix-thunderbolt/dist/483.562a106e.bundle.min.js
+web_url: https://www.myfaceworkshop-sg.com
+url: https://static.parastorage.com/services/tag-manager-client/1.705.0/siteTags.bundle.min.js
+web_url: https://www.myfaceworkshop-sg.com
+url: https://static.parastorage.com/services/wix-perf-measure/1.1058.0/wix-perf-measure.umd.min.js
+web_url: https://www.myfaceworkshop-sg.com
+url: https://static.parastorage.com/services/wix-thunderbolt/dist/thunderbolt-commons.2c8a56b1.bundle.min.js
+web_url: https://www.myfaceworkshop-sg.com
+url: https://static.parastorage.com/services/wix-thunderbolt/dist/main.5a7a1f12.bundle.min.js
+web_url: https://www.myfaceworkshop-sg.com
+url: https://static.parastorage.com/unpkg/lodash@4.17.21/lodash.min.js
+web_url: https://www.myfaceworkshop-sg.com
+url: https://static.parastorage.com/unpkg/react@16.14.0/umd/react.production.min.js
+web_url: https://www.myfaceworkshop-sg.com
+url: https://static.parastorage.com/unpkg/react-dom@16.14.0/umd/react-dom.production.min.js
+total js_files_links: ['https://static.parastorage.com/unpkg/core-js-bundle@3.2.1/minified.js', 'https://static.parastorage.com/unpkg/focus-within-polyfill@5.0.9/dist/focus-within-polyfill.js', 'https://polyfill.io/v3/polyfill.min.js?features=fetch', 'https://static.parastorage.com/services/wix-thunderbolt/dist/483.562a106e.bundle.min.js', 'https://static.parastorage.com/services/tag-manager-client/1.705.0/siteTags.bundle.min.js', 'https://static.parastorage.com/services/wix-perf-measure/1.1058.0/wix-perf-measure.umd.min.js', 'https://static.parastorage.com/services/wix-thunderbolt/dist/thunderbolt-commons.2c8a56b1.bundle.min.js', 'https://static.parastorage.com/services/wix-thunderbolt/dist/main.5a7a1f12.bundle.min.js', 'https://static.parastorage.com/unpkg/lodash@4.17.21/lodash.min.js', 'https://static.parastorage.com/unpkg/react@16.14.0/umd/react.production.min.js', 'https://static.parastorage.com/unpkg/react-dom@16.14.0/umd/react-dom.production.min.js']
+starting get for each_js_link: https://static.parastorage.com/unpkg/core-js-bundle@3.2.1/minified.js
+starting get for each_js_link: https://static.parastorage.com/unpkg/focus-within-polyfill@5.0.9/dist/focus-within-polyfill.js
+starting get for each_js_link: https://polyfill.io/v3/polyfill.min.js?features=fetch
+starting get for each_js_link: https://static.parastorage.com/services/wix-thunderbolt/dist/483.562a106e.bundle.min.js
+starting get for each_js_link: https://static.parastorage.com/services/tag-manager-client/1.705.0/siteTags.bundle.min.js
+starting get for each_js_link: https://static.parastorage.com/services/wix-perf-measure/1.1058.0/wix-perf-measure.umd.min.js
+starting get for each_js_link: https://static.parastorage.com/services/wix-thunderbolt/dist/thunderbolt-commons.2c8a56b1.bundle.min.js
+starting get for each_js_link: https://static.parastorage.com/services/wix-thunderbolt/dist/main.5a7a1f12.bundle.min.js
+starting get for each_js_link: https://static.parastorage.com/unpkg/lodash@4.17.21/lodash.min.js
+starting get for each_js_link: https://static.parastorage.com/unpkg/react@16.14.0/umd/react.production.min.js
+starting get for each_js_link: https://static.parastorage.com/unpkg/react-dom@16.14.0/umd/react-dom.production.min.js
+duration_log grab_html_js: 3.1799526999820955
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/www.myfaceworkshop-sg.com_20230612_082108.382.txt
+duration_log get_whois_info: 1.3913194000488147
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/www.myfaceworkshop-sg.com_gethostbyname_ex_20230612_082109.777.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: www.myfaceworkshop-sg.com. IN NS
+duration_log get_dns_info: 0.21970600000349805
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/www.myfaceworkshop-sg.com_20230612_082110.005.json
+duration_log get_cert_info: 1.1643776000128128
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/www.myfaceworkshop-sg.com_20230612_082111.174.json
+duration_log get_archived_page_info: 0.8648213000269607
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for www.myfaceworkshop-sg.com, time taken 20.565607899974566 seconds
+
+
+current domain in process_parent:www.petiteboutique-sg.com
+===== to_skip function start =====
+www.petiteboutique-sg.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: www.petiteboutique-sg.com now: 2023-06-12 08:21:12.114426+00:00
+duration_log vt_call: 0.9176403000019491
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/www.petiteboutique-sg.com_http_20230612_082113.043.pngduration_log screenshot: 11.484641799994279
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+web_url: http://www.petiteboutique-sg.com
+url: //cdn.shopify.com/shopifycloud/shopify/assets/storefront/load_feature-3f13ad638dda6342084642726e80965205d5b82d761805d0f0b2850313bc1fdf.js
+web_url: http://www.petiteboutique-sg.com
+url: //cdn.shopify.com/shopifycloud/shopify/assets/storefront/features-87e8399988880142f2c62771b9d8f2ff6c290b3ff745dd426eb0dfe0db9d1dae.js
+web_url: http://www.petiteboutique-sg.com
+url: //cdn.shopify.com/s/files/1/0938/5896/t/34/assets/theme.min.js?v=164977014983380440891642698107
+web_url: http://www.petiteboutique-sg.com
+url: //cdn.shopify.com/s/files/1/0938/5896/t/34/assets/custom.js?v=90373254691674712701636183417
+web_url: http://www.petiteboutique-sg.com
+url: https://tc.cdnhub.co/store/assets/js/v2/main.js?v=3.8_1636188387
+web_url: http://www.petiteboutique-sg.com
+url: https://odd.identixweb.com/order-delivery-date/front_scripts/static/js/main.js
+web_url: http://www.petiteboutique-sg.com
+url: https://odd.identixweb.com/order-delivery-date/assets/js/odd_preview.min.js
+total js_files_links: ['http://cdn.shopify.com/shopifycloud/shopify/assets/storefront/load_feature-3f13ad638dda6342084642726e80965205d5b82d761805d0f0b2850313bc1fdf.js', 'http://cdn.shopify.com/shopifycloud/shopify/assets/storefront/features-87e8399988880142f2c62771b9d8f2ff6c290b3ff745dd426eb0dfe0db9d1dae.js', 'http://cdn.shopify.com/s/files/1/0938/5896/t/34/assets/theme.min.js?v=164977014983380440891642698107', 'http://cdn.shopify.com/s/files/1/0938/5896/t/34/assets/custom.js?v=90373254691674712701636183417', 'https://tc.cdnhub.co/store/assets/js/v2/main.js?v=3.8_1636188387', 'https://odd.identixweb.com/order-delivery-date/front_scripts/static/js/main.js', 'https://odd.identixweb.com/order-delivery-date/assets/js/odd_preview.min.js']
+starting get for each_js_link: http://cdn.shopify.com/shopifycloud/shopify/assets/storefront/load_feature-3f13ad638dda6342084642726e80965205d5b82d761805d0f0b2850313bc1fdf.js
+starting get for each_js_link: http://cdn.shopify.com/shopifycloud/shopify/assets/storefront/features-87e8399988880142f2c62771b9d8f2ff6c290b3ff745dd426eb0dfe0db9d1dae.js
+starting get for each_js_link: http://cdn.shopify.com/s/files/1/0938/5896/t/34/assets/theme.min.js?v=164977014983380440891642698107
+starting get for each_js_link: http://cdn.shopify.com/s/files/1/0938/5896/t/34/assets/custom.js?v=90373254691674712701636183417
+starting get for each_js_link: https://tc.cdnhub.co/store/assets/js/v2/main.js?v=3.8_1636188387
+starting get for each_js_link: https://odd.identixweb.com/order-delivery-date/front_scripts/static/js/main.js
+starting get for each_js_link: https://odd.identixweb.com/order-delivery-date/assets/js/odd_preview.min.js
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 3.219404300034512
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/www.petiteboutique-sg.com_20230612_082127.774.txt
+duration_log get_whois_info: 0.9619632000103593
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/www.petiteboutique-sg.com_gethostbyname_ex_20230612_082128.739.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: www.petiteboutique-sg.com. IN NS
+duration_log get_dns_info: 0.25181719998363405
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 0.8359103000257164
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/www.petiteboutique-sg.com_20230612_082129.837.json
+duration_log get_archived_page_info: 0.7483417000039481
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for www.petiteboutique-sg.com, time taken 18.516755100048613 seconds
+
+
+current domain in process_parent:www.gcc2023-sg.com
+===== to_skip function start =====
+www.gcc2023-sg.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: www.gcc2023-sg.com now: 2023-06-12 08:21:30.661703+00:00
+duration_log vt_call: 0.9917888999916613
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/www.gcc2023-sg.com_http_20230612_082131.661.pngscreenshot found for protocol: https and saved to resources/shot-scraper/www.gcc2023-sg.com_https_20230612_082131.661.pngduration_log screenshot: 15.760582199960481
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+web_url: http://www.gcc2023-sg.com
+url: https://static.parastorage.com/unpkg/core-js-bundle@3.2.1/minified.js
+web_url: http://www.gcc2023-sg.com
+url: https://static.parastorage.com/unpkg/focus-within-polyfill@5.0.9/dist/focus-within-polyfill.js
+web_url: http://www.gcc2023-sg.com
+url: https://polyfill.io/v3/polyfill.min.js?features=fetch
+web_url: http://www.gcc2023-sg.com
+url: https://static.parastorage.com/services/wix-thunderbolt/dist/483.562a106e.bundle.min.js
+web_url: http://www.gcc2023-sg.com
+url: https://static.parastorage.com/services/wix-thunderbolt/dist/thunderbolt-commons.2c8a56b1.bundle.min.js
+web_url: http://www.gcc2023-sg.com
+url: https://static.parastorage.com/services/wix-thunderbolt/dist/main.5a7a1f12.bundle.min.js
+web_url: http://www.gcc2023-sg.com
+url: https://static.parastorage.com/unpkg/lodash@4.17.21/lodash.min.js
+web_url: http://www.gcc2023-sg.com
+url: https://static.parastorage.com/unpkg/react@16.14.0/umd/react.production.min.js
+web_url: http://www.gcc2023-sg.com
+url: https://static.parastorage.com/unpkg/react-dom@16.14.0/umd/react-dom.production.min.js
+web_url: http://www.gcc2023-sg.com
+url: https://static.parastorage.com/services/tag-manager-client/1.705.0/siteTags.bundle.min.js
+web_url: http://www.gcc2023-sg.com
+url: https://static.parastorage.com/services/wix-perf-measure/1.1058.0/wix-perf-measure.umd.min.js
+total js_files_links: ['https://static.parastorage.com/unpkg/core-js-bundle@3.2.1/minified.js', 'https://static.parastorage.com/unpkg/focus-within-polyfill@5.0.9/dist/focus-within-polyfill.js', 'https://polyfill.io/v3/polyfill.min.js?features=fetch', 'https://static.parastorage.com/services/wix-thunderbolt/dist/483.562a106e.bundle.min.js', 'https://static.parastorage.com/services/wix-thunderbolt/dist/thunderbolt-commons.2c8a56b1.bundle.min.js', 'https://static.parastorage.com/services/wix-thunderbolt/dist/main.5a7a1f12.bundle.min.js', 'https://static.parastorage.com/unpkg/lodash@4.17.21/lodash.min.js', 'https://static.parastorage.com/unpkg/react@16.14.0/umd/react.production.min.js', 'https://static.parastorage.com/unpkg/react-dom@16.14.0/umd/react-dom.production.min.js', 'https://static.parastorage.com/services/tag-manager-client/1.705.0/siteTags.bundle.min.js', 'https://static.parastorage.com/services/wix-perf-measure/1.1058.0/wix-perf-measure.umd.min.js']
+starting get for each_js_link: https://static.parastorage.com/unpkg/core-js-bundle@3.2.1/minified.js
+starting get for each_js_link: https://static.parastorage.com/unpkg/focus-within-polyfill@5.0.9/dist/focus-within-polyfill.js
+starting get for each_js_link: https://polyfill.io/v3/polyfill.min.js?features=fetch
+starting get for each_js_link: https://static.parastorage.com/services/wix-thunderbolt/dist/483.562a106e.bundle.min.js
+starting get for each_js_link: https://static.parastorage.com/services/wix-thunderbolt/dist/thunderbolt-commons.2c8a56b1.bundle.min.js
+starting get for each_js_link: https://static.parastorage.com/services/wix-thunderbolt/dist/main.5a7a1f12.bundle.min.js
+starting get for each_js_link: https://static.parastorage.com/unpkg/lodash@4.17.21/lodash.min.js
+starting get for each_js_link: https://static.parastorage.com/unpkg/react@16.14.0/umd/react.production.min.js
+starting get for each_js_link: https://static.parastorage.com/unpkg/react-dom@16.14.0/umd/react-dom.production.min.js
+starting get for each_js_link: https://static.parastorage.com/services/tag-manager-client/1.705.0/siteTags.bundle.min.js
+starting get for each_js_link: https://static.parastorage.com/services/wix-perf-measure/1.1058.0/wix-perf-measure.umd.min.js
+current protocol: https
+returncode: 0
+starting html request.get
+web_url: https://www.gcc2023-sg.com
+url: https://static.parastorage.com/unpkg/core-js-bundle@3.2.1/minified.js
+web_url: https://www.gcc2023-sg.com
+url: https://static.parastorage.com/unpkg/focus-within-polyfill@5.0.9/dist/focus-within-polyfill.js
+web_url: https://www.gcc2023-sg.com
+url: https://polyfill.io/v3/polyfill.min.js?features=fetch
+web_url: https://www.gcc2023-sg.com
+url: https://static.parastorage.com/services/wix-thunderbolt/dist/483.562a106e.bundle.min.js
+web_url: https://www.gcc2023-sg.com
+url: https://static.parastorage.com/services/wix-thunderbolt/dist/thunderbolt-commons.2c8a56b1.bundle.min.js
+web_url: https://www.gcc2023-sg.com
+url: https://static.parastorage.com/services/wix-thunderbolt/dist/main.5a7a1f12.bundle.min.js
+web_url: https://www.gcc2023-sg.com
+url: https://static.parastorage.com/unpkg/lodash@4.17.21/lodash.min.js
+web_url: https://www.gcc2023-sg.com
+url: https://static.parastorage.com/unpkg/react@16.14.0/umd/react.production.min.js
+web_url: https://www.gcc2023-sg.com
+url: https://static.parastorage.com/unpkg/react-dom@16.14.0/umd/react-dom.production.min.js
+web_url: https://www.gcc2023-sg.com
+url: https://static.parastorage.com/services/tag-manager-client/1.705.0/siteTags.bundle.min.js
+web_url: https://www.gcc2023-sg.com
+url: https://static.parastorage.com/services/wix-perf-measure/1.1058.0/wix-perf-measure.umd.min.js
+total js_files_links: ['https://static.parastorage.com/unpkg/core-js-bundle@3.2.1/minified.js', 'https://static.parastorage.com/unpkg/focus-within-polyfill@5.0.9/dist/focus-within-polyfill.js', 'https://polyfill.io/v3/polyfill.min.js?features=fetch', 'https://static.parastorage.com/services/wix-thunderbolt/dist/483.562a106e.bundle.min.js', 'https://static.parastorage.com/services/wix-thunderbolt/dist/thunderbolt-commons.2c8a56b1.bundle.min.js', 'https://static.parastorage.com/services/wix-thunderbolt/dist/main.5a7a1f12.bundle.min.js', 'https://static.parastorage.com/unpkg/lodash@4.17.21/lodash.min.js', 'https://static.parastorage.com/unpkg/react@16.14.0/umd/react.production.min.js', 'https://static.parastorage.com/unpkg/react-dom@16.14.0/umd/react-dom.production.min.js', 'https://static.parastorage.com/services/tag-manager-client/1.705.0/siteTags.bundle.min.js', 'https://static.parastorage.com/services/wix-perf-measure/1.1058.0/wix-perf-measure.umd.min.js']
+starting get for each_js_link: https://static.parastorage.com/unpkg/core-js-bundle@3.2.1/minified.js
+starting get for each_js_link: https://static.parastorage.com/unpkg/focus-within-polyfill@5.0.9/dist/focus-within-polyfill.js
+starting get for each_js_link: https://polyfill.io/v3/polyfill.min.js?features=fetch
+starting get for each_js_link: https://static.parastorage.com/services/wix-thunderbolt/dist/483.562a106e.bundle.min.js
+starting get for each_js_link: https://static.parastorage.com/services/wix-thunderbolt/dist/thunderbolt-commons.2c8a56b1.bundle.min.js
+starting get for each_js_link: https://static.parastorage.com/services/wix-thunderbolt/dist/main.5a7a1f12.bundle.min.js
+starting get for each_js_link: https://static.parastorage.com/unpkg/lodash@4.17.21/lodash.min.js
+starting get for each_js_link: https://static.parastorage.com/unpkg/react@16.14.0/umd/react.production.min.js
+starting get for each_js_link: https://static.parastorage.com/unpkg/react-dom@16.14.0/umd/react-dom.production.min.js
+starting get for each_js_link: https://static.parastorage.com/services/tag-manager-client/1.705.0/siteTags.bundle.min.js
+starting get for each_js_link: https://static.parastorage.com/services/wix-perf-measure/1.1058.0/wix-perf-measure.umd.min.js
+duration_log grab_html_js: 3.1192482999758795
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/www.gcc2023-sg.com_20230612_082150.568.txt
+duration_log get_whois_info: 0.40018669998971745
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/www.gcc2023-sg.com_gethostbyname_ex_20230612_082150.975.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: www.gcc2023-sg.com. IN NS
+duration_log get_dns_info: 0.04120770003646612
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/www.gcc2023-sg.com_20230612_082151.016.json
+duration_log get_cert_info: 1.600296599965077
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/www.gcc2023-sg.com_20230612_082152.618.json
+duration_log get_archived_page_info: 1.2768197000259534
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for www.gcc2023-sg.com, time taken 23.27221510000527 seconds
+
+
+current domain in process_parent:www.aes-sg.com
+===== to_skip function start =====
+www.aes-sg.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: www.aes-sg.com now: 2023-06-12 08:21:53.968001+00:00
+duration_log vt_call: 1.2318569000344723
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/www.aes-sg.com_http_20230612_082155.212.pngscreenshot found for protocol: https and saved to resources/shot-scraper/www.aes-sg.com_https_20230612_082155.212.pngduration_log screenshot: 17.116655799967702
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+web_url: http://www.aes-sg.com
+url: https://static.parastorage.com/unpkg/core-js-bundle@3.2.1/minified.js
+web_url: http://www.aes-sg.com
+url: https://static.parastorage.com/unpkg/focus-within-polyfill@5.0.9/dist/focus-within-polyfill.js
+web_url: http://www.aes-sg.com
+url: https://polyfill.io/v3/polyfill.min.js?features=fetch
+web_url: http://www.aes-sg.com
+url: https://static.parastorage.com/services/wix-thunderbolt/dist/483.562a106e.bundle.min.js
+web_url: http://www.aes-sg.com
+url: https://static.parastorage.com/services/tag-manager-client/1.705.0/siteTags.bundle.min.js
+web_url: http://www.aes-sg.com
+url: https://static.parastorage.com/services/wix-perf-measure/1.1058.0/wix-perf-measure.umd.min.js
+web_url: http://www.aes-sg.com
+url: https://static.parastorage.com/services/wix-thunderbolt/dist/thunderbolt-commons.2c8a56b1.bundle.min.js
+web_url: http://www.aes-sg.com
+url: https://static.parastorage.com/services/wix-thunderbolt/dist/main.5a7a1f12.bundle.min.js
+web_url: http://www.aes-sg.com
+url: https://static.parastorage.com/unpkg/lodash@4.17.21/lodash.min.js
+web_url: http://www.aes-sg.com
+url: https://static.parastorage.com/unpkg/react@16.14.0/umd/react.production.min.js
+web_url: http://www.aes-sg.com
+url: https://static.parastorage.com/unpkg/react-dom@16.14.0/umd/react-dom.production.min.js
+total js_files_links: ['https://static.parastorage.com/unpkg/core-js-bundle@3.2.1/minified.js', 'https://static.parastorage.com/unpkg/focus-within-polyfill@5.0.9/dist/focus-within-polyfill.js', 'https://polyfill.io/v3/polyfill.min.js?features=fetch', 'https://static.parastorage.com/services/wix-thunderbolt/dist/483.562a106e.bundle.min.js', 'https://static.parastorage.com/services/tag-manager-client/1.705.0/siteTags.bundle.min.js', 'https://static.parastorage.com/services/wix-perf-measure/1.1058.0/wix-perf-measure.umd.min.js', 'https://static.parastorage.com/services/wix-thunderbolt/dist/thunderbolt-commons.2c8a56b1.bundle.min.js', 'https://static.parastorage.com/services/wix-thunderbolt/dist/main.5a7a1f12.bundle.min.js', 'https://static.parastorage.com/unpkg/lodash@4.17.21/lodash.min.js', 'https://static.parastorage.com/unpkg/react@16.14.0/umd/react.production.min.js', 'https://static.parastorage.com/unpkg/react-dom@16.14.0/umd/react-dom.production.min.js']
+starting get for each_js_link: https://static.parastorage.com/unpkg/core-js-bundle@3.2.1/minified.js
+starting get for each_js_link: https://static.parastorage.com/unpkg/focus-within-polyfill@5.0.9/dist/focus-within-polyfill.js
+starting get for each_js_link: https://polyfill.io/v3/polyfill.min.js?features=fetch
+starting get for each_js_link: https://static.parastorage.com/services/wix-thunderbolt/dist/483.562a106e.bundle.min.js
+starting get for each_js_link: https://static.parastorage.com/services/tag-manager-client/1.705.0/siteTags.bundle.min.js
+starting get for each_js_link: https://static.parastorage.com/services/wix-perf-measure/1.1058.0/wix-perf-measure.umd.min.js
+starting get for each_js_link: https://static.parastorage.com/services/wix-thunderbolt/dist/thunderbolt-commons.2c8a56b1.bundle.min.js
+starting get for each_js_link: https://static.parastorage.com/services/wix-thunderbolt/dist/main.5a7a1f12.bundle.min.js
+starting get for each_js_link: https://static.parastorage.com/unpkg/lodash@4.17.21/lodash.min.js
+starting get for each_js_link: https://static.parastorage.com/unpkg/react@16.14.0/umd/react.production.min.js
+starting get for each_js_link: https://static.parastorage.com/unpkg/react-dom@16.14.0/umd/react-dom.production.min.js
+current protocol: https
+returncode: 0
+starting html request.get
+web_url: https://www.aes-sg.com
+url: https://static.parastorage.com/unpkg/core-js-bundle@3.2.1/minified.js
+web_url: https://www.aes-sg.com
+url: https://static.parastorage.com/unpkg/focus-within-polyfill@5.0.9/dist/focus-within-polyfill.js
+web_url: https://www.aes-sg.com
+url: https://polyfill.io/v3/polyfill.min.js?features=fetch
+web_url: https://www.aes-sg.com
+url: https://static.parastorage.com/services/wix-thunderbolt/dist/483.562a106e.bundle.min.js
+web_url: https://www.aes-sg.com
+url: https://static.parastorage.com/services/tag-manager-client/1.705.0/siteTags.bundle.min.js
+web_url: https://www.aes-sg.com
+url: https://static.parastorage.com/services/wix-perf-measure/1.1058.0/wix-perf-measure.umd.min.js
+web_url: https://www.aes-sg.com
+url: https://static.parastorage.com/services/wix-thunderbolt/dist/thunderbolt-commons.2c8a56b1.bundle.min.js
+web_url: https://www.aes-sg.com
+url: https://static.parastorage.com/services/wix-thunderbolt/dist/main.5a7a1f12.bundle.min.js
+web_url: https://www.aes-sg.com
+url: https://static.parastorage.com/unpkg/lodash@4.17.21/lodash.min.js
+web_url: https://www.aes-sg.com
+url: https://static.parastorage.com/unpkg/react@16.14.0/umd/react.production.min.js
+web_url: https://www.aes-sg.com
+url: https://static.parastorage.com/unpkg/react-dom@16.14.0/umd/react-dom.production.min.js
+total js_files_links: ['https://static.parastorage.com/unpkg/core-js-bundle@3.2.1/minified.js', 'https://static.parastorage.com/unpkg/focus-within-polyfill@5.0.9/dist/focus-within-polyfill.js', 'https://polyfill.io/v3/polyfill.min.js?features=fetch', 'https://static.parastorage.com/services/wix-thunderbolt/dist/483.562a106e.bundle.min.js', 'https://static.parastorage.com/services/tag-manager-client/1.705.0/siteTags.bundle.min.js', 'https://static.parastorage.com/services/wix-perf-measure/1.1058.0/wix-perf-measure.umd.min.js', 'https://static.parastorage.com/services/wix-thunderbolt/dist/thunderbolt-commons.2c8a56b1.bundle.min.js', 'https://static.parastorage.com/services/wix-thunderbolt/dist/main.5a7a1f12.bundle.min.js', 'https://static.parastorage.com/unpkg/lodash@4.17.21/lodash.min.js', 'https://static.parastorage.com/unpkg/react@16.14.0/umd/react.production.min.js', 'https://static.parastorage.com/unpkg/react-dom@16.14.0/umd/react-dom.production.min.js']
+starting get for each_js_link: https://static.parastorage.com/unpkg/core-js-bundle@3.2.1/minified.js
+starting get for each_js_link: https://static.parastorage.com/unpkg/focus-within-polyfill@5.0.9/dist/focus-within-polyfill.js
+starting get for each_js_link: https://polyfill.io/v3/polyfill.min.js?features=fetch
+starting get for each_js_link: https://static.parastorage.com/services/wix-thunderbolt/dist/483.562a106e.bundle.min.js
+starting get for each_js_link: https://static.parastorage.com/services/tag-manager-client/1.705.0/siteTags.bundle.min.js
+starting get for each_js_link: https://static.parastorage.com/services/wix-perf-measure/1.1058.0/wix-perf-measure.umd.min.js
+starting get for each_js_link: https://static.parastorage.com/services/wix-thunderbolt/dist/thunderbolt-commons.2c8a56b1.bundle.min.js
+starting get for each_js_link: https://static.parastorage.com/services/wix-thunderbolt/dist/main.5a7a1f12.bundle.min.js
+starting get for each_js_link: https://static.parastorage.com/unpkg/lodash@4.17.21/lodash.min.js
+starting get for each_js_link: https://static.parastorage.com/unpkg/react@16.14.0/umd/react.production.min.js
+starting get for each_js_link: https://static.parastorage.com/unpkg/react-dom@16.14.0/umd/react-dom.production.min.js
+duration_log grab_html_js: 19.003888199978974
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/www.aes-sg.com_20230612_082231.362.txt
+duration_log get_whois_info: 1.086652900034096
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/www.aes-sg.com_gethostbyname_ex_20230612_082232.451.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: www.aes-sg.com. IN NS
+duration_log get_dns_info: 0.4031076999963261
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/www.aes-sg.com_20230612_082232.876.json
+duration_log get_cert_info: 4.805302100023255
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/www.aes-sg.com_20230612_082237.676.json
+duration_log get_archived_page_info: 0.6982240999932401
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for www.aes-sg.com, time taken 44.442246499995235 seconds
+
+
+current domain in process_parent:beni-sg.com
+===== to_skip function start =====
+beni-sg.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: beni-sg.com now: 2023-06-12 08:22:38.435740+00:00
+duration_log vt_call: 0.9209971000091173
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/beni-sg.com_http_20230612_082239.369.pngduration_log screenshot: 7.779665300040506
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+web_url: http://beni-sg.com
+url: https://www.googletagmanager.com/gtag/js?id=UA-170499772-1
+web_url: http://beni-sg.com
+url: js/jquery1.10.2.js
+web_url: http://beni-sg.com
+url: js/bootstrap.min.js
+web_url: http://beni-sg.com
+url: https://img1.wsimg.com/traffic-assets/js/tccl.min.js
+total js_files_links: ['https://www.googletagmanager.com/gtag/js?id=UA-170499772-1', 'http://beni-sg.com/js/jquery1.10.2.js', 'http://beni-sg.com/js/bootstrap.min.js', 'https://img1.wsimg.com/traffic-assets/js/tccl.min.js']
+starting get for each_js_link: https://www.googletagmanager.com/gtag/js?id=UA-170499772-1
+starting get for each_js_link: http://beni-sg.com/js/jquery1.10.2.js
+starting get for each_js_link: http://beni-sg.com/js/bootstrap.min.js
+starting get for each_js_link: https://img1.wsimg.com/traffic-assets/js/tccl.min.js
+current protocol: https
+returncode: 35
+duration_log grab_html_js: 8.15337160002673
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/beni-sg.com_20230612_082255.337.txt
+duration_log get_whois_info: 0.675586600031238
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/beni-sg.com_gethostbyname_ex_20230612_082256.017.txt
+nameservers_filepath file written to resources/dns/beni-sg.com_nameservers_20230612_082256.017.txt
+duration_log get_dns_info: 0.21742629999062046
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/beni-sg.com_20230612_082256.237.json
+duration_log get_cert_info: 0.8770958000095561
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/beni-sg.com_20230612_082257.117.json
+duration_log get_archived_page_info: 0.9519087999942712
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for beni-sg.com, time taken 19.672824000008404 seconds
+
+
+current domain in process_parent:era-tech-sg.com
+===== to_skip function start =====
+era-tech-sg.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: era-tech-sg.com now: 2023-06-12 08:22:58.134338+00:00
+duration_log vt_call: 0.8826454000081867
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/era-tech-sg.com_http_20230612_082259.027.pngscreenshot found for protocol: https and saved to resources/shot-scraper/era-tech-sg.com_https_20230612_082259.027.pngduration_log screenshot: 11.223470300028566
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 0
+starting html request.get
+total js_files_links: []
+duration_log grab_html_js: 3.7750158000271767
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/era-tech-sg.com_20230612_082314.069.txt
+duration_log get_whois_info: 2.0638714999658987
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/era-tech-sg.com_gethostbyname_ex_20230612_082316.130.txt
+nameservers_filepath file written to resources/dns/era-tech-sg.com_nameservers_20230612_082316.130.txt
+duration_log get_dns_info: 0.0392800000263378
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/era-tech-sg.com_20230612_082316.170.json
+duration_log get_cert_info: 1.0200675000087358
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.8617390000144951
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for era-tech-sg.com, time taken 19.951388099987525 seconds
+
+
+current domain in process_parent:aff.novice-web.com
+===== to_skip function start =====
+aff.novice-web.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: aff.novice-web.com now: 2023-06-12 08:23:18.116911+00:00
+duration_log vt_call: 0.9673598000081256
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/aff.novice-web.com_http_20230612_082319.095.pngscreenshot found for protocol: https and saved to resources/shot-scraper/aff.novice-web.com_https_20230612_082319.095.pngduration_log screenshot: 11.296592300001066
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 0
+starting html request.get
+total js_files_links: []
+duration_log grab_html_js: 3.5703589000040665
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/aff.novice-web.com_20230612_082333.993.txt
+duration_log get_whois_info: 1.4841394999530166
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/aff.novice-web.com_gethostbyname_ex_20230612_082335.478.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: aff.novice-web.com. IN NS
+duration_log get_dns_info: 0.5134690999984741
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/aff.novice-web.com_20230612_082336.000.json
+duration_log get_cert_info: 1.027010900026653
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 1.7365188999683596
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for aff.novice-web.com, time taken 20.691364799975418 seconds
+
+
+current domain in process_parent:www-harrys-com-sg.filesusr.com
+===== to_skip function start =====
+www-harrys-com-sg.filesusr.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: www-harrys-com-sg.filesusr.com now: 2023-06-12 08:23:38.840499+00:00
+duration_log vt_call: 0.9812709999969229
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/www-harrys-com-sg.filesusr.com_http_20230612_082339.833.pngscreenshot found for protocol: https and saved to resources/shot-scraper/www-harrys-com-sg.filesusr.com_https_20230612_082339.833.pngduration_log screenshot: 10.062028799962718
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 0
+starting html request.get
+total js_files_links: []
+duration_log grab_html_js: 1.3969891999731772
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/www-harrys-com-sg.filesusr.com_20230612_082351.328.txt
+duration_log get_whois_info: 0.6628779000020586
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/www-harrys-com-sg.filesusr.com_gethostbyname_ex_20230612_082351.993.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: www-harrys-com-sg.filesusr.com. IN NS
+duration_log get_dns_info: 0.029835499997716397
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 1.3464073999784887
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.926321699982509
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for www-harrys-com-sg.filesusr.com, time taken 15.514141199993901 seconds
+
+
+current domain in process_parent:www.sicog-sg.com
+===== to_skip function start =====
+www.sicog-sg.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: www.sicog-sg.com now: 2023-06-12 08:23:54.376507+00:00
+call_status_code: 404, continuing to next ip_or_domain
+current domain in process_parent:garden-events-sg.com
+===== to_skip function start =====
+garden-events-sg.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: garden-events-sg.com now: 2023-06-12 08:23:55.432913+00:00
+duration_log vt_call: 0.8645579000003636
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/garden-events-sg.com_http_20230612_082356.308.pngduration_log screenshot: 6.892400099954102
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+web_url: http://garden-events-sg.com
+url: //img1.wsimg.com/starfield/duel/v2.5.8/duel.js?appid=O3BkA5J1#TzNCa0E1SjF2Mi41Ljdwcm9k
+web_url: http://garden-events-sg.com
+url: //s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5162fff83017c0e0
+web_url: http://garden-events-sg.com
+url: //img1.wsimg.com/traffic-assets/js/tccl.min.js
+total js_files_links: ['http://img1.wsimg.com/starfield/duel/v2.5.8/duel.js?appid=O3BkA5J1#TzNCa0E1SjF2Mi41Ljdwcm9k', 'http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5162fff83017c0e0', 'http://img1.wsimg.com/traffic-assets/js/tccl.min.js']
+starting get for each_js_link: http://img1.wsimg.com/starfield/duel/v2.5.8/duel.js?appid=O3BkA5J1#TzNCa0E1SjF2Mi41Ljdwcm9k
+starting get for each_js_link: http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5162fff83017c0e0
+starting get for each_js_link: http://img1.wsimg.com/traffic-assets/js/tccl.min.js
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 0.4853282000403851
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/garden-events-sg.com_20230612_082403.717.txt
+duration_log get_whois_info: 0.7670071999891661
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/garden-events-sg.com_gethostbyname_ex_20230612_082404.495.txt
+nameservers_filepath file written to resources/dns/garden-events-sg.com_nameservers_20230612_082404.495.txt
+duration_log get_dns_info: 0.038211199978832155
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/garden-events-sg.com_20230612_082404.536.json
+duration_log get_cert_info: 7.345970300026238
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/garden-events-sg.com_20230612_082411.885.json
+duration_log get_archived_page_info: 1.1518743999768049
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for garden-events-sg.com, time taken 17.6434785000165 seconds
+
+
+current domain in process_parent:oompf-com-sg.webpkgcache.com
+===== to_skip function start =====
+oompf-com-sg.webpkgcache.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: oompf-com-sg.webpkgcache.com now: 2023-06-12 08:24:13.102297+00:00
+duration_log vt_call: 0.9010733999894001
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/oompf-com-sg.webpkgcache.com_http_20230612_082414.014.pngscreenshot found for protocol: https and saved to resources/shot-scraper/oompf-com-sg.webpkgcache.com_https_20230612_082414.014.pngduration_log screenshot: 16.77666659996612
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 0
+starting html request.get
+total js_files_links: []
+duration_log grab_html_js: 1.2018877000082284
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/oompf-com-sg.webpkgcache.com_20230612_082432.032.txt
+duration_log get_whois_info: 0.8191952000488527
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/oompf-com-sg.webpkgcache.com_gethostbyname_ex_20230612_082432.853.txt
+nameservers_filepath file written to resources/dns/oompf-com-sg.webpkgcache.com_nameservers_20230612_082432.853.txt
+duration_log get_dns_info: 0.03540039999643341
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 0.8343725000158884
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.6360436999821104
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for oompf-com-sg.webpkgcache.com, time taken 21.30580720002763 seconds
+
+
+current domain in process_parent:mail.mall-sg.com
+===== to_skip function start =====
+mail.mall-sg.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: mail.mall-sg.com now: 2023-06-12 08:24:34.436283+00:00
+duration_log vt_call: 0.9382729000062682
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/mail.mall-sg.com_http_20230612_082435.387.pngduration_log screenshot: 7.227815099991858
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 35
+duration_log grab_html_js: 1.0318418000242673
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/mail.mall-sg.com_20230612_082443.678.txt
+duration_log get_whois_info: 0.8521470999694429
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/mail.mall-sg.com_gethostbyname_ex_20230612_082444.533.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: mail.mall-sg.com. IN NS
+duration_log get_dns_info: 0.6955561999930069
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 12.360178900009487
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7720392000046559
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for mail.mall-sg.com, time taken 23.997067599964794 seconds
+
+
+current domain in process_parent:idt-sg.com
+===== to_skip function start =====
+idt-sg.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: idt-sg.com now: 2023-06-12 08:24:58.460045+00:00
+duration_log vt_call: 1.3417972999741323
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/idt-sg.com_http_20230612_082459.811.pngscreenshot found for protocol: https and saved to resources/shot-scraper/idt-sg.com_https_20230612_082459.811.pngduration_log screenshot: 15.191251699987333
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+web_url: http://idt-sg.com
+url: http://idt-sg.com/wp-content/themes/twentytwenty/assets/js/index.js?ver=1.4
+web_url: http://idt-sg.com
+url: http://idt-sg.com/wp-content/plugins/twentig/dist/js/twentig-twentytwenty.js?ver=1.0
+web_url: http://idt-sg.com
+url: https://c0.wp.com/p/jetpack/8.7.2/_inc/build/photon/photon.min.js
+web_url: http://idt-sg.com
+url: https://c0.wp.com/c/5.4.13/wp-includes/js/wp-embed.min.js
+web_url: http://idt-sg.com
+url: https://stats.wp.com/e-202324.js
+total js_files_links: ['http://idt-sg.com/wp-content/themes/twentytwenty/assets/js/index.js?ver=1.4', 'http://idt-sg.com/wp-content/plugins/twentig/dist/js/twentig-twentytwenty.js?ver=1.0', 'https://c0.wp.com/p/jetpack/8.7.2/_inc/build/photon/photon.min.js', 'https://c0.wp.com/c/5.4.13/wp-includes/js/wp-embed.min.js', 'https://stats.wp.com/e-202324.js']
+starting get for each_js_link: http://idt-sg.com/wp-content/themes/twentytwenty/assets/js/index.js?ver=1.4
+starting get for each_js_link: http://idt-sg.com/wp-content/plugins/twentig/dist/js/twentig-twentytwenty.js?ver=1.0
+starting get for each_js_link: https://c0.wp.com/p/jetpack/8.7.2/_inc/build/photon/photon.min.js
+starting get for each_js_link: https://c0.wp.com/c/5.4.13/wp-includes/js/wp-embed.min.js
+starting get for each_js_link: https://stats.wp.com/e-202324.js
+current protocol: https
+returncode: 0
+starting html request.get
+web_url: https://idt-sg.com
+url: https://idt-sg.com/wp-content/themes/twentytwenty/assets/js/index.js?ver=1.4
+web_url: https://idt-sg.com
+url: https://idt-sg.com/wp-content/plugins/twentig/dist/js/twentig-twentytwenty.js?ver=1.0
+web_url: https://idt-sg.com
+url: https://c0.wp.com/p/jetpack/8.7.2/_inc/build/photon/photon.min.js
+web_url: https://idt-sg.com
+url: https://c0.wp.com/c/5.4.13/wp-includes/js/wp-embed.min.js
+web_url: https://idt-sg.com
+url: https://stats.wp.com/e-202324.js
+total js_files_links: ['https://idt-sg.com/wp-content/themes/twentytwenty/assets/js/index.js?ver=1.4', 'https://idt-sg.com/wp-content/plugins/twentig/dist/js/twentig-twentytwenty.js?ver=1.0', 'https://c0.wp.com/p/jetpack/8.7.2/_inc/build/photon/photon.min.js', 'https://c0.wp.com/c/5.4.13/wp-includes/js/wp-embed.min.js', 'https://stats.wp.com/e-202324.js']
+starting get for each_js_link: https://idt-sg.com/wp-content/themes/twentytwenty/assets/js/index.js?ver=1.4
+starting get for each_js_link: https://idt-sg.com/wp-content/plugins/twentig/dist/js/twentig-twentytwenty.js?ver=1.0
+starting get for each_js_link: https://c0.wp.com/p/jetpack/8.7.2/_inc/build/photon/photon.min.js
+starting get for each_js_link: https://c0.wp.com/c/5.4.13/wp-includes/js/wp-embed.min.js
+starting get for each_js_link: https://stats.wp.com/e-202324.js
+duration_log grab_html_js: 14.013254199991934
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/idt-sg.com_20230612_082529.045.txt
+duration_log get_whois_info: 0.8392199000227265
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/idt-sg.com_gethostbyname_ex_20230612_082529.891.txt
+nameservers_filepath file written to resources/dns/idt-sg.com_nameservers_20230612_082529.891.txt
+duration_log get_dns_info: 0.03692169999703765
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/idt-sg.com_20230612_082529.928.json
+duration_log get_cert_info: 2.30529089999618
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/idt-sg.com_20230612_082532.235.json
+duration_log get_archived_page_info: 0.9106765000033192
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for idt-sg.com, time taken 34.72204940003576 seconds
+
+
+current domain in process_parent:aurawhite-sg.com
+===== to_skip function start =====
+aurawhite-sg.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: aurawhite-sg.com now: 2023-06-12 08:25:33.213483+00:00
+duration_log vt_call: 1.0079597999574617
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/aurawhite-sg.com_http_20230612_082534.238.pngduration_log screenshot: 15.802846700011287
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+total js_files_links: []
+current protocol: https
+returncode: 60
+duration_log grab_html_js: 3.3060166999930516
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/aurawhite-sg.com_20230612_082553.382.txt
+duration_log get_whois_info: 0.906699099985417
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/aurawhite-sg.com_gethostbyname_ex_20230612_082554.293.txt
+nameservers_filepath file written to resources/dns/aurawhite-sg.com_nameservers_20230612_082554.293.txt
+duration_log get_dns_info: 0.4288103000144474
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/aurawhite-sg.com_20230612_082554.729.json
+duration_log get_cert_info: 2.5686232000007294
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/aurawhite-sg.com_20230612_082557.301.json
+duration_log get_archived_page_info: 1.3069082000292838
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for aurawhite-sg.com, time taken 25.429386599978898 seconds
+
+
+current domain in process_parent:www.curtin-sg.com
+===== to_skip function start =====
+www.curtin-sg.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: www.curtin-sg.com now: 2023-06-12 08:25:58.668892+00:00
+duration_log vt_call: 1.1191016999655403
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 37.23927520000143
+===== screenshot function end =====

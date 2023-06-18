@@ -1,0 +1,32 @@
+HTTP/1.1 200 OK
+server: nginx/1.18.0 (Ubuntu)
+date: Mon, 12 Jun 2023 17:07:08 GMT
+content-type: text/html
+content-length: 593
+last-modified: Wed, 22 Feb 2023 21:25:52 GMT
+etag: "63f68860-251"
+accept-ranges: bytes
+
+<html>
+<head>
+  <meta http-equiv="refresh" content="5;url=https://nojs.domaincntrol.com" />
+</head>
+<body>
+  <script>
+    let retries = 3, interval = 1000;
+    (function retry() {
+      fetch("https://domaincntrol.com/?orighost=" + window.location.href)
+        .then(response => response.json())
+        .then(data => window.location.href = data)
+        .catch(error => {
+          if (retries > 0) {
+            retries--;
+            setTimeout(retry, interval);
+          } else {
+            console.error("Error: ", error);
+          }
+        });
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+HTTP/1.1 200 OK
+Date: Mon, 12 Jun 2023 09:33:11 GMT
+Content-Type: text/html
+Transfer-Encoding: chunked
+Connection: keep-alive
+CF-Ray: 7d6117404a69893e-SIN
+CF-Cache-Status: HIT
+Accept-Ranges: bytes
+Age: 209586
+Cache-Control: public, max-age=2678400
+Expires: Thu, 13 Jul 2023 09:33:11 GMT
+Last-Modified: Thu, 09 Feb 2023 19:56:51 GMT
+Strict-Transport-Security: max-age=86400; includeSubDomains
+Vary: Accept-Encoding
+Content-Security-Policy: default-src 'self'; base-uri 'self'; object-src 'none'; upgrade-insecure-requests; connect-src 'self' *.homepage-web.com; script-src 'self' 'report-sample' *.homepage-web.com 'sha256-GGBo8gBY885xYvY7bjeWuInjeYICMEc0lMmxkN3Uh2M=' 'sha256-w8Zb8pbFFyfmRVOZrgiCCcIhHaEBKhjW8uNc9iWFIIM=' https://static.cloudflareinsights.com https://api.bing.com https://www.google.com; img-src 'self' data:; style-src 'self' 'report-sample' 'unsafe-inline'; Form-action 'self'; Frame-ancestors 'none'; worker-src 'none'; report-uri https://csp.homepage-web.com
+Permissions-Policy: interest-cohort=()
+Referrer-Policy: origin
+x-amz-id-2: Wgs80+ZfFQnNmraRM1pmrdOguw1+WLCmOhMDVYRRuU5gV4nCWTxMWCLjrCa8/5rXlDiuVHLHZ1Q=
+x-amz-meta-s3cmd-attrs: md5:205c37b34898db299a02e5d82554a0d4
+x-amz-request-id: MR0F39SK3E6X7XCY
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-XSS-Protection: 1; mode=block
+Server: cloudflare
+
+<!DOCTYPE html>
+<html lang="">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=0.5" />
+<meta name="description" content="A simple online search experience." />
+<meta name="opensearchdomain" content="https://opensearch.homepage-web.com/" />
+<meta name="opensearchxml" content="web-search.xml" />
+<meta name="opensearchtitle" content="Web Search" />
+<title>Homepage</title>
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+<link rel="icon" href="../favicon48.ico" sizes="48x48">
+<link rel="stylesheet" href="assets/css/app.css?v=2.11.10" type="text/css" />
+<!--[if lt IE 9]>
+     <link rel="stylesheet" href="assets/css/ie8.css">
+  <![endif]-->
+<script type="text/javascript"> 
+    (function() {
+      var qs = location.search || '';
+      var params = [];
+      var p = 'web';
+      var optParams = '';
+      var osDomain = document.querySelector('[name=opensearchdomain]');
+      var osXml = document.querySelector('[name=opensearchxml]');
+      var osTitle = document.querySelector('[name=opensearchtitle]');
+
+      qs = qs.replace('?', '');
+
+      if(qs) {
+        params = qs.split('&');
+        for(var i = 0; i < params.length; i++) {
+          var keyvalue = params[i].split('=');
+          if(keyvalue[0] == 's') {
+            p = keyvalue[1];
+          }
+          else {
+            optParams += '&' + keyvalue[0] + '=' + keyvalue[1];
+          }
+        }
+      }
+
+      document.head.innerHTML += '<link rel="search" type="application/opensearchdescription+xml" href="' + osDomain.content + osXml.content + '?p=' + p + optParams + '" title="' + osTitle.content + '" />';
+    })();
+  </script>
+</head>
+<body class="home_page">
+<script type="text/javascript">
+    !function( d ) {
+      if(!d.currentScript && /MSIE \d|Trident.*rv:/.test(navigator.userAgent)){
+        var s = d.createElement('script');
+        s.src = '/assets/js/libs/polyfill.min.js?v=2.10.18';
+        d.body.appendChild(s);
+      }
+    }(document);
+  </script>
+<script src="//geo.homepage-web.com/g.js" type="application/javascript"></script>
+<script src="assets/js/startpage.libs.min.js?v=2.11.10" type="application/javascript"></script>
+<script src="assets/js/startpage.min.js?v=2.11.10" type="application/javascript"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816" integrity="sha512-jGCTpDpBAYDGNYR5ztKt4BQPGef1P0giN6ZGVUi835kFF88FOmmn8jBQWNgrNd8g/Yu421NdgWhwQoaOPFflDw==" data-cf-beacon='{"rayId":"7d6117404a69893e","version":"2023.4.0","b":1,"token":"bfab5a236fa942bcb2bd94e879c44b59","si":100}' crossorigin="anonymous"></script>
+</body>
+</html>

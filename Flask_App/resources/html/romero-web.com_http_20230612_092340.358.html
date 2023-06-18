@@ -1,0 +1,342 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Mon, 12 Jun 2023 09:23:43 GMT
+Content-Type: text/html
+Content-Length: 21739
+Last-Modified: Thu, 31 Dec 2020 18:22:18 GMT
+Connection: keep-alive
+Vary: Accept-Encoding
+ETag: "5fee16da-54eb"
+Accept-Ranges: bytes
+
+<!DOCTYPE HTML> <html class="no-js responsivelayout supportsbreakout" lang="de" data-zpdebug="false" data-ptr=""> <head> <script>
+		document.documentElement.className = document.documentElement.className.replace(/no-js/g, 'js');
+	</script> <title>Herzlich willkommen!</title> <meta charset="utf-8"> <meta name="description" content=""> <meta name="keywords" content=""> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <meta name="generator" content="Zeta Producer 15.4.1.0, ZP15F, 30.07.2020 10:32:32"> <meta name="robots" content="index, follow"> <link rel="shortcut icon" type="image/x-icon" href="assets/stock-files/standard-favicon.ico"> <script>
+		// if after 1000ms we haven't got webfonts, show the user something, a FOUT is better than nothing
+		// http://kevindew.me/post/47052453532/a-fallback-for-when-google-web-font-loader-fails
+		setTimeout(function() {
+			// you can have the webfont.js cached but still have no classes fire and you will have a window.WebFontConfig object
+			if ( ! ("WebFont" in window)) {
+				// non wfl loader class name because their events could still fire
+				document.getElementsByTagName("html")[0].className += " wf-fail";
+			}
+		}, 1000);
+	
+		WebFontConfig = {
+			google: { families: [ 'Roboto:300,400,700' ] }
+		};
+	</script> <script src="assets/js/webfont/1.6.28/webfont.js"></script> <noscript> <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:300,400,700"> </noscript> <link rel="stylesheet" type="text/css" href="assets/bundle.css?v=637396052456169024"> <link rel="stylesheet" type="text/css" href="assets/bundle-print.css?v=637396049786634705" media="print"> <style>
+	.zpinfooverlay{		box-shadow: 0 0 3px #333333;		padding: 12px 2.5em 12px 12px;		position: fixed;		width: 100%;		left: 0;		bottom: 0;		box-sizing: border-box;		z-index:5000;		background-color: rgba(255,255,255,0.8) !important;		color: #333333 !important;		text-align: center;		opacity: 0;		-webkit-transform: translateY(100%);		transform: translateY(100%);		transition: all 1s ease-in-out;	}	.zpinfooverlay.on{		opacity: 1;		-webkit-transform: translateY(0);		transform: translateY(0);	}	.zpinfooverlay.off{		display: none;		visibility: hidden;	}	.zpinfooverlay p{		margin: 0 !important;		padding: 0 !important;	}	.zpinfooverlay a.zpclose{		color: #333333 !important;		border: 1px solid #333333 !important;		text-decoration: none;		position: absolute;		top: 12px;		right: 12px;		line-height: 1;		padding: 1px 2px;	}	.zpinfooverlay a.zpclose:hover{		background-color: #333333 !important;		color: #ffffff !important;	}	.zpinfooverlay a.button{		color: #ffffff !important;		background-color: #0A92EB !important;		border: 1px solid #0A92EB !important;		margin: 4px 0 !important;		padding: 0 !important;	}	.zpinfooverlay a.button:hover{		color: #0A92EB !important;		background-color: #ffffff !important;		border: 1px solid #0A92EB !important;		margin: 4px 0 !important;		padding: 0 !important;	}	.zpinfooverlay img.zplogo{		float: right !important;		margin-left: 20px !important;		margin-bottom: 20px !important;	}
+</style> <script type="text/javascript" src="assets/bundle.js?v=637396052456218898"></script> <script>
+			function search1(){
+				if (document.forms.searchengine1.q.value.length == 0) {
+					alert("Bitte geben Sie einen Suchbegriff ein.");
+					return false;
+				}
+			}
+		</script> </head> <body id="flat-responsive" class="notouch haswebdescription hasfixednav hasheader"> <a id="top"></a> <div id="header"> <div id="webdescription"> <div id="logo"><a href="index.html"><img src="assets/logo.png" width="75" height="46" alt="index.html"></a></div> <div id="webtext"> <div id="webname"><a href="index.html">Romero-web</a></div> </div> </div> <div id="nav"> <ul class="zpmarkactive default submenu touchhovermenu clickhovermenu out" data-trianglemode="true"><li class="logo"><a class="active" href="index.html"><img src="assets/logo.png" width="75" height="46" alt="index.html"></a></li><li class="zpnodefaults haschilds"><a class="active" href="index.html">Startseite</a><ul><li class="zpnodefaults"><a href="unterseite-1.html">News</a></li><li class="zpnodefaults"><a href="http://romero-web.com/dokuwiki/doku.php?id=start">Wiki</a></li><li class="zpnodefaults"><a href="unterseite-3.html">Links</a></li></ul></li><li class="zpnodefaults haschilds"><a href="kontakt.html">Kontakt</a><ul><li class="zpnodefaults"><a href="wegbeschreibung.html">Wegbeschreibung</a></li></ul></li><li class="zpnodefaults"><a href="impressum.html">Impressum</a></li><li class="overflownonly"><a href="#" id="mobilenavtoggle" class="tabletonly toggle" aria-label="Menü ein-/ausblenden">&#9776; Menü</a></li></ul> <script>
+$z(document).ready(function(){
+	// we find the active page's a-tag and then walk upwards the dom marking the respective parent li as active/open
+	$z('ul.zpmarkactive.default li a.active').parents('li').each(function(index){
+		var that = this;
+		// do not add open class to immediate parent li
+		if ( index > 0 ){
+			$z(that).addClass('open');
+		}
+		$z(that).addClass('active');
+		//$z(that).find('> a').addClass('active');
+	});
+	$z("ul.zpmarkactive.default").removeClass("zpmarkactive");
+	
+	/*
+	$z("ul.zpmarkactive.default li:has(a.active)").addClass("active");
+	$z("ul.zpmarkactive.default li.haschilds > a").addClass("haschilds");
+	$z("ul.zpmarkactive.default li.haschilds:has(a.active)").addClass("active");
+	$z("ul.zpmarkactive.default li.active > a").addClass("active");
+	
+	$z("ul.zpmarkactive.default").removeClass("zpmarkactive")
+	*/
+});
+</script> </div> </div> <div id="slider" class="noprint"> <a id="a1760"></a> <div id="headerslider" class="flexslider"> <div class="flex-container" style="height: 0; padding-bottom: 38.81511746680286%;"> <ul class="slides"> <li> <img src="media/images/ausrtralia-opera-orig-large.jpg" width="979" height="380" alt=""> </li> </ul> </div> </div> <script>
+		var autoplay = false;
+		
+		function initSlider(){
+			$z('#headerslider .flex-container').flexslider({
+				useCSS: true,
+				touch: true,
+				keyboard: true,
+				itemMargin: 0,
+				animation: 'slide',
+				controlsContainer: '#headerslider.flexslider',
+				slideshow: autoplay,
+				slideshowSpeed: 7000,
+				directionNav: true,
+				controlNav: false,
+				randomize: false,
+				
+				pauseOnHover: true,
+				smoothHeight: false,
+				prevText: "zur&#252;ck",
+				nextText: "weiter"
+			});
+		}
+		$z(document).ready(function() {
+			autoplay = true;
+			if ( $z("body").hasClass("zpreducemotion") ){
+				autoplay = false;
+			}
+			
+			if ( $z('#headerslider .flex-container ul.slides li img').length > 0 ){
+				// init flexslider after 1st image has loaded, so have dimensions as quickly as possible without having to wait too long on window loaded or such and can start right with doc ready
+				$z('#headerslider .flex-container ul.slides li img').first().one("load", initSlider).each(function() {
+					if(this.complete) $z(this).trigger('load');
+				}); // .each() is to work around a browser bugs which don't fire load() for cached images http://stackoverflow.com/a/3877079
+			} 
+			else{
+				// also init flexslider if it doesn't contain images and is text only
+				initSlider();
+			}
+			
+			// activate links for individual slideshow
+			$z('#headerslider .flex-container ul.slides li[data-clickurl]').css("cursor","pointer");
+			$z('#headerslider .flex-container ul.slides li[data-clickurl]').click(function (event){
+				// Because this script captures clicks for a container, it will also fire when a regular link inside the container 
+				// is clicked. Therefore, we check below, if a regular link i.e. <a href="#"> was the target of the click.
+				// Depending on the browser used, event.target might not be available, but event.srcElement would…
+				var targ;
+				if (event.target){
+					targ = event.target;
+				}
+				else if (event.srcElement) {
+					targ = event.srcElement;
+				}
+				if (targ.nodeName == "A") {
+					// a regular link i.e. in a Caption was clicked. Return early, so the link's href doesn't get overridden
+					return;
+				}
+				
+				if ( $z(this).data("clicktarget") ){
+					window.open($z(this).data("clickurl"), $z(this).data("clicktarget"));
+				}
+				else{
+					window.location = $z(this).data("clickurl");
+				}
+				event.preventDefault;
+				return false;
+			});
+		});
+  	</script> </div> <div id="content" class="main"> <div class="zparea zpgrid" data-numcolumns="" data-areaname="Standard" data-pageid="604"> <div id="container_37" class="zpContainer first last " data-zpeleel="container" data-zpleid="37"> <div class="zpRow standard " data-row-id="390"> <div class="zpColumn odd zpColumnWidth3 c4 first" style=" " data-column-id="443"> <div class="zpColumnItem"> <div id="a1761" data-article-id="1761" data-zpleid="1761" class="articlearea zpwBild popupimage"> <div id="igal1761" class="zpImageGallery" data-kind="singleimage" data-titleshow="1" data-htmltitle="" data-width="auto" data-height="auto" data-bordercolor="default" data-borderwidth="0" data-margin="0" data-titleposition="outside" data-transition="elastic" data-slideshow="0"> <a class="fancybox preloadimg zpnolayoutlinkstyles" href="media/images/image-placeholder-pos-large.png" title=""> <noscript class="lazy"><img class="singleImage" src="media/images/image-placeholder-pos.png" width="449" height="337" alt=""></noscript> <span class="zp-sronly">Bild in Lightbox öffnen (open image in lightbox).</span> </a> </div> </div> </div> <div class="zpColumnItem"> <div id="a1762" data-article-id="1762" data-zpleid="1762" class="articlearea zpwText"> <h2 data-zpfieldname="headline">Über uns</h2> <p>Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipiscing elit. Cras eleifend ultrices arcu, sagittis pharetra ligula pretium bibendum. Cum sociis <a href="#">natoque</a> penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p> </div> </div> </div> <div class="zpColumn even zpColumnWidth3 c4" style=" " data-column-id="444"> <div class="zpColumnItem"> <div id="a1763" data-article-id="1763" data-zpleid="1763" class="articlearea zpwText" style="margin-bottom: 25px; "> <h2 data-zpfieldname="headline">Aktuelles</h2> <p>Etiam urna tellus, lobortis vitae <strong>consequat</strong> eget, tristique id nisi. Nullam lacus urna, condimentum ut iaculis quis, <a href="#">viverra</a> vitae enim. </p> <p>Vivamus massa libero, ullamcorper a viverra lobortis, blandit vel est. </p> </div> </div> <div class="zpColumnItem"> <div id="a1764" data-article-id="1764" data-zpleid="1764" class="articlearea zpwBild popupimage"> <div id="igal1764" class="zpImageGallery" data-kind="singleimage" data-titleshow="1" data-htmltitle="" data-width="auto" data-height="auto" data-bordercolor="default" data-borderwidth="0" data-margin="0" data-titleposition="outside" data-transition="elastic" data-slideshow="0"> <a class="fancybox preloadimg zpnolayoutlinkstyles" href="media/images/image-placeholder-neg-large.png" title=""> <noscript class="lazy"><img class="singleImage" src="media/images/image-placeholder-neg.png" width="449" height="337" alt=""></noscript> <span class="zp-sronly">Bild in Lightbox öffnen (open image in lightbox).</span> </a> </div> </div> </div> </div> <div class="zpColumn odd zpColumnWidth3 c4 last" style=" " data-column-id="445"> <div class="zpColumnItem"> <div id="a1765" data-article-id="1765" data-zpleid="1765" class="articlearea zpwBild popupimage"> <div id="igal1765" class="zpImageGallery" data-kind="singleimage" data-titleshow="1" data-htmltitle="" data-width="auto" data-height="auto" data-bordercolor="default" data-borderwidth="0" data-margin="0" data-titleposition="outside" data-transition="elastic" data-slideshow="0"> <a class="fancybox preloadimg zpnolayoutlinkstyles" href="media/images/image-placeholder-pos-large.png" title=""> <noscript class="lazy"><img class="singleImage" src="media/images/image-placeholder-pos.png" width="449" height="337" alt=""></noscript> <span class="zp-sronly">Bild in Lightbox öffnen (open image in lightbox).</span> </a> </div> </div> </div> <div class="zpColumnItem"> <div id="a1766" data-article-id="1766" data-zpleid="1766" class="articlearea zpwText"> <h2 data-zpfieldname="headline">Leistungen</h2> <p>Vestibulum luctus, purus eget eleifend fermentum, risus ipsum tristique ipsum, in elementum turpis augue eget purus. Morbi eu purus <a href="#">commodo</a> magna condimentum lobortis et eget lorem.</p> </div> </div> </div> </div> </div> </div> <script>
+	var thezpinfooverlay = '\
+	<div class="zpinfooverlay" id="zpinfooverlay">  \
+		<a class="zpclose" title="Schließen / Close" href="#off">✕</a>\
+		<p>Ohne Vorkenntnisse eigene Website erstellen. <a target="zp" href="https://www.zeta-producer.com/de/index.html?utm_source=App&utm_medium=banner&utm_campaign=Start-Page-Banner" class="button"><span>Jetzt kostenlos testen</span></a></p>\
+	</div>\
+	';
+		  
+	$z(document).ready(function () {	
+		$z("#zpinfooverlay").remove();
+		$z("body").append(thezpinfooverlay);
+		setTimeout(function() {
+			var overlayheight= $z("#zpinfooverlay").outerHeight();
+			// in case we have an Info-Banner on the bottom, slide it up together with the overlay
+			$z(".alertbanner.bottom").css("transition", "all 1s ease-in-out").css("bottom", overlayheight+"px");
+			$z("body").css("padding-bottom", overlayheight+"px");
+			$z("#zpinfooverlay").addClass("on");
+		}, 5000);
+
+		$z("#zpinfooverlay a.zpclose").click(function(e){
+			$z("#zpinfooverlay").addClass("off");
+			// in case we have an Info-Banner on the bottom, slide it down again
+			$z(".alertbanner.bottom").css("bottom", "0");
+			e.preventDefault();
+			return false;
+		});
+	});
+</script> </div> <div id="search" class="container"> <script>
+		function getParameterByNamezpsearchform(name) {
+			name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+			var regexS = "[\\?&]" + name + "=([^&#]*)";
+			var regex = new RegExp(regexS);
+			var results = regex.exec(window.location.search);
+			if(results == null) {
+				return "";
+			}
+			else {
+				return decodeURIComponent(results[1].replace(/\+/g, " "));
+			}
+		}
+		function encode_htmlzpsearchform(astring) { //helps prevent XSS e.g. when printing search strings
+			astring = typeof astring !== 'undefined' ? astring : "";
+
+			astring = astring.replace(/</g, "&lt;");
+			astring = astring.replace(/>/g, "&gt;");
+			astring = astring.replace(/"/g, "&quo" + "t;");
+			astring = astring.replace(/'/g, "&#x27;");
+			astring = astring.replace(/\//g, "&#x2F;");
+			astring = astring.replace(/\[\$/g, "");
+			astring = astring.replace(/\$\]/g, "");
+
+			return astring;
+		}
+		function searchzpsearchform() {
+			var formId = "zpsearchform";
+			if (document.getElementById(formId).q.value == 'Suchbegriff') {
+				return false;
+			}
+			else if ($z.trim(document.getElementById(formId).q.value).length === 0) {
+				alert("Bitte geben Sie einen Suchbegriff ein.");
+				return false;
+			}
+			else{
+				return;
+			}
+		}
+	</script> <form id="zpsearchform" name="searchengine1" onsubmit="return searchzpsearchform()" action="suche.html" method="get" class="zpsearchform"> <input id="zpsearchfield" class="zpsearchfield typetext" type="text" name="q" title="Suche" placeholder="Suchbegriff" aria-label="Suchbegriff"> <input id="zpsearchbutton" class="zpsearchbutton" type="image" name="submit" src="assets/stock-images/magnifier.png" alt="Suchen" title="Suchen" aria-label="Suchen"> </form> <script>
+	$(document).ready(function(){
+		// set form field value to searchstring
+		var tmpSearchstring = getParameterByNamezpsearchform("q");
+		if ( tmpSearchstring ){
+			// fill layout searchfield with searchsting
+			document.getElementById("zpsearchform").q.value = tmpSearchstring;
+			// fill search page searchfield with searchsting
+			document.getElementById("zpsearchengine").q2.value = tmpSearchstring;
+			// focus search page searchfield
+			document.getElementById("zpsearchengine").q2.focus();
+		}
+	});
+	</script> </div> <div id="footer" class="container"> <div id="xmenu" class=""> <a class="xmenulink" href="index.html">Startseite</a> <a class="xmenulink" href="kontakt.html">Kontakt</a> <a class="xmenulink" href="impressum.html">Impressum</a> </div> <div id="copyright"> © 2020 Romero-web. <a href="https://www.zeta-producer.com" class="zp">Website erstellt mit Zeta Producer CMS</a> </div> </div> <div id="totop" class="container noprint"> <a href="#top" class="zpSO-Uplink-Flat zpnolayoutlinkstyles" title="Nach oben / To top"></a> </div> <script>	
+		function setoverflown(s){
+			var retcode = false;
+			if ( $z("#nav").is(":hover") || ! $z("#nav > ul > li").length ){
+				// mouse is over nav, which opens submenues and might cause the overflow
+				// OR empty nav - needed because for IE an empty #nav == overflown()
+				return false;
+			}
+			
+			$z("#nav > ul").removeClass("overflown");
+			if ( $z("#nav:not(.on) > ul").overflown() ){
+				// nav is already overflown by 1st-Level Menu entries (too many entries)
+				$z("#nav > ul").addClass("overflown");
+				retcode = true;
+			}
+			else{
+				// on non touch devices, check if nav would be overflown horizontally if all submenues are visible (i.e. too many submenues expanding to the right)
+				$z("#nav > ul ul:not(.nocalcoverflow)").css("display", "block");
+				if ( $z("#nav:not(.on) > ul").overflown("x") ){
+					$z("#nav > ul").addClass("overflown");
+					retcode = true;
+				}
+				$z("#nav > ul ul:not(.nocalcoverflow)").css("display", "");
+				
+				// if the previous check didn't already match, check if one of the submenus is higher than the available space in the window because the nav is fixed and wouldn't scroll
+				if ( !retcode && $z("#nav.fixed").length ){
+					$z("#nav.fixed > ul ul:not(.nocalcoverflow)").css("display", "block");
+					$z("#nav.fixed > ul ul:not(.nocalcoverflow)").each(function(){
+						var eltop = $z(this).offset().top - $(window).scrollTop(); // gets the effective top position relative to the window
+						if ( (eltop + $(this).innerHeight()) > $z(window).innerHeight() ){
+							// submenu doesn't fit on screen and would be cut off
+							$z("#nav.fixed > ul").addClass("overflown");
+							retcode = true;
+							$z("#nav.fixed > ul ul:not(.nocalcoverflow)").css("display", "");
+							// exit the each loop early
+							return false;
+						}
+					});
+					$z("#nav.fixed > ul ul:not(.nocalcoverflow)").css("display", "");
+				}
+			}
+			
+			// see if we need to scale to the logo to fit besides the mobile menu-button
+			var availspace = $z("#nav > ul").width() - $z("#nav > ul > li.overflownonly").width();
+			$z("#nav > ul > li.logo").css("max-width", availspace + "px");
+			
+			return retcode;
+		}
+		
+		function stickyNav(topoffset){
+			// make navigations menu sticky when scrolling the menu past the top of the window
+			var scrolltop = $z("body").scrollTop() || (document.documentElement && document.documentElement.scrollTop) || 0;
+			
+			if ( !$z("#nav ul ul:visible").length && scrolltop - topoffset >= 0){
+				$z("body").addClass("padded");
+				$z("#nav").addClass("fixed");
+			}
+			else{
+				$z("body").removeClass("padded");
+				$z("#nav").removeClass("fixed");
+			}
+			// with a little delay, check if the menu gets overflown (i.e. because we're also displaying the logo in the nav now
+			setTimeout(function(){setoverflown();}, 100);
+		}
+		// globals
+		var navOffset;
+		
+		$z(document).ready(function(){
+			// smooth scroll the layout specific go to top link
+			$z("a.zpSO-Uplink-Flat").click(function(e){
+				e.preventDefault();
+				if ( $z(this.hash).length ){
+					$z('html,body').animate({
+							scrollTop: $z(this.hash).offset().top - parseInt($z("body").css("padding-top"))
+					}, 500);
+					window.location.hash = this.hash;
+				}
+			});
+		
+			// switches the Mobile Navigation-Menu on/off, when "Menu" link is clicked.
+			$z("a#mobilenavtoggle").on("click", function(e){
+				e.preventDefault();
+				$z("#nav").toggleClass("on");
+				setoverflown();
+			});	
+			
+			setoverflown();
+			var resizeTimeout = null;
+			$z(window).resize(zpthrottle(100, function(event) {
+				var event = event || window.event;
+				if ( event && $z(event.target.nodeType).length == 0 ){// enable window.resize only for the window object (resizing elements might also trigger window.resize) which doesn't have a nodeType
+					setoverflown();
+				}
+			}));	
+			
+			if ( "false" == "false" && ("true" == "true" || "false" == "true") ){
+				navOffset = $z("#nav:not(.fixed)").offset().top;
+				setTimeout(function(){stickyNav(navOffset);}, 100);
+			}
+		});
+		
+		$z(window).on('load', function(){
+			setTimeout(function(){setoverflown();}, 500);
+			var navheight = 0;
+			if ( "false" == "false" ){
+				navheight = $z("#nav").outerHeight();
+			}
+			// pull anchors below fixed header into visible area
+			if ( location.hash != "" && $z(':target').length ) {
+				$z('html,body').animate({scrollTop: $z(':target').offset().top - navheight - 10 }, 600);
+			}
+			$z("a[href*='#']:not([href='#'])").not(".zpNoScroll").click(function () {
+				var target = $z(this).attr("href");
+				target = target.substring(target.indexOf("#"));
+				if ( $z(target).length ){
+					$z('html,body').animate({scrollTop: $z(target).offset().top - navheight - 10 }, 600);
+				}
+			});
+			
+			if ( "false" == "false" && ("true" == "true" || "false" == "true") ){
+				if ( $z("#nav:not(.fixed)").length ){
+					navOffset = $z("#nav:not(.fixed)").offset().top;
+				}
+				setTimeout(function(){stickyNav(navOffset);}, 500);
+				$z(window).scroll(zpthrottle(100, function(event) {
+					stickyNav(navOffset);
+				}));
+			}
+
+		});
+	</script> 
+<!--
+* Layout: Flat Responsive by StS
+* $Id: default.html 90130 2020-10-28 10:39:15Z sseiz $
+-->
+ </body> </html>

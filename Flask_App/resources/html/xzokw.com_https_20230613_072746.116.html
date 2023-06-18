@@ -1,0 +1,199 @@
+HTTP/1.1 200 OK
+Date: Tue, 13 Jun 2023 07:27:55 GMT
+Content-Type: text/html
+Transfer-Encoding: chunked
+Connection: keep-alive
+Last-Modified: Wed, 10 May 2023 12:50:07 GMT
+Cache-Control: private, no-store, no-cache, must-revalidate, proxy-revalidate
+Accept-Ranges: bytes
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=lLxmdzoGiIKrxahfTe9RyrOtz%2FMRa3nv3PhWpC9OixGTl9M7Fv84q9ZFXN4L4F0BPI7sliEa8jwdtSYG2%2FQG20AnVKiPefi8XYXzU3j6A5EjrpaPXmMa0LJumzk%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 7d689d24aa7b3f8c-SIN
+alt-svc: h3=":443"; ma=86400
+
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><link rel="icon" href="/favicon.ico"><title>hepsiburada</title><style>html,
+      body,
+      #app {
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+      }
+      .chromeframe {
+        margin: 0.2em 0;
+        background: #ccc;
+        color: #000;
+        padding: 0.2em 0;
+      }
+
+      #loader-wrapper {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 999999;
+      }
+
+      #loader {
+        display: block;
+        position: relative;
+        left: 50%;
+        top: 50%;
+        width: 150px;
+        height: 150px;
+        margin: -75px 0 0 -75px;
+        border-radius: 50%;
+        border: 3px solid transparent;
+        border-top-color: #f58606;
+        -webkit-animation: spin 2s linear infinite;
+        -ms-animation: spin 2s linear infinite;
+        -moz-animation: spin 2s linear infinite;
+        -o-animation: spin 2s linear infinite;
+        animation: spin 2s linear infinite;
+        z-index: 1001;
+      }
+
+      #loader:before {
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        right: 5px;
+        bottom: 5px;
+        border-radius: 50%;
+        border: 3px solid transparent;
+        border-top-color: #f58606;
+        -webkit-animation: spin 3s linear infinite;
+        -moz-animation: spin 3s linear infinite;
+        -o-animation: spin 3s linear infinite;
+        -ms-animation: spin 3s linear infinite;
+        animation: spin 3s linear infinite;
+      }
+
+      #loader:after {
+        content: "";
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        right: 15px;
+        bottom: 15px;
+        border-radius: 50%;
+        border: 3px solid transparent;
+        border-top-color: #f58606;
+        -moz-animation: spin 1.5s linear infinite;
+        -o-animation: spin 1.5s linear infinite;
+        -ms-animation: spin 1.5s linear infinite;
+        -webkit-animation: spin 1.5s linear infinite;
+        animation: spin 1.5s linear infinite;
+      }
+
+
+      @-webkit-keyframes spin {
+        0% {
+          -webkit-transform: rotate(0deg);
+          -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+        }
+        100% {
+          -webkit-transform: rotate(360deg);
+          -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+
+      @keyframes spin {
+        0% {
+          -webkit-transform: rotate(0deg);
+          -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+        }
+        100% {
+          -webkit-transform: rotate(360deg);
+          -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+
+
+      #loader-wrapper .loader-section {
+        position: fixed;
+        top: 0;
+        width: 51%;
+        height: 100%;
+        /*background: #7171C6;*/
+        z-index: 1000;
+        -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+        transform: translateX(0);
+      }
+
+      #loader-wrapper .loader-section.section-left {
+        left: 0;
+      }
+
+      #loader-wrapper .loader-section.section-right {
+        right: 0;
+      }
+
+
+      .loaded #loader-wrapper .loader-section.section-left {
+        -webkit-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+        transform: translateX(-100%);
+        -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+        transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+      }
+
+      .loaded #loader-wrapper .loader-section.section-right {
+        -webkit-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+        transform: translateX(100%);
+        -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+        transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+      }
+
+      .loaded #loader {
+        opacity: 0;
+        -webkit-transition: all 0.3s ease-out;
+        transition: all 0.3s ease-out;
+      }
+
+      .loaded #loader-wrapper {
+        visibility: hidden;
+        -webkit-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+        transform: translateY(-100%);
+        -webkit-transition: all 0.3s 1s ease-out;
+        transition: all 0.3s 1s ease-out;
+      }
+
+      .no-js #loader-wrapper {
+        display: none;
+      }
+
+      .no-js h1 {
+        color: #222222;
+      }
+
+      #loader-wrapper .load_title {
+        font-family: 'Open Sans';
+        color: #f58606;
+        font-size: 19px;
+        width: 100%;
+        text-align: center;
+        z-index: 9999999999999;
+        position: absolute;
+        top: 60%;
+        opacity: 1;
+        line-height: 30px;
+      }
+
+      #loader-wrapper .load_title span {
+        font-weight: normal;
+        font-style: italic;
+        font-size: 13px;
+        color: #f58606;
+        opacity: 0.5;
+      }</style><link href="/static/css/chunk-vantUI.524fcd59.css" rel="stylesheet"><link href="/static/css/app.25aacddc.css" rel="stylesheet"></head><body><noscript><strong>We're sorry but hepsiburada doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"><div id="loader-wrapper"><div id="loader"></div><div class="loader-section section-left"></div><div class="loader-section section-right"></div></div></div><script>(function(e){function c(c){for(var a,u,r=c[0],f=c[1],d=c[2],k=0,b=[];k<r.length;k++)u=r[k],Object.prototype.hasOwnProperty.call(t,u)&&t[u]&&b.push(t[u][0]),t[u]=0;for(a in f)Object.prototype.hasOwnProperty.call(f,a)&&(e[a]=f[a]);o&&o(c);while(b.length)b.shift()();return h.push.apply(h,d||[]),n()}function n(){for(var e,c=0;c<h.length;c++){for(var n=h[c],a=!0,u=1;u<n.length;u++){var r=n[u];0!==t[r]&&(a=!1)}a&&(h.splice(c--,1),e=f(f.s=n[0]))}return e}var a={},u={runtime:0},t={runtime:0},h=[];function r(e){return f.p+"static/js/"+({}[e]||e)+"."+{"chunk-0b759c92":"e4c359f0","chunk-add2cc52":"8c7e5d9f","chunk-1210a710":"bf951d00","chunk-1676a2a7":"004d7e67","chunk-1b834514":"2ecbf4c8","chunk-2218af5d":"e46c584d","chunk-23f74af2":"6fe29ca2","chunk-282c81a8":"6805ceb0","chunk-2d0b2b28":"a1dc7a2f","chunk-9469c642":"c52f810c","chunk-2d0bce83":"8b657721","chunk-385ae524":"00557239","chunk-40af90f3":"2cb45379","chunk-40bdbf37":"381727fb","chunk-4c0b4321":"040bcb49","chunk-528fb908":"74b22dac","chunk-5f3ef75f":"8060d080","chunk-62f2104d":"d395981e","chunk-68563e2c":"b8520c33","chunk-690b11ae":"60ef743a","chunk-6ad5d271":"31e5a982","chunk-717a97f3":"263a69d0","chunk-7444ca3e":"59d1acbe","chunk-7dd470b3":"996d0ab9","chunk-01887558":"c6c48ad0","chunk-82435b3e":"669772e5","chunk-8b73e616":"aabb2f8d","chunk-9ddc3cc4":"2d96d8dd","chunk-a24bff86":"8722bcb1","chunk-a83a0b64":"6d52af6f","chunk-aa9a2278":"c3fcf447","chunk-3e73ff6c":"1c193370","chunk-61e90874":"c744498e","chunk-ae8547ea":"a528be1f","chunk-b8676b12":"400cf289","chunk-d0aba404":"a1b87968","chunk-d86de0aa":"45a44681","chunk-de57dd96":"fd517056","chunk-e9ac4ef6":"1f3597ac","chunk-a7c9994a":"1ff1ade2"}[e]+".js"}function f(c){if(a[c])return a[c].exports;var n=a[c]={i:c,l:!1,exports:{}};return e[c].call(n.exports,n,n.exports,f),n.l=!0,n.exports}f.e=function(e){var c=[],n={"chunk-add2cc52":1,"chunk-1210a710":1,"chunk-1676a2a7":1,"chunk-1b834514":1,"chunk-2218af5d":1,"chunk-23f74af2":1,"chunk-282c81a8":1,"chunk-9469c642":1,"chunk-385ae524":1,"chunk-40af90f3":1,"chunk-40bdbf37":1,"chunk-4c0b4321":1,"chunk-528fb908":1,"chunk-62f2104d":1,"chunk-68563e2c":1,"chunk-690b11ae":1,"chunk-6ad5d271":1,"chunk-717a97f3":1,"chunk-7444ca3e":1,"chunk-7dd470b3":1,"chunk-01887558":1,"chunk-82435b3e":1,"chunk-8b73e616":1,"chunk-9ddc3cc4":1,"chunk-a24bff86":1,"chunk-a83a0b64":1,"chunk-3e73ff6c":1,"chunk-61e90874":1,"chunk-ae8547ea":1,"chunk-b8676b12":1,"chunk-d0aba404":1,"chunk-de57dd96":1,"chunk-a7c9994a":1};u[e]?c.push(u[e]):0!==u[e]&&n[e]&&c.push(u[e]=new Promise((function(c,n){for(var a="static/css/"+({}[e]||e)+"."+{"chunk-0b759c92":"31d6cfe0","chunk-add2cc52":"00f828a0","chunk-1210a710":"a9f87acd","chunk-1676a2a7":"2315eb6c","chunk-1b834514":"5ad2e692","chunk-2218af5d":"58a78fb1","chunk-23f74af2":"f9089cbf","chunk-282c81a8":"06700d3d","chunk-2d0b2b28":"31d6cfe0","chunk-9469c642":"d7ebd2be","chunk-2d0bce83":"31d6cfe0","chunk-385ae524":"c37b7056","chunk-40af90f3":"2cf523d2","chunk-40bdbf37":"b1d38744","chunk-4c0b4321":"08a30474","chunk-528fb908":"f4a1f8de","chunk-5f3ef75f":"31d6cfe0","chunk-62f2104d":"1b11cb60","chunk-68563e2c":"94efce28","chunk-690b11ae":"75c7d69e","chunk-6ad5d271":"e7363bc3","chunk-717a97f3":"a3aba9e6","chunk-7444ca3e":"2e335647","chunk-7dd470b3":"a9ef5088","chunk-01887558":"95546720","chunk-82435b3e":"1b367a4f","chunk-8b73e616":"255223db","chunk-9ddc3cc4":"65501ad1","chunk-a24bff86":"d68935b8","chunk-a83a0b64":"5226509a","chunk-aa9a2278":"31d6cfe0","chunk-3e73ff6c":"b2598c86","chunk-61e90874":"b0221084","chunk-ae8547ea":"ed0f09aa","chunk-b8676b12":"9c47b669","chunk-d0aba404":"6e226c57","chunk-d86de0aa":"31d6cfe0","chunk-de57dd96":"b09b8f7f","chunk-e9ac4ef6":"31d6cfe0","chunk-a7c9994a":"2becca87"}[e]+".css",t=f.p+a,h=document.getElementsByTagName("link"),r=0;r<h.length;r++){var d=h[r],k=d.getAttribute("data-href")||d.getAttribute("href");if("stylesheet"===d.rel&&(k===a||k===t))return c()}var b=document.getElementsByTagName("style");for(r=0;r<b.length;r++){d=b[r],k=d.getAttribute("data-href");if(k===a||k===t)return c()}var o=document.createElement("link");o.rel="stylesheet",o.type="text/css",o.onload=c,o.onerror=function(c){var a=c&&c.target&&c.target.src||t,h=new Error("Loading CSS chunk "+e+" failed.\n("+a+")");h.code="CSS_CHUNK_LOAD_FAILED",h.request=a,delete u[e],o.parentNode.removeChild(o),n(h)},o.href=t;var i=document.getElementsByTagName("head")[0];i.appendChild(o)})).then((function(){u[e]=0})));var a=t[e];if(0!==a)if(a)c.push(a[2]);else{var h=new Promise((function(c,n){a=t[e]=[c,n]}));c.push(a[2]=h);var d,k=document.createElement("script");k.charset="utf-8",k.timeout=120,f.nc&&k.setAttribute("nonce",f.nc),k.src=r(e);var b=new Error;d=function(c){k.onerror=k.onload=null,clearTimeout(o);var n=t[e];if(0!==n){if(n){var a=c&&("load"===c.type?"missing":c.type),u=c&&c.target&&c.target.src;b.message="Loading chunk "+e+" failed.\n("+a+": "+u+")",b.name="ChunkLoadError",b.type=a,b.request=u,n[1](b)}t[e]=void 0}};var o=setTimeout((function(){d({type:"timeout",target:k})}),12e4);k.onerror=k.onload=d,document.head.appendChild(k)}return Promise.all(c)},f.m=e,f.c=a,f.d=function(e,c,n){f.o(e,c)||Object.defineProperty(e,c,{enumerable:!0,get:n})},f.r=function(e){"undefined"!==typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},f.t=function(e,c){if(1&c&&(e=f(e)),8&c)return e;if(4&c&&"object"===typeof e&&e&&e.__esModule)return e;var n=Object.create(null);if(f.r(n),Object.defineProperty(n,"default",{enumerable:!0,value:e}),2&c&&"string"!=typeof e)for(var a in e)f.d(n,a,function(c){return e[c]}.bind(null,a));return n},f.n=function(e){var c=e&&e.__esModule?function(){return e["default"]}:function(){return e};return f.d(c,"a",c),c},f.o=function(e,c){return Object.prototype.hasOwnProperty.call(e,c)},f.p="/",f.oe=function(e){throw console.error(e),e};var d=window["webpackJsonp"]=window["webpackJsonp"]||[],k=d.push.bind(d);d.push=c,d=d.slice();for(var b=0;b<d.length;b++)c(d[b]);var o=k;n()})([]);</script><script src="/static/js/chunk-vantUI.326b8afa.js"></script><script src="/static/js/chunk-libs.f99d987f.js"></script><script src="/static/js/app.b864927c.js"></script></body></html>

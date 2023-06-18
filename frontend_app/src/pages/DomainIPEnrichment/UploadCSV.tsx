@@ -73,7 +73,7 @@ class UploadCSV extends Component<{}, IUploadCSVState> {
       console.log("form data:", formData)
 
       // Assuming you have the endpoint URL, you can use fetch or any other networking library to send the file content to the POST endpoint
-      const endpointURL = "http://localhost:5000/upload";
+      const endpointURL = "http://localhost:5001/upload";
       const config = {
         headers: {
             "Content-Type": "multipart/form-data"

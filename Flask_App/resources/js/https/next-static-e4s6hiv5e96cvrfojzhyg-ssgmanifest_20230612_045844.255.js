@@ -1,0 +1,1 @@
+self.__SSG_MANIFEST=new Set(["\u002F","\u002Fabout-clinic","\u002Fcontact-us","\u002Fdoctor-profile","\u002Fservices"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()
