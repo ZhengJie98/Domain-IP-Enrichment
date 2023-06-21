@@ -1,0 +1,1 @@
+angular.module('myWebsiteApp', ['imageLobby', 'navModule', 'pageSection', 'mailtoForm']);

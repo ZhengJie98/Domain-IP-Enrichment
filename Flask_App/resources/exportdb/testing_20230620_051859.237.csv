@@ -1,0 +1,4 @@
+,_id,domain,domain_test_col1,domain_test_col2,x_days_ago,to_skip,last_analysis_date,reputation,last_analysis_stats,total_votes,vt_file_location,added_timestamp,processed_timestamp,failure_count,is_priority,source,has_screenshot,has_html,has_javascript,files_log,duration_log,whois_info,dns_info,cert_info,archived_page_info,log_file
+0,64909d6a0335dff02fb2d33e,azttcall.com,1,2,7,,,,,,,19-06-2023T18:24:42,,0,0,resources/upload_folder/domain_test1_20230619_182442.680.csv,,,,,,,,,,
+1,64909da20335dff02fb2d33f,azttcall.com,1,2,7,,,,,,,19-06-2023T18:25:38,,0,0,resources/upload_folder/domain_test322_20230619_182538.808.csv,,,,,,,,,,
+2,64912a1cccdac5cd80bd7b16,azttcall.com,1,2,7,,,,,,,20-06-2023T04:25:00,,0,0,resources/upload_folder/domain_test322_20230620_042500.744.csv,,,,,,,,,,

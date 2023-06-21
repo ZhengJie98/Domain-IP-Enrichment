@@ -1,0 +1,71 @@
+current domain in process_parent:azttcall.com
+===== to_skip function start =====
+azttcall.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: azttcall.com now: 2023-06-20 11:15:52.261041+00:00
+duration_log vt_call: 1.37213780003367
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 14.913676400028635
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 6
+current protocol: https
+returncode: 6
+duration_log grab_html_js: 0.10270970000419766
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/azttcall.com_20230620_111608.703.txt
+duration_log get_whois_info: 0.8992795000085607
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+socket.gethostbyname_ex() exception triggered: [Errno 11001] getaddrinfo failed
+dns.resolver.query() exception triggered: The DNS query name does not exist: azttcall.com.
+duration_log get_dns_info: 0.030447900004219264
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/azttcall.com_20230620_111609.655.json
+duration_log get_cert_info: 2.4566869999980554
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/azttcall.com_20230620_111612.117.json
+duration_log get_archived_page_info: 0.7482259999960661
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for azttcall.com, time taken 20.67570100002922 seconds
+
+
+current ip in process_parent:1.1.1.1
+===== to_skip function start =====
+1.1.1.1 has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: 1.1.1.1 now: 2023-06-20 11:16:12.974305+00:00
+duration_log vt_call: 1.0013733999803662
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/1.1.1.1_http_20230620_111613.988.pngscreenshot found for protocol: https and saved to resources/shot-scraper/1.1.1.1_https_20230620_111613.988.pngduration_log screenshot: 15.509009999979753
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 0
+starting html request.get
+web_url: http://1.1.1.1
+url: /site-16bcc13e690cc771698c.js
+total js_files_links: ['http://1.1.1.1/site-16bcc13e690cc771698c.js']
+starting get for each_js_link: http://1.1.1.1/site-16bcc13e690cc771698c.js
+current protocol: https
+returncode: 0
+starting html request.get
+web_url: https://1.1.1.1
+url: /site-16bcc13e690cc771698c.js
+total js_files_links: ['https://1.1.1.1/site-16bcc13e690cc771698c.js']
+starting get for each_js_link: https://1.1.1.1/site-16bcc13e690cc771698c.js
+duration_log grab_html_js: 0.8011118000140414
+===== grab_html_js function end =====
+replacement successful
+replacement SUCCESSFUL for 1.1.1.1, time taken 17.455448599997908 seconds
+
+

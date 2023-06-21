@@ -1,0 +1,45 @@
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+Cache-Control: public, max-age=0
+Content-Type: text/html; charset=UTF-8
+Date: Mon, 19 Jun 2023 10:55:14 GMT
+ETag: W/"857-16bb0b51cbc"
+Last-Modified: Tue, 02 Jul 2019 03:23:07 GMT
+Server: nginx/1.12.2
+X-Powered-By: Express
+Content-Length: 2135
+Connection: keep-alive
+
+<!DOCTYPE html>
+<html lang="en" ng-app="myWebsiteApp">
+  <head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" type="image/x-icon" href="styles/favicon.png" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="lib/angular/angular.js"></script>
+    <script src="app.module.js"></script>
+    <script src="nav-module/nav-module.module.js"></script>
+    <script src="nav-module/nav-module.component.js"></script>
+    <script src="image-lobby/image-lobby.module.js"></script>
+    <script src="image-lobby/image-lobby.component.js"></script>
+    <script src="my-work/my-work.module.js"></script>
+    <script src="my-work/my-work.component.js"></script>
+    <script src="page-section/page-section.module.js"></script>
+    <script src="page-section/page-section.component.js"></script>
+    <script src="mailto-form/mailto-form.module.js"></script>
+    <script src="mailto-form/mailto-form.component.js"></script>
+  </head>
+  <body>
+    <nav-component></nav-component>
+    <image-lobby></image-lobby>
+    <page-section name="About Me" count="1"></page-section>
+    <page-section name="My Work" count="2"></page-section>
+    <page-section name="Technologies" count="3"></page-section>
+    <page-section name="Contact Me" count="4"></page-section>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

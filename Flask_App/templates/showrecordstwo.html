@@ -1,0 +1,84 @@
+{% include 'layout.html' %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Display</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        
+        .pagination {
+            margin-top: 20px;
+        }
+        
+        .pagination a {
+            display: inline-block;
+            padding: 8px 16px;
+            text-decoration: none;
+            border: 1px solid #ddd;
+            margin-right: 5px;
+        }
+        
+        .pagination a.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+        
+        .pagination a:hover:not(.active) {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                {% for column in columns if column != 'files_log' %}
+                    <th>{{ column }}</th>
+                {% endfor %}
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in rows %}
+                <tr>
+                    {% for value in row %}
+                        {% if not loop.first and columns[loop.index0] != 'files_log' %}
+                            <td>{{ value }}</td>
+                        {% endif %}
+                    {% endfor %}
+                </tr>
+                <tr style="height: 1px;"></tr>  <!-- Line separator -->
+            {% endfor %}
+        </tbody>
+    </table>
+    
+    <div class="pagination">
+        {% if has_prev %}
+            <a href="/showrecordstwo?page={{ prev_page }}">Previous</a>
+        {% endif %}
+        
+        {% for page_num in pages %}
+            {% if page_num == current_page %}
+                <a href="/showrecordstwo?page={{ page_num }}" class="active">{{ page_num }}</a>
+            {% else %}
+                <a href="/showrecordstwo?page={{ page_num }}">{{ page_num }}</a>
+            {% endif %}
+        {% endfor %}
+        
+        {% if has_next %}
+            <a href="/showrecordstwo?page={{ next_page }}">Next</a>
+        {% endif %}
+        
+        <a href="/exportcsv?page={{ current_page }}">Export as CSV</a>
+    </div>
+</body>
+</html>

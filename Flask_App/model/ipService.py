@@ -97,7 +97,7 @@ domain_template = {
         "cert_info": None,
         "archived_page_info" : None,
         "log_file" : None
-        
+         
     }
 
 
@@ -106,9 +106,12 @@ API_KEY = '207349263f9c5edd176cc079fa8000a5ab912df7d9e91154842c08031658675d'  #@
 
 
 
-client = MongoClient('localhost',27017)
+# client = MongoClient('localhost',27017)
+client = MongoClient('mongodb://readWrite:%20mongo1DB%20@18.141.141.56:27017/')
 # db = client['jon_list']
-db = client['michelle_list']
+# db = client['michelle_list']
+db = client[config.db]
+
 # db = client['test_list']
 # col = db["ip"]
 # collection = "domain_older"
@@ -117,7 +120,9 @@ db = client['michelle_list']
 # collection = "testing_environ"
 # collection = "testing_environ_archived_pages_url"
 # collection = "may12_ips"
-collection = "mirai_aurora_deimos"
+# collection = "mirai_aurora_deimos"
+# collection = "testing"
+collection = config.collection
 # collection = "20230612_yd_nonyd"
 # col = db["domain"]
 # col = db["domain_new"]
@@ -126,9 +131,10 @@ collection = "mirai_aurora_deimos"
 # col = db["domain_v2"]
 # col = db["domain_url"]
 col = db[collection]
+
 # col = db["domain_older_v2"]
 
-
+X_DAYS_AGO = 7
 
 
 ## Saves to db and a harddisk file
@@ -159,6 +165,7 @@ def save_ipfile(file):
         df[k] = ip_template[k]
     
     df["x_days_ago"] = X_DAYS_AGO
+    # df["x_days_ago"] = 7
     df["added_timestamp"] = now
     df["is_priority"] = 0
     # df["source"] = "csv"
@@ -167,7 +174,7 @@ def save_ipfile(file):
     # result = db.ip.insert_many(records_ ) 
     result = col.insert_many(records_ ) 
 
-    return result
+    return {"result": result, "filename": filename}
 
 
 def save_domainfile(file):
@@ -211,7 +218,7 @@ def save_domainfile(file):
     # result = db.ip.insert_many(records_ ) 
     result = col.insert_many(records_ ) 
 
-    return result
+    return {"result": result, "filename": filename}
 ## Checks to_skip(), else call_ip and update db with result
 def process_parent():
 
@@ -300,7 +307,7 @@ def process_parent():
                     print("call_status_code:", call_status_code, "continuing to next ip_or_domain")
                     with open(config.CURR_LOGFILE,'a+') as logfile:
                         logfile.write("call_status_code: {call_status_code}, continuing to next ip_or_domain\n".format(call_status_code=call_status_code))
-                    col.replace_one({"_id" : db_id}, updated_doc)
+                    # col.replace_one({"_id" : db_id}, updated_doc)
                     continue
 
                 ## screenshot and extract html js functions here
@@ -411,6 +418,41 @@ def exportDB():
 
     return "DB exported successfully"
 
+def showDB():
+    # client = MongoClient('localhost',27017)
+    # db = client['michelle_list']
+    # collection = 'may12_ips'
+    # col = db[collection]
+    cursor = col.find()
+    now = datetime.datetime.now(timezone('UTC'))
+    dt_string = now.strftime("%Y%m%d_%H%M%S.%f")[:-3]    
+   
+    datapoints = list(cursor)
+    df = pd.json_normalize(datapoints)
+    cols = ['whois_date','whois_info.updated_date','whois_info.creation_date','last_analysis_date']
+
+    for each_col in cols:
+        if each_col in df:
+            for i, row in df[[each_col]].iterrows():
+                if type(row[0]) == list:
+                    final_list = []
+                    for each in row[0]:
+                        final_list.append(each.strftime("%d-%m-%YT%H:%M:%S"))
+
+                    df[each_col][i] = final_list
+                else: 
+                    if row[0] and type(row[0]) != float:
+                        # print(type(row[0]))
+                        # print("current row[0]", row[0])
+                        holder = row[0].strftime("%d-%m-%YT%H:%M:%S")
+                        print(holder)
+                        df[each_col][i] = holder
+
+    df.to_csv("resources/exportdb/" + collection + '_' + dt_string + ".csv",date_format='%d-%m-%YT%H:%M:%S')
+    # print("df in showDB:", df)
+    return df
+
+## Calls VT API, 
 ## Calls VT API, writes response to hard disk and update failure count. RETURNS UPDATED IP DOC
 # def call_ip_or_domain(doc, x_days_ago):
 def call_ip_or_domain(doc):

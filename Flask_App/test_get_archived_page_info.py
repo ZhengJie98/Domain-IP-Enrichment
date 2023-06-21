@@ -49,6 +49,9 @@ try:
     cdx_api = WaybackMachineCDXServerAPI(domain, user_agent)
     newest = cdx_api.newest()
 
+    for each in cdx_api.snapshots():
+        print("each:", each)
+
     filepath = "resources/archived_page/" + domain + '_' + dt_string + ".json"
     with open(filepath, "w") as outfile:
         # for i in vars(newest).values():
