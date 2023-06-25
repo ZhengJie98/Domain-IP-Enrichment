@@ -1,0 +1,11 @@
+current ip in process_parent:86.14.238.46
+===== to_skip function start =====
+86.14.238.46 has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: 86.14.238.46 now: 2023-06-25 18:27:40.830343+00:00
+duration_log vt_call: 1.0113221000065096
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 46.62998039997183
+===== screenshot function end =====

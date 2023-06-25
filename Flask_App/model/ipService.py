@@ -106,8 +106,8 @@ API_KEY = '207349263f9c5edd176cc079fa8000a5ab912df7d9e91154842c08031658675d'  #@
 
 
 
-# client = MongoClient('localhost',27017)
-client = MongoClient('mongodb://readWrite:%20mongo1DB%20@18.141.141.56:27017/')
+client = MongoClient('localhost',27017)
+# client = MongoClient('mongodb://readWrite:%20mongo1DB%20@18.141.141.56:27017/')
 # db = client['jon_list']
 # db = client['michelle_list']
 db = client[config.db]
@@ -395,6 +395,7 @@ def exportDB():
    
     datapoints = list(cursor)
     df = pd.json_normalize(datapoints)
+    df = df.drop(['files_log'],axis=1)
     cols = ['whois_date','whois_info.updated_date','whois_info.creation_date','last_analysis_date']
 
     for each_col in cols:
@@ -546,13 +547,36 @@ def call_ip_or_domain(doc):
                 # print(e, "for", (k,v))
                 e
 
-        # ## Put Screenshot here
-        # screenshot(doc)
 
-        # print("final doc:", doc)
-        # time.sleep(16)
-        # time.sleep(5)
-        # print("16 seconds waiting done")
+        ## Blacklist Function here 
+        blacklist = ['Xcitium Verdict Cloud']
+        last_analysis_stats_exclude_blacklist = doc['last_analysis_stats'].copy()
+        
+        # vt_file_location = doc['vt_file_location']
+        # # print(vt_file_location)
+        # f =  open(vt_file_location)
+        # data = json.load(f)
+
+        data = r
+        # print("data:", data)
+
+        last_analysis_results = data["data"]["attributes"]["last_analysis_results"]
+        for engine in last_analysis_results:
+            # print("current engine:", engine)
+            if engine in blacklist:
+                # print("engine found in blacklist", engine)
+                # print("ip:", ip)
+                # print(last_analysis_results[engine]) 
+                category = last_analysis_results[engine]["category"]
+                # print("before last_analysis_stats_exclude_blacklist:", last_analysis_stats_exclude_blacklist)
+                last_analysis_stats_exclude_blacklist[category] -= 1
+                # print("after last_analysis_stats_exclude_blacklist:", last_analysis_stats_exclude_blacklist)
+
+        doc["last_analysis_stats_exclude_blacklist"] = last_analysis_stats_exclude_blacklist
+        doc["last_analysis_stats_blacklist"] = blacklist 
+
+
+
         config.REMAINING_LIMIT -= 1
         print("remaining config.REMAINING_LIMIT:", config.REMAINING_LIMIT)
         # logfile.write("===== call_ip function end =====\n")

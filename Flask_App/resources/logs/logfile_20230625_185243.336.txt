@@ -1,0 +1,10 @@
+===== grab_html_js function start =====
+current protocol: http
+returncode: 28
+current protocol: https
+returncode: 28
+duration_log grab_html_js: 42.15322629996808
+===== grab_html_js function end =====
+===== grab_html_js function start =====
+current protocol: http
+returncode: 6
