@@ -1552,3 +1552,143 @@ def process_individual(input):
 
             return "Replacement SUCCESSFUL"
 
+def process_parent_only_vtcall():
+
+    now = datetime.datetime.now(timezone('UTC'))
+    dt_string = now.strftime("%Y%m%d_%H%M%S.%f")[:-3]   
+    config.CURR_LOGFILE = "resources/logs/logfile_" + dt_string + ".txt"
+    output_file = Path(config.CURR_LOGFILE)
+    output_file.parent.mkdir(exist_ok=True, parents=True)
+
+    with client.start_session() as session:
+            
+            # cursor = col.find({"has_html" : ""})
+            # cursor = col.find()
+            # cursor = col.find({"domain":"zshhks.top"})
+            # cursor = col.find({"processed_timestamp" : ""})
+            # cursor = col.find({"$and" : [{"processed_timestamp" : ""}, {"to_skip" : ""}]})
+            # cursor = col.find({"$and" : [{"report_source":"YD"}, {"vt_file_location" : ""}]})
+            cursor = col.find({"$and" : [{"to_skip":""}, {"vt_file_location" : ""}]})
+            
+
+            # cursor = col.find({"processed_timestamp" : {"$ne": ""}})            ## replicate to prevent closing
+            cursor = [x for x in cursor]
+            print("No of documents:",len(cursor))
+
+            
+            for doc in cursor:
+
+                is_ip = 0
+
+                if "ip_address" in doc:
+                    is_ip = 1 # if its ip 
+                    ip_or_domain = str(doc["ip_address"])
+                    print("current ip in process_ip_parent:", ip_or_domain)
+                    with open(config.CURR_LOGFILE,'a+') as logfile:
+                        logfile.write("current ip in process_parent:" + ip_or_domain + '\n')
+
+                # elif "domain" in doc:
+                #     is_ip = 0 #if its domain
+                #     ip_or_domain = str(doc["domain"])
+                #     print("current domain in process_parent:", ip_or_domain)
+                #     with open(config.CURR_LOGFILE,'a+') as logfile:
+                #         logfile.write("current domain in process_parent:" + ip_or_domain + '\n')
+
+                elif "domain" in doc:
+                    is_ip = 0 #if its domain
+                    ip_or_domain = str(doc["domain"])
+
+                    if is_url(ip_or_domain): ## if its url, then add a field
+                        print("current URL in process_parent " + ip_or_domain)
+                        with open(config.CURR_LOGFILE,'a+') as logfile:
+                           logfile.write("current URL in process_parent: " + ip_or_domain + '\n')
+                        doc['url'] = ip_or_domain
+                        print("doc['url']", doc['url'])
+                        ip_or_domain = retrieve_domain(ip_or_domain)
+                        doc['domain'] = ip_or_domain
+                        print("doc['domain']",doc['domain'])
+                    
+                    # else:
+                    #     print("current domain in process_parent:", ip_or_domain)
+                    #     with open(config.CURR_LOGFILE,'a+') as logfile:
+                    #         logfile.write("current domain in process_parent:" + ip_or_domain + '\n')
+                    else:
+                        print("current domain in process_parent:", ip_or_domain)
+                        with open(config.CURR_LOGFILE,'a+') as logfile:
+                            logfile.write("current domain in process_parent:" + ip_or_domain + '\n')
+ 
+                tic = time.perf_counter()
+
+                ## refreshing to keep connection alive
+                client.admin.command('refreshSessions', [session.session_id], session=session)
+
+                
+                
+                ## ip check to be here
+                # if to_skip(doc) == 1:
+                #     continue
+    
+                db_id = doc['_id']
+                # updated_doc  = call_ip_or_domain(doc, X_DAYS_AGO)
+                updated_doc  = call_ip_or_domain(doc)
+                # # call_ip_status_code = updated_ip_doc.get("response_code")
+                # call_status_code = updated_doc.get("response_code") 
+ 
+
+                # ## breaking / continuing to quicken code
+                # # print("call_ip_status_code:", call_ip_status_code)
+                # if call_status_code == 429:
+                #     # print("breaking")
+                #     with open(config.CURR_LOGFILE,'a+') as logfile:
+                #         logfile.write("QUOTA EXCEEDED, STOPPED ALL CALLS")
+                #     return "QUOTA EXCEEDED, STOPPED ALL CALLS"
+                # elif call_status_code != None and (call_status_code < 200 or call_status_code > 299):
+                #     print("call_status_code:", call_status_code, "continuing to next ip_or_domain")
+                #     with open(config.CURR_LOGFILE,'a+') as logfile:
+                #         logfile.write("call_status_code: {call_status_code}, continuing to next ip_or_domain\n".format(call_status_code=call_status_code))
+                #     continue
+                # updated_doc = doc 
+                # ## screenshot and extract html js functions here
+                # #Continue Here Later!!
+                # updated_doc['duration_log']={}
+                # ## uncomment after testing
+                # # updated_doc = screenshot(updated_doc)
+                # # updated_doc = grab_html_js(updated_doc) 
+                
+                # if (is_ip == 0): #means doc is domain
+                #     ## uncomment after testing
+                #     # updated_doc = get_whois_info(updated_doc)
+                #     # updated_doc = get_dns_info(updated_doc)
+                #     # updated_doc = get_cert_info(updated_doc)
+                #     updated_doc = get_archived_page_info(doc)
+
+                # updated_doc['log_file'] = config.CURR_LOGFILE
+                # updated_doc['processed_timestamp'] = datetime.datetime.now(timezone('UTC'))
+
+                try : 
+                    col.replace_one({"_id" : db_id}, updated_doc)
+                    print("replacement successful")
+                    with open(config.CURR_LOGFILE,'a+') as logfile:
+                        logfile.write("replacement successful\n")
+                
+                except Exception as e:
+                    print("exception occured in process_parent()", e)
+                    with open(config.CURR_LOGFILE,'a+') as logfile:
+                        logfile.write("exception: {e}\n".format(e=e))
+                    # e
+
+                ## COMMENT OUT FOR ACTUAL
+                # break
+                toc = time.perf_counter()
+                if (toc-tic) < 15:
+                    balance = 15-(toc-tic)
+                    print("sleeping to makeup 15 seconds: ", balance, "seconds" )
+                    time.sleep(15-(toc-tic))
+                    toc = time.perf_counter()
+
+                print(f"replacement SUCCESSFUL for {ip_or_domain}, time taken {toc-tic} seconds\n\n\n")
+                with open(config.CURR_LOGFILE,'a+') as logfile:
+                    logfile.write(f"replacement SUCCESSFUL for {ip_or_domain}, time taken {toc-tic} seconds\n\n\n")
+
+            return "Replacement SUCCESSFUL"
+    

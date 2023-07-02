@@ -1,0 +1,7 @@
+current domain in process_parent:www-houze-com-sg%2fpages%2fonline--shopping--the--houze--way.cdn.ampproject.org
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: www-houze-com-sg%2fpages%2fonline--shopping--the--houze--way.cdn.ampproject.org now: 2023-06-29 13:55:37.691501+00:00
+replacement successful
+replacement SUCCESSFUL for www-houze-com-sg%2fpages%2fonline--shopping--the--houze--way.cdn.ampproject.org, time taken 15.00093380000908 seconds
+
+

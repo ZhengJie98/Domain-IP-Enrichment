@@ -27,7 +27,7 @@ ALLOWED_EXTENSIONS = {'csv'}
 X_DAYS_AGO = 7
 
 
-# client = MongoClient('localhost',27017)
+client = MongoClient('localhost',27017)
 # db = client['filtered_sg_ip_list']
 # col = db["ip"]
     
@@ -573,6 +573,11 @@ def process_without_vtcall():
    
     return result
 
+@app.route("/process_only_vtcall", methods=['GET'])
+def process_only_vtcall():
+
+    result = process_parent_only_vtcall()
+    return result
 @app.route("/export_db", methods=['GET'])
 def export_db():
 
