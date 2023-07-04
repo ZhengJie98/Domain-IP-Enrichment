@@ -107,7 +107,7 @@ API_KEY = '207349263f9c5edd176cc079fa8000a5ab912df7d9e91154842c08031658675d'  #@
 
 
 client = MongoClient('localhost',27017)
-# client = MongoClient('mongodb://readWrite:%20mongo1DB%20@18.141.141.56:27017/')
+client = MongoClient('mongodb://readWrite:%20mongo1DB%20@18.141.141.56:27017/')
 # db = client['jon_list']
 # db = client['michelle_list']
 db = client[config.db]
@@ -743,7 +743,7 @@ def screenshot(doc):
             # ## store in db
             if returncode == 0:
                 doc['has_screenshot'] = 1
-                to_append = {"type": protocol + "_screenshot", "stderr": response.stderr, "stdout": response.stdout, "ss_file_location":filepath}
+                to_append = {"type": protocol + "_screenshot", "ss_file_location":filepath}
                 print(f"screenshot found for protocol: {protocol} and saved to {filepath}")
                 logfile.write(f"screenshot found for protocol: {protocol} and saved to {filepath}")
                 ## proceed to extract js 
@@ -755,7 +755,7 @@ def screenshot(doc):
             else:
                 if doc['has_screenshot'] != 1:
                     doc['has_screenshot'] = 0
-                to_append = {"type": protocol + "_screenshot", "stderr": response.stderr, "stdout": response.stdout, "ss_file_location": None}
+                to_append = {"type": protocol + "_screenshot", "ss_file_location": None}
                 # ip_doc['files'] = [{"screenshot":to_append}]
                 # ip_doc['files_log'] = [{"screenshot":to_append}]
                 # ip_doc['files_log'] = [to_append]
@@ -774,6 +774,7 @@ def screenshot(doc):
         print("===== screenshot function end =====")
         logfile.write("===== screenshot function end =====\n")
         return doc
+
 
 def grab_html_js(doc):
 
@@ -799,7 +800,11 @@ def grab_html_js(doc):
                 ip_or_domain = str(doc["domain"])  
         db_id = doc['_id']  
 
-
+        headers = {
+                    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
+                     'accept': 'application/json'
+                }
+        
         for protocol in ["http", "https"]:
             print("current protocol:", protocol)
             logfile.write("current protocol: {protocol}\n".format(protocol=protocol))
@@ -808,48 +813,67 @@ def grab_html_js(doc):
                 filepath = "resources/html/*ip_or_domain*_http_*dt_string*.html"
                 filepath = filepath.replace('*ip_or_domain*', ip_or_domain)
                 filepath = filepath.replace('*dt_string*', dt_string)
-                query = "curl -i http://{ip_or_domain} --create-dirs -o {filepath}".format(ip_or_domain=ip_or_domain, filepath = filepath)
+                # query = "curl -i http://{ip_or_domain} --create-dirs -o {filepath}".format(ip_or_domain=ip_or_domain, filepath = filepath)
+                query = "http://{ip_or_domain}".format(ip_or_domain=ip_or_domain)
+                
 
             elif protocol == "https":
                 filepath = "resources/html/*ip_or_domain*_https_*dt_string*.html"
                 filepath = filepath.replace('*ip_or_domain*', ip_or_domain)
                 filepath = filepath.replace('*dt_string*', dt_string)
-                query = "curl -i https://{ip_or_domain} --create-dirs -o {filepath}".format(ip_or_domain=ip_or_domain, filepath = filepath)
+                # query = "curl -i https://{ip_or_domain} --create-dirs -o {filepath}".format(ip_or_domain=ip_or_domain, filepath = filepath)
+                query = "https://{ip_or_domain}".format(ip_or_domain=ip_or_domain)
 
+            response_history = []
             try:
-                response = subprocess.run(query, shell=False, capture_output=True, text=True)
-            except Exception as e:
-                print("grab_html_js() exception triggered:", e)
-                logfile.write("grab_html_js() exception triggered: {e}\n".format(e=e))
-                e
-
-            returncode = response.returncode
-            print("returncode:", returncode)
-            logfile.write("returncode: {returncode}\n".format(returncode=returncode))
-
-            if returncode == 0:
-                doc['has_html'] = 1
-                to_append = {"type": protocol, "stderr": response.stderr, "stdout": response.stdout, "html_file_location":filepath}
+                # response = subprocess.run(query, shell=False, capture_output=True, text=True)
+                response = requests.get(query, headers=headers)
+                http_status_code = response.status_code
+                print("http_status_code:", http_status_code)
+                logfile.write("http_status_code: {http_status_code}\n".format(http_status_code=http_status_code))
 
 
-                ## Grab JS HERE
-                web_url = protocol + "://" + ip_or_domain
-                # headers = {
-                #             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0",
-                #             "Accept-Encoding": "*",
-                #             "Connection": "keep-alive"
-                #         }
-                # html = requests.get(web_url, headers=headers).content
+                ## if no timeout and returns something...
+                if http_status_code >= 200 and http_status_code <= 299:
+                    
+                    print("Good http_status_code:", http_status_code)
+                    logfile.write("Good http_status_code: {http_status_code}\n".format(http_status_code=http_status_code))
+                    # has_http = 1
+                    response_history_len = len(response.history)
+                    for redirect in response.history:
+                        ## store this
+                        response_history.append(redirect.url)
+                    ## store this
+                    response_history_len = len(response.history)
+                    final_url = response.url
+                    print("final_url:", response.url)
+                    logfile.write("final_url: {final_url}\n".format(final_url=final_url))
 
-                # html = requests.get(web_url).content
-                try:
-                    print("starting html request.get")
-                    logfile.write('starting html request.get\n')
-                    html = requests.get(web_url).content
-                
 
-                    # parse HTML Content
+                    headers = response.headers
+                    # print("headers:", headers)
+
+                    with open(filepath, "wb") as file:
+                        ## Writing the headers
+                        for header, value in headers.items():
+                            header_line = f"{header}: {value}\n"
+                            file.write(header_line.encode())
+                        ## Writing the html
+                        for chunk in response.iter_content(chunk_size=8192):
+                            if chunk:
+                                file.write(chunk)
+                    print("html file stored to:", filepath)
+                    logfile.write("html file stored to: {filepath}\n".format(filepath=filepath))
+                    
+                    doc['has_html'] = 1
+                    to_append = {"type": protocol, "http_status_code":http_status_code, "final_url":final_url, "html_file_location":filepath, "response_history_len":response_history_len, "response_history": response_history} 
+
+
+                    ## grabbing js here
+
+                    html = response.content
                     soup = BeautifulSoup(html, "html.parser")
+                    web_url=query
                     
                     js_files_link = []  #['https://biv.gazeta.pl/static/front/ot-iab-consent/master/rodoGuard-ux.js?v17', 'https://cdn.cookielaw.org/scripttemplates/otSDKStub.js', 'https://biv.gazeta.pl/static/front/ot-iab-consent/master/ot-ux-fix.js?v27']
                     js_filename_alone = [] # ['https//biv.gazeta.pl/static/front/ot-iab-consent/master/rodoGuard-ux_20230410_154604.047', 'https//cdn.cookielaw.org/scripttemplates/otSDKStub_20230410_154604.047']
@@ -859,7 +883,6 @@ def grab_html_js(doc):
                             # if the tag has the attribute
                             # 'src'
                             url = script.attrs.get("src")
-                            # js_files_link.append(web_url+url)
                             print("web_url:", web_url)
                             logfile.write("web_url: {web_url}\n".format(web_url=web_url))
                             print("url:", url)
@@ -875,17 +898,9 @@ def grab_html_js(doc):
                             elif url[0] not in ['/','\\']:
                                 js_files_link.append(web_url+ "/" + url)
                         
-                            # js_filename_alone.append(url.split('.js')[0].replace(":","") + '_' + dt_string) 
                             slugifyed_filepath = slugify(url.split('.js')[0])
                             js_filename_alone.append(slugifyed_filepath + '_' + dt_string)
-                            # try:
-                            #     sanitized_filepath = sanitize_filepath(url.split('.js')[0], platform="auto")+ '_' + dt_string
-                            #     print("sanitized path:", sanitize_filepath(url.split('.js')[0], platform="auto")+ '_' + dt_string)
-                            #     js_filename_alone.append(sanitize_filepath(url.split('.js')[0], platform="auto")+ '_' + dt_string) 
-                            # except Exception as e:
-                            #     print("sanitize_filepath exception:", e)
-                            #     js_files_link.pop() ## removing as we do not want it to be called
-                    # print(js_files)
+                     
                     js_file_counter = 0
                     array_js_filenames = []
                     js_files_link = list(dict.fromkeys(js_files_link))
@@ -897,7 +912,7 @@ def grab_html_js(doc):
                         logfile.write("starting get for each_js_link: {each_js_link}\n".format(each_js_link=each_js_link))
                         try:
 
-                            each_js = requests.get(each_js_link).content
+                            each_js = requests.get(each_js_link, headers=headers).content
                             # print(type(js.decode()))
                             # print("each_js gotten")
                             # js_file_path = "resources/js/" + protocol + js_filename_alone[js_file_counter] + ".js"
@@ -909,81 +924,200 @@ def grab_html_js(doc):
                                 js_file_path = "resources/js/" + protocol + js_filename_alone[js_file_counter] + ".js"
                                 array_js_filenames.append("resources/js/" + protocol + js_filename_alone[js_file_counter] + ".js")
                                             
-                            ## testing new folder creation
-                            # if not os.path.exists('resources/js'):
-                            #     os.mkdir('resources/js')
-                            # if not os.path.exists('resources/js/' + protocol):
-                            #     os.mkdir('resources/js/' + protocol)
+
                             output_file = Path(js_file_path)
                             output_file.parent.mkdir(exist_ok=True, parents=True)
 
                             encoding = chardet.detect(each_js)['encoding']
-                        # encoding = json.detect_encoding(each_js)
-
-                        # print("encoding:", encoding)
-                            # the_encoding = chardet.detect(rawdata)['encoding']
-
-                        # print(type(each_js))
 
                             with open(js_file_path, "w", encoding=encoding, errors='ignore') as f:
-                            # with open(js_file_path, "w") as f:
-                                # with open(js_file_path, "w") as f:
-                                    
-                                # text_file = open(js_file_path, "w+")
                                 f.write(each_js.decode(errors='ignore'))
-                                # f.close()
 
                             js_file_counter += 1
                         except Exception as e:
-                            print("exception in getting js_file:", e)
-                            logfile.write("exception in getting js_file: {e}\n".format(e=e))
+                            # print("exception in getting js_file:", e)
+                            # logfile.write("exception in getting js_file: {e}\n".format(e=e))
+                            print("grab_html_js() INNER EXCEPTION  triggered:", e)
+                            logfile.write("grab_html_js() INNER EXCEPTION triggered: {e}\n".format(e=e))
 
-                    if len(array_js_filenames) > 0:
-                        # ip_doc['has_javascript'] = len(array_js_filenames)
-                        
+
+                    if len(array_js_filenames) > 0:                        
                         doc['has_javascript'] = 1
                     else:
                         array_js_filenames = None
                         if type(doc['has_javascript']) == str:
                             doc['has_javascript'] = 0
-                    # to_append = {"type": protocol, "stderr": response.stderr, "stdout": response.stdout, "html_file_location":filepath, "js_file_location": array_js_filenames}
                     to_append["js_file_location"] = array_js_filenames
 
                     doc['files_log'].append(to_append)
-                
-                except Exception as e:
-                    # print(e)
-                    exc_type, exc_obj, exc_tb = sys.exc_info()
-                    fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
-                    print(exc_type, fname, exc_tb.tb_lineno)
 
-                    print("===== grab_html_js function exception occured")
-                    print("exception e:", e)
-                    logfile.write("===== grab_html_js function exception occured\n")
-                    logfile.write("exception: {e}\n".format(e=e))
+
+                else: ## if no timeout but its bad e.g. 404, 408
+                    ## check if it's been set before
+                    print("Bad http_status_code:", http_status_code)
+                    logfile.write("Bad http_status_code: {http_status_code}\n".format(http_status_code=http_status_code))
+                    
                     if type(doc['has_html']) == str:
                         doc['has_html'] = 0
                     if type(doc['has_javascript']) == str:
                         doc['has_javascript'] = 0
-                    # to_append = {"type": protocol, "stderr": response.stderr, "stdout": response.stdout, "html_file_location": None, "js_file_location" : None}
-                    to_append["js_file_location"] = None
-                    # to_append["exception"] = e
+                    # to_append = {"type": protocol, "http_status_code":http_status_code, "final_url": final_url, "html_file_location": None, "response_history_len": 0, "response_history": None, "js_file_location" : None}
+                    to_append = {"type": protocol, "http_status_code":http_status_code, "final_url": final_url}
+                    # ip_doc['files'] = [to_append]
                     doc['files_log'].append(to_append)
-                    print(" ===== grab_html_js function exception end =====")
-                    logfile.write("===== grab_html_js function exception end =====\n")
+    
+            ## If its timeout
+            except Exception as e:                 ## Possible Exception: requests.exceptions.ConnectionError: HTTPConnectionPool(host='test', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002351EAC3810>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
 
-                    # return ip_doc
+                ## meaning no html means no other files...
 
-
-            # ## else indicate its not good 
-            else:
+                print("grab_html_js() OUTER EXCEPTION  triggered:", e)
+                logfile.write("grab_html_js() OUTER EXCEPTION triggered: {e}\n".format(e=e))
+                e
                 if type(doc['has_html']) == str:
                     doc['has_html'] = 0
                 if type(doc['has_javascript']) == str:
                     doc['has_javascript'] = 0
-                to_append = {"type": protocol, "stderr": response.stderr, "stdout": response.stdout, "html_file_location": None, "js_file_location" : None}
+                # to_append = {"type": protocol, "http_status_code":http_status_code, "html_file_location": None, "response_history_len": 0, "response_history": None, "js_file_location" : None}
+                to_append = {"type": protocol}
+                
                 # ip_doc['files'] = [to_append]
                 doc['files_log'].append(to_append)
+
+            #### STOPPED EDITING HERE
+
+            # if returncode == 0:
+            #     doc['has_html'] = 1
+            #     to_append = {"type": protocol, "stderr": response.stderr, "stdout": response.stdout, "html_file_location":filepath}
+
+
+            #     ## Grab JS HERE
+            #     web_url = protocol + "://" + ip_or_domain
+
+            #     try:
+            #         print("starting html request.get")
+            #         logfile.write('starting html request.get\n')
+            #         html = requests.get(web_url).content
+                
+
+            #         # parse HTML Content
+            #         soup = BeautifulSoup(html, "html.parser")
+                    
+            #         js_files_link = []  #['https://biv.gazeta.pl/static/front/ot-iab-consent/master/rodoGuard-ux.js?v17', 'https://cdn.cookielaw.org/scripttemplates/otSDKStub.js', 'https://biv.gazeta.pl/static/front/ot-iab-consent/master/ot-ux-fix.js?v27']
+            #         js_filename_alone = [] # ['https//biv.gazeta.pl/static/front/ot-iab-consent/master/rodoGuard-ux_20230410_154604.047', 'https//cdn.cookielaw.org/scripttemplates/otSDKStub_20230410_154604.047']
+            #         for script in soup.find_all("script"):
+            #             if script.attrs.get("src"):
+                            
+            #                 # if the tag has the attribute
+            #                 # 'src'
+            #                 url = script.attrs.get("src")
+            #                 # js_files_link.append(web_url+url)
+            #                 print("web_url:", web_url)
+            #                 logfile.write("web_url: {web_url}\n".format(web_url=web_url))
+            #                 print("url:", url)
+            #                 logfile.write("url: {url}\n".format(url=url))
+            #                 if url[0:4] == "http": ## also accounts for https
+            #                     js_files_link.append(url)
+                            
+            #                 elif url[0:2] == "//":  ## url: //g.alicdn.com/alilog/mlog/aplus_v2.js
+            #                     js_files_link.append(protocol + ":"+ url)
+
+            #                 elif url[0] in ['/','\\']:
+            #                     js_files_link.append(web_url+url)
+            #                 elif url[0] not in ['/','\\']:
+            #                     js_files_link.append(web_url+ "/" + url)
+                        
+            #                 # js_filename_alone.append(url.split('.js')[0].replace(":","") + '_' + dt_string) 
+            #                 slugifyed_filepath = slugify(url.split('.js')[0])
+            #                 js_filename_alone.append(slugifyed_filepath + '_' + dt_string)
+            #                 # try:
+            #                 #     sanitized_filepath = sanitize_filepath(url.split('.js')[0], platform="auto")+ '_' + dt_string
+            #                 #     print("sanitized path:", sanitize_filepath(url.split('.js')[0], platform="auto")+ '_' + dt_string)
+            #                 #     js_filename_alone.append(sanitize_filepath(url.split('.js')[0], platform="auto")+ '_' + dt_string) 
+            #                 # except Exception as e:
+            #                 #     print("sanitize_filepath exception:", e)
+            #                 #     js_files_link.pop() ## removing as we do not want it to be called
+            #         # print(js_files)
+            #         js_file_counter = 0
+            #         array_js_filenames = []
+            #         js_files_link = list(dict.fromkeys(js_files_link))
+            #         js_filename_alone = list(dict.fromkeys(js_filename_alone))
+            #         print("total js_files_links:", js_files_link)
+            #         logfile.write("total js_files_links: {js_files_link}\n".format(js_files_link=js_files_link) )
+            #         for each_js_link in js_files_link:
+            #             print("starting get for each_js_link:", each_js_link)
+            #             logfile.write("starting get for each_js_link: {each_js_link}\n".format(each_js_link=each_js_link))
+            #             try:
+
+            #                 each_js = requests.get(each_js_link).content
+            #                 # print(type(js.decode()))
+            #                 # print("each_js gotten")
+            #                 # js_file_path = "resources/js/" + protocol + js_filename_alone[js_file_counter] + ".js"
+            #                 # array_js_filenames.append("resources/js/" + protocol + js_filename_alone[js_file_counter] + ".js")
+            #                 if (each_js_link[0:4] == "http") or (each_js_link[0] not in ['/','\\']):
+            #                     js_file_path = "resources/js/" + protocol + '/' + js_filename_alone[js_file_counter] + ".js"
+            #                     array_js_filenames.append("resources/js/" + protocol +'/'+ js_filename_alone[js_file_counter] + ".js")
+            #                 else:
+            #                     js_file_path = "resources/js/" + protocol + js_filename_alone[js_file_counter] + ".js"
+            #                     array_js_filenames.append("resources/js/" + protocol + js_filename_alone[js_file_counter] + ".js")
+                                            
+
+            #                 output_file = Path(js_file_path)
+            #                 output_file.parent.mkdir(exist_ok=True, parents=True)
+
+            #                 encoding = chardet.detect(each_js)['encoding']
+
+            #                 with open(js_file_path, "w", encoding=encoding, errors='ignore') as f:
+            #                     f.write(each_js.decode(errors='ignore'))
+
+            #                 js_file_counter += 1
+            #             except Exception as e:
+            #                 print("exception in getting js_file:", e)
+            #                 logfile.write("exception in getting js_file: {e}\n".format(e=e))
+
+            #         if len(array_js_filenames) > 0:                        
+            #             doc['has_javascript'] = 1
+            #         else:
+            #             array_js_filenames = None
+            #             if type(doc['has_javascript']) == str:
+            #                 doc['has_javascript'] = 0
+            #         to_append["js_file_location"] = array_js_filenames
+
+            #         doc['files_log'].append(to_append)
+                
+            #     except Exception as e:
+            #         # print(e)
+            #         exc_type, exc_obj, exc_tb = sys.exc_info()
+            #         fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+            #         print(exc_type, fname, exc_tb.tb_lineno)
+
+            #         print("===== grab_html_js function exception occured")
+            #         print("exception e:", e)
+            #         logfile.write("===== grab_html_js function exception occured\n")
+            #         logfile.write("exception: {e}\n".format(e=e))
+            #         if type(doc['has_html']) == str:
+            #             doc['has_html'] = 0
+            #         if type(doc['has_javascript']) == str:
+            #             doc['has_javascript'] = 0
+            #         # to_append = {"type": protocol, "stderr": response.stderr, "stdout": response.stdout, "html_file_location": None, "js_file_location" : None}
+            #         to_append["js_file_location"] = None
+            #         # to_append["exception"] = e
+            #         doc['files_log'].append(to_append)
+            #         print(" ===== grab_html_js function exception end =====")
+            #         logfile.write("===== grab_html_js function exception end =====\n")
+
+            #         # return ip_doc
+
+
+            # # ## else indicate its not good 
+            # else:
+            #     if type(doc['has_html']) == str:
+            #         doc['has_html'] = 0
+            #     if type(doc['has_javascript']) == str:
+            #         doc['has_javascript'] = 0
+            #     to_append = {"type": protocol, "stderr": response.stderr, "stdout": response.stdout, "html_file_location": None, "js_file_location" : None}
+            #     # ip_doc['files'] = [to_append]
+            #     doc['files_log'].append(to_append)
         
         toc = time.perf_counter()
         doc["duration_log"]["grab_html_js"] = toc-tic
@@ -995,6 +1129,228 @@ def grab_html_js(doc):
         
         return doc
         # both http and https
+
+
+# def grab_html_js(doc):
+
+#     print("===== grab_html_js function start =====")
+#     with open(config.CURR_LOGFILE,'a+') as logfile:
+
+#         logfile.write("===== grab_html_js function start =====\n")
+#         tic = time.perf_counter()
+
+#         now = datetime.datetime.now(timezone('UTC'))
+#         dt_string = now.strftime("%Y%m%d_%H%M%S.%f")[:-3] 
+
+#         if "ip_address" in doc:
+#             # is_ip = 1 # if its ip 
+#             ip_or_domain = str(doc["ip_address"])
+        
+#         elif "domain" in doc:
+#             # is_domain = 1 #if its domain
+#             ip_or_domain = str(doc["domain"])
+#             if "url" in doc: ## If domain is URL 
+#                 ip_or_domain = str(doc["url"])
+#             else:
+#                 ip_or_domain = str(doc["domain"])  
+#         db_id = doc['_id']  
+
+
+#         for protocol in ["http", "https"]:
+#             print("current protocol:", protocol)
+#             logfile.write("current protocol: {protocol}\n".format(protocol=protocol))
+
+#             if protocol == "http":
+#                 filepath = "resources/html/*ip_or_domain*_http_*dt_string*.html"
+#                 filepath = filepath.replace('*ip_or_domain*', ip_or_domain)
+#                 filepath = filepath.replace('*dt_string*', dt_string)
+#                 query = "curl -i http://{ip_or_domain} --create-dirs -o {filepath}".format(ip_or_domain=ip_or_domain, filepath = filepath)
+
+#             elif protocol == "https":
+#                 filepath = "resources/html/*ip_or_domain*_https_*dt_string*.html"
+#                 filepath = filepath.replace('*ip_or_domain*', ip_or_domain)
+#                 filepath = filepath.replace('*dt_string*', dt_string)
+#                 query = "curl -i https://{ip_or_domain} --create-dirs -o {filepath}".format(ip_or_domain=ip_or_domain, filepath = filepath)
+
+#             try:
+#                 response = subprocess.run(query, shell=False, capture_output=True, text=True)
+#             except Exception as e:
+#                 print("grab_html_js() exception triggered:", e)
+#                 logfile.write("grab_html_js() exception triggered: {e}\n".format(e=e))
+#                 e
+
+#             returncode = response.returncode
+#             print("returncode:", returncode)
+#             logfile.write("returncode: {returncode}\n".format(returncode=returncode))
+
+#             if returncode == 0:
+#                 doc['has_html'] = 1
+#                 to_append = {"type": protocol, "stderr": response.stderr, "stdout": response.stdout, "html_file_location":filepath}
+
+
+#                 ## Grab JS HERE
+#                 web_url = protocol + "://" + ip_or_domain
+#                 # headers = {
+#                 #             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0",
+#                 #             "Accept-Encoding": "*",
+#                 #             "Connection": "keep-alive"
+#                 #         }
+#                 # html = requests.get(web_url, headers=headers).content
+
+#                 # html = requests.get(web_url).content
+#                 try:
+#                     print("starting html request.get")
+#                     logfile.write('starting html request.get\n')
+#                     html = requests.get(web_url).content
+                
+
+#                     # parse HTML Content
+#                     soup = BeautifulSoup(html, "html.parser")
+                    
+#                     js_files_link = []  #['https://biv.gazeta.pl/static/front/ot-iab-consent/master/rodoGuard-ux.js?v17', 'https://cdn.cookielaw.org/scripttemplates/otSDKStub.js', 'https://biv.gazeta.pl/static/front/ot-iab-consent/master/ot-ux-fix.js?v27']
+#                     js_filename_alone = [] # ['https//biv.gazeta.pl/static/front/ot-iab-consent/master/rodoGuard-ux_20230410_154604.047', 'https//cdn.cookielaw.org/scripttemplates/otSDKStub_20230410_154604.047']
+#                     for script in soup.find_all("script"):
+#                         if script.attrs.get("src"):
+                            
+#                             # if the tag has the attribute
+#                             # 'src'
+#                             url = script.attrs.get("src")
+#                             # js_files_link.append(web_url+url)
+#                             print("web_url:", web_url)
+#                             logfile.write("web_url: {web_url}\n".format(web_url=web_url))
+#                             print("url:", url)
+#                             logfile.write("url: {url}\n".format(url=url))
+#                             if url[0:4] == "http": ## also accounts for https
+#                                 js_files_link.append(url)
+                            
+#                             elif url[0:2] == "//":  ## url: //g.alicdn.com/alilog/mlog/aplus_v2.js
+#                                 js_files_link.append(protocol + ":"+ url)
+
+#                             elif url[0] in ['/','\\']:
+#                                 js_files_link.append(web_url+url)
+#                             elif url[0] not in ['/','\\']:
+#                                 js_files_link.append(web_url+ "/" + url)
+                        
+#                             # js_filename_alone.append(url.split('.js')[0].replace(":","") + '_' + dt_string) 
+#                             slugifyed_filepath = slugify(url.split('.js')[0])
+#                             js_filename_alone.append(slugifyed_filepath + '_' + dt_string)
+#                             # try:
+#                             #     sanitized_filepath = sanitize_filepath(url.split('.js')[0], platform="auto")+ '_' + dt_string
+#                             #     print("sanitized path:", sanitize_filepath(url.split('.js')[0], platform="auto")+ '_' + dt_string)
+#                             #     js_filename_alone.append(sanitize_filepath(url.split('.js')[0], platform="auto")+ '_' + dt_string) 
+#                             # except Exception as e:
+#                             #     print("sanitize_filepath exception:", e)
+#                             #     js_files_link.pop() ## removing as we do not want it to be called
+#                     # print(js_files)
+#                     js_file_counter = 0
+#                     array_js_filenames = []
+#                     js_files_link = list(dict.fromkeys(js_files_link))
+#                     js_filename_alone = list(dict.fromkeys(js_filename_alone))
+#                     print("total js_files_links:", js_files_link)
+#                     logfile.write("total js_files_links: {js_files_link}\n".format(js_files_link=js_files_link) )
+#                     for each_js_link in js_files_link:
+#                         print("starting get for each_js_link:", each_js_link)
+#                         logfile.write("starting get for each_js_link: {each_js_link}\n".format(each_js_link=each_js_link))
+#                         try:
+
+#                             each_js = requests.get(each_js_link).content
+#                             # print(type(js.decode()))
+#                             # print("each_js gotten")
+#                             # js_file_path = "resources/js/" + protocol + js_filename_alone[js_file_counter] + ".js"
+#                             # array_js_filenames.append("resources/js/" + protocol + js_filename_alone[js_file_counter] + ".js")
+#                             if (each_js_link[0:4] == "http") or (each_js_link[0] not in ['/','\\']):
+#                                 js_file_path = "resources/js/" + protocol + '/' + js_filename_alone[js_file_counter] + ".js"
+#                                 array_js_filenames.append("resources/js/" + protocol +'/'+ js_filename_alone[js_file_counter] + ".js")
+#                             else:
+#                                 js_file_path = "resources/js/" + protocol + js_filename_alone[js_file_counter] + ".js"
+#                                 array_js_filenames.append("resources/js/" + protocol + js_filename_alone[js_file_counter] + ".js")
+                                            
+#                             ## testing new folder creation
+#                             # if not os.path.exists('resources/js'):
+#                             #     os.mkdir('resources/js')
+#                             # if not os.path.exists('resources/js/' + protocol):
+#                             #     os.mkdir('resources/js/' + protocol)
+#                             output_file = Path(js_file_path)
+#                             output_file.parent.mkdir(exist_ok=True, parents=True)
+
+#                             encoding = chardet.detect(each_js)['encoding']
+#                         # encoding = json.detect_encoding(each_js)
+
+#                         # print("encoding:", encoding)
+#                             # the_encoding = chardet.detect(rawdata)['encoding']
+
+#                         # print(type(each_js))
+
+#                             with open(js_file_path, "w", encoding=encoding, errors='ignore') as f:
+#                             # with open(js_file_path, "w") as f:
+#                                 # with open(js_file_path, "w") as f:
+                                    
+#                                 # text_file = open(js_file_path, "w+")
+#                                 f.write(each_js.decode(errors='ignore'))
+#                                 # f.close()
+
+#                             js_file_counter += 1
+#                         except Exception as e:
+#                             print("exception in getting js_file:", e)
+#                             logfile.write("exception in getting js_file: {e}\n".format(e=e))
+
+#                     if len(array_js_filenames) > 0:
+#                         # ip_doc['has_javascript'] = len(array_js_filenames)
+                        
+#                         doc['has_javascript'] = 1
+#                     else:
+#                         array_js_filenames = None
+#                         if type(doc['has_javascript']) == str:
+#                             doc['has_javascript'] = 0
+#                     # to_append = {"type": protocol, "stderr": response.stderr, "stdout": response.stdout, "html_file_location":filepath, "js_file_location": array_js_filenames}
+#                     to_append["js_file_location"] = array_js_filenames
+
+#                     doc['files_log'].append(to_append)
+                
+#                 except Exception as e:
+#                     # print(e)
+#                     exc_type, exc_obj, exc_tb = sys.exc_info()
+#                     fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+#                     print(exc_type, fname, exc_tb.tb_lineno)
+
+#                     print("===== grab_html_js function exception occured")
+#                     print("exception e:", e)
+#                     logfile.write("===== grab_html_js function exception occured\n")
+#                     logfile.write("exception: {e}\n".format(e=e))
+#                     if type(doc['has_html']) == str:
+#                         doc['has_html'] = 0
+#                     if type(doc['has_javascript']) == str:
+#                         doc['has_javascript'] = 0
+#                     # to_append = {"type": protocol, "stderr": response.stderr, "stdout": response.stdout, "html_file_location": None, "js_file_location" : None}
+#                     to_append["js_file_location"] = None
+#                     # to_append["exception"] = e
+#                     doc['files_log'].append(to_append)
+#                     print(" ===== grab_html_js function exception end =====")
+#                     logfile.write("===== grab_html_js function exception end =====\n")
+
+#                     # return ip_doc
+
+
+#             # ## else indicate its not good 
+#             else:
+#                 if type(doc['has_html']) == str:
+#                     doc['has_html'] = 0
+#                 if type(doc['has_javascript']) == str:
+#                     doc['has_javascript'] = 0
+#                 to_append = {"type": protocol, "stderr": response.stderr, "stdout": response.stdout, "html_file_location": None, "js_file_location" : None}
+#                 # ip_doc['files'] = [to_append]
+#                 doc['files_log'].append(to_append)
+        
+#         toc = time.perf_counter()
+#         doc["duration_log"]["grab_html_js"] = toc-tic
+#         logfile.write("duration_log grab_html_js: {time}\n".format(time=toc-tic))
+
+#         # print("CALL HTML JS IP_DOC:", ip_doc)
+#         print("===== grab_html_js function end =====")
+#         logfile.write("===== grab_html_js function end =====\n")
+        
+#         return doc
+#         # both http and https
 
 def get_whois_info(doc):
     #whois.whois()

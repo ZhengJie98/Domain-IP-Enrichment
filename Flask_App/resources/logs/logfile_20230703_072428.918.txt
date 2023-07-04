@@ -1,0 +1,43 @@
+current domain in process_parent:www.facebook.com
+===== to_skip function start =====
+www.facebook.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: www.facebook.com now: 2023-07-03 07:24:28.952203+00:00
+duration_log vt_call: 0.9841980999917723
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/www.facebook.com_http_20230703_072429.948.pngscreenshot found for protocol: https and saved to resources/shot-scraper/www.facebook.com_https_20230703_072429.948.pngduration_log screenshot: 11.233551199984504
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+http_status_code: 200
+web_url: http://www.facebook.com
+url: https://static.xx.fbcdn.net/rsrc.php/v3/yE/r/qWNhkXTDn4y.js?_nc_x=Ij3Wp8lg5Kz
+total js_files_links: ['https://static.xx.fbcdn.net/rsrc.php/v3/yE/r/qWNhkXTDn4y.js?_nc_x=Ij3Wp8lg5Kz']
+starting get for each_js_link: https://static.xx.fbcdn.net/rsrc.php/v3/yE/r/qWNhkXTDn4y.js?_nc_x=Ij3Wp8lg5Kz
+current protocol: https
+http_status_code: 408
+duration_log grab_html_js: 51.358736499998486
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/www.facebook.com_20230703_072532.575.txt
+duration_log get_whois_info: 0.891256600007182
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/www.facebook.com_gethostbyname_ex_20230703_072533.467.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: www.facebook.com. IN NS
+duration_log get_dns_info: 0.09769439999945462
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/www.facebook.com_20230703_072533.571.json
+duration_log get_cert_info: 1.3617246000212617
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/www.facebook.com_20230703_072534.978.json
+duration_log get_archived_page_info: 0.7483620000130031
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for www.facebook.com, time taken 66.80352980000316 seconds
+
+

@@ -1,0 +1,167 @@
+current URL in process_parent: wunderfauks-signin.com/#/pages/index/index
+===== to_skip function start =====
+wunderfauks-signin.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: wunderfauks-signin.com now: 2023-07-03 09:33:44.705745+00:00
+duration_log vt_call: 0.9815094000077806
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 3.593798899993999
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+grab_html_js() exception triggered: HTTPConnectionPool(host='wunderfauks-signin.com', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002969E378DD0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+current protocol: https
+grab_html_js() exception triggered: HTTPSConnectionPool(host='wunderfauks-signin.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000002969EF17050>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+duration_log grab_html_js: 0.018183400010457262
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/wunderfauks-signin.com_20230703_093349.332.txt
+duration_log get_whois_info: 1.1920756000035908
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+socket.gethostbyname_ex() exception triggered: [Errno 11001] getaddrinfo failed
+dns.resolver.query() exception triggered: The DNS query name does not exist: wunderfauks-signin.com.
+duration_log get_dns_info: 0.02888379999785684
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/wunderfauks-signin.com_20230703_093350.562.json
+duration_log get_cert_info: 0.8126335999986622
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 1.936231699975906
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for wunderfauks-signin.com, time taken 15.001390299992636 seconds
+
+
+current URL in process_parent: xxmtkm.info/final-draft-coordinated-public-transportation-plan-released-for-review-comment/?
+===== to_skip function start =====
+xxmtkm.info has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: xxmtkm.info now: 2023-07-03 09:33:59.742179+00:00
+duration_log vt_call: 1.3358815000101458
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 3.4376202000130434
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+grab_html_js() exception triggered: HTTPConnectionPool(host='xxmtkm.info', port=80): Max retries exceeded with url: /final-draft-coordinated-public-transportation-plan-released-for-review-comment/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002969F08DB10>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+current protocol: https
+grab_html_js() exception triggered: HTTPSConnectionPool(host='xxmtkm.info', port=443): Max retries exceeded with url: /final-draft-coordinated-public-transportation-plan-released-for-review-comment/ (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000002969F08E050>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+duration_log grab_html_js: 0.05222079998929985
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/xxmtkm.info_20230703_093404.620.txt
+duration_log get_whois_info: 1.7899610000022221
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+socket.gethostbyname_ex() exception triggered: [Errno 11001] getaddrinfo failed
+dns.resolver.query() exception triggered: The DNS query name does not exist: xxmtkm.info.
+duration_log get_dns_info: 0.1008492999826558
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/xxmtkm.info_20230703_093406.513.json
+duration_log get_cert_info: 0.8473665000055917
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7829896000039298
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for xxmtkm.info, time taken 15.000930899986997 seconds
+
+
+current URL in process_parent: wunderfauks-develop.com/#/pages/start/start
+===== to_skip function start =====
+wunderfauks-develop.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: wunderfauks-develop.com now: 2023-07-03 09:34:14.774233+00:00
+duration_log vt_call: 1.4561387000139803
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 3.2873799999943003
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+grab_html_js() exception triggered: HTTPConnectionPool(host='wunderfauks-develop.com', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002969EF2D390>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+current protocol: https
+grab_html_js() exception triggered: HTTPSConnectionPool(host='wunderfauks-develop.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000002969EF2CBD0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+duration_log grab_html_js: 0.016047999990405515
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/wunderfauks-develop.com_20230703_093419.575.txt
+duration_log get_whois_info: 0.8386458000168204
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+socket.gethostbyname_ex() exception triggered: [Errno 11001] getaddrinfo failed
+dns.resolver.query() exception triggered: The DNS query name does not exist: wunderfauks-develop.com.
+duration_log get_dns_info: 0.028893800015794113
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/wunderfauks-develop.com_20230703_093420.453.json
+duration_log get_cert_info: 0.8422320000245236
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 3.7015142000163905
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for wunderfauks-develop.com, time taken 15.000773799984017 seconds
+
+
+current URL in process_parent: e-lazada.com/#/login/index
+===== to_skip function start =====
+e-lazada.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: e-lazada.com now: 2023-07-03 09:34:29.806107+00:00
+duration_log vt_call: 1.0578754000016488
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 3.7349192000110634
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+grab_html_js() exception triggered: HTTPConnectionPool(host='e-lazada.com', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002969F005E10>: Failed to establish a new connection: [Errno 11002] getaddrinfo failed'))
+current protocol: https
+grab_html_js() exception triggered: HTTPSConnectionPool(host='e-lazada.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000002969F004E10>: Failed to establish a new connection: [Errno 11002] getaddrinfo failed'))
+duration_log grab_html_js: 0.013048299995716661
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/e-lazada.com_20230703_093434.653.txt
+duration_log get_whois_info: 0.6959244000026956
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+socket.gethostbyname_ex() exception triggered: [Errno 11002] getaddrinfo failed
+dns.resolver.query() exception triggered: All nameservers failed to answer the query e-lazada.com. IN NS: Server 1.1.1.1 UDP port 53 answered SERVFAIL
+duration_log get_dns_info: 0.2938513000262901
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/e-lazada.com_20230703_093435.651.json
+duration_log get_cert_info: 0.833244100009324
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.70518090002588
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for e-lazada.com, time taken 15.001427600014722 seconds
+
+
+current URL in process_parent: eufmyio.shop/products/05-stories-of-chata-patti-crimson-wedding-22
+===== to_skip function start =====
+eufmyio.shop has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: eufmyio.shop now: 2023-07-03 09:34:44.837425+00:00
+duration_log vt_call: 0.9905944999773055
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/eufmyio.shop/products/05-stories-of-chata-patti-crimson-wedding-22_http_20230703_093445.844.pngscreenshot found for protocol: https and saved to resources/shot-scraper/eufmyio.shop/products/05-stories-of-chata-patti-crimson-wedding-22_https_20230703_093445.844.pngduration_log screenshot: 20.255815599986818
+===== screenshot function end =====

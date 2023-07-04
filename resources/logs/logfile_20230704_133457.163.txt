@@ -1,0 +1,7 @@
+trying url: http://127.0.0.1:5000/showiprecords
+current href with .apk inside: /Flask_App/resources/test.apk
+file ends with .apk: /Flask_App/resources/test.apk
+APK FOUND: /Flask_App/resources/test.apk
+absolute_url: http://127.0.0.1:5000/Flask_App/resources/test.apk
+filename: http-127-0-0-1-5000-flask-app-resources-test-apk
+combined_path: resources/apk/http-127-0-0-1-5000-flask-app-resources-test-apk

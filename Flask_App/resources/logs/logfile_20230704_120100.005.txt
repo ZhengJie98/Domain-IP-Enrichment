@@ -1,0 +1,51 @@
+current ip in process_parent:101.32.113.139
+===== to_skip function start =====
+101.32.113.139 has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: 101.32.113.139 now: 2023-07-04 12:01:00.089368+00:00
+duration_log vt_call: 1.0745974999736063
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 35.95278980000876
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+grab_html_js() OUTER EXCEPTION triggered: HTTPConnectionPool(host='101.32.113.139', port=80): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x00000216EF00FB10>, 'Connection to 101.32.113.139 timed out. (connect timeout=None)'))
+current protocol: https
+grab_html_js() OUTER EXCEPTION triggered: HTTPSConnectionPool(host='101.32.113.139', port=443): Max retries exceeded with url: / (Caused by SSLError(CertificateError("hostname '101.32.113.139' doesn't match either of '*.tim.qq.com', 'tim.qq.com'")))
+duration_log grab_html_js: 21.11553130001994
+===== grab_html_js function end =====
+replacement successful
+replacement SUCCESSFUL for 101.32.113.139, time taken 58.23688320000656 seconds
+
+
+current ip in process_parent:1.1.1.1
+===== to_skip function start =====
+1.1.1.1 has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: 1.1.1.1 now: 2023-07-04 12:01:58.370077+00:00
+duration_log vt_call: 1.0168879999546334
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/1.1.1.1_http_20230704_120159.401.pngscreenshot found for protocol: https and saved to resources/shot-scraper/1.1.1.1_https_20230704_120159.401.pngduration_log screenshot: 13.242553999996744
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+http_status_code: 200
+Good http_status_code: 200
+final_url: https://1.1.1.1/
+html file stored to: resources/html/1.1.1.1_http_20230704_120212.667.html
+web_url: http://1.1.1.1
+url: /site-16bcc13e690cc771698c.js
+total js_files_links: ['http://1.1.1.1/site-16bcc13e690cc771698c.js']
+starting get for each_js_link: http://1.1.1.1/site-16bcc13e690cc771698c.js
+current protocol: https
+grab_html_js() OUTER EXCEPTION triggered: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+duration_log grab_html_js: 15.377986300038174
+===== grab_html_js function end =====
+replacement successful
+replacement SUCCESSFUL for 1.1.1.1, time taken 29.745128600043245 seconds
+
+

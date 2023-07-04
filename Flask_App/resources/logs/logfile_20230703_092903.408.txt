@@ -1,0 +1,57 @@
+current domain in process_parent:www.facebook.com
+===== to_skip function start =====
+www.facebook.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: www.facebook.com now: 2023-07-03 09:29:03.436401+00:00
+duration_log vt_call: 1.151236899982905
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/www.facebook.com_http_20230703_092904.597.pngscreenshot found for protocol: https and saved to resources/shot-scraper/www.facebook.com_https_20230703_092904.597.pngduration_log screenshot: 13.909728300001007
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+http_status_code: 200
+web_url: http://www.facebook.com
+url: https://static.xx.fbcdn.net/rsrc.php/v3/yE/r/qWNhkXTDn4y.js?_nc_x=Ij3Wp8lg5Kz
+total js_files_links: ['https://static.xx.fbcdn.net/rsrc.php/v3/yE/r/qWNhkXTDn4y.js?_nc_x=Ij3Wp8lg5Kz']
+starting get for each_js_link: https://static.xx.fbcdn.net/rsrc.php/v3/yE/r/qWNhkXTDn4y.js?_nc_x=Ij3Wp8lg5Kz
+current protocol: https
+http_status_code: 408
+duration_log grab_html_js: 51.02434380000341
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/www.facebook.com_20230703_093009.560.txt
+duration_log get_whois_info: 1.0569437999802176
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/www.facebook.com_gethostbyname_ex_20230703_093010.619.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: www.facebook.com. IN NS
+duration_log get_dns_info: 0.08370170000125654
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/www.facebook.com_20230703_093010.709.json
+duration_log get_cert_info: 1.9549643000063952
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/www.facebook.com_20230703_093012.670.json
+duration_log get_archived_page_info: 0.7432683000224642
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for www.facebook.com, time taken 70.00285010001971 seconds
+
+
+current URL in process_parent: wunderfauks-signin.com/#/pages/index/index
+===== to_skip function start =====
+wunderfauks-signin.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: wunderfauks-signin.com now: 2023-07-03 09:30:13.484885+00:00
+duration_log vt_call: 1.0037656999775209
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 4.579754300008062
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+grab_html_js() exception triggered: HTTPConnectionPool(host='wunderfauks-signin.com', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022339871210>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))

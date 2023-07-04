@@ -1,0 +1,118 @@
+trying url: https://apkpure.com/apkpure/com.apkpure.aegon/download/3192237-apk?utm_content=1006&icn=aegon&ici=text_home-m&from=text_home-m?icn=aegon&ici=text_home-m&utm_content=1033
+current href with .apk inside: https://windows.apkpure.com/?utm_source=APKPure&utm_medium=nav_product_link
+file has query: ?
+before query: https://windows.apkpure.com/
+current href with .apk inside: https://iphone.apkpure.com/?utm_source=APKPure&utm_medium=nav_product_link
+file has query: ?
+before query: https://iphone.apkpure.com/
+current href with .apk inside: https://tvonic.apkpure.com/?utm_source=topmenu&utm_medium=APKPure&utm_campaign=click
+file has query: ?
+before query: https://tvonic.apkpure.com/
+current href with .apk inside: /apkpure/com.apkpure.aegon
+current href with .apk inside: /apkpure/com.apkpure.aegon
+current href with .apk inside: https://apkpure.com/apkpure/com.apkpure.aegon/versions
+current href with .apk inside: https://download.apkpure.com/custom/com.apkpure.aegon-3192237.apk?_fn=QVBLUHVyZV92My4xOS4yMl9hcGtwdXJlLmNvbS5hcGs&as=6cc6c26efef74956578f2d7d4cb5b75264a422a8&ai=648816224&at=1688478256&_sa=ai%2Cat&k=229b070c9abedb03207724fc18fe6c4764a6c530&_p=Y29tLmFwa3B1cmUuYWVnb24&c=1%7CTOOLS%7CZGV2PUFQS1B1cmUmdD1hcGsmcz0xMDIzODM4NiZ2bj0zLjE5LjIyJnZjPTMxOTIyMzc&hot=1&arg=apkpure%3A%2F%2Fcampaign%2F%3Futm_medium%3Dapkpure%26utm_source%3Dtext_home-m%253Ficn%253Daegon%26report_context%3D%7B%22channel_id%22%3A%5B%221006%22%2C%221033%22%5D%7D
+file has query: ?
+before query: https://download.apkpure.com/custom/com.apkpure.aegon-3192237.apk
+APK FOUND: https://download.apkpure.com/custom/com.apkpure.aegon-3192237.apk?_fn=QVBLUHVyZV92My4xOS4yMl9hcGtwdXJlLmNvbS5hcGs&as=6cc6c26efef74956578f2d7d4cb5b75264a422a8&ai=648816224&at=1688478256&_sa=ai%2Cat&k=229b070c9abedb03207724fc18fe6c4764a6c530&_p=Y29tLmFwa3B1cmUuYWVnb24&c=1%7CTOOLS%7CZGV2PUFQS1B1cmUmdD1hcGsmcz0xMDIzODM4NiZ2bj0zLjE5LjIyJnZjPTMxOTIyMzc&hot=1&arg=apkpure%3A%2F%2Fcampaign%2F%3Futm_medium%3Dapkpure%26utm_source%3Dtext_home-m%253Ficn%253Daegon%26report_context%3D%7B%22channel_id%22%3A%5B%221006%22%2C%221033%22%5D%7D
+absolute_url: https://download.apkpure.com/custom/com.apkpure.aegon-3192237.apk?_fn=QVBLUHVyZV92My4xOS4yMl9hcGtwdXJlLmNvbS5hcGs&as=6cc6c26efef74956578f2d7d4cb5b75264a422a8&ai=648816224&at=1688478256&_sa=ai%2Cat&k=229b070c9abedb03207724fc18fe6c4764a6c530&_p=Y29tLmFwa3B1cmUuYWVnb24&c=1%7CTOOLS%7CZGV2PUFQS1B1cmUmdD1hcGsmcz0xMDIzODM4NiZ2bj0zLjE5LjIyJnZjPTMxOTIyMzc&hot=1&arg=apkpure%3A%2F%2Fcampaign%2F%3Futm_medium%3Dapkpure%26utm_source%3Dtext_home-m%253Ficn%253Daegon%26report_context%3D%7B%22channel_id%22%3A%5B%221006%22%2C%221033%22%5D%7D
+filename: https-download-apkpure-com-custom-com-apkpure-aegon-3192237-apk-fn-qvbluhvyzv92my4xos4yml9hcgtwdxjllmnvbs5hcgs-as-6cc6c26efef74956578f2d7d4cb5b75264a422a8-ai-648816224-at-1688478256-sa-ai-2cat-k-229b070c9abedb03207724fc18fe6c4764a6c530-p-y29tlmfwa3b1cmuuywvnb24-c-1-7ctools-7czgv2pufqs1b1cmumdd1hcgsmcz0xmdizodm4niz2bj0zlje5ljiyjnzjptmxotiymzc-hot-1-arg-apkpure-3a-2f-2fcampaign-2f-3futm-medium-3dapkpure-26utm-source-3dtext-home-m-253ficn-253daegon-26report-context-3d-7b-22channel-id-22-3a-5b-221006-22-2c-221033-22-5d-7d
+combined_path: resources/apk/https-download-apkpure-com-custom-com-apkpure-aegon-3192237-apk-fn-qvbluhvyzv92my4xos4yml9hcgtwdxjllmnvbs5hcgs-as-6cc6c26efef74956578f2d7d4cb5b75264a422a8-ai-648816224-at-1688478256-sa-ai-2cat-k-229b070c9abedb03207724fc18fe6c4764a6c530-p-y29tlmfwa3b1cmuuywvnb24-c-1-7ctools-7czgv2pufqs1b1cmumdd1hcgsmcz0xmdizodm4niz2bj0zlje5ljiyjnzjptmxotiymzc-hot-1-arg-apkpure-3a-2f-2fcampaign-2f-3futm-medium-3dapkpure-26utm-source-3dtext-home-m-253ficn-253daegon-26report-context-3d-7b-22channel-id-22-3a-5b-221006-22-2c-221033-22-5d-7d
+current href with .apk inside: https://download.apkpure.com/custom/com.apkpure.aegon-3192237.apk?_fn=QVBLUHVyZV92My4xOS4yMl9hcGtwdXJlLmNvbS5hcGs&as=6cc6c26efef74956578f2d7d4cb5b75264a422a8&ai=648816224&at=1688478256&_sa=ai%2Cat&k=229b070c9abedb03207724fc18fe6c4764a6c530&_p=Y29tLmFwa3B1cmUuYWVnb24&c=1%7CTOOLS%7CZGV2PUFQS1B1cmUmdD1hcGsmcz0xMDIzODM4NiZ2bj0zLjE5LjIyJnZjPTMxOTIyMzc&hot=1&arg=apkpure%3A%2F%2Fcampaign%2F%3Futm_medium%3Dapkpure%26utm_source%3Dtext_home-m%253Ficn%253Daegon%26report_context%3D%7B%22channel_id%22%3A%5B%221006%22%2C%221033%22%5D%7D
+file has query: ?
+before query: https://download.apkpure.com/custom/com.apkpure.aegon-3192237.apk
+APK FOUND: https://download.apkpure.com/custom/com.apkpure.aegon-3192237.apk?_fn=QVBLUHVyZV92My4xOS4yMl9hcGtwdXJlLmNvbS5hcGs&as=6cc6c26efef74956578f2d7d4cb5b75264a422a8&ai=648816224&at=1688478256&_sa=ai%2Cat&k=229b070c9abedb03207724fc18fe6c4764a6c530&_p=Y29tLmFwa3B1cmUuYWVnb24&c=1%7CTOOLS%7CZGV2PUFQS1B1cmUmdD1hcGsmcz0xMDIzODM4NiZ2bj0zLjE5LjIyJnZjPTMxOTIyMzc&hot=1&arg=apkpure%3A%2F%2Fcampaign%2F%3Futm_medium%3Dapkpure%26utm_source%3Dtext_home-m%253Ficn%253Daegon%26report_context%3D%7B%22channel_id%22%3A%5B%221006%22%2C%221033%22%5D%7D
+absolute_url: https://download.apkpure.com/custom/com.apkpure.aegon-3192237.apk?_fn=QVBLUHVyZV92My4xOS4yMl9hcGtwdXJlLmNvbS5hcGs&as=6cc6c26efef74956578f2d7d4cb5b75264a422a8&ai=648816224&at=1688478256&_sa=ai%2Cat&k=229b070c9abedb03207724fc18fe6c4764a6c530&_p=Y29tLmFwa3B1cmUuYWVnb24&c=1%7CTOOLS%7CZGV2PUFQS1B1cmUmdD1hcGsmcz0xMDIzODM4NiZ2bj0zLjE5LjIyJnZjPTMxOTIyMzc&hot=1&arg=apkpure%3A%2F%2Fcampaign%2F%3Futm_medium%3Dapkpure%26utm_source%3Dtext_home-m%253Ficn%253Daegon%26report_context%3D%7B%22channel_id%22%3A%5B%221006%22%2C%221033%22%5D%7D
+filename: https-download-apkpure-com-custom-com-apkpure-aegon-3192237-apk-fn-qvbluhvyzv92my4xos4yml9hcgtwdxjllmnvbs5hcgs-as-6cc6c26efef74956578f2d7d4cb5b75264a422a8-ai-648816224-at-1688478256-sa-ai-2cat-k-229b070c9abedb03207724fc18fe6c4764a6c530-p-y29tlmfwa3b1cmuuywvnb24-c-1-7ctools-7czgv2pufqs1b1cmumdd1hcgsmcz0xmdizodm4niz2bj0zlje5ljiyjnzjptmxotiymzc-hot-1-arg-apkpure-3a-2f-2fcampaign-2f-3futm-medium-3dapkpure-26utm-source-3dtext-home-m-253ficn-253daegon-26report-context-3d-7b-22channel-id-22-3a-5b-221006-22-2c-221033-22-5d-7d
+combined_path: resources/apk/https-download-apkpure-com-custom-com-apkpure-aegon-3192237-apk-fn-qvbluhvyzv92my4xos4yml9hcgtwdxjllmnvbs5hcgs-as-6cc6c26efef74956578f2d7d4cb5b75264a422a8-ai-648816224-at-1688478256-sa-ai-2cat-k-229b070c9abedb03207724fc18fe6c4764a6c530-p-y29tlmfwa3b1cmuuywvnb24-c-1-7ctools-7czgv2pufqs1b1cmumdd1hcgsmcz0xmdizodm4niz2bj0zlje5ljiyjnzjptmxotiymzc-hot-1-arg-apkpure-3a-2f-2fcampaign-2f-3futm-medium-3dapkpure-26utm-source-3dtext-home-m-253ficn-253daegon-26report-context-3d-7b-22channel-id-22-3a-5b-221006-22-2c-221033-22-5d-7d
+current href with .apk inside: /apkpure/com.apkpure.aegon
+current href with .apk inside: https://apkpure.com/search?q=com.apkpure.aegon&sat=articles&ao=newest&at=app_details
+file has query: ?
+before query: https://apkpure.com/search
+current href with .apk inside: /similar/com.apkpure.aegon
+current href with .apk inside: https://apkpure.com/apkpure/com.apkpure.aegon
+current href with .apk inside: https://developer.apkpure.com?hl=en
+file has query: ?
+before query: https://developer.apkpure.com
+current href with .apk inside: https://apkpure.com/apkpure/com.apkpure.aegon/download/3192237-APK
+current href with .apk inside: https://apkpure.com/br/apkpure/com.apkpure.aegon/download/3192237-APK
+current href with .apk inside: https://apkpure.com/es/apkpure/com.apkpure.aegon/download/3192237-APK
+current href with .apk inside: https://apkpure.com/ru/apkpure/com.apkpure.aegon/download/3192237-APK
+current href with .apk inside: https://apkpure.com/ar/apkpure/com.apkpure.aegon/download/3192237-APK
+current href with .apk inside: https://apkpure.com/cn/apkpure/com.apkpure.aegon/download/3192237-APK
+current href with .apk inside: https://apkpure.com/tw/apkpure/com.apkpure.aegon/download/3192237-APK
+current href with .apk inside: https://apkpure.com/in/apkpure/com.apkpure.aegon/download/3192237-APK
+current href with .apk inside: https://apkpure.com/id/apkpure/com.apkpure.aegon/download/3192237-APK
+current href with .apk inside: https://apkpure.com/it/apkpure/com.apkpure.aegon/download/3192237-APK
+current href with .apk inside: https://apkpure.com/nl/apkpure/com.apkpure.aegon/download/3192237-APK
+current href with .apk inside: https://apkpure.com/jp/apkpure/com.apkpure.aegon/download/3192237-APK
+current href with .apk inside: https://apkpure.com/pl/apkpure/com.apkpure.aegon/download/3192237-APK
+current href with .apk inside: https://apkpure.com/de/apkpure/com.apkpure.aegon/download/3192237-APK
+current href with .apk inside: https://apkpure.com/vn/apkpure/com.apkpure.aegon/download/3192237-APK
+current href with .apk inside: https://apkpure.com/fr/apkpure/com.apkpure.aegon/download/3192237-APK
+current href with .apk inside: https://apkpure.com/tr/apkpure/com.apkpure.aegon/download/3192237-APK
+current href with .apk inside: https://apkpure.com/kr/apkpure/com.apkpure.aegon/download/3192237-APK
+current href with .apk inside: https://apkpure.com/ms/apkpure/com.apkpure.aegon/download/3192237-APK
+current href with .apk inside: https://apkpure.com/th/apkpure/com.apkpure.aegon/download/3192237-APK
+current href with .apk inside: https://apkpure.com/ur/apkpure/com.apkpure.aegon/download/3192237-APK
+current href with .apk inside: https://apkpure.com/bn/apkpure/com.apkpure.aegon/download/3192237-APK
+trying url: https://apkpure.com/apkpure/com.apkpure.aegon/download/3192237-apk?utm_content=1006&icn=aegon&ici=text_home-m&from=text_home-m?icn=aegon&ici=text_home-m&utm_content=1033
+current href with .apk inside: https://windows.apkpure.com/?utm_source=APKPure&utm_medium=nav_product_link
+file has query: ?
+before query: https://windows.apkpure.com/
+current href with .apk inside: https://iphone.apkpure.com/?utm_source=APKPure&utm_medium=nav_product_link
+file has query: ?
+before query: https://iphone.apkpure.com/
+current href with .apk inside: https://tvonic.apkpure.com/?utm_source=topmenu&utm_medium=APKPure&utm_campaign=click
+file has query: ?
+before query: https://tvonic.apkpure.com/
+current href with .apk inside: /apkpure/com.apkpure.aegon
+current href with .apk inside: /apkpure/com.apkpure.aegon
+current href with .apk inside: https://apkpure.com/apkpure/com.apkpure.aegon/versions
+current href with .apk inside: https://download.apkpure.com/custom/com.apkpure.aegon-3192237.apk?_fn=QVBLUHVyZV92My4xOS4yMl9hcGtwdXJlLmNvbS5hcGs&as=f14e542f01a4e177e90fe37fb706b8b664a422aa&ai=648816224&at=1688478258&_sa=ai%2Cat&k=b921b0f067e93e47fcf329726028e25064a6c532&_p=Y29tLmFwa3B1cmUuYWVnb24&c=1%7CTOOLS%7CZGV2PUFQS1B1cmUmdD1hcGsmcz0xMDIzODM4NiZ2bj0zLjE5LjIyJnZjPTMxOTIyMzc&hot=1&arg=apkpure%3A%2F%2Fcampaign%2F%3Futm_medium%3Dapkpure%26utm_source%3Dtext_home-m%253Ficn%253Daegon%26report_context%3D%7B%22channel_id%22%3A%5B%221006%22%2C%221033%22%5D%7D
+file has query: ?
+before query: https://download.apkpure.com/custom/com.apkpure.aegon-3192237.apk
+APK FOUND: https://download.apkpure.com/custom/com.apkpure.aegon-3192237.apk?_fn=QVBLUHVyZV92My4xOS4yMl9hcGtwdXJlLmNvbS5hcGs&as=f14e542f01a4e177e90fe37fb706b8b664a422aa&ai=648816224&at=1688478258&_sa=ai%2Cat&k=b921b0f067e93e47fcf329726028e25064a6c532&_p=Y29tLmFwa3B1cmUuYWVnb24&c=1%7CTOOLS%7CZGV2PUFQS1B1cmUmdD1hcGsmcz0xMDIzODM4NiZ2bj0zLjE5LjIyJnZjPTMxOTIyMzc&hot=1&arg=apkpure%3A%2F%2Fcampaign%2F%3Futm_medium%3Dapkpure%26utm_source%3Dtext_home-m%253Ficn%253Daegon%26report_context%3D%7B%22channel_id%22%3A%5B%221006%22%2C%221033%22%5D%7D
+absolute_url: https://download.apkpure.com/custom/com.apkpure.aegon-3192237.apk?_fn=QVBLUHVyZV92My4xOS4yMl9hcGtwdXJlLmNvbS5hcGs&as=f14e542f01a4e177e90fe37fb706b8b664a422aa&ai=648816224&at=1688478258&_sa=ai%2Cat&k=b921b0f067e93e47fcf329726028e25064a6c532&_p=Y29tLmFwa3B1cmUuYWVnb24&c=1%7CTOOLS%7CZGV2PUFQS1B1cmUmdD1hcGsmcz0xMDIzODM4NiZ2bj0zLjE5LjIyJnZjPTMxOTIyMzc&hot=1&arg=apkpure%3A%2F%2Fcampaign%2F%3Futm_medium%3Dapkpure%26utm_source%3Dtext_home-m%253Ficn%253Daegon%26report_context%3D%7B%22channel_id%22%3A%5B%221006%22%2C%221033%22%5D%7D
+filename: https-download-apkpure-com-custom-com-apkpure-aegon-3192237-apk-fn-qvbluhvyzv92my4xos4yml9hcgtwdxjllmnvbs5hcgs-as-f14e542f01a4e177e90fe37fb706b8b664a422aa-ai-648816224-at-1688478258-sa-ai-2cat-k-b921b0f067e93e47fcf329726028e25064a6c532-p-y29tlmfwa3b1cmuuywvnb24-c-1-7ctools-7czgv2pufqs1b1cmumdd1hcgsmcz0xmdizodm4niz2bj0zlje5ljiyjnzjptmxotiymzc-hot-1-arg-apkpure-3a-2f-2fcampaign-2f-3futm-medium-3dapkpure-26utm-source-3dtext-home-m-253ficn-253daegon-26report-context-3d-7b-22channel-id-22-3a-5b-221006-22-2c-221033-22-5d-7d
+combined_path: resources/apk/https-download-apkpure-com-custom-com-apkpure-aegon-3192237-apk-fn-qvbluhvyzv92my4xos4yml9hcgtwdxjllmnvbs5hcgs-as-f14e542f01a4e177e90fe37fb706b8b664a422aa-ai-648816224-at-1688478258-sa-ai-2cat-k-b921b0f067e93e47fcf329726028e25064a6c532-p-y29tlmfwa3b1cmuuywvnb24-c-1-7ctools-7czgv2pufqs1b1cmumdd1hcgsmcz0xmdizodm4niz2bj0zlje5ljiyjnzjptmxotiymzc-hot-1-arg-apkpure-3a-2f-2fcampaign-2f-3futm-medium-3dapkpure-26utm-source-3dtext-home-m-253ficn-253daegon-26report-context-3d-7b-22channel-id-22-3a-5b-221006-22-2c-221033-22-5d-7d
+current href with .apk inside: https://download.apkpure.com/custom/com.apkpure.aegon-3192237.apk?_fn=QVBLUHVyZV92My4xOS4yMl9hcGtwdXJlLmNvbS5hcGs&as=f14e542f01a4e177e90fe37fb706b8b664a422aa&ai=648816224&at=1688478258&_sa=ai%2Cat&k=b921b0f067e93e47fcf329726028e25064a6c532&_p=Y29tLmFwa3B1cmUuYWVnb24&c=1%7CTOOLS%7CZGV2PUFQS1B1cmUmdD1hcGsmcz0xMDIzODM4NiZ2bj0zLjE5LjIyJnZjPTMxOTIyMzc&hot=1&arg=apkpure%3A%2F%2Fcampaign%2F%3Futm_medium%3Dapkpure%26utm_source%3Dtext_home-m%253Ficn%253Daegon%26report_context%3D%7B%22channel_id%22%3A%5B%221006%22%2C%221033%22%5D%7D
+file has query: ?
+before query: https://download.apkpure.com/custom/com.apkpure.aegon-3192237.apk
+APK FOUND: https://download.apkpure.com/custom/com.apkpure.aegon-3192237.apk?_fn=QVBLUHVyZV92My4xOS4yMl9hcGtwdXJlLmNvbS5hcGs&as=f14e542f01a4e177e90fe37fb706b8b664a422aa&ai=648816224&at=1688478258&_sa=ai%2Cat&k=b921b0f067e93e47fcf329726028e25064a6c532&_p=Y29tLmFwa3B1cmUuYWVnb24&c=1%7CTOOLS%7CZGV2PUFQS1B1cmUmdD1hcGsmcz0xMDIzODM4NiZ2bj0zLjE5LjIyJnZjPTMxOTIyMzc&hot=1&arg=apkpure%3A%2F%2Fcampaign%2F%3Futm_medium%3Dapkpure%26utm_source%3Dtext_home-m%253Ficn%253Daegon%26report_context%3D%7B%22channel_id%22%3A%5B%221006%22%2C%221033%22%5D%7D
+absolute_url: https://download.apkpure.com/custom/com.apkpure.aegon-3192237.apk?_fn=QVBLUHVyZV92My4xOS4yMl9hcGtwdXJlLmNvbS5hcGs&as=f14e542f01a4e177e90fe37fb706b8b664a422aa&ai=648816224&at=1688478258&_sa=ai%2Cat&k=b921b0f067e93e47fcf329726028e25064a6c532&_p=Y29tLmFwa3B1cmUuYWVnb24&c=1%7CTOOLS%7CZGV2PUFQS1B1cmUmdD1hcGsmcz0xMDIzODM4NiZ2bj0zLjE5LjIyJnZjPTMxOTIyMzc&hot=1&arg=apkpure%3A%2F%2Fcampaign%2F%3Futm_medium%3Dapkpure%26utm_source%3Dtext_home-m%253Ficn%253Daegon%26report_context%3D%7B%22channel_id%22%3A%5B%221006%22%2C%221033%22%5D%7D
+filename: https-download-apkpure-com-custom-com-apkpure-aegon-3192237-apk-fn-qvbluhvyzv92my4xos4yml9hcgtwdxjllmnvbs5hcgs-as-f14e542f01a4e177e90fe37fb706b8b664a422aa-ai-648816224-at-1688478258-sa-ai-2cat-k-b921b0f067e93e47fcf329726028e25064a6c532-p-y29tlmfwa3b1cmuuywvnb24-c-1-7ctools-7czgv2pufqs1b1cmumdd1hcgsmcz0xmdizodm4niz2bj0zlje5ljiyjnzjptmxotiymzc-hot-1-arg-apkpure-3a-2f-2fcampaign-2f-3futm-medium-3dapkpure-26utm-source-3dtext-home-m-253ficn-253daegon-26report-context-3d-7b-22channel-id-22-3a-5b-221006-22-2c-221033-22-5d-7d
+combined_path: resources/apk/https-download-apkpure-com-custom-com-apkpure-aegon-3192237-apk-fn-qvbluhvyzv92my4xos4yml9hcgtwdxjllmnvbs5hcgs-as-f14e542f01a4e177e90fe37fb706b8b664a422aa-ai-648816224-at-1688478258-sa-ai-2cat-k-b921b0f067e93e47fcf329726028e25064a6c532-p-y29tlmfwa3b1cmuuywvnb24-c-1-7ctools-7czgv2pufqs1b1cmumdd1hcgsmcz0xmdizodm4niz2bj0zlje5ljiyjnzjptmxotiymzc-hot-1-arg-apkpure-3a-2f-2fcampaign-2f-3futm-medium-3dapkpure-26utm-source-3dtext-home-m-253ficn-253daegon-26report-context-3d-7b-22channel-id-22-3a-5b-221006-22-2c-221033-22-5d-7d
+current href with .apk inside: /apkpure/com.apkpure.aegon
+current href with .apk inside: https://apkpure.com/search?q=com.apkpure.aegon&sat=articles&ao=newest&at=app_details
+file has query: ?
+before query: https://apkpure.com/search
+current href with .apk inside: /similar/com.apkpure.aegon
+current href with .apk inside: https://apkpure.com/apkpure/com.apkpure.aegon
+current href with .apk inside: https://developer.apkpure.com?hl=en
+file has query: ?
+before query: https://developer.apkpure.com
+current href with .apk inside: https://apkpure.com/apkpure/com.apkpure.aegon/download/3192237-APK
+current href with .apk inside: https://apkpure.com/br/apkpure/com.apkpure.aegon/download/3192237-APK
+current href with .apk inside: https://apkpure.com/es/apkpure/com.apkpure.aegon/download/3192237-APK
+current href with .apk inside: https://apkpure.com/ru/apkpure/com.apkpure.aegon/download/3192237-APK
+current href with .apk inside: https://apkpure.com/ar/apkpure/com.apkpure.aegon/download/3192237-APK
+current href with .apk inside: https://apkpure.com/cn/apkpure/com.apkpure.aegon/download/3192237-APK
+current href with .apk inside: https://apkpure.com/tw/apkpure/com.apkpure.aegon/download/3192237-APK
+current href with .apk inside: https://apkpure.com/in/apkpure/com.apkpure.aegon/download/3192237-APK
+current href with .apk inside: https://apkpure.com/id/apkpure/com.apkpure.aegon/download/3192237-APK
+current href with .apk inside: https://apkpure.com/it/apkpure/com.apkpure.aegon/download/3192237-APK
+current href with .apk inside: https://apkpure.com/nl/apkpure/com.apkpure.aegon/download/3192237-APK
+current href with .apk inside: https://apkpure.com/jp/apkpure/com.apkpure.aegon/download/3192237-APK
+current href with .apk inside: https://apkpure.com/pl/apkpure/com.apkpure.aegon/download/3192237-APK
+current href with .apk inside: https://apkpure.com/de/apkpure/com.apkpure.aegon/download/3192237-APK
+current href with .apk inside: https://apkpure.com/vn/apkpure/com.apkpure.aegon/download/3192237-APK
+current href with .apk inside: https://apkpure.com/fr/apkpure/com.apkpure.aegon/download/3192237-APK
+current href with .apk inside: https://apkpure.com/tr/apkpure/com.apkpure.aegon/download/3192237-APK
+current href with .apk inside: https://apkpure.com/kr/apkpure/com.apkpure.aegon/download/3192237-APK
+current href with .apk inside: https://apkpure.com/ms/apkpure/com.apkpure.aegon/download/3192237-APK
+current href with .apk inside: https://apkpure.com/th/apkpure/com.apkpure.aegon/download/3192237-APK
+current href with .apk inside: https://apkpure.com/ur/apkpure/com.apkpure.aegon/download/3192237-APK
+current href with .apk inside: https://apkpure.com/bn/apkpure/com.apkpure.aegon/download/3192237-APK
+APK scraping complete
+logfile written to: resources/logs/logfile_20230704_134416.583.txt

@@ -14,6 +14,8 @@ import pymongo
 import config
 from flask.cli import FlaskGroup
 from bson import json_util
+from apscheduler.triggers.cron import CronTrigger
+
 
 
 # import os
@@ -35,7 +37,8 @@ client = MongoClient('localhost',27017)
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 CORS(app)
-client = MongoClient('mongodb://readWrite:%20mongo1DB%20@18.141.141.56:27017/')
+# crontab = Crontab(app)
+# client = MongoClient('mongodb://readWrite:%20mongo1DB%20@18.141.141.56:27017/')
 # db = client['michelle_list']
 # collection = "mirai_aurora_deimos"
 
@@ -646,6 +649,13 @@ def get_todos():
 
     # print(todos)
     return json.loads(json_util.dumps(todos))
+
+
+
+# @crontab.job(minute="*", hour="19", day="*", month="*", day_of_week="*")
+# def my_scheduled_job():
+#     print("hello")
+
 # Scheduled Processing
 
 # scheduler = BackgroundScheduler()
@@ -655,6 +665,16 @@ def get_todos():
 # def func_to_be_executed():
 #     now = datetime.datetime.now()
 #     print("now:", now)
+
+scheduler = BackgroundScheduler()
+
+@scheduler.scheduled_job(CronTrigger(hour=20, minute=1))
+def func_to_be_executed():
+    now = datetime.datetime.now()
+    # print("now:", now)
+    process_parent()
+
+scheduler.start()
 
 # @scheduler.scheduled_job(IntervalTrigger(seconds=5))
 # def func_to_be_executed():
@@ -677,5 +697,8 @@ def get_todos():
 
 
 if __name__ == "__main__":
-   app.run(debug=True, port=5000)
+#    app.run(debug=True, port=5000, threaded=True)
+   app.run(debug=True, use_reloader=True, port=5000, threaded=True)
+    # app.run(use_reloader=False, port=5000, threaded=True)
+
     # app.run(debug=True, use_reloader=False, port=5000)

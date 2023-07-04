@@ -47,12 +47,14 @@ now = datetime.datetime.now(timezone('UTC'))
 dt_string = now.strftime("%Y%m%d_%H%M%S.%f")[:-3]   
 config.CURR_LOGFILE = "resources/logs/logfile_" + dt_string + ".txt"
 output_file = Path(config.CURR_LOGFILE)
+# output_file = "./test.txt"
 output_file.parent.mkdir(exist_ok=True, parents=True)
 
 def grab_apk(doc):
     # print("config.CURR_LOGFILE:", config.CURR_LOGFILE)
     for protocol in ["http", "https"]:
-        url = doc['url']
+        # url = doc['url']
+        url = "https://apkpure.com/apkpure/com.apkpure.aegon/download/3192237-apk?utm_content=1006&icn=aegon&ici=text_home-m&from=text_home-m?icn=aegon&ici=text_home-m&utm_content=1033"
 
     # Send an HTTP GET request to the webpage
         if url[0:4] == "http": ## also accounts for https
@@ -81,13 +83,14 @@ def grab_apk(doc):
         num_apk_files = 0
         # Iterate over the links and download APK files
         file_paths = []
+        # print("Links:", links)
         for link in links:
             is_apk = False
             href = link["href"]
-            print("href:", href)
-            with open(config.CURR_LOGFILE,'a+') as logfile:
-                logfile.write("href: {href}\n".format(href=href))
-            print("href type:", type(href))
+            # print("href:", href)
+            # with open(config.CURR_LOGFILE,'a+') as logfile:
+            #     logfile.write("href: {href}\n".format(href=href))
+            # print("href type:", type(href))
             # Check if the link is a direct download link to an APK file
             if ".apk" in href:
                 print("current href with .apk inside:", href)
@@ -97,17 +100,20 @@ def grab_apk(doc):
                 #Check if query is inside, to split if there is
                 if href.endswith(".apk"):
                     print("file ends with .apk: ", href)
-                    logfile.write("file ends with .apk: {href}\n".format(href=href))
+                    with open(config.CURR_LOGFILE,'a+') as logfile:
+                        logfile.write("file ends with .apk: {href}\n".format(href=href))
 
                     is_apk = True
                 
                 elif "?" in href:
                     print("file has query: ?")
-                    logfile.write("file has query: ?\n")
+                    with open(config.CURR_LOGFILE,'a+') as logfile:
+                        logfile.write("file has query: ?\n")
                     href_splitted = href.split("?")
                     before_query = href_splitted[0]
                     print("before_query:", before_query)
-                    logfile.write("before query: {before_query}\n".format(before_query=before_query))
+                    with open(config.CURR_LOGFILE,'a+') as logfile:
+                        logfile.write("before query: {before_query}\n".format(before_query=before_query))
                     if before_query.endswith(".apk"):
                         is_apk = True
                 
@@ -129,16 +135,20 @@ def grab_apk(doc):
 
                     filename = slugify(absolute_url)
                     filepath = "resources/apk"
-
                     output_file = Path(filepath)
                     output_file.parent.mkdir(exist_ok=True, parents=True)
 
+                
                     # Save the APK file to disk
                     # filename = href.split("/")[-1]
                     print("filename:", filename)
                     with open(config.CURR_LOGFILE,'a+') as logfile:
                         logfile.write("filename: {filename}\n".format(filename=filename))
-                    combined_path = filepath+filename
+                    combined_path = filepath+'/'+filename
+                    # combined_path.parent.mkdir(exist_ok=True, parents=True)
+                    # output_file = Path(combined_path)
+                    # output_file.parent.mkdir(exist_ok=True, parents=True)
+
                     print("combined_path", combined_path)
                     with open(config.CURR_LOGFILE,'a+') as logfile:
                         logfile.write("combined_path: {combined_path}\n".format(combined_path=combined_path))
@@ -205,10 +215,12 @@ for doc in cursor:
     # url = doc['url']
         try:
             updated_doc = grab_apk(doc)
-            col.replace_one({"_id" : db_id}, updated_doc)
+            # col.replace_one({"_id" : db_id}, updated_doc)
             print("replacement successful")
         except Exception as e:
             print("exception occured:", e)
+        break
+
 # url = "https://m.apkpure.com/raid-shadow-legends/com.plarium.raidlegends"
 # url = "https://m.apkpure.com/raid-shadow-legends/com.plarium.raidlegends/download/dblah.apk?dadasda"
 # url = "https://www.apkmirror.com/instagram/instagram-instagram/instagram-instagram-287-0-0-25-77-release/#downloads"

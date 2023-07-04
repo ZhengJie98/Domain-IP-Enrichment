@@ -1,0 +1,83 @@
+current domain in process_parent:notchstudio-aim.com
+===== to_skip function start =====
+notchstudio-aim.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: notchstudio-aim.com now: 2023-07-03 07:16:56.332627+00:00
+duration_log vt_call: 0.9165072000178043
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 11.839223499991931
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+grab_html_js() exception triggered: HTTPConnectionPool(host='notchstudio-aim.com', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002924AE70A90>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+current protocol: https
+grab_html_js() exception triggered: HTTPSConnectionPool(host='notchstudio-aim.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000002924AE709D0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+duration_log grab_html_js: 0.026097399997524917
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/notchstudio-aim.com_20230703_071709.157.txt
+duration_log get_whois_info: 0.9485461000003852
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+socket.gethostbyname_ex() exception triggered: [Errno 11001] getaddrinfo failed
+dns.resolver.query() exception triggered: The DNS query name does not exist: notchstudio-aim.com.
+duration_log get_dns_info: 0.0393628999881912
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/notchstudio-aim.com_20230703_071710.150.json
+duration_log get_cert_info: 1.4584969000134151
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 1.3464598000282422
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for notchstudio-aim.com, time taken 16.663415000017267 seconds
+
+
+current ip in process_parent:101.32.113.139
+===== to_skip function start =====
+101.32.113.139 has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: 101.32.113.139 now: 2023-07-03 07:17:13.046493+00:00
+duration_log vt_call: 0.9702663000207394
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 25.2629093999858
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+grab_html_js() exception triggered: HTTPConnectionPool(host='101.32.113.139', port=80): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000002924AD0E8D0>, 'Connection to 101.32.113.139 timed out. (connect timeout=None)'))
+current protocol: https
+grab_html_js() exception triggered: HTTPSConnectionPool(host='101.32.113.139', port=443): Max retries exceeded with url: / (Caused by SSLError(CertificateError("hostname '101.32.113.139' doesn't match either of '*.tim.qq.com', 'tim.qq.com'")))
+duration_log grab_html_js: 21.112793800013606
+===== grab_html_js function end =====
+replacement successful
+replacement SUCCESSFUL for 101.32.113.139, time taken 47.432693500013556 seconds
+
+
+current ip in process_parent:1.1.1.1
+===== to_skip function start =====
+1.1.1.1 has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: 1.1.1.1 now: 2023-07-03 07:18:00.555367+00:00
+duration_log vt_call: 0.9140806999930646
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 46.503815300005954
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+grab_html_js() exception triggered: HTTPConnectionPool(host='1.1.1.1', port=80): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000002924AE3B7D0>, 'Connection to 1.1.1.1 timed out. (connect timeout=None)'))
+current protocol: https
+grab_html_js() exception triggered: HTTPSConnectionPool(host='1.1.1.1', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000002924AE38590>, 'Connection to 1.1.1.1 timed out. (connect timeout=None)'))
+duration_log grab_html_js: 42.08819830001448
+===== grab_html_js function end =====
+replacement successful
+replacement SUCCESSFUL for 1.1.1.1, time taken 89.59061380001367 seconds
+
+

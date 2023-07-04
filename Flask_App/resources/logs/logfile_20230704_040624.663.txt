@@ -1,0 +1,673 @@
+current URL in process_parent: xxmtkm.info/final-draft-coordinated-public-transportation-plan-released-for-review-comment/?
+===== to_skip function start =====
+xxmtkm.info has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: xxmtkm.info now: 2023-07-04 04:06:24.706914+00:00
+duration_log vt_call: 0.9837765000411309
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 4.946396000043023
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+grab_html_js() OUTER EXCEPTION triggered: HTTPConnectionPool(host='xxmtkm.info', port=80): Max retries exceeded with url: /final-draft-coordinated-public-transportation-plan-released-for-review-comment/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001DF99E31750>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+current protocol: https
+grab_html_js() OUTER EXCEPTION triggered: HTTPSConnectionPool(host='xxmtkm.info', port=443): Max retries exceeded with url: /final-draft-coordinated-public-transportation-plan-released-for-review-comment/ (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001DF99FAAA90>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+duration_log grab_html_js: 0.01736579998396337
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/xxmtkm.info_20230704_040630.705.txt
+duration_log get_whois_info: 1.579608100000769
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+socket.gethostbyname_ex() exception triggered: [Errno 11001] getaddrinfo failed
+dns.resolver.query() exception triggered: The DNS query name does not exist: xxmtkm.info.
+duration_log get_dns_info: 0.03241479996358976
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/xxmtkm.info_20230704_040632.328.json
+duration_log get_cert_info: 0.8036861000000499
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7039216000121087
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for xxmtkm.info, time taken 15.001243999984581 seconds
+
+
+current URL in process_parent: wunderfauks-develop.com/#/pages/start/start
+===== to_skip function start =====
+wunderfauks-develop.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: wunderfauks-develop.com now: 2023-07-04 04:06:39.764362+00:00
+duration_log vt_call: 1.048002700030338
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 6.1835694999899715
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+grab_html_js() OUTER EXCEPTION triggered: HTTPConnectionPool(host='wunderfauks-develop.com', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001DF9D157610>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+current protocol: https
+grab_html_js() OUTER EXCEPTION triggered: HTTPSConnectionPool(host='wunderfauks-develop.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001DF9D156610>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+duration_log grab_html_js: 0.23376929998630658
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/wunderfauks-develop.com_20230704_040647.295.txt
+duration_log get_whois_info: 0.6193748000077903
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+socket.gethostbyname_ex() exception triggered: [Errno 11001] getaddrinfo failed
+dns.resolver.query() exception triggered: The DNS query name does not exist: wunderfauks-develop.com.
+duration_log get_dns_info: 0.2386897000251338
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/wunderfauks-develop.com_20230704_040648.160.json
+duration_log get_cert_info: 0.8058958000037819
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 2.283098600048106
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for wunderfauks-develop.com, time taken 15.000857000006363 seconds
+
+
+current URL in process_parent: e-lazada.com/#/login/index
+===== to_skip function start =====
+e-lazada.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: e-lazada.com now: 2023-07-04 04:06:54.784622+00:00
+duration_log vt_call: 1.1371578000253066
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 4.199084200023208
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+grab_html_js() OUTER EXCEPTION triggered: HTTPConnectionPool(host='e-lazada.com', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001DF9D124590>: Failed to establish a new connection: [Errno 11002] getaddrinfo failed'))
+current protocol: https
+grab_html_js() OUTER EXCEPTION triggered: HTTPSConnectionPool(host='e-lazada.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001DF9D1264D0>: Failed to establish a new connection: [Errno 11002] getaddrinfo failed'))
+duration_log grab_html_js: 0.01908729999559
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/e-lazada.com_20230704_040700.190.txt
+duration_log get_whois_info: 0.45753389998571947
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+socket.gethostbyname_ex() exception triggered: [Errno 11002] getaddrinfo failed
+dns.resolver.query() exception triggered: All nameservers failed to answer the query e-lazada.com. IN NS: Server 1.1.1.1 UDP port 53 answered SERVFAIL
+duration_log get_dns_info: 0.024977600027341396
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/e-lazada.com_20230704_040700.677.json
+duration_log get_cert_info: 0.8206192000070587
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 1.0025320000131615
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for e-lazada.com, time taken 15.000941400008742 seconds
+
+
+current URL in process_parent: eufmyio.shop/products/05-stories-of-chata-patti-crimson-wedding-22
+===== to_skip function start =====
+eufmyio.shop has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: eufmyio.shop now: 2023-07-04 04:07:09.811514+00:00
+duration_log vt_call: 1.140945199993439
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/eufmyio.shop/products/05-stories-of-chata-patti-crimson-wedding-22_http_20230704_040710.970.pngscreenshot found for protocol: https and saved to resources/shot-scraper/eufmyio.shop/products/05-stories-of-chata-patti-crimson-wedding-22_https_20230704_040710.970.pngduration_log screenshot: 21.05359480000334
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+http_status_code: 200
+Good http_status_code: 200
+final_url: http://eufmyio.shop/products/05-stories-of-chata-patti-crimson-wedding-22
+html file stored to: resources/html/eufmyio.shop/products/05-stories-of-chata-patti-crimson-wedding-22_http_20230704_040732.042.html
+web_url: http://eufmyio.shop/products/05-stories-of-chata-patti-crimson-wedding-22
+url: //cdn.shopify.com/shopifycloud/shopify/assets/storefront/load_feature-e154599399e6b8b29dcb1102cc76eb199fa33a09af4fa78d15e8f8544ee64fcd.js
+web_url: http://eufmyio.shop/products/05-stories-of-chata-patti-crimson-wedding-22
+url: //cdn.shopify.com/shopifycloud/shopify/assets/storefront/features-87e8399988880142f2c62771b9d8f2ff6c290b3ff745dd426eb0dfe0db9d1dae.js
+web_url: http://eufmyio.shop/products/05-stories-of-chata-patti-crimson-wedding-22
+url: //cdn.shopify.com/s/files/1/0571/0659/5989/t/2/assets/vendor-scripts-v6.js
+web_url: http://eufmyio.shop/products/05-stories-of-chata-patti-crimson-wedding-22
+url: //cdn.shopify.com/s/files/1/0571/0659/5989/t/2/assets/theme.js?v=112718498460643917511622297434
+web_url: http://eufmyio.shop/products/05-stories-of-chata-patti-crimson-wedding-22
+url: https://cdn-spurit.com/shopify-apps/abandoned-cart-reminder/common.js
+web_url: http://eufmyio.shop/products/05-stories-of-chata-patti-crimson-wedding-22
+url: //cdn.shopify.com/s/files/1/0571/0659/5989/t/2/assets/tms-translator.js?v=33303808482051773121672922133
+total js_files_links: ['http://cdn.shopify.com/shopifycloud/shopify/assets/storefront/load_feature-e154599399e6b8b29dcb1102cc76eb199fa33a09af4fa78d15e8f8544ee64fcd.js', 'http://cdn.shopify.com/shopifycloud/shopify/assets/storefront/features-87e8399988880142f2c62771b9d8f2ff6c290b3ff745dd426eb0dfe0db9d1dae.js', 'http://cdn.shopify.com/s/files/1/0571/0659/5989/t/2/assets/vendor-scripts-v6.js', 'http://cdn.shopify.com/s/files/1/0571/0659/5989/t/2/assets/theme.js?v=112718498460643917511622297434', 'https://cdn-spurit.com/shopify-apps/abandoned-cart-reminder/common.js', 'http://cdn.shopify.com/s/files/1/0571/0659/5989/t/2/assets/tms-translator.js?v=33303808482051773121672922133']
+starting get for each_js_link: http://cdn.shopify.com/shopifycloud/shopify/assets/storefront/load_feature-e154599399e6b8b29dcb1102cc76eb199fa33a09af4fa78d15e8f8544ee64fcd.js
+grab_html_js() INNER EXCEPTION triggered: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+starting get for each_js_link: http://cdn.shopify.com/shopifycloud/shopify/assets/storefront/features-87e8399988880142f2c62771b9d8f2ff6c290b3ff745dd426eb0dfe0db9d1dae.js
+grab_html_js() INNER EXCEPTION triggered: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+starting get for each_js_link: http://cdn.shopify.com/s/files/1/0571/0659/5989/t/2/assets/vendor-scripts-v6.js
+grab_html_js() INNER EXCEPTION triggered: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+starting get for each_js_link: http://cdn.shopify.com/s/files/1/0571/0659/5989/t/2/assets/theme.js?v=112718498460643917511622297434
+grab_html_js() INNER EXCEPTION triggered: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+starting get for each_js_link: https://cdn-spurit.com/shopify-apps/abandoned-cart-reminder/common.js
+grab_html_js() INNER EXCEPTION triggered: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+starting get for each_js_link: http://cdn.shopify.com/s/files/1/0571/0659/5989/t/2/assets/tms-translator.js?v=33303808482051773121672922133
+grab_html_js() INNER EXCEPTION triggered: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+current protocol: https
+grab_html_js() OUTER EXCEPTION triggered: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+duration_log grab_html_js: 106.58448869996937
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/eufmyio.shop_20230704_040918.650.txt
+duration_log get_whois_info: 0.5262227999628522
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/eufmyio.shop_gethostbyname_ex_20230704_040919.180.txt
+nameservers_filepath file written to resources/dns/eufmyio.shop_nameservers_20230704_040919.180.txt
+duration_log get_dns_info: 0.09736869996413589
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/eufmyio.shop_20230704_040919.284.json
+duration_log get_cert_info: 0.8414441999630071
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/eufmyio.shop_20230704_040920.130.json
+duration_log get_archived_page_info: 0.7307853000238538
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for eufmyio.shop, time taken 131.09632549999515 seconds
+
+
+current URL in process_parent: krakenbq.cc/index/user/indexhtml
+===== to_skip function start =====
+krakenbq.cc has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: krakenbq.cc now: 2023-07-04 04:09:20.963978+00:00
+duration_log vt_call: 0.8853905000141822
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 4.216047200025059
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+grab_html_js() OUTER EXCEPTION triggered: HTTPConnectionPool(host='krakenbq.cc', port=80): Max retries exceeded with url: /index/user/indexhtml (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001DF9D1DF650>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+current protocol: https
+grab_html_js() OUTER EXCEPTION triggered: HTTPSConnectionPool(host='krakenbq.cc', port=443): Max retries exceeded with url: /index/user/indexhtml (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001DF9D1DF0D0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+duration_log grab_html_js: 0.014343100017867982
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/krakenbq.cc_20230704_040926.136.txt
+duration_log get_whois_info: 0.8629864000249654
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+socket.gethostbyname_ex() exception triggered: [Errno 11001] getaddrinfo failed
+nameservers_filepath file written to resources/dns/krakenbq.cc_nameservers_20230704_040927.002.txt
+duration_log get_dns_info: 0.22604280000086874
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/krakenbq.cc_20230704_040927.240.json
+duration_log get_cert_info: 0.819083500013221
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7173219999531284
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for krakenbq.cc, time taken 15.00107429997297 seconds
+
+
+current URL in process_parent: www.forfurniture-downapp.com/
+===== to_skip function start =====
+www.forfurniture-downapp.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: www.forfurniture-downapp.com now: 2023-07-04 04:09:35.994860+00:00
+duration_log vt_call: 1.0758580000256188
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/www.forfurniture-downapp.com/_http_20230704_040937.089.pngscreenshot found for protocol: https and saved to resources/shot-scraper/www.forfurniture-downapp.com/_https_20230704_040937.089.pngduration_log screenshot: 11.18225589999929
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+http_status_code: 400
+Bad http_status_code: 400
+grab_html_js() OUTER EXCEPTION triggered: cannot access local variable 'final_url' where it is not associated with a value
+current protocol: https
+http_status_code: 400
+Bad http_status_code: 400
+grab_html_js() OUTER EXCEPTION triggered: cannot access local variable 'final_url' where it is not associated with a value
+duration_log grab_html_js: 0.2824553000391461
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/www.forfurniture-downapp.com_20230704_040948.609.txt
+duration_log get_whois_info: 0.4503833999624476
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/www.forfurniture-downapp.com_gethostbyname_ex_20230704_040949.057.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: www.forfurniture-downapp.com. IN NS
+duration_log get_dns_info: 0.20203750004293397
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/www.forfurniture-downapp.com_20230704_040949.267.json
+duration_log get_cert_info: 0.8365219000261277
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.6845037000020966
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for www.forfurniture-downapp.com, time taken 15.001199699996505 seconds
+
+
+current URL in process_parent: imgg1265t.xyz/mobile/#/assets
+===== to_skip function start =====
+imgg1265t.xyz has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: imgg1265t.xyz now: 2023-07-04 04:09:51.056494+00:00
+duration_log vt_call: 0.8814592999988236
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/imgg1265t.xyz/mobile/#/assets_http_20230704_040951.954.pngduration_log screenshot: 8.81461209995905
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+http_status_code: 404
+Bad http_status_code: 404
+grab_html_js() OUTER EXCEPTION triggered: cannot access local variable 'final_url' where it is not associated with a value
+current protocol: https
+grab_html_js() OUTER EXCEPTION triggered: HTTPSConnectionPool(host='imgg1265t.xyz', port=443): Max retries exceeded with url: /mobile/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1002)')))
+duration_log grab_html_js: 1.183852999994997
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/imgg1265t.xyz_20230704_041001.993.txt
+duration_log get_whois_info: 1.144686899962835
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/imgg1265t.xyz_gethostbyname_ex_20230704_041003.141.txt
+nameservers_filepath file written to resources/dns/imgg1265t.xyz_nameservers_20230704_041003.141.txt
+duration_log get_dns_info: 0.4629619999905117
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 0.8112962000304833
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7456831999588758
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for imgg1265t.xyz, time taken 15.000929499976337 seconds
+
+
+current URL in process_parent: skyonetrades.com/mobile/en-us/m.html#/myAccount
+===== to_skip function start =====
+skyonetrades.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: skyonetrades.com now: 2023-07-04 04:10:06.087027+00:00
+duration_log vt_call: 0.9804314999491908
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 5.241780899988953
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+grab_html_js() OUTER EXCEPTION triggered: HTTPConnectionPool(host='skyonetrades.com', port=80): Max retries exceeded with url: /mobile/en-us/m.html (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001DF9D1CF090>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+current protocol: https
+grab_html_js() OUTER EXCEPTION triggered: HTTPSConnectionPool(host='skyonetrades.com', port=443): Max retries exceeded with url: /mobile/en-us/m.html (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001DF9D1CEB50>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+duration_log grab_html_js: 0.3905934999929741
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/skyonetrades.com_20230704_041012.762.txt
+duration_log get_whois_info: 0.6921539000468329
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+socket.gethostbyname_ex() exception triggered: [Errno 11001] getaddrinfo failed
+nameservers_filepath file written to resources/dns/skyonetrades.com_nameservers_20230704_041013.527.txt
+duration_log get_dns_info: 1.4274754000362009
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/skyonetrades.com_20230704_041014.952.json
+duration_log get_cert_info: 0.8562352000153624
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7383627999806777
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for skyonetrades.com, time taken 15.001090999983717 seconds
+
+
+current URL in process_parent: fy31bb2392.shop/mobile
+===== to_skip function start =====
+fy31bb2392.shop has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: fy31bb2392.shop now: 2023-07-04 04:10:21.130534+00:00
+duration_log vt_call: 0.9749240999808535
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/fy31bb2392.shop/mobile_http_20230704_041022.123.pngduration_log screenshot: 8.518707100010943
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+http_status_code: 404
+Bad http_status_code: 404
+grab_html_js() OUTER EXCEPTION triggered: cannot access local variable 'final_url' where it is not associated with a value
+current protocol: https
+grab_html_js() OUTER EXCEPTION triggered: HTTPSConnectionPool(host='fy31bb2392.shop', port=443): Max retries exceeded with url: /mobile (Caused by SSLError(CertificateError("hostname 'fy31bb2392.shop' doesn't match either of 'fy86vip168.xyz', 'fy86vip18.xyz', 'fy86vip28.xyz', 'fy8856vip.xyz', 'kkf.fyk-bbqt5858.xyz', 'kkf.fyk-bbqt8888.online', 'kkf.fyk-bbqt8888.shop', 'kkf.fyk-bbqt8888.xyz', 'kkf.fyk-bbqt9631.online'")))
+duration_log grab_html_js: 0.7551637999713421
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/fy31bb2392.shop_20230704_041031.446.txt
+duration_log get_whois_info: 0.382519900042098
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/fy31bb2392.shop_gethostbyname_ex_20230704_041031.826.txt
+nameservers_filepath file written to resources/dns/fy31bb2392.shop_nameservers_20230704_041031.826.txt
+duration_log get_dns_info: 0.4650633999845013
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 0.8985157000133768
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.664574199996423
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for fy31bb2392.shop, time taken 15.006800300034229 seconds
+
+
+current URL in process_parent: chartercom-singapore-project.pages.dev/#/
+===== to_skip function start =====
+chartercom-singapore-project.pages.dev has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: chartercom-singapore-project.pages.dev now: 2023-07-04 04:10:36.183515+00:00
+duration_log vt_call: 1.0228429999551736
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 4.691917799995281
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+grab_html_js() OUTER EXCEPTION triggered: HTTPConnectionPool(host='chartercom-singapore-project.pages.dev', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001DF9D11E0D0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+current protocol: https
+grab_html_js() OUTER EXCEPTION triggered: HTTPSConnectionPool(host='chartercom-singapore-project.pages.dev', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001DF9D11E090>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+duration_log grab_html_js: 0.03984659997513518
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/chartercom-singapore-project.pages.dev_20230704_041041.995.txt
+duration_log get_whois_info: 0.34176809998461977
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+socket.gethostbyname_ex() exception triggered: [Errno 11001] getaddrinfo failed
+nameservers_filepath file written to resources/dns/chartercom-singapore-project.pages.dev_nameservers_20230704_041042.347.txt
+duration_log get_dns_info: 0.037910800019744784
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/chartercom-singapore-project.pages.dev_20230704_041042.390.json
+duration_log get_cert_info: 0.791826399974525
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 1.0078826999524608
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for chartercom-singapore-project.pages.dev, time taken 15.00148779997835 seconds
+
+
+current URL in process_parent: dktunvslkjslgj.com/index/user/login.html
+===== to_skip function start =====
+dktunvslkjslgj.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: dktunvslkjslgj.com now: 2023-07-04 04:10:51.233337+00:00
+duration_log vt_call: 0.8540626000030898
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 4.493593699997291
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+grab_html_js() OUTER EXCEPTION triggered: HTTPConnectionPool(host='dktunvslkjslgj.com', port=80): Max retries exceeded with url: /index/user/login.html (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001DF9D10D010>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+current protocol: https
+grab_html_js() OUTER EXCEPTION triggered: HTTPSConnectionPool(host='dktunvslkjslgj.com', port=443): Max retries exceeded with url: /index/user/login.html (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001DF9D10CF50>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+duration_log grab_html_js: 0.22165969997877255
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/dktunvslkjslgj.com_20230704_041056.857.txt
+duration_log get_whois_info: 0.6094439000007696
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+socket.gethostbyname_ex() exception triggered: [Errno 11001] getaddrinfo failed
+nameservers_filepath file written to resources/dns/dktunvslkjslgj.com_nameservers_20230704_041057.472.txt
+duration_log get_dns_info: 0.6205900000059046
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 0.8313763999613002
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.6650473999907263
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for dktunvslkjslgj.com, time taken 15.001036500034388 seconds
+
+
+current URL in process_parent: p-dro.bio/auth
+===== to_skip function start =====
+p-dro.bio has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: p-dro.bio now: 2023-07-04 04:11:06.271006+00:00
+duration_log vt_call: 1.2738905000151135
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 6.609350899991114
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+grab_html_js() OUTER EXCEPTION triggered: HTTPConnectionPool(host='p-dro.bio', port=80): Max retries exceeded with url: /auth (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001DF9D1DCD50>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+current protocol: https
+grab_html_js() OUTER EXCEPTION triggered: HTTPSConnectionPool(host='p-dro.bio', port=443): Max retries exceeded with url: /auth (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001DF9D1DE0D0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+duration_log grab_html_js: 0.1369653000147082
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/p-dro.bio_20230704_041114.345.txt
+duration_log get_whois_info: 0.03161270002601668
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+socket.gethostbyname_ex() exception triggered: [Errno 11001] getaddrinfo failed
+nameservers_filepath file written to resources/dns/p-dro.bio_nameservers_20230704_041114.388.txt
+duration_log get_dns_info: 0.03820339997764677
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/p-dro.bio_20230704_041114.430.json
+duration_log get_cert_info: 0.8024698999943212
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.6963321999646723
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for p-dro.bio, time taken 15.001253499998711 seconds
+
+
+current URL in process_parent: www.mabangerp.plus/#/login
+===== to_skip function start =====
+www.mabangerp.plus has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: www.mabangerp.plus now: 2023-07-04 04:11:21.328593+00:00
+duration_log vt_call: 0.9246201000059955
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 4.2683957000263035
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+grab_html_js() OUTER EXCEPTION triggered: HTTPConnectionPool(host='www.mabangerp.plus', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001DF9D156A50>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+current protocol: https
+grab_html_js() OUTER EXCEPTION triggered: HTTPSConnectionPool(host='www.mabangerp.plus', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001DF9D11F690>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+duration_log grab_html_js: 0.08702109998557717
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/www.mabangerp.plus_20230704_041126.671.txt
+duration_log get_whois_info: 0.07396439998410642
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+socket.gethostbyname_ex() exception triggered: [Errno 11001] getaddrinfo failed
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: www.mabangerp.plus. IN NS
+duration_log get_dns_info: 0.07443700003204867
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 0.7843631000141613
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7986239999881946
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for www.mabangerp.plus, time taken 15.000963700003922 seconds
+
+
+current URL in process_parent: dgtsdnvsdhgws.com/index/rot_order/index.html
+===== to_skip function start =====
+dgtsdnvsdhgws.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: dgtsdnvsdhgws.com now: 2023-07-04 04:11:36.356349+00:00
+duration_log vt_call: 0.9770452000084333
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/dgtsdnvsdhgws.com/index/rot_order/index.html_http_20230704_041137.353.pngduration_log screenshot: 10.496747699973639
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+http_status_code: 404
+Bad http_status_code: 404
+grab_html_js() OUTER EXCEPTION triggered: cannot access local variable 'final_url' where it is not associated with a value
+current protocol: https
+grab_html_js() OUTER EXCEPTION triggered: HTTPSConnectionPool(host='dgtsdnvsdhgws.com', port=443): Max retries exceeded with url: /index/rot_order/index.html (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001DF9D1CE8D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+duration_log grab_html_js: 9.995481999998447
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/dgtsdnvsdhgws.com_20230704_041157.885.txt
+duration_log get_whois_info: 0.6516900999704376
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/dgtsdnvsdhgws.com_gethostbyname_ex_20230704_041158.539.txt
+nameservers_filepath file written to resources/dns/dgtsdnvsdhgws.com_nameservers_20230704_041158.539.txt
+duration_log get_dns_info: 0.21938950003823265
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 0.7762280000024475
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7397056000190787
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for dgtsdnvsdhgws.com, time taken 23.978286299970932 seconds
+
+
+current URL in process_parent: espire-home.com/#/pages/index/index
+===== to_skip function start =====
+espire-home.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: espire-home.com now: 2023-07-04 04:12:00.383753+00:00
+duration_log vt_call: 0.9195444999495521
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 4.94133130001137
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+grab_html_js() OUTER EXCEPTION triggered: HTTPConnectionPool(host='espire-home.com', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001DF9D14DED0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+current protocol: https
+grab_html_js() OUTER EXCEPTION triggered: HTTPSConnectionPool(host='espire-home.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001DF9D14EB10>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+duration_log grab_html_js: 0.018857099988963455
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/espire-home.com_20230704_041206.322.txt
+duration_log get_whois_info: 0.5409924000268802
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+socket.gethostbyname_ex() exception triggered: [Errno 11001] getaddrinfo failed
+dns.resolver.query() exception triggered: The DNS query name does not exist: espire-home.com.
+duration_log get_dns_info: 0.02672939997864887
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/espire-home.com_20230704_041206.899.json
+duration_log get_cert_info: 0.8143148000235669
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.6936213999870233
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for espire-home.com, time taken 15.001724700035993 seconds
+
+
+current URL in process_parent: in2ideas-enhance.com/#/
+===== to_skip function start =====
+in2ideas-enhance.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: in2ideas-enhance.com now: 2023-07-04 04:12:15.430000+00:00
+duration_log vt_call: 1.1447229000041261
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 5.156666700029746
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+grab_html_js() OUTER EXCEPTION triggered: HTTPConnectionPool(host='in2ideas-enhance.com', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001DF9D13B610>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+current protocol: https
+grab_html_js() OUTER EXCEPTION triggered: HTTPSConnectionPool(host='in2ideas-enhance.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001DF9D138950>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+duration_log grab_html_js: 0.013696799986064434
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/in2ideas-enhance.com_20230704_041221.805.txt
+duration_log get_whois_info: 0.5125693999580108
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+socket.gethostbyname_ex() exception triggered: [Errno 11001] getaddrinfo failed
+dns.resolver.query() exception triggered: The DNS query name does not exist: in2ideas-enhance.com.
+duration_log get_dns_info: 0.035502999962773174
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/in2ideas-enhance.com_20230704_041222.370.json
+duration_log get_cert_info: 0.8084603000315838
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.7095698000048287
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for in2ideas-enhance.com, time taken 15.000807499978691 seconds
+
+
+current URL in process_parent: shop-e2mallapp.com/to
+===== to_skip function start =====
+shop-e2mallapp.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: shop-e2mallapp.com now: 2023-07-04 04:12:30.480563+00:00
+duration_log vt_call: 1.2361309999832883
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 65.16153139999369
+===== screenshot function end =====

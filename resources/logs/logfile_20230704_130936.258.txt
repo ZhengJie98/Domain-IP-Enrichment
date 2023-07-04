@@ -1,0 +1,20 @@
+trying url: http://127.0.0.1:5000/showiprecords
+href: /
+href: /
+href: /showiprecords
+href: /showdomainrecords
+href: /showrecordstwo
+href: /uploadcsv
+href: #
+href: #
+href: #
+href: #
+href: /exportcsv?type_header=ip_address
+href: ?page=1
+href: ../resources/test.apk
+current href with .apk inside: ../resources/test.apk
+trying url: http://127.0.0.1:5000/showiprecords
+href: /
+href: /
+href: /showiprecords
+href: /showdomainrecords

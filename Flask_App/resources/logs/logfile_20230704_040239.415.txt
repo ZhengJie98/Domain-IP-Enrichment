@@ -1,0 +1,83 @@
+current domain in process_parent:www.facebook.com
+===== to_skip function start =====
+www.facebook.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: www.facebook.com now: 2023-07-04 04:02:39.455619+00:00
+duration_log vt_call: 1.025705000036396
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/www.facebook.com_http_20230704_040240.494.pngscreenshot found for protocol: https and saved to resources/shot-scraper/www.facebook.com_https_20230704_040240.494.pngduration_log screenshot: 17.582380199979525
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+http_status_code: 200
+Good http_status_code: 200
+final_url: https://www.facebook.com/
+html file stored to: resources/html/www.facebook.com_http_20230704_040258.091.html
+web_url: http://www.facebook.com
+url: https://static.xx.fbcdn.net/rsrc.php/v3/yk/r/__rNI13K9KF.js?_nc_x=Ij3Wp8lg5Kz
+total js_files_links: ['https://static.xx.fbcdn.net/rsrc.php/v3/yk/r/__rNI13K9KF.js?_nc_x=Ij3Wp8lg5Kz']
+starting get for each_js_link: https://static.xx.fbcdn.net/rsrc.php/v3/yk/r/__rNI13K9KF.js?_nc_x=Ij3Wp8lg5Kz
+current protocol: https
+http_status_code: 408
+Bad http_status_code: 408
+duration_log grab_html_js: 51.16229160001967
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/www.facebook.com_20230704_040349.346.txt
+duration_log get_whois_info: 0.7701401999802329
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/www.facebook.com_gethostbyname_ex_20230704_040350.124.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: www.facebook.com. IN NS
+duration_log get_dns_info: 0.062360000039916486
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/www.facebook.com_20230704_040350.192.json
+duration_log get_cert_info: 1.8494460000074469
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/www.facebook.com_20230704_040352.046.json
+duration_log get_archived_page_info: 0.7802447999711148
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for www.facebook.com, time taken 73.4116980000399 seconds
+
+
+current URL in process_parent: wunderfauks-signin.com/#/pages/index/index
+===== to_skip function start =====
+wunderfauks-signin.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: wunderfauks-signin.com now: 2023-07-04 04:03:52.921569+00:00
+duration_log vt_call: 0.9215191999683157
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 4.850752600003034
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+grab_html_js() OUTER EXCEPTION triggered: HTTPConnectionPool(host='wunderfauks-signin.com', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001F66D923390>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+current protocol: https
+grab_html_js() OUTER EXCEPTION triggered: HTTPSConnectionPool(host='wunderfauks-signin.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001F66D923990>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+duration_log grab_html_js: 0.015448199992533773
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/wunderfauks-signin.com_20230704_040358.765.txt
+duration_log get_whois_info: 0.5029096999787726
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+socket.gethostbyname_ex() exception triggered: [Errno 11001] getaddrinfo failed
+dns.resolver.query() exception triggered: The DNS query name does not exist: wunderfauks-signin.com.
+duration_log get_dns_info: 0.031714399985503405
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/wunderfauks-signin.com_20230704_040359.311.json
+duration_log get_cert_info: 1.0286969000007957
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.722634100005962
+===== get_archived_page_info function end =====
+replacement successful

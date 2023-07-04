@@ -1,0 +1,43 @@
+current domain in process_parent:app.qianff3.xyz
+===== to_skip function start =====
+app.qianff3.xyz has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: app.qianff3.xyz now: 2023-07-03 09:44:20.485087+00:00
+duration_log vt_call: 1.2927156999940053
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/app.qianff3.xyz_http_20230703_094421.791.pngscreenshot found for protocol: https and saved to resources/shot-scraper/app.qianff3.xyz_https_20230703_094421.791.pngduration_log screenshot: 14.696713900018949
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+http_status_code: 200
+web_url: http://app.qianff3.xyz
+url: /static/default/js/crypto-js.min.js
+total js_files_links: ['http://app.qianff3.xyz/static/default/js/crypto-js.min.js']
+starting get for each_js_link: http://app.qianff3.xyz/static/default/js/crypto-js.min.js
+current protocol: https
+grab_html_js() exception triggered: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+duration_log grab_html_js: 121.58411309999065
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/app.qianff3.xyz_20230703_094638.105.txt
+duration_log get_whois_info: 1.3816012000024784
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/app.qianff3.xyz_gethostbyname_ex_20230703_094639.500.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: app.qianff3.xyz. IN NS
+duration_log get_dns_info: 0.5815342999994755
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/app.qianff3.xyz_20230703_094640.082.json
+duration_log get_cert_info: 0.8353090999880806
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.8580474999907892
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for app.qianff3.xyz, time taken 141.32998869998846 seconds
+
+

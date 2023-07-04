@@ -1,0 +1,220 @@
+current URL in process_parent: eufmyio.shop/products/05-stories-of-chata-patti-crimson-wedding-22
+===== to_skip function start =====
+eufmyio.shop has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: eufmyio.shop now: 2023-07-03 09:39:42.931273+00:00
+duration_log vt_call: 1.1385082000051625
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/eufmyio.shop/products/05-stories-of-chata-patti-crimson-wedding-22_http_20230703_093944.083.pngscreenshot found for protocol: https and saved to resources/shot-scraper/eufmyio.shop/products/05-stories-of-chata-patti-crimson-wedding-22_https_20230703_093944.083.pngduration_log screenshot: 18.263841900014086
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+http_status_code: 200
+web_url: http://eufmyio.shop/products/05-stories-of-chata-patti-crimson-wedding-22
+url: //cdn.shopify.com/shopifycloud/shopify/assets/storefront/load_feature-e154599399e6b8b29dcb1102cc76eb199fa33a09af4fa78d15e8f8544ee64fcd.js
+web_url: http://eufmyio.shop/products/05-stories-of-chata-patti-crimson-wedding-22
+url: //cdn.shopify.com/shopifycloud/shopify/assets/storefront/features-87e8399988880142f2c62771b9d8f2ff6c290b3ff745dd426eb0dfe0db9d1dae.js
+web_url: http://eufmyio.shop/products/05-stories-of-chata-patti-crimson-wedding-22
+url: //cdn.shopify.com/s/files/1/0571/0659/5989/t/2/assets/vendor-scripts-v6.js
+web_url: http://eufmyio.shop/products/05-stories-of-chata-patti-crimson-wedding-22
+url: //cdn.shopify.com/s/files/1/0571/0659/5989/t/2/assets/theme.js?v=112718498460643917511622297434
+web_url: http://eufmyio.shop/products/05-stories-of-chata-patti-crimson-wedding-22
+url: https://cdn-spurit.com/shopify-apps/abandoned-cart-reminder/common.js
+web_url: http://eufmyio.shop/products/05-stories-of-chata-patti-crimson-wedding-22
+url: //cdn.shopify.com/s/files/1/0571/0659/5989/t/2/assets/tms-translator.js?v=33303808482051773121672922133
+total js_files_links: ['http://cdn.shopify.com/shopifycloud/shopify/assets/storefront/load_feature-e154599399e6b8b29dcb1102cc76eb199fa33a09af4fa78d15e8f8544ee64fcd.js', 'http://cdn.shopify.com/shopifycloud/shopify/assets/storefront/features-87e8399988880142f2c62771b9d8f2ff6c290b3ff745dd426eb0dfe0db9d1dae.js', 'http://cdn.shopify.com/s/files/1/0571/0659/5989/t/2/assets/vendor-scripts-v6.js', 'http://cdn.shopify.com/s/files/1/0571/0659/5989/t/2/assets/theme.js?v=112718498460643917511622297434', 'https://cdn-spurit.com/shopify-apps/abandoned-cart-reminder/common.js', 'http://cdn.shopify.com/s/files/1/0571/0659/5989/t/2/assets/tms-translator.js?v=33303808482051773121672922133']
+starting get for each_js_link: http://cdn.shopify.com/shopifycloud/shopify/assets/storefront/load_feature-e154599399e6b8b29dcb1102cc76eb199fa33a09af4fa78d15e8f8544ee64fcd.js
+exception in getting js_file: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+starting get for each_js_link: http://cdn.shopify.com/shopifycloud/shopify/assets/storefront/features-87e8399988880142f2c62771b9d8f2ff6c290b3ff745dd426eb0dfe0db9d1dae.js
+exception in getting js_file: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+starting get for each_js_link: http://cdn.shopify.com/s/files/1/0571/0659/5989/t/2/assets/vendor-scripts-v6.js
+exception in getting js_file: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+starting get for each_js_link: http://cdn.shopify.com/s/files/1/0571/0659/5989/t/2/assets/theme.js?v=112718498460643917511622297434
+exception in getting js_file: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+starting get for each_js_link: https://cdn-spurit.com/shopify-apps/abandoned-cart-reminder/common.js
+exception in getting js_file: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+starting get for each_js_link: http://cdn.shopify.com/s/files/1/0571/0659/5989/t/2/assets/tms-translator.js?v=33303808482051773121672922133
+exception in getting js_file: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+current protocol: https
+grab_html_js() exception triggered: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+duration_log grab_html_js: 106.30695779999951
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/eufmyio.shop_20230703_094148.694.txt
+duration_log get_whois_info: 0.5098146999953315
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/eufmyio.shop_gethostbyname_ex_20230703_094149.205.txt
+nameservers_filepath file written to resources/dns/eufmyio.shop_nameservers_20230703_094149.205.txt
+duration_log get_dns_info: 0.04882900000666268
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/eufmyio.shop_20230703_094149.256.json
+duration_log get_cert_info: 0.8046245999867097
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info file written to resources/archived_page/eufmyio.shop_20230703_094150.065.json
+duration_log get_archived_page_info: 0.9513391999935266
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for eufmyio.shop, time taken 128.1180095000018 seconds
+
+
+current URL in process_parent: krakenbq.cc/index/user/indexhtml
+===== to_skip function start =====
+krakenbq.cc has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: krakenbq.cc now: 2023-07-03 09:41:51.081097+00:00
+duration_log vt_call: 1.0230282999982592
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 3.627188699989347
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+grab_html_js() exception triggered: HTTPConnectionPool(host='krakenbq.cc', port=80): Max retries exceeded with url: /index/user/indexhtml (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C13818F6D0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+current protocol: https
+grab_html_js() exception triggered: HTTPSConnectionPool(host='krakenbq.cc', port=443): Max retries exceeded with url: /index/user/indexhtml (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001C13818F610>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+duration_log grab_html_js: 0.0258421000035014
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/krakenbq.cc_20230703_094155.799.txt
+duration_log get_whois_info: 1.1513021000137087
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+socket.gethostbyname_ex() exception triggered: [Errno 11001] getaddrinfo failed
+nameservers_filepath file written to resources/dns/krakenbq.cc_nameservers_20230703_094156.951.txt
+duration_log get_dns_info: 0.41784999999799766
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/krakenbq.cc_20230703_094157.372.json
+duration_log get_cert_info: 0.8339098999858834
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 2.575136500003282
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for krakenbq.cc, time taken 15.000714800000424 seconds
+
+
+current URL in process_parent: www.forfurniture-downapp.com/
+===== to_skip function start =====
+www.forfurniture-downapp.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: www.forfurniture-downapp.com now: 2023-07-03 09:42:06.123397+00:00
+duration_log vt_call: 1.077449100004742
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/www.forfurniture-downapp.com/_http_20230703_094207.216.pngscreenshot found for protocol: https and saved to resources/shot-scraper/www.forfurniture-downapp.com/_https_20230703_094207.216.pngduration_log screenshot: 10.898422000027495
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+http_status_code: 400
+grab_html_js() exception triggered: cannot access local variable 'final_url' where it is not associated with a value
+current protocol: https
+http_status_code: 400
+grab_html_js() exception triggered: cannot access local variable 'final_url' where it is not associated with a value
+duration_log grab_html_js: 0.2891634999832604
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/www.forfurniture-downapp.com_20230703_094218.474.txt
+duration_log get_whois_info: 0.8145611000072677
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/www.forfurniture-downapp.com_gethostbyname_ex_20230703_094219.289.txt
+dns.resolver.query() exception triggered: The DNS response does not contain an answer to the question: www.forfurniture-downapp.com. IN NS
+duration_log get_dns_info: 0.03851589999976568
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/www.forfurniture-downapp.com_20230703_094219.333.json
+duration_log get_cert_info: 0.8390570000046864
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 1.1210979000024963
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for www.forfurniture-downapp.com, time taken 15.232299299997976 seconds
+
+
+current URL in process_parent: imgg1265t.xyz/mobile/#/assets
+===== to_skip function start =====
+imgg1265t.xyz has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: imgg1265t.xyz now: 2023-07-03 09:42:21.399097+00:00
+duration_log vt_call: 0.9605445000051986
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+screenshot found for protocol: http and saved to resources/shot-scraper/imgg1265t.xyz/mobile/#/assets_http_20230703_094222.380.pngduration_log screenshot: 8.372795800009044
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+http_status_code: 404
+grab_html_js() exception triggered: cannot access local variable 'final_url' where it is not associated with a value
+current protocol: https
+grab_html_js() exception triggered: HTTPSConnectionPool(host='imgg1265t.xyz', port=443): Max retries exceeded with url: /mobile/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1002)')))
+duration_log grab_html_js: 1.1803100999968592
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/imgg1265t.xyz_20230703_094231.961.txt
+duration_log get_whois_info: 0.9727649999840651
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+gethostbyname_ex_filepath file written to resources/dns/imgg1265t.xyz_gethostbyname_ex_20230703_094232.941.txt
+nameservers_filepath file written to resources/dns/imgg1265t.xyz_nameservers_20230703_094232.941.txt
+duration_log get_dns_info: 0.45674540000618435
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file is NONE 
+duration_log get_cert_info: 1.3516779000055976
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 2.008322399982717
+===== get_archived_page_info function end =====
+replacement successful
+replacement SUCCESSFUL for imgg1265t.xyz, time taken 15.411827100004302 seconds
+
+
+current URL in process_parent: skyonetrades.com/mobile/en-us/m.html#/myAccount
+===== to_skip function start =====
+skyonetrades.com has NOT been processed in past X days
+===== to_skip function end =====
+===== call_ip_or_domain function start =====
+calling ip_or_domain for: skyonetrades.com now: 2023-07-03 09:42:36.830672+00:00
+duration_log vt_call: 1.2267669000138994
+===== call_ip_or_domain function end =====
+===== screenshot function start =====
+duration_log screenshot: 4.540376100019785
+===== screenshot function end =====
+===== grab_html_js function start =====
+current protocol: http
+grab_html_js() exception triggered: HTTPConnectionPool(host='skyonetrades.com', port=80): Max retries exceeded with url: /mobile/en-us/m.html (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C1383BFB10>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+current protocol: https
+grab_html_js() exception triggered: HTTPSConnectionPool(host='skyonetrades.com', port=443): Max retries exceeded with url: /mobile/en-us/m.html (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001C1384B2090>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+duration_log grab_html_js: 0.39020979998167604
+===== grab_html_js function end =====
+===== get_whois_info function start =====
+get_whois_info file written to resources/whois/skyonetrades.com_20230703_094243.043.txt
+duration_log get_whois_info: 1.1536122999968939
+===== get_whois_info function end =====
+===== get_dns_info function start =====
+socket.gethostbyname_ex() exception triggered: [Errno 11001] getaddrinfo failed
+nameservers_filepath file written to resources/dns/skyonetrades.com_nameservers_20230703_094244.201.txt
+duration_log get_dns_info: 0.3802799000113737
+===== get_dns_info function end =====
+===== get_cert_info function start =====
+get_cert_info file written to resources/cert/skyonetrades.com_20230703_094244.580.json
+duration_log get_cert_info: 0.8139886000135448
+===== get_cert_info function end =====
+===== get_archived_page_info function start =====
+get_archived_page_info()  exception triggered: Wayback Machine's CDX server did not return any records for the query. The URL may not have any archives  on the Wayback Machine or the URL may have been recently archived and is still not available on the CDX server.
+duration_log get_archived_page_info: 0.9500843999849167
+===== get_archived_page_info function end =====
+replacement successful
