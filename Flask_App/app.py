@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify, flash, redirect, url_for, render_template, send_file, make_response
+from flask import Flask, request, jsonify, flash, redirect, url_for, render_template, send_file, make_response, session 
 from flask_paginate import Pagination, get_page_args
 from flask_bootstrap import Bootstrap
 from flask_cors import CORS, cross_origin
@@ -15,6 +15,8 @@ import config
 from flask.cli import FlaskGroup
 from bson import json_util
 from apscheduler.triggers.cron import CronTrigger
+from flask_login import LoginManager, UserMixin, login_user, logout_user
+import bcrypt
 
 
 
@@ -29,31 +31,46 @@ ALLOWED_EXTENSIONS = {'csv'}
 X_DAYS_AGO = 7
 
 
-client = MongoClient('localhost',27017)
+# client = MongoClient('localhost',27017)
+client = MongoClient('mongodb://readWrite:%20mongo1DB%20@18.141.141.56:27017/')
+
 # db = client['filtered_sg_ip_list']
 # col = db["ip"]
     
 
 app = Flask(__name__)
+app.secret_key = 'super secret key'
+app.config['SESSION_TYPE'] = 'filesystem'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 CORS(app)
+
+# db = client['michelle_list']
+# db=client.get_database('michelle_list')
+# records = db.register
+
 # crontab = Crontab(app)
-# client = MongoClient('mongodb://readWrite:%20mongo1DB%20@18.141.141.56:27017/')
 # db = client['michelle_list']
 # collection = "mirai_aurora_deimos"
+
 
 
 @app.route('/test')
 def test():
     return "testing test"
 
-@app.route('/')
+@app.route('/home')
 def home():
+    if "email" not in session:
+        return redirect(url_for("login"))
+    
     return render_template('home.html')
 
 
 @app.route('/uploadcsv', methods=['GET','POST'])
 def uploadcsv():
+   if "email" not in session:
+        return redirect(url_for("login"))
+   
    if request.method == 'POST':
         # Check if a file was uploaded
         if 'csv_file' in request.files:
@@ -164,6 +181,7 @@ def uploadcsv():
 #    return render_template('uploadcsv.html')
 
 def get_iprecords(page_number, page_size):
+    
     db = client['michelle_list']
     # collection = db['may12_ips']
     # collection = db['mirai_aurora_deimos']
@@ -176,6 +194,8 @@ def get_iprecords(page_number, page_size):
 
 @app.route('/showiprecords')
 def showiprecords():
+    if "email" not in session:
+        return redirect(url_for("login"))
     print("hello")
     page = int(request.args.get('page', 1))
     # print("current page:",page)
@@ -240,6 +260,8 @@ def get_filtered_records(filter_header, filter_value, page, page_size, type_head
 
 @app.route('/filter')
 def apply_filter_route():
+    if "email" not in session:
+        return redirect(url_for("login"))
     filter_header = request.args.get('filter_header')
     filter_value = request.args.get('filter_value')
     type_header = request.args.get('type_header')
@@ -294,6 +316,8 @@ def get_domainrecords(page_number, page_size):
 
 @app.route('/showdomainrecords')
 def showdomainrecords():
+    if "email" not in session:
+        return redirect(url_for("login"))
     # print("hello")
     page = int(request.args.get('page', 1))
     # print("current page:",page)
@@ -535,6 +559,36 @@ def showrecordstwo():
                            has_next=has_next, next_page=next_page,
                            current_page=page, pages=range(1, total_pages + 1))
 
+# @app.route('/showrecordstwo', methods=['GET','POST'])
+# def showrecordstwo():
+#     # print("Current in showrecordstwo")
+#     df = showDB()
+#     print(df['ip_address'])
+#     page = int(request.args.get('page', 1))
+#     page_size = 10
+
+#     total_records = len(df)
+#     total_pages = (total_records + page_size - 1) // page_size
+
+#     has_prev = page > 1
+#     prev_page = page - 1 if has_prev else None
+
+#     has_next = page < total_pages
+#     next_page = page + 1 if has_next else None
+
+#     start_index = (page - 1) * page_size
+#     end_index = start_index + page_size
+
+#     paginated_df = df.iloc[start_index:end_index]
+
+#     print("paginated_df",paginated_df['ip_address'])
+#     columns = paginated_df.columns.tolist()
+#     rows = paginated_df.values.tolist()
+
+#     return render_template('showrecordstwo.html', columns=columns, rows=rows,
+#                            has_prev=has_prev, prev_page=prev_page,
+#                            has_next=has_next, next_page=next_page,
+#                            current_page=page, pages=range(1, total_pages + 1))
 
 
 
@@ -560,6 +614,11 @@ def process_Parent():
 
     result = process_parent()
    
+    return result
+
+@app.route("/differentiateDomainUrl", methods=['GET'])
+def differentiate_Domain_Url():
+    result = differentiate_domain_url_only()
     return result
 
 # @app.route("/exportDB", methods=['GET'])
@@ -650,6 +709,16 @@ def get_todos():
     # print(todos)
     return json.loads(json_util.dumps(todos))
 
+## uncomment for scheduler till start
+# scheduler = BackgroundScheduler()
+
+# @scheduler.scheduled_job(CronTrigger(hour=20, minute=1))
+# def func_to_be_executed():
+#     now = datetime.datetime.now()
+#     # print("now:", now)
+#     process_parent()
+
+# scheduler.start()
 
 
 # @crontab.job(minute="*", hour="19", day="*", month="*", day_of_week="*")
@@ -666,15 +735,7 @@ def get_todos():
 #     now = datetime.datetime.now()
 #     print("now:", now)
 
-scheduler = BackgroundScheduler()
 
-@scheduler.scheduled_job(CronTrigger(hour=20, minute=1))
-def func_to_be_executed():
-    now = datetime.datetime.now()
-    # print("now:", now)
-    process_parent()
-
-scheduler.start()
 
 # @scheduler.scheduled_job(IntervalTrigger(seconds=5))
 # def func_to_be_executed():
@@ -694,11 +755,125 @@ scheduler.start()
 #             DAILY_LIMIT -= each[1]
 #             print("REMAINING DAILY_LIMITS:", DAILY_LIMIT)
 
+def MongoDB():
+    client = MongoClient('mongodb://readWrite:%20mongo1DB%20@18.141.141.56:27017/')
+    db = client.get_database('testing')
+    records = db.register
+    return records
+# records = MongoDB()
+
+
+##Connect with Docker Image###
+def dockerMongoDB():
+    db = client.users
+    pw = "test123"
+    hashed = bcrypt.hashpw(pw.encode('utf-8'), bcrypt.gensalt())
+    records = db.register
+    # records.insert_one({
+    #     "name": "Test Test",
+    #     "email": "test@yahoo.com",
+    #     "password": hashed
+    # })
+    return records
+
+records = dockerMongoDB()
+
+#assign URLs to have a particular route 
+@app.route("/", methods=['post', 'get'])
+def index():
+    message = ''
+    #if method post in index
+    if "email" in session:
+        return redirect(url_for("logged_in"))
+    # if request.method == "POST":
+    #     user = request.form.get("fullname")
+    #     email = request.form.get("email")
+    #     password1 = request.form.get("password1")
+    #     password2 = request.form.get("password2")
+    #     #if found in database showcase that it's found 
+    #     user_found = records.find_one({"name": user})
+    #     email_found = records.find_one({"email": email})
+    #     if user_found:
+    #         message = 'There already is a user by that name'
+    #         return render_template('index.html', message=message)
+    #     if email_found:
+    #         message = 'This email already exists in database'
+    #         return render_template('index.html', message=message)
+    #     if password1 != password2:
+    #         message = 'Passwords should match!'
+    #         return render_template('index.html', message=message)
+    #     else:
+    #         #hash the password and encode it
+    #         hashed = bcrypt.hashpw(password2.encode('utf-8'), bcrypt.gensalt())
+    #         #assing them in a dictionary in key value pairs
+    #         user_input = {'name': user, 'email': email, 'password': hashed}
+    #         #insert it in the record collection
+    #         records.insert_one(user_input)
+            
+    #         #find the new created account and its email
+    #         user_data = records.find_one({"email": email})
+    #         new_email = user_data['email']
+    #         #if registered redirect to logged in as the registered user
+    #         return render_template('logged_in.html', email=new_email)
+    # return render_template('index.html')
+    return redirect(url_for('login'))
+
+
+@app.route("/login", methods=["POST", "GET"])
+def login():
+    message = 'Please login to your account'
+    if "email" in session:
+        return redirect(url_for("logged_in"))
+
+    if request.method == "POST":
+        email = request.form.get("email")
+        password = request.form.get("password")
+
+        #check if email exists in database
+        email_found = records.find_one({"email": email})
+        if email_found:
+            email_val = email_found['email']
+            passwordcheck = email_found['password']
+            #encode the password and check if it matches
+            if bcrypt.checkpw(password.encode('utf-8'), passwordcheck):
+                session["email"] = email_val
+                return redirect(url_for('logged_in'))
+            else:
+                if "email" in session:
+                    return redirect(url_for("logged_in"))
+                message = 'Wrong password'
+                return render_template('login.html', message=message)
+        else:
+            message = 'Email not found'
+            return render_template('login.html', message=message)
+    return render_template('login.html', message=message)
+
+@app.route('/logged_in')
+def logged_in():
+    if "email" in session:
+        email = session["email"]
+        # return render_template('logged_in.html', email=email)
+        # return render_template('home.html')
+        return redirect(url_for("home"))
+    else:
+        return redirect(url_for("login"))
+
+@app.route("/logout", methods=["POST", "GET"])
+def logout():
+    if "email" in session:
+        session.pop("email", None)
+        return render_template("signout.html")
+    else:
+        return render_template('index.html')
+
 
 
 if __name__ == "__main__":
 #    app.run(debug=True, port=5000, threaded=True)
-   app.run(debug=True, use_reloader=True, port=5000, threaded=True)
+    # app.run(debug=True, use_reloader=True, port=5000, threaded=True)
+    app.run(debug=True, use_reloader=True, port=5000, threaded=True)
+    # app.run(debug=True, use_reloader=True, port=5000, threaded=True, ssl_context='adhoc')
+
     # app.run(use_reloader=False, port=5000, threaded=True)
 
     # app.run(debug=True, use_reloader=False, port=5000)
