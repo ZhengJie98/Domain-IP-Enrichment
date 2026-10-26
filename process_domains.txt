@@ -8,6 +8,8 @@ import dns.resolver
 import whois
 import datetime
 
+# Testing
+
 def download_page(url):
 
     #TODO: Integrate shot-scraper CLI calls
